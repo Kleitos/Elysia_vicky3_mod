@@ -1,0 +1,397 @@
+﻿# If you add religions, and use those tags, do not change them without changing everywhere they are used.
+
+# Uses all 'modifiers' possible thats exported as a Modifier.
+
+elysian_pantheon = {
+	texture = "gfx/interface/icons/religion_icons/hellenic.dds"
+	traits = {
+		polytheist
+		philosophical
+		pantheon
+		pagan_belief
+	}
+	color = { 0.2 0.2 0.5 }
+}
+
+totemism = {
+	texture = "gfx/interface/icons/religion_icons/totemism.dds"
+	traits = {
+		new_world_native
+		shamanist
+		pantheon
+		pagan_belief
+	}
+	color = { 127 115 115 }
+}
+
+inti = {
+	texture = "gfx/interface/icons/religion_icons/inti.dds"
+	traits = {
+		new_world_native
+		polytheist
+		pagan_belief
+	}
+	color = { 64 115 115 }
+}
+
+nahuatl = {
+	texture = "gfx/interface/icons/religion_icons/nahuatl.dds"
+	traits = {
+		new_world_native
+		polytheist
+		pantheon
+		pagan_belief
+	}
+	color = { 64 115 64 }
+}
+
+mayan = {
+	texture = "gfx/interface/icons/religion_icons/mayan.dds"
+	traits = {
+		new_world_native
+		polytheist
+		pantheon
+		pagan_belief
+	}
+	color = { 127 25 178 }
+}
+
+south_american = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		new_world_native
+		shamanist
+		pagan_belief
+	}
+	color = { 120 20 20 }
+}
+
+polynesian_faith = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		austronesian
+		australasian
+		polytheist
+		pagan_belief
+	}
+	color = { 255 159 31 }
+}
+
+indonesian = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		austronesian
+		australasian
+		polytheist
+		pagan_belief
+	}
+	color = { 48 15 179 }
+}
+
+malagasy = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		austronesian
+		african_faith
+		animist
+		pagan_belief
+	}
+	color = { 171 55 20 }
+}
+
+tai_faith = {
+	texture = "gfx/interface/icons/religion_icons/elephant.dds"
+	traits = {
+		eastern
+		buddhist
+		polytheist
+		east_pagan
+		pagan_belief
+	}
+	color = { 160 90 180 }
+}
+
+bon = {
+	texture = "gfx/interface/icons/religion_icons/bon.dds"
+	traits = {
+		eastern
+		polytheist
+		east_pagan
+		pagan_belief
+	}
+	color = { 10 235 255 }
+}
+
+donyi_polo = {
+	texture = "gfx/interface/icons/religion_icons/donyipoloism.dds"
+	traits = {
+		eastern
+		animist
+		east_pagan
+		pagan_belief
+	}
+	color = { 9 86 115 }
+}
+
+tengriism = {
+	texture = "gfx/interface/icons/religion_icons/tengri.dds"
+	traits = {
+		eastern
+		steppe
+		shamanist
+		pagan_belief
+	}
+	color = { 0.0 0.2 0.8 }
+}
+
+eskaleut = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		shamanist
+		new_world_native
+		circumpolar
+		pantheon
+		pagan_belief
+	}
+	color = { 213 238 250 }
+}
+
+siberian_faith = {
+	texture = "gfx/interface/icons/religion_icons/siberian.dds"
+	traits = {
+		shamanist
+		steppe
+		circumpolar
+		pagan_belief
+	}
+	color = { 170 172 229 }
+}
+
+suomenusko = {
+	texture = "gfx/interface/icons/religion_icons/finno_ugric.dds"
+	traits = {
+		shamanist
+		europagan
+		circumpolar
+		pagan_belief
+	}
+	color = { 0.5 0.5 0.0 }
+}
+
+chinese_pagan = {
+	# looped in some similar religions for brevity
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		animist
+		eastern
+		east_pagan
+		taoic
+		pagan_belief
+	}
+	color = { 170 172 229 }
+}
+
+dreamtime = {
+	texture = "gfx/interface/icons/religion_icons/alcheringa.dds"
+	traits = {
+		australian_faith
+		australasian
+		animist
+		pagan_belief
+	}
+	color = { 197 133 43 }
+}
+
+akom = {
+	texture = "gfx/interface/icons/religion_icons/akanism.dds"
+	traits = {
+		african_faith
+		west_african_faith
+		animist
+		pagan_belief
+	}
+	color = { 0.9 0.7 0.3 }
+}
+
+mande_faith = {
+	texture = "gfx/interface/icons/religion_icons/mande.dds"
+	traits = {
+		african_faith
+		west_african_faith
+		animist
+		pagan_belief
+	}
+	color = { 0.9 0.7 0.3 }
+}
+
+roogan = {
+	texture = "gfx/interface/icons/religion_icons/west_african_roog_sene.dds"
+	traits = {
+		african_faith
+		west_african_faith
+		animist
+		pagan_belief
+	}
+	color = { 0.8 0.55 0.0 }
+}
+
+orisa_faith = {
+	texture = "gfx/interface/icons/religion_icons/yoruba.dds"
+	traits = {
+		african_faith
+		west_african_faith
+		animist
+		pagan_belief
+	}
+	color = { 38 63 125 }
+}
+
+bantu_faith = {
+	texture = "gfx/interface/icons/religion_icons/west_african.dds"
+	traits = {
+		african_faith
+		central_african_faith
+		animist
+		pagan_belief
+	}
+	color = { 100 117 76 }
+}
+
+bori = {
+	texture = "gfx/interface/icons/religion_icons/west_african_bori.dds"
+	traits = {
+		african_faith
+		west_african_faith
+		animist
+		pagan_belief
+	}
+	color = { 100 117 76 }
+}
+
+waaqeffanna = {
+	texture = "gfx/interface/icons/religion_icons/waaqism.dds"
+	traits = {
+		african_faith
+		south_african_faith
+		animist
+		pagan_belief
+	}
+	color = { 100 117 76 }
+}
+
+kushitic = {
+	texture = "gfx/interface/icons/religion_icons/kushism.dds"
+	traits = {
+		african_faith
+		east_african_faith
+		kemetic_faith
+		polytheist
+		pagan_belief
+	}
+	color = { 236 211 84 }
+}
+
+san_faith = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		african_faith
+		east_african_faith
+		polytheist
+		pagan_belief
+	}
+	color = { 0.15  1  0.7 }
+}
+
+maasai_faith = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		african_faith
+		east_african_faith
+		animist
+		pagan_belief
+	}
+	color = { 199 235 102 }
+}
+
+jain = {
+	texture = "gfx/interface/icons/religion_icons/hindu.dds"
+	traits = {
+		eastern
+		vedic
+		philosophical
+	}
+	color = { 1.0 1.0 0.4 }
+	taboos = {
+		meat
+		luxury_clothes
+	}
+}
+
+taoism = {
+	texture = "gfx/interface/icons/religion_icons/taoism.dds"
+	traits = {
+		taoic
+		eastern
+		philosophical
+	}
+	color = { 0.7 0.35 0.1 }
+}
+
+confucian = {
+	texture = "gfx/interface/icons/religion_icons/confucian.dds"
+	traits = {
+		taoic
+		eastern
+		philosophical
+	}
+	color = { 255 235 133 }
+}
+
+mazdayasna = {
+	texture = "gfx/interface/icons/religion_icons/zoroastrian.dds"
+	traits = {
+		monotheist
+		zoroastrian
+		eastern
+	}
+	color = { 0.5 0.3 0.6 }
+}
+
+anglican = {
+	texture = "gfx/interface/icons/religion_icons/anglican.dds"
+	traits = {
+		christian
+		monotheist
+	}
+	color = { 135 77 255 }
+}
+
+mormon = {
+	texture = "gfx/interface/icons/religion_icons/mormonism.dds"
+	traits = {
+		christian
+		monotheist
+	}
+	color = { 246 245 227 }
+}
+
+voodoo = {
+	texture = "gfx/interface/icons/religion_icons/animist.dds"
+	traits = {
+		shamanist
+		african_faith
+		west_african_faith
+		animist
+		pagan_belief
+	}
+	color = { 139 104 77 }
+}
+
+godworshippingsociety = {
+	texture = "gfx/interface/icons/religion_icons/taiping_christianity.dds"
+	traits = {
+		christian
+		monotheist
+	}
+	color = { 246 245 227 }
+}
