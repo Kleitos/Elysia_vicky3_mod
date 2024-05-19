@@ -1,0 +1,252 @@
+﻿l_english:
+ LOT:0 "Lotharingia"
+ LOT_ADJ:0 "Lotharingian"
+ 
+ EUR:0 "European Federation"
+ EUR_ADJ:0 "European"
+ dyn_c_european_empire: "European Empire"
+ dyn_c_socialist_republic_of_europe: "European Socialist Republic"
+ dyn_c_free_europe: "Free Europe"
+ dyn_c_european_state: "European State"
+ dyn_c_holy_european_order: "Holy European Order"
+
+ 
+ WGR:0 "Volga Germany"
+ WGR_ADJ:0 "Volga German"
+ dyn_c_volga_socialist_republic: "Volga Socialist Republic"
+ dyn_c_far_east_german_state: "Far East German State"
+ 
+ BNL:0 "Benelux"
+ BNL_ADJ:0 "Beneluxian"
+ 
+ CEL:0 "Celtica"
+ CEL_ADJ:0 "Celtic"
+ 
+ INC:0 "Inca"
+ INC_ADJ:0 "Incan"
+ 
+ ZAP:0 "Zapadoslavia"
+ ZAP_ADJ:0 "Zapadoslavian"
+ 
+ STP:0 "Saint Petersburg"
+ STP_ADJ:0 "Petrian"
+ 
+ ING:0 "Ingria"
+ ING_ADJ:0 "Ingrian"
+ 
+ PAI:0 "Paris"
+ PAI_ADJ:0 "Parisian"
+ 
+ 
+ CRT:0 "Carthage"
+ CRT_ADJ:0 "Carthaginian"
+ 
+ CRB:0 "Caribbean Federation"
+ CRB_ADJ:0 "Caribbean"
+ dyn_c_kingdom_of_the_caribbean: "Kingdom of the Caribbean"
+ dyn_c_caribbean_socialist_republics: "Caribbean Socialist Republics"
+ dyn_c_caribbean_free_states: "Caribbean Free States"
+ dyn_c_caribbean_state: "Caribbean State"
+ 
+ dyn_c_holy_roman_republic: "Holy Roman Republic"
+ dyn_c_holiest_roman_empire: "Holiest Roman Empire"
+ dyn_c_holy_socialist_republics: "Holy Socialist Republics"
+ dyn_c_holy_commune: "Holy Commune"
+ 
+ IFR:0 "Imperial Federation"
+ IFR_ADJ:0 "Imperial"
+ dyn_c_holy_global_federation: "Holy Global Federation"
+ dyn_c_global_socialist_federation: "Global Socialist Federation"
+ dyn_c_global_anarchist_society: "Global Anarchist Society"
+ 
+ SOM:0 "Somalia"
+ SOM_ADJ:0 "Somali"
+ 
+ RMA:0 "Roman Empire"
+ RMA_ADJ:0 "Roman"
+ dyn_c_free_roman_lands: "Free Roman Lands"
+ 
+ BGR:0 "Bulgaria-Romania"
+ BGR_ADJ:0 "Bulgarian-Romanian"
+ 
+ LMV:0 "Lombardy-Venetia"
+ LMV_ADJ:0 "Lombardian-Venetian"
+
+ BON:0 "Borneo"
+ BON_ADJ:0 "Bornean" 
+ 
+ ANC:0 "Antillean Confederation"
+ ANC_ADJ:0 "Antillean"
+ 
+ PAG:0 "Patria Grande"
+ PAG_ADJ:0 "Patrian"
+ dyn_c_ursal: "Union of Socialist Republics of Latin America"
+
+ GRL:0 "Grandelumiere"
+ GRL_ADJ:0 "Grandelumiere"
+
+ BAA:0 "Banatia"
+ BAA_ADJ:0 "Banatian"
+
+ BAN:0 "Banat"
+ BAN_ADJ:0 "Banat"
+ 
+ 
+ ILY:0 "Illyria"
+ ILY_ADJ:0 "Illyrian"
+ 
+ BKV:0 "Bukovina"
+ BKV_ADJ:0 "Bukovinan"
+ 
+ JAU:0 "Goshu"
+ JAU_ADJ:0 "Goshu"
+ 
+ JER:0 "Jerusalem"
+ JER_ADJ:0 "Jerusalem"
+ dyn_c_kingdom_of_jerusalem: "Kingdom of Jerusalem"
+ 
+ EAF:0 "East Africa"
+ EAF_ADJ:0 "East African"
+ dyn_c_east_african_federation: "East African Federaton"
+ dyn_c_east_african_commune: "East African Commune"
+ dyn_c_east_african_kingdom: "East African Kingdom"
+ 
+ 
+ NYC:0 "New York City"
+ NYC_ADJ:0 "New Yorker"
+ 
+ ACA:0 "Acadia"
+ ACA_ADJ:0 "Acadian"
+ 
+ NOF:0 "Nouvelle France"
+ NOF_ADJ:0 "Nouveau Français"
+ 
+ PAS:0 "Pacific States"
+ PAS_ADJ:0 "Pacific"
+ dyn_c_pacific_kingdom: "Pacific Kingdom"
+ dyn_c_pacific_commune: "Pacific Commune"
+
+ dyn_c_cascadian_kindgom: "Cascadian Kingdom"
+ 
+ GLR:0 "Great Lakes Republic"
+ GLR_ADJ:0 "Great Lakes"
+ dyn_c_kingdom_of_the_great_lakes: "Kingdom of the Great Lakes"
+ dyn_c_great_lakes_communes: "Great Lakes Communes"
+ 
+ TDW:0 "Tidewater"
+ TDW_ADJ:0 "Tidewater"
+ dyn_c_ocean_kingdom: "Ocean Kingdom"
+ dyn_c_tide_communist_state: "Tide Communist State"
+ 
+ APL:0 "Appalachia"
+ APL_ADJ:0 "Appalachian"
+ dyn_c_mountain_kingdom: "Mountain Kingdom"
+ dyn_c_appalachian_commune: "Appalachian Commune"
+ 
+ ATC:0 "Atlantica"
+ ATC_ADJ:0 "Atlantican"
+ dyn_c_atlantis: "Atlantis"
+ dyn_c_atlantic_society: "Atlantic Society"
+ 
+ AXO:0 "Arixo"
+ AXO_ADJ:0 "Arixo"
+ dyn_c_arixo_kingdom: "Arixo Kingdom"
+ 
+ ROK:0 "Rockies Republic"
+ ROK_ADJ:0 "Rocky"
+ dyn_c_kingdom_of_the_rockies: "Kingdom of the Rockies"
+ dyn_c_rock_community: "Rock Community"
+ 
+ MWR:0 "Midwest Republic"
+ MWR_ADJ:0 "Midwest"
+ dyn_c_great_plains_kingdom: "Great Plains Kingdom"
+ dyn_c_great_plains_communes: "Great Plains Communes"
+ 
+ DIX:0 "Dixie"
+ DIX_ADJ:0 "Dixie"
+ dyn_c_southern_kingdom: "Southern Kindgom"
+ dyn_c_southern_communes: "Southern Commune"
+ 
+ GTX:0 "Greater Texas"
+ GTX_ADJ:0 "Greater Texan"
+ 
+ DKO:0 "Dakota"
+ DKO_ADJ:0 "Dakotan"
+ 
+ CRL:0 "Carolina"
+ CRL_ADJ:0 "Carolinan"
+ 
+ TTC:0 "Thirteen Colonies"
+ TTC_ADJ:0 "Colonial"
+ dyn_c_new_brittain: "New Brittain"
+ dyn_c_thirteen_communes: "Thirteen Communes"
+ 
+ ARC:0 "Arctic States"
+ ARC_ADJ:0 "Arctic"
+ dyn_c_arctic_kindom: "Arctic Kindgom"
+ dyn_c_arctic_society: "Arctic Society"
+ dyn_c_hyperborea: "Hyperborea"
+ 
+ 
+ NTH:0 "Northumbria"
+ NTH_ADJ:0 "Northumbrian"
+ 
+ GOT:0 "Gotland"
+ GOT_ADJ:0 "Gotlander"
+ 
+ FAL:0 "Alsace-Lorraine"
+ FAL_ADJ:0 "Alsacian"
+ 
+ GEL:0 "Elsass-Lothringen"
+ GEL_ADJ:0 "Elsassian"
+ 
+ AAL:0 "Åland"
+ AAL_ADJ:0 "Ålander"
+ 
+ SUT:0 "South Tyrol"
+ SUT_ADJ:0 "South Tyrolean"
+ 
+ AGV:0 "Angevin Empire"
+ AGV_ADJ:0 "Angevin"
+ dyn_c_angevin_republic: "Dual Republic"
+ dyn_c_channel_council: "Channel Council"
+ 
+ dyn_c_portugal_galicia: "Portugaliza"
+ 
+ dyn_c_denmark_norway: "Denmark-Norway"
+ 
+ CSR:0 "Cono Sur"
+ CSR_ADJ:0 "Cono Sur"
+ 
+ VLS:0 "Volkstaat"
+ VLS_ADJ:0 "Volk"
+ 
+ ALP:0 "Alpine Republic"
+ ALP_ADJ:0 "Alpine"
+ dyn_c_alpine_kingdom: "Alpine Empire"
+ dyn_c_alpine_commune: "Alpine Commune"
+ dyn_c_alpine_see: "Alpine See"
+ 
+ TER:0 "Rumelia"
+ TER_ADJ:0 "Rumelian"
+ 
+ ICH:0 "Indochina"
+ ICH_ADJ:0 "Indochinese"
+ 
+ GAY:0 "Guayana"
+ GAY_ADJ:0 "Guayanese"
+ 
+ KOS:0 "Kosovo"
+ KOS_ADJ:0 "Kosovan"
+ 
+ ISB:0 "Beta-Israel"
+ ISB_ADJ:0 "Beta-Israeli"
+ 
+ ISE:0 "Council of Four Lands"
+ ISE_ADJ:0 "Council"
+ 
+ ISC:0 "Ashkenaz"
+ ISC_ADJ:0 "Ashkenazi"
+ 
+ JAO:0 "Jewish Autonomous Oblast"
+ JAO_ADJ:0 "Jewish"
