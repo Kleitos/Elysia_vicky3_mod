@@ -1,0 +1,10 @@
+﻿ELY = {
+	color = { 147  35  113 }
+	
+	country_type = recognized
+
+	tier = empire
+	
+	cultures = { elysian }
+	capital = STATE_DISTRICT_OF_COLUMBIA
+}

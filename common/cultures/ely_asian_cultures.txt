@@ -1,0 +1,1073 @@
+﻿assamese={
+	color= hsv{ 0.58 0.28 0.61 }
+	religion = donyi_polo
+	traits = { south_asian_heritage northeast_indian pagan_heritage }
+	male_common_first_names={
+		Chandraka
+		Daman
+		Dhekial
+		Hao
+		Jama
+		Jogeshwar
+		Kaganath
+		Kamaleswar
+		Patalang
+		Purandar
+		Ruchinath
+		Sudingphaa
+	}
+	female_common_first_names = {
+		Chandrakanti 
+		Dipali
+		Indira
+		Pushpalata
+	}	
+	noble_last_names = {
+		Khan
+		Singha
+	}
+	common_last_names={
+		Aideo
+		Bora
+		Dogoi
+		Phukan
+		Purnananda
+	}
+	ethnicities = {
+		1 = asian
+	}
+	graphics = east_asian
+}
+
+kannada={
+	color= hsv{ 0.72 0.51 0.66 }
+	religion = hindu
+	traits = { south_asian_heritage dravidian pagan_heritage }
+
+    obsessions = {
+        tea
+    }
+	male_common_first_names={
+		Abbakka
+		Aliya
+		Amoghavarasha
+		Basaveshwara
+		Bijjala
+		Chennamma
+		Guvida
+		Harihara
+		Kempe
+		Krishnadeva
+		Krisnaraja
+		Mayuravarma
+		Pulakesi
+		Rani
+		Sagolli
+		Tailapa
+		Veera
+		Vikramaditya
+		Vishnuvardhana
+	}
+	female_common_first_names = {
+		Chindodi
+		Manjula
+		Saraswati 
+	}	
+	noble_last_names = {
+		Hegde
+		Narayan
+		Rama_Raya
+	}
+	common_last_names={
+		Ballala
+		Bibi
+		Gowda
+		Nayaka
+		Rani
+		Raya
+		Rayanna
+		Wodeyar
+	}
+	ethnicities = {
+		1 = indian
+	}
+	graphics = south_asian
+}
+
+sinhala={
+	color= hsv{ 0.99 0.27 0.29 }
+	religion = theravada
+	traits = { south_asian_heritage hindustani pagan_heritage }
+	
+	obsessions = {
+		tea
+	}
+	male_common_first_names={
+		Anagarika
+		Kirtisri
+		Rajasingha
+		Senarat
+		Sri
+		Vijaya
+		Vikrama
+		Vimala
+		Viraparakkama
+		Wimalaratne
+	}
+	female_common_first_names = {
+		Degiri
+		Rangammal
+		Upendramma
+		Yakada
+	}	
+	noble_last_names = {
+		Devi
+		Nayak
+		Nayakkar 
+	}
+	common_last_names={
+		Dharmasurya
+		Doraisami
+		Narendrasimha
+		Rajadhirajasimha
+		Rajasimha
+	}
+	ethnicities = {
+		1 = indian
+	}
+	graphics = south_asian
+}
+
+khmer={
+	color= hsv{ 0.18 0.56 0.86 }
+	religion = theravada
+	traits = { khmer_language southeast_asian_heritage pagan_heritage }
+	
+	obsessions = {
+		tea
+	}
+	male_common_first_names={
+		Ang
+		Norodom
+		Pok
+		Satha
+		Sisowath
+		Thommo
+	}
+	female_common_first_names = {
+		Aut
+		Bunlei
+		Di
+		Mey
+		Ros
+		Vanthy
+		Vara
+	}	
+	noble_last_names = {
+		Ang
+		Varman
+	}
+	common_last_names={
+		Chan
+		Em
+		Eng
+		Mey
+		Non
+		Reachea
+		Sieng
+		Sinn
+		Snguon
+		Tong
+	}
+	ethnicities = {
+		1 = south_east_asian
+	}
+	graphics = east_asian
+}
+
+thai={
+	color= rgb{ 75 100 150 }
+	religion = theravada
+	traits = { tai southeast_asian_heritage pagan_heritage }
+	
+	obsessions = {
+		tea
+	}
+	male_common_first_names={
+		Chao
+		Chulalongkorn
+		Mongkut
+		Nangklao
+		Naritsaranuwatiwong
+		Phya
+		Plaek
+		Prajadhipok
+		Rama
+		Vajiravudh
+	}
+	female_common_first_names = {
+		Bandhavanna
+		Bismai
+		Chandra
+		Chudharatana
+	}	
+	noble_last_names = {
+		Chakri
+		Praya_Siri
+	}
+	common_last_names={
+		Chichalerm
+		Nitithada
+		Phonphayuhasena
+		Saovabha
+		Suriyawongse
+	}
+	ethnicities = {
+		1 = asian
+	}
+	graphics = east_asian
+}
+
+mon={
+	color= hsv{ 0.38 0.23 0.82 }
+	religion = theravada
+	traits = { southeast_asian_heritage khmer_language pagan_heritage }
+	
+	obsessions = {
+		tea
+	}
+	male_common_first_names={
+		Laik-Gi
+		Taksin
+		Tun
+	}
+	female_common_first_names = {
+		Bandhavanna
+		Bismai
+		Chandra
+		Chudharatana
+		Nokiang
+		Tuu
+		Thiha
+	}	
+	noble_last_names = {
+		Chakri
+	}
+	common_last_names={
+		Maung
+		Saw
+		Soe
+	}
+	ethnicities = {
+		1 = asian
+	}
+	graphics = east_asian
+}
+
+lao={
+	color= rgb{ 100 50 205 }
+	religion = theravada
+	traits = { tai southeast_asian_heritage pagan_heritage }
+	
+	obsessions = {
+		tea
+	}
+	male_common_first_names={
+		Anurutha
+		Chantha
+		Manthaturath
+		Nanthasen
+		Ong
+		Phraya
+		Sakkarin
+		Setthathirath
+		Sisavang
+		Sukha
+		Unkeo
+		Unkham
+	}
+	female_common_first_names = {
+		Kham-Oun
+		Khampeng
+		Khampinh
+		Khamune
+		Pheng
+		Samathi
+		Thongsy
+	}	
+	noble_last_names = {
+		Luang_Phrabang
+		Ong
+	}
+	common_last_names={
+		Anuvong
+		Bun
+		Intharavong
+		Kuman
+		Long
+		Supho
+		Som
+		Vong
+	}
+	ethnicities = {
+		1 = asian
+	}
+	graphics = east_asian
+}
+
+shan={
+	color= hsv{ 0.2 0.40 0.99 }
+	religion = theravada
+	traits = { southeast_asian_heritage tai pagan_heritage }
+	
+	obsessions = {
+		tea
+	}
+	male_common_first_names={
+		Hkam
+		Hkun
+		Hmu
+		Hpa
+		Hpo
+		Hseng
+		Hswe
+		Hso
+		Lun
+		Natsu
+		Naw
+		Nga
+		Pe
+		Pyi
+		Shwe
+		Sun
+		Than
+	}
+	female_common_first_names = {
+		Charm
+		Hearn
+	}	
+	noble_last_names = {
+		Sao
+	}
+	common_last_names={
+		Cheng
+		Hkawt
+		Hmu
+		Hpu
+		Hung
+		Kaw
+		Lek
+		Leng
+		Letya
+		Min
+		Mong
+		Nan
+		Pak
+		Thi
+		Ya
+	}
+	ethnicities = {
+		1 = asian
+	}
+	graphics = east_asian
+}
+
+burmese={
+	color= hsv{ 0.41 0.07 0.37 }
+	religion = theravada
+	traits = { burmese_language southeast_asian_heritage pagan_heritage }
+	
+	obsessions = {
+		tea
+		fish
+	}
+	male_common_first_names={
+		Alaungphaya
+		Bodawphaya
+		Gabyidaw
+		Hsinbyushin
+		Maha
+		Maung
+		Mindon
+		Minkyaw
+		Naungdawkyi
+		Pagan
+		Singu
+		Tharawadi
+		Thibaw
+		Zeya
+	}
+	female_common_first_names = {
+		Chandra
+		Hsinbyumashin
+		Supayalat
+	}	
+	noble_last_names = {
+		Konbaung
+		Sao
+		Min
+	}
+	common_last_names={
+		Bagyidaw
+		Bandula
+		Dabayin
+		Myo
+		Ne_Myo
+		Thura
+	}
+	ethnicities = {
+		1 = asian
+	}
+	graphics = east_asian
+}
+
+karen={
+	color= rgb{ 30 180 145 }
+	religion = theravada
+	traits = { burmese_language southeast_asian_heritage pagan_heritage }
+	
+	obsessions = {
+		tea
+	}
+	male_common_first_names={
+		Hkun
+		La
+		Maung
+		Paban
+		Papw
+		Po
+		Sao
+		Saw
+	}
+	female_common_first_names = {
+		Nan_Moe_Moe
+		Nan_Ni_Ni
+		Nang_Khin
+		Naw_Ohn
+		Naw_Paw
+	}	
+	noble_last_names = {
+		Aung
+		Kantarawadi
+		U_bee
+	}
+	common_last_names={
+		Baw
+		Bye
+		Che
+		Kye
+		Kyi
+		Lasa
+		Law_Paw
+		Lawi
+		Nge
+		Pun
+		Pyatin
+		U
+	}
+	ethnicities = {
+		1 = asian
+	}
+	graphics = east_asian
+}
+
+vietnamese={
+	color= hsv{ 0.31 0.37 0.48 }
+	religion = mahayana
+	traits = { sinosphere southeast_asian_heritage pagan_heritage }
+	
+	obsessions = {
+		tea
+		fish
+	}
+	male_common_first_names={
+		Bui_An
+		Nguyen
+		Nguyen_Phuoc
+		Noang_Cao
+		Ton_That
+		Tran
+		Truong
+	}
+	female_common_first_names = {
+		Bich
+		Hinh
+		Lien
+		Loan
+		Mai
+		Mai_Loan
+		Thanh
+		Yen
+	}	
+	noble_last_names = {
+		Le
+		Ngo_Dinh
+		Pham
+		Truong-Minh
+		Truong
+	}
+	common_last_names={
+		Buu_Lan
+		Cuong
+		Han
+		Khai
+		Mien_Lam
+		Mien_Trinh
+		Nien
+		Quang
+		Than
+		Trong_Hiep
+		Tuan
+		Vinh_San
+		vinh_Thuy
+	}
+	ethnicities = {
+		1 = asian
+	}
+	graphics = east_asian
+}
+
+manchu={
+	color= rgb{ 233 207 84 }
+	religion = mahayana
+	traits = { sinosphere north_asian_heritage pagan_heritage }
+	
+	obsessions = {
+		tea
+	}
+	male_common_first_names={
+		Changlin
+		Deng
+		Fu
+		Guan
+		Hesehn
+		Ma
+		Mingzhu
+		Nalan
+		Oboi
+		Songgotu
+		Sonin
+		Suksaha
+		Tong
+		Zhao
+	}
+	female_common_first_names = {
+		Abahai
+		Huixing
+		Linggui
+		Quejing
+		Wanrong
+		Wengjing
+		Xingzhen
+	}	
+	noble_last_names = { # Qing princely peerages
+		An
+		Cheng
+		Chun
+		Fu
+		Gong
+		Guo
+		He
+		Heng
+		Hui
+		Jingjin
+		Keqin
+		LiLu
+		Ning
+		Qian
+		Rong
+		Rui
+		Shen
+		Shuncheng
+		Su
+		Wen
+		Xian
+		Xun
+		Yi
+		Ying
+		Yu
+		Zheng
+		Zhi
+		Zhon
+		Zhuang
+		Guan
+	}
+	common_last_names={
+		Kang_an
+		Linge
+		Shangzhi
+		Tiemei
+		Xiangying
+		Xingde
+		Zhanshan
+	}
+	ethnicities = {
+		1 = asian
+	}
+	graphics = east_asian
+}
+
+korean={
+	color= hsv{ 0.17 0.41 0.34 }
+	religion = mahayana
+	traits = { korean_language east_asian_heritage pagan_heritage }
+	
+	obsessions = {
+		tea
+	}
+	male_common_first_names={
+		Bak Bong-haek
+		Chwa-chin
+		Gu
+		Han Heong-gyo Hong
+		Jeong Jo
+		Kwon
+		Mung-geun
+		Ok
+		Sang-ok Sang-yong Sim
+		Yi Yun
+	}
+	female_common_first_names = {
+		Bingheogak
+		Hwahyeop
+		Jeongildang
+		Seonhui Sinjeong Sunghee
+		Yeongsuhap Yunjidang
+	}
+	male_noble_first_names = {
+		Bang-bo Byung-guk Byung-hak Byung-si
+		Choi-ung
+		Don-in Du-seon
+		Ha-eung Hong-jip Hunggun
+		Gyu-ho
+		In-young
+		Jeong-hui Jin Jo-sun Jung-yang Jwa-geun
+		Kyung-jae
+		Sang-hwang Sun-mok Sun-taek
+		Won-yong
+		Yong-sun Yu-won
+	}
+	male_regal_first_names = {
+		Byeon
+		Cheok
+		Geum Gong
+		Hui Hwan
+		Myeong-bok
+		San
+	}
+	female_regal_first_names = {
+		Ja-yeong Jeungsun
+		Hyoyu
+		Ok-jeong
+	}
+
+	noble_last_names = {
+		Bak
+		Chang Choe 
+		Gang Gim Gwon
+		Han Hong
+		Jo
+		Kim Ko
+		Min Moon
+		Na Namgung
+		Park
+		Shin Seong Seok Song
+		Won
+		Yi
+	}
+	common_last_names={
+		Bo
+		Ch_ok Chung
+		Guk Gyu
+		Haung Hu Hwan Hyong
+		Im
+		Jip
+		Mok
+		Seo Seon
+		Shinjong Si Sun
+		Taek
+		Yong
+	}
+	ethnicities = {
+		1 = asian
+	}
+	graphics = east_asian
+}
+
+han={
+	color= rgb{ 190 80 48 }
+	religion = confucian
+	traits = { sinosphere han_chinese east_asian_heritage pagan_heritage }
+	obsessions = {
+		tea
+		opium
+	}
+	male_common_first_names={
+		Chen
+		Cheng
+		Deng
+		Dong
+		Gao
+		Hsia
+		Hu
+		Huang
+		Kong
+		Kwong
+		Li
+		Liang
+		Liao
+		Liu
+		Luo
+		Ma
+		Mao
+		Pan
+		Tan
+		Wang
+		Xie
+		Yang
+		Yu
+		Zhang
+		Zhu
+	}
+	female_common_first_names = {
+		Akew
+		Jin
+		Jinhong
+		Junying
+		Qingtang
+		Sanniang
+		Shanziang
+		Shih
+		Taiqing
+		Xiefen
+		Xiugu
+		Xuanjiao
+		Yu
+		Yunmei
+	}	
+	noble_last_names = {
+		Cui
+		Li
+		Nie
+		Zhang
+	}
+	common_last_names={
+		Dong
+		Fang
+		Hu
+		Jiang
+		Jin
+		Lu
+		Ma
+		Peng
+		Qiu
+		Shen
+		Sun
+		Tian
+		Ting
+		Wei
+		Wu
+		Ye
+		Zhao
+	}
+	ethnicities = {
+		1 = asian
+	}
+	graphics = east_asian
+}
+
+hakka={
+	color= hsv{ 0.1 0.43 0.34 }
+	religion = confucian
+	traits = { han_chinese east_asian_heritage pagan_heritage sinosphere }
+	
+	obsessions = {
+		tea
+	}
+	male_common_first_names={
+		Chen
+		Deng
+		Feng
+		Hong
+		Huang
+		Li
+		Liao
+		Liu
+		Qiu
+		Shi
+		Shu
+		Soong
+		Sun
+		Tsai
+		Wu
+		Xie
+		Xue
+		Yang
+		Ye
+		Zhang
+		Zhen
+	}
+	female_common_first_names = {
+		Akew
+		Jin
+		Jinhong
+		Junying
+		Qingtang
+		Sanniang
+		Shanziang
+		Shih
+		Taiqing
+		Xiefen
+		Xiugu
+		Xuanjiao
+		Yu
+		Yunmei
+	}	
+	noble_last_names = {
+		Cui
+		Li
+		Nie
+		Zhang
+	}
+	common_last_names={
+		Dakai
+		Fengjia
+		Qiu
+		Rengan
+		Xiuqing
+		Xiuquan
+		Yatsen
+		Yongfu
+		Yucheng
+		Yunshan
+		Zicai
+	}
+	ethnicities = {
+		1 = asian
+	}
+	graphics = east_asian
+}
+
+min={
+	color= hsv{ 0.71 0.54 0.78 }
+	religion = confucian
+	traits = { han_chinese east_asian_heritage pagan_heritage sinosphere }
+	
+	obsessions = {
+		tea
+	}
+	male_common_first_names={
+		Bing
+		Chen
+		Du
+		He
+		Hou
+		Lin
+		Qin
+		Sa
+		Shen
+		Tan
+		Wong
+		Wu
+		Xu
+		Xue
+		Yan
+		Zheng
+	}
+	female_common_first_names = {
+		Akew
+		Jin
+		Jinhong
+		Junying
+		Qingtang
+		Sanniang
+		Shanziang
+		Shih
+		Taiqing
+		Xiefen
+		Xiugu
+		Xuanjiao
+		Yu
+		Yunmei
+	}	
+	noble_last_names = {
+		Cui
+		Li
+		Nie
+		Zhang
+	}
+	common_last_names={
+		Baochen
+		Baozhen
+		Debang
+		Fu
+		Huiyin
+		Nai-siong
+		Nee
+		Sen
+		Shu
+		Xin
+		Zexu
+	}
+	ethnicities = {
+		1 = asian
+	}
+	graphics = east_asian
+}
+
+yue={
+	color= hsv{ 0.80 0.36 0.39 }
+	religion = confucian
+	traits = { han_chinese east_asian_heritage pagan_heritage sinosphere }
+	
+	obsessions = {
+		tea
+	}
+	male_common_first_names={
+		Chen
+		Cheng
+		Deng
+		Dong
+		Gao
+		Hsia
+		Hu
+		Huang
+		Kong
+		Kwong
+		Li
+		Liang
+		Liao
+		Liu
+		Luo
+		Ma
+		Mao
+		Pan
+		Tan
+		Wang
+		Xie
+		Yang
+		Yu
+		Zhang
+		Zhu
+	}
+	female_common_first_names = {
+		Akew
+		Jin
+		Jinhong
+		Junying
+		Qingtang
+		Sanniang
+		Shanziang
+		Shih
+		Taiqing
+		Xiefen
+		Xiugu
+		Xuanjiao
+		Yu
+		Yunmei
+	}	
+	noble_last_names = {
+		Cui
+		Li
+		Nie
+		Zhang
+	}
+	common_last_names={
+		Dong
+		Fang
+		Hu
+		Jiang
+		Jin
+		Lu
+		Ma
+		Peng
+		Qiu
+		Shen
+		Sun
+		Tian
+		Ting
+		Wei
+		Wu
+		Ye
+		Zhao
+	}
+	ethnicities = {
+		1 = asian
+	}
+	graphics = east_asian
+}
+
+balinese={
+	color={ 255 178 102 }
+	religion = hindu
+	traits = { southeast_asian_heritage malay_culture pagan_heritage }
+	
+	obsessions = {
+		tea
+	}
+	male_common_first_names = {
+		Wayan
+		Made
+		Nyoman
+		Ketut
+		Putu
+		Kadek
+		Komang
+		Nengah
+		Gede
+		Wayan_Balik
+	}
+	female_common_first_names = {
+		Wayan
+		Made
+		Nyoman
+		Ketut
+		Putu
+		Kadek
+		Koming
+		Nengah
+		Wayan_Balik
+	}	
+	noble_last_names = {
+		I_Gusti
+		Anak_Agung
+		Tjokorda
+		I_Dewa
+		Ida
+		Jero
+	}
+	common_last_names = {
+		Ngakan
+		Kompyang
+		Sang
+		Si
+	}
+	ethnicities = {
+		1 = asian
+	}
+	graphics = east_asian
+}
+
+yuanzhumin={
+	color= hsv { 0.272 0.75 0.54 }
+	religion = polynesian
+	traits = { polynesian_group indigenous_oceanic_heritage }
+	
+	obsessions = {
+		fish
+	}
+	male_common_first_names={
+		Alizu Attun Suniuo Baqah Bokeh Kilash Maraos Mona Paelabang Pelin Rapongan Sorong Tahas Taiban Uyongu Walis WaLiSsu Yohani YuKan Yungai Toril Botel Tawu Kanas Difang
+	}
+	female_common_first_names = {
+		Giwas Mavivo Sorong Mona Tain Hulijun Sumay Kacaw Mayaw Biho Peishan Xinyi Panai Kusui Ado Kalitiang Pacidal Jiahui Gewas Mevevo Iami Igay
+	}
+	common_last_names={
+		Shiqatafu Hayung Rudao Kosang Pacidal Tuwana Ciro Kaybaybaw Isqaqavut Yatauyungana Siqeya Qaljupayare Sasala Danapan SiNan
+		SiApenKotan SiAman Ryuzo Tao Thao Palalin Kociang
+	}
+	ethnicities = {
+		1 = polynesian
+	}
+	graphics = decentralised_americas
+}

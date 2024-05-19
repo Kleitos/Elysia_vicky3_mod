@@ -1,0 +1,40 @@
+﻿# Benglasdesh
+BGD = {
+	states = {
+		STATE_ASSAM 
+		STATE_BIHAR 
+		STATE_NORTH_BENGAL 
+		STATE_ORISSA 
+		STATE_SOUTH_BENGAL 
+	}
+
+	required_states_fraction = 0.75
+	
+	ai_will_do = { always = yes }
+
+	possible = {
+		has_technology_researched = pan-nationalism
+
+	}
+}
+
+# Dravistan
+DRA = {
+	states = {
+		STATE_HYDERABAD
+		STATE_NAGPUR
+		STATE_CIRCARS
+		STATE_MADRAS 
+		STATE_MYSORE 
+		STATE_TRAVANCORE
+	}
+
+	required_states_fraction = 0.6
+	
+	ai_will_do = { always = yes }
+
+	possible = {
+		has_technology_researched = pan-nationalism
+
+	}
+}

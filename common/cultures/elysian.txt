@@ -1,0 +1,996 @@
+﻿elysian={
+    color=rgb{ 120 10 75 }
+    religion = elysian_pantheon
+    traits = { elysian_culture_group indigenous_american_heritage pagan_heritage }
+
+    obsessions = {
+        fruit
+    }
+
+	male_common_first_names = {
+		Alexandros Anastasios Aristidis Antonios Aristovoulos Alexios Andreas Agamemnon Avgoustos Anthimos Anagnostis Adrianos Akakios Anastasius Anatolios Andronikos Anthemios Antiochos Apollonios Arsenios Artemios Athanasios Aineias Alexeios Ambrosios Adamantios Augustinos 
+		Beniamin Bardas Bartholomaios Basileios Belisarios Boethios Bosporios Benizelos
+		Charilaos Christos Christoforos Christodoulos Christophoros Chrysanthos Chrysogonos Charalambos
+		Dimitrios Dionysios Diomidis Damianos Demetrios Demetrius Diogenes Dionysos Dorotheos 
+		Eleftherios Efstathios Epameinontas Eirenaios Eudoxios Eustratios Eugenios Euphemios Eusebios Eustathios Elpidios Evripidis
+		Filippos Frangiskos
+		Georgios Gerasimos Gregorios Germanos Gennadios Gregoras Gennaios
+		Hektorios Helias Herakleios Hierotheos Himerios Hektor Herakles 
+		Ilias Ioannis Iakovos Iraklis Iason Ioannes Ionnis
+		Konstantinos Kyriakos Kostas Kastor Kitsos Kyriakoulis
+		Leonidas Leon Lambros Lazaros Lykourgos
+		Militiadis Menelaos Markos Merkourios Makarios Matthaios
+		Nikos Nikolaos Nestor Nikomedes 
+		Odysseas Orestes Othon
+		Panos Panagiotis Periklis Petros Pantelis Pantaleon Pavlos Panoutsos Palaemon Pelagios Philemon Philippos Prokopios
+		Spyridon Sokratis Stamatios Sotiros Stephanos Stelios Stylianos Skarlatos Sofoklis Skantarios Stefanos Sotiris Spyridion Spyros Staikos 
+		Theodoros Tilemachos Thomas Trifon Theodorakis Theophilos Thrasyvoulos Themistoklis Tharyvoulos Tzannis 
+		Vasilios Viktor Vasos
+		Xenon
+		Zacharias Zinovios
+		Aanakwad Adawosgi Aenoheso Ahtahkakoop Ahuludegi Akicita Amaruq Animikii Aputsiaq Aqissiaq Ashkii Allalimya_Takanin 
+		Apash_Wyakaikt Akwiraron Akwirente Apuckshunubbee Antonga Arapeen 
+		Baishan Balam Bidziil
+		Catahecassa Chaska Cipactli Cochise Cowessess Cuauhtemoc Cumshewa Cuneah Catecahassa Cottawamago Cheeseekau 
+		Canalla Cameahwait Colorow Cuautehmoc
+		Dasoda-hae Degataga Diindiisi Digul_Chee Dah-egin Domagaya
+		Ehecatl Esihabit Ebedimu Enes
+		Gian-nah-tah Giiwedin Goyaale Goyathlay Gush_X-een Guujaaw Gakiiwegwanebi Ga-Na-Gua Guyasuta Ganio-dai-io Gyantwachia Guero
+		Hastiin Hiawatha Hokolesqua Hehaka Hluugitgaa Hahtalekin Hallalhotsoot Hinmatoowyalahtqit Husishusis_Kute Huupi-pahati Hitetetsi 
+		Hokoleskwa Hadawa-ko Hayonhwonhish Honayawas Hutgohsodoneh
+		Iqaluk Isapo-Muxika Itzamna Itzcoatl Inkpaduta Istahba Ipeelee Ippakness_Wayhayken Isaviah Isananaka
+		Kaneonuskatew Kawacatoose Kenojuak Kinich Kisecawchuck Klah Ketsumse Kekewepelethy Kaintwakon Kanosh Klaesh
+		Lalawethika Lawoughqua Lomayumtewa
+		Mahihkan Mahpiya Malik Ma_ome Maquinna Ma_tano Mekaisto Meona_hane Mistawasis Motecuhzoma Mushulatubbee
+		Mupitsukupu Muscowequan Monkaushka Maskipitonew Masset Mopechucope MihS_ihkinaahkwa Moluntha Mahthela Muscquaconocah
+		Naiche Nanuq Noodin Notah Naalak Ninstints Nocona
+		Odeserundiye Ohiyesa Ojigkwanong Onangwatgo Ollokot Ouray Owitze
+		Pitikwahanapiwiyin Pitsiulaaq Potsunakwahipu Pitseolak Peopeo_Kiskiok_Hihih Puhihwitsikwasu Parosawano Pocheha-quehip 
+		Pahayoko Puckenshinwa Penagashea Pepquannakek Paxinosa Peteusha PepekitaakamhS_i Pushmataha Paseego Pinquanah Pocatello Pahninee
+		Qillaq Qinnuajuaq Quanah  Quenah-evah Quatawapea
+		Sequoyah Sganyodaiyo Shenandoah Skenandoa Sinte Skaay Skidegate Sousouquee Spemica_Lawba Shemanetoo
+		Sakokwenionkwas Sagoyewatha Sayenqueraghta Sigwaahdohgwih Sosondowa Sanpitch Sapiah Sapinero Severo
+		Tahlako Taqqiq Tarqik Tasunka Tatanka Tecumseh Tenskwatawa Tessouat Tiriaq Tlaloc Toohoolhoolzote
+		Tonatiuh Tosahwi Tuhuyakwahipu Tulugaq Tamaha Tahaygen Tuekakas Tabby-nocca Tawaquenah Tau-Gu
+		Tanacharison Thaonawyuthe Tejonihokarawa Taignoagny Tewahangarahken Tuskaloosa Tenaya Tuba
+		Thahca Thasunke Thathanka Thaoyate_Duta Tahlonteeskee Tabby-To-Hwanah Tse-Ne-Gat Tutsegabit
+		Ujarak Ujaraq Ve_keseheveho Uboni
+		Wahunsenacawh Wambdi Wambli Wapasha Wawatam Wickaninnish Wiisheyksh Wanbdisapa Wanata Waakakwasi Wulea-boo Wawahchepaehai Weyapiersenwah 
+		WeS_ihS_imo Wiliwi Walkara Washakie Wirasuap
+		Yaxkin Yolotl Yolotzin Yonaguska Xhuuyaa
+		Yukiuma
+	}
+	female_common_first_names = {
+		Aikaterini Aganiki Asimina Anna Anastasia Alexandra Akrivi Amalia Adriana Agatha Agnes Aikaterine Alexeia Anthe Anthousa Antipatra Antonia Apollonia Athanasia Aigidia Garyphallia 
+		Barbara Basillike
+		Chrysogone
+		Domnitsa Despina Domna Damiane Demetra Dionysia Dorothea 
+		Evanthia Eliza Elpida Eleni Eleftheria Eirini Evfrosini Eirene Elaiodora Epiphania Eudokia Eudoxia Eugenia Eulalia Eunike Euphemia Euphrasia Euphrosyne Eupraxia Eusebia Eustathia
+		Georgia Gregoria 		
+		Hypatia
+		Ilektra Ioanna Ioulia Iouliana Ioustina  
+		Kalliroi Kalliopi Konstantina Kiriakoula Kale Konstantia Kyra Kyriake
+		Lena Laskarina Loukia
+		Marika Maria Marianna Manto
+		Photini
+		Sofia Soteria Sevasti
+		Thaleia
+		Virginia Vassiliki
+		Zacharati Zoe
+		Azayamankawin Ansnaq Ahuhwuthtakum Akat Alliquippa Adsila Ajei Ameohne_e Ameyalli Anangikwe Apanii Arnaq Aviaaja Awee Awinita 
+		Chony Chipeta Cayetana Citlali Citlalli 
+		Dehhewanis Dahteste Dehgewanus Dehhewamis Dezba Dos-teh-seh 
+		Eseeva_e
+		Gahonnoneh Gowongo Galilahi Giiwedinokwe Gouyen Goyan Guwisti 
+		Heyoon_Yoyikt Haayiitaapama Haya Ha-o-zinne Hauzini Ho_otseoo_e 
+		Isani Iina Inola Isi Itzel Ixchel
+		Jadal_q-eganga
+		Kung_Jaadee Kwiigeliones K-woiyang Khapkhaponimi Kaniehtiio Kateri Kawisenhawe Kimimela
+		Lilah Lydia
+		Qawkuna
+		Mitiarjuk Mahchettawookey Methoataske MayataakwipiiwehS_i Ma_evehpota_e Malinalli Metztli Meztli Miigwan Miillaaraq Mokee_e 
+		Naduah Nonhelema Nanawu Nampeyo Naja Nanabah Nauja Nayeli Neohne_e Nikte Nindaanis Nipisiy Nita Niviarsiaq Nizhoni Nuka 
+		Owanah Otellie
+		Polikissut Pi_tamaka Peahchepeahso Pamahas Pahoevotona_e Piloqutinnguaq Pipaluk Pittiulaaq Pocahontas
+		Quetzalli
+		Rowena
+		Skil_Kew_Wat Shawsheen Sacagawea Saknikte Shandiin Shikoba Siqiniq Sissinnguaq Sons-ee-ah-ray
+		Topahhdewin Tishynah Tuhbenahneequay Tekarihogen Topsannah Toepay Tonarcy Tekakwitha Tyonajanegen Tagwanibisan Taqqiq Tashina Tayanita Tlalli Tonalli Topusana Tupaarnaq 
+		Ukaleq Ulloriaq
+		Verna Vanaheo_o Ve_keseha_e Voestaa_e Vonahe_e 
+		Wakanmaniwin Wakantakawin Wakhan_Inazin_Win Wahnenauhi Weakeah WelepiiwehS_i Wenega Woryi Walela Wapanacahkos Winona 
+		Xiadani Xochiquetzal Xochitl Xquenda 
+		Yulaka Yatzil Yolotli Yoloxochitl 
+		Zazil Zeltzin Zitkala Zyanya	
+	}
+	male_regal_first_names = {
+		Alexandros
+		Filippos
+		Georgios
+		Ioannis
+		Konstantinos
+		Nikolaos
+		Pavlos
+	}
+	female_regal_first_names = {
+		Alexandra Alexia
+		Eleni Eirini
+		Konstantina
+		Maria
+		Olympia Olga
+		Sofia
+		Theodora
+	}
+
+	# some Hellenic forms of names from the Livre d'Or de la Noblesse Ionienne
+	# also added Souliotes
+	noble_last_names = { 
+		Arvanitachi Argyropoulos Apokavkos Avestaktys Argyris Attikes Akripolitys Anemas
+		Angylos_Palaiologos
+		Benizelos Botsaris Boutzias Bousbos Boufis Bekas Bringas
+		Charalambis
+		Christakis-Zografos
+		Drakos Dousmanis Danglis Dragases Doukas
+		Dragases_Palaiologos
+		Exotrokos
+		Fotos Frankopolos Foumis
+		Gonemis Galatis Gonatas
+		Hexavolis Hatzidakis Hexakionitys Hatzianestis
+		Iras
+		Kolokotronis Kapodistrias Kalogeras Kallergis Kartanos Koutsonikas Kaskaris Kamenyatis Kovtzodaktylos Karphytzys Komnenos Kamytzys Kametiros Kentrokovkoros Katepanys Kanaris Katsimiros Kondylis Kountouriotis Kriezis
+		Komnenos_Doukas
+		Levidis Landos Lyavos Lalovdys Laskaris
+		Metaxas Manos Mavromichalis Mavrokordatos Mamonas Marmoras Mantzos Matis Mourouzis Makrimbolitys Matzovkys Mavrikios Makriyannis Mavrocordatos Mavrovouniotis Mouskos
+		Notaras Nikas Negreponte Nikephoros Nider
+		Othonaios
+		Pieros Polylas Prosalendi Patrikios Papagiannis Palamas Pandazis Palaiologos Prinkyps Palaskas Pangalos Papadiamantopoulos Papadopoulos Papagos Papoulas Parakevopouolos Plapoutas Plastiras
+		Rodostamos Rallis
+		Soutsos Seos Sachinis Salataris Sphrantzys Saphyro Skandalys Skoutariotys Stavrakios Stratiotikys Sellokilys Symvatekys Sapountzakis Sarafis Smolenskis Sofoulis Spyromilios Staikopoulos Stanotas
+		Theotokis Tzavelas Thanasis Toras Todis Tzoris Tourkpolos Tatykis Tzantzys Taronitys Trikoupis Tsakalotos Tsolakoglou
+		tis_Konstantinovpolis 
+		tis_Mystras
+		tis_Makedonya
+		tis_Aleksandria
+		tis_Elladas
+		Typaldos-Alfonsatos
+		Vlassopoulos Velios Valerys Vassos Venizelos Voulgaris Zaimis
+		Xylinitys
+		Ypsilantis
+		Zarbas Zymvrakakis
+		Ay Atagotaaluk Ahenakew Ahtahkakoop Alpowai Ahwahne
+		Begaye
+		Ceel Chan Chi Chochenyo Cucunuchi
+		Gispwudwada Gashowu
+		Hakadah Hastiin_Dagha Hois
+		Idinsaw
+		Kahkewistahaw K-aayelii Kwahadi Kotsoteka Katchongva Kalina
+		Lathlin Lamatta Lakisamni
+		Moyotlan
+		Nokoni Naha
+		Ohiya_S-a Okwanuchu
+		Pat Pec Poot Pikunin Penateka Panapi
+		Sekaquaptewa
+		Tamaha Tullaugaq Taantakwaan Timbimboo Timpanog Tussawehee Tawalimnu
+		Umatilla
+		Wakinyanduta Wowinape Wallowa Winnemucca Wukchumni
+		Y-akwa-lanas Yamparika Ynitia
+	}
+	common_last_names = {
+		Andreou Aspiotis Andriakopoulos Athanasopoulos Anninos Athanasiou Akratopoulos Antonpoulos Asimakopoulos Axiotis
+		Belokas Benardis Baltatzis
+		Chalkokondylis Chrysafis Chorafas Chrysafos Chazapis Charalambis
+		Deligiannis Damaskos Diamantis Diamantopoulos Dontis Drivas Dalezios Douros
+		Eftaxias
+		Fetsis Fetsios Frangoudis Frangopoulos Foustanos Farmakidis Freris Fotilas
+		Gennimatas Golemis Gerakeris Grigoriou Gouskos Georgiadis Gaitanos Grigoriadis Gneftos Gazis
+		Hatzidakis
+		Iatrou Iatridis 
+		Karousou Karakatsanis Kafetzis Koletis Kostantinidis Konstantinou Karakalos Karvelas Karagiannopoulos Karasevdas Karagiannis Katravas Khatzis Kontos Koukoudakis Kourkoulas Kasdaglis Kallisperi Kanaris Konstantas
+		Lagoudakis Lavrentis Loverdos Loundras Langakis Levidis Lamprakis Laskaridis Lerias Liapis Logothetis
+		Merkatis Mouratis Masouris Mitropoulos Mikhailidis Moustakopoulos Morakis Mangourakis Markou Marnezos Mazoukas Mikhalopoulos Malokinis Mavrommatis Mavrogenes Mansolas
+		Nikolopoulos Nastos Neroutsos Negris
+		Orphanidis Orlandos
+		Paraskevopoulos Papasymeon Papadiamantopoulos Persakis Papasideris Pierrakos-Mavromichalis Poulos Pyrgos Petmezas Papaioannou Pavlidis Platis Petrou Pantazidis Patsouris Pothitos Pepanos Paspatis Petrokokkinos Papafingos Peppas Psychas Printezis Papailiopoulos
+		Romantzas Rallis Roussos
+		Skaltsogiannis Stais Sanidis Salouros Santanis Stournaras Siganous Skandalidis
+		Theodoropoulos Tryfiatis-Tripiaris Tsiklitiras Theofilakis Trikoupis Triantafyllakos Tombazis
+		Versis Vasilakos Vrettos Vouros Vourakis Vavis Valetsiotis Vlachos Vikhos Vrasivanopoulos Vlassis Vourvoulis Voustinos Vakondios Varthalitis
+		Xydras Xenakis Xenopoulos Xylinakos
+		Zoumis Zanos Zacharopoulos Zervinis Zafyropoulos Zarifi
+		Ak_ab_al Ahuactzin Awiakta Ashtola Antowie Arivaipa Alakannuark Arreak Ashoona Assiniwi
+		Banyacya
+		Cal Canek Canul Ceh Chee Choc Coc Curruchic Coyotl Cuautlaxahue Cibecue Ch_ilhanjini Chalahgawtha
+		Duta Da_ghaaii Daaxan
+		Enuaraq Evaloarjuk Esarosavit Eskippakithiki Evehema
+		Gleska
+		Huste Hak Hokolesqua Honyestewa Humetewa
+		Ixquiac Itzel Ixtlilxochitl Iyotake Ipeelee Irgittuq Itehtah_o Ishii
+		Jupe
+		Kan Kohkophapi Kramarae Keenainak Kunuk Kusugak Kiskiyew Ketahtoh Kispokotha KaskE_
+		Luta Lomahaftewa Loloma Lomayesva
+		Matlacuahuac Mayahuel Moxo Munoz Maksagak Motso Motsai Mecoce
+		Nahui Nappaaluk Nutarak Naat_aa Ni-isyuus
+		Ocelotl Orr Opessa Oklahombi
+		Pek Pop Puk Panecatl Pecan_Wakpa Paniloo Piugattuk Pudluk Psday Piatote Pohee Pigianigwai Pahnaixte Pekowi Peckuwe Pitchlynn
+		Quissa
+		Shal Sho Sapa Sivuarapik Shipak A_kamithagI_
+		Tecu Teul Tuyuc Tlaxca Tletla Tzehe Thankja Tiktaalaaq To_tso_nii Tenawa Tanima Tekapwai Thawikila Teyoc Tillohash
+		Ungallaq
+		Witko Wahkoh Wohoi WahaToya Wia_ne
+		Xicara Xiloj Xaxalpa Xochitl
+		Yahgulanaas
+		Zapotitla Zicotencatl Zah Zachai
+	}
+
+    graphics = european
+	ethnicities = {
+		1 = south_american
+	}
+}
+
+
+
+quechua={
+	color= hsv{ 0.10 0.22 0.69 }
+	religion = inti
+	traits = { indigenous_american_heritage south_american_group pagan_heritage }
+
+    obsessions = {
+        fruit
+    }
+	male_common_first_names={
+		Amaru Atahualpa Atoc_Sopa Anco_Coyuch Aiyotechapun
+		Buvaovamu
+		Cayo_Topa Coyllas Cusichaca Caja_Cimcim Chumun_Caur Chumtiku Cama_Bergu Caja_Capac
+		Draytonamu Docoshamu
+		Ehenymacu
+		Felan_Tamuc
+		Guaman_Chumu Guari_Cur Gusmango
+		Huascar Huayna_Capac 
+		Inti Inca_Roca Ilsayunamu
+		Jotiantikaka
+		Litun
+		Manco_Capac Michan_Caman Muhton_Belan Michan_Chimor Melantonan
+		Ninan_Cuyuchi Nancen_Pico Nehuametepun Nartamamu
+		Orco_Varanca Orco Opolcynamun
+		Pachakutiq Pascac Pomaguala Pumi_Sopa Puznaymun Pacatmamu
+		Relyen_Padnu
+		Sayri_Tupac Surandaman Seran_Tugun Seton_Apac
+		Tupaq Tupac_Amaru Titu_Cusi_Yupanqui Tupac_Hualpa Tupac_Yupanqui Taraq Troynuremo Taracun
+		Usca_Curiatao Urtyantemu
+		Viracocha Villac_Umu 
+		Waman Willka
+		Yahuar_Hacuac Yamqui_Mayta Yetuniamu
+		Zambiza Zopahua
+	}
+	female_common_first_names = {
+		Asiri
+		Cuyuchi
+		Quispe Quispe_Titu
+		Katitika Killa Kantuta
+		Miski
+		Nina Naira
+		Ruminavi
+		Tamya Tuta
+		Urpi
+		Vetsalynun
+		Wayna Wayra
+		Yuraq
+	}	
+	male_regal_first_names = {
+		Atahualpa
+		Tupaq
+		Huascar
+		Viracocha
+		Pachakutiq
+		Inti
+		Inca_Roca
+	}
+	noble_last_names = {
+		Cajahuanca Canchata Chambi Chihuan Tiso Nancempinco Chilche Luyes Illa 
+		Cusurichi Gamarra Guaman Guayasamin Heredia Humala Iturri Sumac Anquimarca Apo Atoc Atoc-Suqui 
+		Auqui-Huaman Canchari Chalcuchima Challco Chiaquitinta Colla-Topa Curiatao Cusi Guacra Guaritito
+		Guaritopa Huachuri Huaman Huaypalcon Illaquita Inquill Llicllic Maila Maras Marcavilca Mayta 
+		Ninancoro Ozcoc Parinango Paucar Paullu Pomacapi Puma Pusca Puyu-Vilca Quilaco Quingallumbo Quintiraura 
+		Quisquis Quizo Rimac Ronpa Sahuaraura Sotaurco Tanqui Tucuycuyche Tupac-Amaru Yupanqui Guacricaur Tacaynamo 
+	}
+	common_last_names={
+		Cajahuanca Canchata Chambi Chihuan Tiso Nancempinco Chilche Luyes Illa 
+		Cusurichi Gamarra Guaman Guayasamin Heredia Humala Iturri Sumac Anquimarca Apo Atoc Atoc-Suqui 
+		Auqui-Huaman Canchari Chalcuchima Challco Chiaquitinta Colla-Topa Curiatao Cusi Guacra Guaritito
+		Guaritopa Huachuri Huaman Huaypalcon Illaquita Inquill Llicllic Maila Maras Marcavilca Mayta 
+		Ninancoro Ozcoc Parinango Paucar Paullu Pomacapi Puma Pusca Puyu-Vilca Quilaco Quingallumbo Quintiraura 
+		Quisquis Quizo Rimac Ronpa Sahuaraura Sotaurco Tanqui Tucuycuyche Tupac-Amaru Yupanqui Guacricaur Tacaynamo
+		Wallparrimachi
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = decentralised_americas
+}
+
+guarani={
+	color= rgb{ 194 109 46 }
+	religion = south_american
+	traits = { indigenous_american_heritage south_american_group pagan_heritage }
+
+    obsessions = {
+        fruit
+    }
+	male_common_first_names={
+		Amaru Amapytu Amangy Arasunu 
+		Chavuku Cayo Coyllas
+		Huaypalcon
+		Karai Katupyry Kuarahy Kuarahyrese Kantuta
+		Luyes
+		Maitei Mba_ehory Mbarakapu Marcavilca
+		Namandu 
+		Tatarendy Tatajyva Tatapytu Ygary Tekokatu Topa
+		Sopa 
+	}
+	female_common_first_names = {
+		Araresa Aravera Ana Aratiri 
+		Cusichaca 
+		Huachuri 
+		Jakaira Jeruti
+		Maiara 
+		Nina 
+		Tajy Tuvicha 
+		Ysapy
+	}	
+	noble_last_names = {
+		Anzoategui
+		Guarani
+		Tiaraju
+		Tumpa
+	}
+	common_last_names={
+		Abjaisu Ayegua Atlatl
+		Bomboi 
+		Camba Chuaie Correa Cunhagatu Caracara Calchagui Cario Curupaiti Curumai Caaigua Ciriguana
+		Galeano	Guaracay  
+		Itatine
+		Jopara 
+		Morla Mbigua
+		Ortiz
+		Parave Picagua 
+		Quiloazaz
+		Riquelme Rivarola 
+		Tarayu Torga Timbu Tucague Tarci Tape
+		Yaguarete Yrahi
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = decentralised_americas
+}
+
+aimara={
+	color= hsv{ 0.02 0.57 0.74 }
+	religion = inti
+	traits = { indigenous_american_heritage south_american_group pagan_heritage }
+
+    obsessions = {
+        fruit
+    }
+	male_common_first_names={
+		Amaru Atahualpa Atoc_Sopa Anco_Coyuch Aiyotechapun
+		Buvaovamu
+		Cayo_Topa Coyllas Cusichaca Caja_Cimcim Chumun_Caur Chumtiku Cama_Bergu Caja_Capac
+		Draytonamu Docoshamu
+		Ehenymacu
+		Felan_Tamuc
+		Guaman_Chumu Guari_Cur Gusmango
+		Huascar Huayna_Capac 
+		Inti Inca_Roca Ilsayunamu
+		Jotiantikaka
+		Litun
+		Manco_Capac Michan_Caman Muhton_Belan Michan_Chimor Melantonan
+		Ninan_Cuyuchi Nancen_Pico Nehuametepun Nartamamu
+		Orco_Varanca Orco Opolcynamun
+		Pachakutiq Pascac Pomaguala Pumi_Sopa Puznaymun Pacatmamu
+		Relyen_Padnu
+		Sayri_Tupac Surandaman Seran_Tugun Seton_Apac
+		Tupaq Tupac_Amaru Titu_Cusi_Yupanqui Tupac_Hualpa Tupac_Yupanqui Taraq Troynuremo Taracun
+		Usca_Curiatao Urtyantemu
+		Viracocha Villac_Umu 
+		Waman 
+		Yahuar_Hacuac Yamqui_Mayta Yetuniamu
+		Zambiza Zopahua
+	}
+	female_common_first_names = {
+		Asiri
+		Cuyuchi
+		Quispe Quispe_Titu
+		Katitika Killa
+		Miski
+		Nina
+		Ruminavi
+		Tamya Tuta
+		Urpi
+		Vetsalynun
+		Wayna Wayra
+		Yuraq
+	}	
+	male_regal_first_names = {
+		Atahualpa
+		Tupaq
+		Huascar
+		Viracocha
+		Pachakutiq
+		Inti
+		Inca_Roca
+	}
+	noble_last_names = {
+		Cajahuanca Canchata Chambi Chihuan Tiso Nancempinco Chilche Luyes Illa 
+		Cusurichi Gamarra Guaman Guayasamin Heredia Humala Iturri Sumac Anquimarca Apo Atoc Atoc-Suqui 
+		Auqui-Huaman Canchari Chalcuchima Challco Chiaquitinta Colla-Topa Curiatao Cusi Guacra Guaritito
+		Guaritopa Huachuri Huaman Huaypalcon Illaquita Inquill Llicllic Maila Maras Marcavilca Mayta 
+		Ninancoro Ozcoc Parinango Paucar Paullu Pomacapi Puma Pusca Puyu-Vilca Quilaco Quingallumbo Quintiraura 
+		Quisquis Quizo Rimac Ronpa Sahuaraura Sotaurco Tanqui Tucuycuyche Tupac-Amaru Yupanqui Guacricaur Tacaynamo 
+	}
+	common_last_names={
+		Cajahuanca Canchata Chambi Chihuan Tiso Nancempinco Chilche Luyes Illa 
+		Cusurichi Gamarra Guaman Guayasamin Heredia Humala Iturri Sumac Anquimarca Apo Atoc Atoc-Suqui 
+		Auqui-Huaman Canchari Chalcuchima Challco Chiaquitinta Colla-Topa Curiatao Cusi Guacra Guaritito
+		Guaritopa Huachuri Huaman Huaypalcon Illaquita Inquill Llicllic Maila Maras Marcavilca Mayta 
+		Ninancoro Ozcoc Parinango Paucar Paullu Pomacapi Puma Pusca Puyu-Vilca Quilaco Quingallumbo Quintiraura 
+		Quisquis Quizo Rimac Ronpa Sahuaraura Sotaurco Tanqui Tucuycuyche Tupac-Amaru Yupanqui Guacricaur Tacaynamo
+		Wallparrimachi
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = decentralised_americas
+}
+
+amazonian={
+	color= hsv{ 0.38 0.58 0.59 }
+	religion = south_american
+	traits = { indigenous_american_heritage south_american_group pagan_heritage }
+
+    obsessions = {
+        fruit
+    }
+	male_common_first_names={
+		Guama
+		Jumacao
+		Mabey
+		Nasio
+		Ornofay
+		Yaureibo
+		Amaru Aiyotechapun
+		Buvaovamu
+		Coyllas Cusichaca Chumtiku 
+		Draytonamu Docoshamu
+		Ehenymacu
+		Gusmango
+		Ilsayunamu
+		Jotiantikaka
+		Litun
+		Melantonan
+		Nehuametepun Nartamamu
+		Opolcynamun
+		Pascac Pomaguala Puznaymun Pacatmamu
+		Surandaman
+		Taraq Troynuremo Taracun
+		Urtyantemu
+		Waman Willka
+		Yetuniamu
+		Zambiza Zopahua
+	}
+	female_common_first_names = {
+		Anacaona
+		Barbe
+		Casiguaya
+		Tinima
+		Yahima
+		Asiri
+		Cuyuchi
+		Quispe
+		Katitika Killa Kantuta
+		Miski
+		Nina Naira
+		Ruminavi
+		Tamya Tuta
+		Urpi
+		Vetsalynun
+		Wayna Wayra
+		Yuraq
+	}	
+	noble_last_names = {
+		Aikana
+		Amahuaca
+		Apetina
+		Baniwa
+		Bororo
+		Canela
+		Guaycuru
+		Hupda
+		Jecupe
+		Metuktire
+		Minuane
+		Nambikwara
+		Paiakan
+		Parintintin
+		Umutina
+		Wayana
+		Yanomami
+	}
+	common_last_names={
+		Arawak
+		Arawa
+		Bororo
+		Garifuna
+		Guayana
+		Ge
+		Jeiko
+		Kaingang
+		Kalinago
+		Kamakan
+		Karaja
+		Kayapo
+		Matses
+		Maxakali
+		Puri
+		Timbira
+		Xavante
+		Xerente
+		Xokieng
+		Yanomamo
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = decentralised_americas
+}
+
+patagonian={
+	color=hsv{ 0.23 0.24 0.9 }
+	religion = south_american
+	traits = { indigenous_american_heritage south_american_group pagan_heritage }
+
+    obsessions = {
+        fruit
+    }
+	male_common_first_names={
+		Ancamilla Aillavilu Abayuba Antiman Antinanco Aucaman
+		Conoepan Catrileo Caupolican Caracara
+		Huenecura 
+		Illangulien Itanu
+		Jasymimbi Jandui Janduwy
+		Kerioukeiou Karupoto
+		Lautaro
+		Millarapue Millalelmo Melin Manil
+		Nampai Nahueltripai Nanco Nawel Newen
+		Paillamachu Pinolevi Purran Pelantaro Peru
+		Quilapan Quidel
+		Raoni
+		Senacua
+		Tabare Tacuabe
+		Vaimaca Vaimaca-Piru 
+		Yrupe
+		Zapican
+	}
+	female_common_first_names = {
+		Ailen Ayelen Aylen Ayun
+		Calfuray
+		Eluney
+		Licarayen Liwen
+		Millaray
+		Payne
+		Rayen
+		Sayen
+	}	
+	noble_last_names = {
+		Araucania
+		Aimore
+		Bohane
+		Calfucura
+		Colipi
+		Namuncura
+		Senaque
+		Paillalef
+		Praje
+	}
+	common_last_names={
+		Aliwen Amuylifko Aukan Ayllapan Abajino
+		Bravo
+		Chiguay Cumin Curumilla Colipi Choll-Choll
+		Epulewfu
+		Foyelkay Futikrak
+		Guaiquil Gununusa Guenoa Gueren Gutucrac
+		Huichaman Huilliche
+		Ilwen Igualdad Itueto
+		Kayupi Kumlafken Kvlapi Krekmun
+		Levinanco Lincoman Lonko Lafquenche
+		Marifil Melifilu Millakoyam Millapani Mataojo Minuan Mekmek Minhagiran
+		Nahuel Nguluche Nakrehe Naknyanuk
+		Paillacar Pillancar Pichinan Picunche Promaucae Puyucahua
+		Quelin
+		Remultray
+		Sira
+		Toqui Takrukrak
+		Unquen
+		Waikimill
+		Yankvleufu Yaro 
+		Nanku	
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = decentralised_americas
+}
+
+guajiro={
+	color={ 221 248 75 }
+	religion = south_american
+	traits = { indigenous_american_heritage south_american_group pagan_heritage }
+
+    obsessions = {
+        fruit
+    }
+	male_common_first_names={
+		Guama
+		Jumacao
+		Mabey
+		Nasio
+		Ornofay
+		Yaureibo
+		Amaru Aiyotechapun
+		Buvaovamu
+		Coyllas Cusichaca Chumtiku 
+		Draytonamu Docoshamu
+		Ehenymacu
+		Gusmango
+		Ilsayunamu
+		Jotiantikaka
+		Litun
+		Melantonan
+		Nehuametepun Nartamamu
+		Opolcynamun
+		Pascac Pomaguala Puznaymun Pacatmamu
+		Surandaman
+		Taraq Troynuremo Taracun
+		Urtyantemu
+		Waman Willka
+		Yetuniamu
+		Zambiza Zopahua
+	}
+	female_common_first_names = {
+		Anacaona
+		Barbe
+		Casiguaya
+		Tinima
+		Yahima
+		Asiri
+		Cuyuchi
+		Quispe
+		Katitika Killa Kantuta
+		Miski
+		Nina Naira
+		Ruminavi
+		Tamya Tuta
+		Urpi
+		Vetsalynun
+		Wayna Wayra
+		Yuraq
+	}	
+	noble_last_names = {
+		Aapashuna
+		Epieyu
+		Iguana
+		Tijuana
+		Ulewana
+	}
+	common_last_names={
+		Jayaliyuu
+		Jusayuu
+		Pausayuu
+		Sapuana
+		Uliana
+		Uliyuu
+		Uraliyyu
+		Walapuana
+		Walepushana
+		Eirakajaule
+		Pimienta
+		Velasquez
+		Kanakantui
+		Lumoulein
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = decentralised_americas
+}
+
+tupinamba={
+	color= hsv{ 0.44 0.24 0.71 }
+	religion = south_american
+	traits = { indigenous_american_heritage south_american_group pagan_heritage }
+
+    obsessions = {
+        fruit
+    }
+	male_common_first_names={
+		Arah Arata
+		Bira
+		Caiubi Caracara Caua
+		Italo
+		Jandui Janduwy
+		Kerioukeiou Karupoto
+		Mbicy Moacir
+		Piquerobi Pirija
+		Tibirica Torui
+		Ramalho Raoni
+		Ubirajara
+	}
+	female_common_first_names = {
+		Iracema Iara
+		Jaci Jacira
+		Maiara
+		Uiara
+		Yara
+	}	
+	noble_last_names = {
+		Caiubi
+		Jaguaranha
+		Maracaiaguacu
+		Paraguacu
+		Piquerobi 
+		Tibirica
+	}
+	common_last_names={
+		Caetes
+		Potiguara
+		Tabajara
+		Tamoios
+		Temimino
+		Tupinamba
+		Tupiniquim
+		Piratininga 
+		Tamoio 
+		Caete
+		Tupinae
+		Tupina 
+		Aricobe
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = decentralised_americas
+}
+
+
+muisca={
+	color={ 125 12 52 }
+	religion = inti
+	traits = { indigenous_american_heritage south_american_group pagan_heritage }
+
+    obsessions = {
+        fruit
+    }
+	male_common_first_names={
+		Guama
+		Jumacao
+		Mabey
+		Nasio
+		Ornofay
+		Yaureibo
+		Amaru Aiyotechapun
+		Buvaovamu
+		Coyllas Cusichaca Chumtiku 
+		Draytonamu Docoshamu
+		Ehenymacu
+		Gusmango
+		Ilsayunamu
+		Jotiantikaka
+		Litun
+		Melantonan
+		Nehuametepun Nartamamu
+		Opolcynamun
+		Pascac Pomaguala Puznaymun Pacatmamu
+		Surandaman
+		Taraq Troynuremo Taracun
+		Urtyantemu
+		Waman Willka
+		Yetuniamu
+		Zambiza Zopahua		
+	}
+	female_common_first_names = {
+		Anacaona
+		Barbe
+		Casiguaya
+		Tinima
+		Yahima
+		Asiri
+		Cuyuchi
+		Quispe
+		Katitika Killa Kantuta
+		Miski
+		Nina Naira
+		Ruminavi
+		Tamya Tuta
+		Urpi
+		Vetsalynun
+		Wayna Wayra
+		Yuraq
+	}
+	common_last_names={
+		Barreiro
+		Carrera
+		Coa
+		Guani
+		Baitiquiri
+		Majibacoa
+		Wakanik
+		Mexias
+		Nibonri
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = decentralised_americas
+}
+
+
+cariban = {
+	color={ 240 240 100 }
+	religion = south_american
+	traits = { indigenous_american_heritage south_american_group pagan_heritage }
+
+    obsessions = {
+        fruit
+    }
+	male_common_first_names={
+		Guama
+		Jumacao
+		Mabey
+		Nasio
+		Ornofay
+		Yaureibo
+		Amaru Aiyotechapun
+		Buvaovamu
+		Coyllas Cusichaca Chumtiku 
+		Draytonamu Docoshamu
+		Ehenymacu
+		Gusmango
+		Ilsayunamu
+		Jotiantikaka
+		Litun
+		Melantonan
+		Nehuametepun Nartamamu
+		Opolcynamun
+		Pascac Pomaguala Puznaymun Pacatmamu
+		Surandaman
+		Taraq Troynuremo Taracun
+		Urtyantemu
+		Waman Willka
+		Yetuniamu
+		Zambiza Zopahua	
+		Uboni
+	}
+	female_common_first_names={
+		Hazel
+		Haya
+		Isani
+		Woryi
+		Anacaona
+		Barbe
+		Casiguaya
+		Tinima
+		Yahima
+		Asiri
+		Cuyuchi
+		Quispe
+		Katitika Killa Kantuta
+		Miski
+		Nina Naira
+		Ruminavi
+		Tamya Tuta
+		Urpi
+		Vetsalynun
+		Wayna Wayra
+		Yuraq
+	}
+	noble_last_names = {
+		Chatoyer
+		Kalina
+		Panapi
+	}
+	common_last_names = {
+		Armstrong
+		Cunningham
+		Dilson
+		Hall Haymond Hewlett
+		Israel
+		Johnson
+		Le_Shaw
+		McCrea
+		Newport
+		Pitts Pym
+		Robinson Rivera
+		Warren Wood Weaver
+		Baltazar
+		Colo_n
+		Flores
+		Lorenzano Lopez
+		Martinez
+		Pae_z Palacio
+		Rivero Ramos
+		Zapata
+	}
+	
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = decentralised_americas
+}
+
+inuit={
+	color= hsv{ 0.49 0.03 0.99 }
+	religion = eskaleut
+	traits = { indigenous_american_heritage north_american_group pagan_heritage }
+
+    obsessions = {
+        fish
+    }
+	male_common_first_names={
+		Caubvick
+		David
+		Ernie
+		Germaine
+		Markoosie
+		Ipeelee
+		Jack
+		James
+		Jose_2
+		Kenojuak
+		Naalak
+		Peter
+		Pitseolak
+		Steve
+		Simeonie
+		Titus
+	}
+	female_common_first_names = {
+		Alacie
+		Beatrice
+		Josephine
+		Madeline
+		Mina
+		Mitiarjuk
+		Sheila
+	}	
+	noble_last_names = {
+		Atagotaaluk
+		Tullaugaq
+	}
+	common_last_names={
+		Alakannuark
+		Arreak
+		Ashoona
+		Enuaraq
+		Evaloarjuk
+		Ipeelee
+		Irgittuq
+		Keenainak
+		Kunuk
+		Kusugak
+		Maksagak
+		Nappaaluk
+		Nutarak
+		Paniloo
+		Piugattuk
+		Pudluk
+		Tiktaalaaq
+		Ungallaq
+		Quissa
+		Sivuarapik
+	}
+	ethnicities = {
+		1 = circumpolar
+	}
+	graphics = east_asian
+}

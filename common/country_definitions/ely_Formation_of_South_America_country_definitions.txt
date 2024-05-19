@@ -1,0 +1,23 @@
+﻿FOA = { ### 南アメリカ
+	color = { 240 60 0 }
+	tier = hegemony
+	country_type = recognized
+	cultures = { amazonian quechua aimara guarani cariban patagonian tupinamba guajiro muisca }
+	capital = STATE_LIMA
+}
+
+NRK = { ### 南アメリカ
+	color = { 240 60 0 }
+	tier = kingdom
+	country_type = recognized
+	cultures = { amazonian cariban guajiro muisca }
+	capital = STATE_CUNDINAMARCA
+}
+
+SRK = { ### 南アメリカ
+	color = { 240 60 0 }
+	tier = kingdom
+	country_type = recognized
+	cultures = { aimara guarani patagonian }
+	capital = STATE_BUENOS_AIRES
+}

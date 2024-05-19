@@ -1,0 +1,653 @@
+﻿fulbe={
+	color= hsv{ 0.54 0.52 0.53 }
+	religion = sunni
+	traits = { western_bantoid west_african_culture_group african_heritage }
+
+    obsessions = {
+        coffee
+    }
+	male_common_first_names={
+		Abdullahi
+		Abubakar
+		Ahmadu
+		Alfa
+		Amadu
+		Balobo
+		Dan
+		Malam
+		Muhammed
+		Seku
+		Tidiani
+		Tukur
+		Umar
+		Usman
+		Yaqub
+		Yusufu
+	}
+	female_common_first_names = {
+		Aisha
+		Asmau
+		Hadiza
+		Saraki
+		Turai
+	}	
+	noble_last_names = {
+		Bayero
+		dan_Fodio
+		Denianke
+		Ribadu
+		Saraki
+		Toorodi
+	}
+	common_last_names={
+		Amadu
+		Bello
+		Dadi
+		Fodio
+		Ibrahim
+		Sa_id_Tall
+		zaki
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+haratin={
+	color= hsv{ 0.95 0.39 0.78 }
+	religion = sunni
+	traits = { semite west_african_culture_group arab_speaking middle_eastern_heritage }
+
+    obsessions = {
+        coffee
+    }
+	male_common_first_names = {
+		Messaoud
+	}
+	female_common_first_names = {
+		Aicha
+		Amina
+		Batoul
+		Fadhma
+		Nadia
+		Souhila
+		Touria
+		Zina
+	}	
+	noble_last_names = {
+		al-Alawi
+		ben_Gana
+		Benaissa
+		Djellouli
+	}
+	common_last_names = {
+		Ould_Boulkheir
+		ibn_Ali
+		ibn_Yusuf
+		Sabiri
+		Sharvit
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+hausa={
+	color= hsv{ 0.83 0.40 0.50 }
+	religion = sunni
+	traits = { hausa_group west_african_culture_group african_heritage }
+
+    obsessions = {
+        coffee
+    }
+	male_common_first_names={
+		Alhassan
+		Abdullah
+		Baba
+		Bugaya
+		Daud
+		Kanajeji
+		Kumbari
+		Muhammad
+		Sharif
+		Tsamiya
+		Usman
+		Yaji
+	}
+	female_common_first_names = {
+		Amarya
+		Amina
+		Halima
+		Maryam
+		Safiya
+	}	
+	noble_last_names = {
+		Agalawa
+		Dantata
+	}
+	common_last_names={
+		Abasama
+		Audu
+		Kabe
+		Rumfa
+		Zaki
+		Zamnagawa
+		al-Hajj
+		al-Walid
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+songhai={
+	color= hsv{ 0.94 0.50 0.55 }
+	religion = sunni
+	traits = { songhai_group west_african_culture_group african_heritage }
+
+    obsessions = {
+        coffee
+    }
+	male_common_first_names={
+		Atwa
+		Bassaru
+		Bigo
+		Bumi
+		Dauda
+		Fodi
+		Hanga
+		Hargani
+		Issoufou
+		Koyze
+		Malla
+		Samsu
+		Tomo
+		Wankoy
+	}
+	female_common_first_names = {
+		Aisha
+		Fatimah
+	}	
+	noble_last_names = {
+		Askia
+		Attikou
+		Kodama_Komi
+		Koirategui
+		Missi
+	}
+	common_last_names={
+		Baba
+		Baki
+		Beri
+		Farma
+		Keyna
+		Mayrumfa
+		Congacou
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+tuareg={
+	color= hsv{ 0.60 0.62 0.84 }
+	religion = sunni
+	traits = { berber_group west_african_culture_group african_heritage }
+
+    obsessions = {
+        coffee
+    }
+	male_common_first_names={
+		Abareybon
+		Ag_Mama
+		Ahmad
+		Attici
+		Aytarel
+		Hasso
+		In_Tayaden
+		Islaman
+		Issouf
+		Kiddu
+		Majila
+		Moussa
+		Musa
+	}
+	female_common_first_names = {
+		Malika
+		Nina
+		Safia
+	}	
+	noble_last_names = {
+		Ag_Alhabib
+		Ikhia
+	}
+	common_last_names={
+		ag_Amastan
+		ag_Amellal
+		ag_Muhammad
+		ag_Sidi
+		al-Hajj
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+wolof={
+	color= hsv{ 0.56 0.19 0.40 }
+	religion = sunni
+	traits = { western_bantoid west_african_culture_group african_heritage }
+
+    obsessions = {
+        coffee
+    }
+	male_common_first_names={
+		Al-Buri
+		Ali_Buri
+		Amado
+		Baka
+		Bakan-Tam
+		Birawa
+		Birayamb
+		Birayma
+		Fara_Penda
+		Lat
+		Mba
+		Mbanyi
+		Samba
+		Taanor
+	}
+	female_common_first_names = {
+		Aicha
+		Fatim
+		Fatoumata
+		Ndate_Yalla
+		Njembot
+	}	
+	noble_last_names = {
+		Cisse
+		Mbodj
+		Niass
+		Ndiaye
+		Sall
+	}
+	common_last_names={
+		Aram
+		Dior
+		Khaari
+		Koddu
+		Kodu
+		Ma-Dyigen
+		N_Dyaye
+		Paate
+		Penda
+		Peya
+		Seeku
+		Tam
+		Yaago
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+baguirmi={
+	color= hsv{ 0.36 0.45 0.75 }
+	religion = sunni
+	traits = { sudanese_group central_african_culture_group african_heritage }
+
+    obsessions = {
+        coffee
+    }
+	male_common_first_names={
+		Abd_al-Rahman
+		Abdul
+		Abu-Sekkin
+		Burkomanda
+		Malam
+		Muhammad
+		Ngarmaba
+		Ngarmane
+		Uthman
+	}
+	female_common_first_names = {
+		Bintou
+		Bourkou
+		Dadji
+		Hadje
+		Salma
+		Zenab
+	}	
+	noble_last_names = {
+		Kenga
+		Mahamat
+		Zobeir
+	}
+	common_last_names={
+		Bira
+		Ermanala
+		Gawrang
+		Mohammed
+		Qadir
+		al-Kabir
+		al-Mahdi
+		as-Saghir
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+kanuri={
+	color= hsv{ 0.87 0.04 0.74 }
+	religion = sunni
+	traits = { kanuri_group central_african_culture_group african_heritage }
+
+    obsessions = {
+        coffee
+    }
+	male_common_first_names={
+		Ahmad
+		Ali
+		Dunama
+		Ibrahim
+		Idris
+		Mamane
+		Muhammad
+		Mustapha
+		Umar
+		Waziri
+		al-Amin
+	}
+	female_common_first_names = {
+		Aissa
+		Maryam
+	}	
+	noble_last_names = {
+		Duguwa
+		Imam
+		Kanemi
+		Mai-Bornu
+		Sayfawa
+		Sheriff
+	}
+	common_last_names={
+		Dalatumi
+		Dipcharima
+		Gana
+		Kingibe
+		Lefiami
+		Sayfawa
+		al-Kanemi
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+teda={
+	color= hsv{ 0.23 0.49 0.77 }
+	religion = sunni
+	traits = { sudanese_group central_african_culture_group african_heritage }
+
+    obsessions = {
+        coffee
+    }
+	male_common_first_names={
+		Adham
+		Ahmad
+		Ali
+		Ibrahim
+		Jawda
+		Kharut
+		Muhammad
+		Raqib
+		Salih
+		Yakob
+		Yusuf
+	}
+	female_common_first_names = {
+		Fatime
+	}	
+	noble_last_names = {
+		Habre
+		Kichidemi
+		Nouri
+	}
+	common_last_names={
+		Abd_al-Aziz
+		Abda_al-Karim
+		Arous
+		Derret_ibn_Jawda
+		al-Sharif
+		as-Sarhir
+		ibn_Ali
+		ibn_Yusuf
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+beja={
+	color= hsv{ 0.16 0.50 0.90 }
+	religion = sunni
+	traits = { semite east_african_culture_group african_heritage }
+
+    obsessions = {
+        coffee
+    }
+	male_common_first_names={
+		Adlan
+		Awkal
+		Badi
+		Hassab
+		Gely
+		Idris
+		Isma_il
+		Nasir
+		Nawwar
+		Nul
+		Rajab
+		Ranfa
+		Tabl
+		Unsa
+	}
+	female_common_first_names = {
+		Fatimah
+		Medina
+	}	
+	noble_last_names = {
+		Aliab
+		Busati
+		Gwelei
+		wad_Muhammad
+	}
+	common_last_names={
+		Ibn_Badi
+		Ibn_Ismail
+		Ibn_Tabl
+		Likaylik
+		Muhammad
+		Rabihi
+		ibn_Nul
+		wad_Rajab
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+fur={
+	color= hsv{ 0.76 0.07 0.81 }
+	religion = sunni
+	traits = { semite east_african_culture_group african_heritage }
+
+    obsessions = {
+        coffee
+    }
+	male_common_first_names={
+		Abd_al-rahman
+		Abdallahi
+		Abu
+		Ahmad
+		Ali
+		Bulad
+		Bush
+		Daud
+		Gibril
+		Harun
+		Hussein
+		Jussuf
+		Mohammed
+		Sulayman
+		Tunsam
+		Umar_Lel
+		Zakaria
+	}
+	female_common_first_names = {
+		Emtithal
+		Halima
+	}	
+	noble_last_names = {
+		Keira
+		al-Mahdi
+	}
+	common_last_names={
+		Badl
+		Bakri
+		Dinar
+		El-Fadl
+		Ibrahim
+		Khalid
+		Madyan
+		Tayrab
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+somali={
+	color={ 0.97 0.7 0.78}
+	religion = sunni
+	traits = { cushitic arab_speaking east_african_culture_group african_heritage }
+
+    obsessions = {
+        coffee
+    }
+
+	male_common_first_names={
+		Abdi Abdikarim Axmed Aul Aamir
+		Cismaan Cali Cusmaan Cabdulle Cabdiqani Cumar Cawad Cabdi
+		Dalmar
+		Faarax
+		Ismaaciil Ibraahim
+		Labaan
+		Maxamuud Maxamed Muuse Maddar_Xirsi
+		Naleye Nuur_Axmed
+		Roble
+		Shire
+		Taban
+		Xasan Xirsi_Amaan
+		Yuusuf
+	}
+	female_common_first_names = {
+		Anisa
+		Ebla
+		Faduma
+		Hasna
+		Ilhan
+		Jawahir
+	}	
+	noble_last_names = {
+		Diiriye
+		Gareen Gobroon
+		Keenadiid
+		Majerteen
+		Sugulle
+		Walashma Warsangali
+		Yabarow
+	}
+	common_last_names={
+		Adeer Afrah
+		Buqul
+		Dekiye Doreh Dhoobow
+		Gurey Galaal
+		Hirsi
+		Ibrahim
+		Keenadiid
+		Mujahid
+		Qaalib
+		Shixiri
+		Xasan
+		Yabarow
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}
+
+sudanese={
+	color= rgb{ 162 77 104 }
+	religion = sunni
+	traits = { semite arab_speaking east_african_culture_group african_heritage }
+
+    obsessions = {
+        coffee
+    }
+	male_common_first_names={
+		Abbas
+		Abdallahi
+		Abdullah
+		Amsalu
+		Bakri
+		Hassan
+		Ismail
+		Malusi
+		Mansur
+		Muhammad
+		Nijam
+		Rahman
+		Tahir
+		Wiraj
+		Said
+	}
+	female_common_first_names = {
+		Baghis
+		Fatima
+		Gada
+		Jalila
+		Khalida
+		Miriam
+		Noura
+	}	
+	noble_last_names = {
+		Ali
+		Zubayr
+	}
+	common_last_names={
+		Ahmad
+		Azrak
+		Digna
+		Hammuda
+		Nujumi
+		al-Tasashi
+	}
+	ethnicities = {
+		1 = african
+	}
+	graphics = african
+}

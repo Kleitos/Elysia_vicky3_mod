@@ -1,0 +1,10 @@
+﻿TCA = {
+	color = { 20  80  80 }
+	
+	country_type = recognized
+
+	tier = kingdom
+	
+	cultures = { georgian armenian azerbaijani north_caucasian }
+	capital = STATE_GREATER_CAUCASUS
+}
