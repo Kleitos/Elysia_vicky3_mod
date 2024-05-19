@@ -1,0 +1,16 @@
+﻿
+dynamic_orleanist_ruler_template = {
+	first_name = Louis
+	last_name = d_Orleans
+	ruler = yes
+	culture = primary_culture
+	female = no
+	interest_group = ig_petty_bourgeoisie
+	ideology = ideology_orleanist
+	religion = rel:catholic
+	traits = {
+	}
+	on_created = {
+		set_variable = {name = orleanist_leader }
+	}
+}
