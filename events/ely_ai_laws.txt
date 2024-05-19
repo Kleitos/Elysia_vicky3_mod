@@ -1,0 +1,187 @@
+﻿namespace = ely_ai_laws
+namespace = ely_ai_event
+
+ely_ai_laws.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = ely_ai_laws.1.t
+	desc = ely_ai_laws.1.d
+	flavor = ely_ai_laws.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {	
+		activate_law = law_type:law_free_trade
+		add_modifier = {
+			name = forced_market_opening
+			months = long_modifier_time
+		}
+	}
+
+    option = {
+		name = ely_ai_laws.1.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+
+ely_ai_laws.3 = {
+	type = country_event
+	placement = ROOT
+
+	title = ely_ai_laws.1.t
+	desc = ely_ai_laws.1.d
+	flavor = ely_ai_laws.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {	
+		activate_law = law_type:law_professional_army
+	}
+
+    option = {
+		name = ely_ai_laws.1.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+
+ely_ai_laws.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = ely_ai_laws.1.t
+	desc = ely_ai_laws.1.d
+	flavor = ely_ai_laws.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {	
+		activate_law = law_type:law_slavery_banned
+	}
+
+    option = {
+		name = ely_ai_laws.1.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+
+ely_ai_event.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = ely_ai_event.1.t
+	desc = ely_ai_event.1.d
+	flavor = ely_ai_event.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		c:LMV = {
+			annex = c:SIC
+		}
+	}
+
+    option = {
+		name = ely_ai_event.1.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+
+ely_ai_event.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = ely_ai_event.1.t
+	desc = ely_ai_event.1.d
+	flavor = ely_ai_event.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		c:SIA = {
+			annex = c:CHP
+			annex = c:CMI
+			annex = c:LUA
+		}
+	}
+
+    option = {
+		name = ely_ai_event.1.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+	}
+}

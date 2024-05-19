@@ -1,0 +1,134 @@
+﻿namespace = liberty_event
+
+# Pagan freedom
+liberty_event.1 = { 
+	type = country_event
+    placement = root
+
+    title = liberty_event.1.t
+    desc = liberty_event.1.d
+    flavor = liberty_event.1.f
+
+    event_image = {
+		video = "gfx/event_pictures/unspecific_world_fair.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/world_fair"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+    duration = 3
+	
+	trigger = {
+	}
+	
+	immediate = {
+		set_global_variable = statue_liberty_var
+	}
+	
+	option = {
+		every_interest_group = {
+			remove_ideology = ideology_anti_christian_radical
+			add_ideology = ideology_elysian_border
+		}
+		name = liberty_event.1.a 
+		default_option = yes
+		add_radicals = {
+			value = medium_radicals
+		}
+		add_loyalists = { 
+			value = small_radicals
+		}
+		add_modifier = {
+			name = pagan_world_modifier
+			months = normal_modifier_time
+		}
+		activate_law = law_type:law_cultural_exclusion
+	}
+	
+	option = {
+		every_interest_group = {
+			remove_ideology = ideology_anti_christian_radical
+			add_ideology = ideology_elysian_border
+		}
+		name = liberty_event.1.b 
+		add_radicals = {
+			value = small_radicals
+		}
+		add_loyalists = { 
+			value = medium_radicals
+		}
+		add_modifier = {
+			name = pagan_world_modifier
+			months = short_modifier_time
+		}
+		activate_law = law_type:law_racial_segregation
+	}
+}
+
+# Stab-in-the-back 
+#liberty_event.2 = {
+#	type = country_event
+#	placement = ROOT
+#
+#	title = liberty_event.2.t
+ #   desc = liberty_event.2.d
+#	flavor = liberty_event.2.f
+#
+#	duration = 3
+#
+#	event_image = {
+#		video = "gfx/event_pictures/europenorthamerica_political_extremism.bk2"
+#	}
+#
+#	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+#	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/political_extremism"
+#
+#	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+#
+#	trigger = {
+#		has_law = law_type:law_multicultural
+#		c:ELY ?= this
+#	}
+#
+#	immediate = {
+#		cu:elysian = {
+#			save_scope_as = elysian_culture
+#		}
+#	}
+#
+#	option = {
+#		name = liberty_event.2.a
+#		add_radicals = {
+#			value = very_large_radicals
+#			culture = cu:elysian
+#		}
+#
+#		every_interest_group = {
+#			limit = {
+#				OR = {
+#					law_stance = {
+#						law = law_type:law_national_supremacy
+#						value > neutral
+#					}
+#					law_stance = {
+#						law = law_type:law_ethnostate
+#						value > neutral
+#					}
+#				}
+#			}
+#			add_modifier = {
+#				name = elysian_stab_in_the_back
+#				months = very_long_modifier_time
+#			}
+#		}
+#		if = {
+#			limit = {
+#				exists = py:fascist_party
+#				in_election_campaign = yes
+#			}
+#			py:fascist_party = { add_momentum = momentum_very_large }
+#		}
+#	}
+#}

@@ -1,0 +1,992 @@
+﻿namespace = ely_alliance
+
+ely_alliance.1 = {
+	type = country_event
+
+	title = ely_alliance.1.t
+	desc = ely_alliance.1.d
+	flavor = ely_alliance.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/southamerica_aristocrats.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/southamerica/aristocrats"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	duration = 4
+
+	trigger = {
+	}
+
+	immediate = {
+		c:FRA = {
+			remove_diplomatic_pact = {
+				country = c:GER
+				type = rivalry
+			}
+			change_relations = {
+				country = c:GER
+				value = 100
+			}
+			remove_diplomatic_pact = {
+				country = c:NET
+				type = rivalry
+			}
+			change_relations = {
+				country = c:NET
+				value = 100
+			}
+		}
+		c:GER = {
+			remove_diplomatic_pact = {
+				country = c:FRA
+				type = rivalry
+			}
+			change_relations = {
+				country = c:FRA
+				value = 100
+			}
+			remove_diplomatic_pact = {
+				country = c:NET
+				type = rivalry
+			}
+			change_relations = {
+				country = c:NET
+				value = 100
+			}
+		}
+		c:NET = {
+			remove_diplomatic_pact = {
+				country = c:FRA
+				type = rivalry
+			}
+			change_relations = {
+				country = c:FRA
+				value = 100
+			}
+			remove_diplomatic_pact = {
+				country = c:GER
+				type = rivalry
+			}
+			change_relations = {
+				country = c:GER
+				value = 100
+			}
+		}
+	}
+	
+	option = {
+	name = ely_alliance.1.a 
+		default_option = yes
+		c:FRA = {
+			set_secret_goal = {
+				country = c:GER
+				secret_goal = befriend			
+			}
+		}
+		c:GER = {
+			set_secret_goal = {
+				country = c:FRA
+				secret_goal = befriend			
+			}
+		}
+		c:FRA = {
+			create_diplomatic_pact = {
+				country = c:GER
+				type = alliance
+			}
+		}
+		c:GER = {
+			create_diplomatic_pact = {
+				country = c:FRA
+				type = alliance
+			}
+		}
+		c:FRA = {
+			set_secret_goal = {
+				country = c:NET
+				secret_goal = befriend			
+			}
+		}
+		c:GER = {
+			set_secret_goal = {
+				country = c:NET
+				secret_goal = befriend			
+			}
+		}
+		c:NET = {
+			set_secret_goal = {
+				country = c:FRA
+				secret_goal = befriend			
+			}
+		}
+		c:FRA = {
+			create_diplomatic_pact = {
+				country = c:NET
+				type = defensive_pact
+			}
+		}
+		c:NET = {
+			set_secret_goal = {
+				country = c:GER
+				secret_goal = befriend			
+			}
+		}
+		c:GER = {
+			create_diplomatic_pact = {
+				country = c:NET
+				type = defensive_pact
+			}
+		}
+	}
+	option = {
+	name = ely_alliance.1.b 
+		ai_chance = {
+			base = 0
+		}
+		
+		set_global_variable = break_franco_germany
+	}
+}	
+
+
+ely_alliance.2 = {
+	type = country_event
+
+	title = ely_alliance.2.t
+	desc = ely_alliance.2.d
+	flavor = ely_alliance.2.f
+
+	event_image = {
+		video = "gfx/event_pictures/southamerica_aristocrats.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/southamerica/aristocrats"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	duration = 4
+
+	trigger = { 
+	}
+
+	immediate = {
+		c:ELY = {
+			remove_diplomatic_pact = {
+				country = c:JAP
+				type = rivalry
+			}
+			change_relations = {
+				country = c:JAP
+				value = 100
+			}
+		}
+		c:JAP = {
+			remove_diplomatic_pact = {
+				country = c:ELY
+				type = rivalry
+			}
+			change_relations = {
+				country = c:ELY
+				value = 100
+			}
+		}
+	}
+	
+	option = {
+	name = ely_alliance.2.a 
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+		c:ELY = {
+			create_diplomatic_pact = {
+				country = c:JAP
+				type = customs_union
+			}
+		}
+		c:ELY = {
+			set_secret_goal = {
+				country = c:JAP
+				secret_goal = befriend			
+			}
+		}
+		c:JAP = {
+			set_secret_goal = {
+				country = c:ELY
+				secret_goal = befriend			
+			}
+		}
+		c:ELY = {
+			create_diplomatic_pact = {
+				country = c:JAP
+				type = alliance
+			}
+		}
+		c:JAP = {
+			create_diplomatic_pact = {
+				country = c:ELY
+				type = alliance
+			}
+		}
+	}
+	option = {
+	name = ely_alliance.2.b 
+		ai_chance = {
+			base = 0
+		}
+		
+		set_global_variable = break_elysia_japan
+	}
+}	
+
+ely_alliance.3 = {
+	type = country_event
+
+	title = ely_alliance.1.t
+	desc = ely_alliance.1.d
+	flavor = ely_alliance.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/southamerica_aristocrats.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/southamerica/aristocrats"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	duration = 4
+
+	trigger = {
+	}
+
+	immediate = {
+		c:BAV = {
+			remove_diplomatic_pact = {
+				country = c:FRA
+				type = rivalry
+			}
+			remove_diplomatic_pact = {
+				country = c:NET
+				type = rivalry
+			}
+			change_relations = {
+				country = c:FRA
+				value = 100
+			}
+			change_relations = {
+				country = c:NET
+				value = 100
+			}
+		}
+		c:FRA = {
+			remove_diplomatic_pact = {
+				country = c:NET
+				type = rivalry
+			}
+			remove_diplomatic_pact = {
+				country = c:BAV
+				type = rivalry
+			}
+			change_relations = {
+				country = c:NET
+				value = 100
+			}
+			change_relations = {
+				country = c:BAV
+				value = 100
+			}
+		}
+		c:NET = {
+			remove_diplomatic_pact = {
+				country = c:FRA
+				type = rivalry
+			}
+			remove_diplomatic_pact = {
+				country = c:BAV
+				type = rivalry
+			}
+			change_relations = {
+				country = c:FRA
+				value = 100
+			}
+			change_relations = {
+				country = c:BAV
+				value = 100
+			}
+		}
+	}
+	
+	option = {
+	name = ely_alliance.1.a 
+		default_option = yes
+		c:BAV = {
+			set_secret_goal = {
+				country = c:NET
+				secret_goal = befriend			
+			}
+		}
+		c:FRA = {
+			set_secret_goal = {
+				country = c:NET
+				secret_goal = befriend			
+			}
+		}
+		c:NET = {
+			set_secret_goal = {
+				country = c:FRA
+				secret_goal = befriend			
+			}
+		}
+		c:NET = {
+			set_secret_goal = {
+				country = c:BAV
+				secret_goal = befriend			
+			}
+		}
+		c:FRA = {
+			create_diplomatic_pact = {
+				country = c:NET
+				type = defensive_pact
+			}
+		}
+		c:BAV = {
+			create_diplomatic_pact = {
+				country = c:NET
+				type = defensive_pact
+			}
+		}
+		c:NET = {
+			create_diplomatic_pact = {
+				country = c:FRA
+				type = defensive_pact
+			}
+		}
+		c:NET = {
+			create_diplomatic_pact = {
+				country = c:BAV
+				type = defensive_pact
+			}
+		}
+		c:FRA = {
+			set_secret_goal = {
+				country = c:BAV
+				secret_goal = befriend			
+			}
+		}
+		c:BAV = {
+			set_secret_goal = {
+				country = c:FRA
+				secret_goal = befriend			
+			}
+		}
+		c:FRA = {
+			create_diplomatic_pact = {
+				country = c:BAV
+				type = alliance
+			}
+		}
+		c:BAV = {
+			create_diplomatic_pact = {
+				country = c:FRA
+				type = alliance
+			}
+		}
+	}
+	option = {
+	name = ely_alliance.1.b 
+		ai_chance = {
+			base = 0
+		}
+		
+		set_global_variable = break_franco_prussia
+	}
+}
+
+ely_alliance.4 = {
+	type = country_event
+
+	title = ely_alliance.4.t
+	desc = ely_alliance.4.d
+	flavor = ely_alliance.4.f
+
+	event_image = {
+		video = "gfx/event_pictures/southamerica_aristocrats.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/southamerica/aristocrats"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	duration = 4
+
+	trigger = {
+	}
+
+	immediate = {
+		c:SPA = {
+			remove_diplomatic_pact = {
+				country = c:ITA
+				type = rivalry
+			}
+			change_relations = {
+				country = c:ITA
+				value = 100
+			}
+		}
+		c:ITA = {
+			remove_diplomatic_pact = {
+				country = c:SPA
+				type = rivalry
+			}
+			change_relations = {
+				country = c:SPA
+				value = 100
+			}
+		}
+	}
+	
+	option = {
+	name = ely_alliance.4.a 
+		default_option = yes
+		c:SPA = {
+			set_secret_goal = {
+				country = c:ITA
+				secret_goal = befriend			
+			}
+		}
+		c:ITA = {
+			set_secret_goal = {
+				country = c:SPA
+				secret_goal = befriend			
+			}
+		}
+		c:SPA = {
+			create_diplomatic_pact = {
+				country = c:ITA
+				type = alliance
+			}
+		}
+		c:ITA = {
+			create_diplomatic_pact = {
+				country = c:SPA
+				type = alliance
+			}
+		}
+	}
+	option = {
+	name = ely_alliance.4.b 
+		ai_chance = {
+			base = 0
+		}
+		
+		set_global_variable = break_italo_spain
+	}
+}	
+
+ely_alliance.5 = {
+	type = country_event
+
+	title = ely_alliance.4.t
+	desc = ely_alliance.4.d
+	flavor = ely_alliance.4.f
+
+	event_image = {
+		video = "gfx/event_pictures/southamerica_aristocrats.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/southamerica/aristocrats"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	duration = 4
+
+	trigger = {
+	}
+
+	immediate = {
+		c:SPA = {
+			remove_diplomatic_pact = {
+				country = c:LUC
+				type = rivalry
+			}
+			change_relations = {
+				country = c:LUC
+				value = 100
+			}
+		}
+		c:LUC = {
+			remove_diplomatic_pact = {
+				country = c:SPA
+				type = rivalry
+			}
+			change_relations = {
+				country = c:SPA
+				value = 100
+			}
+		}
+	}
+	
+	option = {
+	name = ely_alliance.4.a 
+		default_option = yes
+		c:SPA = {
+			set_secret_goal = {
+				country = c:LUC
+				secret_goal = befriend			
+			}
+		}
+		c:LUC = {
+			set_secret_goal = {
+				country = c:SPA
+				secret_goal = befriend			
+			}
+		}
+		c:SPA = {
+			create_diplomatic_pact = {
+				country = c:LUC
+				type = defensive_pact
+			}
+		}
+		c:LUC = {
+			create_diplomatic_pact = {
+				country = c:SPA
+				type = defensive_pact
+			}
+		}
+	}
+	option = {
+	name = ely_alliance.4.b 
+		ai_chance = {
+			base = 0
+		}
+		
+		set_global_variable = break_lucca_spain
+	}
+}	
+
+ely_alliance.6 = {
+	type = country_event
+
+	title = ely_alliance.6.t
+	desc = ely_alliance.6.d
+	flavor = ely_alliance.6.f
+
+	event_image = {
+		video = "gfx/event_pictures/southamerica_aristocrats.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/southamerica/aristocrats"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	duration = 4
+
+	trigger = {
+	}
+
+	immediate = {
+		c:ELY = {
+			remove_diplomatic_pact = {
+				country = c:TWT
+				type = rivalry
+			}
+			change_relations = {
+				country = c:TWT
+				value = 100
+			}
+		}
+		c:TWT = {
+			remove_diplomatic_pact = {
+				country = c:ELY
+				type = rivalry
+			}
+			change_relations = {
+				country = c:ELY
+				value = 100
+			}
+		}
+	}
+	
+	option = {
+	name = ely_alliance.6.a 
+		default_option = yes
+		c:ELY = {
+			set_secret_goal = {
+				country = c:TWT
+				secret_goal = befriend			
+			}
+		}
+		c:ELY = {
+			create_diplomatic_pact = {
+				country = c:TWT
+				type = customs_union
+			}
+		}
+		c:TWT = {
+			set_secret_goal = {
+				country = c:ELY
+				secret_goal = befriend			
+			}
+		}
+		c:ELY = {
+			create_diplomatic_pact = {
+				country = c:TWT
+				type = defensive_pact
+			}
+		}
+		c:TWT = {
+			create_diplomatic_pact = {
+				country = c:ELY
+				type = defensive_pact
+			}
+		}
+	}
+	option = {
+	name = ely_alliance.6.b 
+		ai_chance = {
+			base = 0
+		}
+		
+		set_global_variable = break_inca_elysia
+	}
+}
+
+
+ely_alliance.7 = {
+	type = country_event
+
+	title = ely_alliance.4.t
+	desc = ely_alliance.4.d
+	flavor = ely_alliance.4.f
+
+	event_image = {
+		video = "gfx/event_pictures/southamerica_aristocrats.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/southamerica/aristocrats"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	duration = 4
+
+	trigger = {
+	}
+
+	immediate = {
+		c:IBE = {
+			remove_diplomatic_pact = {
+				country = c:ITA
+				type = rivalry
+			}
+			change_relations = {
+				country = c:ITA
+				value = 100
+			}
+		}
+		c:ITA = {
+			remove_diplomatic_pact = {
+				country = c:IBE
+				type = rivalry
+			}
+			change_relations = {
+				country = c:IBE
+				value = 100
+			}
+		}
+	}
+	
+	option = {
+	name = ely_alliance.4.a 
+		default_option = yes
+		c:IBE = {
+			set_secret_goal = {
+				country = c:ITA
+				secret_goal = befriend			
+			}
+		}
+		c:ITA = {
+			set_secret_goal = {
+				country = c:IBE
+				secret_goal = befriend			
+			}
+		}
+		c:IBE = {
+			create_diplomatic_pact = {
+				country = c:ITA
+				type = alliance
+			}
+		}
+		c:ITA = {
+			create_diplomatic_pact = {
+				country = c:IBE
+				type = alliance
+			}
+		}
+	}
+	option = {
+	name = ely_alliance.4.b 
+		ai_chance = {
+			base = 0
+		}
+		
+		set_global_variable = break_italy_iberia
+	}
+}	
+
+ely_alliance.8 = {
+	type = country_event
+
+	title = ely_alliance.4.t
+	desc = ely_alliance.4.d
+	flavor = ely_alliance.4.f
+
+	event_image = {
+		video = "gfx/event_pictures/southamerica_aristocrats.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/southamerica/aristocrats"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	duration = 4
+
+	trigger = {
+	}
+
+	immediate = {
+		c:IBE = {
+			remove_diplomatic_pact = {
+				country = c:LUC
+				type = rivalry
+			}
+			change_relations = {
+				country = c:LUC
+				value = 100
+			}
+		}
+		c:LUC = {
+			remove_diplomatic_pact = {
+				country = c:IBE
+				type = rivalry
+			}
+			change_relations = {
+				country = c:IBE
+				value = 100
+			}
+		}
+	}
+	
+	option = {
+	name = ely_alliance.4.a 
+		default_option = yes
+		c:IBE = {
+			set_secret_goal = {
+				country = c:LUC
+				secret_goal = befriend			
+			}
+		}
+		c:LUC = {
+			set_secret_goal = {
+				country = c:IBE
+				secret_goal = befriend			
+			}
+		}
+		c:IBE = {
+			create_diplomatic_pact = {
+				country = c:LUC
+				type = defensive_pact
+			}
+		}
+		c:LUC = {
+			create_diplomatic_pact = {
+				country = c:IBE
+				type = defensive_pact
+			}
+		}
+	}
+	option = {
+	name = ely_alliance.4.b 
+		ai_chance = {
+			base = 0
+		}
+		
+		set_global_variable = break_lucca_iberia
+	}
+}	
+
+ely_alliance.9 = {
+	type = country_event
+
+	title = ely_alliance.4.t
+	desc = ely_alliance.4.d
+	flavor = ely_alliance.4.f
+
+	event_image = {
+		video = "gfx/event_pictures/southamerica_aristocrats.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/southamerica/aristocrats"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	duration = 4
+
+	trigger = {
+	}
+
+	immediate = {
+		c:IBE = {
+			remove_diplomatic_pact = {
+				country = c:LMV
+				type = rivalry
+			}
+			change_relations = {
+				country = c:LMV
+				value = 100
+			}
+		}
+		c:LMV = {
+			remove_diplomatic_pact = {
+				country = c:IBE
+				type = rivalry
+			}
+			change_relations = {
+				country = c:IBE
+				value = 100
+			}
+		}
+	}
+	
+	option = {
+	name = ely_alliance.4.a 
+		default_option = yes
+		c:IBE = {
+			set_secret_goal = {
+				country = c:LMV
+				secret_goal = befriend			
+			}
+		}
+		c:LMV = {
+			set_secret_goal = {
+				country = c:IBE
+				secret_goal = befriend			
+			}
+		}
+		c:IBE = {
+			create_diplomatic_pact = {
+				country = c:LMV
+				type = defensive_pact
+			}
+		}
+		c:LMV = {
+			create_diplomatic_pact = {
+				country = c:IBE
+				type = defensive_pact
+			}
+		}
+	}
+	option = {
+	name = ely_alliance.4.b 
+		ai_chance = {
+			base = 0
+		}
+		
+		set_global_variable = break_lucca_iberia
+	}
+}	
+
+ely_alliance.10 = {
+	type = country_event
+
+	title = ely_alliance.4.t
+	desc = ely_alliance.4.d
+	flavor = ely_alliance.4.f
+
+	event_image = {
+		video = "gfx/event_pictures/southamerica_aristocrats.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/southamerica/aristocrats"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	duration = 4
+
+	trigger = {
+	}
+
+	immediate = {
+		c:SPA = {
+			remove_diplomatic_pact = {
+				country = c:LMV
+				type = rivalry
+			}
+			change_relations = {
+				country = c:LMV
+				value = 100
+			}
+		}
+		c:LMV = {
+			remove_diplomatic_pact = {
+				country = c:SPA
+				type = rivalry
+			}
+			change_relations = {
+				country = c:SPA
+				value = 100
+			}
+		}
+	}
+	
+	option = {
+	name = ely_alliance.4.a 
+		default_option = yes
+		c:SPA = {
+			set_secret_goal = {
+				country = c:LMV
+				secret_goal = befriend			
+			}
+		}
+		c:LMV = {
+			set_secret_goal = {
+				country = c:SPA
+				secret_goal = befriend			
+			}
+		}
+		c:SPA = {
+			create_diplomatic_pact = {
+				country = c:LMV
+				type = defensive_pact
+			}
+		}
+		c:LMV = {
+			create_diplomatic_pact = {
+				country = c:SPA
+				type = defensive_pact
+			}
+		}
+	}
+	option = {
+	name = ely_alliance.4.b 
+		ai_chance = {
+			base = 0
+		}
+		
+		set_global_variable = break_lucca_spain
+	}
+}	
+
+

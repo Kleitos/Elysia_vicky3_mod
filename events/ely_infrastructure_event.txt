@@ -1,0 +1,546 @@
+﻿namespace = ely_infrastructure_event
+
+# For ELY
+
+ely_infrastructure_event.5 = {
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/unspecific_trains.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	duration = 3
+	placement = scope:florida_scope
+
+	title = ely_infrastructure_event.5.t
+	desc = ely_infrastructure_event.5.d
+	flavor = ely_infrastructure_event.5.f
+
+	trigger = {
+	}
+	
+	immediate = {
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_FLORIDA
+			}
+			save_scope_as = florida_scope
+		}
+	}
+
+	option = {
+		name = ely_infrastructure_event.5.a
+        default_option = yes
+			add_modifier = {
+				name = ely_big_money
+				months = 60
+			}
+		random_state = {
+			limit = {
+				state_region = s:STATE_FLORIDA
+			}
+			add_modifier = {
+				name = modifier_oigos_marshes_drain
+				months = -1
+			}
+		}
+	}
+	option = {
+		name = ely_infrastructure_event.1.b
+			add_modifier = {
+				name = government_admits_failure
+				months = 120
+			}
+	}
+}
+
+# Apaleisian
+ely_infrastructure_event.1 = {
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/unspecific_trains.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+
+	duration = 3
+	placement = scope:apaleisian_scope
+	
+	title = ely_infrastructure_event.1.t
+	desc = ely_infrastructure_event.1.d
+	flavor = ely_infrastructure_event.1.f
+
+	trigger = { 
+	}
+
+	immediate = {
+		random_scope_state = {
+			limit = {
+					has_state_trait = state_trait_appalachian_mountains
+				}
+			save_scope_as = apaleisian_scope
+		}
+	}
+	
+	option = {
+		name = ely_infrastructure_event.1.a
+		default_option = yes
+			add_modifier = {
+				name = ely_big_money
+				months = 60
+			}
+		every_scope_state = {
+			limit = {
+				has_state_trait = state_trait_appalachian_mountains
+			}
+			add_modifier = {
+				name = modifier_modern_pathway
+				months = -1
+			}
+		}
+	}
+	option = {
+		name = ely_infrastructure_event.1.b
+			add_modifier = {
+				name = government_admits_failure
+				months = 120
+			}
+	}
+}
+
+# Lakonias
+ely_infrastructure_event.2 = {
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/unspecific_trains.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+
+	duration = 3
+	placement = scope:lakonian_scope
+	
+	title = ely_infrastructure_event.2.t
+	desc = ely_infrastructure_event.2.d
+	flavor = ely_infrastructure_event.2.f
+
+	trigger = { 
+	}
+
+	immediate = {
+		random_scope_state = {
+			limit = {
+				OR = {
+					has_state_trait = state_trait_sierra_madre_occidental
+					has_state_trait = state_trait_sierra_madre_oriental
+				}
+			}
+			save_scope_as = lakonian_scope
+		}
+	}
+	
+	option = {
+		name = ely_infrastructure_event.2.a
+		default_option = yes
+			add_modifier = {
+				name = ely_big_money
+				months = 60
+			}
+		every_scope_state = {
+			limit = {
+				OR = {
+					has_state_trait = state_trait_sierra_madre_occidental
+					has_state_trait = state_trait_sierra_madre_oriental
+				}
+			}
+			add_modifier = {
+				name = modifier_modern_pathway
+				months = -1
+			}
+		}
+	}
+	option = {
+		name = ely_infrastructure_event.1.b
+			add_modifier = {
+				name = government_admits_failure
+				months = 120
+			}
+	}
+}
+
+# Arkadian
+ely_infrastructure_event.3 = {
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/unspecific_trains.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+
+	duration = 3
+	placement = scope:arkadian_scope
+	
+	title = ely_infrastructure_event.3.t
+	desc = ely_infrastructure_event.3.d
+	flavor = ely_infrastructure_event.3.f
+
+	trigger = { 
+	}
+
+	immediate = {
+		random_scope_state = {
+			limit = {
+					has_state_trait = state_trait_central_american_cordilleras
+				}
+			save_scope_as = arkadian_scope
+		}
+	}
+	
+	option = {
+		name = ely_infrastructure_event.3.a
+		default_option = yes
+			add_modifier = {
+				name = ely_big_money
+				months = 60
+			}
+		every_scope_state = {
+			limit = {
+				has_state_trait = state_trait_central_american_cordilleras
+			}
+			add_modifier = {
+				name = modifier_modern_pathway
+				months = -1
+			}
+		}
+	}
+	option = {
+		name = ely_infrastructure_event.1.b
+			add_modifier = {
+				name = government_admits_failure
+				months = 120
+			}
+	}
+}
+
+# Hesperidia
+ely_infrastructure_event.4 = {
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/unspecific_trains.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+
+	duration = 3
+	placement = scope:hesperidian_scope
+	
+	title = ely_infrastructure_event.4.t
+	desc = ely_infrastructure_event.4.d
+	flavor = ely_infrastructure_event.4.f
+
+	trigger = { 
+	}
+
+	immediate = {
+		random_scope_state = {
+			limit = {
+				OR = {
+					has_state_trait = state_trait_wasatch_range
+					has_state_trait = state_trait_cascades
+					has_state_trait = state_trait_sierra_nevada
+					has_state_trait = state_trait_rocky_mountains
+					has_state_trait = state_trait_the_great_basin_desert
+				}
+			}
+			save_scope_as = hesperidian_scope
+		}
+	}
+	
+	option = {
+		name = ely_infrastructure_event.4.a
+		default_option = yes
+			add_modifier = {
+				name = ely_big_money
+				months = 60
+			}
+		every_scope_state = {
+			limit = {
+				OR = {
+					has_state_trait = state_trait_wasatch_range
+					has_state_trait = state_trait_cascades
+					has_state_trait = state_trait_sierra_nevada
+					has_state_trait = state_trait_rocky_mountains
+					has_state_trait = state_trait_the_great_basin_desert
+				}
+			}
+			add_modifier = {
+				name = modifier_modern_pathway
+				months = -1
+			}
+		}
+	}
+	option = {
+		name = ely_infrastructure_event.1.b
+			add_modifier = {
+				name = government_admits_failure
+				months = 120
+			}
+	}
+}
+
+ely_infrastructure_event.6 = {
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/unspecific_automobile.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	duration = 3
+	placement = root
+
+	title = ely_infrastructure_event.6.t
+	desc = ely_infrastructure_event.6.d
+	flavor = ely_infrastructure_event.6.f
+
+	trigger = {
+	}
+	
+	immediate = {
+	}
+
+	option = {
+		name = ely_infrastructure_event.6.a
+        default_option = yes
+			add_modifier = {
+				name = modifier_elysian_highway_old
+				months = -1
+			}
+		}
+}
+
+ely_infrastructure_event.7 = {
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/unspecific_automobile.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	duration = 3
+	placement = root
+
+	title = ely_infrastructure_event.7.t
+	desc = ely_infrastructure_event.7.d
+	flavor = ely_infrastructure_event.7.f
+
+	trigger = {
+	}
+	
+	immediate = {
+	}
+
+	option = {
+		name = ely_infrastructure_event.7.a
+        default_option = yes
+			remove_modifier = modifier_elysian_highway_old
+			add_modifier = {
+				name = modifier_elysian_highway_new
+				months = -1
+			}
+			add_modifier = {
+				name = ely_big_money
+				months = 60
+			}
+		}
+	option = {
+		name = ely_infrastructure_event.7.b
+			remove_modifier = modifier_elysian_highway_old
+			add_modifier = {
+				name = government_admits_failure
+				months = 120
+			}
+	}
+}
+
+
+ely_infrastructure_event.8 = {
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/unspecific_trains.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	duration = 3
+	placement = scope:greenland_scope
+
+	title = ely_infrastructure_event.8.t
+	desc = ely_infrastructure_event.8.d
+	flavor = ely_infrastructure_event.8.f
+
+	trigger = {
+	}
+	
+	immediate = {
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_GREENLAND
+			}
+			save_scope_as = greenland_scope
+		}
+	}
+
+	option = {
+		name = ely_infrastructure_event.8.a
+        default_option = yes
+		country_prestige_add = 100
+		random_state = {
+			limit = {
+				state_region = s:STATE_GREENLAND
+			}
+			add_modifier = {
+				name = modifier_greenland_infrastructure
+				months = -1
+			}
+		}
+			add_modifier = {
+				name = greenland_ely_verybig_money
+				months = 120
+			}
+	}
+	option = {
+		name = ely_infrastructure_event.8.b
+			add_modifier = {
+				name = government_admits_failure
+				months = 120
+			}
+	}
+}
+
+# Thoulea
+ely_infrastructure_event.9 = {
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/unspecific_trains.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+
+	duration = 3
+	placement = scope:thoulean_scope
+	
+	title = ely_infrastructure_event.9.t
+	desc = ely_infrastructure_event.9.d
+	flavor = ely_infrastructure_event.9.f
+
+	trigger = { 
+	}
+
+	immediate = {
+		random_scope_state = {
+			limit = {
+					has_state_trait = state_trait_northern_canadian_terrain
+				}
+			save_scope_as = thoulean_scope
+		}
+	}
+	
+	option = {
+		name = ely_infrastructure_event.3.a
+		default_option = yes
+			add_modifier = {
+				name = ely_big_money
+				months = 60
+			}
+		every_scope_state = {
+			limit = {
+				has_state_trait = state_trait_northern_canadian_terrain
+			}
+			add_modifier = {
+				name = modifier_modern_pathway
+				months = -1
+			}
+		}
+	}
+	option = {
+		name = ely_infrastructure_event.1.b
+			add_modifier = {
+				name = government_admits_failure
+				months = 120
+			}
+	}
+}
+
+# Dockyards
+ely_infrastructure_event.10 = {
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/unspecific_steam_ship.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	duration = 3
+	placement = scope:elysiancoast_scope
+	
+	title = ely_infrastructure_event.10.t
+	desc = ely_infrastructure_event.10.d
+	flavor = ely_infrastructure_event.10.f
+
+	trigger = { 
+	}
+
+	immediate = {
+		random_scope_state = {
+			limit = {
+				OR = {
+					has_state_trait = state_trait_natural_harbors_one
+					has_state_trait = state_trait_new_york_harbor
+					has_state_trait = state_trait_newark_harbor
+					has_state_trait = state_trait_halifax_harbor
+				}
+			}
+			save_scope_as = elysiancoast_scope
+		}
+	}
+	
+	option = {
+		name = ely_infrastructure_event.10.a
+		default_option = yes
+			add_modifier = {
+				name = ely_verybig_money
+				months = 60
+			}
+		every_scope_state = {
+			limit = {
+				OR = {
+					has_state_trait = state_trait_natural_harbors_one
+					has_state_trait = state_trait_new_york_harbor
+					has_state_trait = state_trait_newark_harbor
+					has_state_trait = state_trait_halifax_harbor
+				}
+			}
+			add_modifier = {
+				name = modifier_elsysian_dockyard
+				months = -1
+			}
+		}
+	}
+	option = {
+		name = ely_infrastructure_event.1.b
+			add_modifier = {
+				name = government_admits_failure
+				months = 120
+			}
+	}
+}

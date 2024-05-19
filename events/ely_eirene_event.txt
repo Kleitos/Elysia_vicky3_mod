@@ -1,0 +1,39 @@
+﻿namespace = eirene
+
+# For ELY
+eirene.1 = {
+	type = country_event
+
+	title = eirene.1.t
+	desc = eirene.1.d
+	flavor = eirene.1.f
+
+	gui_window = event_window_1char_tabloid
+
+	left_icon = ruler
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	duration = 3
+
+	trigger = {
+		# triggered by je_eirene
+	}
+
+	immediate = {
+		ruler = {
+			save_scope_as = empress_eirene
+		}
+	}
+	option = {
+		name = eirene.1.a # 
+		ruler = {
+			add_modifier = {
+				name = empress_eirene_mod
+			}
+		}
+	}
+}

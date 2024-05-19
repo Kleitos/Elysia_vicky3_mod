@@ -1,0 +1,496 @@
+﻿namespace = byzantine_resurgence
+namespace = byzantine_colonial
+namespace = byzantine_glory
+
+### Byzantine Reconquest ###
+
+byzantine_resurgence.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = byzantine_resurgence.1.t
+	desc = byzantine_resurgence.1.d
+	flavor = byzantine_resurgence.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_springtime_of_nations.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		s:STATE_KONYA = {
+			add_homeland = cu:greek
+		}
+		s:STATE_KASTAMONU = {
+			add_homeland = cu:greek
+		}
+		s:STATE_ANKARA = {
+			add_homeland = cu:greek
+		}
+	}
+
+    option = {
+		name = byzantine_resurgence.1.a
+		default_option = yes
+		ai_chance = {
+			base = 75
+		}
+		create_diplomatic_play = {
+			target_country = c:TUR
+			war = yes
+			type = dp_return_state
+			target_state = s:STATE_HUDAVENDIGAR.region_state:TUR
+			add_war_goal = {
+				holder = c:BYZ
+				type = return_state
+				target_state = s:STATE_AYDIN.region_state:TUR
+			}
+			add_war_goal = {
+				holder = c:BYZ
+				type = return_state
+				target_state = s:STATE_TRABZON.region_state:TUR
+			}
+			add_war_goal = {
+				holder = c:BYZ
+				type = return_state
+				target_state = s:STATE_EASTERN_THRACE.region_state:TUR
+			}
+			add_war_goal = {
+				holder = c:BYZ
+				type = war_reparations
+				target_country = c:TUR
+			}
+			add_war_goal = {
+				holder = c:BYZ
+				type = humiliation
+				target_country = c:TUR
+			}
+			add_war_goal = {
+				holder = c:TUR
+				type = war_reparations
+				target_country = c:BYZ
+			}
+			add_war_goal = {
+				holder = c:TUR
+				type = humiliation
+				target_country = c:BYZ
+			}
+		}
+	}
+	option = {
+		name = byzantine_resurgence.1.b
+		ai_chance = {
+			base = 25
+		}
+		add_modifier = {
+			name = government_admits_failure
+			months = long_modifier_time
+		}
+	}
+}
+
+byzantine_resurgence.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = byzantine_resurgence.2.t
+	desc = byzantine_resurgence.2.d
+	flavor = byzantine_resurgence.2.f
+
+	event_image = {
+		video = "gfx/event_pictures/middleeast_courtroom_upheaval.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		s:STATE_ADANA = {
+			add_homeland = cu:greek
+		}
+		s:STATE_ERZURUM = {
+			add_homeland = cu:greek
+		}
+		s:STATE_DIYARBAKIR = {
+			add_homeland = cu:greek
+		}
+	}
+
+    option = {
+		name = byzantine_resurgence.2.a
+		default_option = yes
+		ai_chance = {
+			base = 75
+		}
+		create_diplomatic_play = {
+			target_country = c:TUR
+			war = yes
+			type = dp_return_state
+			target_state = s:STATE_KONYA.region_state:TUR
+			add_war_goal = {
+				holder = c:BYZ
+				type = return_state
+				target_state = s:STATE_ANKARA.region_state:TUR
+			}
+			add_war_goal = {
+				holder = c:BYZ
+				type = return_state
+				target_state = s:STATE_KASTAMONU.region_state:TUR
+			}
+			add_war_goal = {
+				holder = c:TUR
+				type = return_state
+				target_state = s:STATE_HUDAVENDIGAR.region_state:BYZ
+			}
+			add_war_goal = {
+				holder = c:TUR
+				type = return_state
+				target_state = s:STATE_AYDIN.region_state:BYZ
+			}
+			add_war_goal = {
+				holder = c:TUR
+				type = return_state
+				target_state = s:STATE_TRABZON.region_state:BYZ
+			}
+			add_war_goal = {
+				holder = c:TUR
+				type = return_state
+				target_state = s:STATE_EASTERN_THRACE.region_state:BYZ
+			}
+			add_war_goal = {
+				holder = c:TUR
+				type = war_reparations
+				target_country = c:BYZ
+			}
+			add_war_goal = {
+				holder = c:TUR
+				type = humiliation
+				target_country = c:BYZ
+			}
+		}
+	}
+	
+	option = {
+		name = byzantine_resurgence.2.b
+		ai_chance = {
+			base = 25
+		}
+		add_modifier = {
+			name = government_admits_failure
+			months = long_modifier_time
+		}
+	}
+}
+
+byzantine_resurgence.3 = {
+	type = country_event
+	placement = ROOT
+
+	title = byzantine_resurgence.3.t
+	desc = byzantine_resurgence.3.d
+	flavor = byzantine_resurgence.3.f
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_before_the_battle.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/europenorthamerica_before_the_battle"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = byzantine_resurgence.3.a
+		default_option = yes
+		ai_chance = {
+			base = 75
+		}
+		create_diplomatic_play = {
+			target_country = c:TUR
+			war = yes
+			type = dp_annex_war
+			add_war_goal = {
+				holder = c:TUR
+				type = return_state
+				target_state = s:STATE_HUDAVENDIGAR.region_state:BYZ
+			}
+			add_war_goal = {
+				holder = c:TUR
+				type = return_state
+				target_state = s:STATE_AYDIN.region_state:BYZ
+			}
+			add_war_goal = {
+				holder = c:TUR
+				type = return_state
+				target_state = s:STATE_TRABZON.region_state:BYZ
+			}
+			add_war_goal = {
+				holder = c:TUR
+				type = return_state
+				target_state = s:STATE_EASTERN_THRACE.region_state:BYZ
+			}
+			add_war_goal = {
+				holder = c:TUR
+				type = return_state
+				target_state = s:STATE_KONYA.region_state:BYZ
+			}
+			add_war_goal = {
+				holder = c:TUR
+				type = return_state
+				target_state = s:STATE_ANKARA.region_state:BYZ
+			}
+			add_war_goal = {
+				holder = c:TUR
+				type = return_state
+				target_state = s:STATE_KASTAMONU.region_state:BYZ
+			}
+			add_war_goal = {
+				holder = c:TUR
+				type = war_reparations
+				target_country = c:BYZ
+			}
+			add_war_goal = {
+				holder = c:TUR
+				type = humiliation
+				target_country = c:BYZ
+			}
+		}
+	}
+	
+	option = {
+		name = byzantine_resurgence.3.b
+		ai_chance = {
+			base = 25
+		}
+		add_modifier = {
+			name = government_admits_failure
+			months = long_modifier_time
+		}
+	}
+}
+
+### Glory ###
+
+
+byzantine_glory.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = byzantine_glory.1.t
+	desc = byzantine_glory.1.d
+	flavor = byzantine_glory.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		random_scope_state = {
+			limit = {
+					state_region = {
+						is_homeland = cu:turkish
+					}
+				}
+			save_scope_as = turkish_byzantine_scope
+		}
+	}
+
+    option = {
+		name = byzantine_glory.1.a
+		default_option = yes
+		add_modifier = {
+			name = greek_nationalism
+			months = long_modifier_time
+		}
+		every_scope_state = {
+					state_region = {
+						is_homeland = cu:turkish
+					}
+			add_modifier = {
+				name = decree_put_the_riot_down
+				months = long_modifier_time
+			}
+		}
+	}
+}
+
+### Colonial Expansion ###
+
+byzantine_colonial.1 = {
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "gfx/event_pictures/middleeast_battlefield_trenches.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/battlefield_trenches"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	
+	title = byzantine_colonial.1.t
+	desc = byzantine_colonial.1.d
+	flavor = byzantine_colonial.1.f
+
+	duration = 3
+	
+	trigger = {
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+		name = byzantine_colonial.1.a
+		default_option = yes
+		ai_chance = {
+			base = 75
+		}
+		create_diplomatic_play = {
+			target_country = c:EGY
+			war = yes
+			type = dp_make_protectorate
+			add_war_goal = {
+				holder = c:BYZ
+				type = take_treaty_port
+				target_state = s:STATE_LOWER_EGYPT.region_state:EGY
+			}
+			add_war_goal = {
+				holder = c:BYZ
+				type = take_treaty_port
+				target_state = s:STATE_SINAI.region_state:EGY
+			}
+			add_war_goal = {
+				holder = c:BYZ
+				type = take_treaty_port
+				target_state = s:STATE_UPPER_EGYPT.region_state:EGY
+			}
+			add_war_goal = {
+				holder = c:EGY
+				type = war_reparations
+				target_country = c:BYZ
+			}
+			add_war_goal = {
+				holder = c:EGY
+				type = humiliation
+				target_country = c:BYZ
+			}
+		}
+	}
+	
+	option = {
+		name = byzantine_colonial.1.b
+		ai_chance = {
+			base = 25
+		}
+		add_modifier = {
+			name = government_admits_failure
+			months = long_modifier_time
+		}
+	}
+}
+byzantine_colonial.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = byzantine_colonial.2.t
+	desc = byzantine_colonial.2.d
+	flavor = byzantine_colonial.2.f
+
+	event_image = {
+		video = "gfx/event_pictures/middleeast_courtroom_upheaval.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = byzantine_colonial.2.a
+		default_option = yes
+		ai_chance = {
+			base = 75
+		}
+		create_diplomatic_play = {
+			target_country = c:EGY
+			escalation = 75
+			type = dp_return_state
+			target_state = s:STATE_ADANA.region_state:EGY
+			add_war_goal = {
+				holder = c:BYZ
+				type = war_reparations
+				target_country = c:EGY
+			}
+			add_war_goal = {
+				holder = c:BYZ
+				type = humiliation
+				target_country = c:EGY
+			}
+			add_war_goal = {
+				holder = c:TUR
+				type = war_reparations
+				target_country = c:BYZ
+			}
+			add_war_goal = {
+				holder = c:TUR
+				type = humiliation
+				target_country = c:BYZ
+			}
+		}
+	}
+	
+	option = {
+		name = byzantine_colonial.2.b
+		ai_chance = {
+			base = 25
+		}
+		add_modifier = {
+			name = government_admits_failure
+			months = long_modifier_time
+		}
+	}
+}

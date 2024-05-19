@@ -1,0 +1,644 @@
+﻿namespace = fred
+namespace = palatine_house
+namespace = kalmar_union
+
+fred.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = fred.1.t
+	desc = fred.1.d
+	flavor = fred.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = fred.1.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+		c:DEN = {
+			annex = c:SCH
+			annex = c:OLD
+			annex = c:HOL
+		}
+		c:BAV = {
+			trigger_event = { id = fred.3 }	
+		}
+	}	
+}
+
+fred.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = fred.2.t
+	desc = fred.2.d
+	flavor = fred.2.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = fred.2.a
+		ai_chance = {
+			base = 50
+		}
+		c:SWE = {
+			trigger_event = { id = kalmar_union.1 days = 30 }	
+		}
+		create_diplomatic_play = {
+			target_country = c:DEN
+				escalation = 70
+			type = dp_conquer_state
+			target_state = s:STATE_SCHLESWIG_HOLSTEIN.region_state:DEN
+			add_war_goal = {
+				holder = c:PRU
+				type = conquer_state
+				target_state = s:STATE_HANNOVER.region_state:DEN
+				target_country = c:DEN
+			}
+			add_war_goal = {
+				holder = c:PRU
+				type = war_reparations
+				target_country = c:DEN
+			}
+			add_war_goal = {
+				holder = c:PRU
+				type = humiliation
+				target_country = c:DEN
+			}
+			add_war_goal = {
+				holder = c:DEN
+				type = war_reparations
+				target_country = c:PRU
+			}
+			add_war_goal = {
+				holder = c:DEN
+				type = humiliation
+				target_country = c:PRU
+			}
+		}
+	}
+	option = {
+		name = fred.2.b
+		default_option = yes
+		ai_chance = {
+			base = 50
+		}
+		add_modifier = {
+			name = german_nationalism_rebukked
+			months = long_modifier_time
+		}
+	}
+}
+
+fred.3 = {
+	type = country_event
+	placement = ROOT
+
+	title = fred.3.t
+	desc = fred.3.d
+	flavor = fred.3.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = fred.3.a
+		default_option = yes
+		c:SWE = {
+			trigger_event = { id = kalmar_union.1 days = 30 }	
+		}
+		ai_chance = {
+			base = 90
+		}
+		create_diplomatic_play = {
+			target_country = c:DEN
+				escalation = 70
+			type = dp_conquer_state
+			target_state = s:STATE_SCHLESWIG_HOLSTEIN.region_state:DEN
+			add_war_goal = {
+				holder = c:BAV
+				type = conquer_state
+				target_state = s:STATE_HANNOVER.region_state:DEN
+				target_country = c:DEN
+			}
+			add_war_goal = {
+				holder = c:BAV
+				type = war_reparations
+				target_country = c:DEN
+			}
+			add_war_goal = {
+				holder = c:BAV
+				type = humiliation
+				target_country = c:DEN
+			}
+			add_war_goal = {
+				holder = c:DEN
+				type = war_reparations
+				target_country = c:BAV
+			}
+			add_war_goal = {
+				holder = c:DEN
+				type = humiliation
+				target_country = c:BAV
+			}
+		}
+	}
+	option = {
+		name = fred.3.b
+		ai_chance = {
+			base = 25
+		}
+		add_modifier = {
+			name = government_admits_failure
+			months = long_modifier_time
+		}
+		c:PRU = {
+		trigger_event = { id = fred.2 }	
+		}
+	}
+}
+
+palatine_house.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = palatine_house.1.t
+	desc = palatine_house.1.d
+	flavor = palatine_house.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = palatine_house.1.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+		c:HAN = {
+			annex = c:HAM
+			annex = c:BRE
+			annex = c:BRA
+		}
+		c:BAV = {
+			trigger_event = { id = palatine_house.2 }	
+			annex = c:LIP
+			annex = c:SCM
+		}
+	}	
+}
+
+palatine_house.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = palatine_house.2.t
+	desc = palatine_house.2.d
+	flavor = palatine_house.2.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = palatine_house.2.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+		c:BAV = {
+			remove_diplomatic_pact = {
+				country = c:BOH
+				type = personal_union
+			}
+		}
+		create_diplomatic_play = {
+			target_country = c:HAN
+				escalation = 80
+			type = dp_annex_war
+			target_state = s:STATE_HANNOVER.region_state:HAN
+			add_war_goal = {
+				holder = c:HAN
+				type = war_reparations
+				target_country = c:BAV
+			}
+			add_war_goal = {
+				holder = c:HAN
+				type = humiliation
+				target_country = c:BAV
+			}
+			add_war_goal = {
+				holder = c:HAN
+				type = war_reparations
+				target_country = c:BOH
+			}
+			add_war_goal = {
+				holder = c:HAN
+				type = humiliation
+				target_country = c:BOH
+			}
+			add_war_goal = {
+				holder = c:HAN
+				type = conquer_state
+				target_state = s:STATE_WESTPHALIA.region_state:BAV
+				target_country = c:BAV
+			}
+			add_war_goal = {
+				holder = c:HAN
+				type = conquer_state
+				target_state = s:STATE_RUHR.region_state:BAV
+				target_country = c:BAV
+			}
+		}
+	}
+}
+
+kalmar_union.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = kalmar_union.1.t
+	desc = kalmar_union.1.d
+	flavor = kalmar_union.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = kalmar_union.1.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+		create_diplomatic_play = {
+			target_country = c:DEN
+				escalation = 80
+			type = dp_make_protectorate
+			target_state = s:STATE_ZEALAND.region_state:DEN
+			add_war_goal = {
+				holder = c:SWE
+				type = war_reparations
+				target_country = c:DEN
+			}
+			add_war_goal = {
+				holder = c:SWE
+				type = humiliation
+				target_country = c:DEN
+			}
+			add_war_goal = {
+				holder = c:DEN
+				type = war_reparations
+				target_country = c:SWE
+			}
+			add_war_goal = {
+				holder = c:DEN
+				type = humiliation
+				target_country = c:SWE
+			}
+		}
+	}
+}
+
+kalmar_union.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = kalmar_union.2.t
+	desc = kalmar_union.2.d
+	flavor = kalmar_union.2.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		set_variable = {
+			name = swe_annex_den_event
+		}
+	}
+
+    option = {
+		name = kalmar_union.2.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+		create_diplomatic_play = {
+			target_country = c:DEN
+				escalation = 80
+			type = dp_annex_war
+			target_state = s:STATE_ZEALAND.region_state:DEN
+			add_war_goal = {
+				holder = c:DEN
+				type = war_reparations
+				target_country = c:SWE
+			}
+			add_war_goal = {
+				holder = c:DEN
+				type = independence
+				target_country = c:SWE
+			}
+			add_war_goal = {
+				holder = c:DEN
+				type = humiliation
+				target_country = c:SWE
+			}
+		}
+	}
+}
+kalmar_union.3 = {
+	type = country_event
+	placement = ROOT
+
+	title = kalmar_union.3.t
+	desc = kalmar_union.3.d
+	flavor = kalmar_union.3.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		c:ELY = { remove_modifier = greenland_ely_big_money }
+	}
+
+    option = {
+		name = kalmar_union.3.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+		c:ELY = {
+			trigger_event = { id = kalmar_union.4 }	
+		}
+		c:SWE = {
+			trigger_event = { id = kalmar_union.2 }	
+		}
+	}
+}
+
+kalmar_union.4 = {
+	type = country_event
+	placement = ROOT
+
+	title = kalmar_union.4.t
+	desc = kalmar_union.4.d
+	flavor = kalmar_union.4.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = kalmar_union.4.a
+		default_option = yes
+		ai_chance = {
+			base = 95
+		}
+		c:SWE = {
+			trigger_event = { id = kalmar_union.5 }	
+		}
+		show_as_tooltip = {
+			change_relations = {
+				country = c:SWE
+				value = -30
+			}
+		}
+	}
+
+    option = {
+		name = kalmar_union.4.b
+		add_modifier = {
+			name = greenland_ely_big_money
+			months = 12
+			is_decaying = no
+		}
+		ai_chance = {
+			base = 5
+		}
+		c:SWE = {
+			trigger_event = { id = kalmar_union.6 }	
+		}
+	}
+}
+
+kalmar_union.5 = {
+	type = country_event
+	placement = ROOT
+
+	title = kalmar_union.5.t
+	desc = kalmar_union.5.d
+	flavor = kalmar_union.5.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = kalmar_union.5.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+		add_modifier = {
+			name = government_admits_failure
+			months = long_modifier_time
+		}
+		show_as_tooltip = {
+			change_relations = {
+				country = c:ELY
+				value = -30
+			}
+		}
+		
+			scope:c:ELY = {
+				set_secret_goal = {
+					country = c:SWE
+					secret_goal = antagonize			
+				}				
+			}
+			set_secret_goal = {
+				country = scope:c:ELY
+				secret_goal = antagonize
+			}
+	}
+}
+
+kalmar_union.6 = {
+	type = country_event
+	placement = ROOT
+
+	title = kalmar_union.6.t
+	desc = kalmar_union.6.d
+	flavor = kalmar_union.6.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = kalmar_union.5.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+		add_modifier = {
+			name = greenland_den_big_money
+			months = 12
+			is_decaying = no
+		}
+		show_as_tooltip = {
+			change_relations = {
+				country = c:ELY
+				value = -30
+			}
+		}
+	}
+}

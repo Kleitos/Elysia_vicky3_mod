@@ -1,0 +1,521 @@
+﻿namespace = greenland
+
+# An Offer for Greenland
+greenland.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = greenland.1.t
+	desc = greenland.1.d
+	flavor = greenland.1.f
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+		c:ELY = {
+			save_scope_as = ely_scope
+		}
+		s:STATE_GREENLAND.region_state:DEN = {
+			save_scope_as = greenland_scope
+		}
+	}
+
+	option = {
+		name = greenland.1.a
+		default_option = yes
+		add_modifier = {
+			name = greenland_den_big_money
+			months = 12
+			is_decaying = no
+		}
+		c:ELY = {
+			trigger_event = { id = greenland.2 days = 0 popup = yes }
+		}
+		show_as_tooltip = {
+			s:STATE_GREENLAND.region_state:DEN = {
+				set_state_owner = c:ELY
+			}
+			change_relations = {
+				country = c:ELY
+				value = 10
+			}
+		}
+		ai_chance = {
+			base = 1
+		}
+	}
+	option = {
+		name = greenland.1.b
+		c:ELY = {
+			trigger_event = { id = greenland.3 days = 0 popup = yes }
+		}
+		show_as_tooltip = {
+			change_relations = {
+				country = c:ELY
+				value = -20
+			}
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+# The Greenland Purchase
+greenland.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = greenland.2.t
+	desc = greenland.2.d
+	flavor = greenland.2.f
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+		c:DEN = {
+			save_scope_as = denmark_scope
+		}
+		s:STATE_GREENLAND.region_state:DEN = {
+			save_scope_as = greenland_scope
+		}
+	}
+
+	option = {
+		name = greenland.2.a
+		default_option = yes
+		add_modifier = {
+			name = greenland_ely_big_money
+			months = 12
+		}
+		s:STATE_GREENLAND.region_state:DEN = {
+			set_state_owner = c:ELY
+		}
+		change_relations = {
+			country = c:DEN
+			value = 10
+		}
+	}
+}
+
+# Failed Greenland Purchase
+greenland.3 = {
+	type = country_event
+	placement = ROOT
+
+	title = greenland.3.t
+	desc = greenland.3.d
+	flavor = greenland.3.f
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+		c:DEN = {
+			save_scope_as = denmark_scope
+		}
+		s:STATE_GREENLAND.region_state:DEN = {
+			save_scope_as = greenland_scope
+		}
+	}
+
+	option = {
+		name = greenland.3.a
+		default_option = yes
+		s:STATE_GREENLAND = {
+			add_claim = ROOT
+		}
+		change_relations = {
+			country = c:DEN
+			value = -20
+		}
+        add_journal_entry = {
+			type = je_greenland
+		}
+		remove_global_variable = greenland_purchase_in_prog
+	}
+}
+
+# Making an Offer - ELY to DEN
+greenland.4 = {
+	type = country_event
+	placement = ROOT
+
+	title = greenland.4.t
+	desc = greenland.4.d
+	flavor = greenland.4.f
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+		c:DEN = {
+			save_scope_as = denmark_scope
+		}
+		s:STATE_GREENLAND.region_state:DEN = {
+			save_scope_as = greenland_scope
+		}
+	}
+
+	option = {
+		name = greenland.4.a
+		ai_chance = {
+			base = 1
+		}
+		custom_tooltip = greenland.4.tt1 # 3 million over a year
+		c:DEN = {
+			trigger_event = {
+				id = greenland.1
+				days = 0
+				popup = yes
+			}
+		}
+	}
+	option = { # perhaps another time
+		name = greenland.4.c
+		default_option = yes
+		ai_chance = {
+			base = 0
+		}
+		remove_variable = greenland_purchase_var
+		remove_global_variable = greenland_purchase_in_prog
+	}
+}
+
+#Making an offer - DEN to ELY
+greenland.5 = {
+	type = country.event
+	placement = ROOT
+
+	title = greenland.5.t
+	desc = greenland.5.d
+	flavor = greenland.5.f
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+		c:ELY = {
+			save_scope_as = ely_scope
+		}
+		c:DEN = {
+			save_scope_as = denmark_scope
+		}
+		s:STATE_GREENLAND.region_state:DEN = {
+			save_scope_as = greenland_scope
+		}
+	}
+
+	option = {
+		name = greenland.5.a
+		ai_chance = {
+			base = 1
+		}
+		custom_tooltip = greenland.5.tt1 # 3 million over a year
+		c:ELY = {
+			trigger_event = {
+				id = greenland.6
+				days = 0
+				popup = yes
+			}
+		}
+	}
+	option = { # perhaps another time
+		name = greenland.5.b
+		default_option = yes
+		ai_chance = {
+			base = 0
+		}
+		remove_variable = greenland_purchase_var
+		remove_global_variable = greenland_purchase_in_prog
+	}
+}
+
+#Denmark wants to sell greenland
+greenland.6 = {
+	type = country_event
+	placement = ROOT
+
+	title = greenland.6.t
+	desc = greenland.6.d
+	flavor = greenland.6.f
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+		c:ELY = {
+			save_scope_as = ely_scope
+		}
+		c:DEN = {
+			save_scope_as = denmark_scope
+		}
+		s:STATE_GREENLAND.region_state:DEN = {
+			save_scope_as = greenland_scope
+		}
+	}
+
+	option = {
+		name = greenland.6.a
+		default_option = yes
+		add_modifier = {
+			name = greenland_ely_big_money
+			months = 12
+			is_decaying = no
+		}
+		c:DEN = {
+			trigger_event = { id = greenland.7 days = 0 popup = yes }
+		}
+		show_as_tooltip = {
+			change_relations = {
+				country = c:DEN
+				value = 10
+			}
+		}
+		ai_chance = {
+			base = 1
+		}
+	}
+	option = {
+		name = greenland.6.b
+		c:DEN = {
+			trigger_event = { id = greenland.8 days = 0 popup = yes }
+		}
+		show_as_tooltip = {
+			change_relations = {
+				country = c:DEN
+				value = -10
+			}
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+greenland.7 = { #ELY has accepted our offer
+	type = country_event
+	placement = ROOT
+
+	title = greenland.7.t
+	desc = greenland.7.d
+	flavor = greenland.7.f
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+		c:ELY = {
+			save_scope_as = ely_scope
+		}
+		c:DEN = {
+			save_scope_as = denmark_scope
+		}
+		s:STATE_GREENLAND.region_state:DEN = {
+			save_scope_as = greenland_scope
+		}
+	}
+
+	option = {
+		name = greenland.7.a
+		add_modifier = {
+			name = greenland_den_big_money
+			months = 12
+			is_decaying = no
+		}
+		show_as_tooltip = {
+			s:STATE_GREENLAND.region_state:DEN = {
+				set_state_owner = c:ELY
+			}
+		}
+		change_relations = {
+			country = c:ELY
+			value = 10
+		}
+		c:ELY = {
+			trigger_event = {
+				id = greenland.9 days = 0 popup = yes
+			}
+		}
+		if = {
+			limit = { 
+				c:DEN = {
+					is_subject_of = c:SWE
+				}
+			}
+			c:SWE = { trigger_event = { id = kalmar_union.3 days = 365 }	}	
+		}
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+greenland.8 = { #ELY has refused our offer
+	type = country_event
+	placement = ROOT
+
+	title = greenland.8.t
+	desc = greenland.8.d
+	flavor = greenland.8.f
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+		c:ELY = {
+			save_scope_as = ely_scope
+		}
+		c:DEN = {
+			save_scope_as = denmark_scope
+		}
+		s:STATE_GREENLAND.region_state:DEN = {
+			save_scope_as = greenland_scope
+		}
+	}
+
+	option = {
+		name = greenland.8.a
+		change_relations = {
+			country = c:ELY
+			value = -10
+		}
+		ai_chance = {
+			base = 1
+		}
+		remove_global_variable = greenland_purchase_in_prog
+	}
+}
+greenland.9 = { #DEN has transferred greenland
+	type = country_event
+	placement = ROOT
+
+	title = greenland.9.t
+	desc = greenland.9.d
+	flavor = greenland.9.f
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+		c:ELY = {
+			save_scope_as = ely_scope
+		}
+		c:DEN = {
+			save_scope_as = denmark_scope
+		}
+		s:STATE_GREENLAND.region_state:DEN = {
+			save_scope_as = greenland_scope
+		}
+	}
+
+	option = {
+		name = greenland.9.a
+		s:STATE_GREENLAND.region_state:DEN = {
+			set_state_owner = c:ELY
+		}
+		ai_chance = {
+			base = 1
+		}
+	}
+}

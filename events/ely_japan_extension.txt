@@ -1,0 +1,5 @@
+﻿namespace = japan_conquest
+namespace = japan_colonies
+namespace = japan_expansion
+namespace = japan_coup
+namespace = transfer_conquest

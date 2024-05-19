@@ -1,0 +1,433 @@
+﻿namespace = ely_south_america_diplo
+namespace = ely_south_america_integration
+
+### Diplomatic Expansion ###
+
+ely_south_america_diplo.1 = {
+	type = country_event
+
+	title = ely_south_america_diplo.1.t
+	desc = ely_south_america_diplo.1.d
+	flavor = ely_south_america_diplo.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/southamerica_aristocrats.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/southamerica/aristocrats"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	duration = 4
+
+	trigger = {
+	}
+
+	immediate = {
+		c:ELY = {
+			remove_diplomatic_pact = {
+				country = c:MUI
+				type = puppet
+			}
+		}
+	}
+	option = {
+	name = ely_south_america_diplo.1.a 
+		c:TWT = {
+			create_diplomatic_pact = {
+				country = c:MUI
+				type = puppet
+			}
+		}
+	}
+}
+
+ely_south_america_diplo.2 = {
+	type = country_event
+
+	title = ely_south_america_diplo.2.t
+	desc = ely_south_america_diplo.2.d
+	flavor = ely_south_america_diplo.2.f
+
+	event_image = {
+		video = "gfx/event_pictures/southamerica_aristocrats.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/southamerica/aristocrats"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	duration = 4
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+	option = {
+	name = ely_south_america_diplo.2.a 
+		c:TWT = {
+			annex = c:MUI
+		}
+	}
+}
+
+ely_south_america_diplo.3 = {
+	type = country_event
+
+	title = ely_south_america_diplo.3.t
+	desc = ely_south_america_diplo.3.d
+	flavor = ely_south_america_diplo.3.f
+
+	event_image = {
+		video = "gfx/event_pictures/southamerica_aristocrats.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/southamerica/aristocrats"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	duration = 4
+
+	trigger = {
+	}
+
+	immediate = {
+		c:ELY = {
+			remove_diplomatic_pact = {
+				country = c:WYU
+				type = puppet
+			}
+		}
+	}
+	option = {
+	name = ely_south_america_diplo.3.a 
+		c:TWT = {
+			create_diplomatic_pact = {
+				country = c:WYU
+				type = puppet
+			}
+		}
+	}
+}
+
+ely_south_america_diplo.4 = {
+	type = country_event
+
+	title = ely_south_america_diplo.4.t
+	desc = ely_south_america_diplo.4.d
+	flavor = ely_south_america_diplo.4.f
+
+	event_image = {
+		video = "gfx/event_pictures/southamerica_aristocrats.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/southamerica/aristocrats"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+	option = {
+	name = ely_south_america_diplo.4.a 
+		c:TWT = {
+			annex = c:WYU
+		}
+		s:STATE_ZULIA = {
+			add_homeland = cu:quechua
+		}
+	}
+}
+
+ely_south_america_diplo.5 = {
+	type = country_event
+
+	title = ely_south_america_diplo.5.t
+	desc = ely_south_america_diplo.5.d
+	flavor = ely_south_america_diplo.5.f
+
+	event_image = {
+		video = "gfx/event_pictures/southamerica_aristocrats.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/southamerica/aristocrats"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		c:ELY = {
+			remove_diplomatic_pact = {
+				country = c:GRI
+				type = protectorate
+			}
+		}
+		c:GRI = {
+			random_scope_state = {
+				limit = {
+					is_homeland = cu:quechua
+					}
+				save_scope_as = quechua_scope
+			}
+		}
+	}
+	option = {
+	name = ely_south_america_diplo.5.a 
+		c:TWT = {
+			create_diplomatic_pact = {
+				country = c:GRI
+				type = protectorate
+			}
+		}
+		c:GRI = {
+			every_scope_state = {
+				limit = {
+					state_region = {
+						is_homeland = cu:quechua
+					}
+				}
+				set_state_owner = c:TWT
+			}
+		}	
+	}
+}
+
+ely_south_america_diplo.6 = {
+	type = country_event
+
+	title = ely_south_america_diplo.6.t
+	desc = ely_south_america_diplo.6.d
+	flavor = ely_south_america_diplo.6.f
+
+	event_image = {
+		video = "gfx/event_pictures/southamerica_aristocrats.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/southamerica/aristocrats"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		c:ELY = {
+			remove_diplomatic_pact = {
+				country = c:PAT
+				type = protectorate
+			}
+		}
+		c:PAT = {
+			random_scope_state = {
+				limit = {
+					is_homeland = cu:aimara
+					}
+				save_scope_as = aimara_scope
+			}
+		}
+	}
+	option = {
+	name = ely_south_america_diplo.6.a 
+		c:TWT = {
+			create_diplomatic_pact = {
+				country = c:GRI
+				type = protectorate
+			}
+		}
+		c:PAT = {
+			every_scope_state = {
+				limit = {
+					state_region = {
+						is_homeland = cu:aimara
+					}
+				}
+				limit = {
+					state_region = {
+						is_homeland = cu:quechua
+					}
+				}
+				set_state_owner = c:TWT
+			}
+		}	
+	}
+}
+
+### Cultural Shift ###
+
+ely_south_america_integration.1 = {
+	type = country_event
+	placement = ROOT
+	
+	title = ely_south_america_integration.1.t
+	desc = ely_south_america_integration.1.d
+	flavor = ely_south_america_integration.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/southamerica_aristocrats.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+	
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = cultural_shift.1.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+		if = {
+			limit = {
+				c:TWT ?= this
+			}
+			remove_primary_culture = cu:aimara
+		}
+		c:TWT = {
+		trigger_event = { id = ely_south_america_integration.2 days = 10 }	
+		}
+	}
+}
+
+
+ely_south_america_integration.2 = {
+	type = country_event
+	placement = ROOT
+	
+	title = ely_south_america_integration.2.t
+	desc = ely_south_america_integration.2.d
+	flavor = ely_south_america_integration.2.f
+	
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+	
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = ely_south_america_integration.2.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:aimara }
+					change_pop_culture = { target = cu:quechua value = 1 }
+				}
+			}
+			
+		s:STATE_AREQUIPA = {
+			remove_homeland = cu:aimara
+		}
+		s:STATE_LA_PAZ = {
+			remove_homeland = cu:aimara
+		}
+		s:STATE_POTOSI = {
+			remove_homeland = cu:aimara
+		}
+		s:STATE_TARAPACA = {
+			remove_homeland = cu:aimara
+		}
+		s:STATE_ANTOFAGASTA = {
+			remove_homeland = cu:aimara
+		}
+		s:STATE_SANTIAGO = {
+			remove_homeland = cu:aimara
+			add_homeland = cu:quechua
+		}
+		s:STATE_LOS_RIOS = {
+			remove_homeland = cu:aimara
+			add_homeland = cu:quechua
+		}
+		s:STATE_ARAUCANIA = {
+			remove_homeland = cu:aimara
+			add_homeland = cu:quechua
+		}
+	}
+}
+
+ely_south_america_integration.3 = {
+	type = country_event
+	placement = ROOT
+	
+	title = ely_south_america_integration.3.t
+	desc = ely_south_america_integration.3.d
+	flavor = ely_south_america_integration.3.f
+	
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+	
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = ely_south_america_integration.3.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:muisca }
+					change_pop_culture = { target = cu:quechua value = 1 }
+				}
+			}
+
+		s:STATE_CAUCA = {
+			remove_homeland = cu:muisca
+		}
+		s:STATE_ANTIOQUIA = {
+			remove_homeland = cu:muisca
+			add_homeland = cu:quechua
+		}
+		s:STATE_CUNDINAMARCA = {
+			remove_homeland = cu:muisca
+			add_homeland = cu:quechua
+		}
+	}
+}	

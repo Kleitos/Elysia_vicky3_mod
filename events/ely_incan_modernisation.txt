@@ -1,0 +1,1156 @@
+﻿namespace = inca_infrastructure
+namespace = inca_glory
+namespace = inca_farms
+namespace = guano_act
+
+# Infrastructure #
+
+inca_infrastructure.1 = {
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/unspecific_trains.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+
+	duration = 3
+	placement = scope:andes_pathway_scope
+	
+	title = inca_infrastructure.1.t
+	desc = inca_infrastructure.1.d
+	flavor = inca_infrastructure.1.f
+
+	trigger = { 
+	}
+
+	immediate = {
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_ECUADOR
+			}
+			save_scope_as = andes_pathway_scope
+		}
+	}
+	
+	option = {
+		name = inca_infrastructure.1.a
+		default_option = yes
+			add_modifier = {
+				name = ely_big_money
+				months = 60
+			}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_ECUADOR
+			}
+			add_modifier = {
+				name = incan_min
+				months = -1
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_TARAPACA
+			}
+			add_modifier = {
+				name = modifier_modern_pathway
+				months = -1
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_ANTOFAGASTA
+			}
+			add_modifier = {
+				name = modifier_modern_pathway
+				months = -1
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_LA_PAZ
+			}
+			add_modifier = {
+				name = modifier_modern_pathway
+				months = -1
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_POTOSI
+			}
+			add_modifier = {
+				name = modifier_modern_pathway
+				months = -1
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_CAJAMARCA
+			}
+			add_modifier = {
+				name = modifier_modern_pathway
+				months = -1
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_LIMA
+			}
+			add_modifier = {
+				name = modifier_modern_pathway
+				months = -1
+			}
+		}	
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_ICA
+			}
+			add_modifier = {
+				name = modifier_modern_pathway
+				months = -1
+			}
+		}	
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_AREQUIPA
+			}
+			add_modifier = {
+				name = modifier_modern_pathway
+				months = -1
+			}
+		}	
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_JUJUY
+			}
+			add_modifier = {
+				name = modifier_modern_pathway
+				months = -1
+			}
+		}	
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_SANTIAGO
+			}
+			add_modifier = {
+				name = modifier_modern_pathway
+				months = -1
+			}
+		}	
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_LOS_RIOS
+			}
+			add_modifier = {
+				name = modifier_modern_pathway
+				months = -1
+			}
+		}	
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_ARAUCANIA
+			}
+			add_modifier = {
+				name = modifier_modern_pathway
+				months = -1
+			}
+		}	
+	}
+	option = {
+		name = ely_infrastructure_event.1.b
+			add_modifier = {
+				name = government_admits_failure
+				months = 120
+			}
+	}
+}
+
+inca_infrastructure.2 = {
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/unspecific_trains.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+
+	duration = 3
+	placement = scope:andes_mines_scope
+	
+	title = inca_infrastructure.2.t
+	desc = inca_infrastructure.2.d
+	flavor = inca_infrastructure.2.f
+
+	trigger = { 
+	}
+
+	immediate = {
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_ECUADOR
+			}
+			save_scope_as = andes_mines_scope
+		}
+	}
+	
+	option = {
+		name = inca_infrastructure.2.a
+		default_option = yes
+			add_modifier = {
+				name = ely_big_money
+				months = 60
+			}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_ECUADOR
+			}
+			add_modifier = {
+				name = incan_mining
+				months = -1
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_TARAPACA
+			}
+			add_modifier = {
+				name = incan_mining
+				months = -1
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_ANTOFAGASTA
+			}
+			add_modifier = {
+				name = incan_mining
+				months = -1
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_LA_PAZ
+			}
+			add_modifier = {
+				name = incan_mining
+				months = -1
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_POTOSI
+			}
+			add_modifier = {
+				name = incan_mining
+				months = -1
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_CAJAMARCA
+			}
+			add_modifier = {
+				name = incan_mining
+				months = -1
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_LIMA
+			}
+			add_modifier = {
+				name = incan_mining
+				months = -1
+			}
+		}	
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_ICA
+			}
+			add_modifier = {
+				name = incan_mining
+				months = -1
+			}
+		}	
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_AREQUIPA
+			}
+			add_modifier = {
+				name = incan_mining
+				months = -1
+			}
+		}	
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_JUJUY
+			}
+			add_modifier = {
+				name = incan_mining
+				months = -1
+			}
+		}	
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_SANTIAGO
+			}
+			add_modifier = {
+				name = incan_mining
+				months = -1
+			}
+		}	
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_LOS_RIOS
+			}
+			add_modifier = {
+				name = incan_mining
+				months = -1
+			}
+		}	
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_ARAUCANIA
+			}
+			add_modifier = {
+				name = incan_mining
+				months = -1
+			}
+		}	
+	}
+	option = {
+		name = ely_infrastructure_event.1.b
+			add_modifier = {
+				name = government_admits_failure
+				months = 120
+			}
+	}
+}
+
+inca_infrastructure.3 = {
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/unspecific_trains.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+
+	duration = 3
+	placement = scope:andes_mines_2_scope
+	
+	title = inca_infrastructure.3.t
+	desc = inca_infrastructure.3.d
+	flavor = inca_infrastructure.3.f
+
+	trigger = { 
+	}
+
+	immediate = {
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_TUCUMAN
+			}
+			save_scope_as = andes_mines_2_scope
+		}
+	}
+	
+	option = {
+		name = inca_infrastructure.3.a
+		default_option = yes
+			add_modifier = {
+				name = ely_big_money
+				months = 60
+			}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_ZULIA
+			}
+			add_modifier = {
+				name = incan_mining
+				months = -1
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_ANTIOQUIA
+			}
+			add_modifier = {
+				name = incan_mining
+				months = -1
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_CUNDINAMARCA
+			}
+			add_modifier = {
+				name = incan_mining
+				months = -1
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_CAUCA
+			}
+			add_modifier = {
+				name = incan_mining
+				months = -1
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_TUCUMAN
+			}
+			add_modifier = {
+				name = incan_mining
+				months = -1
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_RIO_NEGRO
+			}
+			add_modifier = {
+				name = incan_mining
+				months = -1
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_PATAGONIA
+			}
+			add_modifier = {
+				name = incan_mining
+				months = -1
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_LA_PAMPA
+			}
+			add_modifier = {
+				name = incan_mining
+				months = -1
+			}
+		}
+	}
+	option = {
+		name = ely_infrastructure_event.1.b
+			add_modifier = {
+				name = government_admits_failure
+				months = 120
+			}
+	}
+}
+
+inca_infrastructure.4 = {
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/unspecific_trains.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+
+	duration = 3
+	placement = scope:andes_pathway_2_scope
+	
+	title = inca_infrastructure.4.t
+	desc = inca_infrastructure.4.d
+	flavor = inca_infrastructure.4.f
+
+	trigger = { 
+	}
+
+	immediate = {
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_TUCUMAN
+			}
+			save_scope_as = andes_pathway_2_scope
+		}
+	}
+	
+	option = {
+		name = inca_infrastructure.4.a
+		default_option = yes
+			add_modifier = {
+				name = ely_big_money
+				months = 60
+			}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_ZULIA
+			}
+			add_modifier = {
+				name = modifier_modern_pathway
+				months = -1
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_ANTIOQUIA
+			}
+			add_modifier = {
+				name = modifier_modern_pathway
+				months = -1
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_CUNDINAMARCA
+			}
+			add_modifier = {
+				name = modifier_modern_pathway
+				months = -1
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_CAUCA
+			}
+			add_modifier = {
+				name = modifier_modern_pathway
+				months = -1
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_TUCUMAN
+			}
+			add_modifier = {
+				name = modifier_modern_pathway
+				months = -1
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_RIO_NEGRO
+			}
+			add_modifier = {
+				name = modifier_modern_pathway
+				months = -1
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_PATAGONIA
+			}
+			add_modifier = {
+				name = modifier_modern_pathway
+				months = -1
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_LA_PAMPA
+			}
+			add_modifier = {
+				name = modifier_modern_pathway
+				months = -1
+			}
+		}
+	}
+	option = {
+		name = ely_infrastructure_event.1.b
+			add_modifier = {
+				name = government_admits_failure
+				months = 120
+			}
+	}
+}
+
+# Conquest #
+
+inca_glory.1 = {
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/unspecific_trains.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+
+	duration = 3
+	
+	title = inca_glory.1.t
+	desc = inca_glory.1.d
+	flavor = inca_glory.1.f
+
+	trigger = { 
+	}
+
+	immediate = {
+	}
+	
+	option = {
+		name = inca_glory.1.a
+		default_option = yes
+			add_modifier = {
+				name = ruler_of_andes
+				months = -1
+			}
+		s:STATE_TUCUMAN = {
+			add_homeland = cu:quechua
+		}
+		s:STATE_PATAGONIA = {
+			add_homeland = cu:quechua
+		}
+		s:STATE_RIO_NEGRO = {
+			add_homeland = cu:quechua
+		}
+		s:STATE_LA_PAMPA = {
+			add_homeland = cu:quechua
+		}
+	}
+}
+
+# Agriculture #
+
+inca_farms.1 = {
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/unspecific_trains.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+
+	duration = 3
+	placement = scope:andes_farms_scope
+	
+	title = inca_farms.1.t
+	desc = inca_farms.1.d
+	flavor = inca_farms.1.f
+
+	trigger = { 
+	}
+
+	immediate = {
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_ECUADOR
+			}
+			save_scope_as = andes_farms_scope
+		}
+	}
+	
+	option = {
+		name = inca_farms.1.a
+		default_option = yes
+			add_modifier = {
+				name = ely_big_money
+				months = 60
+			}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_ECUADOR
+			}
+			add_modifier = {
+				name = incan_farming
+				months = -1
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_LA_PAZ
+			}
+			add_modifier = {
+				name = incan_farming
+				months = -1
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_POTOSI
+			}
+			add_modifier = {
+				name = incan_farming
+				months = -1
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_CAJAMARCA
+			}
+			add_modifier = {
+				name = incan_farming
+				months = -1
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_LIMA
+			}
+			add_modifier = {
+				name = incan_farming
+				months = -1
+			}
+		}	
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_ICA
+			}
+			add_modifier = {
+				name = incan_farming
+				months = -1
+			}
+		}	
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_AREQUIPA
+			}
+			add_modifier = {
+				name = incan_farming
+				months = -1
+			}
+		}	
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_JUJUY
+			}
+			add_modifier = {
+				name = incan_farming
+				months = -1
+			}
+		}	
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_SANTIAGO
+			}
+			add_modifier = {
+				name = incan_farming
+				months = -1
+			}
+		}	
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_LOS_RIOS
+			}
+			add_modifier = {
+				name = incan_farming
+				months = -1
+			}
+		}		
+	}
+	option = {
+		name = ely_infrastructure_event.1.b
+			add_modifier = {
+				name = government_admits_failure
+				months = 120
+			}
+	}
+}
+
+inca_farms.2 = {
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/unspecific_trains.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+
+	duration = 3
+	placement = scope:andes_farms_2_scope
+	
+	title = inca_farms.2.t
+	desc = inca_farms.2.d
+	flavor = inca_farms.2.f
+
+	trigger = { 
+	}
+
+	immediate = {
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_TUCUMAN
+			}
+			save_scope_as = andes_farms_2_scope
+		}
+	}
+	
+	option = {
+		name = inca_farms.2.a
+		default_option = yes
+			add_modifier = {
+				name = ely_big_money
+				months = 60
+			}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_ZULIA
+			}
+			add_modifier = {
+				name = incan_farming
+				months = -1
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_ANTIOQUIA
+			}
+			add_modifier = {
+				name = incan_farming
+				months = -1
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_CUNDINAMARCA
+			}
+			add_modifier = {
+				name = incan_farming
+				months = -1
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_CAUCA
+			}
+			add_modifier = {
+				name = incan_farming
+				months = -1
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_TUCUMAN
+			}
+			add_modifier = {
+				name = incan_farming
+				months = -1
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_RIO_NEGRO
+			}
+			add_modifier = {
+				name = incan_farming
+				months = -1
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_LA_PAMPA
+			}
+			add_modifier = {
+				name = incan_farming
+				months = -1
+			}
+		}
+	}
+	option = {
+		name = ely_infrastructure_event.1.b
+			add_modifier = {
+				name = government_admits_failure
+				months = 120
+			}
+	}
+}
+
+inca_farms.3 = {
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/unspecific_trains.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+
+	duration = 3
+	placement = scope:andes_ranch_scope
+	
+	title = inca_farms.3.t
+	desc = inca_farms.3.d
+	flavor = inca_farms.3.f
+
+	trigger = { 
+	}
+
+	immediate = {
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_ECUADOR
+			}
+			save_scope_as = andes_ranch_scope
+		}
+	}
+	
+	option = {
+		name = inca_farms.3.a
+		default_option = yes
+			add_modifier = {
+				name = ely_big_money
+				months = 60
+			}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_ECUADOR
+			}
+			add_modifier = {
+				name = incan_ranching
+				months = -1
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_TARAPACA
+			}
+			add_modifier = {
+				name = incan_ranching
+				months = -1
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_ANTOFAGASTA
+			}
+			add_modifier = {
+				name = incan_ranching
+				months = -1
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_LA_PAZ
+			}
+			add_modifier = {
+				name = incan_ranching
+				months = -1
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_POTOSI
+			}
+			add_modifier = {
+				name = incan_ranching
+				months = -1
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_CAJAMARCA
+			}
+			add_modifier = {
+				name = incan_ranching
+				months = -1
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_LIMA
+			}
+			add_modifier = {
+				name = incan_ranching
+				months = -1
+			}
+		}	
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_ICA
+			}
+			add_modifier = {
+				name = incan_ranching
+				months = -1
+			}
+		}	
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_AREQUIPA
+			}
+			add_modifier = {
+				name = incan_ranching
+				months = -1
+			}
+		}	
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_JUJUY
+			}
+			add_modifier = {
+				name = incan_ranching
+				months = -1
+			}
+		}	
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_SANTIAGO
+			}
+			add_modifier = {
+				name = incan_ranching
+				months = -1
+			}
+		}	
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_LOS_RIOS
+			}
+			add_modifier = {
+				name = incan_ranching
+				months = -1
+			}
+		}	
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_ARAUCANIA
+			}
+			add_modifier = {
+				name = incan_ranching
+				months = -1
+			}
+		}	
+	}
+	option = {
+		name = ely_infrastructure_event.1.b
+			add_modifier = {
+				name = government_admits_failure
+				months = 120
+			}
+	}
+}
+
+inca_farms.4 = {
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/unspecific_trains.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+
+	duration = 3
+	placement = scope:andes_ranch_2_scope
+	
+	title = inca_farms.4.t
+	desc = inca_farms.4.d
+	flavor = inca_farms.4.f
+
+	trigger = { 
+	}
+
+	immediate = {
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_TUCUMAN
+			}
+			save_scope_as = andes_ranch_2_scope
+		}
+	}
+	
+	option = {
+		name = inca_farms.4.a
+		default_option = yes
+			add_modifier = {
+				name = ely_big_money
+				months = 60
+			}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_ZULIA
+			}
+			add_modifier = {
+				name = incan_ranching
+				months = -1
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_ANTIOQUIA
+			}
+			add_modifier = {
+				name = incan_ranching
+				months = -1
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_CUNDINAMARCA
+			}
+			add_modifier = {
+				name = incan_ranching
+				months = -1
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_CAUCA
+			}
+			add_modifier = {
+				name = incan_ranching
+				months = -1
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_TUCUMAN
+			}
+			add_modifier = {
+				name = incan_ranching
+				months = -1
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_RIO_NEGRO
+			}
+			add_modifier = {
+				name = incan_ranching
+				months = -1
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_PATAGONIA
+			}
+			add_modifier = {
+				name = incan_ranching
+				months = -1
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_LA_PAMPA
+			}
+			add_modifier = {
+				name = incan_ranching
+				months = -1
+			}
+		}
+	}
+	option = {
+		name = ely_infrastructure_event.1.b
+			add_modifier = {
+				name = government_admits_failure
+				months = 120
+			}
+	}
+}
+
+# Mining #
+
+guano_act.1 = {
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/unspecific_trains.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+
+	duration = 3
+	
+	title = guano_act.1.t
+	desc = guano_act.1.d
+	flavor = guano_act.1.f
+
+	trigger = { 
+	}
+
+	immediate = {
+	}
+	
+	option = {
+		name = guano_act.1.a
+		default_option = yes
+			add_modifier = {
+				name = sulfur_leader
+				months = -1
+			}
+	}
+}

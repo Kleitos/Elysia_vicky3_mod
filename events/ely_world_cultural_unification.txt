@@ -1,0 +1,2385 @@
+﻿namespace = unification_culture
+namespace = cultural_shift
+
+##Cultural Unification##
+
+unification_culture.1 = {
+	type = country_event
+	placement = ROOT
+	
+	title = unification_culture.1.t
+	desc = unification_culture.1.d
+	flavor = unification_culture.1.f
+	
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+	
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = unification_culture.1.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:francoprovencal }
+					change_pop_culture = { target = cu:french value = 1 }
+				}
+				every_scope_pop = {
+					limit = { culture = cu:occitan }
+					change_pop_culture = { target = cu:french value = 1 }
+				}
+				every_scope_pop = {
+					limit = { culture = cu:wallonian }
+					change_pop_culture = { target = cu:french value = 1 }
+				}
+			}
+
+		s:STATE_SAVOY = {
+			remove_homeland = cu:francoprovencal
+			add_homeland = cu:french
+		}
+		s:STATE_RHONE = {
+			remove_homeland = cu:francoprovencal
+			add_homeland = cu:french
+		}
+		s:STATE_EAST_SWITZERLAND = {
+			remove_homeland = cu:francoprovencal
+			add_homeland = cu:french
+		}
+		s:STATE_WEST_SWITZERLAND = {
+			remove_homeland = cu:francoprovencal
+			add_homeland = cu:french
+		}
+		s:STATE_RHONE = {
+			remove_homeland = cu:occitan
+			add_homeland = cu:french
+		}
+		s:STATE_AUVERGNE_LIMOUSIN = {
+			remove_homeland = cu:occitan
+			add_homeland = cu:french
+		}
+		s:STATE_LANGUEDOC = {
+			remove_homeland = cu:occitan
+			add_homeland = cu:french
+		}
+		s:STATE_GUYENNE = {
+			remove_homeland = cu:occitan
+			add_homeland = cu:french
+		}
+		s:STATE_AQUITAINE = {
+			remove_homeland = cu:occitan
+			add_homeland = cu:french
+		}
+		s:STATE_PROVENCE = {
+			remove_homeland = cu:occitan
+			add_homeland = cu:french
+		}
+		s:STATE_WALLONIA = {
+			remove_homeland = cu:wallonian
+			add_homeland = cu:french
+		}
+		s:STATE_FLANDERS = {
+			remove_homeland = cu:wallonian
+			add_homeland = cu:french
+		}
+		s:STATE_GELRE = {
+			remove_homeland = cu:wallonian
+			add_homeland = cu:french
+		}
+		s:STATE_RHINELAND = {
+			remove_homeland = cu:wallonian
+			add_homeland = cu:french
+		}
+		s:STATE_NORTH_RHINE = {
+			remove_homeland = cu:wallonian
+			add_homeland = cu:french
+		}
+	}
+}
+
+unification_culture.2 = {
+	type = country_event
+	placement = ROOT
+	
+	title = unification_culture.1.t
+	desc = unification_culture.1.d
+	flavor = unification_culture.1.f
+	
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+	
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = unification_culture.1.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:north_german }
+					change_pop_culture = { target = cu:german value = 1 }
+				}
+				every_scope_pop = {
+					limit = { culture = cu:south_german }
+					change_pop_culture = { target = cu:german value = 1 }
+				}
+				every_scope_pop = {
+					limit = { culture = cu:alemannic }
+					change_pop_culture = { target = cu:german value = 1 }
+				}
+			}
+
+		s:STATE_POMERANIA = {
+			remove_homeland = cu:north_german
+			add_homeland = cu:german
+		}
+		s:STATE_ELBE = {
+			remove_homeland = cu:north_german
+			add_homeland = cu:german
+		}
+		s:STATE_POSEN = {
+			remove_homeland = cu:north_german
+			add_homeland = cu:german
+		}
+		s:STATE_WESTPHALIA = {
+			remove_homeland = cu:north_german
+			add_homeland = cu:german
+		}
+		s:STATE_ANHALT = {
+			remove_homeland = cu:north_german
+			add_homeland = cu:german
+		}
+		s:STATE_WEST_PRUSSIA = {
+			remove_homeland = cu:north_german
+			add_homeland = cu:german
+		}
+		s:STATE_EAST_PRUSSIA = {
+			remove_homeland = cu:north_german
+			add_homeland = cu:german
+		}
+		s:STATE_RUHR = {
+			remove_homeland = cu:north_german
+			add_homeland = cu:german
+		}
+		s:STATE_SILESIA = {
+			remove_homeland = cu:north_german
+			add_homeland = cu:german
+		}
+		s:STATE_BRANDENBURG = {
+			remove_homeland = cu:north_german
+			add_homeland = cu:german
+		}
+		s:STATE_SCHLESWIG_HOLSTEIN = {
+			remove_homeland = cu:north_german
+			add_homeland = cu:german
+		}
+		s:STATE_HANNOVER = {
+			remove_homeland = cu:north_german
+			add_homeland = cu:german
+		}
+		s:STATE_SAXONY = {
+			remove_homeland = cu:north_german
+			add_homeland = cu:german
+		}
+		s:STATE_BRUNSWICK = {
+			remove_homeland = cu:north_german
+			add_homeland = cu:german
+		}
+		s:STATE_HESSE = {
+			remove_homeland = cu:north_german
+			add_homeland = cu:german
+		}
+		s:STATE_MECKLENBURG = {
+			remove_homeland = cu:north_german
+			add_homeland = cu:german
+		}
+		s:STATE_TRANSDANUBIA = {
+			remove_homeland = cu:south_german
+			add_homeland = cu:german
+		}
+		s:STATE_STYRIA = {
+			remove_homeland = cu:south_german
+			add_homeland = cu:german
+		}
+		s:STATE_TYROL = {
+			remove_homeland = cu:south_german
+			add_homeland = cu:german
+		}
+		s:STATE_AUSTRIA = {
+			remove_homeland = cu:south_german
+			add_homeland = cu:german
+		}
+		s:STATE_SOUTH_TYROL = {
+			remove_homeland = cu:south_german
+			add_homeland = cu:german
+		}
+		s:STATE_SLOVENIA = {
+			remove_homeland = cu:south_german
+			add_homeland = cu:german
+		}
+		s:STATE_WURTTEMBERG = {
+			remove_homeland = cu:south_german
+			add_homeland = cu:german
+		}
+		s:STATE_BADEN = {
+			remove_homeland = cu:south_german
+			add_homeland = cu:german
+		}
+		s:STATE_FRANCONIA = {
+			remove_homeland = cu:south_german
+			add_homeland = cu:german
+		}
+		s:STATE_WURTTEMBERG = {
+			remove_homeland = cu:alemannic
+			add_homeland = cu:german
+		}
+		s:STATE_BADEN = {
+			remove_homeland = cu:alemannic
+			add_homeland = cu:german
+		}
+		s:STATE_ALSACE_LORRAINE = {
+			remove_homeland = cu:alemannic
+			add_homeland = cu:german
+		}
+		s:STATE_EAST_SWITZERLAND = {
+			remove_homeland = cu:alemannic
+			add_homeland = cu:german
+		}
+		s:STATE_WEST_SWITZERLAND = {
+			remove_homeland = cu:alemannic
+			add_homeland = cu:german
+		}
+	}
+}
+
+unification_culture.3 = {
+	type = country_event
+	placement = ROOT
+	
+	title = unification_culture.1.t
+	desc = unification_culture.1.d
+	flavor = unification_culture.1.f
+	
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+	
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = unification_culture.1.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:north_italian }
+					change_pop_culture = { target = cu:italian value = 1 }
+				}
+				every_scope_pop = {
+					limit = { culture = cu:south_italian }
+					change_pop_culture = { target = cu:italian value = 1 }
+				}
+				every_scope_pop = {
+					limit = { culture = cu:maltese }
+					change_pop_culture = { target = cu:italian value = 1 }
+				}
+				every_scope_pop = {
+					limit = { culture = cu:corsican }
+					change_pop_culture = { target = cu:italian value = 1 }
+				}
+			}
+
+		s:STATE_VENETIA = {
+			remove_homeland = cu:north_italian
+			add_homeland = cu:italian
+		}
+		s:STATE_EMILIA = {
+			remove_homeland = cu:north_italian
+			add_homeland = cu:italian
+		}
+		s:STATE_TUSCANY = {
+			remove_homeland = cu:north_italian
+			add_homeland = cu:italian
+		}
+		s:STATE_ROMAGNA = {
+			remove_homeland = cu:north_italian
+			add_homeland = cu:italian
+		}
+		s:STATE_DALMATIA = {
+			remove_homeland = cu:north_italian
+			add_homeland = cu:italian
+		}
+		s:STATE_ISTRIA = {
+			remove_homeland = cu:north_italian
+			add_homeland = cu:italian
+		}
+		s:STATE_LOMBARDY = {
+			remove_homeland = cu:north_italian
+			add_homeland = cu:italian
+		}
+		s:STATE_SOUTH_TYROL = {
+			remove_homeland = cu:north_italian
+			add_homeland = cu:italian
+		}
+		s:STATE_PIEDMONT = {
+			remove_homeland = cu:north_italian
+			add_homeland = cu:italian
+		}
+		s:STATE_SICILY = {
+			remove_homeland = cu:south_italian
+			add_homeland = cu:italian
+		}
+		s:STATE_LAZIO = {
+			remove_homeland = cu:south_italian
+			add_homeland = cu:italian
+		}
+		s:STATE_CAMPANIA = {
+			remove_homeland = cu:south_italian
+			add_homeland = cu:italian
+		}
+		s:STATE_ABRUZZO = {
+			remove_homeland = cu:south_italian
+			add_homeland = cu:italian
+		}
+		s:STATE_CALABRIA = {
+			remove_homeland = cu:south_italian
+			add_homeland = cu:italian
+		}
+		s:STATE_APULIA = {
+			remove_homeland = cu:south_italian
+			add_homeland = cu:italian
+		}
+		s:STATE_MALTA = {
+			remove_homeland = cu:maltese
+			add_homeland = cu:italian
+		}
+		s:STATE_CORSICA = {
+			remove_homeland = cu:corsican
+			add_homeland = cu:italian
+		}
+	}
+}
+
+unification_culture.4 = {
+	type = country_event
+	placement = ROOT
+	
+	title = unification_culture.1.t
+	desc = unification_culture.1.d
+	flavor = unification_culture.1.f
+	
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+	
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = unification_culture.1.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:spanish }
+					change_pop_culture = { target = cu:iberian value = 1 }
+				}
+				every_scope_pop = {
+					limit = { culture = cu:catalan }
+					change_pop_culture = { target = cu:iberian value = 1 }
+				}
+				every_scope_pop = {
+					limit = { culture = cu:portuguese }
+					change_pop_culture = { target = cu:iberian value = 1 }
+				}
+				every_scope_pop = {
+					limit = { culture = cu:galician }
+					change_pop_culture = { target = cu:iberian value = 1 }
+				}
+			}
+
+		s:STATE_ANDALUSIA = {
+			remove_homeland = cu:spanish
+			add_homeland = cu:iberian
+		}
+		s:STATE_GALICIA = {
+			remove_homeland = cu:spanish
+			add_homeland = cu:iberian
+		}
+		s:STATE_GALICIA = {
+			remove_homeland = cu:galician
+			add_homeland = cu:iberian
+		}
+		s:STATE_ASTURIAS = {
+			remove_homeland = cu:spanish
+			add_homeland = cu:iberian
+		}
+		s:STATE_CASTILE = {
+			remove_homeland = cu:spanish
+			add_homeland = cu:iberian
+		}
+		s:STATE_ARAGON = {
+			remove_homeland = cu:spanish
+			add_homeland = cu:iberian
+		}
+		s:STATE_NAVARRA = {
+			remove_homeland = cu:spanish
+			add_homeland = cu:iberian
+		}
+		s:STATE_CATALONIA = {
+			remove_homeland = cu:spanish
+			add_homeland = cu:iberian
+		}
+		s:STATE_CATALONIA = {
+			remove_homeland = cu:catalan
+			add_homeland = cu:iberian
+		}
+		s:STATE_BALEARES = {
+			remove_homeland = cu:spanish
+			add_homeland = cu:iberian
+		}
+		s:STATE_BALEARES = {
+			remove_homeland = cu:catalan
+			add_homeland = cu:iberian
+		}
+		s:STATE_BEIRA = {
+			remove_homeland = cu:spanish
+			add_homeland = cu:iberian
+		}
+		s:STATE_ESTREMADURA = {
+			remove_homeland = cu:spanish
+			add_homeland = cu:iberian
+		}
+		s:STATE_MADEIRA = {
+			remove_homeland = cu:spanish
+			add_homeland = cu:iberian
+		}
+		s:STATE_CAPE_VERDE = {
+			remove_homeland = cu:spanish
+			add_homeland = cu:iberian
+		}
+		s:STATE_AZORES = {
+			remove_homeland = cu:spanish
+			add_homeland = cu:iberian
+		}
+		s:STATE_BEIRA = {
+			remove_homeland = cu:portuguese
+			add_homeland = cu:iberian
+		}
+		s:STATE_ESTREMADURA = {
+			remove_homeland = cu:portuguese
+			add_homeland = cu:iberian
+		}
+		s:STATE_MADEIRA = {
+			remove_homeland = cu:portuguese
+			add_homeland = cu:iberian
+		}
+		s:STATE_CAPE_VERDE = {
+			remove_homeland = cu:portuguese
+			add_homeland = cu:iberian
+		}
+		s:STATE_AZORES = {
+			remove_homeland = cu:portuguese
+			add_homeland = cu:iberian
+		}
+		s:STATE_CANARY_ISLANDS = {
+			remove_homeland = cu:spanish
+			add_homeland = cu:iberian
+		}
+		s:STATE_GRANADA = {
+			remove_homeland = cu:spanish
+			add_homeland = cu:iberian
+		}
+		s:STATE_BADAJOZ = {
+			remove_homeland = cu:spanish
+			add_homeland = cu:iberian
+		}
+		s:STATE_VALENCIA = {
+			remove_homeland = cu:spanish
+			add_homeland = cu:iberian
+		}
+		s:STATE_VALENCIA = {
+			remove_homeland = cu:catalan
+			add_homeland = cu:iberian
+		}
+		s:STATE_TOLEDO = {
+			remove_homeland = cu:spanish
+			add_homeland = cu:iberian
+		}
+	}
+}
+
+unification_culture.5 = {
+	type = country_event
+	placement = ROOT
+	
+	title = unification_culture.1.t
+	desc = unification_culture.1.d
+	flavor = unification_culture.1.f
+	
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+	
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = unification_culture.1.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:persian }
+					change_pop_culture = { target = cu:iranian_culture value = 1 }
+				}
+				every_scope_pop = {
+					limit = { culture = cu:kurdish }
+					change_pop_culture = { target = cu:iranian_culture value = 1 }
+				}
+				every_scope_pop = {
+					limit = { culture = cu:tajik }
+					change_pop_culture = { target = cu:iranian_culture value = 1 }
+				}
+				every_scope_pop = {
+					limit = { culture = cu:pashtun }
+					change_pop_culture = { target = cu:iranian_culture value = 1 }
+				}
+				every_scope_pop = {
+					limit = { culture = cu:baluchi }
+					change_pop_culture = { target = cu:iranian_culture value = 1 }
+				}
+				every_scope_pop = {
+					limit = { culture = cu:hazara }
+					change_pop_culture = { target = cu:iranian_culture value = 1 }
+				}
+			}
+
+		s:STATE_BALUCHISTAN = {
+			remove_homeland = cu:persian
+			add_homeland = cu:iranian_culture
+		}
+		s:STATE_LARISTAN = {
+			remove_homeland = cu:persian
+			add_homeland = cu:iranian_culture
+		}
+		s:STATE_SISTAN = {
+			remove_homeland = cu:persian
+			add_homeland = cu:iranian_culture
+		}
+		s:STATE_KHORASAN = {
+			remove_homeland = cu:persian
+			add_homeland = cu:iranian_culture
+		}
+		s:STATE_KHUZESTAN = {
+			remove_homeland = cu:persian
+			add_homeland = cu:iranian_culture
+		}
+		s:STATE_FARS = {
+			remove_homeland = cu:persian
+			add_homeland = cu:iranian_culture
+		}
+		s:STATE_MAZANDARAN = {
+			remove_homeland = cu:persian
+			add_homeland = cu:iranian_culture
+		}
+		s:STATE_IRAKAJEMI = {
+			remove_homeland = cu:persian
+			add_homeland = cu:iranian_culture
+		}
+		s:STATE_TABRIZ = {
+			remove_homeland = cu:persian
+			add_homeland = cu:iranian_culture
+		}
+		s:STATE_LURISTAN = {
+			remove_homeland = cu:persian
+			add_homeland = cu:iranian_culture
+		}
+		s:STATE_WESTERN_AFGHANISTAN = {
+			remove_homeland = cu:persian
+			add_homeland = cu:iranian_culture
+		}
+		s:STATE_PASHTUNISTAN = {
+			remove_homeland = cu:persian
+			add_homeland = cu:iranian_culture
+		}
+		s:STATE_BALUCHISTAN = {
+			remove_homeland = cu:baluchi
+			add_homeland = cu:iranian_culture
+		}
+		s:STATE_LARISTAN = {
+			remove_homeland = cu:baluchi
+			add_homeland = cu:iranian_culture
+		}
+		s:STATE_SISTAN = {
+			remove_homeland = cu:baluchi
+			add_homeland = cu:iranian_culture
+		}
+		s:STATE_BALUCHISTAN = {
+			remove_homeland = cu:pashtun
+			add_homeland = cu:iranian_culture
+		}
+		s:STATE_WESTERN_AFGHANISTAN = {
+			remove_homeland = cu:pashtun
+			add_homeland = cu:iranian_culture
+		}
+		s:STATE_WESTERN_AFGHANISTAN = {
+			remove_homeland = cu:hazara
+			add_homeland = cu:iranian_culture
+		}
+		s:STATE_EASTERN_AFGHANISTAN = {
+			remove_homeland = cu:hazara
+			add_homeland = cu:iranian_culture
+		}
+		s:STATE_EASTERN_AFGHANISTAN = {
+			remove_homeland = cu:pashtun
+			add_homeland = cu:iranian_culture
+		}
+		s:STATE_PASHTUNISTAN = {
+			remove_homeland = cu:pashtun
+			add_homeland = cu:iranian_culture
+		}
+		s:STATE_WESTERN_AFGHANISTAN = {
+			remove_homeland = cu:tajik
+			add_homeland = cu:iranian_culture
+		}
+		s:STATE_EASTERN_AFGHANISTAN = {
+			remove_homeland = cu:tajik
+			add_homeland = cu:iranian_culture
+		}
+		s:STATE_TAJIKISTAN = {
+			remove_homeland = cu:tajik
+			add_homeland = cu:iranian_culture
+		}
+		s:STATE_ALEPPO = {
+			remove_homeland = cu:kurdish
+			add_homeland = cu:iranian_culture
+		}
+		s:STATE_KHORASAN = {
+			remove_homeland = cu:kurdish
+			add_homeland = cu:iranian_culture
+		}
+		s:STATE_TABRIZ = {
+			remove_homeland = cu:kurdish
+			add_homeland = cu:iranian_culture
+		}
+		s:STATE_LURISTAN = {
+			remove_homeland = cu:kurdish
+			add_homeland = cu:iranian_culture
+		}
+		s:STATE_MOSUL = {
+			remove_homeland = cu:kurdish
+			add_homeland = cu:iranian_culture
+		}
+		s:STATE_TRABZON = {
+			remove_homeland = cu:kurdish
+			add_homeland = cu:iranian_culture
+		}
+		s:STATE_ERZURUM = {
+			remove_homeland = cu:kurdish
+			add_homeland = cu:iranian_culture
+		}
+		s:STATE_KARS = {
+			remove_homeland = cu:kurdish
+			add_homeland = cu:iranian_culture
+		}
+		s:STATE_DIYARBAKIR = {
+			remove_homeland = cu:kurdish
+			add_homeland = cu:iranian_culture
+		}
+		s:STATE_ADANA = {
+			remove_homeland = cu:kurdish
+			add_homeland = cu:iranian_culture
+		}
+		s:STATE_DEIR_EZ_ZOR = {
+			remove_homeland = cu:kurdish
+			add_homeland = cu:iranian_culture
+		}
+	}
+}
+
+unification_culture.6 = {
+	type = country_event
+	placement = ROOT
+	
+	title = unification_culture.1.t
+	desc = unification_culture.1.d
+	flavor = unification_culture.1.f
+	
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+	
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = unification_culture.1.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:uzbek }
+					change_pop_culture = { target = cu:turanian_culture value = 1 }
+				}
+				every_scope_pop = {
+					limit = { culture = cu:kazak }
+					change_pop_culture = { target = cu:turanian_culture value = 1 }
+				}
+				every_scope_pop = {
+					limit = { culture = cu:kirgiz }
+					change_pop_culture = { target = cu:turanian_culture value = 1 }
+				}
+				every_scope_pop = {
+					limit = { culture = cu:turkmen }
+					change_pop_culture = { target = cu:turanian_culture value = 1 }
+				}
+			}
+
+		s:STATE_KHIVA = {
+			remove_homeland = cu:uzbek
+			add_homeland = cu:turanian_culture
+		}
+		s:STATE_KHIVA = {
+			remove_homeland = cu:kazak
+			add_homeland = cu:turanian_culture
+		}
+		s:STATE_UZBEKIA = {
+			remove_homeland = cu:uzbek
+			add_homeland = cu:turanian_culture
+		}
+		s:STATE_UZBEKIA = {
+			remove_homeland = cu:kazak
+			add_homeland = cu:turanian_culture
+		}
+		s:STATE_TAJIKISTAN = {
+			remove_homeland = cu:uzbek
+			add_homeland = cu:turanian_culture
+		}
+		s:STATE_KIRGHIZIA = {
+			remove_homeland = cu:uzbek
+			add_homeland = cu:turanian_culture
+		}
+		s:STATE_KIRGHIZIA = {
+			remove_homeland = cu:kirgiz
+			add_homeland = cu:turanian_culture
+		}
+		s:STATE_TURKMENIA = {
+			remove_homeland = cu:uzbek
+			add_homeland = cu:turanian_culture
+		}
+		s:STATE_TURKMENIA = {
+			remove_homeland = cu:turkmen
+			add_homeland = cu:turanian_culture
+		}
+		s:STATE_SEMIRECHE = {
+			remove_homeland = cu:kirgiz
+			add_homeland = cu:turanian_culture
+		}
+		s:STATE_SEMIRECHE = {
+			remove_homeland = cu:kazak
+			add_homeland = cu:turanian_culture
+		}
+		s:STATE_SEMIRECHE = {
+			remove_homeland = cu:uighur
+			add_homeland = cu:turanian_culture
+		}
+		s:STATE_JETISY = {
+			remove_homeland = cu:kirgiz
+			add_homeland = cu:turanian_culture
+		}
+		s:STATE_JETISY = {
+			remove_homeland = cu:kazak
+			add_homeland = cu:turanian_culture
+		}
+		s:STATE_JETISY = {
+			remove_homeland = cu:uighur
+			add_homeland = cu:turanian_culture
+		}
+		s:STATE_AKMOLINSK = {
+			remove_homeland = cu:kazak
+			add_homeland = cu:turanian_culture
+		}
+		s:STATE_AKMOLINSK = {
+			remove_homeland = cu:uzbek
+			add_homeland = cu:turanian_culture
+		}
+		s:STATE_URALSK = {
+			remove_homeland = cu:kazak
+			add_homeland = cu:turanian_culture
+		}
+	}
+}
+
+unification_culture.7 = {
+	type = country_event
+	placement = ROOT
+	
+	title = unification_culture.1.t
+	desc = unification_culture.1.d
+	flavor = unification_culture.1.f
+	
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+	
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = unification_culture.1.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:amhara }
+					change_pop_culture = { target = cu:ethiopian_culture value = 1 }
+				}
+				every_scope_pop = {
+					limit = { culture = cu:afar }
+					change_pop_culture = { target = cu:ethiopian_culture value = 1 }
+				}
+				every_scope_pop = {
+					limit = { culture = cu:oromo }
+					change_pop_culture = { target = cu:ethiopian_culture value = 1 }
+				}
+				every_scope_pop = {
+					limit = { culture = cu:sidama }
+					change_pop_culture = { target = cu:ethiopian_culture value = 1 }
+				}
+				every_scope_pop = {
+					limit = { culture = cu:tigray }
+					change_pop_culture = { target = cu:ethiopian_culture value = 1 }
+				}
+			}
+
+		s:STATE_OROMIA = {
+			remove_homeland = cu:oromo
+			add_homeland = cu:ethiopian_culture
+		}
+		s:STATE_OROMIA = {
+			remove_homeland = cu:amhara
+			add_homeland = cu:ethiopian_culture
+		}
+		s:STATE_AMHARA = {
+			remove_homeland = cu:oromo
+			add_homeland = cu:ethiopian_culture
+		}
+		s:STATE_AMHARA = {
+			remove_homeland = cu:amhara
+			add_homeland = cu:ethiopian_culture
+		}
+		s:STATE_AMHARA = {
+			remove_homeland = cu:sidama
+			add_homeland = cu:ethiopian_culture
+		}
+		s:STATE_GONDER = {
+			remove_homeland = cu:oromo
+			add_homeland = cu:ethiopian_culture
+		}
+		s:STATE_GONDER = {
+			remove_homeland = cu:amhara
+			add_homeland = cu:ethiopian_culture
+		}
+		s:STATE_GONDER = {
+			remove_homeland = cu:tigray
+			add_homeland = cu:ethiopian_culture
+		}
+		s:STATE_GONDER = {
+			remove_homeland = cu:afar
+			add_homeland = cu:ethiopian_culture
+		}
+		s:STATE_ERITREA = {
+			remove_homeland = cu:tigray
+			add_homeland = cu:ethiopian_culture
+		}
+		s:STATE_ERITREA = {
+			remove_homeland = cu:afar
+			add_homeland = cu:ethiopian_culture
+		}
+		s:STATE_SOMALILAND = {
+			remove_homeland = cu:oromo
+			add_homeland = cu:ethiopian_culture
+		}
+	}
+}
+
+unification_culture.8 = {
+	type = country_event
+	placement = ROOT
+	
+	title = unification_culture.1.t
+	desc = unification_culture.1.d
+	flavor = unification_culture.1.f
+	
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+	
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = unification_culture.1.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:mande }
+					change_pop_culture = { target = cu:malian_culture value = 1 }
+				}
+				every_scope_pop = {
+					limit = { culture = cu:bambara }
+					change_pop_culture = { target = cu:malian_culture value = 1 }
+				}
+				every_scope_pop = {
+					limit = { culture = cu:afro_american }
+					change_pop_culture = { target = cu:malian_culture value = 1 }
+				}
+			}
+
+		s:STATE_GUINEA = {
+			remove_homeland = cu:mande
+			add_homeland = cu:malian_culture
+		}
+		s:STATE_LIBERIA = {
+			remove_homeland = cu:afro_american
+			add_homeland = cu:malian_culture
+		}
+		s:STATE_INNER_MAURITANIA = {
+			remove_homeland = cu:mande
+			add_homeland = cu:malian_culture
+		}
+		s:STATE_EASTERN_MALI = {
+			remove_homeland = cu:mande
+			add_homeland = cu:malian_culture
+		}
+		s:STATE_WESTERN_MALI = {
+			remove_homeland = cu:mande
+			add_homeland = cu:malian_culture
+		}
+		s:STATE_TIMBUKTU = {
+			remove_homeland = cu:mande
+			add_homeland = cu:malian_culture
+		}
+		s:STATE_VOLTA = {
+			remove_homeland = cu:mande
+			add_homeland = cu:malian_culture
+		}
+		s:STATE_WINDWARD_COAST = {
+			remove_homeland = cu:mande
+			add_homeland = cu:malian_culture
+		}
+		s:STATE_SENEGAL = {
+			remove_homeland = cu:mande
+			add_homeland = cu:malian_culture
+		}
+		s:STATE_GAMBIA = {
+			remove_homeland = cu:mande
+			add_homeland = cu:malian_culture
+		}
+		s:STATE_SIERRA_LEONE = {
+			remove_homeland = cu:afro_american
+			add_homeland = cu:malian_culture
+		}
+		s:STATE_EASTERN_MALI = {
+			remove_homeland = cu:bambara
+			add_homeland = cu:malian_culture
+		}
+		s:STATE_WESTERN_MALI = {
+			remove_homeland = cu:bambara
+			add_homeland = cu:malian_culture
+		}
+		s:STATE_VOLTA = {
+			remove_homeland = cu:bambara
+			add_homeland = cu:malian_culture
+		}
+		s:STATE_GAMBIA = {
+			remove_homeland = cu:bambara
+			add_homeland = cu:malian_culture
+		}
+	}
+}
+
+unification_culture.9 = {
+	type = country_event
+	placement = ROOT
+	
+	title = unification_culture.1.t
+	desc = unification_culture.1.d
+	flavor = unification_culture.1.f
+	
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+	
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = unification_culture.1.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:swedish }
+					change_pop_culture = { target = cu:scandinavian value = 1 }
+				}
+				every_scope_pop = {
+					limit = { culture = cu:sami }
+					change_pop_culture = { target = cu:scandinavian value = 1 }
+				}
+				every_scope_pop = {
+					limit = { culture = cu:norwegian }
+					change_pop_culture = { target = cu:scandinavian value = 1 }
+				}
+				every_scope_pop = {
+					limit = { culture = cu:danish }
+					change_pop_culture = { target = cu:scandinavian value = 1 }
+				}
+				every_scope_pop = {
+					limit = { culture = cu:estonian }
+					change_pop_culture = { target = cu:scandinavian value = 1 }
+				}
+				every_scope_pop = {
+					limit = { culture = cu:finnish }
+					change_pop_culture = { target = cu:scandinavian value = 1 }
+				}
+				every_scope_pop = {
+					limit = { culture = cu:icelandic }
+					change_pop_culture = { target = cu:scandinavian value = 1 }
+				}
+			}
+
+		s:STATE_GOTLAND = {
+			remove_homeland = cu:swedish
+			add_homeland = cu:scandinavian
+		}
+		s:STATE_GOTALAND = {
+			remove_homeland = cu:swedish
+			add_homeland = cu:scandinavian
+		}
+		s:STATE_SCANIA = {
+			remove_homeland = cu:swedish
+			add_homeland = cu:scandinavian
+		}
+		s:STATE_NORRLAND = {
+			remove_homeland = cu:swedish
+			add_homeland = cu:scandinavian
+		}
+		s:STATE_NORRLAND = {
+			remove_homeland = cu:sami
+			add_homeland = cu:scandinavian
+		}
+		s:STATE_SVEALAND = {
+			remove_homeland = cu:swedish
+			add_homeland = cu:scandinavian
+		}
+		s:STATE_SOUTHERN_FINLAND = {
+			remove_homeland = cu:swedish
+			add_homeland = cu:scandinavian
+		}
+		s:STATE_SOUTHERN_FINLAND = {
+			remove_homeland = cu:finnish
+			add_homeland = cu:scandinavian
+		}
+		s:STATE_ALAND = {
+			remove_homeland = cu:swedish
+			add_homeland = cu:scandinavian
+		}
+		s:STATE_WEST_KARELIA = {
+			remove_homeland = cu:finnish
+			add_homeland = cu:scandinavian
+		}
+		s:STATE_OSTROBOTHNIA = {
+			remove_homeland = cu:swedish
+			add_homeland = cu:scandinavian
+		}
+		s:STATE_OSTROBOTHNIA = {
+			remove_homeland = cu:sami
+			add_homeland = cu:scandinavian
+		}
+		s:STATE_OSTROBOTHNIA = {
+			remove_homeland = cu:finnish
+			add_homeland = cu:scandinavian
+		}
+		s:STATE_ESTONIA = {
+			remove_homeland = cu:estonian
+			add_homeland = cu:scandinavian
+		}
+		s:STATE_WESTERN_NORWAY = {
+			remove_homeland = cu:norwegian
+			add_homeland = cu:scandinavian
+		}
+		s:STATE_NORTHERN_NORWAY = {
+			remove_homeland = cu:norwegian
+			add_homeland = cu:scandinavian
+		}
+		s:STATE_NORTHERN_NORWAY = {
+			remove_homeland = cu:sami
+			add_homeland = cu:scandinavian
+		}
+		s:STATE_EASTERN_NORWAY = {
+			remove_homeland = cu:norwegian
+			add_homeland = cu:scandinavian
+		}
+		s:STATE_EAST_KARELIA = {
+			remove_homeland = cu:finnish
+			add_homeland = cu:scandinavian
+		}
+		s:STATE_ICELAND = {
+			remove_homeland = cu:icelandic
+			add_homeland = cu:scandinavian
+		}
+		s:STATE_JUTLAND = {
+			remove_homeland = cu:danish
+			add_homeland = cu:scandinavian
+		}
+		s:STATE_ZEALAND = {
+			remove_homeland = cu:danish
+			add_homeland = cu:scandinavian
+		}
+		s:STATE_SCHLESWIG_HOLSTEIN = {
+			remove_homeland = cu:danish
+			add_homeland = cu:scandinavian
+		}
+	}
+}
+
+unification_culture.10 = {
+	type = country_event
+	placement = ROOT
+	
+	title = unification_culture.1.t
+	desc = unification_culture.1.d
+	flavor = unification_culture.1.f
+	
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+	
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = unification_culture.1.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:latvian }
+					change_pop_culture = { target = cu:baltic_culture value = 1 }
+				}
+			}
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:lithuanian }
+					change_pop_culture = { target = cu:baltic_culture value = 1 }
+				}
+			}
+
+		s:STATE_LATVIA = {
+			remove_homeland = cu:latvian
+			add_homeland = cu:baltic_culture
+		}
+		s:STATE_LITHUANIA = {
+			remove_homeland = cu:latvian
+			add_homeland = cu:baltic_culture
+		}
+		s:STATE_EAST_PRUSSIA = {
+			remove_homeland = cu:latvian
+			add_homeland = cu:baltic_culture
+		}
+		s:STATE_LITHUANIA = {
+			remove_homeland = cu:latvian
+			add_homeland = cu:baltic_culture
+		}
+	}
+}
+
+unification_culture.11 = {
+	type = country_event
+	placement = ROOT
+	
+	title = unification_culture.1.t
+	desc = unification_culture.1.d
+	flavor = unification_culture.1.f
+	
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+	
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = unification_culture.1.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:yoruba }
+					change_pop_culture = { target = cu:guinean_culture value = 1 }
+				}
+			}
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:akan }
+					change_pop_culture = { target = cu:guinean_culture value = 1 }
+				}
+			}
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:bassa }
+					change_pop_culture = { target = cu:guinean_culture value = 1 }
+				}
+			}
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:edo }
+					change_pop_culture = { target = cu:guinean_culture value = 1 }
+				}
+			}
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:ewe }
+					change_pop_culture = { target = cu:guinean_culture value = 1 }
+				}
+			}
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:fon }
+					change_pop_culture = { target = cu:guinean_culture value = 1 }
+				}
+			}
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:ibo }
+					change_pop_culture = { target = cu:guinean_culture value = 1 }
+				}
+			}
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:kru }
+					change_pop_culture = { target = cu:guinean_culture value = 1 }
+				}
+			}
+
+		s:STATE_DAHOMEY = {
+			remove_homeland = cu:fon
+			add_homeland = cu:guinean_culture
+		}
+		s:STATE_DAHOMEY = {
+			remove_homeland = cu:yoruba
+			add_homeland = cu:guinean_culture
+		}
+		s:STATE_DAHOMEY = {
+			remove_homeland = cu:akan
+			add_homeland = cu:guinean_culture
+		}
+		s:STATE_HAUSALAND = {
+			remove_homeland = cu:yoruba
+			add_homeland = cu:guinean_culture
+		}
+		s:STATE_BENIN = {
+			remove_homeland = cu:yoruba
+			add_homeland = cu:guinean_culture
+		}
+		s:STATE_BENIN = {
+			remove_homeland = cu:ibo
+			add_homeland = cu:guinean_culture
+		}
+		s:STATE_BENIN = {
+			remove_homeland = cu:edo
+			add_homeland = cu:guinean_culture
+		}
+		s:STATE_YORUBA_STATES = {
+			remove_homeland = cu:fon
+			add_homeland = cu:guinean_culture
+		}
+		s:STATE_YORUBA_STATES = {
+			remove_homeland = cu:yoruba
+			add_homeland = cu:guinean_culture
+		}
+		s:STATE_GHANA = {
+			remove_homeland = cu:akan
+			add_homeland = cu:guinean_culture
+		}
+		s:STATE_GHANA = {
+			remove_homeland = cu:ewe
+			add_homeland = cu:guinean_culture
+		}
+		s:STATE_TOGO = {
+			remove_homeland = cu:ewe
+			add_homeland = cu:guinean_culture
+		}
+		s:STATE_TOGO = {
+			remove_homeland = cu:akan
+			add_homeland = cu:guinean_culture
+		}
+		s:STATE_TOGO = {
+			remove_homeland = cu:fon
+			add_homeland = cu:guinean_culture
+		}
+		s:STATE_IVORY_COAST = {
+			remove_homeland = cu:akan
+			add_homeland = cu:guinean_culture
+		}
+		s:STATE_WINDWARD_COAST = {
+			remove_homeland = cu:akan
+			add_homeland = cu:guinean_culture
+		}
+		s:STATE_WINDWARD_COAST = {
+			remove_homeland = cu:kru
+			add_homeland = cu:guinean_culture
+		}
+		s:STATE_GAMBIA = {
+			remove_homeland = cu:akan
+			add_homeland = cu:guinean_culture
+		}
+		s:STATE_SIERRA_LEONE = {
+			remove_homeland = cu:akan
+			add_homeland = cu:guinean_culture
+		}
+		s:STATE_LIBERIA = {
+			remove_homeland = cu:kru
+			add_homeland = cu:guinean_culture
+		}
+		s:STATE_LIBERIA = {
+			remove_homeland = cu:bassa
+			add_homeland = cu:guinean_culture
+		}
+		s:STATE_NIGER_DELTA = {
+			remove_homeland = cu:ibo
+			add_homeland = cu:guinean_culture
+		}
+	}
+}
+
+unification_culture.12 = {
+	type = country_event
+	placement = ROOT
+	
+	title = unification_culture.1.t
+	desc = unification_culture.1.d
+	flavor = unification_culture.1.f
+	
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+	
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = unification_culture.1.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:lao }
+					change_pop_culture = { target = cu:thai value = 1 }
+				}
+			}
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:shan }
+					change_pop_culture = { target = cu:thai value = 1 }
+				}
+			}
+
+		s:STATE_LAOS = {
+			remove_homeland = cu:lao
+			add_homeland = cu:thai
+		}
+		s:STATE_NAKHON_RATCHASIMA = {
+			remove_homeland = cu:lao
+			add_homeland = cu:thai
+		}
+		s:STATE_NAKHON_RATCHASIMA = {
+			remove_homeland = cu:shan
+			add_homeland = cu:thai
+		}
+		s:STATE_KACHIN = {
+			remove_homeland = cu:shan
+			add_homeland = cu:thai
+		}
+		s:STATE_SHAN_STATES = {
+			remove_homeland = cu:shan
+			add_homeland = cu:thai
+		}
+		s:STATE_CHIANG_MAI = {
+			remove_homeland = cu:shan
+			add_homeland = cu:thai
+		}
+	}
+}
+
+unification_culture.13 = {
+	type = country_event
+	placement = ROOT
+	
+	title = unification_culture.1.t
+	desc = unification_culture.1.d
+	flavor = unification_culture.1.f
+	
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+	
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = unification_culture.1.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:karen }
+					change_pop_culture = { target = cu:burmese value = 1 }
+				}
+			}
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:kachin }
+					change_pop_culture = { target = cu:burmese value = 1 }
+				}
+			}
+
+		s:STATE_TENASSERIM = {
+			remove_homeland = cu:karen
+			add_homeland = cu:burmese
+		}
+		s:STATE_PEGU = {
+			remove_homeland = cu:karen
+			add_homeland = cu:burmese
+		}
+		s:STATE_KACHIN = {
+			remove_homeland = cu:kachin
+			add_homeland = cu:burmese
+		}
+		s:STATE_SHAN_STATES = {
+			remove_homeland = cu:kachin
+			add_homeland = cu:burmese
+		}
+		s:STATE_BURMA = {
+			remove_homeland = cu:kachin
+			add_homeland = cu:burmese
+		}
+	}
+}
+
+unification_culture.14 = {
+	type = country_event
+	placement = ROOT
+	
+	title = unification_culture.1.t
+	desc = unification_culture.1.d
+	flavor = unification_culture.1.f
+	
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+	
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = unification_culture.1.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:czech }
+					change_pop_culture = { target = cu:western_slavs value = 1 }
+				}
+			}
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:slovak }
+					change_pop_culture = { target = cu:western_slavs value = 1 }
+				}
+			}
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:polish }
+					change_pop_culture = { target = cu:western_slavs value = 1 }
+				}
+			}
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:sorb }
+					change_pop_culture = { target = cu:western_slavs value = 1 }
+				}
+			}
+
+		s:STATE_BOHEMIA = {
+			remove_homeland = cu:czech
+			add_homeland = cu:western_slavs
+		}
+		s:STATE_MORAVIA = {
+			remove_homeland = cu:czech
+			add_homeland = cu:western_slavs
+		}
+		s:STATE_WEST_SLOVAKIA = {
+			remove_homeland = cu:slovak
+			add_homeland = cu:western_slavs
+		}
+		s:STATE_EAST_SLOVAKIA = {
+			remove_homeland = cu:slovak
+			add_homeland = cu:western_slavs
+		}
+		s:STATE_SILESIA = {
+			remove_homeland = cu:sorb
+			add_homeland = cu:western_slavs
+		}
+		s:STATE_SILESIA = {
+			remove_homeland = cu:polish
+			add_homeland = cu:western_slavs
+		}
+		s:STATE_BREST = {
+			remove_homeland = cu:polish
+			add_homeland = cu:western_slavs
+		}
+		s:STATE_GREATER_POLAND = {
+			remove_homeland = cu:polish
+			add_homeland = cu:western_slavs
+		}
+		s:STATE_LESSER_POLAND = {
+			remove_homeland = cu:polish
+			add_homeland = cu:western_slavs
+		}
+		s:STATE_MAZOVIA = {
+			remove_homeland = cu:polish
+			add_homeland = cu:western_slavs
+		}
+		s:STATE_VOLHYNIA = {
+			remove_homeland = cu:polish
+			add_homeland = cu:western_slavs
+		}
+		s:STATE_WEST_GALICIA = {
+			remove_homeland = cu:polish
+			add_homeland = cu:western_slavs
+		}
+		s:STATE_EAST_GALICIA = {
+			remove_homeland = cu:polish
+			add_homeland = cu:western_slavs
+		}
+		s:STATE_POSEN = {
+			remove_homeland = cu:polish
+			add_homeland = cu:western_slavs
+		}
+		s:STATE_WEST_PRUSSIA = {
+			remove_homeland = cu:polish
+			add_homeland = cu:western_slavs
+		}
+		s:STATE_EAST_PRUSSIA = {
+			remove_homeland = cu:polish
+			add_homeland = cu:western_slavs
+		}
+	}
+}
+
+unification_culture.15 = {
+	type = country_event
+	placement = ROOT
+	
+	title = unification_culture.1.t
+	desc = unification_culture.1.d
+	flavor = unification_culture.1.f
+	
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+	
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = unification_culture.1.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:slovene }
+					change_pop_culture = { target = cu:yugoslavs value = 1 }
+				}
+			}
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:bosniak }
+					change_pop_culture = { target = cu:yugoslavs value = 1 }
+				}
+			}
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:croat }
+					change_pop_culture = { target = cu:yugoslavs value = 1 }
+				}
+			}
+
+		s:STATE_ISTRIA = {
+			remove_homeland = cu:slovene
+			add_homeland = cu:yugoslavs
+		}
+		s:STATE_ISTRIA = {
+			remove_homeland = cu:croat
+			add_homeland = cu:yugoslavs
+		}
+		s:STATE_SLOVENIA = {
+			remove_homeland = cu:slovene
+			add_homeland = cu:yugoslavs
+		}
+		s:STATE_BOSNIA = {
+			remove_homeland = cu:bosniak
+			add_homeland = cu:yugoslavs
+		}
+		s:STATE_BOSNIA = {
+			remove_homeland = cu:croat
+			add_homeland = cu:yugoslavs
+		}
+		s:STATE_DALMATIA = {
+			remove_homeland = cu:croat
+			add_homeland = cu:yugoslavs
+		}
+		s:STATE_CROATIA = {
+			remove_homeland = cu:croat
+			add_homeland = cu:yugoslavs
+		}
+		s:STATE_SLAVONIA = {
+			remove_homeland = cu:croat
+			add_homeland = cu:yugoslavs
+		}
+	}
+}
+
+ ##Primary culture shift
+
+cultural_shift.1 = {
+	type = country_event
+	placement = ROOT
+	
+	title = cultural_shift.1.t
+	desc = cultural_shift.1.d
+	flavor = cultural_shift.1.f
+	
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+	
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = cultural_shift.1.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+		if = {
+			limit = {
+				c:GER ?= this
+			}
+			add_primary_culture = cu:german
+			remove_primary_culture = cu:north_german
+			remove_primary_culture = cu:south_german
+			remove_primary_culture = cu:alemannic
+		}
+		c:GER = {
+		trigger_event = { id = unification_culture.2 days = 10 }	
+		}
+	}
+}
+
+cultural_shift.2 = {
+	type = country_event
+	placement = ROOT
+	
+	title = cultural_shift.1.t
+	desc = cultural_shift.1.d
+	flavor = cultural_shift.1.f
+	
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+	
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = cultural_shift.1.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+		if = {
+			limit = {
+				c:ITA ?= this
+			}
+			add_primary_culture = cu:italian
+			remove_primary_culture = cu:north_italian
+			remove_primary_culture = cu:south_italian
+			remove_primary_culture = cu:corsican
+			remove_primary_culture = cu:maltese
+		}
+		c:ITA = {
+		trigger_event = { id = unification_culture.3 days = 10 }	
+		}
+	}
+}
+
+cultural_shift.3 = {
+	type = country_event
+	placement = ROOT
+	
+	title = cultural_shift.1.t
+	desc = cultural_shift.1.d
+	flavor = cultural_shift.1.f
+	
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+	
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = cultural_shift.1.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+		if = {
+			limit = {
+				c:IBE ?= this
+			}
+			add_primary_culture = cu:iberian
+			remove_primary_culture = cu:spanish
+			remove_primary_culture = cu:portuguese
+			remove_primary_culture = cu:galician
+			remove_primary_culture = cu:catalan
+		}
+		c:IBE = {
+		trigger_event = { id = unification_culture.4 days = 10 }	
+		}
+	}
+}
+
+cultural_shift.4 = {
+	type = country_event
+	placement = ROOT
+	
+	title = cultural_shift.1.t
+	desc = cultural_shift.1.d
+	flavor = cultural_shift.1.f
+	
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+	
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = cultural_shift.1.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+		if = {
+			limit = {
+				c:PER ?= this
+			}
+			add_primary_culture = cu:iranian_culture
+			remove_primary_culture = cu:persian
+			remove_primary_culture = cu:pashtun
+			remove_primary_culture = cu:tajik
+			remove_primary_culture = cu:kurdish
+			remove_primary_culture = cu:baluchi
+			remove_primary_culture = cu:hazara
+		}
+		c:PER = {
+		trigger_event = { id = unification_culture.5 days = 10 }	
+		}
+	}
+}
+
+cultural_shift.5 = {
+	type = country_event
+	placement = ROOT
+	
+	title = cultural_shift.1.t
+	desc = cultural_shift.1.d
+	flavor = cultural_shift.1.f
+	
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+	
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = cultural_shift.1.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+		if = {
+			limit = {
+				c:TRH ?= this
+			}
+			add_primary_culture = cu:turanian_culture
+			remove_primary_culture = cu:uighur
+			remove_primary_culture = cu:uzbek
+			remove_primary_culture = cu:kazak
+			remove_primary_culture = cu:kirgiz
+		}
+		c:TRH = {
+		trigger_event = { id = unification_culture.6 days = 10 }	
+		}
+	}
+}
+
+cultural_shift.6 = {
+	type = country_event
+	placement = ROOT
+	
+	title = cultural_shift.1.t
+	desc = cultural_shift.1.d
+	flavor = cultural_shift.1.f
+	
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+	
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = cultural_shift.1.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+		if = {
+			limit = {
+				c:ETH ?= this
+			}
+			add_primary_culture = cu:ethiopian_culture
+			remove_primary_culture = cu:oromo
+			remove_primary_culture = cu:afar
+			remove_primary_culture = cu:amhara
+			remove_primary_culture = cu:tigray
+			remove_primary_culture = cu:sidama
+		}
+		c:ETH = {
+		trigger_event = { id = unification_culture.7 days = 10 }	
+		}
+	}
+}
+
+cultural_shift.7 = {
+	type = country_event
+	placement = ROOT
+	
+	title = cultural_shift.1.t
+	desc = cultural_shift.1.d
+	flavor = cultural_shift.1.f
+	
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+	
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = cultural_shift.1.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+		if = {
+			limit = {
+				c:MAL ?= this
+			}
+			add_primary_culture = cu:malian_culture
+			remove_primary_culture = cu:bambara
+			remove_primary_culture = cu:mande
+			remove_primary_culture = cu:afro_american
+		}
+		c:MAL = {
+		trigger_event = { id = unification_culture.8 days = 10 }	
+		}
+	}
+}
+
+cultural_shift.8 = {
+	type = country_event
+	placement = ROOT
+	
+	title = cultural_shift.1.t
+	desc = cultural_shift.1.d
+	flavor = cultural_shift.1.f
+	
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+	
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = cultural_shift.1.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+		if = {
+			limit = {
+				c:SCA ?= this
+			}
+			add_primary_culture = cu:scandinavian
+			remove_primary_culture = cu:swedish
+			remove_primary_culture = cu:sami
+			remove_primary_culture = cu:estonian
+			remove_primary_culture = cu:danish
+			remove_primary_culture = cu:norwegian
+			remove_primary_culture = cu:icelandic
+			remove_primary_culture = cu:finnish
+		}
+		c:SCA = {
+		trigger_event = { id = unification_culture.9 days = 10 }	
+		}
+	}
+}
+
+cultural_shift.9 = {
+	type = country_event
+	placement = ROOT
+	
+	title = cultural_shift.1.t
+	desc = cultural_shift.1.d
+	flavor = cultural_shift.1.f
+	
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+	
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = cultural_shift.1.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+		if = {
+			limit = {
+				c:UBD ?= this
+			}
+			add_primary_culture = cu:baltic_culture
+			remove_primary_culture = cu:latvian
+			remove_primary_culture = cu:lithuanian
+		}
+		c:UBD = {
+		trigger_event = { id = unification_culture.10 days = 10 }	
+		}
+	}
+}
+
+cultural_shift.10 = {
+	type = country_event
+	placement = ROOT
+	
+	title = cultural_shift.1.t
+	desc = cultural_shift.1.d
+	flavor = cultural_shift.1.f
+	
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+	
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = cultural_shift.1.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+		if = {
+			limit = {
+				c:NGR ?= this
+			}
+			add_primary_culture = cu:guinean_culture
+			remove_primary_culture = cu:yoruba
+			remove_primary_culture = cu:akan
+			remove_primary_culture = cu:bassa
+			remove_primary_culture = cu:edo
+			remove_primary_culture = cu:ewe
+			remove_primary_culture = cu:fon
+			remove_primary_culture = cu:ibo
+			remove_primary_culture = cu:kru
+		}
+		c:NGR = {
+		trigger_event = { id = unification_culture.11 days = 10 }	
+		}
+	}
+}
+
+cultural_shift.11 = {
+	type = country_event
+	placement = ROOT
+	
+	title = cultural_shift.1.t
+	desc = cultural_shift.1.d
+	flavor = cultural_shift.1.f
+	
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+	
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = cultural_shift.1.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+		if = {
+			limit = {
+				c:ZAP ?= this
+			}
+			add_primary_culture = cu:western_slavs
+			remove_primary_culture = cu:czech
+			remove_primary_culture = cu:slovak
+			remove_primary_culture = cu:polish
+			remove_primary_culture = cu:sorb
+		}
+		c:ZAP = {
+		trigger_event = { id = unification_culture.14 days = 10 }	
+		}
+	}
+}
+
+cultural_shift.12 = {
+	type = country_event
+	placement = ROOT
+	
+	title = cultural_shift.1.t
+	desc = cultural_shift.1.d
+	flavor = cultural_shift.1.f
+	
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+	
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = cultural_shift.1.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+		if = {
+			limit = {
+				c:YUG ?= this
+			}
+			add_primary_culture = cu:yugoslavs
+			remove_primary_culture = cu:slovene
+			remove_primary_culture = cu:bosniak
+			remove_primary_culture = cu:croat
+		}
+		c:YUG = {
+		trigger_event = { id = unification_culture.15 days = 10 }	
+		}
+	}
+}

@@ -1,0 +1,111 @@
+﻿namespace = fire_corps_event
+
+# For ELY
+
+fire_corps_event.1 = {
+	type = country_event
+	placement = root
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_fire.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/destruction"
+
+	icon = "gfx/interface/icons/event_icons/event_fire.dds"
+
+	title = fire_corps_event.1.t
+	desc = fire_corps_event.1.d
+	flavor = fire_corps_event.1.f
+
+	trigger = {
+		# triggered by je_fire_corps
+	}
+	
+	immediate = {
+	}
+
+	option = {
+		name = fire_corps_event.1.a
+			default_option = yes
+			add_modifier = {
+				name = modifier_modern_fire_corp
+				months = -1
+			}
+			remove_modifier = modifier_elysian_fire_corp
+		
+	}
+}
+
+fire_corps_event.2 = {
+	type = country_event
+	placement = root
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_naval_battle.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	title = fire_corps_event.2.t
+	desc = fire_corps_event.2.d
+	flavor = fire_corps_event.2.f
+
+	trigger = {
+		# triggered by je_fire_corps
+	}
+	
+	immediate = {
+	}
+
+	option = {
+		name = fire_corps_event.2.a
+			default_option = yes
+			add_modifier = {
+				name = modifier_elysian_navy_new
+				months = -1
+			}
+			remove_modifier = modifier_elysian_navy_old
+		
+	}
+}
+
+fire_corps_event.3 = {
+	type = country_event
+	placement = root
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_naval_battle.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	title = fire_corps_event.2.t
+	desc = fire_corps_event.2.d
+	flavor = fire_corps_event.2.f
+
+	trigger = {
+		# triggered by je_fire_corps
+	}
+	
+	immediate = {
+	}
+
+	option = {
+		name = fire_corps_event.2.a
+			default_option = yes
+			remove_modifier = modifier_elysian_navy_old
+		
+	}
+}

@@ -1,0 +1,108 @@
+﻿namespace = elysian_railways
+
+# Transcontinental
+elysian_railways.1 = {
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/unspecific_trains.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+
+	duration = 3
+	placement = scope:california_scope
+	
+	title = elysian_railways.1.t
+	desc = elysian_railways.1.d
+	flavor = elysian_railways.1.f
+
+	trigger = {
+	}
+
+	immediate = {
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_CALIFORNIA
+			}
+			save_scope_as = california_scope
+		}
+	}
+	
+	option = { # settle Skythia and Hesperidia
+		name = elysian_railways.1.a
+		default_option = yes
+		every_scope_state = {
+			limit = {
+				region = sr:region_pacific_coast
+				has_building = building_railway
+			}
+			add_modifier = {
+				name = great_plains_settlement
+				months = normal_modifier_time
+			}
+		}
+		every_scope_state = {
+			limit = {
+				region = sr:region_great_plains
+				has_building = building_railway
+			}
+			add_modifier = {
+				name = great_plains_settlement
+				months = normal_modifier_time
+			}
+		}
+	}
+}
+
+# Canada Pacific
+elysian_railways.2 = {
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/unspecific_trains.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+
+	duration = 3
+	placement = scope:pacific_railroad_end
+	title = elysian_railways.2.t
+	desc = elysian_railways.2.d
+	flavor = elysian_railways.2.f
+
+	trigger = {
+	}
+
+	immediate = {
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_BRITISH_COLUMBIA
+			}
+			save_scope_as = pacific_railroad_end
+		}
+	}
+	
+	option = { # settle Borealia and Thoulea
+		name = elysian_railways.2.a
+		default_option = yes
+		scope:pacific_railroad_end = {
+			add_modifier = {
+				name = canada_settlement_mod
+				months = normal_modifier_time
+				multiplier = 2
+			}
+		}
+		every_scope_state = {
+			limit = {
+				OR = {
+					state_region = s:STATE_ALBERTA
+					state_region = s:STATE_SASKATCHEWAN
+					state_region = s:STATE_MANITOBA
+				}
+			}
+			add_modifier = {
+				name = canada_settlement_mod
+				months = normal_modifier_time
+			}
+		}
+	}
+}

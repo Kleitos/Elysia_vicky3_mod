@@ -1,0 +1,176 @@
+﻿namespace =  ely_reform_event
+
+
+ely_reform_event.1 = {
+	type = country_event
+	placement = root
+
+	duration = 3
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/capitalists_meeting"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	title = ely_reform_event.1.t
+	desc = ely_reform_event.1.d
+	flavor = ely_reform_event.1.f
+
+	trigger = { 
+		# triggered by je_reform_bureaucracy_ely
+	}
+	
+	immediate = {
+		# nothing
+	}
+
+	option = {
+		name = ely_reform_event.1.a
+			default_option = yes
+			remove_modifier = outmoded_bureaucracy
+			add_modifier = {
+				name = modifier_elysian_bureaucracy
+				months = -1
+			}
+		
+	}
+}
+
+ely_reform_event.2 = {
+	type = country_event
+	placement = root
+
+	duration = 3
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/capitalists_meeting"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	title = ely_reform_event.2.t
+	desc = ely_reform_event.2.d
+	flavor = ely_reform_event.2.f
+
+	trigger = { 
+		# triggered by je_reform_economy_ely
+	}
+	
+	immediate = {
+		ig:ig_landowners = {
+			add_ideology = ideology_elysian_economy_traditionals
+			remove_ideology = ideology_elysian_land
+		}
+		ig:ig_rural_folk = {
+			add_ideology = ideology_elysian_economy_traditionals
+			remove_ideology = ideology_elysian_land
+		}
+		ig:ig_industrialists = {
+			add_ideology = ideology_elysian_economy_industrials
+			remove_ideology = ideology_elysian_economy
+		}
+		ig:ig_petty_bourgeoisie = {
+			add_ideology = ideology_elysian_economy_industrials
+			remove_ideology = ideology_elysian_economy
+		}
+		# nothing
+	}
+
+	option = {
+		name = ely_reform_event.2.a
+			default_option = yes
+			add_modifier = {
+				name = modifier_elysian_production
+				months = -1
+			}
+		
+	}
+}
+
+ely_reform_event.3 = {
+	type = country_event
+	placement = root
+
+	duration = 3
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/capitalists_meeting"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	title = ely_reform_event.1.t
+	desc = ely_reform_event.1.d
+	flavor = ely_reform_event.1.f
+
+	trigger = { 
+		# triggered by je_reform_bureaucracy_ely
+	}
+	
+	immediate = {
+		# nothing
+	}
+
+	option = {
+		name = ely_reform_event.1.a
+			default_option = yes
+			remove_modifier = outmoded_bureaucracy
+		
+	}
+}
+
+ely_reform_event.4 = {
+	type = country_event
+	placement = root
+
+	duration = 3
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/capitalists_meeting"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	title = ely_reform_event.2.t
+	desc = ely_reform_event.2.d
+	flavor = ely_reform_event.2.f
+
+	trigger = { 
+		# triggered by je_reform_economy_ely
+	}
+	
+	immediate = {
+		ig:ig_landowners = {
+			add_ideology = ideology_elysian_economy_traditionals
+			remove_ideology = ideology_elysian_land
+		}
+		ig:ig_rural_folk = {
+			add_ideology = ideology_elysian_economy_traditionals
+			remove_ideology = ideology_elysian_land
+		}
+		ig:ig_industrialists = {
+			add_ideology = ideology_elysian_economy_industrials
+			remove_ideology = ideology_elysian_economy
+		}
+		ig:ig_petty_bourgeoisie = {
+			add_ideology = ideology_elysian_economy_industrials
+			remove_ideology = ideology_elysian_economy
+		}
+		# nothing
+	}
+
+	option = {
+		name = ely_reform_event.2.a
+			default_option = yes
+		
+	}
+}

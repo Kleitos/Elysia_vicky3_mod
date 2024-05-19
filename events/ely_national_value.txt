@@ -1,0 +1,245 @@
+﻿namespace = ely_national_value
+
+# For ELY
+
+ely_national_value.1 = {
+	type = country_event
+	placement = root
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	title = ely_national_value.1.t
+	desc = ely_national_value.1.d
+	flavor = ely_national_value.1.f
+
+	trigger = {
+		# triggered by je_wife_trade
+	}
+	
+	immediate = {
+			random_scope_pop = {
+				limit = { 
+					pop_is_discriminated = yes
+					OR = {
+						culture_accepted = no
+						religion_accepted = no
+					}
+				}
+				if = {
+					limit = { culture_accepted = no }
+					save_scope_as = discriminated_culture_pop
+				}
+				else_if = {
+					limit = { religion_accepted = no }
+					save_scope_as = discriminated_religion_pop
+				}
+			}
+	}
+
+	option = {
+		name = ely_national_value.1.a
+			default_option = yes
+			remove_modifier = modifier_wife_trade
+			add_modifier = {
+				name = segregation_eroding
+				months = normal_modifier_time
+			}
+			add_radicals = {
+			value = large_radicals
+			culture = cu:elysian
+			}
+	}
+
+	option = {
+		name = ely_national_value.1.b
+		change_infamy = 500
+		add_radicals = {
+			value = large_radicals
+			culture = scope:discriminated_culture_pop.culture
+		}
+		add_loyalists = {
+			value = 0.2 
+			culture = cu:elysian
+		}
+		add_modifier = {
+			name = enforced_segregation
+			months = normal_modifier_time
+		}
+		
+	}
+}
+
+
+ely_national_value.2 = {
+	type = country_event
+	placement = root
+
+	duration = 3
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_sufferage.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/sufferage"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	title = ely_national_value.2.t
+	desc = ely_national_value.2.d
+	flavor = ely_national_value.2.f
+
+	trigger = { 
+		# triggered by je_reform_blood_laws
+	}
+	
+	immediate = {
+		# nothing
+	}
+
+	option = {
+		name = ely_national_value.2.a
+			default_option = yes
+			remove_modifier = modifier_elysian_blood
+			add_modifier = {
+				name = modifier_elysian_family
+				months = -1
+			}
+		
+	}
+}
+
+
+ely_national_value.3 = {
+	type = country_event
+	placement = root
+
+	duration = 3
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_sufferage.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/sufferage"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	title = ely_national_value.3.t
+	desc = ely_national_value.3.d
+	flavor = ely_national_value.3.f
+
+	trigger = { 
+		# triggered by je_elysian_schooling
+	}
+	
+	immediate = {
+		# nothing
+	}
+
+	option = {
+		name = ely_national_value.3.a
+			default_option = yes
+			add_modifier = {
+				name = modifier_elysian_schooling
+				months = -1
+			}
+		
+	}
+}
+
+
+ely_national_value.4 = {
+	type = country_event
+	placement = root
+
+	duration = 3
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_native_american.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/sufferage"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	title = ely_national_value.4.t
+	desc = ely_national_value.4.d
+	flavor = ely_national_value.4.f
+
+	trigger = { 
+	}
+	
+	immediate = {
+	}
+
+	option = {
+		name = ely_national_value.4.a
+			default_option = yes
+			add_modifier = {
+				name = modifier_elysian_opportunity
+				months = very_long_modifier_time
+			}
+			add_modifier = {
+				name = ely_big_money
+				months = 60
+			}
+		
+	}
+}
+
+ely_national_value.5 = {
+	type = country_event
+	placement = root
+
+	duration = 3
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_antarctica.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/sufferage"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	title = ely_national_value.5.t
+	desc = ely_national_value.5.d
+	flavor = ely_national_value.5.f
+
+	trigger = { 
+	}
+	
+	immediate = {
+		# nothing
+	}
+
+	option = {
+		name = ely_national_value.5.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:inuit }
+					change_pop_culture = { target = cu:elysian value = 1 }
+				}
+			}
+
+		s:STATE_NUNAVUT = {
+			remove_homeland = cu:inuit
+			add_homeland = cu:elysian
+		}
+		s:STATE_GREENLAND = {
+			remove_homeland = cu:inuit
+			add_homeland = cu:elysian
+		}
+	}
+}
