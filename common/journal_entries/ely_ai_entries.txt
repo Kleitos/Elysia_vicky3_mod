@@ -1,0 +1,333 @@
+﻿je_open_jap_ai = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+	NOT = {
+		has_law = law_type:law_free_trade
+	}
+		c:JAP ?= THIS
+		AND = {
+				is_ai = yes
+			}
+	}
+
+	possible = {
+	NOR = {
+		has_law = law_type:law_free_trade
+		has_law = law_type:law_mercantilism
+	}
+		c:JAP ?= THIS
+	}
+
+	complete = {
+		year >= 1837
+		AND = {
+				is_ai = yes
+			}
+	}
+
+	on_complete = {
+		trigger_event = { id = ely_ai_laws.1 }
+	}
+}
+
+je_open_dai_ai = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+	NOT = {
+		has_law = law_type:law_free_trade
+	}
+		c:DAI ?= THIS
+		AND = {
+				is_ai = yes
+			}
+	}
+
+	possible = {
+	NOR = {
+		has_law = law_type:law_free_trade
+		has_law = law_type:law_mercantilism
+	}
+		c:DAI ?= THIS
+	}
+
+	complete = {
+		year >= 1837
+		AND = {
+				is_ai = yes
+			}
+	}
+
+	on_complete = {
+		trigger_event = { id = ely_ai_laws.1 }
+	}
+}
+
+je_open_bur_ai = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+	NOT = {
+		has_law = law_type:law_free_trade
+	}
+		c:BUR ?= THIS
+		AND = {
+				is_ai = yes
+			}
+	}
+
+	possible = {
+	NOR = {
+		has_law = law_type:law_free_trade
+		has_law = law_type:law_mercantilism
+	}
+		c:BUR ?= THIS
+	}
+
+	complete = {
+		year >= 1837
+		AND = {
+				is_ai = yes
+			}
+	}
+
+	on_complete = {
+		trigger_event = { id = ely_ai_laws.1 }
+	}
+}
+
+je_open_sia_ai = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+	NOT = {
+		has_law = law_type:law_free_trade
+	}
+		c:SIA ?= THIS
+		AND = {
+				is_ai = yes
+			}
+	}
+
+	possible = {
+	NOR = {
+		has_law = law_type:law_free_trade
+		has_law = law_type:law_mercantilism
+	}
+		c:SIA ?= THIS
+	}
+
+	complete = {
+		year >= 1837
+		AND = {
+				is_ai = yes
+			}
+	}
+
+	on_complete = {
+		trigger_event = { id = ely_ai_laws.1 }
+	}
+}
+
+je_army_jap_ai = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+	NOT = {
+		has_law = law_type:law_professional_army
+	}
+		c:JAP ?= THIS
+		AND = {
+				is_ai = yes
+			}
+	}
+
+	possible = {
+	NOR = {
+		has_law = law_type:law_professional_army
+		has_law = law_type:law_mass_conscription
+		has_law = law_type:law_national_militia
+	}
+		c:JAP ?= THIS
+	}
+
+	complete = {
+		year >= 1837
+		AND = {
+				is_ai = yes
+			}
+	}
+
+	on_complete = {
+		trigger_event = { id = ely_ai_laws.3 }
+	}
+}
+
+je_ban_slave_brz_ai = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+	NOT = {
+		has_law = law_type:law_slavery_banned
+	}
+		c:BRZ ?= THIS
+		AND = {
+				is_ai = yes
+			}
+	}
+
+	possible = {
+	NOT = {
+		has_law = law_type:law_slavery_banned
+	}
+		c:BRZ ?= THIS
+		AND = {
+				is_ai = yes
+			}
+	}
+
+	complete = {
+		year >= 1873
+	}
+
+	on_complete = {
+		trigger_event = { id = ely_ai_laws.2 }
+	}
+}
+
+je_ban_slave_per_ai = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+	NOT = {
+		has_law = law_type:law_slavery_banned
+	}
+		c:PER ?= THIS
+		AND = {
+				is_ai = yes
+			}
+	}
+
+	possible = {
+	NOT = {
+		has_law = law_type:law_slavery_banned
+	}
+		c:PER ?= THIS
+		AND = {
+				is_ai = yes
+			}
+	}
+
+	complete = {
+		year >= 1860
+	}
+
+	on_complete = {
+		trigger_event = { id = ely_ai_laws.2 }
+	}
+}
+
+je_ban_slave_eth_ai = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+	NOT = {
+		has_law = law_type:law_slavery_banned
+	}
+		c:SHW ?= THIS
+		AND = {
+				is_ai = yes
+			}
+	}
+
+	possible = {
+	NOT = {
+		has_law = law_type:law_slavery_banned
+	}
+		c:ETH ?= THIS
+		AND = {
+				is_ai = yes
+			}
+	}
+
+	complete = {
+		year >= 1860
+	}
+
+	on_complete = {
+		trigger_event = { id = ely_ai_laws.2 }
+	}
+}
+
+je_integrate_naples = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		c:LUC ?= THIS
+		AND = {
+				is_ai = yes
+			}
+	}
+
+	possible = {
+		c:LMV ?= THIS
+	}
+
+	complete = {
+		year >= 1837
+		AND = {
+				is_ai = yes
+			}
+	}
+
+	on_complete = {
+		trigger_event = { id = ely_ai_event.1 }
+	}
+}
+
+je_integrate_siamese_vassals = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		c:SIA ?= THIS
+		AND = {
+				is_ai = yes
+			}
+	}
+
+	possible = {
+		c:SIA ?= THIS
+	}
+
+	complete = {
+		year >= 1850
+		AND = {
+				is_ai = yes
+			}
+	}
+
+	on_complete = {
+		trigger_event = { id = ely_ai_event.1 }
+	}
+}

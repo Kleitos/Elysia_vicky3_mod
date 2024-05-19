@@ -1,0 +1,1272 @@
+﻿je_andean_pathway = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		this = c:TWT
+	}
+
+	possible = {
+		this = c:TWT
+	}
+
+	complete = {
+		has_technology_researched = reinforced_concrete
+		has_technology_researched = steel_frame_buildings
+		has_technology_researched = steel_railway_cars
+		has_technology_researched = dynamite
+		c:ELY = { relations:root >= relations_threshold:amicable }
+		NOT = { has_truce_with = c:ELY }
+		any_scope_state = {
+			state_region = s:STATE_ECUADOR
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_TARAPACA
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_ANTOFAGASTA
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_LA_PAZ
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_POTOSI
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_CAJAMARCA
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_LIMA
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_ICA
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_AREQUIPA
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_JUJUY
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_ARAUCANIA
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_SANTIAGO
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_LOS_RIOS
+			has_building = building_railway
+		}
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:TWT
+				c:TWT = ROOT
+			}
+		trigger_event = { id = inca_infrastructure.1 }
+		}
+	}
+}
+
+je_reform_mines = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		c:TWT ?= THIS
+	}
+
+	possible = {
+		c:TWT ?= THIS
+	}
+
+	complete = {
+		has_technology_researched = dynamite
+		any_scope_state = {
+			state_region = s:STATE_ECUADOR
+				AND = {
+					any_scope_building = {
+						OR = { 
+							has_active_production_method = pm_condensing_engine_pump_building_coal_mine
+							has_active_production_method = pm_diesel_pump_building_coal_mine						
+						}
+						has_active_production_method = pm_dynamite_building_coal_mine
+						has_active_production_method = pm_steam_donkey_building_coal_mine
+						is_building_type = building_coal_mine
+						level >= 5
+					}
+					any_scope_building = {
+						OR = { 
+							has_active_production_method = pm_condensing_engine_pump_building_iron_mine
+							has_active_production_method = pm_diesel_pump_building_iron_mine						
+						}
+						has_active_production_method = pm_dynamite_building_iron_mine
+						has_active_production_method = pm_steam_donkey_building_iron_mine
+						is_building_type = building_iron_mine
+						level >= 5
+					}
+				}
+		}
+		any_scope_state = {
+			state_region = s:STATE_TARAPACA
+				AND = {
+					any_scope_building = {
+						OR = { 
+							has_active_production_method = pm_condensing_engine_pump_building_iron_mine
+							has_active_production_method = pm_diesel_pump_building_iron_mine						
+						}
+						has_active_production_method = pm_dynamite_building_iron_mine
+						has_active_production_method = pm_steam_donkey_building_iron_mine
+						is_building_type = building_iron_mine
+						level >= 5
+					}
+					any_scope_building = {
+						OR = { 
+							has_active_production_method = pm_condensing_engine_pump_building_sulfur_mine
+							has_active_production_method = pm_diesel_pump_building_sulfur_mine						
+						}
+						has_active_production_method = pm_dynamite_building_sulfur_mine
+						has_active_production_method = pm_steam_donkey_building_sulfur_mine
+						is_building_type = building_sulfur_mine
+						level >= 5
+					}
+				}
+		}
+		any_scope_state = {
+			state_region = s:STATE_ANTOFAGASTA
+				AND = {
+					any_scope_building = {
+						OR = { 
+							has_active_production_method = pm_condensing_engine_pump_building_iron_mine
+							has_active_production_method = pm_diesel_pump_building_iron_mine						
+						}
+						has_active_production_method = pm_dynamite_building_iron_mine
+						has_active_production_method = pm_steam_donkey_building_iron_mine
+						is_building_type = building_iron_mine
+						level >= 5
+					}
+					any_scope_building = {
+						OR = { 
+							has_active_production_method = pm_condensing_engine_pump_building_sulfur_mine
+							has_active_production_method = pm_diesel_pump_building_sulfur_mine						
+						}
+						has_active_production_method = pm_dynamite_building_sulfur_mine
+						has_active_production_method = pm_steam_donkey_building_sulfur_mine
+						is_building_type = building_sulfur_mine
+						level >= 5
+					}
+					any_scope_building = {
+						OR = { 
+							has_active_production_method = pm_condensing_engine_pump_building_gold_mine
+							has_active_production_method = pm_diesel_pump_building_gold_mine						
+						}
+						has_active_production_method = pm_dynamite_building_gold_mine
+						has_active_production_method = pm_steam_donkey_building_gold_mine
+						is_building_type = building_gold_mine
+						level >= 5
+					}
+				}
+		}
+		any_scope_state = {
+			state_region = s:STATE_LA_PAZ
+				AND = {
+					any_scope_building = {
+						OR = { 
+							has_active_production_method = pm_condensing_engine_pump_building_lead_mine
+							has_active_production_method = pm_diesel_pump_building_lead_mine						
+						}
+						has_active_production_method = pm_dynamite_building_lead_mine
+						has_active_production_method = pm_steam_donkey_building_lead_mine
+						is_building_type = building_lead_mine
+						level >= 5
+					}
+				}
+		}
+		any_scope_state = {
+			state_region = s:STATE_POTOSI
+				AND = {
+					any_scope_building = {
+						OR = { 
+							has_active_production_method = pm_condensing_engine_pump_building_lead_mine
+							has_active_production_method = pm_diesel_pump_building_lead_mine						
+						}
+						has_active_production_method = pm_dynamite_building_lead_mine
+						has_active_production_method = pm_steam_donkey_building_lead_mine
+						is_building_type = building_lead_mine
+						level >= 5
+					}
+				}
+		}
+		any_scope_state = {
+			state_region = s:STATE_CAJAMARCA
+				AND = {
+					any_scope_building = {
+						OR = { 
+							has_active_production_method = pm_condensing_engine_pump_building_coal_mine
+							has_active_production_method = pm_diesel_pump_building_coal_mine						
+						}
+						has_active_production_method = pm_dynamite_building_coal_mine
+						has_active_production_method = pm_steam_donkey_building_coal_mine
+						is_building_type = building_coal_mine
+						level >= 5
+					}
+					any_scope_building = {
+						OR = { 
+							has_active_production_method = pm_condensing_engine_pump_building_lead_mine
+							has_active_production_method = pm_diesel_pump_building_lead_mine						
+						}
+						has_active_production_method = pm_dynamite_building_lead_mine
+						has_active_production_method = pm_steam_donkey_building_lead_mine
+						is_building_type = building_lead_mine
+						level >= 5
+					}
+					any_scope_building = {
+						OR = { 
+							has_active_production_method = pm_condensing_engine_pump_building_gold_mine
+							has_active_production_method = pm_diesel_pump_building_gold_mine						
+						}
+						has_active_production_method = pm_dynamite_building_gold_mine
+						has_active_production_method = pm_steam_donkey_building_gold_mine
+						is_building_type = building_gold_mine
+						level >= 5
+					}
+				}
+		}
+		any_scope_state = {
+			state_region = s:STATE_LIMA
+				AND = {
+					any_scope_building = {
+						OR = { 
+							has_active_production_method = pm_condensing_engine_pump_building_iron_mine
+							has_active_production_method = pm_diesel_pump_building_iron_mine						
+						}
+						has_active_production_method = pm_dynamite_building_iron_mine
+						has_active_production_method = pm_steam_donkey_building_iron_mine
+						is_building_type = building_iron_mine
+						level >= 5
+					}
+					any_scope_building = {
+						OR = { 
+							has_active_production_method = pm_condensing_engine_pump_building_lead_mine
+							has_active_production_method = pm_diesel_pump_building_lead_mine						
+						}
+						has_active_production_method = pm_dynamite_building_lead_mine
+						has_active_production_method = pm_steam_donkey_building_lead_mine
+						is_building_type = building_lead_mine
+						level >= 5
+					}
+					any_scope_building = {
+						OR = { 
+							has_active_production_method = pm_condensing_engine_pump_building_sulfur_mine
+							has_active_production_method = pm_diesel_pump_building_sulfur_mine						
+						}
+						has_active_production_method = pm_dynamite_building_sulfur_mine
+						has_active_production_method = pm_steam_donkey_building_sulfur_mine
+						is_building_type = building_sulfur_mine
+						level >= 5
+					}
+					any_scope_building = {
+						OR = { 
+							has_active_production_method = pm_condensing_engine_pump_building_gold_mine
+							has_active_production_method = pm_diesel_pump_building_gold_mine						
+						}
+						has_active_production_method = pm_dynamite_building_gold_mine
+						has_active_production_method = pm_steam_donkey_building_gold_mine
+						is_building_type = building_gold_mine
+						level >= 5
+					}
+				}
+		}
+		any_scope_state = {
+			state_region = s:STATE_ICA
+				AND = {
+					any_scope_building = {
+						OR = { 
+							has_active_production_method = pm_condensing_engine_pump_building_iron_mine
+							has_active_production_method = pm_diesel_pump_building_iron_mine						
+						}
+						has_active_production_method = pm_dynamite_building_iron_mine
+						has_active_production_method = pm_steam_donkey_building_iron_mine
+						is_building_type = building_iron_mine
+						level >= 5
+					}
+					any_scope_building = {
+						OR = { 
+							has_active_production_method = pm_condensing_engine_pump_building_sulfur_mine
+							has_active_production_method = pm_diesel_pump_building_sulfur_mine						
+						}
+						has_active_production_method = pm_dynamite_building_sulfur_mine
+						has_active_production_method = pm_steam_donkey_building_sulfur_mine
+						is_building_type = building_sulfur_mine
+						level >= 5
+					}
+				}
+		}
+		any_scope_state = {
+			state_region = s:STATE_AREQUIPA
+				AND = {
+					any_scope_building = {
+						OR = { 
+							has_active_production_method = pm_condensing_engine_pump_building_iron_mine
+							has_active_production_method = pm_diesel_pump_building_iron_mine						
+						}
+						has_active_production_method = pm_dynamite_building_iron_mine
+						has_active_production_method = pm_steam_donkey_building_iron_mine
+						is_building_type = building_iron_mine
+						level >= 5
+					}
+					any_scope_building = {
+						OR = { 
+							has_active_production_method = pm_condensing_engine_pump_building_lead_mine
+							has_active_production_method = pm_diesel_pump_building_lead_mine						
+						}
+						has_active_production_method = pm_dynamite_building_lead_mine
+						has_active_production_method = pm_steam_donkey_building_lead_mine
+						is_building_type = building_lead_mine
+						level >= 5
+					}
+					any_scope_building = {
+						OR = { 
+							has_active_production_method = pm_condensing_engine_pump_building_sulfur_mine
+							has_active_production_method = pm_diesel_pump_building_sulfur_mine						
+						}
+						has_active_production_method = pm_dynamite_building_sulfur_mine
+						has_active_production_method = pm_steam_donkey_building_sulfur_mine
+						is_building_type = building_sulfur_mine
+						level >= 5
+					}
+				}
+		}
+		any_scope_state = {
+			state_region = s:STATE_JUJUY
+				AND = {
+					any_scope_building = {
+						OR = { 
+							has_active_production_method = pm_condensing_engine_pump_building_iron_mine
+							has_active_production_method = pm_diesel_pump_building_iron_mine						
+						}
+						has_active_production_method = pm_dynamite_building_iron_mine
+						has_active_production_method = pm_steam_donkey_building_iron_mine
+						is_building_type = building_iron_mine
+						level >= 5
+					}
+					any_scope_building = {
+						OR = { 
+							has_active_production_method = pm_condensing_engine_pump_building_lead_mine
+							has_active_production_method = pm_diesel_pump_building_lead_mine						
+						}
+						has_active_production_method = pm_dynamite_building_lead_mine
+						has_active_production_method = pm_steam_donkey_building_lead_mine
+						is_building_type = building_lead_mine
+						level >= 5
+					}
+				}
+		}
+		any_scope_state = {
+			state_region = s:STATE_SANTIAGO
+				AND = {
+					any_scope_building = {
+						OR = { 
+							has_active_production_method = pm_condensing_engine_pump_building_iron_mine
+							has_active_production_method = pm_diesel_pump_building_iron_mine						
+						}
+						has_active_production_method = pm_dynamite_building_iron_mine
+						has_active_production_method = pm_steam_donkey_building_iron_mine
+						is_building_type = building_iron_mine
+						level >= 5
+					}
+					any_scope_building = {
+						OR = { 
+							has_active_production_method = pm_condensing_engine_pump_building_sulfur_mine
+							has_active_production_method = pm_diesel_pump_building_sulfur_mine						
+						}
+						has_active_production_method = pm_dynamite_building_sulfur_mine
+						has_active_production_method = pm_steam_donkey_building_sulfur_mine
+						is_building_type = building_sulfur_mine
+						level >= 5
+					}
+					any_scope_building = {
+						OR = { 
+							has_active_production_method = pm_condensing_engine_pump_building_gold_mine
+							has_active_production_method = pm_diesel_pump_building_gold_mine						
+						}
+						has_active_production_method = pm_dynamite_building_gold_mine
+						has_active_production_method = pm_steam_donkey_building_gold_mine
+						is_building_type = building_gold_mine
+						level >= 5
+					}
+				}
+		}
+		any_scope_state = {
+			state_region = s:STATE_LOS_RIOS
+				AND = {
+					any_scope_building = {
+						OR = { 
+							has_active_production_method = pm_condensing_engine_pump_building_coal_mine
+							has_active_production_method = pm_diesel_pump_building_coal_mine						
+						}
+						has_active_production_method = pm_dynamite_building_coal_mine
+						has_active_production_method = pm_steam_donkey_building_coal_mine
+						is_building_type = building_coal_mine
+						level >= 5
+					}
+					any_scope_building = {
+						OR = { 
+							has_active_production_method = pm_condensing_engine_pump_building_iron_mine
+							has_active_production_method = pm_diesel_pump_building_iron_mine						
+						}
+						has_active_production_method = pm_dynamite_building_iron_mine
+						has_active_production_method = pm_steam_donkey_building_iron_mine
+						is_building_type = building_iron_mine
+						level >= 5
+					}
+					any_scope_building = {
+						OR = { 
+							has_active_production_method = pm_condensing_engine_pump_building_lead_mine
+							has_active_production_method = pm_diesel_pump_building_lead_mine						
+						}
+						has_active_production_method = pm_dynamite_building_lead_mine
+						has_active_production_method = pm_steam_donkey_building_lead_mine
+						is_building_type = building_lead_mine
+						level >= 5
+					}
+					any_scope_building = {
+						OR = { 
+							has_active_production_method = pm_condensing_engine_pump_building_sulfur_mine
+							has_active_production_method = pm_diesel_pump_building_sulfur_mine						
+						}
+						has_active_production_method = pm_dynamite_building_sulfur_mine
+						has_active_production_method = pm_steam_donkey_building_sulfur_mine
+						is_building_type = building_sulfur_mine
+						level >= 5
+					}
+				}
+		}
+		any_scope_state = {
+			state_region = s:STATE_ARAUCANIA
+				AND = {
+					any_scope_building = {
+						OR = { 
+							has_active_production_method = pm_condensing_engine_pump_building_coal_mine
+							has_active_production_method = pm_diesel_pump_building_coal_mine						
+						}
+						has_active_production_method = pm_dynamite_building_coal_mine
+						has_active_production_method = pm_steam_donkey_building_coal_mine
+						is_building_type = building_coal_mine
+						level >= 5
+					}
+					any_scope_building = {
+						OR = { 
+							has_active_production_method = pm_condensing_engine_pump_building_iron_mine
+							has_active_production_method = pm_diesel_pump_building_iron_mine						
+						}
+						has_active_production_method = pm_dynamite_building_iron_mine
+						has_active_production_method = pm_steam_donkey_building_iron_mine
+						is_building_type = building_iron_mine
+						level >= 5
+					}
+				}
+		}
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:TWT
+				c:TWT = ROOT
+			}
+		trigger_event = { id = inca_infrastructure.2 }
+		}
+	}
+}
+
+je_anti_ruler = {
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		this = c:TWT
+	}
+
+	possible = {
+		this = c:TWT
+	}
+
+	complete = {
+		owns_entire_state_region = STATE_ARAUCANIA
+		owns_entire_state_region = STATE_TUCUMAN
+		owns_entire_state_region = STATE_JUJUY
+		owns_entire_state_region = STATE_ECUADOR
+		owns_entire_state_region = STATE_ZULIA
+		owns_entire_state_region = STATE_ANTIOQUIA
+		owns_entire_state_region = STATE_CUNDINAMARCA
+		owns_entire_state_region = STATE_PATAGONIA
+		owns_entire_state_region = STATE_RIO_NEGRO
+		owns_entire_state_region = STATE_CAUCA
+		owns_entire_state_region = STATE_TARAPACA
+		owns_entire_state_region = STATE_ANTOFAGASTA
+		owns_entire_state_region = STATE_LA_PAZ
+		owns_entire_state_region = STATE_POTOSI
+		owns_entire_state_region = STATE_CAJAMARCA
+		owns_entire_state_region = STATE_LIMA
+		owns_entire_state_region = STATE_ICA
+		owns_entire_state_region = STATE_AREQUIPA
+		owns_entire_state_region = STATE_SANTIAGO
+		owns_entire_state_region = STATE_LOS_RIOS
+		owns_entire_state_region = STATE_LA_PAMPA
+		
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:TWT
+				c:TWT = ROOT
+			}
+		trigger_event = { id = inca_glory.1 }
+		}
+	}
+
+	timeout = 18262
+}
+
+je_reform_mines_2 = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		c:TWT ?= THIS
+	}
+
+	possible = {
+		c:TWT ?= THIS
+		has_modifier = ruler_of_andes
+	}
+
+	complete = {
+		has_technology_researched = dynamite
+		any_scope_state = {
+			state_region = s:STATE_ZULIA
+				OR = {
+					any_scope_building = {
+						OR = { 
+							has_active_production_method = pm_condensing_engine_pump_building_coal_mine
+							has_active_production_method = pm_diesel_pump_building_coal_mine						
+						}
+						has_active_production_method = pm_dynamite_building_coal_mine
+						has_active_production_method = pm_steam_donkey_building_coal_mine
+						is_building_type = building_coal_mine
+						level >= 5
+					}
+					any_scope_building = {
+						OR = { 
+							has_active_production_method = pm_condensing_engine_pump_building_sulfur_mine
+							has_active_production_method = pm_diesel_pump_building_sulfur_mine						
+						}
+						has_active_production_method = pm_dynamite_building_sulfur_mine
+						has_active_production_method = pm_steam_donkey_building_sulfur_mine
+						is_building_type = building_sulfur_mine
+						level >= 5
+					}
+				}
+		}
+		any_scope_state = {
+			state_region = s:STATE_ANTIOQUIA
+				OR = {
+					any_scope_building = {
+						OR = { 
+							has_active_production_method = pm_condensing_engine_pump_building_coal_mine
+							has_active_production_method = pm_diesel_pump_building_coal_mine						
+						}
+						has_active_production_method = pm_dynamite_building_coal_mine
+						has_active_production_method = pm_steam_donkey_building_coal_mine
+						is_building_type = building_coal_mine
+						level >= 5
+					}
+					any_scope_building = {
+						OR = { 
+							has_active_production_method = pm_condensing_engine_pump_building_iron_mine
+							has_active_production_method = pm_diesel_pump_building_iron_mine						
+						}
+						has_active_production_method = pm_dynamite_building_iron_mine
+						has_active_production_method = pm_steam_donkey_building_iron_mine
+						is_building_type = building_iron_mine
+						level >= 5
+					}
+				}
+		}
+		any_scope_state = {
+			state_region = s:STATE_CUNDINAMARCA
+				OR = {
+					any_scope_building = {
+						OR = { 
+							has_active_production_method = pm_condensing_engine_pump_building_coal_mine
+							has_active_production_method = pm_diesel_pump_building_coal_mine						
+						}
+						has_active_production_method = pm_dynamite_building_coal_mine
+						has_active_production_method = pm_steam_donkey_building_coal_mine
+						is_building_type = building_coal_mine
+						level >= 5
+					}
+					any_scope_building = {
+						OR = { 
+							has_active_production_method = pm_condensing_engine_pump_building_iron_mine
+							has_active_production_method = pm_diesel_pump_building_iron_mine						
+						}
+						has_active_production_method = pm_dynamite_building_iron_mine
+						has_active_production_method = pm_steam_donkey_building_iron_mine
+						is_building_type = building_iron_mine
+						level >= 5
+					}
+				}
+		}
+		any_scope_state = {
+			state_region = s:STATE_CAUCA
+				OR = {
+					any_scope_building = {
+						OR = { 
+							has_active_production_method = pm_condensing_engine_pump_building_coal_mine
+							has_active_production_method = pm_diesel_pump_building_coal_mine						
+						}
+						has_active_production_method = pm_dynamite_building_coal_mine
+						has_active_production_method = pm_steam_donkey_building_coal_mine
+						is_building_type = building_coal_mine
+						level >= 5
+					}
+				}
+		}
+		any_scope_state = {
+			state_region = s:STATE_PATAGONIA
+				OR = {
+					any_scope_building = {
+						OR = { 
+							has_active_production_method = pm_condensing_engine_pump_building_coal_mine
+							has_active_production_method = pm_diesel_pump_building_coal_mine						
+						}
+						has_active_production_method = pm_dynamite_building_coal_mine
+						has_active_production_method = pm_steam_donkey_building_coal_mine
+						is_building_type = building_coal_mine
+						level >= 5
+					}
+					any_scope_building = {
+						OR = { 
+							has_active_production_method = pm_condensing_engine_pump_building_lead_mine
+							has_active_production_method = pm_diesel_pump_building_lead_mine						
+						}
+						has_active_production_method = pm_dynamite_building_lead_mine
+						has_active_production_method = pm_steam_donkey_building_lead_mine
+						is_building_type = building_lead_mine
+						level >= 5
+					}
+				}
+		}
+		any_scope_state = {
+			state_region = s:STATE_RIO_NEGRO
+				OR = {
+					any_scope_building = {
+						OR = { 
+							has_active_production_method = pm_condensing_engine_pump_building_coal_mine
+							has_active_production_method = pm_diesel_pump_building_coal_mine						
+						}
+						has_active_production_method = pm_dynamite_building_coal_mine
+						has_active_production_method = pm_steam_donkey_building_coal_mine
+						is_building_type = building_coal_mine
+						level >= 5
+					}
+					any_scope_building = {
+						OR = { 
+							has_active_production_method = pm_condensing_engine_pump_building_sulfur_mine
+							has_active_production_method = pm_diesel_pump_building_sulfur_mine						
+						}
+						has_active_production_method = pm_dynamite_building_sulfur_mine
+						has_active_production_method = pm_steam_donkey_building_sulfur_mine
+						is_building_type = building_sulfur_mine
+						level >= 5
+					}
+				}
+		}
+		any_scope_state = {
+			state_region = s:STATE_TUCUMAN
+				OR = {
+					any_scope_building = {
+						OR = { 
+							has_active_production_method = pm_condensing_engine_pump_building_coal_mine
+							has_active_production_method = pm_diesel_pump_building_coal_mine						
+						}
+						has_active_production_method = pm_dynamite_building_coal_mine
+						has_active_production_method = pm_steam_donkey_building_coal_mine
+						is_building_type = building_coal_mine
+						level >= 5
+					}
+					any_scope_building = {
+						OR = { 
+							has_active_production_method = pm_condensing_engine_pump_building_iron_mine
+							has_active_production_method = pm_diesel_pump_building_iron_mine						
+						}
+						has_active_production_method = pm_dynamite_building_iron_mine
+						has_active_production_method = pm_steam_donkey_building_iron_mine
+						is_building_type = building_iron_mine
+						level >= 5
+					}
+					any_scope_building = {
+						OR = { 
+							has_active_production_method = pm_condensing_engine_pump_building_lead_mine
+							has_active_production_method = pm_diesel_pump_building_lead_mine						
+						}
+						has_active_production_method = pm_dynamite_building_lead_mine
+						has_active_production_method = pm_steam_donkey_building_lead_mine
+						is_building_type = building_lead_mine
+						level >= 5
+					}
+				}
+		}
+		any_scope_state = {
+			state_region = s:STATE_LA_PAMPA
+				AND = {
+					any_scope_building = {
+						OR = { 
+							has_active_production_method = pm_condensing_engine_pump_building_coal_mine
+							has_active_production_method = pm_diesel_pump_building_coal_mine						
+						}
+						has_active_production_method = pm_dynamite_building_coal_mine
+						has_active_production_method = pm_steam_donkey_building_coal_mine
+						is_building_type = building_coal_mine
+						level >= 5
+					}
+					any_scope_building = {
+						OR = { 
+							has_active_production_method = pm_condensing_engine_pump_building_iron_mine
+							has_active_production_method = pm_diesel_pump_building_iron_mine						
+						}
+						has_active_production_method = pm_dynamite_building_iron_mine
+						has_active_production_method = pm_steam_donkey_building_iron_mine
+						is_building_type = building_iron_mine
+						level >= 5
+					}
+					any_scope_building = {
+						OR = { 
+							has_active_production_method = pm_condensing_engine_pump_building_lead_mine
+							has_active_production_method = pm_diesel_pump_building_lead_mine						
+						}
+						has_active_production_method = pm_dynamite_building_lead_mine
+						has_active_production_method = pm_steam_donkey_building_lead_mine
+						is_building_type = building_lead_mine
+						level >= 5
+					}
+					any_scope_building = {
+						OR = { 
+							has_active_production_method = pm_condensing_engine_pump_building_sulfur_mine
+							has_active_production_method = pm_diesel_pump_building_sulfur_mine						
+						}
+						has_active_production_method = pm_dynamite_building_sulfur_mine
+						has_active_production_method = pm_steam_donkey_building_sulfur_mine
+						is_building_type = building_sulfur_mine
+						level >= 5
+					}
+				}
+		}
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:TWT
+				c:TWT = ROOT
+			}
+		trigger_event = { id = inca_infrastructure.3 }
+		}
+	}
+}
+
+je_andean_pathway_2 = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		this = c:TWT
+	}
+
+	possible = {
+		this = c:TWT
+		has_modifier = ruler_of_andes
+	}
+
+	complete = {
+		has_technology_researched = reinforced_concrete
+		has_technology_researched = steel_frame_buildings
+		has_technology_researched = steel_railway_cars
+		has_technology_researched = dynamite
+		c:ELY = { relations:root >= relations_threshold:amicable }
+		NOT = { has_truce_with = c:ELY }
+		any_scope_state = {
+			state_region = s:STATE_ZULIA
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_ANTIOQUIA
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_CUNDINAMARCA
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_CAUCA
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_TUCUMAN
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_RIO_NEGRO
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_PATAGONIA
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_LA_PAMPA
+			has_building = building_railway
+		}
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:TWT
+				c:TWT = ROOT
+			}
+		trigger_event = { id = inca_infrastructure.4 }
+		}
+	}
+}
+
+je_andean_farming = {
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		this = c:TWT
+	}
+
+	possible = {
+		this = c:TWT
+	}
+
+	complete = {
+		has_technology_researched = intensive_agriculture
+		any_scope_state = {
+			state_region = s:STATE_ECUADOR
+			any_scope_building = {
+				is_building_type = building_maize_farm
+				level >= 10
+			}	
+		}
+		any_scope_state = {
+			state_region = s:STATE_LA_PAZ
+			any_scope_building = {
+				is_building_type = building_maize_farm
+				level >= 10
+			}	
+		}
+		any_scope_state = {
+			state_region = s:STATE_POTOSI
+			any_scope_building = {
+				is_building_type = building_maize_farm
+				level >= 10
+			}	
+		}
+		any_scope_state = {
+			state_region = s:STATE_CAJAMARCA
+			any_scope_building = {
+				is_building_type = building_maize_farm
+				level >= 10
+			}	
+		}
+		any_scope_state = {
+			state_region = s:STATE_LIMA
+			any_scope_building = {
+				is_building_type = building_maize_farm
+				level >= 10
+			}	
+		}
+		any_scope_state = {
+			state_region = s:STATE_ICA
+			any_scope_building = {
+				is_building_type = building_maize_farm
+				level >= 10
+			}	
+		}
+		any_scope_state = {
+			state_region = s:STATE_AREQUIPA
+			any_scope_building = {
+				is_building_type = building_maize_farm
+				level >= 10
+			}	
+		}
+		any_scope_state = {
+			state_region = s:STATE_JUJUY
+			any_scope_building = {
+				is_building_type = building_maize_farm
+				level >= 10
+			}	
+		}
+		any_scope_state = {
+			state_region = s:STATE_SANTIAGO
+			any_scope_building = {
+				is_building_type = building_wheat_farm
+				level >= 10
+			}	
+		}
+		any_scope_state = {
+			state_region = s:STATE_LOS_RIOS
+			any_scope_building = {
+				is_building_type = building_wheat_farm
+				level >= 10
+			}	
+		}
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:TWT
+				c:TWT = ROOT
+			}
+		trigger_event = { id = inca_farms.1 }
+		}
+	}
+}
+
+je_andean_farming_2 = {
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		this = c:TWT
+	}
+
+	possible = {
+		this = c:TWT
+		has_modifier = ruler_of_andes
+	}
+
+	complete = {
+		has_technology_researched = intensive_agriculture
+		any_scope_state = {
+			state_region = s:STATE_ZULIA
+			any_scope_building = {
+				is_building_type = building_maize_farm
+				level >= 10
+			}
+		}
+		any_scope_state = {
+			state_region = s:STATE_ANTIOQUIA
+			any_scope_building = {
+				is_building_type = building_maize_farm
+				level >= 10
+			}
+		}
+		any_scope_state = {
+			state_region = s:STATE_CUNDINAMARCA
+			any_scope_building = {
+				is_building_type = building_maize_farm
+				level >= 10
+			}
+		}
+		any_scope_state = {
+			state_region = s:STATE_CAUCA
+			any_scope_building = {
+				is_building_type = building_maize_farm
+				level >= 10
+			}
+		}
+		any_scope_state = {
+			state_region = s:STATE_TUCUMAN
+			any_scope_building = {
+				is_building_type = building_maize_farm
+				level >= 10
+			}
+		}
+		any_scope_state = {
+			state_region = s:STATE_RIO_NEGRO
+			any_scope_building = {
+				is_building_type = building_wheat_farm
+				level >= 10
+			}
+		}
+		any_scope_state = {
+			state_region = s:STATE_LA_PAMPA
+			any_scope_building = {
+				is_building_type = building_wheat_farm
+				level >= 10
+			}
+		}
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:TWT
+				c:TWT = ROOT
+			}
+		trigger_event = { id = inca_farms.2 }
+		}
+	}
+}
+
+je_andean_ranching = {
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		this = c:TWT
+	}
+
+	possible = {
+		this = c:TWT
+	}
+
+	complete = {
+		has_technology_researched = intensive_agriculture
+		any_scope_state = {
+			state_region = s:STATE_ECUADOR
+			any_scope_building = {
+				is_building_type = building_livestock_ranch
+				level >= 10
+			}
+		}
+		any_scope_state = {
+			state_region = s:STATE_TARAPACA
+			any_scope_building = {
+				is_building_type = building_livestock_ranch
+				level >= 20
+			}
+		}
+		any_scope_state = {
+			state_region = s:STATE_ANTOFAGASTA
+			any_scope_building = {
+				is_building_type = building_livestock_ranch
+				level >= 20
+			}
+		}
+		any_scope_state = {
+			state_region = s:STATE_LA_PAZ
+			any_scope_building = {
+				is_building_type = building_livestock_ranch
+				level >= 10
+			}
+		}
+		any_scope_state = {
+			state_region = s:STATE_POTOSI
+			any_scope_building = {
+				is_building_type = building_livestock_ranch
+				level >= 10
+			}
+		}
+		any_scope_state = {
+			state_region = s:STATE_CAJAMARCA
+			any_scope_building = {
+				is_building_type = building_livestock_ranch
+				level >= 10
+			}
+		}
+		any_scope_state = {
+			state_region = s:STATE_LIMA
+			any_scope_building = {
+				is_building_type = building_livestock_ranch
+				level >= 10
+			}
+		}
+		any_scope_state = {
+			state_region = s:STATE_ICA
+			any_scope_building = {
+				is_building_type = building_livestock_ranch
+				level >= 10
+			}
+		}
+		any_scope_state = {
+			state_region = s:STATE_AREQUIPA
+			any_scope_building = {
+				is_building_type = building_livestock_ranch
+				level >= 10
+			}
+		}
+		any_scope_state = {
+			state_region = s:STATE_JUJUY
+			any_scope_building = {
+				is_building_type = building_livestock_ranch
+				level >= 10
+			}
+		}
+		any_scope_state = {
+			state_region = s:STATE_ARAUCANIA
+			any_scope_building = {
+				is_building_type = building_livestock_ranch
+				level >= 20
+			}
+		}
+		any_scope_state = {
+			state_region = s:STATE_SANTIAGO
+			any_scope_building = {
+				is_building_type = building_livestock_ranch
+				level >= 10
+			}
+		}
+		any_scope_state = {
+			state_region = s:STATE_LOS_RIOS
+			any_scope_building = {
+				is_building_type = building_livestock_ranch
+				level >= 10
+			}
+		}
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:TWT
+				c:TWT = ROOT
+			}
+		trigger_event = { id = inca_farms.3 }
+		}
+	}
+}
+
+je_andean_ranching_2 = {
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		this = c:TWT
+	}
+
+	possible = {
+		this = c:TWT
+		has_modifier = ruler_of_andes
+	}
+
+	complete = {
+		has_technology_researched = intensive_agriculture
+		any_scope_state = {
+			state_region = s:STATE_ZULIA
+			any_scope_building = {
+				is_building_type = building_livestock_ranch
+				level >= 10
+			}
+		}
+		any_scope_state = {
+			state_region = s:STATE_ANTIOQUIA
+			any_scope_building = {
+				is_building_type = building_livestock_ranch
+				level >= 10
+			}
+		}
+		any_scope_state = {
+			state_region = s:STATE_CUNDINAMARCA
+			any_scope_building = {
+				is_building_type = building_livestock_ranch
+				level >= 10
+			}
+		}
+		any_scope_state = {
+			state_region = s:STATE_CAUCA
+			any_scope_building = {
+				is_building_type = building_livestock_ranch
+				level >= 10
+			}
+		}
+		any_scope_state = {
+			state_region = s:STATE_TUCUMAN
+			any_scope_building = {
+				is_building_type = building_livestock_ranch
+				level >= 10
+			}
+		}
+		any_scope_state = {
+			state_region = s:STATE_RIO_NEGRO
+			any_scope_building = {
+				is_building_type = building_livestock_ranch
+				level >= 10
+			}
+		}
+		any_scope_state = {
+			state_region = s:STATE_PATAGONIA
+			any_scope_building = {
+				is_building_type = building_livestock_ranch
+				level >= 20
+			}
+		}
+		any_scope_state = {
+			state_region = s:STATE_LA_PAMPA
+			any_scope_building = {
+				is_building_type = building_livestock_ranch
+				level >= 10
+			}
+		}
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:TWT
+				c:TWT = ROOT
+			}
+		trigger_event = { id = inca_farms.4 }
+		}
+	}
+}
+
+je_sulfur_lead = {
+	icon = "gfx/interface/icons/goods_icons/coffee.dds"
+
+	group = je_group_elysian_content
+	
+	is_shown_when_inactive = {
+		c:TWT ?= this
+	}
+
+	possible = {
+		c:TWT ?= this
+		has_technology_researched = improved_fertilizer
+	}
+
+	complete = {
+		leading_producer_of = g:sulfur
+		has_technology_researched = nitrogen_fixation
+		
+		country_has_building_group_levels = {
+			type = bg_sulfur_mining
+			value  >= 125
+		} 
+	}
+
+	on_complete = {
+		trigger_event = { id = guano_act.1 }
+	}
+}

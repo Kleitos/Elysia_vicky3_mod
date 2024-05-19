@@ -1,0 +1,705 @@
+﻿je_drain_marshes_ely = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		c:ELY ?= THIS
+	}
+
+	possible = {
+		c:ELY ?= THIS
+	}
+
+	complete = {
+		has_technology_researched = threshing_machine
+		has_technology_researched = pumpjacks
+		has_technology_researched = reinforced_concrete
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:ELY
+				c:ELY = ROOT
+			}
+		trigger_event = { id = ely_infrastructure_event.5 }
+		}
+	}
+}
+
+je_apaleisian_pathway = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		has_technology_researched = railways
+		c:ELY ?= THIS
+	}
+
+	possible = {
+		c:ELY ?= THIS
+	}
+
+	complete = {
+		has_technology_researched = reinforced_concrete
+		has_technology_researched = steel_frame_buildings
+		has_technology_researched = steel_railway_cars
+		has_technology_researched = dynamite
+		any_scope_state = {
+			state_region = s:STATE_VIRGINIA
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_KENTUCKY
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_WEST_VIRGINIA
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_PENNSYLVANIA
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_NORTH_CAROLINA
+			has_building = building_railway
+		}
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:ELY
+				c:ELY = ROOT
+			}
+		trigger_event = { id = ely_infrastructure_event.1 }
+		}
+	}
+}
+
+je_lakonias_pathway = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		has_technology_researched = railways
+		c:ELY ?= THIS
+	}
+
+	possible = {
+		c:ELY ?= THIS
+	}
+
+	complete = {
+		has_technology_researched = reinforced_concrete
+		has_technology_researched = steel_frame_buildings
+		has_technology_researched = steel_railway_cars
+		has_technology_researched = dynamite
+		any_scope_state = {
+			state_region = s:STATE_CHIHUAHUA
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_MEXICO
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_VERACRUZ
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_GUERRERO
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_OAXACA
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_ZACATECAS
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_DURANGO
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_SINALOA
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_JALISCO
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_SONORA
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_NEVADA
+			has_building = building_railway
+		}
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:ELY
+				c:ELY = ROOT
+			}
+		trigger_event = { id = ely_infrastructure_event.2 }
+		}
+	}
+}
+
+je_arkadias_pathway = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		has_technology_researched = railways
+		c:ELY ?= THIS
+	}
+
+	possible = {
+		c:ELY ?= THIS
+	}
+
+	complete = {
+		has_technology_researched = reinforced_concrete
+		has_technology_researched = steel_frame_buildings
+		has_technology_researched = steel_railway_cars
+		has_technology_researched = dynamite
+		any_scope_state = {
+			state_region = s:STATE_CHIAPAS
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_SAN_SALVADOR
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_GUATEMALA
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_HONDURAS
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_NICARAGUA
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_COSTA_RICA
+			has_building = building_railway
+		}
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:ELY
+				c:ELY = ROOT
+			}
+		trigger_event = { id = ely_infrastructure_event.3 }
+		}
+	}
+}
+
+je_hesperidias_pathway = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		has_technology_researched = railways
+		c:ELY ?= THIS
+	}
+
+	possible = {
+		c:ELY ?= THIS
+	}
+
+	complete = {
+		has_technology_researched = reinforced_concrete
+		has_technology_researched = steel_frame_buildings
+		has_technology_researched = steel_railway_cars
+		has_technology_researched = dynamite
+		any_scope_state = {
+			state_region = s:STATE_UTAH
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_WASHINGTON
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_OREGON
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_CALIFORNIA
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_IDAHO
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_COLORADO
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_WYOMING
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_MONTANA
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_ALBERTA
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_BRITISH_COLUMBIA
+			has_building = building_railway
+		}
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:ELY
+				c:ELY = ROOT
+			}
+		trigger_event = { id = ely_infrastructure_event.4 }
+		}
+	}
+}
+
+je_elysian_highway_old = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		c:ELY ?= THIS
+	}
+
+	possible = {
+		c:ELY ?= THIS
+	}
+
+	complete = {
+		year >= 1837
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:ELY
+				c:ELY = ROOT
+			}
+		trigger_event = { id = ely_infrastructure_event.6 }
+		}
+	}
+}
+
+je_elysian_highway_new = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		c:ELY ?= THIS
+	}
+
+	possible = {
+		c:ELY ?= THIS
+	}
+
+	complete = {
+		any_scope_building = {
+			is_building_type = building_motor_industry
+			level >= 15
+			has_active_production_method = pm_automobile_production
+		}
+		any_scope_building = {
+			filter = {
+				is_building_type = building_motor_industry
+			}
+			percent > 0.75
+			has_active_production_method = pm_automobile_production
+			occupancy > 0.75
+		}
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:ELY
+				c:ELY = ROOT
+			}
+		trigger_event = { id = ely_infrastructure_event.7 }
+		}
+	}
+}
+
+je_greenland_infrastructure = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		c:ELY ?= THIS
+	}
+
+	possible = {
+		c:ELY ?= THIS
+		c:ELY = {
+			owns_entire_state_region = STATE_GREENLAND
+		}
+	}
+
+	complete = {
+	has_technology_researched = oil_turbine
+	has_technology_researched = arc_welding
+	has_technology_researched = compression_ignition
+	has_technology_researched = concrete_dockyards
+	has_technology_researched = paved_roads
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:ELY
+				c:ELY = ROOT
+			}
+		trigger_event = { id = ely_infrastructure_event.8 }
+		}
+	}
+}
+
+je_thoulean_pathway = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		has_technology_researched = railways
+		c:ELY ?= THIS
+	}
+
+	possible = {
+		c:ELY ?= THIS
+	}
+
+	complete = {
+	has_technology_researched = paved_roads
+	has_technology_researched = compression_ignition
+		any_scope_state = {
+			state_region = s:STATE_ALASKA
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_YUKON_TERRITORY
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_NORTHWEST_TERRITORIES
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_NUNAVUT
+			has_building = building_railway
+		}
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:ELY
+				c:ELY = ROOT
+			}
+		trigger_event = { id = ely_infrastructure_event.9 }
+		}
+	}
+}
+
+je_modern_dockyard = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		c:ELY ?= THIS
+	}
+
+	possible = {
+		has_technology_researched = hydraulic_cranes
+		c:ELY ?= THIS
+	}
+
+	complete = {
+		has_technology_researched = gantry_cranes
+		any_scope_state = {
+			state_region = s:STATE_NEW_YORK
+				any_scope_building = {
+					OR = { 
+						has_active_production_method = pm_industrial_port
+						has_active_production_method = pm_modern_port						
+					}
+					is_building_type = building_port
+					level >= 5
+				}
+		}
+		any_scope_state = {
+			state_region = s:STATE_LOUISIANA
+				any_scope_building = {
+					OR = { 
+						has_active_production_method = pm_industrial_port
+						has_active_production_method = pm_modern_port						
+					}
+					is_building_type = building_port
+					level >= 5
+				}
+		}
+		any_scope_state = {
+			state_region = s:STATE_VIRGINIA
+				any_scope_building = {
+					OR = { 
+						has_active_production_method = pm_industrial_port
+						has_active_production_method = pm_modern_port						
+					}
+					is_building_type = building_port
+					level >= 5
+				}
+		}
+		any_scope_state = {
+			state_region = s:STATE_MARYLAND
+				any_scope_building = {
+					OR = { 
+						has_active_production_method = pm_industrial_port
+						has_active_production_method = pm_modern_port						
+					}
+					is_building_type = building_port
+					level >= 5
+				}
+		}
+		any_scope_state = {
+			state_region = s:STATE_NEW_JERSEY
+				any_scope_building = {
+					OR = { 
+						has_active_production_method = pm_industrial_port
+						has_active_production_method = pm_modern_port						
+					}
+					is_building_type = building_port
+					level >= 5
+				}
+		}
+		any_scope_state = {
+			state_region = s:STATE_FLORIDA
+				any_scope_building = {
+					OR = { 
+						has_active_production_method = pm_industrial_port
+						has_active_production_method = pm_modern_port						
+					}
+					is_building_type = building_port
+					level >= 5
+				}
+		}
+		any_scope_state = {
+			state_region = s:STATE_MASSACHUSETTS
+				any_scope_building = {
+					OR = { 
+						has_active_production_method = pm_industrial_port
+						has_active_production_method = pm_modern_port						
+					}
+					is_building_type = building_port
+					level >= 5
+				}
+		}
+		any_scope_state = {
+			state_region = s:STATE_NEW_BRUNSWICK
+				any_scope_building = {
+					OR = { 
+						has_active_production_method = pm_industrial_port
+						has_active_production_method = pm_modern_port						
+					}
+					is_building_type = building_port
+					level >= 5
+				}
+		}
+		any_scope_state = {
+			state_region = s:STATE_QUEBEC
+				any_scope_building = {
+					OR = { 
+						has_active_production_method = pm_industrial_port
+						has_active_production_method = pm_modern_port						
+					}
+					is_building_type = building_port
+					level >= 5
+				}
+		}
+		any_scope_state = {
+			state_region = s:STATE_BRITISH_COLUMBIA
+				any_scope_building = {
+					OR = { 
+						has_active_production_method = pm_industrial_port
+						has_active_production_method = pm_modern_port						
+					}
+					is_building_type = building_port
+					level >= 5
+				}
+		}
+		any_scope_state = {
+			state_region = s:STATE_TEXAS
+				any_scope_building = {
+					OR = { 
+						has_active_production_method = pm_industrial_port
+						has_active_production_method = pm_modern_port						
+					}
+					is_building_type = building_port
+					level >= 5
+				}
+		}
+		any_scope_state = {
+			state_region = s:STATE_CALIFORNIA
+				any_scope_building = {
+					OR = { 
+						has_active_production_method = pm_industrial_port
+						has_active_production_method = pm_modern_port						
+					}
+					is_building_type = building_port
+					level >= 5
+				}
+		}
+		any_scope_state = {
+			state_region = s:STATE_SONORA
+				any_scope_building = {
+					OR = { 
+						has_active_production_method = pm_industrial_port
+						has_active_production_method = pm_modern_port						
+					}
+					is_building_type = building_port
+					level >= 5
+				}
+		}
+		any_scope_state = {
+			state_region = s:STATE_YUCATAN
+				any_scope_building = {
+					OR = { 
+						has_active_production_method = pm_industrial_port
+						has_active_production_method = pm_modern_port						
+					}
+					is_building_type = building_port
+					level >= 5
+				}
+		}
+		any_scope_state = {
+			state_region = s:STATE_GUERRERO
+				any_scope_building = {
+					OR = { 
+						has_active_production_method = pm_industrial_port
+						has_active_production_method = pm_modern_port						
+					}
+					is_building_type = building_port
+					level >= 5
+				}
+		}
+		any_scope_state = {
+			state_region = s:STATE_NICARAGUA
+				any_scope_building = {
+					OR = { 
+						has_active_production_method = pm_industrial_port
+						has_active_production_method = pm_modern_port						
+					}
+					is_building_type = building_port
+					level >= 5
+				}
+		}
+		any_scope_state = {
+			state_region = s:STATE_PANAMA
+				any_scope_building = {
+					OR = { 
+						has_active_production_method = pm_industrial_port
+						has_active_production_method = pm_modern_port						
+					}
+					is_building_type = building_port
+					level >= 5
+				}
+		}
+		any_scope_state = {
+			state_region = s:STATE_HAITI
+				any_scope_building = {
+					OR = { 
+						has_active_production_method = pm_industrial_port
+						has_active_production_method = pm_modern_port						
+					}
+					is_building_type = building_port
+					level >= 5
+				}
+		}
+		any_scope_state = {
+			state_region = s:STATE_SANTO_DOMINGO
+				any_scope_building = {
+					OR = { 
+						has_active_production_method = pm_industrial_port
+						has_active_production_method = pm_modern_port						
+					}
+					is_building_type = building_port
+					level >= 5
+				}
+		}
+		any_scope_state = {
+			state_region = s:STATE_PUERTO_RICO
+				any_scope_building = {
+					OR = { 
+						has_active_production_method = pm_industrial_port
+						has_active_production_method = pm_modern_port						
+					}
+					is_building_type = building_port
+					level >= 5
+				}
+		}
+		any_scope_state = {
+			state_region = s:STATE_JAMAICA
+				any_scope_building = {
+					OR = { 
+						has_active_production_method = pm_industrial_port
+						has_active_production_method = pm_modern_port						
+					}
+					is_building_type = building_port
+					level >= 5
+				}
+		}
+		any_scope_state = {
+			state_region = s:STATE_CUBA
+				any_scope_building = {
+					OR = { 
+						has_active_production_method = pm_industrial_port
+						has_active_production_method = pm_modern_port						
+					}
+					is_building_type = building_port
+					level >= 5
+				}
+		}
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:ELY
+				c:ELY = ROOT
+			}
+		trigger_event = { id = ely_infrastructure_event.10 }
+		}
+	}
+}

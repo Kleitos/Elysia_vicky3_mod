@@ -1,0 +1,64 @@
+﻿je_eirene = {
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		custom_tooltip = {
+			text = konstantinos_died
+			ruler = {
+				NOT = { has_variable = is_konstantinos }
+			}
+		}
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:ELY
+				c:ELY = ROOT
+			}
+			trigger_event = { id = eirene.1 }
+		}
+	}
+
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					exists = c:ELY
+					c:ELY = ROOT
+					ruler = { has_variable = is_konstantinos }
+				}
+				random_list = {
+					11 = { }
+					1 = {
+						ruler = { kill_character = yes }
+					}
+				}
+			}
+		}
+	}
+
+	invalid = {
+		OR = {
+			NOT = {
+				exists = c:ELY
+			}
+			c:ELY = {
+				custom_tooltip = {
+					text = "DEBUG_NO_CHARACTER_IN_ELY_IS_EIRENE"
+					NOT = {
+						any_scope_character = {
+							has_variable = is_eirene
+						}
+					}
+				}
+			}
+		}
+	}
+
+	weight = 10
+
+	should_be_pinned_by_default = yes
+}

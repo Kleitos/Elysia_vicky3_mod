@@ -1,0 +1,74 @@
+﻿je_fire_corps = {
+	icon = "gfx/interface/icons/event_icons/event_fire.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		c:ELY ?= THIS
+	}
+
+	possible = {
+		army_size >= 200
+		has_modifier = modifier_elysian_fire_corp
+	}
+
+	complete = {
+		has_technology_researched = flamethrowers
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:ELY
+				c:ELY = ROOT
+			}
+		trigger_event = { id = fire_corps_event.1 }
+		}
+	}
+
+}
+
+je_reform_navy = {
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		c:ELY ?= THIS
+	}
+
+	possible = {
+		has_modifier = modifier_elysian_navy_old
+	}
+
+	complete = {
+		NOT = {
+			any_country = {
+				naval_power_projection > root.naval_power_projection
+				count > 2
+			}
+		}
+		has_technology_researched = jeune_ecole
+		OR = {
+			has_technology_researched = monitor_tech
+			has_technology_researched = self_propelled_torpedoes
+		}
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:ELY
+				c:ELY = ROOT
+			}
+		trigger_event = { id = fire_corps_event.2 }
+		}
+	}
+
+	timeout = 18262
+
+	on_timeout = {
+		trigger_event = { id = fire_corps_event.3 popup = yes }
+	}
+
+}

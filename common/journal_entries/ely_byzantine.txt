@@ -1,0 +1,598 @@
+﻿je_byzantine_resurgence = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		c:BYZ ?= THIS
+	}
+
+	possible = {
+		c:BYZ ?= THIS
+		NOT = { has_truce_with = c:TUR }
+		is_subject = no
+		owns_entire_state_region = STATE_IONIAN_ISLANDS
+		owns_entire_state_region = STATE_CRETE
+		owns_entire_state_region = STATE_WEST_AEGEAN_ISLANDS
+	}
+
+	complete = {
+ 		is_at_war = no
+		country_rank >= rank_value:minor_power
+		has_law = law_type:law_professional_army
+		has_technology_researched = general_staff
+		c:BYZ = {
+			army_size > { 
+    		value =  c:TUR.army_size
+    		multiply = 1
+				}
+			}	
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:BYZ
+				c:BYZ = ROOT
+			}
+		trigger_event = { id = byzantine_resurgence.1 }
+		}
+	}
+}
+
+je_byzantine_reconquest = {
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		c:BYZ ?= THIS
+	}
+
+	possible = {
+		c:BYZ ?= THIS
+		NOT = { has_truce_with = c:TUR }
+		is_subject = no
+	}
+
+	complete = {
+ 		is_at_war = no
+		country_rank >= rank_value:minor_power
+		owns_entire_state_region = STATE_HUDAVENDIGAR
+		owns_entire_state_region = STATE_AYDIN
+		owns_entire_state_region = STATE_EASTERN_THRACE
+		owns_entire_state_region = STATE_TRABZON
+		c:BYZ = {
+			army_size > { 
+    		value =  c:TUR.army_size
+    		multiply = 1
+				}
+			}
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:BYZ
+				c:BYZ = ROOT
+			}
+		trigger_event = { id = byzantine_resurgence.2 }
+		}
+	}
+}
+
+je_byzantine_revenge = {
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		c:BYZ ?= THIS
+	}
+
+	possible = {
+		c:BYZ ?= THIS
+		NOT = { has_truce_with = c:TUR }
+		is_subject = no
+	}
+
+	complete = {
+ 		is_at_war = no
+		country_rank >= rank_value:minor_power
+		owns_entire_state_region = STATE_KONYA
+		owns_entire_state_region = STATE_KASTAMONU
+		owns_entire_state_region = STATE_ANKARA
+		c:BYZ = {
+			army_size > { 
+    		value =  c:TUR.army_size
+    		multiply = 1
+				}
+			}
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:BYZ
+				c:BYZ = ROOT
+			}
+		trigger_event = { id = byzantine_resurgence.3 }
+		}
+	}
+}
+
+je_byzantine_glory = {
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		c:BYZ ?= THIS
+	}
+
+	possible = {
+		c:BYZ ?= THIS
+		NOT = { has_truce_with = c:TUR }
+		is_subject = no
+	}
+
+	complete = {
+ 		is_at_war = no
+		country_rank >= rank_value:great_power
+		owns_entire_state_region = STATE_ERZURUM
+		owns_entire_state_region = STATE_DIYARBAKIR
+		owns_entire_state_region = STATE_ADANA
+		OR = {
+			NOT = { exists = c:TUR }
+			c:TUR ?= {
+				is_country_alive = no
+			}
+		}
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:BYZ
+				c:BYZ = ROOT
+			}
+		trigger_event = { id = byzantine_glory.1 }
+		}
+	}
+}
+
+je_byzantine_dominance = {
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		c:BYZ ?= THIS
+	}
+
+	possible = {
+		c:BYZ ?= THIS
+		NOT = { has_truce_with = c:EGY }
+		is_subject = no
+		owns_entire_state_region = STATE_ADANA
+	}
+
+	complete = {
+ 		is_at_war = no
+		country_rank >= rank_value:great_power
+		has_modifier = greek_nationalism
+		NOT = {
+			has_modifier = government_admits_failure
+		}
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:BYZ
+				c:BYZ = ROOT
+			}
+		trigger_event = { id = byzantine_colonial.1 }
+		}
+	}
+}
+
+je_byzantine_antioch = {
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		c:BYZ ?= THIS
+	}
+
+	possible = {
+		c:BYZ ?= THIS
+		NOT = { has_truce_with = c:EGY }
+		is_subject = no
+		owns_entire_state_region = STATE_EASTERN_THRACE
+		owns_entire_state_region = STATE_CYPRUS
+		
+	}
+
+	complete = {
+ 		is_at_war = no
+		country_rank >= rank_value:major_power
+		c:BYZ = {
+			army_size > { 
+    		value =  c:EGY.army_size
+    		multiply = 1
+				}
+		}	
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:BYZ
+				c:BYZ = ROOT
+			}
+		trigger_event = { id = byzantine_colonial.2 }
+		}
+	}
+}
+
+je_cultural_shift_byz_bulgarian = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		c:BYZ ?= THIS
+	}
+
+	possible = {
+		c:BYZ ?= THIS
+		year >= 1838
+	}
+
+	complete = {
+	OR = { 
+		AND = {	
+            is_ai = no
+		owns_entire_state_region = STATE_DOBRUDJA
+		owns_entire_state_region = STATE_SKOPIA
+		owns_entire_state_region = STATE_WESTERN_THRACE
+		owns_entire_state_region = STATE_NORTHERN_THRACE
+		owns_entire_state_region = STATE_BULGARIA
+		OR = {
+			has_law = law_type:law_religious_schools
+			has_law = law_type:law_private_schools
+			has_law = law_type:law_public_schools
+		}
+		institution_investment_level = {
+			institution = institution_schools
+			value >= 1
+		}
+		institution_investment_level = {
+			institution = institution_police
+			value >= 1
+		}
+		institution_investment_level = {
+			institution = institution_home_affairs
+			value >= 1
+		}
+			}
+		AND = {
+				is_ai = yes
+				year >= 1842
+			}	
+		}
+	}
+	
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:BYZ
+				c:BYZ = ROOT
+			}
+		trigger_event = { id = byzantine_culture.2 }
+		}
+	}
+
+	fail = {
+		any_scope_state = {
+			state_region = {
+				is_homeland = cu:bulgarian
+			}
+			radical_fraction = {
+				value >= 0.2
+				culture = cu:bulgarian
+			}
+		}
+	}
+
+	on_fail = {
+		trigger_event = { id = byzantine_failure.1 }
+	}
+
+}
+
+je_cultural_shift_byz_albanian = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		c:BYZ ?= THIS
+	}
+
+	possible = {
+		c:BYZ ?= THIS
+		year >= 1838
+	}
+
+	complete = {
+	OR = { 
+		AND = {	
+            is_ai = no
+		owns_entire_state_region = STATE_ALBANIA
+		owns_entire_state_region = STATE_SKOPIA
+		owns_entire_state_region = STATE_MONTENEGRO
+		owns_entire_state_region = STATE_SOUTHERN_SERBIA
+		OR = {
+			has_law = law_type:law_religious_schools
+			has_law = law_type:law_private_schools
+			has_law = law_type:law_public_schools
+		}
+		institution_investment_level = {
+			institution = institution_schools
+			value >= 2
+		}
+		institution_investment_level = {
+			institution = institution_police
+			value >= 1
+		}
+		institution_investment_level = {
+			institution = institution_home_affairs
+			value >= 1
+		}
+			}
+		AND = {
+				is_ai = yes
+				year >= 1847
+			}	
+		}
+	}
+	
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:BYZ
+				c:BYZ = ROOT
+			}
+		trigger_event = { id = byzantine_culture.3 }
+		}
+	}
+
+	fail = {
+		any_scope_state = {
+			state_region = {
+				is_homeland = cu:albanian
+			}
+			radical_fraction = {
+				value >= 0.2
+				culture = cu:albanian
+			}
+		}
+	}
+
+	on_fail = {
+		trigger_event = { id = byzantine_failure.2 }
+	}
+
+}
+
+je_cultural_shift_byz_serbian = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		c:BYZ ?= THIS
+	}
+
+	possible = {
+		c:BYZ ?= THIS
+		year >= 1838
+	}
+
+	complete = {
+	OR = { 
+		AND = {	
+            is_ai = no
+		owns_entire_state_region = STATE_MONTENEGRO
+		owns_entire_state_region = STATE_NORTHERN_SERBIA
+		owns_entire_state_region = STATE_SOUTHERN_SERBIA
+		owns_entire_state_region = STATE_BOSNIA
+		owns_entire_state_region = STATE_DALMATIA
+		owns_entire_state_region = STATE_CROATIA
+		owns_entire_state_region = STATE_SLAVONIA
+		owns_entire_state_region = STATE_DELVIDEK
+		has_law = law_type:law_compulsory_primary_school
+		OR = {
+			has_law = law_type:law_racial_segregation
+			has_law = law_type:law_cultural_exclusion
+		}
+		OR = {
+			has_law = law_type:law_religious_schools
+			has_law = law_type:law_private_schools
+			has_law = law_type:law_public_schools
+		}
+		institution_investment_level = {
+			institution = institution_schools
+			value >= 3
+		}
+		institution_investment_level = {
+			institution = institution_police
+			value >= 2
+		}
+		institution_investment_level = {
+			institution = institution_home_affairs
+			value >= 1
+		}
+			}
+		AND = {
+				is_ai = yes
+				year >= 1852
+		owns_entire_state_region = STATE_MONTENEGRO
+		owns_entire_state_region = STATE_NORTHERN_SERBIA
+		owns_entire_state_region = STATE_SOUTHERN_SERBIA
+		owns_entire_state_region = STATE_BOSNIA
+		owns_entire_state_region = STATE_DALMATIA
+		owns_entire_state_region = STATE_CROATIA
+		owns_entire_state_region = STATE_SLAVONIA
+		owns_entire_state_region = STATE_DELVIDEK
+			}	
+		}
+	}
+	
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:BYZ
+				c:BYZ = ROOT
+			}
+		trigger_event = { id = byzantine_culture.4 }
+		}
+	}
+
+}
+
+je_cultural_shift_byz_georgian = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		c:BYZ ?= THIS
+	}
+
+	possible = {
+		c:BYZ ?= THIS
+		year >= 1838
+	}
+
+	complete = {
+	OR = { 
+		AND = {	
+		owns_entire_state_region = STATE_GREATER_CAUCASUS
+		owns_entire_state_region = STATE_KARS
+		has_law = law_type:law_compulsory_primary_school
+		has_law = law_type:law_cultural_exclusion
+		OR = {
+			has_law = law_type:law_religious_schools
+			has_law = law_type:law_private_schools
+			has_law = law_type:law_public_schools
+		}
+		institution_investment_level = {
+			institution = institution_schools
+			value >= 3
+		}
+		institution_investment_level = {
+			institution = institution_police
+			value >= 2
+		}
+		institution_investment_level = {
+			institution = institution_home_affairs
+			value >= 1
+		}
+		}
+		AND = {
+		owns_entire_state_region = STATE_GREATER_CAUCASUS
+		owns_entire_state_region = STATE_KARS
+				is_ai = yes
+				year >= 1886
+			}	
+		}
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:BYZ
+				c:BYZ = ROOT
+			}
+		trigger_event = { id = byzantine_culture.6 }
+		}
+	}
+
+}
+
+je_cultural_shift_byz_armenian = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		c:BYZ ?= THIS
+	}
+
+	possible = {
+		c:BYZ ?= THIS
+		year >= 1838
+	}
+
+	complete = {
+	OR = { 
+		AND = {	
+		owns_entire_state_region = STATE_ARMENIA
+		owns_entire_state_region = STATE_KARS
+		owns_entire_state_region = STATE_AZERBAIJAN
+		owns_entire_state_region = STATE_TRABZON
+		owns_entire_state_region = STATE_ERZURUM
+		owns_entire_state_region = STATE_DIYARBAKIR
+		owns_entire_state_region = STATE_ADANA
+		has_law = law_type:law_compulsory_primary_school
+		has_law = law_type:law_cultural_exclusion
+		OR = {
+			has_law = law_type:law_religious_schools
+			has_law = law_type:law_private_schools
+			has_law = law_type:law_public_schools
+		}
+		institution_investment_level = {
+			institution = institution_schools
+			value >= 3
+		}
+		institution_investment_level = {
+			institution = institution_police
+			value >= 2
+		}
+		institution_investment_level = {
+			institution = institution_home_affairs
+			value >= 1
+		}
+			}
+		AND = {
+		owns_entire_state_region = STATE_ARMENIA
+		owns_entire_state_region = STATE_KARS
+		owns_entire_state_region = STATE_AZERBAIJAN
+		owns_entire_state_region = STATE_TRABZON
+		owns_entire_state_region = STATE_ERZURUM
+		owns_entire_state_region = STATE_DIYARBAKIR
+		owns_entire_state_region = STATE_ADANA
+				is_ai = yes
+				year >= 1886
+			}	
+		}
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:BYZ
+				c:BYZ = ROOT
+			}
+		trigger_event = { id = byzantine_culture.7 }
+		}
+	}
+
+}

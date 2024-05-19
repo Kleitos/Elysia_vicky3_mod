@@ -1,0 +1,29 @@
+﻿je_greenland = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		c:ELY ?= THIS
+	}
+
+	possible = {
+		c:ELY ?= THIS
+	}
+	
+	complete = {
+		exists = c:ELY
+		c:ELY = {
+			owns_entire_state_region = STATE_GREENLAND
+		}
+	}
+
+	on_complete = {
+		add_modifier = {
+			name = conquest_of_greenland
+			months = normal_modifier_time
+		}
+	}
+
+	weight = 200
+}

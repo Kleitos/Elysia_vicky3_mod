@@ -1,0 +1,202 @@
+﻿je_wife_trade = {
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		c:ELY ?= THIS
+	}
+
+	possible = {
+		has_modifier = modifier_wife_trade	
+		c:ELY ?= THIS	
+	}
+
+	complete = {
+		has_technology_researched = socialism
+		has_technology_researched = philosophical_pragmatism
+		has_technology_researched = civilizing_mission
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:ELY
+				c:ELY = ROOT
+			}
+		trigger_event = { id = ely_national_value.1 }
+		}
+	}
+}
+
+je_reform_blood_laws = {
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		c:ELY ?= THIS
+	}
+
+	possible = {
+		has_modifier = modifier_elysian_blood
+		c:ELY ?= THIS
+	}
+
+	complete = {
+		has_technology_researched = mass_propaganda
+		has_law = law_type:law_cultural_exclusion
+		has_law = law_type:law_compulsory_primary_school
+		has_law = law_type:law_public_schools
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:ELY
+				c:ELY = ROOT
+			}
+		trigger_event = { id = ely_national_value.2 }
+		}
+	}
+}
+
+je_elysian_schooling = {
+	icon = "gfx/interface/icons/event_icons/tutorial_icon.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		c:ELY ?= THIS
+	}
+
+	possible = {
+		c:ELY ?= THIS
+	}
+
+	complete = {
+		has_law = law_type:law_cultural_exclusion
+		has_law = law_type:law_compulsory_primary_school
+		has_law = law_type:law_public_schools
+		institution_investment_level = {
+			institution = institution_schools
+			value >= 5
+			}
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:ELY
+				c:ELY = ROOT
+			}
+		trigger_event = { id = ely_national_value.3 }
+		}
+	}
+}
+
+je_populate_interior = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		c:ELY ?= THIS
+	}
+
+	possible = {
+		c:ELY ?= THIS	
+	}
+
+	complete = {
+		owns_entire_state_region = STATE_ARIZONA
+		owns_entire_state_region = STATE_NEW_MEXICO
+		owns_entire_state_region = STATE_UTAH
+		owns_entire_state_region = STATE_COLORADO
+		owns_entire_state_region = STATE_MONTANA
+		owns_entire_state_region = STATE_NORTH_DAKOTA
+		owns_entire_state_region = STATE_SOUTH_DAKOTA
+		owns_entire_state_region = STATE_KANSAS
+		owns_entire_state_region = STATE_OKLAHOMA
+		owns_entire_state_region = STATE_TEXAS
+		owns_entire_state_region = STATE_ARKANSAS
+		owns_entire_state_region = STATE_NEBRASKA
+		owns_entire_state_region = STATE_ALBERTA
+		owns_entire_state_region = STATE_SASKATCHEWAN
+		owns_entire_state_region = STATE_MANITOBA
+		owns_entire_state_region = STATE_IDAHO
+		owns_entire_state_region = STATE_NUNAVUT
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:ELY
+				c:ELY = ROOT
+			}
+		trigger_event = { id = ely_national_value.4 }
+		}
+	}
+}
+
+je_assimilate_inuit = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		c:ELY ?= THIS
+	}
+
+	possible = {
+		c:ELY ?= THIS	
+	}
+
+	complete = {
+		has_technology_researched = pan-nationalism
+		NOT = {
+			has_law = law_type:law_ethnostate
+		}
+	OR = { 
+		AND = {	
+            is_ai = no
+				has_law = law_type:law_compulsory_primary_school
+				OR = {
+					has_law = law_type:law_religious_schools
+					has_law = law_type:law_private_schools
+					has_law = law_type:law_public_schools
+				}
+				institution_investment_level = {
+					institution = institution_schools
+					value >= 3
+				}
+				institution_investment_level = {
+					institution = institution_police
+					value >= 1
+				}
+				institution_investment_level = {
+					institution = institution_home_affairs
+					value >= 1
+				}
+		owns_entire_state_region = STATE_NUNAVUT
+		owns_entire_state_region = STATE_GREENLAND
+			}
+		AND = {
+				is_ai = yes
+				year >= 1886
+		owns_entire_state_region = STATE_NUNAVUT
+		owns_entire_state_region = STATE_GREENLAND
+			}	
+		}
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:ELY
+				c:ELY = ROOT
+			}
+		trigger_event = { id = ely_national_value.5 }
+		}
+	}
+}

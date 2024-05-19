@@ -1,0 +1,305 @@
+﻿je_muiscan_transfer = {
+	icon = "gfx/interface/icons/event_icons/event_election.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		c:TWT ?= THIS
+	}
+
+	possible = {
+		c:TWT ?= THIS
+		NOT = { has_truce_with = c:ELY }
+	}
+
+	complete = {
+		country_rank >= rank_value:major_power
+		c:ELY = { relations:root >= relations_threshold:amicable }
+		army_size >= 100
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:TWT
+				c:TWT = ROOT
+			}
+		trigger_event = { id = ely_south_america_diplo.1 }
+		}
+	}
+}
+
+je_muiscan_unification = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		c:TWT ?= THIS
+	}
+
+	possible = {
+		c:TWT ?= THIS
+	}
+
+	complete = {
+		country_rank >= rank_value:major_power
+		has_technology_researched = pan-nationalism
+		c:MUI = { relations:root >= relations_threshold:amicable }
+				c:MUI ?= {
+					is_subject_of = ROOT
+				}
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:TWT
+				c:TWT = ROOT
+			}
+		trigger_event = { id = ely_south_america_diplo.2 }
+		}
+	}
+}
+
+je_wayuu_transfer = {
+	icon = "gfx/interface/icons/event_icons/event_election.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		c:TWT ?= THIS
+	}
+
+	possible = {
+		c:TWT ?= THIS
+		NOT = { has_truce_with = c:ELY }
+	}
+
+	complete = {
+		country_rank >= rank_value:major_power
+		c:ELY = { relations:root >= relations_threshold:amicable }
+		army_size >= 100
+		owns_entire_state_region = STATE_ANTIOQUIA
+		owns_entire_state_region = STATE_CUNDINAMARCA
+		owns_entire_state_region = STATE_CAUCA
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:TWT
+				c:TWT = ROOT
+			}
+		trigger_event = { id = ely_south_america_diplo.3 }
+		}
+	}
+}
+
+je_wayuu_unification = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		c:TWT ?= THIS
+	}
+
+	possible = {
+		c:TWT ?= THIS
+	}
+
+	complete = {
+		country_rank >= rank_value:major_power
+		has_technology_researched = pan-nationalism
+		c:WYU = { relations:root >= relations_threshold:amicable }
+				c:WYU ?= {
+					is_subject_of = ROOT
+				}
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:TWT
+				c:TWT = ROOT
+			}
+		trigger_event = { id = ely_south_america_diplo.4 }
+		}
+	}
+}
+
+je_cultural_shift_incan = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		c:TWT ?= THIS
+	}
+
+	possible = {
+		c:TWT ?= THIS
+	}
+
+	complete = {
+	OR = { 
+		AND = {	
+            is_ai = no
+				has_law = law_type:law_compulsory_primary_school
+				OR = {
+					has_law = law_type:law_religious_schools
+					has_law = law_type:law_private_schools
+					has_law = law_type:law_public_schools
+				}
+				institution_investment_level = {
+					institution = institution_schools
+					value >= 3
+				}
+				institution_investment_level = {
+					institution = institution_police
+					value >= 2
+				}
+				institution_investment_level = {
+					institution = institution_home_affairs
+					value >= 1
+				}
+			}
+		AND = {
+				is_ai = yes
+				year >= 1886
+			}	
+		}
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:TWT
+				c:TWT = ROOT
+			}
+		trigger_event = { id = ely_south_america_integration.1 }
+		}
+	}
+
+}
+
+je_cultural_shift_muiscan = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		c:TWT ?= THIS
+	}
+
+	possible = {
+		c:TWT ?= THIS
+	}
+
+	complete = {
+		country_has_primary_culture = cu:quechua
+		owns_entire_state_region = STATE_ANTIOQUIA
+		owns_entire_state_region = STATE_CUNDINAMARCA
+		owns_entire_state_region = STATE_CAUCA
+		has_law = law_type:law_compulsory_primary_school
+		OR = {
+			has_law = law_type:law_racial_segregation
+			has_law = law_type:law_cultural_exclusion
+		}
+		OR = {
+			has_law = law_type:law_religious_schools
+			has_law = law_type:law_private_schools
+			has_law = law_type:law_public_schools
+		}
+		institution_investment_level = {
+			institution = institution_schools
+			value >= 3
+		}
+		institution_investment_level = {
+			institution = institution_police
+			value >= 2
+		}
+		institution_investment_level = {
+			institution = institution_home_affairs
+			value >= 1
+		}
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:BYZ
+				c:BYZ = ROOT
+			}
+		trigger_event = { id = ely_south_america_integration.3 }
+		}
+	}
+
+}
+
+je_guarani_expansion = {
+	icon = "gfx/interface/icons/event_icons/event_election.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		c:TWT ?= THIS
+	}
+
+	possible = {
+		c:TWT ?= THIS
+		NOT = { has_truce_with = c:ELY }
+	}
+
+	complete = {
+		country_rank >= rank_value:minor_power
+		has_technology_researched = nationalism
+		c:ELY = { relations:root >= relations_threshold:amicable }
+		c:GRI = { relations:root >= relations_threshold:amicable }
+		army_size >= 50
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:TWT
+				c:TWT = ROOT
+			}
+		trigger_event = { id = ely_south_america_diplo.5 }
+		}
+	}
+}
+
+je_patagonian_expansion = {
+	icon = "gfx/interface/icons/event_icons/event_election.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		c:TWT ?= THIS
+	}
+
+	possible = {
+		c:TWT ?= THIS
+		NOT = { has_truce_with = c:ELY }
+	}
+
+	complete = {
+		country_rank >= rank_value:minor_power
+		has_technology_researched = nationalism
+		c:ELY = { relations:root >= relations_threshold:amicable }
+		c:PAT = { relations:root >= relations_threshold:amicable }
+		army_size >= 50
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:TWT
+				c:TWT = ROOT
+			}
+		trigger_event = { id = ely_south_america_diplo.6 }
+		}
+	}
+}

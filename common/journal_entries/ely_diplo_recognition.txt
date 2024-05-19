@@ -1,0 +1,31 @@
+﻿je_ask_recognition = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	group = je_group_foreign_affairs
+
+	is_shown_when_inactive = {
+		is_country_type = unrecognized
+	}
+
+	possible = {
+		country_rank >= rank_value:unrecognized_regional_power
+	}
+
+	complete = {
+        any_country = {
+			country_rank >= rank_value:great_power
+            NOT = { has_war_with = ROOT }
+            has_interest_marker_in_region = ROOT.capital.region
+            relations:root > 75
+        }
+	}
+
+	on_complete = {
+		trigger_event = {
+			id = westernization.1
+		}
+	}
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+}
