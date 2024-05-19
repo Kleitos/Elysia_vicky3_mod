@@ -1,0 +1,63 @@
+﻿
+
+je_la_plata = {
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	group = je_group_foreign_affairs
+
+    is_shown_when_inactive = {
+        country_has_primary_culture = cu:platinean
+		has_dlc_feature = rp1_content
+        NOT = {
+            OR = {
+                country_tier = empire
+                country_tier = hegemony
+            }
+        }
+    }
+    possible = {
+		has_technology_researched = nationalism
+        country_has_primary_culture = cu:platinean
+    }
+    immediate = {
+        trigger_event = { id = la_plata.1 popup = yes }
+    }
+    complete = {
+        custom_tooltip = {
+            text = formed_la_plata_tt
+            c:PLT ?= this
+        }
+    }
+    on_complete = {
+        trigger_event = { id = la_plata.2 popup = yes }
+        if = {
+            limit = {
+                has_modifier = modifier_seeking_la_plata
+            }
+            remove_modifier = modifier_seeking_la_plata
+        }
+    }
+    fail = {
+        OR = {
+            NOT = {
+                country_has_primary_culture = cu:platinean
+            }
+            custom_tooltip = {
+                text = has_rejected_la_plata_tt
+                has_variable = rejected_la_plata
+            }
+        }
+    }
+    on_fail = {
+        if = {
+            limit = {
+                has_modifier = modifier_seeking_la_plata
+            }
+            remove_modifier = modifier_seeking_la_plata
+        }
+    }
+
+    weight = 1000
+
+    should_be_pinned_by_default = yes
+}
