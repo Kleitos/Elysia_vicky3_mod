@@ -1,0 +1,43 @@
+﻿l_english:
+
+ # Revolutions
+
+ hungarian_revolution.1.t:0 "Hungarian Revolution"
+ hungarian_revolution.1.d:0 ""
+ hungarian_revolution.1.f:0 ""
+ hungarian_revolution.1.a:0 "We must crush these rebels"
+ 
+ polish_revolution.1.t:0 "Polish Revolution"
+ polish_revolution.1.d:0 ""
+ polish_revolution.1.f:0 ""
+ polish_revolution.1.a:0 "We must crush these rebels"
+ 
+ irish_revolution.1.t:0 "Irish Revolution"
+ irish_revolution.1.d:0 ""
+ irish_revolution.1.f:0 ""
+ irish_revolution.1.a:0 "We must crush these rebels"
+ 
+ slavic_revolt.1.t:0 "Serbian Revolt"
+ slavic_revolt.1.d:0 ""
+ slavic_revolt.1.f:0 ""
+ slavic_revolt.1.a:0 "We must crush these rebels"
+ 
+ baltic_revolution.1.t:0 "Baltic Revolt"
+ baltic_revolution.1.d:0 ""
+ baltic_revolution.1.f:0 ""
+ baltic_revolution.1.a:0 "We must crush these rebels"
+ 
+ caucasian_revolution.1.t:0 "Caucasian Revolt"
+ caucasian_revolution.1.d:0 ""
+ caucasian_revolution.1.f:0 ""
+ caucasian_revolution.1.a:0 "We must crush these rebels"
+ 
+ india_revolt.1.t:0 "Sepoy Revolt"
+ india_revolt.1.d:0 "Our Inability to control the subcontinent has led multiple sepoys regiments to organise an uprising rallying behind a man proclaiming to be the last Mughal emperor."
+ india_revolt.1.f:0 ""
+ india_revolt.1.a:0 "We must crush these rebels"
+ 
+ italian_revolt.1.t:0 "Italian Uprising"
+ italian_revolt.1.d:0 ""
+ italian_revolt.1.f:0 ""
+ italian_revolt.1.a:0 "We must show those upstarts who are the masters of Italy"

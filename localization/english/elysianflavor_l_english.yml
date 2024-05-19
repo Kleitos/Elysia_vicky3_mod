@@ -1,0 +1,341 @@
+﻿l_english:
+
+# Country Changes
+ ELY: "Elysian Empire"
+ ELY_ADJ: "Elysian"
+ 
+ 
+ elysia_allagion: "Allagion Elysias"
+ borealia_allagion: "Allagion Borealias"
+ lakonia_allagion: "Allagion Lakonias"
+ naftiko_elysia: "Naftikos Elysias"
+ naftiko_borealia: "Naftikos Borealias"
+ naftiko_lakonia: "Naftikos Lakonias"
+ naftiko_kykladia: "Naftikos Kykladias"
+ 
+ elysian_culture_group:0 "Elysian"
+ pagan_heritage:0 "Polytheistic Sphere"
+ elysian:0 "Elysian"
+ elysian_pantheon:0 "Elysian Hellenism"
+ pantheon:0 "Elysian Pantheon"
+ pagan_belief:0 "Syncretism"
+ 
+ je_group_elysian_content:0 "Elysian Content"
+ 
+ ig_elysian_church:0 "Hierateia"
+ ig_dynatoi:0 "Dynatoi"
+ ig_emporoi:0 "Emporoi"
+ ig_elysian_army:0 "Thematas"
+
+ ideology_elysian_egalitarian:0 "Elysian Matriarchy"
+ ideology_elysian_economy:0 "Elysian Traditional Guilds"
+ ideology_elysian_land:0 "Elysian Landowners"
+ ideology_elysian_labor_poor:0 "Elysian Workers"
+ ideology_elysian_labor_rich:0 "Elysian Philanthropist"
+ ideology_anti_christian_radical:0 "Anti-Abrahamist"
+ ideology_elysian_border:0 "Syncretic"
+ ideology_elysian_army:0 "Stratokratos"
+ ideology_elysian_bureaucracy:0 "Autokratos"
+ ideology_elysian_populist:0 "Demokratos"
+ ideology_elysian_economy_traditionals:0 ""
+ ideology_elysian_economy_industrials:0 ""
+
+ ideology_elysian_egalitarian_desc:0 "Elysian men tended to the land, Elysian women tended to the people. What was born from necessity became the norm."
+ ideology_anti_christian_radical_desc:0 "Abrahamist religions brought ruin to our ancestor's empire and others across the globe, we must enforce our heritage and prevent their perfidious lies to enter our society."
+ ideology_elysian_border_desc:0 "Abrahamist religions brought ruin to our ancestor's empire and others across the globe, we must enforce our heritage and prevent their perfidious lies to enter our society."
+ 
+ ideology_elysian_economy_desc:0 "Elysia's economy had to restart from the ground up so the government let explorers and traders do their job. This group believe in preserving the dynamic."
+ ideology_elysian_land_desc:0 "When elysians first settled the land, the rules of old had been discarded. Now this group believe in keeping the status quo."
+ 
+ ideology_elysian_labor_poor_desc:0 "This group believe in rewarding the elysian people for their work by giving them social security."
+ ideology_elysian_labor_rich_desc:0 "This group believe in compensating workers but not giving them to much as to upset the social dynamics."
+ 
+ ideology_elysian_bureaucracy_desc:0 "This group is the old guard of the senate, they want to keep power in the hands of a few elected individuals selected from their ranks but still keep the power of the ruler in check."
+ ideology_elysian_army_desc:0 "This group believes in keeping the balance of power by either diluting the power of each group, or having it all under the watchful eye of the army."
+ ideology_elysian_populist_desc:0 "This group believes that the people should elect their representatives but not in the total abolition of the monarchy."
+ 
+ # Monuments
+
+ building_imperial_palace:0 "Imperial Palace"
+ building_marble_temple:0 "Marble Temple"
+ building_elysian_arsenal:0 "Elysian Arsenal"
+ building_sea_gates:0 "Sea Gates"
+ building_tikal_temple_city:0 "Tikal"
+ building_lost_monument:0 "Monument to the Lost"
+ building_chichen_itza_temple_city:0 "Chichen Itza"
+ building_mexico_temple_city:0 "Tenochtitlan"
+ building_cahokia_halls:0 "Cahokia"
+ building_silk_halls:0 "Silk Halls"
+ building_whalebone_palace:0 "Whalebone Palace"
+ building_alexandrian_library:0 "Nea Alexandria Library"
+ building_nican_nahua_naval_base:0 "Nican-Nahua Canal"
+ building_lakonia_railway:0 "Northern Tecuantepec Trans-Isthmic Railroad"
+ building_oaxaca_railway:0 "Southern Tecuantepec Trans-Isthmic Railroad"
+ building_erie_canal:0 "Erie Canal"
+ 
+ # Modifiers
+ 
+ modifier_through_river_styx:0 "Elysian Eugenism"
+ modifier_wife_trade:0 "Elysian Polygamy"
+ modifier_elysian_opportunity:0 "Land of Opportunity"
+ empress_eirene_mod:0 "Silken Empress"
+ modifier_elysian_fire_corp:0 "Elysian Fire Corps"
+ modifier_modern_fire_corp:0 "Modern Fire Corps"
+ modifier_oigos_marshes_drain:0 "Oigos Marshes drained"
+ modifier_modern_pathway:0 "Elysian Modern Pathways"
+ modifier_elysian_games:0 "Elysian Games"
+ modifier_elysian_blood:0 "Elysian Blood Laws"
+ modifier_elysian_family:0 "Elysian Modern Family"
+ modifier_elysian_schooling:0 "Elysian Curriculum"
+ modifier_elysian_bureaucracy:0 "Elysian Bureaucracy"
+ modifier_elysian_production:0 "Elysian Economic Reforms"
+ modifier_elysian_highway_old:0 "Elysian Highway"
+ modifier_elysian_highway_new:0 "Modern Elysian Highway"
+ ely_big_money:0 "infrastructure Project Payment"
+ ely_verybig_money:0 "infrastructure Project Payment"
+ modifier_elysian_navy_old:0 "Old Navy Doctrine"
+ modifier_elysian_navy_new:0 "Modern Navy Doctrine"
+ modifier_elsysian_dockyard:0 "Modernized Cothons"
+ pagan_world_modifier:0 "Refuge for Pagans"
+ 
+ greenland_ely_verybig_money:0 "Payment of infrastructure projects"
+ 
+ elysian_aligned:0 "Elysian Influence"
+ 
+ # Events
+ 
+ eirene.1.t:0 "Basilissa Eleni"
+ eirene.1.d:0 "Throughout our history an emperors eldest son has always been the heir to the throne, until today. Emperor Constantine XIII has died with only his daughter, Eleni, to take his place. By all accounts she is bright diligent and more importantly, loved by the masses."
+ eirene.1.f:0 ""Since the Fates decided to place me in this station, I shall do my utmost to fulfill my duty towards my country.""
+ eirene.1.a:0 "Long live the Empress!"
+ 
+ 
+ elysian_railways.1.t:0 "The First Trans-Continental Railways"
+ elysian_railways.1.d:0 "With the route between the Atlantic and Eireneic complete, the door is open for greater settlement of the Elysian West"
+ elysian_railways.1.f:0 ""With this golden spike, we call for the unity of our country, as this railroad unites the two great oceans of the world!""
+ elysian_railways.1.a:0 "We will settle Elysium"
+ 
+ elysian_railways.2.t:0 "The Last Spike"
+ elysian_railways.2.d:0 "The Borealian-Eireneic Railway has finally been completed, connecting the Atlantic and Eireneic coasts. The new railway opens up new opportunities for settlement across the Western Provinces."
+ elysian_railways.2.f:0 ""The stroke released the trigger for a burst\nOf sound which stretched the gamut of the air.\nThe shouts of engineers and dynamiters,\nOf locomotive-workers and explorers,\nFlanking the rails, were but a tuning up\nFor a massed continental chorus.""
+ elysian_railways.2.a:0 "There is great potential in the lands"
+ 
+ 
+ fire_corps_event.1.t:0 "Modern Fire Corps"
+ fire_corps_event.1.d:0 "We have long been masters of using fire based weaponry, from our infamous 'Greek Fire', flame canons and simple incendiary grenades, a fire corps has always followed our armies and navies."
+ fire_corps_event.1.f:0 "They began blowing with smiths’ bellows at a furnace in which there was fire and there came from it a great din. There stood there also a bronze tube and from it flew much fire, and it burned up in a short time so that all of it became white ashes.."
+ fire_corps_event.1.a:0 "Set our enemies alight"
+ 
+ fire_corps_event.2.t:0 "Modernize the Navy"
+ fire_corps_event.2.d:0 "Great efforts have been made to modernize and improve our existing navy. From the existing fire nozzle and copper plating of the past to true armored sea faring behemoth. Our navy is second to none."
+ fire_corps_event.2.f:0 ""
+ fire_corps_event.2.a:0 "Elysia rules the waves"
+ 
+ 
+ ely_infrastructure_event.5.t:0 "Partial Drain of the Oigos Marshes"
+ ely_infrastructure_event.5.d:0 "Thus a decision has been made to partially drain the marshes to help the flow of goods and people in the region and secure the state. Laborers toiled day after day to dry the swamps and repel the fauna, combating nature itself. But finally after years of work, Elysian engineers triumph once more against the land."
+ ely_infrastructure_event.5.f:0 "The Oigos Marshes are now suitable only for the haunt of noxious vermin or the resort of pestilent reptiles."
+ ely_infrastructure_event.5.a:0 "This will improve infrastructure in the region"
+ 
+ ely_infrastructure_event.1.t:0 "Modernize The Apaleisian Pathways"
+ ely_infrastructure_event.1.d:0 "By blood, sweat and tears our engineers have expended and modernized the work already done by our ancestors. Now nothing will stop the trade between the great Skythian plains and Elysia's Atlantic Coast."
+ ely_infrastructure_event.1.f:0 ""
+ ely_infrastructure_event.1.a:0 "Our ancestors would be proud"
+ ely_infrastructure_event.1.b:0 "We simply can't afford it."
+ 
+ ely_infrastructure_event.2.t:0 "The Lakonian Pathways"
+ ely_infrastructure_event.2.d:0 "The sounds of drills and explosions have been replaced by the whistle of a train as the first cargo move through the new lakonian pathways. Though expensive now Lakonia is forever linked to Elysia."
+ ely_infrastructure_event.2.f:0 ""
+ ely_infrastructure_event.2.a:0 "Truly a marvel of engineering"
+ 
+ ely_infrastructure_event.3.t:0 "The Arkadian Extension"
+ ely_infrastructure_event.3.d:0 "No more will Arkadia be isolated from the rest of our empire. The people rejoice as trains from Nea-Konstantinopolis arrive in Panamas for the first time in history."
+ ely_infrastructure_event.3.f:0 ""
+ ely_infrastructure_event.3.a:0 "This will unite Elysia"
+ 
+ ely_infrastructure_event.4.t:0 "The Hesperidian Connection"
+ ely_infrastructure_event.4.d:0 "When our first settlers encountered the Atlas Mountain range they cowered in awe. Too long has the mountain separated our East and West, now not even them can stop us. For Hesperidia and Elysium are bound forever."
+ ely_infrastructure_event.4.f:0 ""
+ ely_infrastructure_event.4.a:0 "Even mighty Atlas will yield"
+ 
+ ely_infrastructure_event.6.t:0 "The Old Highway"
+ ely_infrastructure_event.6.d:0 "As our people pushed westward, a series of forts, trading posts and ports were build and linked through an elaborate system of roads and ferry. Alas, the great distances between places as led to administrative mismanagement."
+ ely_infrastructure_event.6.f:0 ""
+ ely_infrastructure_event.6.a:0 "As long as they maintain it."
+ 
+ ely_infrastructure_event.7.t:0 "The Modern Highway"
+ ely_infrastructure_event.7.d:0 "With the new pathways being built and the introduction of public and private motorized vehicles, a project to modernize the old highway as been pushed forward to ease travel of goods and people across our vast empire. The added bonus of speed even allow for better local management."
+ ely_infrastructure_event.7.f:0 ""
+ ely_infrastructure_event.7.a:0 "A worthy endeavor"
+ ely_infrastructure_event.7.b:0 "We can't spare money at the moment, best to leave it to local administration."
+ 
+ ely_infrastructure_event.8.t:0 "The Greenland Project"
+ ely_infrastructure_event.8.d:0 "When we took over Greenland, many people either mocked us or criticized us for the spending of vast amount of money for what is just a frozen wasteland. However, the discovery of vast amount of mineral wealth as seen push to invest in the region and make even the frozen north bend to elysian ingenuity. Obviously the senate is divided."
+ ely_infrastructure_event.8.f:0 ""
+ ely_infrastructure_event.8.a:0 "We will tame every corner of this world."
+ ely_infrastructure_event.8.b:0 "Ha! Good one, what's next walking on the moon?"
+ 
+ ely_infrastructure_event.9.t:0 "The Thoulean Highway"
+ ely_infrastructure_event.9.d:0 "North Elysium, also known as Thoulea is a vast expanse of dense forest where travel is difficult all year round. However, recent technological development and bureaucratic improvement have tied more and more Thoulea to the greater Elysian identity. Proposal have been put forth to create a massive government sponsored project to improve the infrastructure of the region."
+ ely_infrastructure_event.9.f:0 ""
+ ely_infrastructure_event.9.a:0 "Boréas realm is at our fingertips"
+ 
+ ely_infrastructure_event.10.t:0 "The modernization of the Great Cothons"
+ ely_infrastructure_event.10.d:0 "At long last, the toiling of laborers and mechanics is done. The sounds of heavy construction replaced by the distinct whistle of modern ships. Throughout the empire, news of the new modernized and improved cothons is spreading attracting curious onlookers and people looking for work in the bustling maritime business."
+ ely_infrastructure_event.10.f:0 ""
+ ely_infrastructure_event.10.a:0 "We must admit that the Carthaginian design is appealing."
+ 
+ 
+ ely_national_value.1.t:0 "Human trafficking in Elysia"
+ ely_national_value.1.d:0 "Since its foundation Elysia always had a manpower shortage and with Elysian laws guaranteeing more rights and protection than anywhere else, multiple shady organizations some even linked to the government had found ways to provide a ‘workaround’. However with barriers to trade and communication with other nations eroding it became harder and harder to keep it a secret. Now There is international pressure to end the practice once and for all."
+ ely_national_value.1.f:0 ""
+ ely_national_value.1.a:0 "Maybe it is time to put an end to this horrendous practice and move forward"
+ ely_national_value.1.b:0 "Pah, what do barbarians know ? Elysia will stand alone if it needs to"
+ 
+ ely_national_value.2.t:0 "New Elysian Family"
+ ely_national_value.2.d:0 "Even with the abhorrent practice of human trafficking abolished, Elysia remains a place were non elysians are seen as secondary citizens at best. While not changing the fundamentals of our blood law policies, we could make it easier for single Barbaroi across the world to see the benefit of moving to our nation and joining the bigger elysian family."
+ ely_national_value.2.f:0 ""
+ ely_national_value.2.a:0 "Time to create a new set of elysian values"
+  
+ ely_national_value.3.t:0 "Elysian Education"
+ ely_national_value.3.d:0 "With budget increase, a state approved curriculum and subtle propaganda we are now fully in control of what we teach to the future generation. Even those born of a 'Barbaroi' parent will become model citizens in the future."
+ ely_national_value.3.f:0 ""
+ ely_national_value.3.a:0 "Young malleable minds"
+  
+ ely_national_value.4.t:0 "Settling the Interior"
+ ely_national_value.4.d:0 "As we push deeper into the great Skythian plains, more and more land is being claimed by settlers seeking new opportunity. With a little help we could incite the foundation of town and villages as we extend our reach inland."
+ ely_national_value.4.f:0 ""
+ ely_national_value.4.a:0 "A glorious era will start."
+  
+ ely_national_value.5.t:0 "The Assimilation of the Inuit"
+ ely_national_value.5.d:0 "The Inuit people are one of the last Barbaroi group we encountered as we settled and claimed Elysium. With many tribes already part of our empire and with the addition of Greenland, pushes have been made to fully assimilate them into the elysian identity."
+ ely_national_value.5.f:0 ""
+ ely_national_value.5.a:0 "One people under the phoenix."
+ 
+  
+ ely_reform_event.1.t:0 "Bureaucratic Reforms"
+ ely_reform_event.1.d:0 "The term 'Byzantine administration' was apt to describe the systems we had established for centuries. As time passed the problems became apparent and could have spiraled out of control if not taken care of. Thankfully under the guide of our empress we are now a step further to unite Elysium."
+ ely_reform_event.1.f:0 ""
+ ely_reform_event.1.a:0 "Now where did I put my ID ?"
+
+ ely_reform_event.2.t:0 "Economic Reforms"
+ ely_reform_event.2.d:0 "Our people are rich and our land bountiful but we always stood out of global trade except for our close allies. Maybe time has come to change and join the global trade and increase our industrial efforts."
+ ely_reform_event.2.f:0 ""
+ ely_reform_event.2.a:0 "Our goods will take the world by storm"
+  
+ ely_reform_event.3.t:0 "Bureaucratic Reforms"
+ ely_reform_event.3.d:0 "The term 'Byzantine administration' was apt to describe the systems we had established for centuries. As time passed the problems became apparent and could have spiraled out of control if not taken care of. Thankfully under the guide of our empress we are now a step further to unite elysium."
+ ely_reform_event.3.f:0 ""
+ ely_reform_event.3.a:0 "Another day, another form."
+
+ ely_reform_event.4.t:0 "Economic Reforms"
+ ely_reform_event.4.d:0 "Our people are rich and our land bountiful but we always stood out of global trade except for our close allies. Maybe time has come to change and join the global trade and increase our industrial efforts."
+ ely_reform_event.4.f:0 ""
+ ely_reform_event.4.a:0 "A new era."
+ 
+ liberty_event.1.t:0 "Reopening of the Sea Gates"
+ liberty_event.1.d:0 "Many Barbaroi lived in Elysium before our forefathers arrived, many were assimilated to become the Elysians of today. However except for a few rare occasions, our policies made it so non descendants of indigenous or elysians settlers could live in Elysia. But with European imperial power carving the world to their liking maybe we could rethink this policies and offer refuge to our pagan brethren."
+ liberty_event.1.f:0 ""
+ liberty_event.1.a:0 "All pagans are our brothers and we should accept them all."
+ liberty_event.1.b:0 "Let's be cautious first, we should start with our South Arkadian brothers and work from there."
+ liberty_event.1.c:0 "Let's throw caution to the wind. (this will create instability in Elysia)"
+ 
+ #liberty_event.2.t:0 "Elysian Nationalism"
+ #liberty_event.2.d:0 "'Liars! Thieves! Parasites!' Those are the words used to describe non elysian as politicians have forgotten the very people they should serve. Insurrection is brewing down in the streets as angry elysian mobs forms against their perceived enemies."
+ #liberty_event.2.f:0 ""
+ #liberty_event.2.a:0 "It doesn't sound good."
+ 
+ # Journal
+ 
+ je_eirene:0 "Elysian succession"
+ je_eirene_reason:0 "Konstantinos rule was long and prosperous but not without tragedies, his sons died leaving only his daughter Eleni as the heir apparent."
+ konstantinos_died:0 "Emperor Konstantinos Palaiologos has died."
+ 
+ DEBUG_NO_CHARACTER_IN_ELY_IS_EIRENE:0 "No character in ELY is Eleni"
+ 
+ je_trans_elysian_railway:0 "The First Trans-Continental Railways"
+ je_trans_elysian_railway_reason:0 "The railway shall connect us all, from sea to shining sea!"
+ 
+ je_borealia_eireneic_railway:0 "The Borealian-Eireneic Railway"
+ je_borealia_eireneic_railway_reason:0 "A railway spanning from the Atlantic to the Eireneic coast would open up new opportunities for settlement in Western Borealia."
+
+ je_fire_corps:0 "Modernize the Fire Corps"
+ je_fire_corps_reason:0 "Other countries have begun researching fire based weapons, we must modernize our existing corps with up to date methods."
+ 
+ je_drain_marshes_ely:0 "Draining the Oigos Marshes"
+ je_drain_marshes_ely_reason:0 "The Oigos Marshes have always been a natural obstacle in the Anthiros state, form dangerous fauna, diseases and even a haven for banditry and seditious elements of the empire. Despite this the region has always been the heart of silk trade for Elysia."
+ 
+ je_apaleisian_pathway:0 "Modernise The Apaleisian Pathways"
+ je_apaleisian_pathway_reason:0 "The Apaleisian pathway was constructed by the exiled centuries ago to link the Elysian East Coast to Elysium great plains. However as time passe the slow flow of trade has turned into an unstoppable tide and the old pathways can't keep up."
+ 
+ je_lakonias_pathway:0 "Lakonias Pathway"
+ je_lakonias_pathway_reason:0 "Lakonia has always been the second heart of our empire, but the great mountains always made it difficult to move from north to south. Time to realize the dreams of the 10.000 expedition and link Lakonia to Elysia."
+ 
+ je_arkadias_pathway:0 "Arkadias Pathway"
+ je_arkadias_pathway_reason:0 "Arkadia strategic value increased as Elysia and its southern neighbors formalized treaties and pacts to resist European colonialism. However the lands have been isolated from the rest of Elysia."
+ 
+ je_hesperidias_pathway:0 "Hesperidias Pathways"
+ je_hesperidias_pathway_reason:0 "The mountains of Atlas have separated our people for too long."
+ 
+ je_thoulean_pathway:0 "Thoulean Pathways"
+ je_thoulean_pathway_reason:0 ""
+ 
+ je_wife_trade:0 "Elysian Human Traffick"
+ je_wife_trade_reason:0 "Slavery, Coercion and Abduction are used to provide 'Barbarian wives' to Elysian men, those women who under Elysian blood laws have no rights at all and are seen as nothing more than merchandise."
+  
+ je_elysian_schooling:0 "Public School in Elysia"
+ je_elysian_schooling_reason:0 "Free public education has always been one of the pillars of our society, however with more and more Barbaroi joining our society we must ensure every children is properly educated the Elysian way."
+
+ je_reform_blood_laws:0 "Reform Social Laws"
+ je_reform_blood_laws_reason:0 "While we only allow Elysians citizens to benefit from our social laws, like healthcare, education etc. multiple 'Barbaroi' have come to us for a better life. We could outline some basic changes to ensure they stay and help bring more people to us."
+ 
+ je_reform_bureaucracy_ely:0 "Reform the Bureaucracy"
+ je_reform_bureaucracy_ely_reason:0 "Vast expanse of territory and no way no fully track our citizen has lead to a bureaucratic mess that is in dire need of reforms."
+ 
+ je_reform_economy_ely:0 "Reform the Economy"
+ je_reform_economy_ely_reason:0 "Our country is rich in land, resources and pretty much everything, but our people only produce and consume locally. Time to become an economic juggernaut."
+ 
+ je_statue_liberty:0 "Bastion Against Abrahamism"
+ je_statue_liberty_reason:0 "The world shrinks as abrahamist powers vow for dominance once more and carve huge swathes of land for themselves to exploit while oppressing indigenous people and stomping on their ancient traditions and beliefs. Like our ancestors suffered before them those people are abused and cast into the fire of 'modernization' but unlike our forefathers, they have someone to turn to. Elysia will stand as the bastion of liberty against abrahamist lies."
+ 
+ je_elysian_highway_old:0 "The Elysian Highway"
+ je_elysian_highway_old_reason:0 "Towns, ports and trading posts are linked by an extensive network of roads facilitating travel, but the constrain of long distances makes it difficult to manage."
+ 
+ je_elysian_highway_new:0 "Modernisation of the Elysian Highway"
+ je_elysian_highway_new_reason:0 "Improvement in transportation allow for an even faster transportation across our nation, perhaps we can use it?"
+ 
+ je_greenland_infrastructure:0 "Greenland Exploitation"
+ je_greenland_infrastructure_reason:0 "Greenland is a frozen wasteland ripe with mineral resources, it would take titanic efforts to even start exploiting it, yet the rewards could be worth it."
+ 
+ je_populate_interior:0 "Populate the Interior"
+ je_populate_interior_reason:0 "Our land are vast but near empty, once order as been re-established we should sponsors state supported settlement and development."
+ 
+ je_assimilate_inuit:0 "Assimilate the Inuits"
+ je_assimilate_inuit_reason:0 "The Inuits are the last barbaroi tribe we have encountered and while work as been done to assimilate them, if we were to control Kalaallit Nunaat, or Greenland as the norse call it, we could increase our chance to tie them to us."
+ 
+ je_modern_dockyard:0 "Modernize the Elysian Great Cothons"
+ je_modern_dockyard_reason:0 "As we expanded and claimed control of more land and islands, many new port cities were build, with great cothons inspired by the work of the Carthaginians of old. However, even those mighty ports obsoletes are in need of a modernization."
+ 
+ je_reform_navy:0 "Reform the Navy"
+ je_reform_navy_reason:0 "Since we won the war of the Atlantic, the navy has kept some power but grew complacent. We have to reform if we are to stay in the naval game."
+ 
+ # Decision
+ 
+ formalis_elysian_games_decision:0 "Formalize Pan-Elysian Games"
+ formalis_elysian_games_decision_desc:0 "Like the Olympic games of old, but with an Elysian twist."
+ 
+ # Production
+ 
+ pm_default_building_chichen_itza_temple_city:0 "Temple Cities of Mayab"
+ pm_default_building_tikal_temple_city:0 "Temple Cities of Cuauhtemallan"
+ pm_default_building_mexico_temple_city:0 "Temple Cities of Mexihco"
+ pm_default_building_whalebone_palace:0 "Whalebone Palace"
+ pm_default_building_imperial_palace:0 "Imperial Palace"
+ pm_default_building_marble_temple:0 "Temple of the Marble Emperor"
+ pm_default_building_alexandrian_library:0 "Nea-Alexandria Library"
+ pm_default_building_elysian_arsenal:0 "Elysian Arsenal"
+ pm_default_building_silk_halls:0 "Silk Halls"
+ pm_default_building_sea_gates:0 "Ivos Sea Gates"
+ pm_default_building_cahokia_halls:0 "Cahokia Halls"
+ pm_default_building_lost_monument:0 "Temple to the lost"
+ pm_default_building_nican_nahua_naval_base:0 "Nican-Nahua Canal"

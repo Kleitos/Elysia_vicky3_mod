@@ -1,0 +1,102 @@
+﻿l_english:
+ 
+  ##Cultures##
+  
+ byzantine_legacy:0 "Byzantine Legacy"
+  
+ ### Events ###
+
+ byzantine_resurgence.1.t:0 "Rhomaion's Resurgence"
+ byzantine_resurgence.1.d:0 "After the infamous sack of Vienna of 1683, a new era of crusading spirit pushed the christian powers to push the turkish threat as far away as possible. Our forefather took the oportunity to rebel, and by striking a deal with the austrian, were able to secure old roman land. With the turkic threat once again at our door, and the muslim still holding Constantinople, we should keep going, until the eagle flies once more over Anatolia."
+ byzantine_resurgence.1.f:0 ""
+ byzantine_resurgence.1.a:0 "Strike now while they are distracted."
+ byzantine_resurgence.1.b:0 "This is not the time"
+
+ byzantine_resurgence.2.t:0 "Rhomaion's Dominance"
+ byzantine_resurgence.2.d:0 "After centuries of absence, the Roman Eagle Fly high over Anatolia. We managed to push the turks back in the hinterland and secured a border with our friends in Russia but the job is not finished. We must keep the pressure and push back the turkish threat."
+ byzantine_resurgence.2.f:0 ""
+ byzantine_resurgence.2.a:0 "We will crush them."
+ byzantine_resurgence.2.b:0 "This is not the time"
+
+ byzantine_resurgence.3.t:0 "Rhomaion's Revenge"
+ byzantine_resurgence.3.d:0 "After centuries of absence, the Roman Eagle Fly high over Anatolia. We managed to push the turks back in the hinterland and secured a border with our friends in Russia but the job is not finished. We must keep the pressure and push back the turkish threat."
+ byzantine_resurgence.3.f:0 ""
+ byzantine_resurgence.3.a:0 "We will crush them."
+ byzantine_resurgence.3.b:0 "This is not the time"
+
+ byzantine_colonial.1.t:0 "Return to Egypt"
+ byzantine_colonial.1.d:0 "Egypt was once the breabbasket of the entire meditteranean and the roman empire of old. Lost to the arabs in the 6th century we are now in a position to avenge our ancestor and go back to Egypt."
+ byzantine_colonial.1.f:0 ""
+ byzantine_colonial.1.a:0 "The roman eagle will fly over the Nile."
+ byzantine_colonial.1.b:0 "This is not the time"
+
+ byzantine_colonial.2.t:0 "Reconquest of Antioch"
+ byzantine_colonial.2.d:0 ""
+ byzantine_colonial.2.f:0 ""
+ byzantine_colonial.2.a:0 "Forward Soldiers of the Cross."
+ byzantine_colonial.2.b:0 "This is not the time"
+
+ byzantine_glory.1.t:0 "Rhomaion's Triumph"
+ byzantine_glory.1.d:0 "We have done what was thought impossible, we have avanged Manzikert and centuries of Turkic rule over Rhomaion's people. The imperial eagle flies high over what was once the core of our empire, now it is time to work hard and suppress dissent to make it stay once and for all."
+ byzantine_glory.1.f:0 ""
+ byzantine_glory.1.a:0 "A triumphant returns for our soldiers and Heroes!"
+    
+ byzantine_culture.2.t:0 "Uniting with the Bulgars"
+ byzantine_culture.2.d:0 ""
+ byzantine_culture.2.f:0 "We are the True Heirs of Rome"
+  
+ byzantine_culture.3.t:0 "Uniting with the Albanians"
+ byzantine_culture.3.d:0 ""
+ byzantine_culture.3.f:0 "We are the True Heirs of Rome"
+  
+ byzantine_culture.4.t:0 "Uniting with the Serbs"
+ byzantine_culture.4.d:0 ""
+ byzantine_culture.4.f:0 "We are the True Heirs of Rome"
+    
+ byzantine_culture.6.t:0 "Uniting with the Georgians"
+ byzantine_culture.6.d:0 ""
+ byzantine_culture.6.f:0 "We are the True Heirs of Rome"
+  
+ byzantine_culture.7.t:0 "Uniting with the Armenians"
+ byzantine_culture.7.d:0 ""
+ byzantine_culture.7.f:0 "We are the True Heirs of Rome"
+ 
+ byzantine_culture.1.a:0 "We are all Rhomaioi"
+ 
+  ### Journals Entries ###
+ 
+ je_byzantine_resurgence:0 "Rhomaion's Resurgence"
+ je_byzantine_resurgence_reason:0 "The turks still hold Constantinople. While we have managed tu push them out in the past we must prepare ourselves for another war with them."
+ 
+ je_byzantine_reconquest:0 "Rhomaion's Reconquest"
+ je_byzantine_reconquest_reason:0 "We now have a foothold in Anatolia, lets use it to keep pushing the turks back."
+ 
+ je_byzantine_revenge:0 "Rhomaion's Revenge"
+ je_byzantine_revenge_reason:0 "The turks are hanging into Anatolia by a thread, time to avenge the disaster at Manzikert and make them disappear."
+ 
+ je_byzantine_glory:0 "Rhomaion's Triumph"
+ je_byzantine_glory_reason:0 "By eliminating the turks and reclaiming all of Anatolia, we can truly proclaim Rhomaion's return to proeminence."
+ 
+ je_byzantine_dominance:0 "Return to Egypt"
+ je_byzantine_dominance_reason:0 "The Granary of the meditteranean should be a part of our empire."
+ 
+ je_cultural_shift_byz_greek:0 "Rhomaic Culture"
+ je_cultural_shift_byz_greek_reason:0 "With the Elysians claiming the mantle of the Hellenic Legacy, we must ensure our disctinction from our wayward cousins."
+ 
+ je_cultural_shift_byz_bulgarian:0 "Assimilate the Bulgarians"
+ je_cultural_shift_byz_bulgarian_reason:0 "The Bulgarians have both been foe and friends to our roman ancestor, now they share the same hatred towards the turks. Let us unite towards a common goal."
+ 
+ je_cultural_shift_byz_albanian:0 "Assimilate the Albanians"
+ je_cultural_shift_byz_albanian_reason:0 "The Albanians have been conquered and forcefully converted by the turkic horde. Let us remind them of their legacy."
+ 
+ je_cultural_shift_byz_serbian:0 "Assimilate the Serbs"
+ je_cultural_shift_byz_serbian_reason:0 "Like the bulgars, the Serbian people have both been friend and foe. Only by uniting will we reclaim our shared legacy."
+ 
+ je_cultural_shift_byz_georgian:0 "Assimilate the Georgians"
+ je_cultural_shift_byz_georgian_reason:0 "The Georgians have been separated by from Rhomaion by our islamic foes, now that we are under a same banner once more let us work toward a common future."
+ 
+ je_cultural_shift_byz_armenian:0 "Assimilate the Armenians"
+ je_cultural_shift_byz_armenian_reason:0 "The Armenians have always been present in the mountains of Anatolia. Sometimes friends, often foes, let us work on recounciling our differences."
+ 
+ je_byzantine_antioch:0 "Reconquest of Antioch"
+ je_byzantine_antioch_reason:0 "Now that the Patriarch of Constantinople is once more under our wing, let us make good use of the situation and take back Antioch."

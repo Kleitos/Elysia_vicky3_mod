@@ -1,0 +1,174 @@
+﻿l_english:
+
+# Country Changes
+ TCA: "Transcaucasia"
+ TCA_ADJ: "Transcaucasian"
+ DRA: "Dravida Nadu"
+ DRA_ADJ: "Dravidian"
+ BGD: "Bangladesh"
+ BGD_ADJ: "	Bangladeshi"
+ RAJ: "Rajputana"
+ RAJ_ADJ: "	rajput"
+ MAR: "Marathas Confederacy"
+ MAR_ADJ: "	Marathi"
+ 
+#Other Things
+
+  ##Buildings##
+ building_kiel_canal:0 "Kiel Canal"
+ building_kra_canal:0 "Kra Canal"
+ building_west_white_canal:0 "Western White Canal"
+ building_east_white_canal:0 "Eastern White Canal"
+ building_don_canal:0 "Don-Volga Canal"
+
+  ##Cultural Traits##
+ nordic_group:0 "Nordic"
+  
+  ##Cultures##
+ german:0 "German"
+ italian:0 "Italian"
+ iberian:0 "Iberian"
+ iranian_culture:0 "Iranian"
+ turanian_culture:0 "Turanian"
+ ethiopian_culture:0 "Ethiopian"
+ malian_culture:0 "Malian"
+ anglo_colombian:0 "Columbian"
+ scandinavian:0 "Nordic"
+ baltic_culture:0 "Baltic"
+ guinean_culture:0 "Guinean"
+ western_slavs:0 "Zapadnislav"
+ yugoslavs:0 "Jugoslav"
+ tasmanian:0 "Tasmanian"
+ 
+  ##Modifiers##
+ isolation_violated:0 "Foreigner Trouble"
+ modifier_outdated_production:0 "Outdated Economic System"
+ religious_fundamentalism:0 "Religious Fundamentalism"
+ western_aligned:0 "Western European Influence"
+ austria_multicultural:0 "Secessionist Movements"
+ crusading_spirit:0 "Anti-Ottoman Alliance"
+ iran_arab_resistance:0 "Resistance to Arabisation"
+ 
+ 
+  ##Journals## 
+ je_reform_bureaucracy:0 "Bureaucratic Reforms"
+ je_reform_bureaucracy_reason:0 "Our outdated bureaucracy is in dire need of reforms"
+ 
+ je_reform_economy:0 "Economic Reforms"
+ je_reform_economy_reason:0 "Our economy must be reformed if we want to compete on the world stage"
+ 
+ je_reform_society:0 "Societal Reforms"
+ je_reform_society_reason:0 "Centuries of religious extremism rule in have left the common people destitute and hungry, while those in power keep profiteering. We need to reform or risk revolution."
+ 
+ je_end_influence:0 "End Foreign Influence"
+ je_end_influence_reason:0 "Historic ties to the rest of the world has given our population a glimpse of how different things could be and has started influencing the way they think."
+ 
+ je_andean_pathway:0 "Andean Pathway"
+ je_andean_pathway_reason:0 "The Elysians have achieved diverse marvelous feats of engineering, but the carving of entire mountains to let place for railroads is one we are more interested than any. Seeing as both our nation are on amicable terms we should ask for their expertise."
+ 
+ je_fred:0 "The Succession of Schleswig-Holstein"
+ je_fred_reason:0 "The Treaty of Ribe, agreed to by the Danish King in order to gain control of both states, seemed to indicate that Schleswig and Holstein were to remain united, though that interpretation is being challenged."
+ 
+ je_anglo_iberian_war:0 "Anglo-Iberian war for India"
+ je_anglo_iberian_war_reason:0 "While a tenuous peace was signed between our nations for the dismantling of previous Indian realms, push from colonial administrator and economic magnates to fully control the subcontinent at the expense of peace are more and more numerous. Border clashes become more numerous and war seems inevitable."
+ 
+ je_cultural_shift_fra:0 "The Greater French identity"
+ je_cultural_shift_fra_reason:0 "In order to unite our people, we should take steps into creating a true national identity."
+ 
+ je_cultural_shift_ger:0 "The Greater German identity"
+ je_cultural_shift_ger_reason:0 "In order to unite our people, we should take steps into creating a true national identity."
+ 
+ je_cultural_shift_ita:0 "The Greater Italian identity"
+ je_cultural_shift_ita_reason:0 "In order to unite our people, we should take steps into creating a true national identity."
+ 
+ je_cultural_shift_ibe:0 "The Greater Iberian identity"
+ je_cultural_shift_ibe_reason:0 "In order to unite our people, we should take steps into creating a true national identity."
+ 
+ je_cultural_shift_per:0 "The Greater Iranian identity"
+ je_cultural_shift_per_reason:0 "In order to unite our people, we should take steps into creating a true national identity."
+ 
+ je_cultural_shift_trh:0 "The Greater Turkic identity"
+ je_cultural_shift_trh_reason:0 "In order to unite our people, we should take steps into creating a true national identity."
+ 
+ je_cultural_shift_eth:0 "The Greater Ethiopian identity"
+ je_cultural_shift_eth_reason:0 "In order to unite our people, we should take steps into creating a true national identity."
+ 
+ je_cultural_shift_mal:0 "The Greater Malian identity"
+ je_cultural_shift_mal_reason:0 "In order to unite our people, we should take steps into creating a true national identity."
+ 
+ je_cultural_shift_sca:0 "The Greater Nordic identity"
+ je_cultural_shift_sca_reason:0 "In order to unite our people, we should take steps into creating a true national identity."
+ 
+ je_cultural_shift_ubd:0 "The Greater Baltic identity"
+ je_cultural_shift_ubd_reason:0 "In order to unite our people, we should take steps into creating a true national identity."
+ 
+ je_cultural_shift_ngr:0 "The Greater Guinean identity"
+ je_cultural_shift_ngr_reason:0 "In order to unite our people, we should take steps into creating a true national identity."
+  
+ je_cultural_shift_zap:0 "The Greater Western-Slavic identity"
+ je_cultural_shift_zap_reason:0 "In order to unite our people, we should take steps into creating a true national identity."
+ 
+ je_cultural_shift_yug:0 "The Greater Yugoslav identity"
+ je_cultural_shift_yug_reason:0 "In order to unite our people, we should take steps into creating a true national identity."
+ 
+ 
+  ##Events##
+ 
+	
+ cultural_shift.1.t:0 "New National Identity"
+ cultural_shift.1.d:0 "Efforts have been taken to unify our people."
+ cultural_shift.1.f:0 ""
+ cultural_shift.1.a:0 "We are united"
+ 
+  ##African Groups##
+ cushitic:0 "Cushitic Language"
+ berber_group:0 "Berber Language"
+ semite:0 "Arabo-Semitic Language"
+ guinean:0 "Guinean Language"
+ hausa_group:0 "Hausan Language"
+ western_bantoid:0 "Western Bantoid Language"
+ nilotic_group:0 "Nilotic Language"
+ central_bantoid:0 "Central Bantoid Language"
+ mandinka:0 "Mande Language"
+ sudanese_group:0 "Sudanese Language"
+ eastern_bantoid:0 "Eastern Bantoid Language"
+ kanuri_group:0 "Kanuri Language"
+ songhai_group:0 "Songhai Language"
+ khoisan_group:0 "Khoisan Language"
+ 
+ ##Interest Group##
+ ideology_europe_common:0 "People's Parliament"
+ ideology_europe_common_desc:0 ""
+ 
+ ideology_old_wealth:0 "Old Wealth"
+ ideology_old_wealth_desc:0 ""
+ 
+ ideology_europe_nobles:0 "Noble Parliament"
+ ideology_europe_nobles_desc:0 ""
+ 
+ 
+ ##Interest Group Flavoured##
+    ###FRANCE###
+ ideology_fra_nobles:0 "Etats Généraux, Noblesse"
+ ideology_fra_nobles_desc:0 ""
+ 
+ ideology_fra_common:0 "Etats Généraux, Tiers-Etat"
+ ideology_fra_common_desc:0 ""
+ 
+ ideology_fra_clergy:0 "Etats Généraux, Clergé"
+ ideology_fra_clergy_desc:0 ""
+ 
+ ideology_fra_enlightenement:0 "Les Lumières"
+ ideology_fra_enlightenement_desc:0 "Members of the movement saw themselves as a progressive élite, and battled against religious and political persecution, fighting against what they saw as the irrationality, arbitrariness, obscurantism and superstition."
+ 
+ 
+ ##Westernization##
+ 
+ westernization.2.t:0 "A Renewed Nation"
+ westernization.2.f:0 ""
+ 
+ westernization.11.a:0 "Fight back! Our traditions must be protected."
+ 
+ western_military_reward:0 "Military Reform"
+ western_diplomatic_reward:0 "Ambassadors"
+ western_production_reward:0 "Modern Railway"

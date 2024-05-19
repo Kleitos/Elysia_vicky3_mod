@@ -1,0 +1,112 @@
+﻿l_english:
+
+ ### Formation ###
+
+ FOA:0 "Arkadian Federation"
+ FOA_ADJ:0 "Arkadian"
+ Formation_of_South_America_diplomatic_play_Unify_South_America:0 "Unify Arkadia"
+ Formation_of_South_America_diplomatic_play_Unify_South_America_tooltip:0 "#header Start a $Formation_of_South_America_diplomatic_play_Unify_South_America$ [concept_diplomatic_play]#!\n$TOOLTIP_DELIMITER$\n$Formation_of_South_America_diplomatic_play_Unify_South_America_desc$"
+ Formation_of_South_America_diplomatic_play_Unify_South_America_desc:0 "Sets the initiating [concept_war_goal] to annex all lesser Arkadian countries."
+ Formation_of_South_America_diplomatic_play_Leadership_South_America:0 "Arkadian Leadership"
+ Formation_of_South_America_diplomatic_play_Leadership_South_America_tooltip:0 "Start a $Formation_of_South_America_diplomatic_play_Leadership_South_America$ [concept_diplomatic_play]\n$TOOLTIP_DELIMITER$\n$Formation_of_South_America_diplomatic_play_Leadership_South_America_desc$"
+ Formation_of_South_America_diplomatic_play_Leadership_South_America_desc:0 "Sets the initiating [concept_war_goal] to kick out the trageted [concept_country] as a [concept_unification_candidate] of the South American [Concept('concept_unification', '$concept_major_unification$')]."
+ 
+ ### Countries ###
+ 
+ SRK:0 "North Arkadia"
+ SRK_ADJ:0 "Arkadian"
+  
+ ARK:0 "South Arkadia"
+ ARK_ADJ:0 "Arkadian"
+ 
+ ### Culture ###
+ 
+ incan_culture:0 "Runakuna"
+ 
+ ### Journals Entries ###
+ 
+ je_north_amazon_unification:0 "The Unification of Northern Arkadia"
+ je_north_amazon_unification_reason:0 ""
+ 
+ je_patagonian_unification:0 "The Unification of Southern Arkadia"
+ je_patagonian_unification_reason:0 ""
+ 
+ je_muiscan_transfer:0 "The Transfer of Muiscan Lordship"
+ je_muiscan_transfer_reason:0 "The Elysian have been the garantor of Muiscan independance for centuries. By improving our army we could convince them to transfer the lordship over them."
+ 
+ je_muiscan_unification:0 "The Annexation of Muiscas"
+ je_muiscan_unification_reason:0 "By improving relations with our new subject, we could convince them to join our empire."
+ 
+ je_wayuu_transfer:0 "The Transfer of Wayuu Lordship"
+ je_wayuu_transfer_reason:0 "The Elysian have been the garantor of Wayuu independance for centuries. By improving our army we could convince them to transfer the lordship over them."
+ 
+ je_wayuu_unification:0 "The Annexation of Wayuu"
+ je_wayuu_unification_reason:0 "By improving relations with our new subject, we could convince them to join our empire."
+ 
+ je_cultural_shift_incan:0 "Greater Inca Identity"
+ je_cultural_shift_incan_reason:0 ""
+ 
+ je_cultural_shift_muiscan:0 "Assimilation of the muisca people"
+ je_cultural_shift_muiscan_reason:0 "The muisca people could be considered distant relatives an be assimilated into our identity."
+ 
+ je_guarani_expansion:0 "Control over the Guarani"
+ je_guarani_expansion_reason:0 ""
+ 
+ je_patagonian_expansion:0 "The Southern Push"
+ je_patagonian_expansion_reason:0 ""
+ 
+ je_andean_pathway:0 "The Anti Pathway"
+ je_andean_pathway_reason:0 "We have observed as the Elysians comquered their mountains for massive infrastructure projects. Maybe we could ask for their assistance for the mountains we call home."
+ 
+ ### Events ###
+ 
+ ely_south_america_diplo.1.t:0 "The 1st Arkadian Treaty"
+ ely_south_america_diplo.1.d:0 "When we first met the Elysians, it was in a fight against a mutual ennemy, the Iberians, since then Elysia has always been a garantor of Arkadia's independance. Recents change in our nation have shown them that we don't need their protection and we can take the mantle of protectors of Arkadia. A change Elysia is actually happy about."
+ ely_south_america_diplo.1.f:0 ""
+ ely_south_america_diplo.1.a:0 "A Toast for continued good relation!"
+ 
+ ely_south_america_diplo.2.t:0 "The Muisca Annexation"
+ ely_south_america_diplo.2.d:0 "While the muisca people have been more tied to Elysia than us, they still share a close history of resisting the Iberians in the safety of the Anti mountains, with a little coercion we could convince them to join us directly."
+ ely_south_america_diplo.2.f:0 ""
+ ely_south_america_diplo.2.a:0 "One step further for the Arkadian Unification."
+ 
+ ely_south_america_diplo.3.t:0 "The 2nd Arkadian Treaty"
+ ely_south_america_diplo.3.d:0 "Once again we have managed to convince the Elysians to acknowledge our rising power and transfer their lordship over the Wayuu to us."
+ ely_south_america_diplo.3.f:0 ""
+ ely_south_america_diplo.3.a:0 "The pen truly is mightier than the sword."
+ 
+ ely_south_america_diplo.4.t:0 "The Wayuu Annexation"
+ ely_south_america_diplo.4.d:0 "By replacing officials and using the loyalty of muiscan and quechuan minorities in their nation, we have been able to discredit the Wayuu governement enough to force their annexation in our country."
+ ely_south_america_diplo.4.f:0 ""
+ ely_south_america_diplo.4.a:0 "Marvelous."
+ 
+ ely_south_america_diplo.6.t:0 "The Last Push South"
+ ely_south_america_diplo.6.d:0 ""
+ ely_south_america_diplo.6.f:0 ""
+ ely_south_america_diplo.6.a:0 "All of the Anti Mountains is ours"
+ 
+ ely_south_america_diplo.5.t:0 "The Guarani Expansion"
+ ely_south_america_diplo.5.d:0 ""
+ ely_south_america_diplo.5.f:0 ""
+ ely_south_america_diplo.5.a:0 "A great day."
+ 
+ ely_south_america_integration.1.t:0 "The Greater Inca Identity"
+ ely_south_america_integration.1.d:0 "In order to unite our people, we should take steps into creating a true national identity."
+ ely_south_america_integration.1.f:0 ""
+ ely_south_america_integration.1.a:0 "Towards a glorious future!"
+ 
+ ely_south_america_integration.2.t:0 "Unification of the Incas"
+ ely_south_america_integration.2.d:0 "In order to unite our people, we should take steps into creating a true national identity."
+ ely_south_america_integration.2.f:0 ""
+ ely_south_america_integration.2.a:0 "One people under the sun."
+ 
+ ely_south_america_integration.3.t:0 "Assimilation of the muiscas"
+ ely_south_america_integration.3.d:0 "With a little propaganda and rewritting of history, we could convince the muiscan people to join the greater Inca identity."
+ ely_south_america_integration.3.f:0 ""
+ ely_south_america_integration.3.a:0 "We welcome our brethren."
+ 
+ inca_infrastructure.1.t:0 "The Anti Pathway"
+ inca_infrastructure.1.d:0 ""
+ inca_infrastructure.1.f:0 ""
+ inca_infrastructure.1.a:0 "One connection from north to south."
+ 
