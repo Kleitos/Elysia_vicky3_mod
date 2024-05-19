@@ -1,0 +1,499 @@
+﻿DIPLOMATIC_PLAYS = {
+	c:NET = {
+		create_diplomatic_play = {
+		
+				target_state = s:STATE_ACEH.region_state:ACE
+			
+			war = yes
+			
+			type = dp_annex_war
+
+			add_war_goal = {
+				holder = c:ACE
+				type = conquer_state
+				target_state = s:STATE_ACEH.region_state:DEI
+			}
+		}			
+	}
+	c:NET = {
+		create_diplomatic_play = {
+		
+			target_state = s:STATE_NORTH_SUMATRA.region_state:SAK
+			
+			war = yes
+			
+			type = dp_annex_war
+			
+			add_war_goal = {
+				holder = c:SAK
+				type = conquer_state
+				target_state = s:STATE_NORTH_SUMATRA.region_state:DEI
+			}
+		}	
+	}
+	c:DEI = {
+		create_diplomatic_play = {
+		
+				target_state = s:STATE_ACEH.region_state:ACE
+			
+			war = yes
+			
+			type = dp_annex_war
+
+			add_war_goal = {
+				holder = c:ACE
+				type = conquer_state
+				target_state = s:STATE_ACEH.region_state:DEI
+			}
+		}			
+	}
+	c:DEI = {
+		create_diplomatic_play = {
+		
+			target_state = s:STATE_NORTH_SUMATRA.region_state:SAK
+			
+			war = yes
+			
+			type = dp_annex_war
+			
+			add_war_goal = {
+				holder = c:SAK
+				type = conquer_state
+				target_state = s:STATE_NORTH_SUMATRA.region_state:DEI
+			}
+		}	
+	}
+}
+
+DIPLOMATIC_PLAYS = {
+	c:TUR = {
+		create_diplomatic_play = {
+		
+				target_state = s:STATE_TRIPOLI.region_state:TRI
+			
+			war = yes
+			
+			type = dp_annex_war
+
+			add_war_goal = {
+				holder = c:TRI
+				type = humiliation
+				target_country = c:TUR
+			}
+			add_war_goal = {
+				holder = c:TRI
+				type = war_reparations
+				target_country = c:TUR
+			}
+		}			
+	}
+}
+
+DIPLOMATIC_PLAYS = {
+	c:SEI = {
+		create_diplomatic_play = {
+		
+				target_state = s:STATE_SINDH.region_state:SIN
+			
+			war = yes
+			
+			type = dp_annex_war
+
+			add_war_goal = {
+				holder = c:SIN
+				type = humiliation
+				target_country = c:SEI
+			}
+			add_war_goal = {
+				holder = c:SIN
+				type = war_reparations
+				target_country = c:SEI
+			}
+		}			
+	}
+}
+
+DIPLOMATIC_PLAYS = {
+	c:BIC = {
+		create_diplomatic_play = {
+		
+				target_state = s:STATE_KASHMIR.region_state:PAN
+			
+			war = yes
+			
+			type = dp_conquer_state
+			
+			add_war_goal = {
+				holder = c:PAN
+				type = conquer_state
+				target_state = s:STATE_PUNJAB.region_state:BIC
+			}
+			add_war_goal = {
+				holder = c:PAN
+				type = humiliation
+				target_country = c:BIC
+			}
+			add_war_goal = {
+				holder = c:PAN
+				type = war_reparations
+				target_country = c:BIC
+			}
+		}			
+	}
+}
+
+DIPLOMATIC_PLAYS = {
+	c:PHI = {
+		create_diplomatic_play = {
+		
+				target_state = s:STATE_MINDANAO.region_state:MGD
+			
+			war = yes
+			
+			type = dp_annex_war
+
+			
+			add_war_goal = {
+				holder = c:MGD
+				type = war_reparations
+				target_country = c:PHI
+			}
+			add_war_goal = {
+				holder = c:MGD
+				type = humiliation
+				target_country = c:PHI
+			}
+
+			add_war_goal = {
+				holder = c:MGD
+				type = annex_country
+				target_state = s:STATE_MINDANAO.region_state:PHI
+			}
+		}			
+	}
+}
+
+
+DIPLOMATIC_PLAYS = {
+	c:SUL = {
+		create_diplomatic_play = {
+		
+				target_state = s:STATE_NORTH_BORNEO.region_state:BRU
+			
+			war = yes
+			
+			type = dp_annex_war
+
+
+			add_war_goal = {
+				holder = c:BRU
+				type = annex_country
+				target_state = s:STATE_NORTH_BORNEO.region_state:SUL
+			}
+		}			
+	}
+}
+
+
+DIPLOMATIC_PLAYS = {
+	c:HYD = {
+		create_diplomatic_play = {	
+		
+				target_state = s:STATE_MYSORE.region_state:MYS
+			
+			war = yes
+			
+			type = dp_annex_war
+
+
+			add_war_goal = {
+				holder = c:MYS
+				type = annex_country
+				target_state = s:STATE_MADRAS.region_state:HYD
+			}
+		}			
+	}
+}
+
+DIPLOMATIC_PLAYS = {
+	c:SHW = {
+		create_diplomatic_play = {
+		
+				target_state = s:STATE_GONDER.region_state:WLO
+			
+			war = yes
+			
+			type = dp_annex_war
+
+			
+			add_war_goal = {
+				holder = c:WLO
+				type = annex_country
+				target_state = s:STATE_GONDER.region_state:SHW
+			}
+		}			
+	}
+}
+
+DIPLOMATIC_PLAYS = {
+	c:SHW = {
+		create_diplomatic_play = {
+		
+				target_state = s:STATE_GONDER.region_state:GJM
+			
+			war = yes
+			
+			type = dp_annex_war
+
+			
+			add_war_goal = {
+				holder = c:GJM
+				type = annex_country
+				target_state = s:STATE_GONDER.region_state:SHW
+			}
+		}			
+	}
+}
+
+DIPLOMATIC_PLAYS = {
+	c:SHW = {
+		create_diplomatic_play = {
+		
+				target_state = s:STATE_GONDER.region_state:BGM
+			
+			war = yes
+			
+			type = dp_annex_war
+
+			
+			add_war_goal = {
+				holder = c:BGM
+				type = annex_country
+				target_state = s:STATE_GONDER.region_state:SHW
+			}
+		}			
+	}
+}
+
+DIPLOMATIC_PLAYS = {
+	c:SHW = {
+		create_diplomatic_play = {
+		
+				target_state = s:STATE_GONDER.region_state:TGR
+			
+			war = yes
+			
+			type = dp_annex_war
+
+			
+			add_war_goal = {
+				holder = c:TGR
+				type = annex_country
+				target_state = s:STATE_GONDER.region_state:SHW
+			}
+		}			
+	}
+}
+
+DIPLOMATIC_PLAYS = {
+	c:PER = {
+		create_diplomatic_play = {
+		
+				target_state = s:STATE_EASTERN_AFGHANISTAN.region_state:AFG
+			
+			war = yes
+			
+			type = dp_annex_war
+			
+			add_war_goal = {
+				holder = c:AFG
+				type = conquer_state
+				target_state = s:STATE_PASHTUNISTAN.region_state:PER
+			}
+			add_war_goal = {
+				holder = c:AFG
+				type = conquer_state
+				target_state = s:STATE_WESTERN_AFGHANISTAN.region_state:PER
+			}
+			add_war_goal = {
+				holder = c:AFG
+				type = humiliation
+				target_country = c:PER
+			}
+			add_war_goal = {
+				holder = c:AFG
+				type = war_reparations
+				target_country = c:PER
+			}
+		}			
+	}
+}
+
+DIPLOMATIC_PLAYS = {
+	c:PER = {
+		create_diplomatic_play = {
+		
+				target_state = s:STATE_BALUCHISTAN.region_state:MAK
+			
+			war = yes
+			
+			type = dp_annex_war
+			
+			add_war_goal = {
+				holder = c:MAK
+				type = conquer_state
+				target_state = s:STATE_BALUCHISTAN.region_state:PER
+			}
+			add_war_goal = {
+				holder = c:MAK
+				type = humiliation
+				target_country = c:PER
+			}
+			add_war_goal = {
+				holder = c:MAK
+				type = war_reparations
+				target_country = c:PER
+			}
+		}			
+	}
+}
+
+DIPLOMATIC_PLAYS = {
+	c:PER = {
+		create_diplomatic_play = {
+		
+				target_state = s:STATE_TAJIKISTAN.region_state:KOK
+			
+			war = yes
+			
+			type = dp_conquer_state
+			
+			add_war_goal = {
+				holder = c:KOK
+				type = humiliation
+				target_country = c:PER
+			}
+			add_war_goal = {
+				holder = c:KOK
+				type = war_reparations
+				target_country = c:PER
+			}
+		}			
+	}
+}
+
+DIPLOMATIC_PLAYS = {
+	c:SPA = {
+		create_diplomatic_play = {
+		
+				target_state = s:STATE_ABU_DHABI.region_state:ABU
+			
+			war = yes
+			
+			type = dp_conquer_state
+			
+			add_war_goal = {
+				holder = c:ABU
+				type = humiliation
+				target_country = c:SPA
+			}
+			add_war_goal = {
+				holder = c:ABU
+				type = war_reparations
+				target_country = c:SPA
+			}
+			add_war_goal = {
+				holder = c:ABU
+				type = conquer_state
+				target_state = s:STATE_ABU_DHABI.region_state:SPA
+			}
+		}			
+	}
+}
+
+DIPLOMATIC_PLAYS = {
+	c:MNC = {
+		create_diplomatic_play = {
+		
+				target_state = s:STATE_ZAMBEZI.region_state:MTB
+			
+			war = yes
+			
+			type = dp_annex_war
+			
+			add_war_goal = {
+				holder = c:MTB
+				type = humiliation
+				target_country = c:MNC
+			}
+			add_war_goal = {
+				holder = c:MTB
+				type = war_reparations
+				target_country = c:MNC
+			}
+			add_war_goal = {
+				holder = c:MTB
+				type = conquer_state
+				target_state = s:STATE_ZAMBEZI.region_state:MNC
+			}
+		}			
+	}
+}
+
+DIPLOMATIC_PLAYS = {
+	c:MNC = {
+		create_diplomatic_play = {
+		
+				target_state = s:STATE_ZAMBEZI.region_state:MSH
+			
+			war = yes
+			
+			type = dp_annex_war
+			
+			add_war_goal = {
+				holder = c:MSH
+				type = humiliation
+				target_country = c:MNC
+			}
+			add_war_goal = {
+				holder = c:MSH
+				type = war_reparations
+				target_country = c:MNC
+			}
+			add_war_goal = {
+				holder = c:MSH
+				type = conquer_state
+				target_state = s:STATE_ZAMBEZI.region_state:MNC
+			}
+		}			
+	}
+}
+
+DIPLOMATIC_PLAYS = {
+	c:MNC = {
+		create_diplomatic_play = {
+		
+				target_state = s:STATE_ZAMBEZIA.region_state:MSK
+			
+			war = yes
+			
+			type = dp_annex_war
+			
+			add_war_goal = {
+				holder = c:MSK
+				type = humiliation
+				target_country = c:MNC
+			}
+			add_war_goal = {
+				holder = c:MSK
+				type = war_reparations
+				target_country = c:MNC
+			}
+			add_war_goal = {
+				holder = c:MSK
+				type = conquer_state
+				target_state = s:STATE_ZAMBEZIA.region_state:MNC
+			}
+		}			
+	}
+}

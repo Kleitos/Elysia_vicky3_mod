@@ -1,0 +1,613 @@
+﻿DIPLOMACY = {
+	c:ELY = {	
+		set_relations = { country = c:CHE value = 100 }
+		set_relations = { country = c:SEQ value = 100 }
+		set_relations = { country = c:PUE value = 100 }
+		set_relations = { country = c:COM value = 100 }
+		set_relations = { country = c:APC value = 100 }
+		set_relations = { country = c:NVJ value = 100 }
+		set_relations = { country = c:UTE value = 100 }
+		set_relations = { country = c:ARP value = 100 }
+		set_relations = { country = c:PWN value = 100 }
+		set_relations = { country = c:LKT value = 100 }
+		set_relations = { country = c:ABS value = 100 }
+		set_relations = { country = c:NZP value = 100 }
+		set_relations = { country = c:BLF value = 100 }
+		set_relations = { country = c:IRC value = 100 }
+		set_relations = { country = c:TWT value = 100 }
+		set_relations = { country = c:JAP value = 100 }
+		set_relations = { country = c:HAW value = 100 }
+		set_relations = { country = c:PLY value = 100 }
+		set_relations = { country = c:MUI value = 100 }
+		set_relations = { country = c:WYU value = 100 }
+		set_relations = { country = c:ORN value = 100 }
+		set_relations = { country = c:MAD value = 100 }
+		set_relations = { country = c:GRI value = 75 }
+		set_relations = { country = c:AMZ value = 75 }
+		set_relations = { country = c:PAT value = 75 }
+		set_relations = { country = c:NTO value = 75 }
+		set_relations = { country = c:TNG value = 75 }
+		set_relations = { country = c:FJI value = 75 }
+		set_relations = { country = c:YAK value = 50 }
+		set_relations = { country = c:MAD value = 50 }
+		set_relations = { country = c:BAL value = 50 }
+		set_relations = { country = c:TID value = 50 }
+		set_relations = { country = c:CEY value = 50 }
+		set_relations = { country = c:KOR value = 30 }
+		set_relations = { country = c:DAI value = 30 }
+		set_relations = { country = c:BUR value = 30 }
+		set_relations = { country = c:SIA value = 30 }
+		set_relations = { country = c:CHI value = 25 }
+		set_relations = { country = c:FRA value = 0 }
+		set_relations = { country = c:BYZ value = 0 }
+		set_relations = { country = c:MOR value = -25 }
+		set_relations = { country = c:RUS value = -25 }
+		set_relations = { country = c:SPA value = -25 }
+		set_relations = { country = c:GBR value = -25 }	
+		create_diplomatic_pact = {
+			country = c:NTO
+			type = protectorate
+		}
+		create_diplomatic_pact = {
+			country = c:TNG
+			type = protectorate
+		}
+		create_diplomatic_pact = {
+			country = c:FJI
+			type = protectorate
+		}
+		create_diplomatic_pact = {
+			country = c:CEY
+			type = protectorate
+		}
+		create_diplomatic_pact = {
+			country = c:HAW
+			type = protectorate
+		}
+		create_diplomatic_pact = {
+			country = c:PLY
+			type = protectorate
+		}
+		create_diplomatic_pact = {
+			country = c:TID
+			type = protectorate
+		}
+		create_diplomatic_pact = {
+			country = c:TWT
+			type = defensive_pact
+		}
+		create_diplomatic_pact = {
+			country = c:TWT
+			type = customs_union
+		}
+		create_diplomatic_pact = {
+			country = c:JAP
+			type = trade_agreement
+		}	
+		create_diplomatic_pact = {
+			country = c:DAI
+			type = trade_agreement
+		}	
+		create_diplomatic_pact = {
+			country = c:SIA
+			type = trade_agreement
+		}	
+		create_diplomatic_pact = {
+			country = c:BUR
+			type = trade_agreement
+		}		
+		create_diplomatic_pact = {
+			country = c:CHI
+			type = trade_agreement
+		}	
+		create_diplomatic_pact = {
+			country = c:MYS
+			type = trade_agreement
+		}	
+		create_diplomatic_pact = {
+			country = c:TRA
+			type = trade_agreement
+		}	
+		create_diplomatic_pact = {
+			country = c:BAS
+			type = trade_agreement
+		}	
+		create_diplomatic_pact = {
+			country = c:MUI
+			type = puppet
+		}		
+		create_diplomatic_pact = {
+			country = c:WYU
+			type = puppet
+		}	
+		create_diplomatic_pact = {
+			country = c:GRI
+			type = protectorate
+		}	
+		create_diplomatic_pact = {
+			country = c:PAT
+			type = protectorate
+		}	
+		create_diplomatic_pact = {
+			country = c:AMZ
+			type = protectorate
+		}		
+		create_diplomatic_pact = {
+			country = c:ORN
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:BAL
+			type = protectorate
+		}
+		create_diplomatic_pact = {
+			country = c:MAD
+			type = protectorate
+		}
+	}
+	
+	c:RUS = {	
+		set_relations = { country = c:GBR value = -50 }
+		set_relations = { country = c:ELY value = -25 }
+		set_relations = { country = c:PRU value = -25 }
+		set_relations = { country = c:AUS value = -25 }
+		set_relations = { country = c:BOH value = -25 }
+		set_relations = { country = c:SWE value = -100 }
+		set_relations = { country = c:BYZ value = 50 }
+		set_relations = { country = c:TUR value = -100 }
+		create_diplomatic_pact = {
+			country = c:AZB
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:GEO
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:ARM
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:YAK
+			type = puppet
+		}
+	}
+	
+	c:SWE = {	
+		set_relations = { country = c:GBR value = -10 }
+		set_relations = { country = c:PRU value = 50 }
+		set_relations = { country = c:RUS value = -100 }
+		set_relations = { country = c:FRA value = 25 }
+		set_relations = { country = c:NET value = 25 }
+		set_relations = { country = c:DEN value = -25 }
+		# Colony of Western Australia
+		create_diplomatic_pact = {
+			country = c:WAS
+			type = puppet
+		}
+	}
+		
+	c:BOH = {
+		set_relations = { country = c:RUS value = -25 }
+		set_relations = { country = c:PRU value = -25 }
+		set_relations = { country = c:BAV value = -25 }
+		set_relations = { country = c:DEN value = 25 }
+		set_relations = { country = c:AUS value = -100 }
+		create_diplomatic_pact = {
+			country = c:KRA
+			type = puppet
+		}
+	}
+	c:DEN = {
+		create_diplomatic_pact = {
+			country = c:OLD
+			type = personal_union
+		}
+	}
+	
+	c:BYZ = {
+		set_relations = { country = c:AUS value = 50 }
+		set_relations = { country = c:RUS value = 50 }
+		set_relations = { country = c:TUR value = -100 }
+		set_relations = { country = c:EGY value = -25 }
+		set_owes_obligation_to = {
+			country = c:RUS
+			setting = yes
+		}
+		set_owes_obligation_to = {
+			country = c:AUS
+			setting = yes
+		}
+		create_truce = {
+			country = c:TUR
+			months = 48
+		}
+		create_diplomatic_pact = {
+			country = c:AUS
+			type = defensive_pact
+		}
+		create_diplomatic_pact = {
+			country = c:RUS
+			type = defensive_pact
+		}
+		create_diplomatic_pact = {
+			country = c:AUS
+			type = trade_agreement
+		}
+		create_diplomatic_pact = {
+			country = c:RUS
+			type = trade_agreement
+		}
+	}
+	
+	c:TUR = {
+		create_truce = {
+			country = c:RUS
+			months = 48
+		}
+		create_truce = {
+			country = c:AUS
+			months = 48
+		}
+		create_truce = {
+			country = c:PER
+			months = 48
+		}
+		create_truce = {
+			country = c:LUC
+			months = 48
+		}
+		create_truce = {
+			country = c:SPA
+			months = 48
+		}
+	}
+	
+	c:AUS = {	
+		set_relations = { country = c:PRU value = -25 }
+		set_relations = { country = c:BAV value = -100 }
+		set_relations = { country = c:BOH value = -100 }
+		set_relations = { country = c:RUS value = -25 }
+		set_relations = { country = c:BYZ value = 50 }
+		set_relations = { country = c:SPA value = 100 }
+		set_relations = { country = c:LUC value = 25 }
+		set_relations = { country = c:GBR value = 25 }
+		set_relations = { country = c:FRA value = -100 }
+	}	
+	
+	c:NET = {
+		set_relations = { country = c:GBR value = -25 }
+		set_relations = { country = c:SPA value = -100 }
+		set_relations = { country = c:SWE value = 25 }
+		set_relations = { country = c:FRA value = 100 }
+		set_relations = { country = c:BAV value = 100 }
+		set_relations = { country = c:PRU value = 25 }
+		create_diplomatic_pact = {
+			country = c:SAF
+			type = dominion
+		}	
+		create_diplomatic_pact = {
+			country = c:WIN
+			type = dominion
+		}
+		# Colony of Tasmania, historically called Van Dieman's Land until 1856
+		create_diplomatic_pact = {
+			country = c:TAS
+			type = dominion
+		}
+		create_diplomatic_pact = {
+			country = c:FRA
+			type = defensive_pact
+		}
+		create_diplomatic_pact = {
+			country = c:BAV
+			type = defensive_pact
+		}
+	}
+	
+	c:FRA = {
+		set_relations = { country = c:NET value = 100 }
+		set_relations = { country = c:BAV value = 100 }	
+		set_relations = { country = c:PRU value = -25 }	
+		set_relations = { country = c:AUS value = -100 }	
+		set_relations = { country = c:SPA value = -100 }	
+		set_relations = { country = c:GBR value = -100 }	
+		create_diplomatic_pact = {
+			country = c:BAV
+			type = alliance
+		}
+		create_diplomatic_pact = {
+			country = c:NET
+			type = defensive_pact
+		}
+		create_diplomatic_pact = {
+			country = c:NET
+			type = trade_agreement
+		}
+	}	
+	
+	c:SPA = {
+		create_truce = {
+			country = c:GBR
+			months = 180
+		}
+		create_truce = {
+			country = c:BIC
+			months = 180
+		}
+		set_relations = { country = c:PRU value = 25 }
+		set_relations = { country = c:BAV value = -100 }
+		set_relations = { country = c:BRZ value = -50 }
+		set_relations = { country = c:AUS value = 100 }
+		set_relations = { country = c:LUC value = 100 }
+		set_relations = { country = c:NET value = -100 }
+		set_relations = { country = c:FRA value = -100 }
+		set_relations = { country = c:GBR value = -100 }
+		set_relations = { country = c:SHW value = 50 }
+		set_relations = { country = c:KON value = 50 }
+		create_diplomatic_pact = {
+			country = c:LUC
+			type = defensive_pact
+		}
+		create_diplomatic_pact = {
+			country = c:SEI
+			type = dominion
+		}
+		create_diplomatic_pact = {
+			country = c:KON
+			type = protectorate
+		}
+		create_diplomatic_pact = {
+			country = c:SHW
+			type = defensive_pact
+		}
+		create_diplomatic_pact = {
+			country = c:SHW
+			type = trade_agreement
+		}
+		create_diplomatic_pact = {
+			country = c:SIL
+			type = dominion
+		}	
+	}
+	
+	c:SHW = {
+		create_truce = {
+			country = c:EGY
+			months = 120
+		}
+		set_relations = { country = c:SPA value = 50 }
+		set_relations = { country = c:ISQ value = -100 }
+		set_relations = { country = c:GLD value = -100 }
+		set_relations = { country = c:MJT value = -100 }
+		set_relations = { country = c:WSG value = -100 }
+	}
+	
+	c:PER = {
+		create_truce = {
+			country = c:SPA
+			months = 240
+		}
+		create_truce = {
+			country = c:RUS
+			months = 240
+		}
+		create_truce = {
+			country = c:GBR
+			months = 240
+		}
+		create_truce = {
+			country = c:SEI
+			months = 240
+		}
+		create_truce = {
+			country = c:BIC
+			months = 240
+		}
+		set_relations = { country = c:FRA value = 25 }
+		set_relations = { country = c:KHI value = -100 }
+		set_relations = { country = c:BUK value = -100 }
+		set_relations = { country = c:KOK value = -100 }
+	}
+	
+	c:SEI = {		
+		create_truce = {
+			country = c:GBR
+			months = 180
+		}
+		create_truce = {
+			country = c:BIC
+			months = 180
+		}
+		create_diplomatic_pact = {
+			country = c:NAG
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:GWA
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:IND
+			type = puppet
+		}		
+		create_diplomatic_pact = {
+			country = c:BER
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:KUT
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:JOD
+			type = puppet
+		}		
+		create_diplomatic_pact = {
+			country = c:JAI
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:BIK
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:JAS
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:MEW
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:BHO
+			type = puppet
+		}
+	}
+	
+	c:BAV = {
+		set_relations = { country = c:NET value = 100 }
+		set_relations = { country = c:FRA value = 100 }
+		set_relations = { country = c:AUS value = -100 }
+		set_relations = { country = c:PRU value = -100 }
+		set_relations = { country = c:SPA value = -25 }
+		set_relations = { country = c:LUC value = -25 }
+		set_relations = { country = c:DEN value = -25 }
+		set_relations = { country = c:RUS value = 25 }
+		set_relations = { country = c:WUR value = 100 }
+		set_relations = { country = c:HES value = 100 }
+		set_relations = { country = c:FRM value = 100 }
+		set_relations = { country = c:NAS value = 100 }
+		set_relations = { country = c:WLD value = 100 }
+		set_relations = { country = c:HEK value = 100 }
+		create_diplomatic_pact = {
+			country = c:FRA
+			type = alliance
+		}
+		create_diplomatic_pact = {
+			country = c:NET
+			type = defensive_pact
+		}
+		create_diplomatic_pact = {
+			country = c:BOH
+			type = personal_union
+		}
+		create_diplomatic_pact = {
+			country = c:BRE
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:LIP
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:SCM
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:WUR
+			type = customs_union
+		}		
+		create_diplomatic_pact = {
+			country = c:HES
+			type = customs_union
+		}
+		create_diplomatic_pact = {
+			country = c:FRM
+			type = customs_union
+		}					
+		create_diplomatic_pact = {
+			country = c:NAS
+			type = customs_union
+		}
+		create_diplomatic_pact = {
+			country = c:WLD	
+			type = customs_union
+		}
+		create_diplomatic_pact = {
+			country = c:HEK
+			type = customs_union
+		}	
+	}
+	c:PRU = {
+		set_relations = { country = c:FRA value = -25 }
+		set_relations = { country = c:BAV value = -100 }
+		set_relations = { country = c:AUS value = -100 }
+		set_relations = { country = c:BOH value = -25 }
+		set_relations = { country = c:GBR value = 25 }
+		set_relations = { country = c:NET value = 25 }
+	}
+	
+	c:GBR = {
+		set_relations = { country = c:RUS value = -25 }
+		set_relations = { country = c:NET value = -25 }
+		set_relations = { country = c:FRA value = -100 }
+		set_relations = { country = c:SPA value = -100 }
+		set_relations = { country = c:PRU value = 25 }
+		set_relations = { country = c:AUS value = 25 }
+		set_relations = { country = c:LUC value = 25 }
+		create_diplomatic_pact = {
+			country = c:ARG
+			type = dominion
+		}	
+		create_diplomatic_pact = {
+			country = c:LIB
+			type = puppet
+		}
+	}
+	
+	c:LUC = {
+		set_relations = { country = c:AUS value = -100 }
+		set_relations = { country = c:FRA value = -25 }
+		set_relations = { country = c:PRU value = 25 }
+		set_relations = { country = c:BAV value = -50 }
+		set_relations = { country = c:SIC value = 100 }
+		set_relations = { country = c:SPA value = 100 }
+		set_relations = { country = c:GBR value = 25 }
+		create_diplomatic_pact = {
+			country = c:SIC
+			type = personal_union
+		}
+		create_diplomatic_pact = {
+			country = c:SPA
+			type = defensive_pact
+		}
+	}
+	
+	c:CHI = {	
+		create_diplomatic_pact = {
+			country = c:MGL
+			type = vassal
+		}	
+		create_diplomatic_pact = {
+			country = c:MCH
+			type = vassal
+		}	
+		create_diplomatic_pact = {
+			country = c:XIN
+			type = vassal
+		}		
+		create_diplomatic_pact = {
+			country = c:TUV
+			type = vassal
+		}	
+	}
+	
+	c:BRZ = {
+		set_relations = { country = c:SPA value = -100 }
+		set_relations = { country = c:ARG value = -100 }	
+		set_relations = { country = c:GBR value = 50 }	
+		set_relations = { country = c:GRI value = -25 }	
+		set_relations = { country = c:TWT value = -25 }	
+		set_relations = { country = c:ELY value = -25 }	
+		create_diplomatic_pact = {
+			country = c:GBR
+			type = defensive_pact
+		}
+		create_diplomatic_pact = {
+			country = c:GBR
+			type = trade_agreement
+		}
+	}	
+	
+}	
