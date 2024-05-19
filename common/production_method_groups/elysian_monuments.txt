@@ -1,0 +1,160 @@
+﻿# To ensure the game rule 'monument_effects' works properly, new monument buildings added should be given the optional base methods
+# 	pm_monument_prestige_only
+#	pm_monument_no_effects
+# 
+# 'monument_effects' additionally needs to be amended with flags disabling the new monument's Base method
+# PM Groups for Monuments should have the 'is_hidden_when_unavailable' flag to ensure only one alternative is visible at any time (unless the player actually has an option they can switch to)
+
+pmg_base_building_marble_temple = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+	is_hidden_when_unavailable = yes
+
+	production_methods = {
+		pm_default_building_marble_temple
+		pm_monument_prestige_only
+		pm_monument_no_effects
+	}
+}
+
+pmg_base_building_sea_gates = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+	is_hidden_when_unavailable = yes
+
+	production_methods = {
+		pm_default_building_sea_gates
+		pm_monument_prestige_only
+		pm_monument_no_effects
+	}
+}
+
+pmg_base_building_imperial_palace = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+	is_hidden_when_unavailable = yes
+
+	production_methods = {
+		pm_default_building_imperial_palace
+		pm_monument_prestige_only
+		pm_monument_no_effects
+	}
+}
+
+pmg_base_building_elysian_arsenal = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+	is_hidden_when_unavailable = yes
+
+	production_methods = {
+		pm_default_building_elysian_arsenal
+		pm_monument_prestige_only
+		pm_monument_no_effects
+	}
+}
+
+pmg_base_building_silk_halls = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+	is_hidden_when_unavailable = yes
+
+	production_methods = {
+		pm_default_building_silk_halls
+		pm_monument_prestige_only
+		pm_monument_no_effects
+	}
+}
+
+pmg_base_building_alexandrian_library = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+	is_hidden_when_unavailable = yes
+
+	production_methods = {
+		pm_default_building_alexandrian_library
+		pm_monument_prestige_only
+		pm_monument_no_effects
+	}
+}
+
+pmg_base_building_cahokia_halls = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+	is_hidden_when_unavailable = yes
+
+	production_methods = {
+		pm_default_building_cahokia_halls
+		pm_monument_prestige_only
+		pm_monument_no_effects
+	}
+}
+
+pmg_base_building_whalebone_palace = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+	is_hidden_when_unavailable = yes
+
+	production_methods = {
+		pm_default_building_whalebone_palace
+		pm_monument_prestige_only
+		pm_monument_no_effects
+	}
+}
+
+pmg_base_building_lost_monument = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+	is_hidden_when_unavailable = yes
+
+	production_methods = {
+		pm_default_building_lost_monument
+		pm_monument_prestige_only
+		pm_monument_no_effects
+	}
+}
+
+pmg_base_building_chichen_itza_temple_city = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+	is_hidden_when_unavailable = yes
+
+	production_methods = {
+		pm_default_building_chichen_itza_temple_city
+		pm_monument_prestige_only
+		pm_monument_no_effects
+	}
+}
+
+pmg_base_building_mexico_temple_city = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+	is_hidden_when_unavailable = yes
+
+	production_methods = {
+		pm_default_building_mexico_temple_city
+		pm_monument_prestige_only
+		pm_monument_no_effects
+	}
+}
+
+pmg_base_building_tikal_temple_city = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+	is_hidden_when_unavailable = yes
+
+	production_methods = {
+		pm_default_building_tikal_temple_city
+		pm_monument_prestige_only
+		pm_monument_no_effects
+	}
+}
+
+pmg_base_building_nican_nahua_naval_base = {
+	texture = "gfx/interface/icons/production_method_icons/canals.dds"
+	ai_selection = most_productive
+	is_hidden_when_unavailable = yes
+
+	production_methods = {
+		pm_canal
+	}
+}
