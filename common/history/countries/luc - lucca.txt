@@ -1,0 +1,28 @@
+﻿COUNTRIES = {
+	c:LUC = {
+		
+		add_taxed_goods = g:liquor
+		add_taxed_goods = g:wine
+		
+		effect_starting_technology_tier_2_tech = yes
+		
+		effect_starting_politics_reactionary = yes
+		
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_land_based_taxation
+
+
+		set_government_wage_level = low
+		
+		set_tax_level = medium
+		
+		set_tariffs_import_priority = g:artillery
+		set_tariffs_import_priority = g:small_arms
+
+		activate_law = law_type:law_local_police
+		
+		ig:ig_landowners = {
+			add_ruling_interest_group = yes
+		}
+	}
+}
