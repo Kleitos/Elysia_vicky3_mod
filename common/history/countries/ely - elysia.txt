@@ -1,0 +1,194 @@
+﻿COUNTRIES = {
+	c:ELY = {
+		set_next_election_date = 1836.2.1
+		
+		ig:ig_intelligentsia = {
+			add_ruling_interest_group = yes
+		}
+
+		ig:ig_petty_bourgeoisie = {
+			add_ruling_interest_group = yes
+		}
+		
+		effect_starting_technology_tier_1_tech = yes
+		add_technology_researched = nationalism
+		add_technology_researched = human_rights
+		add_technology_researched = feminism
+		add_technology_researched = rifling
+		add_technology_researched = repeaters
+		add_technology_researched = breech_loading_artillery
+		add_technology_researched = shell_gun
+		add_technology_researched = pharmaceuticals		
+		add_technology_researched = bolt_action_rifles
+
+		set_tax_level = medium
+		
+		add_modifier = {
+			name = modifier_wife_trade
+            months = -1
+		}
+		add_modifier = {
+			name = modifier_through_river_styx
+            months = -1
+		}
+		add_modifier = {
+			name = modifier_elysian_fire_corp
+            months = -1
+		}
+		add_modifier = {
+			name = modifier_elysian_blood
+            months = -1
+		}
+		add_modifier = {
+			name = outmoded_bureaucracy
+            months = -1
+		}
+		add_modifier = {
+			name = modifier_elysian_navy_old
+            months = -1
+		}
+		
+		# Laws 
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_wealth_voting
+		activate_law = law_type:law_compulsory_primary_school
+		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_womens_suffrage
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_ethnostate
+		activate_law = law_type:law_protectionism
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_homesteading
+		activate_law = law_type:law_public_schools
+		activate_law = law_type:law_colonial_resettlement
+		activate_law = law_type:law_no_social_security
+		activate_law = law_type:law_public_health_insurance
+		activate_law = law_type:law_local_police
+		activate_law = law_type:law_professional_army
+		activate_law = law_type:law_national_guard
+		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_slavery_banned
+		
+		set_institution_investment_level = {
+			institution = institution_schools
+			level = 3
+		}
+
+		set_institution_investment_level = {
+			institution = institution_police
+			level = 1
+		}
+		
+		set_institution_investment_level = {
+			institution = institution_health_system
+			level = 3
+		}
+
+		add_company = company_type:company_pankratios_wood
+		company:company_pankratios_wood = {
+			set_company_establishment_date = 1653.5.11
+		}
+	
+		ig:ig_landowners = { 
+			set_interest_group_name = ig_dynatoi
+			remove_ideology = ideology_paternalistic
+			remove_ideology = ideology_patriarchal
+			remove_ideology = ideology_stratocratic
+			
+			add_ideology = ideology_elysian_egalitarian
+			add_ideology = ideology_elysian_bureaucracy
+			add_ideology = ideology_anti_christian_radical
+			add_ideology = ideology_elysian_land
+			add_ideology = ideology_elysian_labor_rich
+		}
+		
+		ig:ig_devout = { 
+			set_interest_group_name = ig_elysian_church
+			remove_ideology = ideology_patriarchal
+			remove_ideology = ideology_pious
+			remove_ideology = ideology_moralist
+			
+			add_ideology = ideology_elysian_egalitarian
+			add_ideology = ideology_anti_christian_radical
+			add_ideology = ideology_elysian_labor_poor
+		}
+		
+		ig:ig_rural_folk = { 
+			remove_ideology = ideology_particularist
+			remove_ideology = ideology_agrarian
+			remove_ideology = ideology_isolationist
+			
+			add_ideology = ideology_elysian_egalitarian
+			add_ideology = ideology_anti_christian_radical
+			add_ideology = ideology_elysian_labor_poor
+			add_ideology = ideology_elysian_land
+			add_ideology = ideology_elysian_populist
+		}
+		
+		ig:ig_petty_bourgeoisie = { 
+			set_interest_group_name = ig_emporoi
+			remove_ideology = ideology_patriotic
+			remove_ideology = ideology_reactionary
+			remove_ideology = ideology_meritocratic
+			
+			add_ideology = ideology_elysian_egalitarian
+			add_ideology = ideology_anti_christian_radical
+			add_ideology = ideology_elysian_economy
+			add_ideology = ideology_elysian_army
+			add_ideology = ideology_elysian_labor_rich
+		}
+		
+		ig:ig_armed_forces = { 
+			set_interest_group_name = ig_elysian_army
+			remove_ideology = ideology_jingoist
+			remove_ideology = ideology_patriotic
+			remove_ideology = ideology_loyalist
+			
+			add_ideology = ideology_elysian_egalitarian
+			add_ideology = ideology_anti_christian_radical
+			add_ideology = ideology_elysian_army
+			add_ideology = ideology_elysian_labor_poor
+		}
+		
+		ig:ig_trade_unions = { 
+			remove_ideology = ideology_populist
+			remove_ideology = ideology_egalitarian_modern
+			remove_ideology = ideology_proletarian
+			remove_ideology = ideology_anti_slavery
+			
+			add_ideology = ideology_elysian_egalitarian
+			add_ideology = ideology_anti_christian_radical
+			add_ideology = ideology_elysian_labor_poor
+			add_ideology = ideology_elysian_populist
+		}
+		
+		ig:ig_industrialists = { 
+			remove_ideology = ideology_laissez_faire
+			remove_ideology = ideology_individualist
+			remove_ideology = ideology_plutocratic
+			
+			add_ideology = ideology_elysian_egalitarian
+			add_ideology = ideology_anti_christian_radical
+			add_ideology = ideology_elysian_economy
+			add_ideology = ideology_elysian_bureaucracy
+			add_ideology = ideology_elysian_labor_rich
+		}
+		
+		ig:ig_intelligentsia = { 
+			remove_ideology = ideology_anti_clerical
+			remove_ideology = ideology_republican
+			remove_ideology = ideology_liberal_modern
+			remove_ideology = ideology_anti_slavery
+			
+			add_ideology = ideology_elysian_egalitarian
+			add_ideology = ideology_anti_christian_radical
+			add_ideology = ideology_elysian_populist
+			add_ideology = ideology_elysian_labor_poor
+		}
+	
+		add_journal_entry = { type = je_eirene }
+
+	}
+}
