@@ -1,0 +1,33 @@
+﻿COUNTRIES = {
+	c:SHW = {
+		effect_starting_technology_tier_3_tech = yes
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_frontier_colonization	
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_no_schools
+		
+
+		set_institution_investment_level = {
+			institution = institution_colonial_affairs
+			level = 1
+		}
+		
+		add_modifier = {
+			name = religious_fundamentalism
+			months = -1
+		}
+		add_modifier = {
+			name = western_aligned
+			months = very_long_modifier_time
+		}
+			add_journal_entry = {
+				type = je_age_of_princes
+			}
+	}
+}
