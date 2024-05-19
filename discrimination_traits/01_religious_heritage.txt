@@ -1,0 +1,116 @@
+﻿christian = {
+	heritage = yes
+}
+
+muslim = {
+	heritage = yes
+}
+
+jewish = {
+	heritage = yes
+}
+
+eastern = {
+	heritage = yes
+}
+
+animist = {
+	heritage = yes
+}
+
+buddhist = {
+	heritage = yes
+}
+
+# Elysian Pantheon
+
+pantheon = {
+	heritage = yes
+}
+
+# New Faith Traits
+
+monotheist = {
+	heritage = yes
+}
+
+polytheist = {
+	heritage = yes
+}
+
+new_world_native = {
+	heritage = yes
+}
+
+austronesian = {
+	heritage = yes
+}
+
+african_faith = {
+}
+
+west_african_faith = {
+	heritage = yes
+}
+
+vedic = {
+	heritage = yes
+}
+
+shamanist = {
+}
+
+philosophical = {
+	heritage = yes
+}
+
+steppe = {
+	heritage = yes
+}
+
+circumpolar = {
+	heritage = yes
+}
+
+taoic = {
+	heritage = yes
+}
+
+australian_faith = {
+	heritage = yes
+}
+
+australasian = {
+}
+
+central_african_faith = {
+	heritage = yes
+}
+
+east_african_faith = {
+	heritage = yes
+}
+
+south_african_faith = {
+	heritage = yes
+}
+
+kemetic_faith = {
+	heritage = yes
+}
+
+europagan = {
+	heritage = yes
+}
+
+east_pagan = {
+	heritage = yes
+}
+
+zoroastrian = {
+	heritage = yes
+}
+
+pagan_belief = {
+	heritage = yes
+}
