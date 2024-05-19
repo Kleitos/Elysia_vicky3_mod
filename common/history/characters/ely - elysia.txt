@@ -1,0 +1,264 @@
+﻿CHARACTERS = {
+	c:ELY = {
+		create_character = {
+			# Konstantinos of Elysia
+			first_name = "Konstantinos"
+			last_name = "Palaiologos"
+			ruler = yes
+			birth_date = 1765.8.21
+			dna = dna_ulysses_s_grant
+			culture = cu:elysian
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			traits = {
+				meticulous
+				imperious
+				experienced_diplomat
+				explorer
+				ambitious
+			}
+			on_created = {
+				set_variable = {
+					name = is_konstantinos
+				}		
+        set_variable = is_married      		
+			}
+		}	
+
+		create_character = {
+			first_name = "Eleni"
+			last_name = "Palaiologos"
+			heir = yes
+			female = yes
+			noble = yes
+			birth_date = 1816.3.20
+			dna = dna_queen_maria
+			culture = cu:elysian
+			interest_group = ig_intelligentsia
+			ideology = ideology_humanitarian_royalist
+			traits = {
+				direct
+				persistent
+				meticulous
+			}
+			on_created = {
+				set_variable = {
+					name = is_eirene
+				}				
+			}
+		}
+		create_character = {
+			first_name = Aikaterini
+			last_name = Zarifi
+			female = yes
+			culture = cu:elysian
+		    religion = pantheon
+			age = 35
+			ig_leader = yes
+			interest_group = ig_intelligentsia
+			ideology = ideology_humanitarian_royalist
+			traits = {
+				arrogant
+			}
+		}
+
+		create_character = {
+			first_name = Damiane
+		    last_name = Kafetzis
+			female = yes
+			culture = cu:elysian
+		    religion = pantheon
+			age = 31
+		    ig_leader = yes
+		    ideology = ideology_market_liberal
+		    interest_group = ig_industrialists
+		    traits = {
+		        meticulous
+		        experienced_political_operator
+		        tactful
+		    }
+		}
+
+		create_character = {
+			first_name = Sofia
+			last_name = Masouris
+			female = yes
+			culture = cu:elysian
+		    religion = pantheon
+			age = 25
+			ig_leader = yes
+			interest_group = ig_devout
+			ideology = ideology_feminist
+			traits = {
+				tactful
+			}
+		}
+
+		create_character = {
+			first_name = Thomas
+			last_name = Rallis
+			culture = cu:elysian
+		    religion = pantheon
+			age = 32
+			ig_leader = yes
+			interest_group = ig_trade_unions
+			ideology = ideology_humanitarian_royalist
+			traits = {
+				cautious
+			}
+		}
+
+		create_character = {
+			first_name = Xenon
+			last_name = Doukas
+			culture = cu:elysian
+		    religion = pantheon
+			age = 42
+			ig_leader = yes
+			interest_group = ig_armed_forces
+			ideology = ideology_jingoist_leader
+			traits = {
+				reserved
+			}
+		}
+
+		create_character = {
+			first_name = Gregoria
+			last_name = Hatzidakis
+			culture = cu:elysian
+		    religion = pantheon
+			female = yes
+			age = 27
+			ig_leader = yes
+			interest_group = ig_petty_bourgeoisie
+			ideology = ideology_humanitarian_royalist
+			traits = {
+				meticulous
+			}
+		}
+
+		create_character = {
+			first_name = Eleni
+			last_name = Komnenos
+			culture = cu:elysian
+		    religion = pantheon
+			female = yes
+			age = 50
+			ig_leader = yes
+			interest_group = ig_landowners
+			ideology = ideology_feminist
+			traits = {
+				imperious
+				arrogant
+			}
+		}
+
+		create_character = {
+			first_name = Leon
+			last_name = Varthalitis
+			culture = cu:elysian
+		    religion = pantheon
+			age = 45
+			ig_leader = yes
+			interest_group = ig_rural_folk
+			ideology = ideology_moderate
+			traits = {
+				imperious
+			}
+		}
+
+		create_character = { 
+			is_admiral = yes
+			first_name = Eudoxios
+			last_name = Laskaris
+			culture = cu:elysian
+		    religion = pantheon
+			interest_group = ig_armed_forces
+			ideology = ideology_moderate
+			birth_date = 1776.2.9
+			hq = region_dixie
+			traits = {
+				brave
+				basic_naval_commander
+			}
+		}
+		
+		create_character = { # Sea
+			is_admiral = yes
+			first_name = Iason
+			last_name = Hatzidakis
+			culture = cu:elysian
+		    religion = pantheon
+			interest_group = ig_armed_forces
+			birth_date = 1773.3.9
+			hq = region_new_england
+			commander_rank = commander_rank_2
+			traits = {
+				expert_naval_commander
+			}
+		}
+		
+		create_character = {
+			is_general = yes
+			first_name = Zacharias
+			last_name = Theofilakis
+			culture = cu:elysian
+		    religion = pantheon
+			interest_group = ig_armed_forces
+			birth_date = 1784.11.24
+			hq = region_the_midwest
+			traits = {
+				innovative
+			}
+		}
+
+		create_character = {
+			first_name = Washakie
+			last_name = Sivuarapik
+			culture = cu:elysian
+		    religion = totemism
+			birth_date = 1786.6.13
+			is_general = yes
+			interest_group = ig_armed_forces
+			ideology = ideology_jingoist_leader
+			hq = region_new_england
+			commander_rank = commander_rank_2
+			traits = {
+				cautious
+			}
+		}
+		
+		create_character = {
+			first_name = Mahihkan
+			last_name = Panecatl
+			culture = cu:elysian
+		    religion = mayan
+			birth_date = 1797.1.7
+			hq = region_mexico
+			is_general = yes
+			interest_group = ig_armed_forces
+			ideology = ideology_jingoist_leader
+			traits = {
+				direct
+				brave
+			}		
+		}
+
+		create_character = {
+			first_name = Itzcoatl
+			last_name = Ahuactzin
+			culture = cu:elysian
+		    religion = mayan
+			birth_date = 1790.1.27
+			hq = region_central_america
+			is_general = yes
+			interest_group = ig_armed_forces
+			ideology = ideology_moderate
+			traits = {
+				persistent
+				direct
+				brave
+			}		
+		}
+	}
+}

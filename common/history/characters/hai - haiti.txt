@@ -1,0 +1,3 @@
+﻿CHARACTERS = {
+	c:HAI ?= {
+}
