@@ -1,0 +1,120 @@
+﻿#sausage_eater = {
+#}
+
+african_settler = {
+}
+
+finnic = {
+}
+
+francophone = {
+}
+
+hispanophone = {
+}
+
+lusophone = {
+}
+
+anglophone = {
+}
+
+german_speaking = {
+}
+
+italophone = {
+}
+
+slavic = {
+}
+
+jugoslav = {
+}
+
+jewish_group = {
+}
+
+han_chinese = {
+}
+
+arab_speaking = {
+}
+
+turkic = {
+}
+
+sinosphere = {
+}
+
+tai = {
+}
+
+yamato = {
+}
+
+himalayan = {
+}
+
+bantu = {
+}
+
+ethiopian = {
+}
+
+caucasus_group = {
+}
+
+polynesian_group = {
+}
+
+rumelian = {
+}
+
+celtic_people = {
+}
+
+west_slavic = {
+}
+
+east_slavic = {
+}
+
+greek_culture = {
+}
+
+swiss = {
+}
+
+pagan_heritage = {}
+
+cushitic = {}
+
+berber_group = {}
+
+semite = {}
+
+guinean = {}
+
+hausa_group = {}
+
+western_bantoid = {}
+
+nilotic_group = {}
+
+central_bantoid = {}
+
+mandinka = {}
+
+sudanese_group = {}
+
+eastern_bantoid = {}
+
+kanuri_group = {}
+
+songhai_group = {}
+
+khoisan_group = {}
+
+nordic_group = {}
+
+byzantine_legacy = {}
