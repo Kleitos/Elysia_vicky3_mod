@@ -1,0 +1,57 @@
+﻿CHARACTERS = {
+	c:BYZ = {
+		
+		create_character = { # Sea
+		    is_admiral = yes
+			first_name = Antonios 
+			last_name = Kriezis
+			culture = cu:greek
+			age = 40
+			traits = {
+				audacious
+			 	expert_raider
+		 }
+
+		}
+		
+
+		create_character = {
+			is_general = yes
+			first_name = "Charilaos"
+			last_name = Vasos
+			culture = cu:greek
+			age = 37
+			traits = {
+				romantic
+			}
+		}
+		
+		create_character = {
+			#role = politician # Remove this line
+			first_name = "Gregorios"
+			last_name = ""
+			ruler = yes
+			culture = cu:greek
+			age = 23
+			interest_group = ig_devout
+			ideology = ideology_moderate
+			traits = {
+				ambitious
+			}
+		}
+
+		create_character = {
+			#role = politician # Remove this line
+			first_name = "Konstantinos"
+			last_name = "Drakos"
+			culture = cu:greek
+			heir = yes
+			age = 9
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			traits = {
+				ambitious
+			}
+		}	
+	}
+}
