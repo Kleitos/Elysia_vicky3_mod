@@ -284,34 +284,6 @@ je_hesperidias_pathway = {
 	}
 }
 
-je_elysian_highway_old = {
-	icon = "gfx/interface/icons/event_icons/event_industry.dds"
-
-	group = je_group_elysian_content
-
-	is_shown_when_inactive = {
-		c:ELY ?= THIS
-	}
-
-	possible = {
-		c:ELY ?= THIS
-	}
-
-	complete = {
-		year >= 1837
-	}
-
-	on_complete = {
-		if = {
-			limit = {
-				exists = c:ELY
-				c:ELY = ROOT
-			}
-		trigger_event = { id = ely_infrastructure_event.6 }
-		}
-	}
-}
-
 je_elysian_highway_new = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 
