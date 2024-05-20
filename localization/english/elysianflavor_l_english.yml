@@ -76,7 +76,7 @@
  # Modifiers
  
  modifier_through_river_styx:0 "Elysian Eugenism"
- modifier_wife_trade:0 "Elysian Polygamy"
+ modifier_wife_trade:0 "Elysian Human Traffick"
  modifier_elysian_opportunity:0 "Land of Opportunity"
  empress_eirene_mod:0 "Silken Empress"
  modifier_elysian_fire_corp:0 "Elysian Fire Corps"
@@ -159,7 +159,7 @@
  ely_infrastructure_event.4.a:0 "Even mighty Atlas will yield"
  
  ely_infrastructure_event.6.t:0 "The Old Highway"
- ely_infrastructure_event.6.d:0 "As our people pushed westward, a series of forts, trading posts and ports were build and linked through an elaborate system of roads and ferry. Alas, the great distances between places as led to administrative mismanagement."
+ ely_infrastructure_event.6.d:0 "As our people pushed westward, a series of forts, trading posts and ports were built and linked through an elaborate system of roads and ferry. Alas, despite the boon to travel, the great distances from the capital has led to local administrative mismanagement."
  ely_infrastructure_event.6.f:0 ""
  ely_infrastructure_event.6.a:0 "As long as they maintain it."
  
@@ -187,13 +187,13 @@
  
  
  ely_national_value.1.t:0 "Human trafficking in Elysia"
- ely_national_value.1.d:0 "Since its foundation Elysia always had a manpower shortage and with Elysian laws guaranteeing more rights and protection than anywhere else, multiple shady organizations some even linked to the government had found ways to provide a ‘workaround’. However with barriers to trade and communication with other nations eroding it became harder and harder to keep it a secret. Now There is international pressure to end the practice once and for all."
+ ely_national_value.1.d:0 "Since its foundation Elysia always had a manpower shortage, as such ‘workaround’ were used to not infringe on elysian's rights. However with barriers to trade and communication with other nations eroding it's becoming harder and harder to keep it a secret. Now There is international pressure to end the practice once and for all."
  ely_national_value.1.f:0 ""
- ely_national_value.1.a:0 "Maybe it is time to put an end to this horrendous practice and move forward"
+ ely_national_value.1.a:0 "Maybe it is time to put an end to this horrendous practice and move forward."
  ely_national_value.1.b:0 "Pah, what do barbarians know ? Elysia will stand alone if it needs to"
  
  ely_national_value.2.t:0 "New Elysian Family"
- ely_national_value.2.d:0 "Even with the abhorrent practice of human trafficking abolished, Elysia remains a place were non elysians are seen as secondary citizens at best. While not changing the fundamentals of our blood law policies, we could make it easier for single Barbaroi across the world to see the benefit of moving to our nation and joining the bigger elysian family."
+ ely_national_value.2.d:0 "Even with the abhorrent practice of human trafficking abolished, Elysia remains a place were non elysians are seen as second class citizens at best. While not changing the fundamentals of our blood law policies, we could make it easier for single Barbaroi across the world to see the benefit of moving to our nation and joining the bigger elysian family."
  ely_national_value.2.f:0 ""
  ely_national_value.2.a:0 "Time to create a new set of elysian values"
   
@@ -216,12 +216,12 @@
  ely_reform_event.1.t:0 "Bureaucratic Reforms"
  ely_reform_event.1.d:0 "The term 'Byzantine administration' was apt to describe the systems we had established for centuries. As time passed the problems became apparent and could have spiraled out of control if not taken care of. Thankfully under the guide of our empress we are now a step further to unite Elysium."
  ely_reform_event.1.f:0 ""
- ely_reform_event.1.a:0 "Now where did I put my ID ?"
+ ely_reform_event.1.a:0 "Maybe 'Elysian administration' will be used to denote our superiority."
 
  ely_reform_event.2.t:0 "Economic Reforms"
- ely_reform_event.2.d:0 "Our people are rich and our land bountiful but we always stood out of global trade except for our close allies. Maybe time has come to change and join the global trade and increase our industrial efforts."
+ ely_reform_event.2.d:0 "Our people are rich and our land bountiful but we always stood out of global trade except for our close allies. But with the increased benefit of sellings goods to others, even the traditional artisans are begining to move towards globalism. Maybe time has come to change and join the global trade ?"
  ely_reform_event.2.f:0 ""
- ely_reform_event.2.a:0 "Our goods will take the world by storm"
+ ely_reform_event.2.a:0 "Elysian identity will be defined by productive work."
   
  ely_reform_event.3.t:0 "Bureaucratic Reforms"
  ely_reform_event.3.d:0 "The term 'Byzantine administration' was apt to describe the systems we had established for centuries. As time passed the problems became apparent and could have spiraled out of control if not taken care of. Thankfully under the guide of our empress we are now a step further to unite elysium."
@@ -238,7 +238,7 @@
  liberty_event.1.f:0 ""
  liberty_event.1.a:0 "All pagans are our brothers and we should accept them all."
  liberty_event.1.b:0 "Let's be cautious first, we should start with our South Arkadian brothers and work from there."
- liberty_event.1.c:0 "Let's throw caution to the wind. (this will create instability in Elysia)"
+ #liberty_event.1.c:0 "Let's throw caution to the wind. (this will create instability in Elysia)"
  
  #liberty_event.2.t:0 "Elysian Nationalism"
  #liberty_event.2.d:0 "'Liars! Thieves! Parasites!' Those are the words used to describe non elysian as politicians have forgotten the very people they should serve. Insurrection is brewing down in the streets as angry elysian mobs forms against their perceived enemies."
@@ -339,3 +339,17 @@
  pm_default_building_cahokia_halls:0 "Cahokia Halls"
  pm_default_building_lost_monument:0 "Temple to the lost"
  pm_default_building_nican_nahua_naval_base:0 "Nican-Nahua Canal"
+ 
+ pmg_base_building_chichen_itza_temple_city:0 "Temple Cities of Mayab"
+ pmg_base_building_tikal_temple_city:0 "Temple Cities of Cuauhtemallan"
+ pmg_base_building_mexico_temple_city:0 "Temple Cities of Mexihco"
+ pmg_base_building_whalebone_palace:0 "Whalebone Palace"
+ pmg_base_building_imperial_palace:0 "Imperial Palace"
+ pmg_base_building_marble_temple:0 "Temple of the Marble Emperor"
+ pmg_base_building_alexandrian_library:0 "Nea-Alexandria Library"
+ pmg_base_building_elysian_arsenal:0 "Elysian Arsenal"
+ pmg_base_building_silk_halls:0 "Silk Halls"
+ pmg_base_building_sea_gates:0 "Ivos Sea Gates"
+ pmg_base_building_cahokia_halls:0 "Cahokia Halls"
+ pmg_base_building_lost_monument:0 "Temple to the lost"
+ pmg_base_building_nican_nahua_naval_base:0 "Nican-Nahua Canal"
