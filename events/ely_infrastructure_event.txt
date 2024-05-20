@@ -316,11 +316,19 @@ ely_infrastructure_event.6 = {
 	option = {
 		name = ely_infrastructure_event.6.a
         default_option = yes
+		every_scope_state = {
+			limit = {				
+				state_region = {
+					is_homeland = cu:elysian
+				}
+					owner = ROOT
+			}
 			add_modifier = {
 				name = modifier_elysian_highway_old
 				months = -1
 			}
 		}
+	}
 }
 
 ely_infrastructure_event.7 = {
@@ -348,13 +356,21 @@ ely_infrastructure_event.7 = {
 	option = {
 		name = ely_infrastructure_event.7.a
         default_option = yes
+		every_scope_state = {
+			limit = {				
+				state_region = {
+					is_homeland = cu:elysian
+				}
+					owner = ROOT
+			}
 			remove_modifier = modifier_elysian_highway_old
 			add_modifier = {
 				name = modifier_elysian_highway_new
 				months = -1
 			}
+		}
 			add_modifier = {
-				name = ely_big_money
+				name = ely_verybig_money
 				months = 60
 			}
 		}
