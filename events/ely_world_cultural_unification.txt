@@ -712,6 +712,10 @@ unification_culture.5 = {
 			remove_homeland = cu:tajik
 			add_homeland = cu:iranian_culture
 		}
+		s:STATE_KIRGHIZIA = {
+			remove_homeland = cu:tajik
+			add_homeland = cu:iranian_culture
+		}
 		s:STATE_ALEPPO = {
 			remove_homeland = cu:kurdish
 			add_homeland = cu:iranian_culture

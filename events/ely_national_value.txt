@@ -241,5 +241,9 @@ ely_national_value.5 = {
 			remove_homeland = cu:inuit
 			add_homeland = cu:elysian
 		}
+		s:STATE_ALASKA = {
+			remove_homeland = cu:inuit
+			add_homeland = cu:elysian
+		}
 	}
 }
