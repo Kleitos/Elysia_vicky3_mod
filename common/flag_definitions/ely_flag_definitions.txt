@@ -83,3 +83,24 @@ SEI = { # British East India Company
 		}
 	}	
 }
+
+MAR = { # Nagpur
+	flag_definition = {
+		coa = NAG
+		subject_canton = NAG
+		allow_overlord_canton = yes
+		priority = 1
+	}
+	flag_definition = {
+		coa = NAG # Princely State
+		subject_canton = NAG
+		allow_overlord_canton = no	
+		priority = 50
+		trigger = { 
+			OR = {
+				coa_def_british_ensign_trigger = yes
+				coa_def_british_india_trigger = yes
+			}
+		}
+	}	
+}
