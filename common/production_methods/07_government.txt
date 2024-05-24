@@ -17,6 +17,7 @@
 		workforce_scaled = {
 			country_convoys_capacity_add = 20
 			country_minting_add = 15
+			state_migration_pull_mult = 0.01
 		}
 	}
 }			
@@ -41,6 +42,7 @@ pm_basic_port = {
 		workforce_scaled = {
 			country_convoys_capacity_add = 150
 			country_minting_add = 30
+			state_migration_pull_mult = 0.02
 		}
 	}
 	state_modifiers = {
@@ -76,6 +78,7 @@ pm_industrial_port = {
 		workforce_scaled = {
 			country_convoys_capacity_add = 175
 			country_minting_add = 75
+			state_migration_pull_mult = 0.03
 		}
 	}
 	state_modifiers = {
@@ -110,6 +113,7 @@ pm_modern_port = {
 		workforce_scaled = {
 			country_convoys_capacity_add = 200
 			country_minting_add = 100
+			state_migration_pull_mult = 0.05
 		}
 	}
 	state_modifiers = {
