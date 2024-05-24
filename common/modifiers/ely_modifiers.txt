@@ -63,9 +63,9 @@ modifier_elysian_highway_old = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
 	state_construction_mult = 0.05
 	state_infrastructure_mult = 0.05
-	country_bureaucracy_mult = -0.2
-	tax_income_add = -0.05
+	state_tax_capacity_mult = -0.25
 	building_railway_throughput_add = 0.05
+	state_migration_pull_mult = 0.02
 }
 
 modifier_elysian_highway_new = {
@@ -73,6 +73,8 @@ modifier_elysian_highway_new = {
 	state_construction_mult = 0.2
 	state_infrastructure_mult = 0.2
 	building_railway_throughput_add = 0.25
+	state_migration_pull_mult = 0.05
+	state_market_access_price_impact = 0.05
 }
 
 modifier_greenland_infrastructure = {
@@ -180,4 +182,5 @@ modifier_elsysian_dockyard = {
 	state_building_port_max_level_add = 2
 	state_construction_mult = 0.05
 	state_infrastructure_mult = 0.05
+	state_migration_pull_mult = 0.05
 }
