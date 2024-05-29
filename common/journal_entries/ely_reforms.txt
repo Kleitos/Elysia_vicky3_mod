@@ -142,7 +142,7 @@ je_reform_society = {
 			has_law = law_type:law_autocracy
 			has_law = law_type:law_oligarchy
 		}
-		has_law = law_type:law_freedom_of_conscience
+		NOT = { has_law = law_type:law_state_religion }
 		has_law = law_type:law_slavery_banned 
 		AND = {
 			ig:ig_landowners = {
