@@ -30,7 +30,7 @@ ig_trait_work_ethic = {
 	min_approval = loyal
 	
 	modifier = {
-		country_company_throughput_bonus_add = 0.05
+		building_throughput_add = 0.05
 	}
 }
 
@@ -124,27 +124,35 @@ ig_trait_haibutsu_kishaku = {
 	}
 }
 
-ig_trait_da_wat = {
+ig_trait_zakah = {
 	icon = "gfx/interface/icons/ig_trait_icons/be_fruitful_and_multiply.dds"
-	min_approval = loyal
+	min_approval = happy
 	
 	modifier = {
-		country_authority_mult = 0.1
-		state_conversion_mult = 0.1
-		state_education_access_add = -0.1
+		state_radicals_from_discrimination_mult = -0.1
 	}
 }
 
 ig_trait_sharia = {
 	icon = "gfx/interface/icons/ig_trait_icons/divine_right.dds"
+	min_approval = loyal
+	
+	modifier = {
+		state_education_access_add = 0.1
+		country_tech_spread_mult = 0.1
+	}
+}
+
+
+ig_trait_da_wat = {
+	icon = "gfx/interface/icons/ig_trait_icons/be_fruitful_and_multiply.dds"
 	min_approval = happy
 	
 	modifier = {
 		country_authority_mult = 0.1
-		state_education_access_add = -0.1
+		state_conversion_mult = 0.1
 	}
 }
-
 ig_trait_mecelle = {
 	icon = "gfx/interface/icons/ig_trait_icons/divine_right.dds"
 	min_approval = happy
