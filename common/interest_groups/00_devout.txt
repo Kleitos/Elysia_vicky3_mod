@@ -90,16 +90,13 @@
 			else_if = {
 				limit = {
 					owner = {
-						OR = {
-							country_has_state_religion = rel:sunni
-							country_has_state_religion = rel:shiite
-						}
+						country_has_state_religion = rel:sunni
 						NOT = { c:TUR ?= this }
 					}
 				}
 				set_ig_trait = ig_trait:ig_trait_pious_fiction
 				set_ig_trait = ig_trait:ig_trait_sharia
-				set_ig_trait = ig_trait:ig_trait_da_wat
+				set_ig_trait = ig_trait:ig_trait_zakah
 			}
 			else_if = {
 				limit = {
@@ -107,6 +104,16 @@
 				}
 				set_ig_trait = ig_trait:ig_trait_pious_fiction
 				set_ig_trait = ig_trait:ig_trait_mecelle
+				set_ig_trait = ig_trait:ig_trait_zakah
+			}
+			else_if = {
+				limit = {
+					owner = {
+						country_has_state_religion = rel:shiite
+					}
+				}
+				set_ig_trait = ig_trait:ig_trait_pious_fiction
+				set_ig_trait = ig_trait:ig_trait_sharia
 				set_ig_trait = ig_trait:ig_trait_da_wat
 			}
 			else = {
