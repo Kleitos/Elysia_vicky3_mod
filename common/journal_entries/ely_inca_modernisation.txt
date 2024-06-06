@@ -107,7 +107,6 @@ je_reform_mines = {
 							has_active_production_method = pm_diesel_pump_building_coal_mine						
 						}
 						has_active_production_method = pm_dynamite_building_coal_mine
-						has_active_production_method = pm_steam_donkey_building_coal_mine
 						is_building_type = building_coal_mine
 						level >= 5
 					}
@@ -117,7 +116,6 @@ je_reform_mines = {
 							has_active_production_method = pm_diesel_pump_building_iron_mine						
 						}
 						has_active_production_method = pm_dynamite_building_iron_mine
-						has_active_production_method = pm_steam_donkey_building_iron_mine
 						is_building_type = building_iron_mine
 						level >= 5
 					}
@@ -132,7 +130,6 @@ je_reform_mines = {
 							has_active_production_method = pm_diesel_pump_building_iron_mine						
 						}
 						has_active_production_method = pm_dynamite_building_iron_mine
-						has_active_production_method = pm_steam_donkey_building_iron_mine
 						is_building_type = building_iron_mine
 						level >= 5
 					}
@@ -142,7 +139,6 @@ je_reform_mines = {
 							has_active_production_method = pm_diesel_pump_building_sulfur_mine						
 						}
 						has_active_production_method = pm_dynamite_building_sulfur_mine
-						has_active_production_method = pm_steam_donkey_building_sulfur_mine
 						is_building_type = building_sulfur_mine
 						level >= 5
 					}
@@ -157,7 +153,6 @@ je_reform_mines = {
 							has_active_production_method = pm_diesel_pump_building_iron_mine						
 						}
 						has_active_production_method = pm_dynamite_building_iron_mine
-						has_active_production_method = pm_steam_donkey_building_iron_mine
 						is_building_type = building_iron_mine
 						level >= 5
 					}
@@ -167,7 +162,6 @@ je_reform_mines = {
 							has_active_production_method = pm_diesel_pump_building_sulfur_mine						
 						}
 						has_active_production_method = pm_dynamite_building_sulfur_mine
-						has_active_production_method = pm_steam_donkey_building_sulfur_mine
 						is_building_type = building_sulfur_mine
 						level >= 5
 					}
@@ -177,7 +171,6 @@ je_reform_mines = {
 							has_active_production_method = pm_diesel_pump_building_gold_mine						
 						}
 						has_active_production_method = pm_dynamite_building_gold_mine
-						has_active_production_method = pm_steam_donkey_building_gold_mine
 						is_building_type = building_gold_mine
 						level >= 5
 					}
@@ -192,7 +185,6 @@ je_reform_mines = {
 							has_active_production_method = pm_diesel_pump_building_lead_mine						
 						}
 						has_active_production_method = pm_dynamite_building_lead_mine
-						has_active_production_method = pm_steam_donkey_building_lead_mine
 						is_building_type = building_lead_mine
 						level >= 5
 					}
@@ -207,7 +199,6 @@ je_reform_mines = {
 							has_active_production_method = pm_diesel_pump_building_lead_mine						
 						}
 						has_active_production_method = pm_dynamite_building_lead_mine
-						has_active_production_method = pm_steam_donkey_building_lead_mine
 						is_building_type = building_lead_mine
 						level >= 5
 					}
@@ -222,7 +213,6 @@ je_reform_mines = {
 							has_active_production_method = pm_diesel_pump_building_coal_mine						
 						}
 						has_active_production_method = pm_dynamite_building_coal_mine
-						has_active_production_method = pm_steam_donkey_building_coal_mine
 						is_building_type = building_coal_mine
 						level >= 5
 					}
@@ -232,7 +222,6 @@ je_reform_mines = {
 							has_active_production_method = pm_diesel_pump_building_lead_mine						
 						}
 						has_active_production_method = pm_dynamite_building_lead_mine
-						has_active_production_method = pm_steam_donkey_building_lead_mine
 						is_building_type = building_lead_mine
 						level >= 5
 					}
@@ -242,7 +231,6 @@ je_reform_mines = {
 							has_active_production_method = pm_diesel_pump_building_gold_mine						
 						}
 						has_active_production_method = pm_dynamite_building_gold_mine
-						has_active_production_method = pm_steam_donkey_building_gold_mine
 						is_building_type = building_gold_mine
 						level >= 5
 					}
@@ -257,7 +245,6 @@ je_reform_mines = {
 							has_active_production_method = pm_diesel_pump_building_iron_mine						
 						}
 						has_active_production_method = pm_dynamite_building_iron_mine
-						has_active_production_method = pm_steam_donkey_building_iron_mine
 						is_building_type = building_iron_mine
 						level >= 5
 					}
@@ -267,7 +254,6 @@ je_reform_mines = {
 							has_active_production_method = pm_diesel_pump_building_lead_mine						
 						}
 						has_active_production_method = pm_dynamite_building_lead_mine
-						has_active_production_method = pm_steam_donkey_building_lead_mine
 						is_building_type = building_lead_mine
 						level >= 5
 					}
@@ -277,7 +263,6 @@ je_reform_mines = {
 							has_active_production_method = pm_diesel_pump_building_sulfur_mine						
 						}
 						has_active_production_method = pm_dynamite_building_sulfur_mine
-						has_active_production_method = pm_steam_donkey_building_sulfur_mine
 						is_building_type = building_sulfur_mine
 						level >= 5
 					}
@@ -287,7 +272,6 @@ je_reform_mines = {
 							has_active_production_method = pm_diesel_pump_building_gold_mine						
 						}
 						has_active_production_method = pm_dynamite_building_gold_mine
-						has_active_production_method = pm_steam_donkey_building_gold_mine
 						is_building_type = building_gold_mine
 						level >= 5
 					}
@@ -302,7 +286,6 @@ je_reform_mines = {
 							has_active_production_method = pm_diesel_pump_building_iron_mine						
 						}
 						has_active_production_method = pm_dynamite_building_iron_mine
-						has_active_production_method = pm_steam_donkey_building_iron_mine
 						is_building_type = building_iron_mine
 						level >= 5
 					}
@@ -312,7 +295,6 @@ je_reform_mines = {
 							has_active_production_method = pm_diesel_pump_building_sulfur_mine						
 						}
 						has_active_production_method = pm_dynamite_building_sulfur_mine
-						has_active_production_method = pm_steam_donkey_building_sulfur_mine
 						is_building_type = building_sulfur_mine
 						level >= 5
 					}
@@ -327,7 +309,6 @@ je_reform_mines = {
 							has_active_production_method = pm_diesel_pump_building_iron_mine						
 						}
 						has_active_production_method = pm_dynamite_building_iron_mine
-						has_active_production_method = pm_steam_donkey_building_iron_mine
 						is_building_type = building_iron_mine
 						level >= 5
 					}
@@ -337,7 +318,6 @@ je_reform_mines = {
 							has_active_production_method = pm_diesel_pump_building_lead_mine						
 						}
 						has_active_production_method = pm_dynamite_building_lead_mine
-						has_active_production_method = pm_steam_donkey_building_lead_mine
 						is_building_type = building_lead_mine
 						level >= 5
 					}
@@ -347,7 +327,7 @@ je_reform_mines = {
 							has_active_production_method = pm_diesel_pump_building_sulfur_mine						
 						}
 						has_active_production_method = pm_dynamite_building_sulfur_mine
-						has_active_production_method = pm_steam_donkey_building_sulfur_mine
+						
 						is_building_type = building_sulfur_mine
 						level >= 5
 					}
@@ -362,7 +342,7 @@ je_reform_mines = {
 							has_active_production_method = pm_diesel_pump_building_iron_mine						
 						}
 						has_active_production_method = pm_dynamite_building_iron_mine
-						has_active_production_method = pm_steam_donkey_building_iron_mine
+						
 						is_building_type = building_iron_mine
 						level >= 5
 					}
@@ -372,7 +352,7 @@ je_reform_mines = {
 							has_active_production_method = pm_diesel_pump_building_lead_mine						
 						}
 						has_active_production_method = pm_dynamite_building_lead_mine
-						has_active_production_method = pm_steam_donkey_building_lead_mine
+						
 						is_building_type = building_lead_mine
 						level >= 5
 					}
@@ -387,7 +367,7 @@ je_reform_mines = {
 							has_active_production_method = pm_diesel_pump_building_iron_mine						
 						}
 						has_active_production_method = pm_dynamite_building_iron_mine
-						has_active_production_method = pm_steam_donkey_building_iron_mine
+						
 						is_building_type = building_iron_mine
 						level >= 5
 					}
@@ -397,7 +377,7 @@ je_reform_mines = {
 							has_active_production_method = pm_diesel_pump_building_sulfur_mine						
 						}
 						has_active_production_method = pm_dynamite_building_sulfur_mine
-						has_active_production_method = pm_steam_donkey_building_sulfur_mine
+						
 						is_building_type = building_sulfur_mine
 						level >= 5
 					}
@@ -407,7 +387,7 @@ je_reform_mines = {
 							has_active_production_method = pm_diesel_pump_building_gold_mine						
 						}
 						has_active_production_method = pm_dynamite_building_gold_mine
-						has_active_production_method = pm_steam_donkey_building_gold_mine
+						
 						is_building_type = building_gold_mine
 						level >= 5
 					}
@@ -422,7 +402,7 @@ je_reform_mines = {
 							has_active_production_method = pm_diesel_pump_building_coal_mine						
 						}
 						has_active_production_method = pm_dynamite_building_coal_mine
-						has_active_production_method = pm_steam_donkey_building_coal_mine
+						
 						is_building_type = building_coal_mine
 						level >= 5
 					}
@@ -432,7 +412,7 @@ je_reform_mines = {
 							has_active_production_method = pm_diesel_pump_building_iron_mine						
 						}
 						has_active_production_method = pm_dynamite_building_iron_mine
-						has_active_production_method = pm_steam_donkey_building_iron_mine
+						
 						is_building_type = building_iron_mine
 						level >= 5
 					}
@@ -442,7 +422,7 @@ je_reform_mines = {
 							has_active_production_method = pm_diesel_pump_building_lead_mine						
 						}
 						has_active_production_method = pm_dynamite_building_lead_mine
-						has_active_production_method = pm_steam_donkey_building_lead_mine
+						
 						is_building_type = building_lead_mine
 						level >= 5
 					}
@@ -452,7 +432,7 @@ je_reform_mines = {
 							has_active_production_method = pm_diesel_pump_building_sulfur_mine						
 						}
 						has_active_production_method = pm_dynamite_building_sulfur_mine
-						has_active_production_method = pm_steam_donkey_building_sulfur_mine
+						
 						is_building_type = building_sulfur_mine
 						level >= 5
 					}
@@ -467,7 +447,7 @@ je_reform_mines = {
 							has_active_production_method = pm_diesel_pump_building_coal_mine						
 						}
 						has_active_production_method = pm_dynamite_building_coal_mine
-						has_active_production_method = pm_steam_donkey_building_coal_mine
+						
 						is_building_type = building_coal_mine
 						level >= 5
 					}
@@ -477,7 +457,7 @@ je_reform_mines = {
 							has_active_production_method = pm_diesel_pump_building_iron_mine						
 						}
 						has_active_production_method = pm_dynamite_building_iron_mine
-						has_active_production_method = pm_steam_donkey_building_iron_mine
+						
 						is_building_type = building_iron_mine
 						level >= 5
 					}
@@ -572,7 +552,7 @@ je_reform_mines_2 = {
 							has_active_production_method = pm_diesel_pump_building_coal_mine						
 						}
 						has_active_production_method = pm_dynamite_building_coal_mine
-						has_active_production_method = pm_steam_donkey_building_coal_mine
+						
 						is_building_type = building_coal_mine
 						level >= 5
 					}
@@ -582,7 +562,7 @@ je_reform_mines_2 = {
 							has_active_production_method = pm_diesel_pump_building_sulfur_mine						
 						}
 						has_active_production_method = pm_dynamite_building_sulfur_mine
-						has_active_production_method = pm_steam_donkey_building_sulfur_mine
+						
 						is_building_type = building_sulfur_mine
 						level >= 5
 					}
@@ -597,7 +577,7 @@ je_reform_mines_2 = {
 							has_active_production_method = pm_diesel_pump_building_coal_mine						
 						}
 						has_active_production_method = pm_dynamite_building_coal_mine
-						has_active_production_method = pm_steam_donkey_building_coal_mine
+						
 						is_building_type = building_coal_mine
 						level >= 5
 					}
@@ -607,7 +587,7 @@ je_reform_mines_2 = {
 							has_active_production_method = pm_diesel_pump_building_iron_mine						
 						}
 						has_active_production_method = pm_dynamite_building_iron_mine
-						has_active_production_method = pm_steam_donkey_building_iron_mine
+						
 						is_building_type = building_iron_mine
 						level >= 5
 					}
@@ -622,7 +602,7 @@ je_reform_mines_2 = {
 							has_active_production_method = pm_diesel_pump_building_coal_mine						
 						}
 						has_active_production_method = pm_dynamite_building_coal_mine
-						has_active_production_method = pm_steam_donkey_building_coal_mine
+						
 						is_building_type = building_coal_mine
 						level >= 5
 					}
@@ -632,7 +612,7 @@ je_reform_mines_2 = {
 							has_active_production_method = pm_diesel_pump_building_iron_mine						
 						}
 						has_active_production_method = pm_dynamite_building_iron_mine
-						has_active_production_method = pm_steam_donkey_building_iron_mine
+						
 						is_building_type = building_iron_mine
 						level >= 5
 					}
@@ -647,7 +627,7 @@ je_reform_mines_2 = {
 							has_active_production_method = pm_diesel_pump_building_coal_mine						
 						}
 						has_active_production_method = pm_dynamite_building_coal_mine
-						has_active_production_method = pm_steam_donkey_building_coal_mine
+						
 						is_building_type = building_coal_mine
 						level >= 5
 					}
@@ -662,7 +642,7 @@ je_reform_mines_2 = {
 							has_active_production_method = pm_diesel_pump_building_coal_mine						
 						}
 						has_active_production_method = pm_dynamite_building_coal_mine
-						has_active_production_method = pm_steam_donkey_building_coal_mine
+						
 						is_building_type = building_coal_mine
 						level >= 5
 					}
@@ -672,7 +652,7 @@ je_reform_mines_2 = {
 							has_active_production_method = pm_diesel_pump_building_lead_mine						
 						}
 						has_active_production_method = pm_dynamite_building_lead_mine
-						has_active_production_method = pm_steam_donkey_building_lead_mine
+						
 						is_building_type = building_lead_mine
 						level >= 5
 					}
@@ -687,7 +667,7 @@ je_reform_mines_2 = {
 							has_active_production_method = pm_diesel_pump_building_coal_mine						
 						}
 						has_active_production_method = pm_dynamite_building_coal_mine
-						has_active_production_method = pm_steam_donkey_building_coal_mine
+						
 						is_building_type = building_coal_mine
 						level >= 5
 					}
@@ -697,7 +677,7 @@ je_reform_mines_2 = {
 							has_active_production_method = pm_diesel_pump_building_sulfur_mine						
 						}
 						has_active_production_method = pm_dynamite_building_sulfur_mine
-						has_active_production_method = pm_steam_donkey_building_sulfur_mine
+						
 						is_building_type = building_sulfur_mine
 						level >= 5
 					}
@@ -712,7 +692,7 @@ je_reform_mines_2 = {
 							has_active_production_method = pm_diesel_pump_building_coal_mine						
 						}
 						has_active_production_method = pm_dynamite_building_coal_mine
-						has_active_production_method = pm_steam_donkey_building_coal_mine
+						
 						is_building_type = building_coal_mine
 						level >= 5
 					}
@@ -722,7 +702,7 @@ je_reform_mines_2 = {
 							has_active_production_method = pm_diesel_pump_building_iron_mine						
 						}
 						has_active_production_method = pm_dynamite_building_iron_mine
-						has_active_production_method = pm_steam_donkey_building_iron_mine
+						
 						is_building_type = building_iron_mine
 						level >= 5
 					}
@@ -732,7 +712,7 @@ je_reform_mines_2 = {
 							has_active_production_method = pm_diesel_pump_building_lead_mine						
 						}
 						has_active_production_method = pm_dynamite_building_lead_mine
-						has_active_production_method = pm_steam_donkey_building_lead_mine
+						
 						is_building_type = building_lead_mine
 						level >= 5
 					}
@@ -747,7 +727,7 @@ je_reform_mines_2 = {
 							has_active_production_method = pm_diesel_pump_building_coal_mine						
 						}
 						has_active_production_method = pm_dynamite_building_coal_mine
-						has_active_production_method = pm_steam_donkey_building_coal_mine
+						
 						is_building_type = building_coal_mine
 						level >= 5
 					}
@@ -757,7 +737,7 @@ je_reform_mines_2 = {
 							has_active_production_method = pm_diesel_pump_building_iron_mine						
 						}
 						has_active_production_method = pm_dynamite_building_iron_mine
-						has_active_production_method = pm_steam_donkey_building_iron_mine
+						
 						is_building_type = building_iron_mine
 						level >= 5
 					}
@@ -767,7 +747,7 @@ je_reform_mines_2 = {
 							has_active_production_method = pm_diesel_pump_building_lead_mine						
 						}
 						has_active_production_method = pm_dynamite_building_lead_mine
-						has_active_production_method = pm_steam_donkey_building_lead_mine
+						
 						is_building_type = building_lead_mine
 						level >= 5
 					}
@@ -777,7 +757,7 @@ je_reform_mines_2 = {
 							has_active_production_method = pm_diesel_pump_building_sulfur_mine						
 						}
 						has_active_production_method = pm_dynamite_building_sulfur_mine
-						has_active_production_method = pm_steam_donkey_building_sulfur_mine
+						
 						is_building_type = building_sulfur_mine
 						level >= 5
 					}
