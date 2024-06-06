@@ -1,0 +1,10 @@
+﻿l_english:
+  # Mexican IGs
+ ig_hacendados:0 "Hacendados"
+ ig_hacendados_desc:0 "In many ways the last vestige of Spanish colonial rule in Mexico, the Hacendados are landlords of vast estates that dominate the Mexican countryside. These 'Haciendas' use the best lands to grow the most profitable cash crops for export to Europe and the United States."
+ ig_cientificos:0 "Cientificos"
+ ig_cientificos_desc:0 "The Cientificos are a cabal of banking, business, and railroad magnates invested in the economic modernization of Mexico. They advocate for a platform of industrial expansion funded by foreign loans."
+ ig_campesinos:0 "Campesinos"
+ ig_campesinos_desc:0 "The Campesinos are peasant farmers of rural Mexico, raising crops on communal village fields as they have since before Cortez- or working for wages on the hacienda estates that continue to seize the most fertile land. They desire legal recognition and protection of their ancient way of life."    
+
+
