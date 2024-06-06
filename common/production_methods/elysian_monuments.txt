@@ -7,7 +7,6 @@ pm_default_building_chichen_itza_temple_city = {
 	country_modifiers = {
 		unscaled = {
 			country_prestige_add = 25
-			building_government_administration_throughput_mult = 0.25
 			country_bureaucracy_mult = 0.05
 			country_authority_add = 50
 		}
@@ -23,6 +22,7 @@ pm_default_building_chichen_itza_temple_city = {
 	building_modifiers = {
 		workforce_scaled = {	
 			goods_output_services_add = 50
+			country_bureaucracy_add = 35
 		}
 		level_scaled = {
 			building_employment_clergymen_add = 500
@@ -38,7 +38,6 @@ pm_default_building_tikal_temple_city = {
 	country_modifiers = {
 		unscaled = {
 			country_prestige_add = 25
-			building_government_administration_throughput_mult = 0.25
 			country_bureaucracy_mult = 0.05
 			country_authority_add = 50
 		}
@@ -54,6 +53,7 @@ pm_default_building_tikal_temple_city = {
 	building_modifiers = {
 		workforce_scaled = {	
 			goods_output_services_add = 50
+			country_bureaucracy_add = 35
 		}
 		level_scaled = {
 			building_employment_clergymen_add = 500
@@ -69,7 +69,6 @@ pm_default_building_mexico_temple_city = {
 	country_modifiers = {
 		unscaled = {
 			country_prestige_add = 25
-			building_government_administration_throughput_mult = 0.25
 			country_bureaucracy_mult = 0.05
 			country_authority_add = 50
 		}
@@ -85,6 +84,7 @@ pm_default_building_mexico_temple_city = {
 	building_modifiers = {
 		workforce_scaled = {	
 			goods_output_services_add = 50
+			country_bureaucracy_add = 35
 		}
 		level_scaled = {
 			building_employment_clergymen_add = 500
@@ -127,7 +127,6 @@ pm_default_building_imperial_palace = {
 			country_prestige_add = 25
 			country_legitimacy_headofstate_add = 20
 			country_authority_add = 50
-			building_government_administration_throughput_mult = 0.25
 			country_bureaucracy_mult = 0.05
 		}
 	}
@@ -135,6 +134,7 @@ pm_default_building_imperial_palace = {
 	building_modifiers = {
 		workforce_scaled = {	
 			goods_output_services_add = 50
+			country_bureaucracy_add = 35
 		}
 		level_scaled = {
 			building_employment_clerks_add = 1000
@@ -302,7 +302,6 @@ pm_default_building_cahokia_halls = {
 
 	state_modifiers = {
 		unscaled = {
-			building_government_administration_throughput_mult = 0.25
 			country_bureaucracy_mult = 0.05
 			country_bureaucrats_pol_str_mult = 0.1
 		}
@@ -311,6 +310,7 @@ pm_default_building_cahokia_halls = {
 	building_modifiers = {
 		workforce_scaled = {	
 			goods_output_services_add = 50
+			country_bureaucracy_add = 35
 		}
 		level_scaled = {
 			building_employment_clerks_add = 500
