@@ -1121,6 +1121,7 @@ STATES = {
 		}
 		
 		add_homeland = cu:australian
+		add_homeland = cu:australiska
 		add_homeland = cu:aborigine
 	}
 	s:STATE_VICTORIA = {
@@ -1133,6 +1134,7 @@ STATES = {
 		
 		
 		add_homeland = cu:australian
+		add_homeland = cu:australiska
 		add_homeland = cu:aborigine		
 	}
 
@@ -1145,6 +1147,7 @@ STATES = {
 		}
 
 		add_homeland = cu:australian
+		add_homeland = cu:australiska
 		add_homeland = cu:tasmanian
 		add_homeland = cu:aborigine		
 	
@@ -1158,15 +1161,17 @@ STATES = {
 		}
 		
 		add_homeland = cu:australian
+		add_homeland = cu:australiska
 		add_homeland = cu:aborigine		
 	}
 	s:STATE_SOUTH_AUSTRALIA = {
 		create_state = {
-			country = c:KAU
+			country = c:WAS
 			owned_provinces = { "x000A74" "x034AED" "x0387DD" "x0515C9" "x0A244B" "x0ADA39" "x0C8D77" "x0F611D" "x0FB84C" "x109D07" "x11DFCF" "x13FCCF" "x14788A" "x1544D6" "x16ADA2" "x170D7B" "x1A3774" "x1AD5E0" "x1E1B36" "x239C93" "x27B268" "x31B22C" "x329F07" "x3458BA" "x36CF71" "x3811BC" "x39A6C9" "x39DBC4" "x3B4AD8" "x3E5829" "x3FACBE" "x4064E2" "x413343" "x45A37A" "x488015" "x4C87B3" "x4DAD39" "x502784" "x540341" "x54AE30" "x55E395" "x57BC85" "x5A10AA" "x5C62A7" "x5CDC4E" "x621622" "x62317E" "x668EAE" "x66EEA6" "x6E4619" "x6EEB36" "x6F472E" "x7091EC" "x74D3E6" "x7C42A3" "x7D830B" "x7EEBE6" "x7FE76C" "x83A20F" "x847715" "x854A14" "x85A009" "x9060CF" "x90DF50" "x95B9BE" "x95EBE6" "x971496" "x983247" "x9EB5BD" "xA0BAD0" "xA674B5" "xADB94A" "xAF3598" "xBAA4BE" "xBCF86D" "xBD0F2C" "xC15F2D" "xC52B90" "xC53983" "xC58F87" "xC6D0A0" "xC7963D" "xC9E461" "xCBE0D5" "xCE802D" "xD0A0D0" "xD18B39" "xD471D4" "xD4AFDA" "xD53092" "xD67B75" "xD8FB8A" "xDAAAF4" "xDAC75B" "xE02385" "xE5B909" "xE5CBE7" "xEA6027" "xEB1C69" "xED145F" "xEEF3B9" "xF0DDF6" "xF11F8E" "xF19096" "xF21007" "xF683D5" "xFA184F"  
 			}
 		}
 		add_homeland = cu:australian
+		add_homeland = cu:australiska
 		add_homeland = cu:aborigine
 	}
 	s:STATE_WESTERN_AUSTRALIA = {
@@ -1176,12 +1181,13 @@ STATES = {
 			}
 		}
 		add_homeland = cu:australian
+		add_homeland = cu:australiska
 		add_homeland = cu:aborigine
 		add_claim = c:WAS
 	}
 	s:STATE_NORTHERN_TERRITORY = {
 		create_state = {
-			country = c:DEI
+			country = c:WAS
 			owned_provinces = { "x12193D" "x143C50" "x8FF2E7" "x64AF7A" "x824886" "x269611" "x01BF32" "x02A1A2" "x044521" "x048DBF" "x053DF1" "x0628FD" "x0B16CD" "x0E41FD" "x1629D3" "x1648A3" 
 			"x184431" "x19818E" "x1A0031" "x1A8F1A" "x1B6F15" "x1B7DC9" "x1D1BC2" "x2007B7"	"x22DF3C" "x237938" "x251E51" "x272FAE" "x274A30" "x27E1A1" "x284A61" "x2A1C9C" "x2A320F" 
 			"x2C0C71" "x2E031D" "x30DCC6" "x32E24B" "x32ECDB" "x3345D6" "x35DA70" "x360826" "x365248" "x3741F7" "x3F7FA7" "x3F942C" "x422FAA" "x466A3B" "x48E0B1" "x496C63" "x4F4743" 
@@ -1192,6 +1198,7 @@ STATES = {
 			}
 		}
 		add_homeland = cu:australian
+		add_homeland = cu:australiska
 		add_homeland = cu:aborigine
 	}
 	s:STATE_CENTRAL_AUSTRALIA = {
@@ -1219,6 +1226,7 @@ STATES = {
 			}
 		}
 		add_homeland = cu:australian
+		add_homeland = cu:australiska
 		add_homeland = cu:aborigine
 	}
 	s:STATE_NORTH_ISLAND = {
@@ -1240,10 +1248,8 @@ STATES = {
 			xE353A8 xDFB440 xE7C924 xA1C4D2 xD51A40 x5A7F48 x396221 x8EE07C x6A5DDE xC5AD14 x92A994 x9CAE58 x96DD26 x60236D x3FE668 x51B446 x3B56F3 x050D8E x21E8F0 x50C0B0 x8385E4 xFF586D x1C59CC x102244 x738A48 x586231 x0C69F3 xA1D52F x2B0CF4 xD0FA16 x0E784F x6F5B60 x86A979 x4122F8 x071CF7 x561832 xE2064F xD8C27E x1D5F99 x998BCA x5040B0 }
 		}
 		
-		add_homeland = cu:australian
 		add_homeland = cu:maori
 		
-		add_claim = c:NSW
 		add_claim = c:UNT		
 	}
 	s:STATE_EAST_MICRONESIA = {
@@ -6724,6 +6730,7 @@ STATES = {
 		}
 		
 		add_homeland = cu:czech
+		add_homeland = cu:south_german
 	}
 	s:STATE_MORAVIA = {
 		create_state = {
@@ -6732,6 +6739,7 @@ STATES = {
 		}
 
 		add_homeland = cu:czech
+		add_homeland = cu:south_german
 	}
 	s:STATE_CENTRAL_HUNGARY = {
 		create_state = {
@@ -6781,6 +6789,7 @@ STATES = {
 		}
 		
 		add_homeland = cu:slovene
+		add_homeland = cu:south_german
 	}
 	s:STATE_DELVIDEK = {
 		create_state = {
@@ -6880,6 +6889,7 @@ STATES = {
 		
 		add_homeland = cu:polish
 		add_homeland = cu:sorb
+		add_homeland = cu:north_german
 	}
 	s:STATE_BRANDENBURG = {
 		create_state = {
