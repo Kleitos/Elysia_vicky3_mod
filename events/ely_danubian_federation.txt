@@ -1,0 +1,1171 @@
+﻿namespace = danubian_fed
+namespace = danubian_revolts
+namespace = danubian_breakup
+namespace = danubian_hero
+namespace = danubian_ultimatum
+namespace = danubian_culture
+namespace = danubian_wars
+
+
+danubian_fed.1 = {
+	type = country_event
+	placement = root
+	
+	title = danubian_fed.1.t
+	desc = danubian_fed.1.d
+	flavor = danubian_fed.1.f
+
+	duration = 3
+	
+	event_image = {
+		video = "votp_conspiring"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	trigger = {
+	}
+	
+	immediate = {
+	}
+
+	option = {
+		name = danubian_fed.1.a
+		add_journal_entry = { type = je_austrian_destiny }
+	}
+}
+
+danubian_fed.2 = {
+	type = country_event
+	placement = root
+	
+	title = danubian_fed.2.t
+	desc = danubian_fed.2.d
+	flavor = danubian_fed.2.f
+
+	duration = 3
+	
+	event_image = {
+		video = "unspecific_politicians_arguing"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	trigger = {
+	}
+	
+	immediate = {
+		set_variable = {
+			name = danubian_fed_var
+			value = 0
+		}
+		set_variable = {
+			name = danubian_storm_var
+			value = 0
+		}
+		if = {
+			limit = { exists = s:STATE_STYRIA.region_state:BAV }
+			s:STATE_STYRIA.region_state:BAV = { set_state_owner = c:AUS }
+		}
+		if = {
+			limit = { exists = s:STATE_TYROL.region_state:BAV }
+			s:STATE_TYROL.region_state:BAV = { set_state_owner = c:AUS }
+		}
+		if = {
+			limit = { exists = s:STATE_AUSTRIA.region_state:BAV }
+			s:STATE_AUSTRIA.region_state:BAV = { set_state_owner = c:AUS }
+		}
+		if = {
+			limit = { exists = s:STATE_SOUTH_TYROL.region_state:BAV }
+			s:STATE_SOUTH_TYROL.region_state:BAV = { set_state_owner = c:AUS }
+		}
+	}
+
+	option = {
+		name = danubian_fed.2.a
+		ai_chance = {
+			base = 5
+		}
+		add_journal_entry = { type = je_danubian_federation }
+		add_journal_entry = { type = je_dual_monarchy }
+		add_journal_entry = { type = je_integrate_slovenes }
+		add_journal_entry = { type = je_integrate_croats }
+		add_journal_entry = { type = je_pacify_serbs }
+		add_journal_entry = { type = je_pacify_romanians }
+		add_journal_entry = { type = je_danubian_storm }
+		trigger_event = { id = danubian_ultimatum.1 months = 60 }	
+		c:AUS = {
+			remove_diplomatic_pact = {
+				country = c:BYZ
+				type = defensive_pact
+			}
+			change_relations = {
+				country = c:BYZ
+				value = -100
+			}
+			set_secret_goal = {
+				country = c:BYZ
+				secret_goal = antagonize			
+			}
+		}
+		c:BYZ = {
+			remove_diplomatic_pact = {
+				country = c:AUS
+				type = defensive_pact
+			}
+			change_relations = {
+				country = c:AUS
+				value = -100
+			}
+			set_secret_goal = {
+				country = c:AUS
+				secret_goal = antagonize			
+			}
+		}
+	}
+
+	option = {
+		name = danubian_fed.2.b
+		default_option = yes
+		ai_chance = {
+			base = 95
+		}
+		trigger_event = { id = danubian_breakup.1 }	
+	}
+}
+
+danubian_fed.3 = {
+	type = country_event
+	placement = root
+	
+	title = danubian_fed.3.t
+	desc = danubian_fed.3.d
+	flavor = danubian_fed.3.f
+
+	duration = 3
+	
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	trigger = {
+	}
+	
+	immediate = {
+	}
+
+	option = {
+		name = danubian_fed.3.a
+		change_tag = KUK
+		remove_modifier = austria_multicultural
+	}
+}
+
+danubian_ultimatum.1 = {
+	type = country_event
+	placement = root
+	
+	title = danubian_fed.1.t
+	desc = danubian_fed.1.d
+	flavor = danubian_fed.1.f
+
+	duration = 3
+	
+	event_image = {
+		video = "unspecific_politicians_arguing"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	trigger = {
+	}
+	
+	immediate = {
+	}
+
+	option = {
+		name = danubian_ultimatum.1.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+		set_capital = STATE_CENTRAL_HUNGARY
+		if = {
+			limit = {
+				NOR = { 
+					has_law = law_type:law_racial_segregation
+					has_law = law_type:law_cultural_exclusion
+				}
+			}
+		activate_law = law_type:law_racial_segregation
+		}
+	}
+
+	option = {
+		name = danubian_ultimatum.1.b
+		ai_chance = {
+			base = 0
+		}
+		trigger_event = { id = danubian_breakup.1 }	
+	}
+}
+
+#REVOLTS#
+
+danubian_revolts.1 = {
+	type = country_event
+	placement = root
+	
+	title = danubian_revolts.1.t
+	desc = danubian_revolts.1.d
+	flavor = danubian_revolts.1.f
+
+	duration = 3
+	
+	event_image = {
+		video = "votp_conspiring"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	trigger = {
+	}
+	
+	immediate = {
+	}
+
+	option = {
+		name = danubian_revolts.1.a
+		add_journal_entry = { type = je_avert_serb_mutiny }
+		add_journal_entry = { type = je_avert_italian_mutiny }
+	}
+}
+
+#BREAKUP#
+
+danubian_breakup.1 = {
+	type = country_event
+	placement = root
+	
+	title = danubian_breakup.1.t
+	desc = danubian_breakup.1.d
+	flavor = danubian_breakup.1.f
+
+	duration = 3
+	
+	event_image = {
+		video = "europenorthamerica_springtime_of_nations"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	trigger = {
+	}
+	
+	immediate = {
+		remove_primary_culture = cu:hungarian
+		remove_primary_culture = cu:slovene
+		remove_primary_culture = cu:croat
+		remove_primary_culture = cu:romanian
+		if = {
+			limit = {
+				NOT = { exists = c:HUN }
+				exists = s:STATE_CENTRAL_HUNGARY.region_state:AUS
+			}
+			create_country = {
+				tag = HUN
+				origin = c:AUS
+				state = s:STATE_CENTRAL_HUNGARY.region_state:AUS
+			}
+		}
+		else_if = {
+			limit = {
+				exists = c:HUN
+				exists = s:STATE_CENTRAL_HUNGARY.region_state:AUS
+			}
+			s:STATE_CENTRAL_HUNGARY.region_state:AUS = { set_state_owner = c:HUN }
+		}
+		else_if = {
+			limit = {
+				NOT = { exists = c:HUN }
+			}
+			random_country = {
+				limit = {
+					is_secessionist = yes
+					any_scope_state = {
+						state_region = s:STATE_CENTRAL_HUNGARY
+					}
+				}
+				change_tag = HUN
+			}
+		}
+		if = {
+			limit = { exists = s:STATE_BEKES.region_state:AUS }
+			s:STATE_BEKES.region_state:AUS = { set_state_owner = c:HUN }
+		}
+		if = {
+			limit = { exists = s:STATE_TRANSDANUBIA.region_state:AUS }
+			s:STATE_TRANSDANUBIA.region_state:AUS = { set_state_owner = c:HUN }
+		}
+		if = {
+			limit = { exists = s:STATE_DELVIDEK.region_state:AUS }
+			s:STATE_DELVIDEK.region_state:AUS = { set_state_owner = c:HUN }
+		}
+		if = {
+			limit = { exists = s:STATE_BANAT.region_state:AUS }
+			s:STATE_BANAT.region_state:AUS = { set_state_owner = c:HUN }
+		}
+		if = {
+			limit = { exists = s:STATE_SOUTHERN_TRANSYLVANIA.region_state:AUS }
+			s:STATE_SOUTHERN_TRANSYLVANIA.region_state:AUS = { set_state_owner = c:HUN }
+		}
+		if = {
+			limit = { exists = s:STATE_NORTHERN_TRANSYLVANIA.region_state:AUS }
+			s:STATE_NORTHERN_TRANSYLVANIA.region_state:AUS = { set_state_owner = c:HUN }
+		}
+		if = {
+			limit = { exists = s:STATE_SLAVONIA.region_state:AUS }
+			s:STATE_SLAVONIA.region_state:AUS = { set_state_owner = c:HUN }
+		}
+		if = {
+			limit = { exists = s:STATE_CROATIA.region_state:AUS }
+			s:STATE_CROATIA.region_state:AUS = { set_state_owner = c:HUN }
+		}
+		if = {
+			limit = { exists = s:STATE_DALMATIA.region_state:AUS }
+			s:STATE_DALMATIA.region_state:AUS = { set_state_owner = c:HUN }
+		}
+		if = {
+			limit = { exists = s:STATE_BOSNIA.region_state:AUS }
+			s:STATE_BOSNIA.region_state:AUS = { set_state_owner = c:HUN }
+		}
+	}
+	
+
+	option = {
+		name = danubian_breakup.1.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}		
+	}
+	
+	option = {
+		name = danubian_breakup.1.b
+		play_as = c:HUN
+		c:HUN = {
+			add_modifier = {
+				name = war_for_independence
+				months = normal_modifier_time
+			}
+			activate_law = law_type:law_presidential_republic
+			activate_law = law_type:law_universal_suffrage
+			activate_law = law_type:law_homesteading
+				create_character = {
+					first_name = "Janos"
+					last_name = "Damjanich"
+					historical = yes
+					birth_date = 1804.12.8 
+					culture = cu:serb
+					is_general = yes
+					religion = orthodox
+					interest_group = ig_inteligentsia
+					ideology = ideology_radical
+					traits = { 
+						expert_offensive_planner 
+						surveyor 
+					}
+				}
+				create_character = {
+					first_name = "Bertalan"
+					last_name = "Szemere"
+					historical = yes
+					birth_date = 1812.5.2
+					culture = cu:hungarian
+					ruler = yes
+					religion = catholic
+					noble = yes
+					interest_group = ig_rural_folk
+					ideology = ideology_republican
+					traits = { 
+						persistent 
+						firebrand 
+						meticulous
+					}
+				}
+				create_character = {
+					first_name = "Lajos"			
+					last_name = "Batthyany"
+					historical = yes
+					birth_date = 1807.2.10 
+					culture = cu:hungarian
+					is_general = yes
+					religion = catholic
+					interest_group = ig_armed_forces
+					ideology = ideology_reformer
+					ig_leader = yes
+					traits = { 
+						stalwart_defender 
+						experienced_artillery_commander
+						basic_political_operator
+					}
+				}
+				create_character = {
+					first_name = "Lajos"			
+					last_name = "Aulich"
+					historical = yes
+					birth_date = 1793.8.25 
+					culture = cu:hungarian
+					is_general = yes
+					religion = catholic
+					interest_group = ig_armed_forces
+					ideology = ideology_jingoist_leader
+					traits = { 
+						resupply_commander 
+						plains_commander 
+					}
+				}
+			}
+	}
+}
+
+# A New National Hero
+danubian_hero.1 = {
+	type = country_event
+	placement = scope:state
+	
+	title = danubian_hero.1.t
+	desc = danubian_hero.1.d
+	flavor = danubian_hero.1.f
+	
+	gui_window = event_window_1char_tabloid
+
+	left_icon = scope:danubian_national_hero
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 3
+
+	cooldown = { months = normal_modifier_time }
+	
+	trigger = {
+		# triggered by on_action on_battle_won pulse
+		has_journal_entry = je_danubian_federation
+		OR = { 
+			AND = {
+				NOT = { has_variable = slovene_hero_var }
+				NOT = { has_variable = slovenes_integrated }
+			}
+			AND = {
+				NOT = { has_variable = croat_hero_var }
+				NOT = { has_variable = croats_integrated }
+			}
+		}
+		# there exists a commander on the root side to be the national hero
+		OR = {
+			scope:attacker = {
+				owner = ROOT
+			}
+			scope:defender ?= {
+				owner = ROOT
+			}
+		}
+		scope:enemy_country = {
+			NOR = {
+				country_has_primary_culture = cu:slovene
+				country_has_primary_culture = cu:croat
+			}
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				scope:attacker = {
+					owner = ROOT
+				}
+			}
+			scope:attacker = {
+				save_scope_as = danubian_national_hero
+			}
+		}
+		else = {
+			scope:defender = {
+				save_scope_as = danubian_national_hero
+			}
+		}
+		random_list = {
+			1 = {
+				trigger = { 
+				 	AND = {
+				 		NOT = { has_variable = slovene_hero_var }
+				 		NOT = { has_variable = slovenes_integrated }
+				 	}
+				}
+				create_character = {
+					ig_leader = no
+					female = no
+					is_general = yes
+					culture = cu:slovene
+					on_created = {
+						set_variable = {
+							name = danubian_hero_scope
+						}
+					}
+				}
+			}
+			1 = {
+				trigger = {  
+				 	AND = {
+				 		NOT = { has_variable = croat_hero_var }
+				 		NOT = { has_variable = croats_integrated }
+				 	}
+				}
+				create_character = {
+					ig_leader = no
+					female = no
+					is_general = yes
+					culture = cu:croat
+					on_created = {
+						set_variable = {
+							name = danubian_hero_scope
+						}
+					}
+				}
+			}
+		}
+
+		random_scope_character = { 
+			limit = { has_variable = danubian_hero_scope }
+			save_scope_as = danubian_national_hero
+			culture = {
+				save_scope_as = danubian_national_hero_culture
+			}
+		}
+	}
+
+	option = {
+		name = danubian_hero.1.a
+		default_option = yes
+
+		custom_tooltip = danubian_hero.1.hero_clarification
+
+		if = {
+			limit = {
+				scope:danubian_national_hero = {
+					culture = {
+						cu:slovene = this
+					}
+				}
+			}
+			set_variable = slovene_hero_var
+		}
+		else_if = {
+			limit = {
+				scope:danubian_national_hero = {
+					culture = {
+						cu:croat = this
+					}
+				}
+			}
+			set_variable = croat_hero_var
+		}
+
+		scope:danubian_national_hero = {
+			if = {
+				limit = {
+					NOR = {
+						has_trait = traditionalist_commander
+						has_trait = popular_commander
+						has_trait = celebrity_commander
+					}
+				}
+				add_trait = traditionalist_commander
+			}
+			else_if = {
+				limit = {
+					has_trait = traditionalist_commander
+				}
+				remove_trait = traditionalist_commander
+				add_trait = popular_commander
+			}
+			else_if = {
+				limit = {
+					has_trait = popular_commander
+				}
+				remove_trait = popular_commander
+				add_trait = celebrity_commander
+			}
+		}
+	}
+
+
+	option = {
+		name = danubian_hero.1.b
+
+		scope:danubian_national_hero = {
+			kill_character = yes
+		}
+	}
+}
+
+danubian_culture.1 = {
+	type = country_event
+	placement = root
+	
+	title = danubian_culture.1.t
+	desc = danubian_culture.1.d
+	flavor = danubian_culture.1.f
+
+	duration = 3
+	
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	duration = 3
+
+	immediate = {
+	}
+
+	option = {
+		name = danubian_culture.1.a
+		default_option = yes
+		add_primary_culture = cu:slovene
+		add_loyalists = {
+			culture = cu:slovene
+			value = 0.2
+		}
+	}
+}	
+
+danubian_culture.2 = {
+	type = country_event
+	placement = root
+	
+	title = danubian_culture.2.t
+	desc = danubian_culture.2.d
+	flavor = danubian_culture.2.f
+
+	duration = 3
+	
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	duration = 3
+
+	immediate = {
+	}
+
+	option = {
+		name = danubian_culture.2.a
+		default_option = yes
+		add_primary_culture = cu:croat
+		add_loyalists = {
+			culture = cu:croat
+			value = 0.2
+		}
+	}
+}	
+
+danubian_culture.3 = {
+	type = country_event
+	placement = root
+	
+	title = danubian_culture.3.t
+	desc = danubian_culture.3.d
+	flavor = danubian_culture.3.f
+
+	duration = 3
+	
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	duration = 3
+
+	immediate = {
+		c:AUS = {
+			annex = c:WAL
+			annex = c:MOL
+		}
+	}
+
+	option = {
+		name = danubian_culture.2.a
+		default_option = yes
+		add_primary_culture = cu:romanian
+		add_loyalists = {
+			culture = cu:romanian
+			value = 0.2
+		}
+	}
+}	
+
+danubian_wars.1 = {
+	type = country_event
+	placement = root
+
+	title = danubian_wars.1.t
+	desc = danubian_wars.1.d
+	flavor = danubian_wars.1.f
+
+	duration = 3
+
+	event_image = {
+		video = "unspecific_politicians_arguing"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	trigger = {
+		exists = c:AUS
+		this = c:AUS 
+		has_variable = serbs_pacified
+		has_variable = romanian_pacified
+		OR = {
+			exists = c:GER
+			c:GER ?= {
+				is_country_alive = yes
+			}
+		}
+		OR = {
+			exists = c:ITA
+			c:ITA ?= {
+				is_country_alive = yes
+			}
+		}
+		OR = {
+			exists = c:BYZ
+			c:BYZ ?= {
+				is_country_alive = yes
+			}
+		}
+		OR = {
+			exists = c:RUS
+			c:RUS ?= {
+				is_country_alive = yes
+			}
+		}
+	}
+
+	immediate = {
+		s:STATE_DELVIDEK = {
+			add_claim = c:BYZ
+		}
+		s:STATE_BANAT = {
+			add_claim = c:BYZ
+		}
+		s:STATE_BOSNIA = {
+			add_claim = c:BYZ
+		}
+		s:STATE_NORTHERN_SERBIA = {
+			add_claim = c:BYZ
+		}
+		s:STATE_DALMATIA = {
+			add_claim = c:BYZ
+		}
+		s:STATE_CROATIA = {
+			add_claim = c:BYZ
+		}
+		s:STATE_SLAVONIA = {
+			add_claim = c:BYZ
+		}
+		s:STATE_SOUTH_TYROL = {
+			add_claim = c:ITA
+		}
+		s:STATE_DALMATIA = {
+			add_claim = c:ITA
+		}
+		s:STATE_ISTRIA = {
+			add_claim = c:ITA
+		}
+		s:STATE_STYRIA = {
+			add_claim = c:GER
+		}
+		s:STATE_TYROL = {
+			add_claim = c:GER
+		}
+		s:STATE_AUSTRIA = {
+			add_claim = c:GER
+		}
+		s:STATE_SOUTH_TYROL = {
+			add_claim = c:GER
+		}
+		s:STATE_SLOVENIA = {
+			add_claim = c:GER
+		}
+	}
+	option = {
+		name = danubian_wars.1.a
+		default_option = yes		
+		add_journal_entry = { type = je_danube_control_over_serbia }
+		add_journal_entry = { type = je_danube_control_over_romania }
+		add_journal_entry = { type = je_danube_control_over_dalmatia }
+		add_journal_entry = { type = je_danube_control_over_austria }
+		c:BYZ = {
+			trigger_event = { id = danubian_wars.2 months = 36}	
+		}	
+		c:RUS = {
+			trigger_event = { id = danubian_wars.3 months = 12}	
+		}
+		c:ITA = {
+			trigger_event = { id = danubian_wars.4 months = 96}	
+		}
+		c:GER = {
+			trigger_event = { id = danubian_wars.5 monts = 72}	
+		}
+	}
+}
+
+danubian_wars.2 = {
+	type = country_event
+	placement = root
+
+	title = danubian_wars.2.t
+	desc = danubian_wars.2.d
+	flavor = danubian_wars.2.f
+
+	duration = 3
+
+	event_image = {
+		video = "europenorthamerica_before_the_battle"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	trigger = {
+	}
+
+	immediate = {
+		c:AUS = {
+			set_variable = {
+				name = danube_serb_war
+			}	
+		}	
+	}
+	option = {
+		name = danubian_wars.2.a
+		default_option = yes	
+		create_diplomatic_play = {
+			target_country = c:AUS	
+			type = dp_return_state
+			target_state = s:STATE_NORTHERN_SERBIA.region_state:AUS
+			escalation = 81
+			add_war_goal = {
+				holder = c:BYZ
+				type = return_state
+				target_state = s:STATE_DELVIDEK.region_state:AUS
+			}
+			add_war_goal = {
+				holder = c:BYZ
+				type = return_state
+				target_state = s:STATE_BANAT.region_state:AUS
+			}
+			add_war_goal = {
+				holder = c:BYZ
+				type = return_state
+				target_state = s:STATE_BOSNIA.region_state:AUS
+			}
+			add_war_goal = {
+				holder = c:BYZ
+				type = return_state
+				target_state = s:STATE_DALMATIA.region_state:AUS
+			}
+			add_war_goal = {
+				holder = c:BYZ
+				type = return_state
+				target_state = s:STATE_CROATIA.region_state:AUS
+			}
+			add_war_goal = {
+				holder = c:BYZ
+				type = return_state
+				target_state = s:STATE_SLAVONIA.region_state:AUS
+			}
+			add_war_goal = {
+				holder = c:AUS
+				type = humiliation
+				target_country = c:BYZ
+			}
+			add_war_goal = {
+				holder = c:AUS
+				type = war_reparations
+				target_country = c:BYZ
+			}
+			add_war_goal = {
+				holder = c:BYZ
+				type = humiliation
+				target_country = c:AUS
+			}
+			add_war_goal = {
+				holder = c:BYZ
+				type = war_reparations
+				target_country = c:AUS
+			}
+		}	
+	}
+}
+
+danubian_wars.3 = {
+	type = country_event
+	placement = root
+
+	title = danubian_wars.3.t
+	desc = danubian_wars.3.d
+	flavor = danubian_wars.3.f
+
+	duration = 3
+
+	event_image = {
+		video = "europenorthamerica_before_the_battle"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	trigger = {
+	}
+
+	immediate = {
+		c:AUS = {
+			set_variable = {
+				name = danube_romania_war
+			}	
+		}
+	}
+	option = {
+		name = danubian_wars.3.a
+		default_option = yes	
+		create_diplomatic_play = {
+			target_country = c:AUS	
+			type = dp_liberate_country
+			escalation = 81
+			country_definition=ROM	
+			add_war_goal = {
+				holder = c:AUS
+				type = humiliation
+				target_country = c:RUS
+			}
+			add_war_goal = {
+				holder = c:AUS
+				type = war_reparations
+				target_country = c:RUS
+			}
+			add_war_goal = {
+				holder = c:RUS
+				type = humiliation
+				target_country = c:AUS
+			}
+			add_war_goal = {
+				holder = c:RUS
+				type = war_reparations
+				target_country = c:AUS
+			}
+		}	
+	}	
+}
+
+danubian_wars.4 = {
+	type = country_event
+	placement = root
+
+	title = danubian_wars.4.t
+	desc = danubian_wars.4.d
+	flavor = danubian_wars.4.f
+
+	duration = 3
+
+	event_image = {
+		video = "europenorthamerica_before_the_battle"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	trigger = {
+	}
+
+	immediate = {
+		c:AUS = {
+			set_variable = {
+				name = danube_italian_war
+			}	
+		}
+	}
+	option = {
+		name = danubian_wars.4.a
+		default_option = yes		
+		create_diplomatic_play = {
+			target_country = c:AUS	
+			type = dp_return_state
+			target_state = s:STATE_ISTRIA.region_state:AUS
+			escalation = 81
+			add_war_goal = {
+				holder = c:ITA
+				type = return_state
+				target_state = s:STATE_DALMATIA.region_state:AUS
+			}
+			add_war_goal = {
+				holder = c:ITA
+				type = return_state
+				target_state = s:STATE_SOUTH_TYROL.region_state:AUS
+			}
+			add_war_goal = {
+				holder = c:ITA
+				type = return_state
+				target_state = s:STATE_BOSNIA.region_state:AUS
+			}
+			add_war_goal = {
+				holder = c:ITA
+				type = return_state
+				target_state = s:STATE_DALMATIA.region_state:AUS
+			}
+			add_war_goal = {
+				holder = c:ITA
+				type = return_state
+				target_state = s:STATE_CROATIA.region_state:AUS
+			}
+			add_war_goal = {
+				holder = c:ITA
+				type = return_state
+				target_state = s:STATE_SLAVONIA.region_state:AUS
+			}
+			add_war_goal = {
+				holder = c:AUS
+				type = humiliation
+				target_country = c:ITA
+			}
+			add_war_goal = {
+				holder = c:AUS
+				type = war_reparations
+				target_country = c:ITA
+			}
+			add_war_goal = {
+				holder = c:ITA
+				type = humiliation
+				target_country = c:AUS
+			}
+			add_war_goal = {
+				holder = c:ITA
+				type = war_reparations
+				target_country = c:AUS
+			}
+		}	
+	}
+}
+
+danubian_wars.5 = {
+	type = country_event
+	placement = root
+
+	title = danubian_wars.5.t
+	desc = danubian_wars.5.d
+	flavor = danubian_wars.5.f
+
+	duration = 3
+
+	event_image = {
+		video = "europenorthamerica_before_the_battle"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	trigger = {
+	}
+
+	immediate = {
+		c:AUS = {
+			set_variable = {
+				name = danube_german_war
+			}	
+		}
+	}
+	option = {
+		name = danubian_wars.5.a
+		default_option = yes
+		create_diplomatic_play = {
+			target_country = c:AUS	
+			type = dp_return_state
+			target_state = s:STATE_AUSTRIA.region_state:AUS
+			escalation = 81
+			add_war_goal = {
+				holder = c:GER
+				type = return_state
+				target_state = s:STATE_STYRIA.region_state:AUS
+			}
+			add_war_goal = {
+				holder = c:GER
+				type = return_state
+				target_state = s:STATE_SOUTH_TYROL.region_state:AUS
+			}
+			add_war_goal = {
+				holder = c:GER
+				type = return_state
+				target_state = s:STATE_TYROL.region_state:AUS
+			}
+			add_war_goal = {
+				holder = c:GER
+				type = return_state
+				target_state = s:STATE_SLOVENIA.region_state:AUS
+			}
+			add_war_goal = {
+				holder = c:AUS
+				type = humiliation
+				target_country = c:GER
+			}
+			add_war_goal = {
+				holder = c:AUS
+				type = war_reparations
+				target_country = c:GER
+			}
+			add_war_goal = {
+				holder = c:GER
+				type = humiliation
+				target_country = c:AUS
+			}
+			add_war_goal = {
+				holder = c:GER
+				type = war_reparations
+				target_country = c:AUS
+			}
+		}			
+	}
+}

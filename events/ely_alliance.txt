@@ -204,12 +204,6 @@ ely_alliance.2 = {
 			base = 100
 		}
 		c:ELY = {
-			create_diplomatic_pact = {
-				country = c:JAP
-				type = customs_union
-			}
-		}
-		c:ELY = {
 			set_secret_goal = {
 				country = c:JAP
 				secret_goal = befriend			

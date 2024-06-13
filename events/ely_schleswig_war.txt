@@ -280,11 +280,8 @@ palatine_house.2 = {
 		ai_chance = {
 			base = 100
 		}
-		c:BAV = {
-			remove_diplomatic_pact = {
-				country = c:BOH
-				type = personal_union
-			}
+		c:BOH = {
+			annex = c:KRA
 		}
 		create_diplomatic_play = {
 			target_country = c:HAN

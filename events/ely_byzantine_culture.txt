@@ -396,10 +396,6 @@ byzantine_failure.1 = {
 
 	option = {
 		name = byzantine_failure.1.b
-		default_option = yes
-		ai_chance = {
-			base = 100
-		}
 		play_as = c:BUL
 	}
 }
@@ -497,10 +493,6 @@ byzantine_failure.2 = {
 
 	option = {
 		name = byzantine_failure.1.b
-		default_option = yes
-		ai_chance = {
-			base = 100
-		}
 		play_as = c:ALB
 	}
 }

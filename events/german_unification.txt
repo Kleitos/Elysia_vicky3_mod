@@ -42,7 +42,7 @@ german_unification.1 = {
 	
 		every_country = {
 			limit = {
-				country_rank < rank_value:great_power			
+				country_rank < rank_value:major_power			
 				OR = {
 					AND = {
 						root = { country_has_primary_culture = cu:north_german }
@@ -445,6 +445,10 @@ german_unification.5 = {
 			}
 		}
 		else_if = {
+			OR = {
+				NOT = { exists = c:AUS }
+				NOT = { THIS = c:AUS }
+			}
 			limit = { country_has_primary_culture = cu:south_german }
 			add_journal_entry = {
 				type = je_south_german_unification
