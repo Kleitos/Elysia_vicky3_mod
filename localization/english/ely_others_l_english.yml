@@ -39,6 +39,7 @@
  western_slavs:0 "Zapadnislav"
  yugoslavs:0 "Jugoslav"
  tasmanian:0 "Tasmanian"
+ australiska:0 "Australiska"
  
   ##Modifiers##
  isolation_violated:0 "Foreigner Trouble"
