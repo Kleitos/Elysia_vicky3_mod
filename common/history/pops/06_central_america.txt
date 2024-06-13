@@ -15,7 +15,6 @@
 			}
 			create_pop = {
 				culture = elysian
-				religion = mayan
 				size = 312000
 			}
 		}

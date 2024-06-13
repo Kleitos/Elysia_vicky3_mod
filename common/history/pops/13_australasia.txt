@@ -53,10 +53,14 @@
 		}
 	}
 	s:STATE_SOUTH_AUSTRALIA = {
-		region_state:KAU = {
+		region_state:WAS = {
 			create_pop = {
-				culture = australian
+				culture = norwegian
 				size = 300
+			}		
+			create_pop = {
+				culture = australiska
+				size = 700
 			}		
 			create_pop = {
 				culture = aborigine
@@ -71,16 +75,24 @@
 				size = 47500 # Pops previously allocated to Noongar: 21100.
 			}
 			create_pop = {
-				culture = australian
-				size = 3004
+				culture = australiska
+				size = 2496
+			}
+			create_pop = {
+				culture = swedish
+				size = 504
 			}
 		}
 	}
 	s:STATE_NORTHERN_TERRITORY = {
-		region_state:DEI = {
+		region_state:WAS = {
 			create_pop = {
-				culture = dutch
+				culture = finnish
 				size = 300
+			}		
+			create_pop = {
+				culture = australiska
+				size = 800
 			}		
 			create_pop = {
 				culture = aborigine

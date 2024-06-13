@@ -47,7 +47,6 @@
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 8000
 			}
 		}
@@ -68,7 +67,6 @@
 		region_state:ELY = {
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 19780
 			}
 			create_pop = {
@@ -90,12 +88,10 @@
 			}		
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 10000
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 10000
 			}
 		}
@@ -108,17 +104,14 @@
 			}			
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 8000
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 8000
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 4000
 			}
 		}
@@ -127,14 +120,12 @@
 		region_state:ELY = {
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 20000
 			}
 		}
 		region_state:NZP = {
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 40000
 			}
 		}
@@ -143,7 +134,6 @@
 		region_state:ELY = {
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 2000
 			}
 			create_pop = {
@@ -154,26 +144,22 @@
 		region_state:ARP = {
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 10000
 			}
 		}
 		region_state:UTE = {
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 4000
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 4000
 			}
 		}
 		region_state:ELY = {
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 1200
 			}
 			create_pop = {
@@ -186,26 +172,22 @@
 		region_state:ELY = {
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 12000
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 8000
 			}
 		}
 		region_state:LKT = {
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 6000
 			}
 		}
 		region_state:ARP = {
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 4000
 			}
 		}
@@ -214,33 +196,28 @@
 		region_state:ELY = {
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 10000
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 2000
 			}
 		}
 		region_state:ABS = {
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 28000
 			}
 		}
 		region_state:LKT = {
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 6000
 			}
 		}
 		region_state:BLF = {
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 14000
 			}
 		}
@@ -249,7 +226,6 @@
 		region_state:ELY = {
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 6000
 			}
 		}
@@ -257,12 +233,10 @@
 		region_state:LKT = {
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 30000
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 4000
 			}
 		}
@@ -271,14 +245,12 @@
 		region_state:LKT = {
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 34000
 			}
 		}
 		region_state:ELY = {
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 4000
 			}
 		}
@@ -288,26 +260,22 @@
 		region_state:ELY = {
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 4000
 			}
 		}
 		region_state:LKT = {
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 4000
 			}
 		}
 		region_state:PWN = {
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 10000
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 2000
 			}
 		}
@@ -316,21 +284,18 @@
 		region_state:ELY = {
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 12000
 			}
 		}
 		region_state:PWN = {
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 8000
 			}
 		}
 		region_state:COM = {
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 4000
 			}
 		}
@@ -339,24 +304,20 @@
 		region_state:SEQ = {
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 2000
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 8000
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 50800
 			}
 		}
 		region_state:COM = {
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 18000
 			}
 		}
@@ -373,7 +334,6 @@
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 30136
 			}
 		}
@@ -410,12 +370,10 @@
 		region_state:ELY = {
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 12000
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 8000
 			}
 			create_pop = {
@@ -428,14 +386,12 @@
 		region_state:ELY = {
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 16000
 			}
 		}
 		region_state:ELY = {
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 22000
 			}
 		}
@@ -444,7 +400,6 @@
 		region_state:ELY = {
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 8000
 			}
 			create_pop = {
@@ -477,12 +432,10 @@
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 12000
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 4000
 			}
 			create_pop = {
@@ -535,7 +488,6 @@
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 7200
 			}
 			create_pop = {
@@ -548,7 +500,6 @@
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 2528 # 1835 Cherokee Census "Henderson Roll"
 			}
 		}
@@ -573,12 +524,10 @@
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 1424 # 1835 Cherokee Census "Henderson Roll"
 			}
 			create_pop = {
-				culture = elysian
-				religion = totemism # Creeks tallied in the "Parsons and Albert Roll" after the 1832 Treaty of Cusseta
+				culture = elysian # Creeks tallied in the "Parsons and Albert Roll" after the 1832 Treaty of Cusseta
 				size = 22240
 			}
 		}
@@ -591,7 +540,6 @@
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 8000
 			}
 		}
@@ -604,7 +552,6 @@
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 8946 # 1835 Cherokee Census "Henderson Roll"
 			}
 		}
@@ -755,7 +702,6 @@
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 3644 # 1835 Cherokee Census "Henderson Roll"
 			}
 		}
@@ -764,26 +710,22 @@
 		region_state:ELY = {
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 3000
 			}
 		}
 		region_state:NVJ = {
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 2000
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 4000
 			}
 		}
 		region_state:UTE = {
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 11000
 			}
 		}
@@ -796,7 +738,6 @@
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 6960
 			}
 		}
@@ -845,7 +786,6 @@
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 12200
 			}
 			create_pop = {
@@ -854,12 +794,10 @@
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 3902
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 3902
 			}
 			create_pop = {
@@ -874,7 +812,6 @@
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 4000
 			}
 			create_pop = {
@@ -883,7 +820,6 @@
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 28200
 			}
 		}
@@ -920,7 +856,6 @@
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 3000
 			}
 		}
@@ -932,7 +867,6 @@
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 18204
 			}
 			create_pop = {
@@ -970,7 +904,6 @@
 			}		
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 8200
 			}
 			create_pop = {
@@ -981,19 +914,16 @@
 		region_state:IRC = {
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 12000
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 12004
 			}
 		}
 		region_state:BLF = {
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 15400
 			}
 			create_pop = {
@@ -1010,12 +940,10 @@
 			}		
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 27396
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 55200
 			}
 		}
@@ -1028,7 +956,6 @@
 			}			
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 4200
 			}
 			create_pop = {
@@ -1039,12 +966,10 @@
 		region_state:IRC = {
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 8000
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 24000
 			}
 		}
@@ -1057,7 +982,6 @@
 			}		
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 12000
 			}
 			create_pop = {
@@ -1066,7 +990,6 @@
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 16000
 			}
 			create_pop = {
@@ -1077,7 +1000,6 @@
 		region_state:IRC = {
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 12000
 			}
 		}
@@ -1086,7 +1008,6 @@
 		region_state:ELY = {
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 12000
 			}
 		}
@@ -1095,7 +1016,6 @@
 		region_state:ELY = {
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 16000
 			}
 		}
@@ -1125,12 +1045,10 @@
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 1996
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 4000
 			}
 			create_pop = {
@@ -1141,7 +1059,6 @@
 		region_state:ELY = {
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 12000
 			}
 			create_pop = {
@@ -1152,12 +1069,10 @@
 		region_state:COM = {
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 18000
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 4000
 			}
 		}
@@ -1166,7 +1081,6 @@
 		region_state:ELY = {
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 28000
 			}
 		}
@@ -1175,7 +1089,6 @@
 		region_state:PUE = {
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 4000
 			}
 			create_pop = {
@@ -1184,31 +1097,26 @@
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 3000
 			}
 		}
 		region_state:NVJ = {
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 24000
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 4000
 			}
 		}
 		region_state:APC = {
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 11000
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 2000
 			}
 		}
@@ -1221,33 +1129,28 @@
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 18000
 			}
 		}
 		region_state:NVJ = {
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 6000
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 2000
 			}
 		}
 		region_state:COM = {
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 3000
 			}
 		}
 		region_state:APC = {
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 11000
 			}
 		}
@@ -1256,7 +1159,6 @@
 		region_state:ELY = {
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 52000
 			}
 			create_pop = {
@@ -1275,7 +1177,6 @@
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 43637
 			}
 		}
@@ -1288,12 +1189,10 @@
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 8000
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 16000
 			}
 		}
@@ -1306,12 +1205,10 @@
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 27000
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 70004
 			}
 		}
@@ -1332,7 +1229,6 @@
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 20000
 			}
 		}
@@ -1345,7 +1241,6 @@
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 20000
 			}
 		}
@@ -1362,12 +1257,10 @@
 			}
 			create_pop = {
 				culture = elysian
-				religion = nahuatl
 				size = 266461
 			}
 			create_pop = {
 				culture = elysian
-				religion = nahuatl
 				size = 85162
 			}
 		}
@@ -1384,7 +1277,6 @@
 			}
 			create_pop = {
 				culture = elysian
-				religion = mayan
 				size = 388804
 			}
 		}
@@ -1401,17 +1293,14 @@
 			}
 			create_pop = {
 				culture = elysian
-				religion = nahuatl
 				size = 39996
 			}
 			create_pop = {
 				culture = elysian
-				religion = nahuatl
 				size = 689604
 			}
 			create_pop = {
 				culture = elysian
-				religion = nahuatl
 				size = 264004
 			}
 		}
@@ -1427,17 +1316,14 @@
 			}
 			create_pop = {
 				culture = elysian
-				religion = nahuatl
 				size = 13183
 			}
 			create_pop = {
 				culture = elysian
-				religion = nahuatl
 				size = 60846
 			}
 			create_pop = {
 				culture = elysian
-				religion = nahuatl
 				size = 27381
 			}
 		}
@@ -1450,17 +1336,14 @@
 			}
 			create_pop = {
 				culture = elysian
-				religion = nahuatl
 				size = 40532
 			}
 			create_pop = {
 				culture = elysian
-				religion = nahuatl
 				size = 187073
 			}
 			create_pop = {
 				culture = elysian
-				religion = nahuatl
 				size = 84182
 			}
 		}
@@ -1478,12 +1361,10 @@
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 152078
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 26373
 			}
 		}
@@ -1499,7 +1380,6 @@
 			}
 			create_pop = {
 				culture = elysian
-				religion = nahuatl
 				size = 175961
 			}
 		}
@@ -1514,7 +1394,6 @@
 			}
 			create_pop = {
 				culture = elysian
-				religion = mayan
 				size = 72164
 			}
 		}
@@ -1529,7 +1408,6 @@
 			}
 			create_pop = {
 				culture = elysian
-				religion = mayan
 				size = 9251
 			}
 		}
@@ -1542,7 +1420,6 @@
 			}
 			create_pop = {
 				culture = elysian
-				religion = totemism
 				size = 13300
 			}
 		}
