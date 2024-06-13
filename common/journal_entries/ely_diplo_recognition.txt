@@ -9,6 +9,7 @@
 
 	possible = {
 		country_rank >= rank_value:unrecognized_regional_power
+		NOT = { THIS = c:AUS }
 	}
 
 	complete = {

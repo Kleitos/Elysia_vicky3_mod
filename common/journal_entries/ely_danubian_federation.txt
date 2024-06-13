@@ -1,0 +1,418 @@
+﻿je_austrian_destiny = {
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+        custom_tooltip = {
+            text = formed_germany_austria_tt
+			c:GER ?= this
+        }	
+	
+	}
+
+	on_complete = {
+		trigger_event = { id = danubian_revolts.1 }
+	}
+
+	fail = {
+        custom_tooltip = {
+            text = failed_germany_austria_tt
+		NOT = { is_unification_candidate = GER }
+        }
+	}
+
+	on_fail = {
+		trigger_event = { id = danubian_fed.2 }
+	}
+}	
+
+je_danubian_federation = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+	}
+
+	on_complete = {
+		trigger_event = {
+			id = danubian_fed.3
+		}
+	}
+
+	current_value = {
+		value = var:danubian_fed_var
+	}
+
+	goal_add_value = {
+		add = 6
+	}
+
+	progressbar = yes
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+	
+}
+
+je_integrate_slovenes = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		owns_entire_state_region = STATE_ISTRIA
+		owns_entire_state_region = STATE_SLOVENIA
+		has_variable = slovene_hero_var
+	}
+
+	on_complete = {
+		change_variable = {
+			name = danubian_fed_var
+			add = 1
+		}
+		set_variable = {
+			name = slovenes_integrated
+		}
+		trigger_event = { id = danubian_culture.1 }
+	}
+
+	fail = {
+		any_scope_state = {
+			state_region = {
+				is_homeland = cu:slovene
+			}
+			radical_fraction = {
+				value >= 0.5
+				culture = cu:slovene
+			}
+		}
+	}
+
+	on_fail = {
+		trigger_event = { id = danubian_breakup.1 }
+	}
+}	
+
+je_integrate_croats = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		owns_entire_state_region = STATE_BOSNIA
+		owns_entire_state_region = STATE_DALMATIA
+		owns_entire_state_region = STATE_CROATIA
+		owns_entire_state_region = STATE_SLAVONIA
+		owns_entire_state_region = STATE_ISTRIA
+		has_variable = croat_hero_var
+	}
+
+	on_complete = {
+		change_variable = {
+			name = danubian_fed_var
+			add = 1
+		}
+		set_variable = {
+			name = croats_integrated
+		}
+		trigger_event = { id = danubian_culture.2 }
+	}
+
+	fail = {
+		any_scope_state = {
+			state_region = {
+				is_homeland = cu:croat
+			}
+			radical_fraction = {
+				value >= 0.5
+				culture = cu:croat
+			}
+		}
+	}
+
+	on_fail = {
+		trigger_event = { id = danubian_breakup.1 }
+	}
+}	
+
+je_pacify_serbs = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		AND = {
+			owns_entire_state_region = STATE_DELVIDEK
+			owns_entire_state_region = STATE_BANAT
+			owns_entire_state_region = STATE_BOSNIA
+			owns_entire_state_region = STATE_NORTHERN_SERBIA
+			owns_entire_state_region = STATE_DALMATIA
+			owns_entire_state_region = STATE_CROATIA
+			owns_entire_state_region = STATE_SLAVONIA
+		}
+		OR = {
+			NOT = { exists = c:SER }
+			c:SER ?= {
+				is_country_alive = no
+			}
+		}
+	}
+
+	on_complete = {
+		change_variable = {
+			name = danubian_fed_var
+			add = 1
+		}
+		set_variable = {
+			name = serbs_pacified
+		}
+	}
+
+	fail = {
+		NOT = {
+			owns_entire_state_region = STATE_DELVIDEK
+			owns_entire_state_region = STATE_BANAT
+			owns_entire_state_region = STATE_BOSNIA
+			owns_entire_state_region = STATE_NORTHERN_SERBIA
+			owns_entire_state_region = STATE_DALMATIA
+			owns_entire_state_region = STATE_CROATIA
+			owns_entire_state_region = STATE_SLAVONIA
+		}
+	}
+
+	on_fail = {
+		trigger_event = { id = danubian_breakup.1 }
+	}
+}	
+
+je_pacify_romanians = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		AND = {
+			owns_entire_state_region = STATE_DELVIDEK
+			owns_entire_state_region = STATE_BANAT
+			owns_entire_state_region = STATE_SOUTHERN_TRANSYLVANIA
+			owns_entire_state_region = STATE_NORTHERN_TRANSYLVANIA
+			owns_entire_state_region = STATE_BEKES
+			country_or_subject_owns_entire_state_region = STATE_MOLDAVIA
+			country_or_subject_owns_entire_state_region = STATE_WALLACHIA
+			country_or_subject_owns_entire_state_region = STATE_BESSARABIA
+		}
+		OR = {
+			NOT = { exists = c:ROM }
+			c:ROM ?= {
+				is_country_alive = no
+			}
+		}
+	}
+
+	on_complete = {
+		change_variable = {
+			name = danubian_fed_var
+			add = 1
+		}
+		trigger_event = { id = danubian_culture.3 }
+		set_variable = {
+			name = romanian_pacified
+		}
+	}
+
+	fail = {
+		NOT = {
+			owns_entire_state_region = STATE_DELVIDEK
+			owns_entire_state_region = STATE_BANAT
+			owns_entire_state_region = STATE_SOUTHERN_TRANSYLVANIA
+			owns_entire_state_region = STATE_NORTHERN_TRANSYLVANIA
+			owns_entire_state_region = STATE_BEKES
+			country_or_subject_owns_entire_state_region = STATE_MOLDAVIA
+			country_or_subject_owns_entire_state_region = STATE_WALLACHIA
+			country_or_subject_owns_entire_state_region = STATE_BESSARABIA
+		}
+	}
+
+	on_fail = {
+		trigger_event = { id = danubian_breakup.1 }
+	}
+}	
+
+je_danubian_storm = {
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+	}
+
+	on_complete = {
+		change_variable = {
+			name = danubian_fed_var
+			add = 1
+		}
+		trigger_event = {
+			id = danubian_fed.4
+		}
+	}
+
+	current_value = {
+		value = var:danubian_storm_var
+	}
+
+	goal_add_value = {
+		add = 4
+	}
+
+	progressbar = yes
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+	
+}
+
+je_danube_control_over_serbia = {
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		OR = {
+			AND = {
+				owns_entire_state_region = STATE_DELVIDEK
+				owns_entire_state_region = STATE_BANAT
+				owns_entire_state_region = STATE_BOSNIA
+				owns_entire_state_region = STATE_NORTHERN_SERBIA
+				owns_entire_state_region = STATE_DALMATIA
+				owns_entire_state_region = STATE_CROATIA
+				owns_entire_state_region = STATE_SLAVONIA
+				has_variable = danube_serb_war
+				is_at_war = no
+				has_truce_with = c:BYZ
+			}			
+			AND = {
+				NOT = { exists = c:BYZ }
+				c:BYZ ?= {
+					is_country_alive = no
+				}
+			}	
+		}
+	}	
+
+	on_complete = {
+		change_variable = {
+			name = danubian_storm_var
+			add = 1
+		}
+	}	
+}	
+
+je_danube_control_over_romania = {
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		OR = {
+			AND = {
+				owns_entire_state_region = STATE_SOUTHERN_TRANSYLVANIA
+				owns_entire_state_region = STATE_BANAT
+				owns_entire_state_region = STATE_NORTHERN_TRANSYLVANIA
+				owns_entire_state_region = STATE_BEKES
+				owns_entire_state_region = STATE_MOLDAVIA
+				owns_entire_state_region = STATE_WALLACHIA
+				owns_entire_state_region = STATE_BESSARABIA
+				has_variable = danube_romania_war
+				is_at_war = no
+				has_truce_with = c:RUS
+			}			
+			AND = {
+				NOT = { exists = c:RUS }
+				c:RUS ?= {
+					is_country_alive = no
+				}
+			}	
+		}	
+	}	
+
+	on_complete = {
+		change_variable = {
+			name = danubian_storm_var
+			add = 1
+		}
+	}	
+}
+
+je_danube_control_over_dalmatia = {
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		OR = {
+			AND = {
+				owns_entire_state_region = STATE_SOUTH_TYROL
+				owns_entire_state_region = STATE_DALMATIA
+				owns_entire_state_region = STATE_ISTRIA
+				has_variable = danube_italian_war
+				is_at_war = no
+				has_truce_with = c:ITA
+			}			
+			AND = {
+				NOT = { exists = c:ITA }
+				c:ITA ?= {
+					is_country_alive = no
+				}
+			}	
+		}
+	}	
+
+	on_complete = {
+		change_variable = {
+			name = danubian_storm_var
+			add = 1
+		}
+	}	
+}
+
+je_danube_control_over_austria = {
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		OR = {
+			AND = {
+				owns_entire_state_region = STATE_STYRIA
+				owns_entire_state_region = STATE_TYROL
+				owns_entire_state_region = STATE_AUSTRIA
+				owns_entire_state_region = STATE_SOUTH_TYROL
+				owns_entire_state_region = STATE_SLOVENIA
+				has_variable = danube_german_war
+				is_at_war = no
+				has_truce_with = c:GER
+			}			
+			AND = {
+				NOT = { exists = c:GER }
+				c:GER ?= {
+					is_country_alive = no
+				}
+			}	
+		}
+	}	
+
+	on_complete = {
+		change_variable = {
+			name = danubian_storm_var
+			add = 1
+		}
+	}	
+}

@@ -3,10 +3,6 @@ je_avert_italian_mutiny = {
 
 	group = je_group_elysian_content
 
-	is_shown_when_inactive = {
-			c:AUS ?= THIS
-	}
-
 	possible = {
 		owns_entire_state_region = STATE_ISTRIA
 	}
@@ -50,10 +46,6 @@ je_avert_serb_mutiny = {
 
 	group = je_group_elysian_content
 
-	is_shown_when_inactive = {
-			c:AUS ?= THIS
-	}
-
 	possible = {
 		owns_entire_state_region = STATE_BOSNIA	
 	}
@@ -96,14 +88,6 @@ je_avert_greek_mutiny = {
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 
 	group = je_group_elysian_content
-
-	is_shown_when_inactive = {
-		OR = {
-			c:LUC ?= THIS
-			c:LMV ?= THIS
-			c:ITA ?= THIS
-		}	
-	}
 
 	possible = {
 		OR = {
