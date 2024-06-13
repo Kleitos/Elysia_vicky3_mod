@@ -48,6 +48,10 @@
             months = -1
 		}
 		
+		trigger_event = {
+			id = ely_infrastructure_event.6
+		}
+		
 		# Laws 
 		activate_law = law_type:law_monarchy
 		activate_law = law_type:law_wealth_voting
