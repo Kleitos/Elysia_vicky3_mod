@@ -64,7 +64,7 @@
 		}
 	}
 	s:STATE_SOUTH_AUSTRALIA={
-		region_state:KAU={
+		region_state:WAS={
 			create_building={
 				building="building_barracks"
 				level=1
