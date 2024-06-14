@@ -203,9 +203,9 @@ danubian_ultimatum.1 = {
 	type = country_event
 	placement = root
 	
-	title = danubian_fed.1.t
-	desc = danubian_fed.1.d
-	flavor = danubian_fed.1.f
+	title = danubian_ultimatum.1.t
+	desc = danubian_ultimatum.1.d
+	flavor = danubian_ultimatum.1.f
 
 	duration = 3
 	
