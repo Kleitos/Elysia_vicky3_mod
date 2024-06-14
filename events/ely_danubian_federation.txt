@@ -165,6 +165,40 @@ danubian_fed.3 = {
 	}
 }
 
+danubian_fed.4 = {
+	type = country_event
+	placement = root
+	
+	title = danubian_fed.4.t
+	desc = danubian_fed.4.d
+	flavor = danubian_fed.4.f
+
+	duration = 3
+	
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	trigger = {
+	}
+	
+	immediate = {
+	}
+
+	option = {
+		name = danubian_fed.4.a
+			add_modifier = {
+				name = new_colossus
+				months = very_long_modifier_time
+			}
+		
+	}
+}
+
 danubian_ultimatum.1 = {
 	type = country_event
 	placement = root
