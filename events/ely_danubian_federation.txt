@@ -63,10 +63,6 @@ danubian_fed.2 = {
 			name = danubian_fed_var
 			value = 0
 		}
-		set_variable = {
-			name = danubian_storm_var
-			value = 0
-		}
 		if = {
 			limit = { exists = s:STATE_STYRIA.region_state:BAV }
 			s:STATE_STYRIA.region_state:BAV = { set_state_owner = c:AUS }
@@ -96,7 +92,7 @@ danubian_fed.2 = {
 		add_journal_entry = { type = je_integrate_croats }
 		add_journal_entry = { type = je_pacify_serbs }
 		add_journal_entry = { type = je_pacify_romanians }
-		add_journal_entry = { type = je_danubian_storm }
+		add_journal_entry = { type = je_danube_before_storm }
 		trigger_event = { id = danubian_ultimatum.1 months = 60 }	
 		c:AUS = {
 			remove_diplomatic_pact = {
@@ -446,7 +442,7 @@ danubian_breakup.1 = {
 # A New National Hero
 danubian_hero.1 = {
 	type = country_event
-	placement = scope:state
+	placement = root
 	
 	title = danubian_hero.1.t
 	desc = danubian_hero.1.d
@@ -751,37 +747,13 @@ danubian_wars.1 = {
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
 	
 	trigger = {
-		exists = c:AUS
-		this = c:AUS 
-		has_variable = serbs_pacified
-		has_variable = romanian_pacified
-		OR = {
-			exists = c:GER
-			c:GER ?= {
-				is_country_alive = yes
-			}
-		}
-		OR = {
-			exists = c:ITA
-			c:ITA ?= {
-				is_country_alive = yes
-			}
-		}
-		OR = {
-			exists = c:BYZ
-			c:BYZ ?= {
-				is_country_alive = yes
-			}
-		}
-		OR = {
-			exists = c:RUS
-			c:RUS ?= {
-				is_country_alive = yes
-			}
-		}
 	}
 
 	immediate = {
+		set_variable = {
+			name = danubian_storm_var
+			value = 0
+		}
 		s:STATE_DELVIDEK = {
 			add_claim = c:BYZ
 		}
@@ -831,6 +803,7 @@ danubian_wars.1 = {
 	option = {
 		name = danubian_wars.1.a
 		default_option = yes		
+		add_journal_entry = { type = je_danubian_storm }
 		add_journal_entry = { type = je_danube_control_over_serbia }
 		add_journal_entry = { type = je_danube_control_over_romania }
 		add_journal_entry = { type = je_danube_control_over_dalmatia }
@@ -845,7 +818,7 @@ danubian_wars.1 = {
 			trigger_event = { id = danubian_wars.4 months = 96}	
 		}
 		c:GER = {
-			trigger_event = { id = danubian_wars.5 monts = 72}	
+			trigger_event = { id = danubian_wars.5 months = 72}	
 		}
 	}
 }
