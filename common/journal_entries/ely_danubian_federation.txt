@@ -243,6 +243,58 @@ je_pacify_romanians = {
 	}
 }	
 
+je_danube_before_storm = {
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		has_variable = serbs_pacified
+		has_variable = romanian_pacified
+        custom_tooltip = {
+			text = german_danube_tt
+			OR = {
+				exists = c:GER
+				c:GER ?= {
+					is_country_alive = yes
+				}
+			}
+		}
+        custom_tooltip = {
+			text = italian_danube_tt
+			OR = {
+				exists = c:ITA
+				c:ITA ?= {
+					is_country_alive = yes
+				}
+			}
+		}
+        custom_tooltip = {
+			text = serbian_danube_tt	
+			OR = {
+				exists = c:BYZ
+				c:BYZ ?= {
+					is_country_alive = yes
+				}
+			}
+		}
+        custom_tooltip = {
+			text = romanian_danube_tt
+			OR = {
+				exists = c:RUS
+				c:RUS ?= {
+					is_country_alive = yes
+				}
+			}
+		}	
+	}
+
+	on_complete = {
+		trigger_event = { id = danubian_wars.1 }
+	}
+	
+}
+
 je_danubian_storm = {
 	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
 
@@ -406,7 +458,7 @@ je_danube_control_over_austria = {
 					is_country_alive = no
 				}
 			}	
-		}
+		}	
 	}	
 
 	on_complete = {
