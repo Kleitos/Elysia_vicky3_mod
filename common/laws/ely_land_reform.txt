@@ -376,7 +376,7 @@ law_collectivized_agriculture = {
 		building_group_bg_ranching_throughput_add = -0.1
 		building_group_bg_agriculture_throughput_add = -0.1
 		building_group_bg_plantations_throughput_add = -0.1
-		state_farmers_investment_pool_efficiency_mult = -1
+		state_farmers_investment_pool_efficiency_mult = 1
 		state_aristocrats_investment_pool_efficiency_mult = -1
 		
 	}
