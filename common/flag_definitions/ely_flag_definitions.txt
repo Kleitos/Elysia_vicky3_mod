@@ -1,48 +1,4 @@
-﻿
-FIC = { # British East India Company
-	flag_definition = { # this is the raj flag
-		coa = FIC
-		coa_with_overlord_canton = BIC_subject
-		allow_overlord_canton = yes
-		priority = 1
-	}
-	flag_definition = { # this is the company flag
-		coa = BIC_republic
-		coa_with_overlord_canton = BIC_republic
-		allow_overlord_canton = yes
-		overlord_canton_scale = { 0.5 0.5 }
-		priority = 10
-		trigger = { 
-			coa_def_republic_flag_trigger = yes
-			OR = {
-				coa_def_independent_trigger = yes
-
-				AND = {
-					exists = c:FRA
-					c:FRA = {
-						has_diplomatic_pact = {
-							who = c:FIC
-							type = dominion
-							is_initiator = yes
-						}
-					}
-				}
-			}
-		}
-	}
-	flag_definition = {
-		coa = BIC_dictatorship
-		subject_canton = sub_BIC_cypher
-		priority = 20
-		trigger = { 
-			coa_def_independent_trigger = yes
-			coa_def_dictatorship_flag_trigger = yes
-		}
-	}	
-}
-
-
-SEI = { # British East India Company
+﻿SEI = { # British East India Company
 	flag_definition = { # this is the raj flag
 		coa = SEI
 		coa_with_overlord_canton = BIC_subject
@@ -84,23 +40,24 @@ SEI = { # British East India Company
 	}	
 }
 
-MAR = { # Nagpur
+TWT = { # Inca
 	flag_definition = {
-		coa = NAG
-		subject_canton = NAG
-		allow_overlord_canton = yes
-		priority = 1
-	}
-	flag_definition = {
-		coa = NAG # Princely State
-		subject_canton = NAG
-		allow_overlord_canton = no	
-		priority = 50
-		trigger = { 
-			OR = {
-				coa_def_british_ensign_trigger = yes
-				coa_def_british_india_trigger = yes
-			}
+		coa = TWT
 		}
-	}	
+		
+	flag_definition = {
+		coa = TWT_monarchy
+		priority = 9
+		trigger = { 
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+		
+	flag_definition = {
+		coa = TWT_republic
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}
 }
