@@ -7,10 +7,99 @@ ELY = {
 	pattern = "pattern_solid.tga"
 	color1 = "purple"
 	color2 = "yellow_dark"
-
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "yellow_dark"
+		color2 = "yellow_dark"
+		instance = { position = { 0.5 0.068 } scale = { 0.180 0.100 }  }
+	}
+	colored_emblem = {
+		texture = "ce_block_02.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { position = { 0.5 0.100 } scale = { 0.140 0.050 }  }
+	}
+	colored_emblem = {
+		texture = "ce_crown.dds"
+		color1 = "yellow_dark"
+		color2 = "yellow_dark"
+		instance = { position = { 0.5 0.07 } scale = { 0.160 0.140 }  }
+	}
 	colored_emblem = {
 		texture = "ce_eagle_double.dds"
-		color1 = color2
-		color2 = color2  }
+		color1 = "yellow_dark"
+		color2 = "yellow_dark"
+		instance = { position = { 0.5 0.5 } scale = { 0.9 1.0 }  }
 	}
+}
+
+ELY = {
+	textured_emblem = {
+		texture = "BRELY.png"
+		instance = { scale = { 1.0 1.0 } }
+	}
+}
+
+TWT_monarchy = {
+	
+	textured_emblem = {
+		texture = "CUSCO.png"
+		instance = { scale = { 0.45 0.45 } }
+	}
+	# Cusco rainbow flag
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	@twt_stripe = @[1/7]
+
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "red"
+		instance = { scale = { 1.0 @twt_stripe } position = { 0.5 @[twt_stripe*0.5] } }
+	}
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "orange"
+		instance = { scale = { 1.0 @twt_stripe } position = { 0.5 @[twt_stripe*1.5] } }
+	}
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "yellow"
+		instance = { scale = { 1.0 @twt_stripe } position = { 0.5 @[twt_stripe*2.5] } }
+	}
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "green"
+		instance = { scale = { 1.0 @twt_stripe } position = { 0.5 @[twt_stripe*3.5] } }
+	}
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "blue_light"
+		instance = { scale = { 1.0 @twt_stripe } position = { 0.5 @[twt_stripe*4.5] } }
+	}
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "blue"
+		instance = { scale = { 1.0 @twt_stripe } position = { 0.5 @[twt_stripe*5.5] } }
+	}
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "purple"
+		instance = { scale = { 1.0 @twt_stripe } position = { 0.5 @[twt_stripe*6.5] } }
+	}
+}
+
+TWT_republic = {
+	
+	textured_emblem = {
+		texture = "RPINCA.png"
+		instance = { scale = { 1.0 1.0 } }
+	}
+}
+
+MAR = { # Nagpur
+	# Hist. Saffron flag
+	
+	pattern = "pattern_solid.tga"
+	color1 = "orange"
 }
