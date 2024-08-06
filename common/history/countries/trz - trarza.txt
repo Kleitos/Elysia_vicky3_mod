@@ -9,5 +9,5 @@
 			name = religious_fundamentalism
 			months = -1
 		}
-	}
+	}	
 }
