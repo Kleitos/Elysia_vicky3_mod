@@ -24,5 +24,9 @@
 			
 			add_ideology = ideology_europe_common
 		}
+		add_modifier = {
+			name = favored_by_destiny
+            months = -1
+		}
 	}
 }
