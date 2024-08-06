@@ -124,5 +124,9 @@
 				type = je_conquest_of_algeria
 			}
 		}
+		add_modifier = {
+			name = favored_by_destiny
+            months = -1
+		}
 	}
 }

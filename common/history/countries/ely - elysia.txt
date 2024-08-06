@@ -28,6 +28,14 @@
             months = -1
 		}
 		add_modifier = {
+			name = favored_by_destiny
+            months = -1
+		}
+		add_modifier = {
+			name = modifier_elysian_opportunity
+            months = very_long_modifier_time
+		}
+		add_modifier = {
 			name = modifier_through_river_styx
             months = -1
 		}
@@ -50,6 +58,70 @@
 		
 		trigger_event = {
 			id = ely_infrastructure_event.6
+		}
+
+		add_journal_entry = {
+			type = je_reform_economy_ely
+		}
+		add_journal_entry = {
+			type = je_reform_bureaucracy_ely
+		}
+		add_journal_entry = {
+			type = je_reform_navy
+		}
+		add_journal_entry = {
+			type = je_trans_elysian_railway
+		}
+		add_journal_entry = {
+			type = je_borealia_eireneic_railway
+		}
+		add_journal_entry = {
+			type = je_wife_trade
+		}
+		add_journal_entry = {
+			type = je_reform_blood_laws
+		}
+		add_journal_entry = {
+			type = je_elysian_schooling
+		}
+		add_journal_entry = {
+			type = je_populate_interior
+		}
+		add_journal_entry = {
+			type = je_assimilate_inuit
+		}
+		add_journal_entry = {
+			type = je_statue_liberty
+		}
+		add_journal_entry = {
+			type = je_drain_marshes_ely
+		}
+		add_journal_entry = {
+			type = je_apaleisian_pathway
+		}
+		add_journal_entry = {
+			type = je_lakonias_pathway
+		}
+		add_journal_entry = {
+			type = je_arkadias_pathway
+		}
+		add_journal_entry = {
+			type = je_hesperidias_pathway
+		}
+		add_journal_entry = {
+			type = je_elysian_highway_new
+		}
+		add_journal_entry = {
+			type = je_thoulean_pathway
+		}
+		add_journal_entry = {
+			type = je_modern_dockyard
+		}
+		add_journal_entry = {
+			type = je_greenland
+		}
+		add_journal_entry = {
+			type = je_fire_corps
 		}
 		
 		# Laws 
