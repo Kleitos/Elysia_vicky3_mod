@@ -1,6 +1,4 @@
-﻿
-
-je_la_plata = {
+﻿je_la_plata = {
     icon = "gfx/interface/icons/event_icons/waving_flag.dds"
 
 	group = je_group_foreign_affairs
