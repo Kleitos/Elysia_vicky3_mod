@@ -25,7 +25,7 @@
 		activate_law = law_type:law_religious_schools
 		activate_law = law_type:law_charitable_health_system
 		activate_law = law_type:law_oligarchy
-		#activate_law = law_type:law_colonial_exploitation # spain has nothing to colonize in 1836
+		activate_law = law_type:law_colonial_exploitation # spain has nothing to colonize in 1836
 
 		set_institution_investment_level = {
 			institution = institution_health_system
@@ -38,6 +38,10 @@
 
 		ig:ig_devout = {
 			add_ruling_interest_group = yes
+		}
+		add_modifier = {
+			name = favored_by_destiny
+            months = -1
 		}
 	}
 }

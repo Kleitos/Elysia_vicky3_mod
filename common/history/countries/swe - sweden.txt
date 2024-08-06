@@ -36,5 +36,9 @@
 		ig:ig_landowners = {
 			add_ruling_interest_group = yes
 		}
+		add_modifier = {
+			name = favored_by_destiny
+            months = -1
+		}
 	}
 }

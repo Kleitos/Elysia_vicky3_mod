@@ -7,7 +7,6 @@
 		activate_law = law_type:law_slave_trade
 		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_migration_controls
-		activate_law = law_type:law_frontier_colonization	
 		activate_law = law_type:law_traditionalism
 		activate_law = law_type:law_slave_trade
 		activate_law = law_type:law_no_schools
@@ -26,8 +25,12 @@
 			name = western_aligned
 			months = very_long_modifier_time
 		}
-			add_journal_entry = {
-				type = je_age_of_princes
-			}
+		add_journal_entry = {
+			type = je_age_of_princes
+		}
+		add_modifier = {
+			name = favored_by_destiny
+            months = -1
+		}
 	}
 }
