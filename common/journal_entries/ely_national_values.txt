@@ -3,15 +3,6 @@
 
 	group = je_group_elysian_content
 
-	is_shown_when_inactive = {
-		c:ELY ?= THIS
-	}
-
-	possible = {
-		has_modifier = modifier_wife_trade	
-		c:ELY ?= THIS	
-	}
-
 	complete = {
 		has_technology_researched = socialism
 		has_technology_researched = philosophical_pragmatism
@@ -33,15 +24,6 @@ je_reform_blood_laws = {
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 
 	group = je_group_elysian_content
-
-	is_shown_when_inactive = {
-		c:ELY ?= THIS
-	}
-
-	possible = {
-		has_modifier = modifier_elysian_blood
-		c:ELY ?= THIS
-	}
 
 	complete = {
 		has_technology_researched = mass_propaganda
@@ -65,14 +47,6 @@ je_elysian_schooling = {
 	icon = "gfx/interface/icons/event_icons/tutorial_icon.dds"
 
 	group = je_group_elysian_content
-
-	is_shown_when_inactive = {
-		c:ELY ?= THIS
-	}
-
-	possible = {
-		c:ELY ?= THIS
-	}
 
 	complete = {
 		has_law = law_type:law_cultural_exclusion
@@ -100,14 +74,6 @@ je_populate_interior = {
 
 	group = je_group_elysian_content
 
-	is_shown_when_inactive = {
-		c:ELY ?= THIS
-	}
-
-	possible = {
-		c:ELY ?= THIS	
-	}
-
 	complete = {
 		owns_entire_state_region = STATE_ARIZONA
 		owns_entire_state_region = STATE_NEW_MEXICO
@@ -125,7 +91,6 @@ je_populate_interior = {
 		owns_entire_state_region = STATE_SASKATCHEWAN
 		owns_entire_state_region = STATE_MANITOBA
 		owns_entire_state_region = STATE_IDAHO
-		owns_entire_state_region = STATE_NUNAVUT
 	}
 
 	on_complete = {
@@ -143,14 +108,6 @@ je_assimilate_inuit = {
 	icon = "gfx/interface/icons/event_icons/unify.dds"
 
 	group = je_group_elysian_content
-
-	is_shown_when_inactive = {
-		c:ELY ?= THIS
-	}
-
-	possible = {
-		c:ELY ?= THIS	
-	}
 
 	complete = {
 		has_technology_researched = pan-nationalism

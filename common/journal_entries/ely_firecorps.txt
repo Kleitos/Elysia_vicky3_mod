@@ -3,15 +3,6 @@
 
 	group = je_group_elysian_content
 
-	is_shown_when_inactive = {
-		c:ELY ?= THIS
-	}
-
-	possible = {
-		army_size >= 200
-		has_modifier = modifier_elysian_fire_corp
-	}
-
 	complete = {
 		has_technology_researched = flamethrowers
 	}
@@ -32,14 +23,6 @@ je_reform_navy = {
 	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
 
 	group = je_group_elysian_content
-
-	is_shown_when_inactive = {
-		c:ELY ?= THIS
-	}
-
-	possible = {
-		has_modifier = modifier_elysian_navy_old
-	}
 
 	complete = {
 		NOT = {
@@ -70,5 +53,9 @@ je_reform_navy = {
 	on_timeout = {
 		trigger_event = { id = fire_corps_event.3 popup = yes }
 	}
+
+	weight = 10
+
+	should_be_pinned_by_default = yes
 
 }

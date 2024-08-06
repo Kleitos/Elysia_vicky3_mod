@@ -34,14 +34,6 @@ je_reform_bureaucracy_ely = {
 
 	group = je_group_elysian_content
 
-	is_shown_when_inactive = {
-		c:ELY ?= THIS
-	}
-
-	possible = {
-		c:ELY ?= THIS
-	}
-
 	complete = {
 		NOR = { 
 			has_law = law_type:law_hereditary_bureaucrats 
@@ -68,20 +60,16 @@ je_reform_bureaucracy_ely = {
 	on_timeout = {
 		trigger_event = { id = ely_reform_event.3 popup = yes }
 	}
+
+	weight = 10
+
+	should_be_pinned_by_default = yes
 }
 
 je_reform_economy_ely = {
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 
 	group = je_group_elysian_content
-
-	is_shown_when_inactive = {
-		c:ELY ?= THIS
-	}
-
-	possible = {
-		c:ELY ?= THIS
-	}
 
 	complete = {
 		GDP >= 100000000
@@ -103,6 +91,10 @@ je_reform_economy_ely = {
 	on_timeout = {
 		trigger_event = { id = ely_reform_event.4 popup = yes }
 	}
+
+	weight = 10
+
+	should_be_pinned_by_default = yes
 }
 
 je_reform_society = {

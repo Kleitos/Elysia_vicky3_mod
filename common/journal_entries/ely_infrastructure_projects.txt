@@ -3,14 +3,6 @@
 
 	group = je_group_elysian_content
 
-	is_shown_when_inactive = {
-		c:ELY ?= THIS
-	}
-
-	possible = {
-		c:ELY ?= THIS
-	}
-
 	complete = {
 		has_technology_researched = threshing_machine
 		has_technology_researched = pumpjacks
@@ -32,15 +24,6 @@ je_apaleisian_pathway = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 
 	group = je_group_elysian_content
-
-	is_shown_when_inactive = {
-		has_technology_researched = railways
-		c:ELY ?= THIS
-	}
-
-	possible = {
-		c:ELY ?= THIS
-	}
 
 	complete = {
 		has_technology_researched = reinforced_concrete
@@ -84,15 +67,6 @@ je_lakonias_pathway = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 
 	group = je_group_elysian_content
-
-	is_shown_when_inactive = {
-		has_technology_researched = railways
-		c:ELY ?= THIS
-	}
-
-	possible = {
-		c:ELY ?= THIS
-	}
 
 	complete = {
 		has_technology_researched = reinforced_concrete
@@ -161,15 +135,6 @@ je_arkadias_pathway = {
 
 	group = je_group_elysian_content
 
-	is_shown_when_inactive = {
-		has_technology_researched = railways
-		c:ELY ?= THIS
-	}
-
-	possible = {
-		c:ELY ?= THIS
-	}
-
 	complete = {
 		has_technology_researched = reinforced_concrete
 		has_technology_researched = steel_frame_buildings
@@ -216,15 +181,6 @@ je_hesperidias_pathway = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 
 	group = je_group_elysian_content
-
-	is_shown_when_inactive = {
-		has_technology_researched = railways
-		c:ELY ?= THIS
-	}
-
-	possible = {
-		c:ELY ?= THIS
-	}
 
 	complete = {
 		has_technology_researched = reinforced_concrete
@@ -289,14 +245,6 @@ je_elysian_highway_new = {
 
 	group = je_group_elysian_content
 
-	is_shown_when_inactive = {
-		c:ELY ?= THIS
-	}
-
-	possible = {
-		c:ELY ?= THIS
-	}
-
 	complete = {
 		any_scope_building = {
 			is_building_type = building_motor_industry
@@ -329,23 +277,15 @@ je_greenland_infrastructure = {
 
 	group = je_group_elysian_content
 
-	is_shown_when_inactive = {
-		c:ELY ?= THIS
-	}
-
-	possible = {
-		c:ELY ?= THIS
-		c:ELY = {
-			owns_entire_state_region = STATE_GREENLAND
-		}
-	}
-
 	complete = {
 	has_technology_researched = oil_turbine
 	has_technology_researched = arc_welding
 	has_technology_researched = compression_ignition
 	has_technology_researched = concrete_dockyards
 	has_technology_researched = paved_roads
+		c:ELY = {
+			owns_entire_state_region = STATE_GREENLAND
+		}
 	}
 
 	on_complete = {
@@ -363,15 +303,6 @@ je_thoulean_pathway = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 
 	group = je_group_elysian_content
-
-	is_shown_when_inactive = {
-		has_technology_researched = railways
-		c:ELY ?= THIS
-	}
-
-	possible = {
-		c:ELY ?= THIS
-	}
 
 	complete = {
 	has_technology_researched = paved_roads
@@ -409,15 +340,6 @@ je_modern_dockyard = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 
 	group = je_group_elysian_content
-
-	is_shown_when_inactive = {
-		c:ELY ?= THIS
-	}
-
-	possible = {
-		has_technology_researched = hydraulic_cranes
-		c:ELY ?= THIS
-	}
 
 	complete = {
 		has_technology_researched = gantry_cranes
@@ -609,40 +531,7 @@ je_modern_dockyard = {
 				}
 		}
 		any_scope_state = {
-			state_region = s:STATE_HAITI
-				any_scope_building = {
-					OR = { 
-						has_active_production_method = pm_industrial_port
-						has_active_production_method = pm_modern_port						
-					}
-					is_building_type = building_port
-					level >= 5
-				}
-		}
-		any_scope_state = {
 			state_region = s:STATE_SANTO_DOMINGO
-				any_scope_building = {
-					OR = { 
-						has_active_production_method = pm_industrial_port
-						has_active_production_method = pm_modern_port						
-					}
-					is_building_type = building_port
-					level >= 5
-				}
-		}
-		any_scope_state = {
-			state_region = s:STATE_PUERTO_RICO
-				any_scope_building = {
-					OR = { 
-						has_active_production_method = pm_industrial_port
-						has_active_production_method = pm_modern_port						
-					}
-					is_building_type = building_port
-					level >= 5
-				}
-		}
-		any_scope_state = {
-			state_region = s:STATE_JAMAICA
 				any_scope_building = {
 					OR = { 
 						has_active_production_method = pm_industrial_port

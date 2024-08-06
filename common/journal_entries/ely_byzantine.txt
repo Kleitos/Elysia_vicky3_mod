@@ -3,19 +3,6 @@
 
 	group = je_group_elysian_content
 
-	is_shown_when_inactive = {
-		c:BYZ ?= THIS
-	}
-
-	possible = {
-		c:BYZ ?= THIS
-		NOT = { has_truce_with = c:TUR }
-		is_subject = no
-		owns_entire_state_region = STATE_IONIAN_ISLANDS
-		owns_entire_state_region = STATE_CRETE
-		owns_entire_state_region = STATE_WEST_AEGEAN_ISLANDS
-	}
-
 	complete = {
  		is_at_war = no
 		country_rank >= rank_value:minor_power
@@ -25,8 +12,13 @@
 			army_size > { 
     		value =  c:TUR.army_size
     		multiply = 1
-				}
-			}	
+			}
+		}
+		NOT = { has_truce_with = c:TUR }
+		is_subject = no
+		owns_entire_state_region = STATE_IONIAN_ISLANDS
+		owns_entire_state_region = STATE_CRETE
+		owns_entire_state_region = STATE_WEST_AEGEAN_ISLANDS
 	}
 
 	on_complete = {
@@ -45,16 +37,6 @@ je_byzantine_reconquest = {
 
 	group = je_group_elysian_content
 
-	is_shown_when_inactive = {
-		c:BYZ ?= THIS
-	}
-
-	possible = {
-		c:BYZ ?= THIS
-		NOT = { has_truce_with = c:TUR }
-		is_subject = no
-	}
-
 	complete = {
  		is_at_war = no
 		country_rank >= rank_value:minor_power
@@ -62,12 +44,14 @@ je_byzantine_reconquest = {
 		owns_entire_state_region = STATE_AYDIN
 		owns_entire_state_region = STATE_EASTERN_THRACE
 		owns_entire_state_region = STATE_TRABZON
+		NOT = { has_truce_with = c:TUR }
+		is_subject = no
 		c:BYZ = {
 			army_size > { 
     		value =  c:TUR.army_size
     		multiply = 1
-				}
 			}
+		}
 	}
 
 	on_complete = {
@@ -86,28 +70,20 @@ je_byzantine_revenge = {
 
 	group = je_group_elysian_content
 
-	is_shown_when_inactive = {
-		c:BYZ ?= THIS
-	}
-
-	possible = {
-		c:BYZ ?= THIS
-		NOT = { has_truce_with = c:TUR }
-		is_subject = no
-	}
-
 	complete = {
  		is_at_war = no
 		country_rank >= rank_value:minor_power
 		owns_entire_state_region = STATE_KONYA
 		owns_entire_state_region = STATE_KASTAMONU
 		owns_entire_state_region = STATE_ANKARA
+		NOT = { has_truce_with = c:TUR }
+		is_subject = no
 		c:BYZ = {
 			army_size > { 
     		value =  c:TUR.army_size
     		multiply = 1
-				}
 			}
+		}
 	}
 
 	on_complete = {
@@ -126,22 +102,14 @@ je_byzantine_glory = {
 
 	group = je_group_elysian_content
 
-	is_shown_when_inactive = {
-		c:BYZ ?= THIS
-	}
-
-	possible = {
-		c:BYZ ?= THIS
-		NOT = { has_truce_with = c:TUR }
-		is_subject = no
-	}
-
 	complete = {
  		is_at_war = no
 		country_rank >= rank_value:great_power
 		owns_entire_state_region = STATE_ERZURUM
 		owns_entire_state_region = STATE_DIYARBAKIR
 		owns_entire_state_region = STATE_ADANA
+		NOT = { has_truce_with = c:TUR }
+		is_subject = no
 		OR = {
 			NOT = { exists = c:TUR }
 			c:TUR ?= {
@@ -166,17 +134,6 @@ je_byzantine_dominance = {
 
 	group = je_group_elysian_content
 
-	is_shown_when_inactive = {
-		c:BYZ ?= THIS
-	}
-
-	possible = {
-		c:BYZ ?= THIS
-		NOT = { has_truce_with = c:EGY }
-		is_subject = no
-		owns_entire_state_region = STATE_ADANA
-	}
-
 	complete = {
  		is_at_war = no
 		country_rank >= rank_value:great_power
@@ -184,6 +141,9 @@ je_byzantine_dominance = {
 		NOT = {
 			has_modifier = government_admits_failure
 		}
+		NOT = { has_truce_with = c:EGY }
+		is_subject = no
+		owns_entire_state_region = STATE_ADANA
 	}
 
 	on_complete = {
@@ -202,19 +162,6 @@ je_byzantine_antioch = {
 
 	group = je_group_elysian_content
 
-	is_shown_when_inactive = {
-		c:BYZ ?= THIS
-	}
-
-	possible = {
-		c:BYZ ?= THIS
-		NOT = { has_truce_with = c:EGY }
-		is_subject = no
-		owns_entire_state_region = STATE_EASTERN_THRACE
-		owns_entire_state_region = STATE_CYPRUS
-		
-	}
-
 	complete = {
  		is_at_war = no
 		country_rank >= rank_value:major_power
@@ -223,7 +170,11 @@ je_byzantine_antioch = {
     		value =  c:EGY.army_size
     		multiply = 1
 				}
-		}	
+		}
+		NOT = { has_truce_with = c:EGY }
+		is_subject = no
+		owns_entire_state_region = STATE_EASTERN_THRACE
+		owns_entire_state_region = STATE_CYPRUS	
 	}
 
 	on_complete = {
@@ -241,15 +192,6 @@ je_cultural_shift_byz_bulgarian = {
 	icon = "gfx/interface/icons/event_icons/unify.dds"
 
 	group = je_group_elysian_content
-
-	is_shown_when_inactive = {
-		c:BYZ ?= THIS
-	}
-
-	possible = {
-		c:BYZ ?= THIS
-		year >= 1838
-	}
 
 	complete = {
 	OR = { 
@@ -287,6 +229,10 @@ je_cultural_shift_byz_bulgarian = {
 	
 
 	on_complete = {
+		change_variable = {
+			name = rhoman_var
+			add = 1
+		}
 		if = {
 			limit = {
 				exists = c:BYZ
@@ -302,7 +248,7 @@ je_cultural_shift_byz_bulgarian = {
 				is_homeland = cu:bulgarian
 			}
 			radical_fraction = {
-				value >= 0.2
+				value >= 0.5
 				culture = cu:bulgarian
 			}
 		}
@@ -318,15 +264,6 @@ je_cultural_shift_byz_albanian = {
 	icon = "gfx/interface/icons/event_icons/unify.dds"
 
 	group = je_group_elysian_content
-
-	is_shown_when_inactive = {
-		c:BYZ ?= THIS
-	}
-
-	possible = {
-		c:BYZ ?= THIS
-		year >= 1838
-	}
 
 	complete = {
 	OR = { 
@@ -363,6 +300,10 @@ je_cultural_shift_byz_albanian = {
 	
 
 	on_complete = {
+		change_variable = {
+			name = rhoman_var
+			add = 1
+		}
 		if = {
 			limit = {
 				exists = c:BYZ
@@ -378,7 +319,7 @@ je_cultural_shift_byz_albanian = {
 				is_homeland = cu:albanian
 			}
 			radical_fraction = {
-				value >= 0.2
+				value >= 0.5
 				culture = cu:albanian
 			}
 		}
@@ -390,19 +331,96 @@ je_cultural_shift_byz_albanian = {
 
 }
 
-je_cultural_shift_byz_serbian = {
+je_cultural_shift_byz_greek = {
 	icon = "gfx/interface/icons/event_icons/unify.dds"
 
 	group = je_group_elysian_content
 
-	is_shown_when_inactive = {
-		c:BYZ ?= THIS
+	complete = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
 	}
 
-	possible = {
-		c:BYZ ?= THIS
-		year >= 1838
+	on_complete = {
+		trigger_event = { id = byzantine_glory.2 }
 	}
+
+	current_value = {
+		value = var:rhoman_var
+	}
+
+	goal_add_value = {
+		add = 3
+	}
+
+	progressbar = yes
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+	
+}
+
+je_byz_megali_idea = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+	
+	complete = {
+		owns_entire_state_region = STATE_ATTICA
+		owns_entire_state_region = STATE_SKOPIA
+		owns_entire_state_region = STATE_MACEDONIA
+		owns_entire_state_region = STATE_THESSALIA
+		owns_entire_state_region = STATE_WESTERN_THRACE
+		owns_entire_state_region = STATE_HUDAVENDIGAR
+		owns_entire_state_region = STATE_AYDIN
+		owns_entire_state_region = STATE_CYPRUS
+		owns_entire_state_region = STATE_TRABZON
+		owns_entire_state_region = STATE_CRETE
+		owns_entire_state_region = STATE_WEST_AEGEAN_ISLANDS
+		owns_entire_state_region = STATE_EAST_AEGEAN_ISLANDS
+		owns_entire_state_region = STATE_EASTERN_THRACE
+		owns_entire_state_region = STATE_IONIAN_ISLANDS
+		owns_entire_state_region = STATE_PELOPONNESE
+		OR = {
+			has_law = law_type:law_religious_schools
+			has_law = law_type:law_private_schools
+			has_law = law_type:law_public_schools
+		}
+		institution_investment_level = {
+			institution = institution_schools
+			value >= 2
+		}
+		institution_investment_level = {
+			institution = institution_police
+			value >= 1
+		}
+		institution_investment_level = {
+			institution = institution_home_affairs
+			value >= 1
+		}
+	}	
+
+	on_complete = {
+		change_variable = {
+			name = rhoman_var
+			add = 1
+		}
+		if = {
+			limit = {
+				exists = c:BYZ
+				c:BYZ = ROOT
+			}
+		trigger_event = { id = byzantine_culture.1 }
+		}
+	}
+
+}
+
+je_cultural_shift_byz_serbian = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
 
 	complete = {
 	OR = { 
@@ -472,15 +490,6 @@ je_cultural_shift_byz_georgian = {
 
 	group = je_group_elysian_content
 
-	is_shown_when_inactive = {
-		c:BYZ ?= THIS
-	}
-
-	possible = {
-		c:BYZ ?= THIS
-		year >= 1838
-	}
-
 	complete = {
 	OR = { 
 		AND = {	
@@ -532,21 +541,13 @@ je_cultural_shift_byz_armenian = {
 
 	group = je_group_elysian_content
 
-	is_shown_when_inactive = {
-		c:BYZ ?= THIS
-	}
-
-	possible = {
-		c:BYZ ?= THIS
-		year >= 1838
-	}
-
 	complete = {
 	OR = { 
 		AND = {	
 		owns_entire_state_region = STATE_ARMENIA
 		owns_entire_state_region = STATE_KARS
 		owns_entire_state_region = STATE_AZERBAIJAN
+		owns_entire_state_region = STATE_ELIZAVETPOL
 		owns_entire_state_region = STATE_TRABZON
 		owns_entire_state_region = STATE_ERZURUM
 		owns_entire_state_region = STATE_DIYARBAKIR

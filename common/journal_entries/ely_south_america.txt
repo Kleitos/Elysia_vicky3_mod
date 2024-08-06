@@ -3,12 +3,7 @@
 
 	group = je_group_elysian_content
 
-	is_shown_when_inactive = {
-		c:TWT ?= THIS
-	}
-
 	possible = {
-		c:TWT ?= THIS
 		NOT = { has_truce_with = c:ELY }
 	}
 
@@ -19,13 +14,7 @@
 	}
 
 	on_complete = {
-		if = {
-			limit = {
-				exists = c:TWT
-				c:TWT = ROOT
-			}
 		trigger_event = { id = ely_south_america_diplo.1 }
-		}
 	}
 }
 
@@ -33,14 +22,6 @@ je_muiscan_unification = {
 	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
 
 	group = je_group_elysian_content
-
-	is_shown_when_inactive = {
-		c:TWT ?= THIS
-	}
-
-	possible = {
-		c:TWT ?= THIS
-	}
 
 	complete = {
 		country_rank >= rank_value:major_power
@@ -52,13 +33,7 @@ je_muiscan_unification = {
 	}
 
 	on_complete = {
-		if = {
-			limit = {
-				exists = c:TWT
-				c:TWT = ROOT
-			}
 		trigger_event = { id = ely_south_america_diplo.2 }
-		}
 	}
 }
 
@@ -67,12 +42,7 @@ je_wayuu_transfer = {
 
 	group = je_group_elysian_content
 
-	is_shown_when_inactive = {
-		c:TWT ?= THIS
-	}
-
 	possible = {
-		c:TWT ?= THIS
 		NOT = { has_truce_with = c:ELY }
 	}
 
@@ -86,13 +56,7 @@ je_wayuu_transfer = {
 	}
 
 	on_complete = {
-		if = {
-			limit = {
-				exists = c:TWT
-				c:TWT = ROOT
-			}
 		trigger_event = { id = ely_south_america_diplo.3 }
-		}
 	}
 }
 
@@ -100,14 +64,6 @@ je_wayuu_unification = {
 	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
 
 	group = je_group_elysian_content
-
-	is_shown_when_inactive = {
-		c:TWT ?= THIS
-	}
-
-	possible = {
-		c:TWT ?= THIS
-	}
 
 	complete = {
 		country_rank >= rank_value:major_power
@@ -119,13 +75,7 @@ je_wayuu_unification = {
 	}
 
 	on_complete = {
-		if = {
-			limit = {
-				exists = c:TWT
-				c:TWT = ROOT
-			}
 		trigger_event = { id = ely_south_america_diplo.4 }
-		}
 	}
 }
 
@@ -133,14 +83,6 @@ je_cultural_shift_incan = {
 	icon = "gfx/interface/icons/event_icons/unify.dds"
 
 	group = je_group_elysian_content
-
-	is_shown_when_inactive = {
-		c:TWT ?= THIS
-	}
-
-	possible = {
-		c:TWT ?= THIS
-	}
 
 	complete = {
 	OR = { 
@@ -173,13 +115,7 @@ je_cultural_shift_incan = {
 	}
 
 	on_complete = {
-		if = {
-			limit = {
-				exists = c:TWT
-				c:TWT = ROOT
-			}
 		trigger_event = { id = ely_south_america_integration.1 }
-		}
 	}
 
 }
@@ -188,14 +124,6 @@ je_cultural_shift_muiscan = {
 	icon = "gfx/interface/icons/event_icons/unify.dds"
 
 	group = je_group_elysian_content
-
-	is_shown_when_inactive = {
-		c:TWT ?= THIS
-	}
-
-	possible = {
-		c:TWT ?= THIS
-	}
 
 	complete = {
 		country_has_primary_culture = cu:quechua
@@ -227,13 +155,7 @@ je_cultural_shift_muiscan = {
 	}
 
 	on_complete = {
-		if = {
-			limit = {
-				exists = c:BYZ
-				c:BYZ = ROOT
-			}
 		trigger_event = { id = ely_south_america_integration.3 }
-		}
 	}
 
 }
@@ -243,12 +165,7 @@ je_guarani_expansion = {
 
 	group = je_group_elysian_content
 
-	is_shown_when_inactive = {
-		c:TWT ?= THIS
-	}
-
 	possible = {
-		c:TWT ?= THIS
 		NOT = { has_truce_with = c:ELY }
 	}
 
@@ -261,13 +178,7 @@ je_guarani_expansion = {
 	}
 
 	on_complete = {
-		if = {
-			limit = {
-				exists = c:TWT
-				c:TWT = ROOT
-			}
 		trigger_event = { id = ely_south_america_diplo.5 }
-		}
 	}
 }
 
@@ -276,12 +187,7 @@ je_patagonian_expansion = {
 
 	group = je_group_elysian_content
 
-	is_shown_when_inactive = {
-		c:TWT ?= THIS
-	}
-
 	possible = {
-		c:TWT ?= THIS
 		NOT = { has_truce_with = c:ELY }
 	}
 
@@ -294,12 +200,6 @@ je_patagonian_expansion = {
 	}
 
 	on_complete = {
-		if = {
-			limit = {
-				exists = c:TWT
-				c:TWT = ROOT
-			}
 		trigger_event = { id = ely_south_america_diplo.6 }
-		}
 	}
 }

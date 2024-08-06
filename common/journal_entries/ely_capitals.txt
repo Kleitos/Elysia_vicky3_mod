@@ -1,0 +1,179 @@
+﻿je_ely_capital = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		exists = c:ELY
+		THIS = c:ELY
+	}
+
+	possible = {
+		THIS = c:ELY
+	}
+
+	complete = {
+		owns_entire_state_region = STATE_DISTRICT_OF_COLUMBIA
+		any_scope_state = {
+			state_region = s:STATE_DISTRICT_OF_COLUMBIA
+				is_capital = no
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = ely_capital.1 }
+	}
+}
+
+je_ely_capital_fix = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		owns_entire_state_region = STATE_DISTRICT_OF_COLUMBIA
+		any_scope_state = {
+			state_region = s:STATE_DISTRICT_OF_COLUMBIA
+				is_capital = yes
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = ely_capital_fix.1 }
+	}
+}
+
+je_fra_capital = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		exists = c:FRA
+		THIS = c:FRA
+	}
+
+	possible = {
+		THIS = c:FRA
+	}
+
+	complete = {
+		owns_entire_state_region = STATE_ILE_DE_FRANCE
+		any_scope_state = {
+			state_region = s:STATE_ILE_DE_FRANCE
+				is_capital = no
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = ely_capital.2 }
+	}
+}
+
+je_fra_capital_fix = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		owns_entire_state_region = STATE_ILE_DE_FRANCE
+		any_scope_state = {
+			state_region = s:STATE_ILE_DE_FRANCE
+				is_capital = yes
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = ely_capital_fix.2 }
+	}
+}
+
+je_gbr_capital = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		exists = c:GBR
+		THIS = c:GBR
+	}
+
+	possible = {
+		THIS = c:GBR
+	}
+
+	complete = {
+		owns_entire_state_region = STATE_HOME_COUNTIES
+		any_scope_state = {
+			state_region = s:STATE_HOME_COUNTIES
+				is_capital = no
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = ely_capital.3 }
+	}
+}
+
+je_gbr_capital_fix = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		owns_entire_state_region = STATE_HOME_COUNTIES
+		any_scope_state = {
+			state_region = s:STATE_HOME_COUNTIES
+				is_capital = yes
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = ely_capital_fix.3 }
+	}
+}
+
+je_chi_capital = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		exists = c:CHI
+		THIS = c:CHI
+	}
+
+	possible = {
+		THIS = c:CHI
+	}
+
+	complete = {
+		owns_entire_state_region = STATE_HOME_COUNTIES
+		any_scope_state = {
+			state_region = s:STATE_BEIJING
+				is_capital = no
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = ely_capital.4 }
+	}
+}
+
+je_chi_capital_fix = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		owns_entire_state_region = STATE_BEIJING
+		any_scope_state = {
+			state_region = s:STATE_BEIJING
+				is_capital = yes
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = ely_capital_fix.4 }
+	}
+}

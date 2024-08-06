@@ -3,14 +3,6 @@
 
 	group = je_group_elysian_content
 
-	is_shown_when_inactive = {
-		this = c:TWT
-	}
-
-	possible = {
-		this = c:TWT
-	}
-
 	complete = {
 		has_technology_researched = reinforced_concrete
 		has_technology_researched = steel_frame_buildings
@@ -73,13 +65,7 @@
 	}
 
 	on_complete = {
-		if = {
-			limit = {
-				exists = c:TWT
-				c:TWT = ROOT
-			}
 		trigger_event = { id = inca_infrastructure.1 }
-		}
 	}
 }
 
@@ -87,15 +73,7 @@ je_reform_mines = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 
 	group = je_group_elysian_content
-
-	is_shown_when_inactive = {
-		c:TWT ?= THIS
-	}
-
-	possible = {
-		c:TWT ?= THIS
-	}
-
+	
 	complete = {
 		has_technology_researched = dynamite
 		any_scope_state = {
@@ -466,13 +444,7 @@ je_reform_mines = {
 	}
 
 	on_complete = {
-		if = {
-			limit = {
-				exists = c:TWT
-				c:TWT = ROOT
-			}
 		trigger_event = { id = inca_infrastructure.2 }
-		}
 	}
 }
 
@@ -480,14 +452,6 @@ je_anti_ruler = {
 	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
 
 	group = je_group_elysian_content
-
-	is_shown_when_inactive = {
-		this = c:TWT
-	}
-
-	possible = {
-		this = c:TWT
-	}
 
 	complete = {
 		owns_entire_state_region = STATE_ARAUCANIA
@@ -515,13 +479,7 @@ je_anti_ruler = {
 	}
 
 	on_complete = {
-		if = {
-			limit = {
-				exists = c:TWT
-				c:TWT = ROOT
-			}
 		trigger_event = { id = inca_glory.1 }
-		}
 	}
 
 	timeout = 18262
@@ -532,12 +490,7 @@ je_reform_mines_2 = {
 
 	group = je_group_elysian_content
 
-	is_shown_when_inactive = {
-		c:TWT ?= THIS
-	}
-
 	possible = {
-		c:TWT ?= THIS
 		has_modifier = ruler_of_andes
 	}
 
@@ -766,13 +719,7 @@ je_reform_mines_2 = {
 	}
 
 	on_complete = {
-		if = {
-			limit = {
-				exists = c:TWT
-				c:TWT = ROOT
-			}
 		trigger_event = { id = inca_infrastructure.3 }
-		}
 	}
 }
 
@@ -781,12 +728,7 @@ je_andean_pathway_2 = {
 
 	group = je_group_elysian_content
 
-	is_shown_when_inactive = {
-		this = c:TWT
-	}
-
 	possible = {
-		this = c:TWT
 		has_modifier = ruler_of_andes
 	}
 
@@ -832,13 +774,7 @@ je_andean_pathway_2 = {
 	}
 
 	on_complete = {
-		if = {
-			limit = {
-				exists = c:TWT
-				c:TWT = ROOT
-			}
 		trigger_event = { id = inca_infrastructure.4 }
-		}
 	}
 }
 
@@ -846,15 +782,7 @@ je_andean_farming = {
 	icon = "gfx/interface/icons/event_icons/event_trade.dds"
 
 	group = je_group_elysian_content
-
-	is_shown_when_inactive = {
-		this = c:TWT
-	}
-
-	possible = {
-		this = c:TWT
-	}
-
+	
 	complete = {
 		has_technology_researched = intensive_agriculture
 		any_scope_state = {
@@ -930,13 +858,7 @@ je_andean_farming = {
 	}
 
 	on_complete = {
-		if = {
-			limit = {
-				exists = c:TWT
-				c:TWT = ROOT
-			}
 		trigger_event = { id = inca_farms.1 }
-		}
 	}
 }
 
@@ -945,12 +867,7 @@ je_andean_farming_2 = {
 
 	group = je_group_elysian_content
 
-	is_shown_when_inactive = {
-		this = c:TWT
-	}
-
 	possible = {
-		this = c:TWT
 		has_modifier = ruler_of_andes
 	}
 
@@ -1008,13 +925,7 @@ je_andean_farming_2 = {
 	}
 
 	on_complete = {
-		if = {
-			limit = {
-				exists = c:TWT
-				c:TWT = ROOT
-			}
 		trigger_event = { id = inca_farms.2 }
-		}
 	}
 }
 
@@ -1022,15 +933,7 @@ je_andean_ranching = {
 	icon = "gfx/interface/icons/event_icons/event_trade.dds"
 
 	group = je_group_elysian_content
-
-	is_shown_when_inactive = {
-		this = c:TWT
-	}
-
-	possible = {
-		this = c:TWT
-	}
-
+	
 	complete = {
 		has_technology_researched = intensive_agriculture
 		any_scope_state = {
@@ -1127,13 +1030,7 @@ je_andean_ranching = {
 	}
 
 	on_complete = {
-		if = {
-			limit = {
-				exists = c:TWT
-				c:TWT = ROOT
-			}
 		trigger_event = { id = inca_farms.3 }
-		}
 	}
 }
 
@@ -1142,12 +1039,7 @@ je_andean_ranching_2 = {
 
 	group = je_group_elysian_content
 
-	is_shown_when_inactive = {
-		this = c:TWT
-	}
-
 	possible = {
-		this = c:TWT
 		has_modifier = ruler_of_andes
 	}
 
@@ -1212,27 +1104,16 @@ je_andean_ranching_2 = {
 	}
 
 	on_complete = {
-		if = {
-			limit = {
-				exists = c:TWT
-				c:TWT = ROOT
-			}
 		trigger_event = { id = inca_farms.4 }
-		}
 	}
 }
 
 je_sulfur_lead = {
-	icon = "gfx/interface/icons/goods_icons/coffee.dds"
+	icon = "gfx/interface/icons/goods_icons/sulfur.dds"
 
 	group = je_group_elysian_content
-	
-	is_shown_when_inactive = {
-		c:TWT ?= this
-	}
 
 	possible = {
-		c:TWT ?= this
 		has_technology_researched = improved_fertilizer
 	}
 

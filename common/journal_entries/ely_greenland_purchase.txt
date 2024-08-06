@@ -2,14 +2,6 @@
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 
 	group = je_group_elysian_content
-
-	is_shown_when_inactive = {
-		c:ELY ?= THIS
-	}
-
-	possible = {
-		c:ELY ?= THIS
-	}
 	
 	complete = {
 		exists = c:ELY
