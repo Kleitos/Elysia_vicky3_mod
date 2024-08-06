@@ -285,7 +285,7 @@ palatine_house.2 = {
 		}
 		create_diplomatic_play = {
 			target_country = c:HAN
-				escalation = 80
+				escalation = 81
 			type = dp_annex_war
 			target_state = s:STATE_HANNOVER.region_state:HAN
 			add_war_goal = {
@@ -357,7 +357,7 @@ kalmar_union.1 = {
 		}
 		create_diplomatic_play = {
 			target_country = c:DEN
-				escalation = 80
+				escalation = 81
 			type = dp_make_protectorate
 			target_state = s:STATE_ZEALAND.region_state:DEN
 			add_war_goal = {
@@ -420,7 +420,7 @@ kalmar_union.2 = {
 		}
 		create_diplomatic_play = {
 			target_country = c:DEN
-				escalation = 80
+				escalation = 81
 			type = dp_annex_war
 			target_state = s:STATE_ZEALAND.region_state:DEN
 			add_war_goal = {

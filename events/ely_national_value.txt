@@ -184,14 +184,9 @@ ely_national_value.4 = {
 		name = ely_national_value.4.a
 			default_option = yes
 			add_modifier = {
-				name = modifier_elysian_opportunity
+				name = new_colossus
 				months = very_long_modifier_time
 			}
-			add_modifier = {
-				name = ely_big_money
-				months = 60
-			}
-		
 	}
 }
 

@@ -1,0 +1,37 @@
+﻿namespace = pop_growth
+
+pop_growth.1 = {
+	type = country_event
+	placement = root
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_fire.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/destruction"
+
+	icon = "gfx/interface/icons/event_icons/event_fire.dds"
+
+	title = pop_growth.1.t
+	desc = pop_growth.1.d
+	flavor = pop_growth.1.f
+
+	trigger = {
+	}
+	
+	immediate = {
+	}
+
+	option = {
+		name = pop_growth.1.a
+			default_option = yes
+			add_modifier = {
+				name = ely_pop_growth
+				months = very_long_modifier_time
+			}
+		
+	}
+}

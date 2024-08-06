@@ -91,7 +91,7 @@ india_revolt.1 = {
 		create_diplomatic_play = {
 			target_country = c:MUG
 			type = dp_conquer_state
-			escalation = 80
+			escalation = 81
 			target_state = s:STATE_DELHI.region_state:MUG
 					add_war_goal = {
 						holder = c:BIC
@@ -153,7 +153,7 @@ india_revolt.2 = {
 		create_diplomatic_play = {
 			target_country = c:MUG
 			type = dp_conquer_state
-			escalation = 80
+			escalation = 81
 			target_state = s:STATE_CENTRAL_INDIA.region_state:MUG
 					add_war_goal = {
 						holder = c:MUG
@@ -305,7 +305,22 @@ india_revolt.3 = {
 		create_diplomatic_play = {
 			target_country = c:MAR
 			type = dp_conquer_state
-			escalation = 80
+			escalation = 81
+			target_state = s:STATE_CENTRAL_INDIA.region_state:MAR
+					add_war_goal = {
+						holder = c:SEI
+						type = conquer_state
+						target_state = s:STATE_NAGPUR.region_state:MAR
+					}
+			}
+	}
+	option = {
+		name = india_revolt.1.b
+		play_as = c:MAR
+		create_diplomatic_play = {
+			target_country = c:MAR
+			type = dp_conquer_state
+			escalation = 81
 			target_state = s:STATE_CENTRAL_INDIA.region_state:MAR
 					add_war_goal = {
 						holder = c:SEI
@@ -405,6 +420,79 @@ hungarian_revolution.1 = {
 			limit = { exists = s:STATE_CROATIA.region_state:AUS }
 			s:STATE_CROATIA.region_state:AUS = { set_state_owner = c:HUN }
 		}
+		c:HUN = {
+			add_modifier = {
+				name = war_for_independence
+				months = normal_modifier_time
+			}
+			activate_law = law_type:law_presidential_republic
+			activate_law = law_type:law_universal_suffrage
+			activate_law = law_type:law_homesteading
+				create_character = {
+					first_name = "Janos"
+					last_name = "Damjanich"
+					historical = yes
+					birth_date = 1804.12.8 
+					culture = cu:serb
+					is_general = yes
+					religion = orthodox
+					interest_group = ig_inteligentsia
+					ideology = ideology_radical
+					traits = { 
+						expert_offensive_planner 
+						surveyor 
+					}
+				}
+				create_character = {
+					first_name = "Bertalan"
+					last_name = "Szemere"
+					historical = yes
+					birth_date = 1812.5.2
+					culture = cu:hungarian
+					ruler = yes
+					religion = catholic
+					noble = yes
+					interest_group = ig_rural_folk
+					ideology = ideology_republican
+					traits = { 
+						persistent 
+						firebrand 
+						meticulous
+					}
+				}
+				create_character = {
+					first_name = "Lajos"			
+					last_name = "Batthyany"
+					historical = yes
+					birth_date = 1807.2.10 
+					culture = cu:hungarian
+					is_general = yes
+					religion = catholic
+					interest_group = ig_armed_forces
+					ideology = ideology_reformer
+					ig_leader = yes
+					traits = { 
+						stalwart_defender 
+						experienced_artillery_commander
+						basic_political_operator
+					}
+				}
+				create_character = {
+					first_name = "Lajos"			
+					last_name = "Aulich"
+					historical = yes
+					birth_date = 1793.8.25 
+					culture = cu:hungarian
+					is_general = yes
+					religion = catholic
+					interest_group = ig_armed_forces
+					ideology = ideology_jingoist_leader
+					traits = { 
+						resupply_commander 
+						plains_commander 
+					}
+				}
+			}
 	}
 	option = {
 		name = hungarian_revolution.1.a
@@ -412,7 +500,27 @@ hungarian_revolution.1 = {
 		create_diplomatic_play = {
 			target_country = c:HUN
 			type = dp_annex_war
-			escalation = 80
+			escalation = 81
+			target_state = s:STATE_CENTRAL_HUNGARY.region_state:HUN
+			add_war_goal = {
+				holder = c:HUN
+				type = humiliation
+				target_country = c:AUS
+			}
+			add_war_goal = {
+				holder = c:HUN
+				type = war_reparations
+				target_country = c:AUS
+			}
+		}
+	}
+	option = {
+		name = hungarian_revolution.1.b
+		play_as = c:HUN
+		create_diplomatic_play = {
+			target_country = c:HUN
+			type = dp_annex_war
+			escalation = 81
 			target_state = s:STATE_CENTRAL_HUNGARY.region_state:HUN
 			add_war_goal = {
 				holder = c:HUN
@@ -493,7 +601,7 @@ italian_revolt.1 = {
 		create_diplomatic_play = {
 			target_country = c:LMV
 			type = dp_conquer_state
-			escalation = 80
+			escalation = 81
 			target_state = s:STATE_ISTRIA.region_state:LMV
 			add_war_goal = {
 				holder = c:AUS
@@ -611,7 +719,7 @@ slavic_revolt.1 = {
 		create_diplomatic_play = {
 			target_country = c:SER
 			type = dp_annex_war
-			escalation = 80
+			escalation = 81
 			target_state = s:STATE_BOSNIA.region_state:SER
 			add_war_goal = {
 				holder = c:SER
@@ -711,7 +819,7 @@ greek_revolt.1 = {
 		create_diplomatic_play = {
 			target_country = c:BYZ
 			type = dp_conquer_state
-			escalation = 80
+			escalation = 81
 			target_state = s:STATE_CYPRUS.region_state:BYZ
 			add_war_goal = {
 				holder = c:LMV
