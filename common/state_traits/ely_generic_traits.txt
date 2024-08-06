@@ -4,13 +4,15 @@ state_trait_natural_harbors_one = {
 	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
 	
 	modifier = {
+		building_group_bg_fishing_throughput_add = 0.1
+		building_group_bg_whaling_throughput_add = 0.1
 		building_shipyards_throughput_add = 0.1
 		building_military_shipyards_throughput_add = 0.1
-		building_port_throughput_add = 0.5
+		building_port_throughput_add = 0.25
 		state_building_port_max_level_add = 2
 		state_infrastructure_mult = 0.1
-		state_construction_mult = 0.1
 		state_building_naval_base_max_level_add = 10
+		state_market_access_price_impact = 0.05
 	}
 }
 
@@ -21,6 +23,7 @@ state_trait_mountain_terrain = {
 		state_construction_mult = -0.1
 		state_infrastructure_mult = -0.1
 		building_group_bg_mining_throughput_add = 0.05
+		state_market_access_price_impact = -0.05
     }
 }
 
@@ -31,6 +34,7 @@ state_trait_taurus_mountains = {
 		state_construction_mult = -0.1
 		state_infrastructure_mult = -0.1
 		building_group_bg_mining_throughput_add = 0.05
+		state_market_access_price_impact = -0.05
     }
 }
 
@@ -41,6 +45,7 @@ state_trait_carpathian_mountains = {
 		state_construction_mult = -0.1
 		state_infrastructure_mult = -0.1
 		building_group_bg_mining_throughput_add = 0.05
+		state_market_access_price_impact = -0.05
     }
 }
 
@@ -51,6 +56,7 @@ state_trait_ural_mountains = {
 		state_construction_mult = -0.1
 		state_infrastructure_mult = -0.1
 		building_group_bg_mining_throughput_add = 0.05
+		state_market_access_price_impact = -0.05
     }
 }
 
@@ -69,6 +75,7 @@ state_trait_appalachian_mountains = {
 		state_construction_mult = -0.1
 		state_infrastructure_mult = -0.1
 		building_group_bg_mining_throughput_add = 0.05
+		state_market_access_price_impact = -0.05
     }
 }
 
@@ -216,6 +223,7 @@ state_trait_pyrenees_mountains = {
 		state_construction_mult = -0.1
 		state_infrastructure_mult = -0.1
 		building_group_bg_mining_throughput_add = 0.05
+		state_market_access_price_impact = -0.05
     }
 }
 

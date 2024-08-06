@@ -1,0 +1,21 @@
+greenland_ely_verybig_money = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 100000
+}
+
+
+greenland_ely_big_money = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 57700
+}
+
+greenland_den_big_money = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_tax_income_add = 57700
+}
+
+
+conquest_of_greenland = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	country_prestige_add = 20
+}

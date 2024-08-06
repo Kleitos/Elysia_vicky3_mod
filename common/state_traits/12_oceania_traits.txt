@@ -21,7 +21,6 @@ state_trait_great_dividing_range = {
 	modifier = {
 		state_construction_mult = -0.1
 		state_infrastructure_mult = -0.1
-		building_group_bg_mining_throughput_add = 0.05
 	}
 }
 
