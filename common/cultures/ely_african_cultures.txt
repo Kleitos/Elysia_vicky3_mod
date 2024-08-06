@@ -97,7 +97,7 @@ haratin={
 hausa={
 	color= hsv{ 0.83 0.40 0.50 }
 	religion = sunni
-	traits = { hausa_group west_african_culture_group african_heritage }
+	traits = { hausa_group central_african_culture_group african_heritage }
 
     obsessions = {
         coffee

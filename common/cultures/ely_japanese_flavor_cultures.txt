@@ -1,6 +1,6 @@
 ﻿japanese={
 	color= hsv{ 0 0 90 }
-	religion = mahayana
+	religion = shinto
 	traits = { yamato east_asian_heritage pagan_heritage}
 
     obsessions = {

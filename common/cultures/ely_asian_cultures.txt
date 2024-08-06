@@ -529,7 +529,7 @@ vietnamese={
 
 manchu={
 	color= rgb{ 233 207 84 }
-	religion = mahayana
+	religion = confucian
 	traits = { sinosphere north_asian_heritage pagan_heritage }
 	
 	obsessions = {
@@ -609,7 +609,7 @@ manchu={
 
 korean={
 	color= hsv{ 0.17 0.41 0.34 }
-	religion = mahayana
+	religion = confucian
 	traits = { korean_language east_asian_heritage pagan_heritage }
 	
 	obsessions = {

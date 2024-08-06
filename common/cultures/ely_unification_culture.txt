@@ -1,5 +1,5 @@
-﻿greek ={
-	color= hsv{ 0.94 0.45 0.48 }
+﻿rhomaion ={
+	color= rgb{ 158 68 137 }
 	religion = orthodox
 	traits = { european_heritage byzantine_legacy }
 	
