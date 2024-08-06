@@ -19,6 +19,9 @@
  ARK:0 "South Arkadia"
  ARK_ADJ:0 "Arkadian"
  
+ INC:0 "Inca"
+ INC_ADJ:0 "Incan"
+ 
  ### Culture ###
  
  incan_culture:0 "Runakuna"

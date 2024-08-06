@@ -14,6 +14,10 @@
  
 #Other Things
 
+ 
+ CONF_OF__RHINE: "Confederacy of the Rhine"
+ LATIN_PACT: "Pact of Rome"
+
   ##Buildings##
  building_kiel_canal:0 "Kiel Canal"
  building_kra_canal:0 "Kra Canal"
