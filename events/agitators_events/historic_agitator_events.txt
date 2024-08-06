@@ -29,7 +29,7 @@ historical_agitators.1 = { #Vladimir Lenin
 			ig_approval < 0	
 		}
 		game_date > 1890.1.1
-		has_technology_researched = socialism
+		has_technology_researched = political_agitation
 		NOT = {
 			has_law = law_type:law_council_republic
 		}
@@ -574,6 +574,14 @@ historical_agitators.6 = { #Charles Maurras
 				if = {
 					limit = {
 						owner = {
+							has_journal_entry = je_divided_monarchists
+						}
+					}
+					set_ideology = ideology:ideology_legitimist
+				}
+				else_if = {
+					limit = {
+						owner = {
 							has_law = law_type:law_monarchy
 						}
 					}
@@ -726,6 +734,102 @@ historical_agitators.7 = { #Giuseppe Mazzini
 		add_radicals = {
 			value = small_radicals
 			interest_group = scope:historic_agitator_scope.interest_group
+		}
+	}
+}
+
+historical_agitators.8 = { #Napoleon III
+	type = country_event
+	placement = root
+
+	gui_window = event_window_1char_tabloid
+	left_icon = scope:historic_agitator_scope
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
+
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	title = historical_agitators.8.t
+	desc = historical_agitators.8.d
+	flavor = historical_agitators.8.f
+
+	duration = 3
+
+	dlc = dlc004
+
+	trigger = {
+		has_dlc_feature = voice_of_the_people_content
+		empty_agitator_slots >= 1
+		c:FRA ?= this
+		game_date < 1870.1.1
+		OR = {
+			AND = {
+				has_journal_entry = je_divided_monarchists
+				je:je_divided_monarchists = { 
+					"scripted_bar_progress(divided_monarchists_bonapartist_progress_bar)" > 100 
+				}
+			}
+			NOT = {
+				has_journal_entry = je_divided_monarchists
+			}
+		}
+		NOT = { has_global_variable = napoleon_iii_spawn }
+	}
+
+	immediate = {
+		create_character = {
+			template = fra_napoleon_iii_character_template
+			on_created = {
+				set_variable = {
+					name = bonapartist_leader
+				}		
+				set_variable = napoleon_iii_var		
+			}
+		}
+		random_scope_character = {
+			limit = {
+				has_variable = napoleon_iii_var
+			}
+			save_scope_as = historic_agitator_scope
+		}
+		set_global_variable = napoleon_iii_spawn
+	}
+
+	option = {
+		name = historical_agitators.8.a
+		default_option = yes
+		show_as_tooltip = {
+			create_character = {
+				template = fra_napoleon_iii_character_template
+			}
+		}
+		every_interest_group = {
+			limit = {
+				leader = {
+					has_ideology = ideology:ideology_bonapartist
+				}
+			}
+			ROOT = {
+				add_radicals = {
+					value = medium_radicals
+					interest_group = prev
+				}
+			}
+		}
+	}
+	option = {
+		name = historical_agitators.8.b
+		show_as_tooltip = {
+			create_character = {
+				template = fra_napoleon_iii_character_template
+			}
+		}
+		scope:historic_agitator_scope = {
+			add_modifier = {
+				name = modifier_napoleonic_return
+				months = normal_modifier_time
+			}
 		}
 	}
 }
@@ -1026,7 +1130,7 @@ historical_agitators.12 = { #Trotsky
 		}
 		game_date > 1898.1.1
 		game_date < 1917.1.1
-		has_technology_researched = socialism
+		has_technology_researched = political_agitation
 		NOT = { has_global_variable = trotsky_spawn }
 		NOT = { has_law = law_type:law_council_republic }
 	}
@@ -1434,14 +1538,16 @@ historical_agitators.16 = { #Sorel
 	option = {
 		name = historical_agitators.16.c
 		trigger = {
-			can_research = philosophical_pragmatism
+			can_research = political_agitation
 		}
 		hidden_effect = {
 			scope:historic_agitator_scope = {
-				kill_character = yes
+				kill_character = {
+					hidden = yes
+				}
 			}
 		}
-		add_technology_progress = { progress = 5000 technology = philosophical_pragmatism }
+		add_technology_progress = { progress = 5000 technology = political_agitation }
 	}
 }
 

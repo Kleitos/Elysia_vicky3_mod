@@ -52,6 +52,17 @@ algeria_events.1 = {
 		ai_chance = {
 			base = 0
 		}
+		if = {
+			limit = {
+				has_journal_entry = je_divided_monarchists
+			}
+			custom_tooltip = {
+				text = bonapartist_progress_increase_15_tt
+				je:je_divided_monarchists = {
+					add_progress = { value = 15 name = divided_monarchists_bonapartist_progress_bar }
+				}
+			}
+		}
 		ig:ig_armed_forces = {
 			add_modifier = {
 				name = vanquished_barbary
@@ -90,6 +101,17 @@ algeria_events.1 = {
 		default_option = yes
 		ai_chance = {
 			base = 1
+		}
+		if = {
+			limit = {
+				has_journal_entry = je_divided_monarchists
+			}
+			custom_tooltip = {
+				text = legitimist_progress_increase_15_tt
+				je:je_divided_monarchists = {
+					add_progress = { value = 15 name = divided_monarchists_legitimist_progress_bar }
+				}
+			}
 		}
 		random_scope_state = {
 			limit = {
@@ -141,6 +163,17 @@ algeria_events.1 = {
 		name = algeria_events.1.c
 		ai_chance = {
 			base = 0
+		}
+		if = {
+			limit = {
+				has_journal_entry = je_divided_monarchists
+			}
+			custom_tooltip = {
+				text = orleanist_progress_increase_15_tt
+				je:je_divided_monarchists = {
+					add_progress = { value = 15 name = divided_monarchists_orleanist_progress_bar }
+				}
+			}
 		}
 		random_scope_state = {
 			limit = {
@@ -1153,6 +1186,17 @@ algeria_events.9 = {
 				months = very_long_modifier_time
 			}
 		}
+		if = {
+			limit = {
+				has_journal_entry = je_divided_monarchists
+			}
+			custom_tooltip = {
+				text = bonapartist_progress_increase_15_tt
+				je:je_divided_monarchists = {
+					add_progress = { value = 15 name = divided_monarchists_bonapartist_progress_bar }
+				}
+			}
+		}
 		ig:ig_armed_forces = {
 			# ig approval and some polstr
 			add_modifier = {
@@ -1167,6 +1211,17 @@ algeria_events.9 = {
 			add_modifier = {
 				name = legion_headquarters
 				months = very_long_modifier_time
+			}
+		}
+		if = {
+			limit = {
+				has_journal_entry = je_divided_monarchists
+			}
+			custom_tooltip = {
+				text = bonapartist_progress_increase_5_tt
+				je:je_divided_monarchists = {
+					add_progress = { value = 5 name = divided_monarchists_bonapartist_progress_bar }
+				}
 			}
 		}
 		every_scope_state = {
