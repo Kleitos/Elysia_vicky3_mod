@@ -67,11 +67,10 @@
  STATE_PHILIPPINES_SEA:0 "Philippines Sea"
  STATE_BERING_SEA:0 "Bering Sea"
  STATE_SOLOMON_SEA:0 "Solomon Sea"
- 
- STATE_NORTH_PACIFIC_OCEAN:0 "North Eirenic Ocean"
- STATE_SOUTH_PACIFIC_OCEAN:0 "South Eirenic Ocean"
- STATE_CHILEAN_SEA:0 "Aimara Sea"
- STATE_PERUVIAN_SEA:0 "Quechua Sea"
- STATE_PACIFIC_SEABOARD:0 "Eirenic Seaboard"
- STATE_CENTROAMERICAN_SEA:0 "Arkadia Sea"
+ STATE_NORTH_PACIFIC_OCEAN:0 "North Pacific Ocean"
+ STATE_SOUTH_PACIFIC_OCEAN:0 "South Pacific Ocean"
+ STATE_CHILEAN_SEA:0 "Chilean Sea"
+ STATE_PERUVIAN_SEA:0 "Peruvian Sea"
+ STATE_PACIFIC_SEABOARD:0 "Pacific Seaboard"
+ STATE_CENTROAMERICAN_SEA:0 "Centroamerican Sea"
   
