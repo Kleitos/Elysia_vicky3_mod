@@ -134,7 +134,7 @@ STATE_CENTRAL_INDIA = {
 
 STATE_KASHMIR = {
     id = 463
-	traits = { "state_trait_himalayas_mountains" }
+    traits = { "state_trait_himalayas_mountains" }
     subsistence_building = "building_subsistence_farms"
     provinces = { "x00161D" "x07D342" "x150D2C" "x15F552" "x18CED8" "x1F1AF7" "x217021" "x21F020" "x24EF26" "x2969A3" "x2B6E7C" "x2D5D46" "x2DDFDB" "x2FF385" "x37C3E4" "x3FDA5A" "x43B99F" "x504561" "x56684E" "x5990A7" "x5A0252" "x6326A6" "x6AA44A" "x72F7C2" "x808216" "x874936" "x963360" "x964219" "x9666D9" "xA09736" "xA875F3" "xAA60FC" "xB0FE2D" "xB4AA65" "xB637A4" "xC49B8C" "xCCD333" "xCDB7DB" "xD107A3" "xD25436" "xD71AAB" "xEDCC3E" "xF28F90" "xF469BC" "xF48515" "xF8D822" "xFD692B" }
     traits = { "state_trait_indus_river" }
@@ -271,7 +271,7 @@ STATE_INDIAN_OCEAN_TERRITORY = {
     id = 470
     subsistence_building = "building_subsistence_fishing_villages"
     provinces = { "x60E0B0" "xD0E090" "xD690E0" "x606CE0" "x5B5C22" "x95AAA3" }
-    impassable = { "x60E0B0" "x606CE0"}
+    impassable = { "x60E0B0" "x606CE0" }
     traits = { "state_trait_mascarene_plateau" "state_trait_isolated_islands" "state_trait_volcanic_soil" }
     city = "xD690E0"
     port = "xD0E090"

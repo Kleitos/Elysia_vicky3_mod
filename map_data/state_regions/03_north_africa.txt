@@ -194,8 +194,7 @@ STATE_DARFUR = {
     wood = "x3B2BDC"
     arable_land = 20
     arable_resources = { "bg_millet_farms" "bg_livestock_ranches" }
-    capped_resources = {
-    }
+    capped_resources = {}
     resource = {
         type = "bg_oil_extraction"
         undiscovered_amount = 10
@@ -584,8 +583,7 @@ STATE_WESTERN_MALI = {
     wood = "x901121"
     arable_land = 50
     arable_resources = { "bg_millet_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_opium_plantations" "bg_tobacco_plantations" }
-    capped_resources = {
-    }
+    capped_resources = {}
 }
 
 STATE_TIMBUKTU = {

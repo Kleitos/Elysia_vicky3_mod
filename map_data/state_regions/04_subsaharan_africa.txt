@@ -619,7 +619,7 @@ STATE_OROMIA = {
     arable_resources = { "bg_millet_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_cotton_plantations" "bg_dye_plantations" "bg_tea_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" "bg_vineyard_plantations" }
     capped_resources = {
         bg_logging = 20
-		bg_sulfur_mining = 25
+        bg_sulfur_mining = 25
     }
     resource = {
         type = "bg_rubber"
@@ -645,7 +645,7 @@ STATE_AMHARA = {
     arable_resources = { "bg_millet_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_cotton_plantations" "bg_dye_plantations" "bg_tea_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" }
     capped_resources = {
         bg_logging = 36
-		bg_iron_mining = 50
+        bg_iron_mining = 50
     }
     resource = {
         type = "bg_rubber"
@@ -671,7 +671,7 @@ STATE_GONDER = {
     arable_resources = { "bg_millet_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_cotton_plantations" "bg_dye_plantations" "bg_tea_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" }
     capped_resources = {
         bg_logging = 40
-		bg_lead_mining = 32
+        bg_lead_mining = 32
     }
     resource = {
         type = "bg_rubber"
@@ -711,7 +711,7 @@ STATE_SOMALILAND = {
     subsistence_building = "building_subsistence_orchards"
     provinces = { "x37058F" "x0085FA" "x049442" "x089FE7" "x0C544E" "x0CE1C7" "x0F9944" "x1017C5" "x10CF18" "x12FDBA" "x132465" "x184064" "x1CE5E9" "x1D4152" "x1D4F93" "x20E090" "x212090" "x281ECB" "x284319" "x2C4BFE" "x2CA298" "x2D75F4" "x2F6BB1" "x2FB806" "x30521C" "x324717" "x326FD1" "x337D01" "x354629" "x3587B8" "x395C77" "x3BB51B" "x3D5BE3" "x3DE547" "x407408" "x42DA4F" "x45FEEC" "x46250C" "x469B34" "x48FFF1" "x4A6DFD" "x4BED76" "x508D8F" "x524E91" "x529552" "x560238" "x58307A" "x5B7C30" "x5BF703" "x5C2622" "x5DAE68" "x606011" "x60EAC8" "x625125" "x655F7E" "x678D0D" "x6BA02C" "x6D0680" "x6D66A6" "x6EFA28" "x72DC5E" "x73FE30" "x76595D" "x7D4764" "x7FBAFA" "x815D01" "x83A1A3" "x854A91" "x85FD85" "x894078" "x8AA210" "x992BFC" "x995FB2" "x9ACA9E" "x9DA796" "xA05C39" "xA0E090" "xA1A21B" "xA2A857" "xA6E128" "xAABDBD" "xAE76D1" "xAFF79D" "xB19FD2" "xB64D3E" "xB72AFB" "xB9F779" "xBC0D72" "xBF3A7A" "xBFE050" "xC6A5CB" "xCA0AFC" "xCB3B07" "xCCC39F" "xCEE8F8" "xD0BA96" "xD0FF66" "xD191E8" "xD3EE2E" "xD6084C" "xD85A85" "xD97AC4" "xDDAC33" "xDDF9DB" "xDEFB4F" "xDF6111" "xDF951C" "xE19C5A" "xE44897" "xE4636A" "xE585C3" "xE65D19" "xED2D92" "xEDC612" "xEF3903" "xF0C31D" "xF26F4C" "xF2A924" "xF30A4D" "xF4A328" "xF5E822" "xF70163" "xF9565C" "xFE3534" }
     impassable = { "x37058F" }
-	traits = { "state_trait_malaria" }
+    traits = { "state_trait_malaria" }
     city = "x894078"
     port = "x524E91"
     farm = "x326FD1"
@@ -745,7 +745,7 @@ STATE_SOUTH_MADAGASCAR = {
     capped_resources = {
         bg_iron_mining = 7
         bg_coal_mining = 80
-		bg_sulfur_mining = 3
+        bg_sulfur_mining = 3
         bg_logging = 40
         bg_whaling = 4
         bg_fishing = 8
@@ -778,7 +778,7 @@ STATE_NORTH_MADAGASCAR = {
         bg_logging = 36
         bg_coal_mining = 9
         bg_iron_mining = 4
-		bg_sulfur_mining = 7
+        bg_sulfur_mining = 7
         bg_whaling = 6
         bg_fishing = 10
     }
@@ -940,8 +940,8 @@ STATE_SAO_TOME = {
         undiscovered_amount = 3
     }
     naval_exit_id = 3091
-	
-}	
+
+}
 
 STATE_UBANGI_SHARI = {
     id = 241
@@ -1470,12 +1470,13 @@ STATE_CAPE_COLONY = {
     id = 261
     subsistence_building = "building_subsistence_farms"
     provinces = { "x026A9C" "x0C9F79" "x0D23B6" "x0EEAD6" "x10CCF3" "x1F8B77" "x2392F9" "x306050" "x31E050" "x3560D3" "x39A19A" "x3D70BA" "x407453" "x43FDEA" "x4E1F70" "x55A52C" "x59D2D7" "x5B12AF" "x60F62D" "x6ABC89" "x6C917D" "x7543E0" "x826376" "x86C29A" "x8A5F5F" "x8C303E" "x964401" "x97EAD8" "xA18690" "xA4187E" "xA6837D" "xA885D9" "xAF5637" "xB06050" "xC400D3" "xC95189" "xC9BCA7" "xCA52E6" "xD13AD2" "xD497D5" "xE156BB" "xEF2B27" "xEF4150" }
+    traits = { "state_trait_very_good_wine_climate" }
     city = "x826376"
     port = "x31E050"
     farm = "x5B12AF"
     mine = "xC95189"
     wood = "x43FDEA"
-    arable_land = 50
+    arable_land = 80
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_tea_plantations" "bg_vineyard_plantations" }
     capped_resources = {
         bg_logging = 14
