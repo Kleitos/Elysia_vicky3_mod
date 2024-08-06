@@ -43,5 +43,9 @@
 		trigger_event = {
 			id = zimbabwe.1
 		}
+		add_modifier = {
+			name = favored_by_destiny
+            months = -1
+		}
 	}
 }

@@ -1,5 +1,5 @@
 ﻿COUNTRIES = {
-	c:LUC = {
+	c:LMV = {
 		
 		add_taxed_goods = g:liquor
 		add_taxed_goods = g:wine
@@ -27,6 +27,14 @@
 
 		add_journal_entry = {
 			type = je_avert_greek_mutiny
+		}
+		add_modifier = {
+			name = favored_by_destiny
+            months = -1
+		}
+		add_modifier = {
+			name = unification_prestige
+            months = very_long_modifier_time
 		}
 	}
 }
