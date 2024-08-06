@@ -5,7 +5,7 @@
 			type = puppet
 		}	
 	}
-	c:NET ?= {
+	c:NET ?= {	
 		create_diplomatic_pact = {
 			country = c:DEI
 			type = dominion
@@ -20,23 +20,17 @@
 	c:RUS ?= {
 		create_diplomatic_pact = {
 			country = c:KZH
-			type = puppet
+			type = protectorate
 		}
 		create_diplomatic_pact = {
 			country = c:UZH
-			type = puppet
+			type = protectorate
 		}
 		create_diplomatic_pact = {
 			country = c:OZH
-			type = puppet
+			type = protectorate
 		}
-	}
-	c:PRU ?= {
-		create_diplomatic_pact = {
-			country = c:HOH
-			type = puppet
-		}
-	}		
+	}	
 	c:DEN ?= {
 		create_diplomatic_pact = {
 			country = c:HOL
@@ -61,8 +55,6 @@
 			type = tributary
 		}			
 	}
-	c:AUS ?= {
-	}
 	c:GBR ?= {
 		create_diplomatic_pact = {
 			country = c:BIC
@@ -72,7 +64,6 @@
 			country = c:HAN
 			type = personal_union
 		}
-
 		### AUSTRALIA ###
 		# Colony of New South Wales
 		create_diplomatic_pact = {
@@ -107,10 +98,6 @@
 		}
 	}
 	c:TUR ?= {
-		create_diplomatic_pact = {
-			country = c:TUN
-			type = protectorate
-		}
 	}
 	c:BIC ?= {		
 		create_diplomatic_pact = {
@@ -125,7 +112,15 @@
 			country = c:ORI
 			type = puppet
 		}
-	}	
+		create_diplomatic_pact = {
+			country = c:BAS
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:BER
+			type = puppet
+		}		
+	}
 	c:DEI ?= {
 		create_diplomatic_pact = {
 			country = c:YOG
@@ -152,4 +147,67 @@
 			type = puppet
 		}
 	}
+
+	c:PER = {
+		create_diplomatic_pact = {
+			country = c:ARB
+			type = puppet
+		}
+	}
+	
+	c:KAL = {
+	}
+	
+	
+	# Starting liberty desire
+	c:BIC = {
+		add_liberty_desire = -30
+	}
+	
+	c:DEI = {
+		add_liberty_desire = -30
+	}	
+	
+	c:SAF = {
+		add_liberty_desire = -30
+	}	
+	
+	c:NSW = {
+		add_liberty_desire = -30
+	}
+
+	c:SAF = {
+		add_liberty_desire = -30
+	}
+
+	c:WAS = {
+		add_liberty_desire = -30
+	}	
+
+	c:SAS = {
+		add_liberty_desire = -30
+	}	
+
+	c:TAS = {
+		add_liberty_desire = -30
+	}
+	
+	c:OZH = {
+		add_liberty_desire = 10
+	}
+
+	c:KZH = {
+		add_liberty_desire = 10
+	}
+
+	c:UZH = {
+		add_liberty_desire = 10
+	}	
+	
+	c:BIC ?= {
+		every_subject_or_below = {
+			 set_relations = { country = c:BIC value = 50 }
+			 add_liberty_desire = -20
+		}
+	}	
 }

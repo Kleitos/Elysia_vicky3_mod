@@ -1,7 +1,15 @@
-﻿
+﻿DIPLOMACY = {
+	c:NET ?= {
+		create_bidirectional_truce = {
+			country = c:BEL
+			months = 7
+		}
+	}	
+}
+
 DIPLOMACY = {
 	c:EGY= {
-		create_truce = {
+		create_bidirectional_truce = {
 			country = c:TUR
 			months = 48
 		}
@@ -10,7 +18,7 @@ DIPLOMACY = {
 
 DIPLOMACY = {
 	c:ASH= {
-		create_truce = {
+		create_bidirectional_truce = {
 			country = c:GBR
 			months = 6
 		}
@@ -18,8 +26,17 @@ DIPLOMACY = {
 }
 
 DIPLOMACY = {
+	c:GRE= {
+		create_bidirectional_truce = {
+			country = c:TUR
+			months = 12
+		}
+	}	
+}
+
+DIPLOMACY = {
 	c:SIA= {
-		create_truce = {
+		create_bidirectional_truce = {
 			country = c:DAI
 			months = 36
 		}
