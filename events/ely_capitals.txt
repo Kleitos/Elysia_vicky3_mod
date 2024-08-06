@@ -1,0 +1,311 @@
+namespace = ely_capital
+namespace = ely_capital_fix
+
+
+ely_capital.1 = {
+	type = country_event
+	placement = root
+	title = ely_capital.1.t
+	desc = ely_capital.1.d
+
+	duration = 3
+
+	event_image = {
+		video = "votp_agitator_speaking"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	trigger = {
+		# Triggered by JE
+	}
+
+	immediate = {
+			add_journal_entry = { type = je_ely_capital_fix }
+	}
+
+	option = {
+		name = ely_capital.1.a
+		add_radicals = {
+			value = very_large_radicals
+		}	
+		add_modifier = {
+			name = no_meta_game
+			months = -1
+		}
+	}
+	option = {
+		name = ely_capital.1.b
+		default_option = yes
+		add_journal_entry = { type = je_ely_capital }
+		ai_chance = {
+			base = 100
+		}
+		set_capital = STATE_DISTRICT_OF_COLUMBIA
+	}
+	
+}	
+
+ely_capital_fix.1 = {
+	type = country_event
+	placement = root
+	title = ely_capital.1.t
+	desc = ely_capital.1.d
+
+	duration = 3
+
+	event_image = {
+		video = "votp_agitator_speaking"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	trigger = {
+		# Triggered by JE
+	}
+
+	immediate = {
+			add_journal_entry = { type = je_ely_capital }
+	}
+
+	option = {
+		name = ely_capital_fix.1.a
+		remove_modifier = no_meta_game
+	}
+	
+}	
+
+ely_capital.2 = {
+	type = country_event
+	placement = root
+	title = ely_capital.2.t
+	desc = ely_capital.2.d
+
+	duration = 3
+
+	event_image = {
+		video = "votp_agitator_speaking"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	trigger = {
+		# Triggered by JE
+	}
+
+	immediate = {
+			add_journal_entry = { type = je_fra_capital_fix }
+	}
+
+	option = {
+		name = ely_capital.2.a
+		add_radicals = {
+			value = very_large_radicals
+		}	
+		add_modifier = {
+			name = no_meta_game
+			months = -1
+		}
+	}
+	option = {
+		name = ely_capital.2.b
+		default_option = yes
+		add_journal_entry = { type = je_fra_capital }
+		ai_chance = {
+			base = 100
+		}
+		set_capital = STATE_ILE_DE_FRANCE
+	}
+	
+}	
+
+ely_capital_fix.2 = {
+	type = country_event
+	placement = root
+	title = ely_capital.2.t
+	desc = ely_capital.2.d
+
+	duration = 3
+
+	event_image = {
+		video = "votp_agitator_speaking"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	trigger = {
+		# Triggered by JE
+	}
+
+	immediate = {
+			add_journal_entry = { type = je_fra_capital }
+	}
+
+	option = {
+		name = ely_capital_fix.2.a
+		remove_modifier = no_meta_game
+	}
+	
+}	
+
+ely_capital.3 = {
+	type = country_event
+	placement = root
+	title = ely_capital.3.t
+	desc = ely_capital.3.d
+
+	duration = 3
+
+	event_image = {
+		video = "votp_agitator_speaking"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	trigger = {
+		# Triggered by JE
+	}
+
+	immediate = {
+			add_journal_entry = { type = je_gbr_capital_fix }
+	}
+
+	option = {
+		name = ely_capital.3.a
+		add_radicals = {
+			value = very_large_radicals
+		}	
+		add_modifier = {
+			name = no_meta_game
+			months = -1
+		}
+	}
+	option = {
+		name = ely_capital.3.b
+		default_option = yes
+		add_journal_entry = { type = je_gbr_capital }
+		ai_chance = {
+			base = 100
+		}
+		set_capital = STATE_HOME_COUNTIES
+	}
+	
+}	
+
+ely_capital_fix.3 = {
+	type = country_event
+	placement = root
+	title = ely_capital.3.t
+	desc = ely_capital.3.d
+
+	duration = 3
+
+	event_image = {
+		video = "votp_agitator_speaking"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	trigger = {
+		# Triggered by JE
+	}
+
+	immediate = {
+			add_journal_entry = { type = je_gbr_capital }
+	}
+
+	option = {
+		name = ely_capital_fix.3.a
+		remove_modifier = no_meta_game
+	}
+	
+}	
+
+ely_capital.4 = {
+	type = country_event
+	placement = root
+	title = ely_capital.4.t
+	desc = ely_capital.4.d
+
+	duration = 3
+
+	event_image = {
+		video = "votp_agitator_speaking"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	trigger = {
+		# Triggered by JE
+	}
+
+	immediate = {
+			add_journal_entry = { type = je_chi_capital_fix }
+	}
+
+	option = {
+		name = ely_capital.4.a
+		add_radicals = {
+			value = very_large_radicals
+		}	
+		add_modifier = {
+			name = no_meta_game
+			months = -1
+		}
+	}
+	option = {
+		name = ely_capital.4.b
+		default_option = yes
+		add_journal_entry = { type = je_chi_capital }
+		ai_chance = {
+			base = 100
+		}
+		set_capital = STATE_BEIJING
+	}
+	
+}	
+
+ely_capital_fix.4 = {
+	type = country_event
+	placement = root
+	title = ely_capital.4.t
+	desc = ely_capital.4.d
+
+	duration = 3
+
+	event_image = {
+		video = "votp_agitator_speaking"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	trigger = {
+		# Triggered by JE
+	}
+
+	immediate = {
+			add_journal_entry = { type = je_chi_capital }
+	}
+
+	option = {
+		name = ely_capital_fix.4.a
+		remove_modifier = no_meta_game
+	}
+	
+}	

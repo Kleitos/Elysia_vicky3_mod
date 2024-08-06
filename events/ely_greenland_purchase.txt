@@ -500,6 +500,7 @@ greenland.9 = { #DEN has transferred greenland
 	immediate = {
 		c:ELY = {
 			save_scope_as = ely_scope
+			add_journal_entry = { type = je_greenland_infrastructure }
 		}
 		c:DEN = {
 			save_scope_as = denmark_scope

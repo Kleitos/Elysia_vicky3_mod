@@ -27,23 +27,31 @@ byzantine_resurgence.1 = {
 	}
 
 	immediate = {
-		s:STATE_KONYA = {
-			add_homeland = cu:greek
-		}
-		s:STATE_KASTAMONU = {
-			add_homeland = cu:greek
-		}
-		s:STATE_ANKARA = {
-			add_homeland = cu:greek
-		}
 	}
 
     option = {
 		name = byzantine_resurgence.1.a
 		default_option = yes
 		ai_chance = {
-			base = 75
+			base = 80
 		}
+		s:STATE_KONYA = {
+			add_homeland = cu:rhomaion
+			add_claim = c:BYZ
+		}
+		s:STATE_KASTAMONU = {
+			add_homeland = cu:rhomaion
+			add_claim = c:BYZ
+		}
+		s:STATE_ANKARA = {
+			add_homeland = cu:rhomaion
+			add_claim = c:BYZ
+		}
+		s:STATE_ADANA = {
+			add_homeland = cu:rhomaion
+			add_claim = c:BYZ
+		}
+		add_journal_entry = { type = je_byzantine_reconquest }
 		create_diplomatic_play = {
 			target_country = c:TUR
 			war = yes
@@ -89,7 +97,7 @@ byzantine_resurgence.1 = {
 	option = {
 		name = byzantine_resurgence.1.b
 		ai_chance = {
-			base = 25
+			base = 20
 		}
 		add_modifier = {
 			name = government_admits_failure
@@ -121,22 +129,22 @@ byzantine_resurgence.2 = {
 	}
 
 	immediate = {
-		s:STATE_ADANA = {
-			add_homeland = cu:greek
-		}
-		s:STATE_ERZURUM = {
-			add_homeland = cu:greek
-		}
-		s:STATE_DIYARBAKIR = {
-			add_homeland = cu:greek
-		}
 	}
 
     option = {
 		name = byzantine_resurgence.2.a
 		default_option = yes
+		add_journal_entry = { type = je_byzantine_revenge }
+		s:STATE_ERZURUM = {
+			add_homeland = cu:rhomaion
+			add_claim = c:BYZ
+		}
+		s:STATE_DIYARBAKIR = {
+			add_homeland = cu:rhomaion
+			add_claim = c:BYZ
+		}
 		ai_chance = {
-			base = 75
+			base = 80
 		}
 		create_diplomatic_play = {
 			target_country = c:TUR
@@ -189,7 +197,7 @@ byzantine_resurgence.2 = {
 	option = {
 		name = byzantine_resurgence.2.b
 		ai_chance = {
-			base = 25
+			base = 20
 		}
 		add_modifier = {
 			name = government_admits_failure
@@ -226,8 +234,9 @@ byzantine_resurgence.3 = {
     option = {
 		name = byzantine_resurgence.3.a
 		default_option = yes
+		add_journal_entry = { type = je_byzantine_glory }
 		ai_chance = {
-			base = 75
+			base = 80
 		}
 		create_diplomatic_play = {
 			target_country = c:TUR
@@ -284,7 +293,7 @@ byzantine_resurgence.3 = {
 	option = {
 		name = byzantine_resurgence.3.b
 		ai_chance = {
-			base = 25
+			base = 20
 		}
 		add_modifier = {
 			name = government_admits_failure
@@ -347,6 +356,61 @@ byzantine_glory.1 = {
 		}
 	}
 }
+byzantine_glory.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = byzantine_glory.2.t
+	desc = byzantine_glory.2.d
+	flavor = byzantine_glory.2.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = byzantine_glory.2.a
+		default_option = yes
+		add_modifier = {
+			name = greek_nationalism
+			months = -1
+		}
+		s:STATE_TABRIZ = {
+			add_claim = c:BYZ
+		}
+		s:STATE_URMIA = {
+			add_claim = c:BYZ
+		}
+		s:STATE_ARMENIA = {
+			add_claim = c:BYZ
+		}
+		s:STATE_AZERBAIJAN = {
+			add_claim = c:BYZ
+		}
+		s:STATE_ELIZAVETPOL = {
+			add_claim = c:BYZ
+		}
+		s:STATE_KARS = {
+			add_claim = c:BYZ
+		}
+		s:STATE_GREATER_CAUCASUS = {
+			add_claim = c:BYZ
+		}
+	}
+}
 
 ### Colonial Expansion ###
 
@@ -379,7 +443,7 @@ byzantine_colonial.1 = {
 		name = byzantine_colonial.1.a
 		default_option = yes
 		ai_chance = {
-			base = 75
+			base = 80
 		}
 		create_diplomatic_play = {
 			target_country = c:EGY
@@ -392,7 +456,7 @@ byzantine_colonial.1 = {
 			}
 			add_war_goal = {
 				holder = c:BYZ
-				type = take_treaty_port
+				type = conquer_state
 				target_state = s:STATE_SINAI.region_state:EGY
 			}
 			add_war_goal = {
@@ -453,11 +517,16 @@ byzantine_colonial.2 = {
 		name = byzantine_colonial.2.a
 		default_option = yes
 		ai_chance = {
-			base = 75
+			base = 80
 		}
+		s:STATE_ALEPPO = {
+			add_homeland = cu:rhomaion
+			add_claim = c:BYZ
+		}
+		add_journal_entry = { type = je_byzantine_dominance }
 		create_diplomatic_play = {
 			target_country = c:EGY
-			escalation = 75
+			escalation = 81
 			type = dp_return_state
 			target_state = s:STATE_ADANA.region_state:EGY
 			add_war_goal = {
@@ -467,16 +536,21 @@ byzantine_colonial.2 = {
 			}
 			add_war_goal = {
 				holder = c:BYZ
+				type = return_state
+				target_state = s:STATE_ALEPPO.region_state:EGY
+			}
+			add_war_goal = {
+				holder = c:BYZ
 				type = humiliation
 				target_country = c:EGY
 			}
 			add_war_goal = {
-				holder = c:TUR
+				holder = c:EGY
 				type = war_reparations
 				target_country = c:BYZ
 			}
 			add_war_goal = {
-				holder = c:TUR
+				holder = c:EGY
 				type = humiliation
 				target_country = c:BYZ
 			}

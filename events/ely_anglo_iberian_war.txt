@@ -94,7 +94,7 @@ anglo_iberian_war.2 = {
 		
 				target_state = s:STATE_CASTILE.region_state:SPA
 			
-				escalation = 80
+				escalation = 81
 			
 			type = dp_humiliation
 
