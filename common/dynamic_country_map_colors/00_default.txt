@@ -417,6 +417,18 @@ commune_france = {
 	}
 }
 
+empire_france = {
+	color = "bonapartist_blue"
+
+	possible = {
+		exists = c:FRA
+		THIS = c:FRA
+		has_law = law_type:law_monarchy
+		has_variable = bonapartist_restoration_var
+		has_variable = one_true_french_dynasty
+	}
+}
+
 republican_india = {
 	color = "orange_india"
 
@@ -660,6 +672,19 @@ federation_of_the_americas = {
 				}
 				count > 1
 			}
+		}
+	}
+}
+
+kartli_kakheti = {
+	color = "kartli_grey"
+
+	possible = {
+		exists = c:GEO
+		THIS = c:GEO
+		is_country_type = unrecognized
+		NOT = {
+			has_technology_researched = nationalism
 		}
 	}
 }
