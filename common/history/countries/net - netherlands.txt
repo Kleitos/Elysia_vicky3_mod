@@ -1,5 +1,5 @@
 ﻿COUNTRIES = {
-	c:NET = {
+	c:NET ?= {
 		effect_starting_technology_tier_2_tech = yes
 		effect_starting_politics_liberal = yes
 
@@ -12,6 +12,9 @@
 		}
 
 		set_tax_level = medium
+		
+		add_taxed_goods = g:tobacco
+		add_taxed_goods = g:luxury_clothes
 		
 		activate_law = law_type:law_monarchy
 		activate_law = law_type:law_census_voting
@@ -33,6 +36,10 @@
 		set_institution_investment_level = {
 			institution = institution_colonial_affairs
 			level = 1
+		}
+		add_modifier = {
+			name = favored_by_destiny
+            months = -1
 		}
 	}
 }
