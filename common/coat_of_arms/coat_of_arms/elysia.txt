@@ -97,6 +97,14 @@ TWT_republic = {
 	}
 }
 
+INC = {
+	
+	textured_emblem = {
+		texture = "RPINCA.png"
+		instance = { scale = { 1.0 1.0 } }
+	}
+}
+
 MAR = { # Nagpur
 	# Hist. Saffron flag
 	
