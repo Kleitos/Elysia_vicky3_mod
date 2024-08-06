@@ -16,12 +16,19 @@
 		}
 	}
 
-	timeout = 7300
+	timeout = 10950
 
 	on_timeout = {
 		remove_modifier = sick_man_of_europe
 		trigger_event = {
 			id = sick_man.3
+		}
+		if = {
+			limit = {
+	       		is_in_power_bloc = yes
+	        	is_power_bloc_leader = yes				
+			}
+			custom_tooltip = sick_man_of_europe_lose_power_bloc
 		}
 	}
 
@@ -321,7 +328,7 @@ je_sick_man_army = {
 	group = je_group_historical_content
 
 	complete = {
-		army_size >= 150
+		army_size >= 100
 		has_technology_researched = napoleonic_warfare
 		NOR = {
 			any_scope_building = {
