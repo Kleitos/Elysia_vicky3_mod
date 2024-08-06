@@ -15,8 +15,24 @@
 	}
 
 	on_timeout = {
-		trigger_event = { id = raj.6 popup = yes }
-		c:SEI = { trigger_event = { id = india_revolt.3 popup = yes } }
+		if = {
+			limit = {
+				exists = c:BIC
+				c:BIC = ROOT
+			}
+			c:BIC = {
+				trigger_event = { id = raj.6 popup = yes }
+			}
+		}
+		if = {
+			limit = {
+				exists = c:SEI
+				c:SEI = ROOT
+			}
+			c:SEI = {
+				trigger_event = { id = india_revolt.3 popup = yes }
+			}
+		}
 	}
 
 	on_monthly_pulse = {
