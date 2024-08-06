@@ -1,5 +1,5 @@
 ﻿ELY = {
-	color = { 147  35  113 }
+	color = rgb { 129 20 83 }
 	
 	country_type = recognized
 
@@ -7,4 +7,16 @@
 	
 	cultures = { elysian }
 	capital = STATE_DISTRICT_OF_COLUMBIA
+}
+
+INC = { # Tawantinsuyu
+	color = rgb { 0.1 0.21 0.34 }
+	
+	country_type = recognized
+	
+	tier = empire
+	
+	cultures = { quechua aimara }
+	
+	capital = STATE_LA_PAZ
 }

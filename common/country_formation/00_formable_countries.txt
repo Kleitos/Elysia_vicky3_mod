@@ -21,6 +21,14 @@ ENG = {
 	ai_will_do = { always = yes }
 }
 
+UCA = {
+	use_culture_states = yes
+
+	required_states_fraction = 0.5
+	
+	ai_will_do = { always = yes }
+}
+
 RUS = {
 	use_culture_states = yes
 
@@ -100,31 +108,31 @@ UBD = {
 	}
 }
 
-#BYZ = {
-#	states = { 
-#		STATE_EASTERN_THRACE 
-#		STATE_ATTICA 
-#		STATE_THESSALIA 
-#		STATE_MACEDONIA 
-#		STATE_SKOPIA
-#		STATE_WESTERN_THRACE
-#		STATE_NORTHERN_THRACE
-#		STATE_HUDAVENDIGAR
-#		STATE_AYDIN
-#		STATE_WEST_AEGEAN_ISLANDS
-#		STATE_EAST_AEGEAN_ISLANDS
-#		STATE_ALBANIA
-#	}
-#
-#	required_states_fraction = 1.0
-#	
-#	ai_will_do = { always = yes }
-#
-#	possible = {
-#		has_law = law_type:law_monarchy
-#		NOT = { has_game_rule = plausible_formable_nations }
-#	}
-#}
+BYZ = {
+	states = { 
+		STATE_EASTERN_THRACE 
+		STATE_ATTICA 
+		STATE_THESSALIA 
+		STATE_MACEDONIA 
+		STATE_SKOPIA
+		STATE_WESTERN_THRACE
+		STATE_NORTHERN_THRACE
+		STATE_HUDAVENDIGAR
+		STATE_AYDIN
+		STATE_WEST_AEGEAN_ISLANDS
+		STATE_EAST_AEGEAN_ISLANDS
+		STATE_ALBANIA
+	}
+
+	required_states_fraction = 1.0
+	
+	ai_will_do = { always = yes }
+
+	possible = {
+		has_law = law_type:law_monarchy
+		NOT = { has_game_rule = plausible_formable_nations }
+	}
+}
 
 PLC = {
 	states = {
@@ -132,7 +140,7 @@ PLC = {
 		STATE_EAST_GALICIA
 		STATE_GREATER_POLAND
 		STATE_LESSER_POLAND
-		STATE_LITHUANIA
+		STATE_KAUNAS
 		STATE_MAZOVIA
 		STATE_POSEN
 		STATE_VOLHYNIA
@@ -206,6 +214,15 @@ IBE = {
 		has_technology_researched = pan-nationalism
 	}
 }
+
+CLM = {
+	use_culture_states = yes
+
+	required_states_fraction = 0.8
+	
+	ai_will_do = { always = yes }
+}
+
 BRZ = {
 	use_culture_states = yes
 
@@ -222,18 +239,46 @@ SPA = {
 	ai_will_do = { always = yes }
 }
 
-#KUK = {
-#	use_culture_states = yes
-#
-#	required_states_fraction = 0.9
-#	
-#	ai_will_do = { always = yes }
-#
-#	possible = {
-#		has_technology_researched = pan-nationalism
-#		has_law = law_type:law_multicultural
-#	}
-#}
+MEX = {
+	use_culture_states = yes
+
+	required_states_fraction = 0.75	
+	
+	ai_will_do = { always = yes }
+}
+
+KUK = {
+	use_culture_states = yes
+
+	required_states_fraction = 0.9
+	
+	ai_will_do = { always = yes }
+
+	possible = {
+		has_technology_researched = pan-nationalism
+		has_law = law_type:law_multicultural
+	}
+}
+
+USA = {
+	use_culture_states = yes
+
+	required_states_fraction = 0.75	
+	
+	ai_will_do = { always = yes }
+}
+
+FSA = {
+	use_culture_states = yes
+
+	required_states_fraction = 0.75	
+	
+	ai_will_do = { always = yes }
+
+	possible = {
+		has_law = law_type:law_slavery_banned
+	}
+}
 
 CZH = {
 	use_culture_states = yes
@@ -241,6 +286,18 @@ CZH = {
 	required_states_fraction = 1
 	
 	ai_will_do = { always = yes }
+}
+
+CAN = {
+	use_culture_states = yes
+
+	required_states_fraction = 0.75	
+	
+	ai_will_do = { always = yes }
+
+	possible = {
+		has_technology_researched = nationalism
+	}
 }
 
 AST = {
@@ -304,6 +361,28 @@ ARA = {
 		has_technology_researched = pan-nationalism
 	}
 }
+
+GCO = {
+	states = {
+		STATE_CUNDINAMARCA
+		STATE_ECUADOR
+		STATE_MIRANDA
+		STATE_ANTIOQUIA
+		STATE_GUAVIARE
+		STATE_BOLIVAR
+		STATE_ZULIA
+		STATE_CAUCA
+	}
+
+	required_states_fraction = 0.85
+
+	ai_will_do = { always = yes }
+
+	possible = {
+		has_technology_researched = nationalism
+	}
+}
+
 
 ZIM = {
 	states = {
@@ -382,19 +461,7 @@ SAF = {
 }
 
 TRH = {
-	states = { 
-		STATE_UZBEKIA
-		STATE_KIRGHIZIA
-		STATE_TAJIKISTAN
-		STATE_TURKMENIA
-		STATE_KHIVA
-		STATE_SEMIRECHE
-		STATE_AKMOLINSK
-		STATE_URALSK
-		STATE_TIANSHAN
-		STATE_DZUNGARIA
-		STATE_JETISY
-	}
+	use_culture_states = yes
 
 	required_states_fraction = 0.5
 	
@@ -486,6 +553,7 @@ CAU = {
 		STATE_ARMENIA
 		STATE_AZERBAIJAN
 		STATE_KARS
+		STATE_ELIZAVETPOL
 	}
 
 	required_states_fraction = 0.75	
@@ -513,9 +581,11 @@ KAZ = {
 		STATE_AKMOLINSK
 		STATE_JETISY
 		STATE_URALSK
+		STATE_AKTOBE
+		STATE_SYRDARYA
 	}
 
-	required_states_fraction = 0.75	
+	required_states_fraction = 0.5
 	
 	ai_will_do = { always = yes }
 
@@ -533,6 +603,112 @@ ALD = {
 
 	required_states_fraction = 1
 	
+	ai_will_do = { always = yes }
+}
+
+PEU = {
+	states = {
+		STATE_LIMA
+		STATE_CAJAMARCA
+		STATE_ICA
+		STATE_AREQUIPA
+		STATE_TARAPACA
+	}
+
+	required_states_fraction = 0.8
+	
+	ai_will_do = { always = yes }
+}
+
+UNL = {
+	states = {
+		STATE_HOLLAND
+		STATE_FLANDERS
+		STATE_WALLONIA
+		STATE_FRIESLAND
+		STATE_GELRE
+	}
+
+	required_states_fraction = 1
+	
+	ai_will_do = { always = yes }
+}
+
+RHN = {
+	states = {
+		STATE_HESSE
+		STATE_SAXONY
+		STATE_SCHLESWIG_HOLSTEIN
+		STATE_ANHALT
+		STATE_FRANCONIA
+		STATE_BAVARIA
+		STATE_BRUNSWICK
+		STATE_HANNOVER
+		STATE_BADEN
+		STATE_WURTTEMBERG
+		STATE_RUHR
+		STATE_WESTPHALIA
+		STATE_ELBE
+		STATE_MECKLENBURG
+	}
+
+	required_states_fraction = 0.75
+	
+	ai_will_do = { always = yes }
+	
+	possible = {
+		has_technology_researched = nationalism
+		NOR = {
+			c:PRU ?= this
+			c:AUS ?= this
+			c:NGF ?= this
+			c:SGF ?= this
+		}
+	}
+}
+
+HRE = {
+	use_culture_states = yes
+
+	required_states_fraction = 0.75
+	
+	ai_will_do = { always = no }
+	
+	possible = {
+		NOT = { has_game_rule = plausible_formable_nations }
+		country_is_in_europe = yes
+	}
+}
+
+CLI = {
+	states = {
+		STATE_NORTH_CAROLINA
+		STATE_SOUTH_CAROLINA
+	}
+
+	required_states_fraction = 1
+	
+	ai_will_do = { always = yes }
+
+	possible = {
+		OR = {
+			c:NCR ?= this
+			c:SCR ?= this
+		}
+		NOT = { has_game_rule = plausible_formable_nations }
+	}
+}
+
+AFG = {
+	states = {
+		STATE_HERAT
+		STATE_KANDAHAR
+		STATE_KABUL 
+		STATE_CENTRAL_HIGHLANDS
+	}
+	
+	required_states_fraction = 1
+
 	ai_will_do = { always = yes }
 }
 

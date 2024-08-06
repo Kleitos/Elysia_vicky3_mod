@@ -208,7 +208,7 @@ WAS = { # Western Australia
 	tier = principality
 	
 	capital = STATE_WESTERN_AUSTRALIA
-	cultures = { australian }
+	cultures = { australiska }
 }
 
 SAS = { # South Australia

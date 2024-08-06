@@ -508,16 +508,16 @@ MGD = {
 	capital = STATE_MINDANAO
 }
 
-#YUZ = { # Yuanzhumin
-#	color = { 97 44 96 }
-#	
-#	country_type = unrecognized
-#
-#	tier = principality
-#	
-#	cultures = { yuanzhumin }
-#	capital = STATE_FORMOSA
-#}
+YUZ = { # Yuanzhumin
+	color = { 97 44 96 }
+	
+	country_type = unrecognized
+
+	tier = principality
+	
+	cultures = { yuanzhumin }
+	capital = STATE_FORMOSA
+}
 
 PNS = { # Polynesia
 	color = { 244 140 30 }
@@ -528,4 +528,28 @@ PNS = { # Polynesia
 	
 	cultures = { hawaiian maori melanesian polynesian micronesian yuanzhumin }
 	capital = STATE_HAWAIIAN_ISLANDS
+}
+
+WTI = { # Wati
+	color = { 54 112 16 }
+
+	tier = principality
+
+	country_type = decentralized
+
+	cultures = { aborigine }
+
+	capital = STATE_WESTERN_AUSTRALIA
+}
+
+MRN = { # Mirning
+	color = { 3 113 211 }
+
+	tier = principality
+
+	country_type = decentralized
+
+	cultures = { aborigine }
+
+	capital = STATE_WESTERN_AUSTRALIA
 }

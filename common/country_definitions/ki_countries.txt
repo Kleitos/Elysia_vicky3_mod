@@ -686,15 +686,15 @@ GHN = {
 #	capital = STATE_MACEDONIA
 #}
 
-SLS = {
-	color = { 255  241  96 }
-	country_type = recognized
-	
-	tier = principality
-	
-	cultures = { north_german }
-	capital = STATE_SILESIA
-}
+#SLS = {
+#	color = { 255  241  96 }
+#	country_type = recognized
+#	
+#	tier = principality
+#	
+#	cultures = { north_german }
+#	capital = STATE_SILESIA
+#}
 
 PZN = {
 	color = { 175  77  148 }

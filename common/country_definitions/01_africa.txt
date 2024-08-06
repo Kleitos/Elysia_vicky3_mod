@@ -75,7 +75,7 @@ LIB = {
 	
 	tier = principality
 	
-	cultures = { afro_american afro_american }
+	cultures = { afro_american }
 	capital = STATE_LIBERIA
 	is_named_from_capital = yes
 }
