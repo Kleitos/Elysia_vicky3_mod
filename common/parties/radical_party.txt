@@ -115,13 +115,6 @@ radical_party = {
 				}
 			}
 			triggered_desc = {
-				desc = party_french_party
-				trigger = {
-					exists = c:GRE
-					THIS = c:GRE
-				}
-			}
-			triggered_desc = {
 				desc = party_republican_union
 				trigger = {
 					exists = c:FRA
@@ -281,6 +274,7 @@ radical_party = {
 				has_ideology = ideology:ideology_traditionalist
 				has_ideology = ideology:ideology_royalist
 				has_ideology = ideology:ideology_orleanist
+				has_ideology = ideology:ideology_legitimist
 				has_ideology = ideology:ideology_theocrat
 				has_ideology = ideology:ideology_slaver
 			}

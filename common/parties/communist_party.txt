@@ -321,6 +321,7 @@
 				has_ideology = ideology:ideology_traditionalist
 				has_ideology = ideology:ideology_royalist
 				has_ideology = ideology:ideology_orleanist
+				has_ideology = ideology:ideology_legitimist
 				has_ideology = ideology:ideology_theocrat
 				has_ideology = ideology:ideology_corporatist_leader
 			}
@@ -648,6 +649,17 @@
 			}
 			multiply = {
 				value = 0
+			}
+		}
+		if = {
+			limit = {
+				leader = {
+					has_variable = caudillo_communist
+				}
+			}
+			add = {
+				value = 20
+				desc = "caudillo_support"
 			}
 		}
 		if = {

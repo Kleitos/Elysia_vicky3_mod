@@ -33,6 +33,7 @@ colors = {
 	algeria_green = rgb { 0 129 48 }
 	algeria_yellow = rgb { 255 255 153 }
 	communist_france_red = hsv360 { 345 72 54 }
+	bonapartist_blue = hsv360 { 212 100 32 }
 	european_blue = hsv360 { 218 90 60 }
 	communist_hre_red = hsv360 { 0 85 50 }
 	technate_grey = hsv360 { 231 15 50 }

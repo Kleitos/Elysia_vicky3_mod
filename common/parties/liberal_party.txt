@@ -28,6 +28,14 @@ liberal_party = {
 				}
 			}
 			triggered_desc = {
+				desc = party_republicans
+				trigger = {
+					exists = c:USA
+					THIS = c:USA
+					has_global_variable = american_civil_war
+				}
+			}
+			triggered_desc = {
 				desc = party_liberal_democrats
 				trigger = {
 					exists = c:SWI
@@ -137,6 +145,27 @@ liberal_party = {
 				}
 			}
 			triggered_desc = {
+				desc = party_blue_party
+				trigger = {
+					exists = c:PRG
+					THIS = c:PRG
+				}
+			}
+			triggered_desc = {
+				desc = party_great_liberal_party
+				trigger = {
+					exists = c:VNZ
+					THIS = c:VNZ
+				}
+			}
+			triggered_desc = {
+				desc = party_colorado_party
+				trigger = {
+					exists = c:URU
+					THIS = c:URU
+				}
+			}
+			triggered_desc = {
 				desc = party_empire_reform_association
 				trigger = {
 					exists = c:CHI
@@ -168,7 +197,20 @@ liberal_party = {
 				}
 			}
 			triggered_desc = {
-				desc = party_english_party
+				desc = party_constitutional_party
+				trigger = {
+					exists = c:GRE
+					THIS = c:GRE
+					has_law = law_type:law_monarchy
+					ruler = {
+						culture = {
+							has_discrimination_trait = german_speaking
+						}
+					}
+				}
+			}
+			triggered_desc = {
+				desc = party_neoteristikon_komma
 				trigger = {
 					exists = c:GRE
 					THIS = c:GRE
@@ -187,6 +229,25 @@ liberal_party = {
 				desc = party_national_liberal_party
 				trigger = {
 					country_has_primary_culture = cu:romanian
+				}
+			}
+			triggered_desc = {
+				desc = party_whig_party
+				trigger = {
+					OR = {
+						AND = {
+							country_has_primary_culture = cu:dixie
+							NOT = {
+								exists = c:USA
+								THIS = c:USA
+							}
+						}
+						AND = {
+							exists = c:USA
+							THIS = c:USA
+							NOT = { has_global_variable = american_civil_war }
+						}
+					}
 				}
 			}
 			triggered_desc = {
@@ -328,6 +389,7 @@ liberal_party = {
 						has_ideology = ideology:ideology_slaver
 						has_ideology = ideology:ideology_authoritarian
 						has_ideology = ideology:ideology_orleanist
+						has_ideology = ideology:ideology_legitimist
 					}
 				}
 			}
@@ -585,7 +647,35 @@ liberal_party = {
 				desc = "from_modernizer"
 			}
 		}
-		# Special weights for ACW	
+		# Special weights for ACW
+		if = {
+			limit = {
+				owner = { 
+					OR = {
+						has_journal_entry = je_acw_countdown 
+						AND = { # JE not active yet at initialization
+							exists = c:USA
+							this = c:USA
+							year < 1837						
+						}
+					}				
+				}
+			}
+			if = {
+				limit = { leader = { has_ideology = ideology:ideology_slaver } }
+				add = {
+					value = -100
+					desc = "from_slaver_leader"
+				}					
+			}	
+			else_if = {
+				limit = { leader = { has_ideology = ideology:ideology_abolitionist } }
+				add = {
+					value = 100
+					desc = "from_abolitionist_leader"
+				}					
+			}				
+		}	
 		
 		if = {
 			limit = {
@@ -633,31 +723,6 @@ liberal_party = {
 			multiply = {
 				value = 0.1
 				desc = "from_more_than_three_prior_members"
-			}
-		}
-		if = { # anti-legitimist
-			limit = {
-				leader = {
-					OR = {
-						has_ideology = ideology:ideology_orleanist
-					}
-				}
-				owner = {
-					any_interest_group = {
-						has_party = yes
-						party = {
-							is_party_type = liberal_party
-						}
-						is_powerful = yes
-						leader = {
-							NOT = { has_ideology = ideology:ideology_orleanist }
-						}
-					}
-				}
-			}
-			add = {
-				value = -5
-				desc = "from_french_monarchist_rival"
 			}
 		}
 		if = {
@@ -778,6 +843,17 @@ liberal_party = {
 			}
 			multiply = {
 				value = 0
+			}
+		}
+		if = {
+			limit = {
+				leader = {
+					has_variable = caudillo_liberal
+				}
+			}
+			add = {
+				value = 20
+				desc = "caudillo_support"
 			}
 		}
 		if = {

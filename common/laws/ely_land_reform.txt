@@ -33,11 +33,14 @@
 	}
 	
 	modifier = {
+		interest_group_ig_landowners_pol_str_mult = 0.3
 		building_group_bg_ranching_throughput_add = -0.33
 		building_group_bg_agriculture_throughput_add = -0.33
 		building_group_bg_plantations_throughput_add = -0.33
 		state_farmers_investment_pool_efficiency_mult = -1
 		state_aristocrats_investment_pool_efficiency_mult = 1
+		state_peasants_internal_migration_disallowed_bool = yes
+		state_peasants_mass_migration_disallowed_bool = yes
 	}
 
 	possible_political_movements = {
@@ -69,11 +72,7 @@
 		value = 0
 		
 		if = {
-			limit = { 
-				has_journal_entry = je_government_petition
-				has_variable = desired_law_var
-                scope:law = var:desired_law_var
-			}
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
 			add = 750
 		}
 	}
@@ -87,10 +86,12 @@ law_tenant_farmers = {
 	progressiveness = 0
 
 	modifier = {
+		interest_group_ig_landowners_pol_str_mult = 0.1
 		building_group_bg_ranching_throughput_add = 0.1
 		building_group_bg_agriculture_throughput_add = 0.1
 		building_group_bg_plantations_throughput_add = -0.1
 		state_aristocrats_investment_pool_efficiency_mult = 0.5
+		state_peasants_internal_migration_disallowed_bool = yes
 	}
 
 	possible_political_movements = {
@@ -155,13 +156,17 @@ law_tenant_farmers = {
 		value = 0
 		
 		if = {
-			limit = { 
-				has_journal_entry = je_government_petition
-				has_variable = desired_law_var
-                scope:law = var:desired_law_var
-			}
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
 			add = 750
 		}
+		
+		if = {
+			limit = { 
+				has_journal_entry = je_meiji_main
+				has_law = law_type:law_serfdom
+			}
+			add = 10000 # Top priority for Meiji AI is to get out of Serfdom
+		}			
 	}
 }
 
@@ -196,6 +201,7 @@ law_commercialized_agriculture = {
 	}
 	
 	on_enact = {
+		custom_tooltip = financial_districts_buy_farms_tt
 		if = {
 			limit = {
 				NOR = {
@@ -256,15 +262,19 @@ law_commercialized_agriculture = {
 
 	ai_enact_weight_modifier = { #Petitions
 		value = 0
+
+		if = {
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
+			add = 750
+		}
 		
 		if = {
 			limit = { 
-				has_journal_entry = je_government_petition
-				has_variable = desired_law_var
-                scope:law = var:desired_law_var
+				has_journal_entry = je_meiji_main
+				has_law = law_type:law_serfdom
 			}
-			add = 750
-		}
+			add = 10000 # Top priority for Meiji AI is to get out of Serfdom
+		}			
 	}
 }
 
@@ -282,12 +292,15 @@ law_homesteading = {
 	}
 
 	modifier = {
+		country_farmers_pol_str_mult = 0.1
 		building_group_bg_ranching_throughput_add = 0.1
 		building_group_bg_agriculture_throughput_add = 0.1
 		building_group_bg_plantations_throughput_add = 0.1
 		state_aristocrats_investment_pool_efficiency_mult = 0.33
 		state_farmers_investment_pool_efficiency_mult = 0.33
 		state_capitalists_investment_pool_efficiency_mult = 0.33
+		building_group_bg_agriculture_allowed_collectivization_add = 0.5
+		building_group_bg_ranching_allowed_collectivization_add = 0.5
 	}
 
 	on_enact = {
@@ -355,11 +368,7 @@ law_homesteading = {
 		value = 0
 		
 		if = {
-			limit = { 
-				has_journal_entry = je_government_petition
-				has_variable = desired_law_var
-                scope:law = var:desired_law_var
-			}
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
 			add = 750
 		}
 	}
@@ -378,7 +387,8 @@ law_collectivized_agriculture = {
 		building_group_bg_plantations_throughput_add = -0.1
 		state_farmers_investment_pool_efficiency_mult = 1
 		state_aristocrats_investment_pool_efficiency_mult = -1
-		
+		building_group_bg_agriculture_allowed_collectivization_add = 1.0
+		building_group_bg_ranching_allowed_collectivization_add = 1.0
 	}
 
 	on_enact = {
@@ -438,11 +448,7 @@ law_collectivized_agriculture = {
 		value = 0
 		
 		if = {
-			limit = { 
-				has_journal_entry = je_government_petition
-				has_variable = desired_law_var
-                scope:law = var:desired_law_var
-			}
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
 			add = 750
 		}
 		

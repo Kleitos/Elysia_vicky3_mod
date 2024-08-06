@@ -373,31 +373,6 @@ military_party = {
 				desc = from_authoritarian
 			}
 		}
-		if = { # anti-legitimist
-			limit = {
-				leader = {
-					OR = {
-						has_ideology = ideology:ideology_orleanist
-					}
-				}
-				owner = {
-					any_interest_group = {
-						has_party = yes
-						party = {
-							is_party_type = military_party
-						}
-						is_powerful = yes
-						leader = {
-							NOT = { has_ideology = ideology:ideology_orleanist }
-						}
-					}
-				}
-			}
-			add = {
-				value = -5
-				desc = "from_french_monarchist_rival"
-			}
-		}
 		if = {
 			limit = {
 				owner = {

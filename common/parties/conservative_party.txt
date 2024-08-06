@@ -266,10 +266,37 @@ conservative_party = {
 				}
 			}
 			triggered_desc = {
-				desc = party_russian_party
+				desc = party_napist_party
 				trigger = {
 					exists = c:GRE
 					THIS = c:GRE
+					has_law = law_type:law_monarchy
+					ruler = {
+						culture = {
+							has_discrimination_trait = german_speaking
+						}
+					}
+				}
+			}
+			triggered_desc = {
+				desc = party_ethnikon_komma
+				trigger = {
+					exists = c:GRE
+					THIS = c:GRE
+				}
+			}
+			triggered_desc = {
+				desc = party_blanco_party
+				trigger = {
+					exists = c:URU
+					THIS = c:URU
+				}
+			}
+			triggered_desc = {
+				desc = party_colorado_party
+				trigger = {
+					exists = c:PRG
+					THIS = c:PRG
 				}
 			}
 			triggered_desc = {
@@ -373,6 +400,7 @@ conservative_party = {
 						has_ideology = ideology:ideology_traditionalist
 						has_ideology = ideology:ideology_royalist
 						has_ideology = ideology:ideology_orleanist
+						has_ideology = ideology:ideology_legitimist
 						has_ideology = ideology:ideology_theocrat
 						has_ideology = ideology:ideology_slaver
 						has_ideology = ideology:ideology_corporatist_leader
@@ -697,6 +725,34 @@ conservative_party = {
 		}
 	
 		# Special weights for ACW
+		if = {
+			limit = {
+				owner = { 
+					OR = {
+						has_journal_entry = je_acw_countdown 
+						AND = { # JE not active yet at initialization
+							exists = c:USA
+							this = c:USA
+							year < 1837						
+						}
+					}				
+				}
+			}
+			if = {
+				limit = { leader = { has_ideology = ideology:ideology_slaver } }
+				add = {
+					value = 100
+					desc = "from_slaver_leader"
+				}					
+			}	
+			else_if = {
+				limit = { leader = { has_ideology = ideology:ideology_abolitionist } }
+				add = {
+					value = -100
+					desc = "from_abolitionist_leader"
+				}					
+			}				
+		}
 
 		if = {
 			limit = {
@@ -746,31 +802,6 @@ conservative_party = {
 				desc = "from_more_than_three_prior_members"
 			}
 		}
-		if = { # anti-legitimist
-			limit = {
-				leader = {
-					OR = {
-						has_ideology = ideology:ideology_orleanist
-					}
-				}
-				owner = {
-					any_interest_group = {
-						has_party = yes
-						party = {
-							is_party_type = conservative_party
-						}
-						is_powerful = yes
-						leader = {
-							NOT = { has_ideology = ideology:ideology_orleanist }
-						}
-					}
-				}
-			}
-			add = {
-				value = -5
-				desc = "from_french_monarchist_rival"
-			}
-		}
 		if = {
 			limit = {
 				leader = {
@@ -813,6 +844,17 @@ conservative_party = {
 			add = {
 				value = 10
 				desc = "south_america_two_party_system"
+			}
+		}
+		if = {
+			limit = {
+				leader = {
+					has_variable = caudillo_conservative
+				}
+			}
+			add = {
+				value = 20
+				desc = "caudillo_support"
 			}
 		}
 		if = {

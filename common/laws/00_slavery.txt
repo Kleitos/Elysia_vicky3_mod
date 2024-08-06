@@ -66,6 +66,21 @@ law_slavery_banned = {
 				value = 0.05
 			}
 		}
+		
+		# Human rights makes literate pops support abolition
+		add = {
+			desc = "human_rights"
+			
+			if = {
+				limit = { 
+					owner = { has_technology_researched = human_rights }
+				}
+				add = {
+					value = literacy_rate
+					divide = 2
+				}
+			}
+		}
 	}
 	
 	revolution_state_weight = {
@@ -121,11 +136,7 @@ law_slavery_banned = {
 		}
 		#Petitions
 		if = {
-			limit = { 
-				has_journal_entry = je_government_petition
-				has_variable = desired_law_var
-                scope:law = var:desired_law_var
-			}
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
 			add = 750
 		}
 
@@ -135,6 +146,37 @@ law_slavery_banned = {
 				has_law = law_type:law_council_republic
 			}
 			add = 750
+		}
+		
+		# Strong tendency towards abolitionism in the late game
+		if = {
+			limit = { 
+				has_technology_researched = human_rights
+			}
+			add = 500
+		}		
+	}
+	
+	ai_impose_chance = {
+		value = 0		
+		
+		if = {
+			limit = {
+				has_law = law_type:law_slavery_banned
+				NOT = { has_strategy = ai_strategy_reactionary_agenda }
+				has_technology_researched = civilizing_mission				
+			}
+			
+			add = base_impose_law_weight
+			if = {
+				limit = {
+					OR = {
+						has_strategy = ai_strategy_progressive_agenda
+						has_strategy = ai_strategy_egalitarian_agenda
+					}
+				}
+				multiply = 5
+			}			
 		}
 	}
 }
@@ -241,11 +283,7 @@ law_debt_slavery = {
 		value = 0
 		
 		if = {
-			limit = { 
-				has_journal_entry = je_government_petition
-				has_variable = desired_law_var
-                scope:law = var:desired_law_var
-			}
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
 			add = 750
 		}
 	}
@@ -287,10 +325,6 @@ law_slave_trade = {
 				add_ideology = ideology_pro_slavery 
 			}
 		}
-	}
-	
-	modifier = {
-		interest_group_ig_landowners_pol_str_mult = 0.5
 	}
 	
 	possible_political_movements = {
@@ -354,11 +388,7 @@ law_slave_trade = {
 		value = 0
 		
 		if = {
-			limit = { 
-				has_journal_entry = je_government_petition
-				has_variable = desired_law_var
-                scope:law = var:desired_law_var
-			}
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
 			add = 750
 		}
 	}
@@ -402,11 +432,7 @@ law_legacy_slavery = {
 			}
 		}
 	}	
-	
-	modifier = {
-		interest_group_ig_landowners_pol_str_mult = 0.25
-	}
-	
+
 	possible_political_movements = {
 		law_slavery_banned
 	}
@@ -508,11 +534,7 @@ law_legacy_slavery = {
 		}
 		#Petitions
 		if = {
-			limit = { 
-				has_journal_entry = je_government_petition
-				has_variable = desired_law_var
-                scope:law = var:desired_law_var
-			}
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
 			add = 750
 		}
 }

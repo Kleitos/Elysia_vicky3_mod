@@ -444,7 +444,7 @@ popneed_communication = {
 }
 
 popneed_luxury_food = {
-	default = groceries
+	default = meat
 	
 	entry = {
 		goods = groceries
