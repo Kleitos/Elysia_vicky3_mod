@@ -45,6 +45,31 @@
 
 	possible = {
 		NOT = { has_role = agitator }
+		owner = {
+			OR = {
+				AND = { # You're Paraguay, and you chose to continue Francia's legacy
+					exists = c:PRG
+					OR = {
+						c:PRG = this
+						civil_war_origin_country = c:PRG
+					}
+					OR = {
+						has_variable = patino_paraguay_var
+						has_variable = francocracia_paraguay_var
+					}
+				}
+				AND = { # You're the subject of a country that chose to continue Francia's legacy
+					exists = c:PRG
+					is_subject_of = c:PRG
+					c:PRG = {
+						OR = {
+							has_variable = patino_paraguay_var
+							has_variable = francocracia_paraguay_var
+						}
+					}
+				}
+			}
+		}
 		# trade unions should always go vanguardist instead if available
 		NAND = {
 			owner = { has_technology_researched = socialism }

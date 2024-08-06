@@ -301,14 +301,6 @@
 
 	commander_weight = {
 		value = 0.5
-		if = {
-			limit = {
-				owner = { c:ELY ?= this }
-			}
-			multiply = {
-				value = 0.05
-			}
-		}
 	}
 
 	noble_chance = {

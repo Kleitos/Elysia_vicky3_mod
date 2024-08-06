@@ -78,6 +78,20 @@
 			}
 		}
 		# Caudillo Ideology
+		if = {
+			limit = {
+				OR = {
+					country_has_primary_culture = cu:platinean
+					country_has_primary_culture = cu:south_andean
+					country_has_primary_culture = cu:north_andean
+					country_has_primary_culture = cu:central_american
+					country_has_primary_culture = cu:mexican
+				}
+			}
+			ig:ig_armed_forces = {
+				add_ideology = ideology_caudillismo
+			}
+		}
 		# Samurai
 		else_if = {
 			limit = {
@@ -386,12 +400,13 @@
 
 	commander_weight = {
 		value = 5.0
+		
 		if = {
 			limit = {
-				owner = { c:ELY ?= this }
+				owner = { c:ELY ?= this}
 			}
-			multiply = {
-				value = 10
+			add = {
+				value = 10.0
 			}
 		}
 	}

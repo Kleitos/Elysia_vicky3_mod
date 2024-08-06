@@ -275,29 +275,22 @@ ideology_particularist = {
 ideology_isolationist = {
 	icon = "gfx/interface/icons/ideology_icons/isolationist.dds"
 	
-	lawgroup_colonization = {
-		law_frontier_colonization = strongly_approve
-		law_no_colonial_affairs = approve
-		law_colonial_resettlement = disapprove
-		law_colonial_exploitation = disapprove
-	}
-	
 	lawgroup_migration = {
-		law_closed_borders = strongly_approve
+		law_closed_borders = neutral
 		law_migration_controls = approve
 		law_no_migration_controls = disapprove
 	}
 
 	lawgroup_trade_policy = {		
-		law_isolationism = approve
-		law_protectionism = approve
+		law_isolationism = neutral
+		law_protectionism = strongly_approve
 		law_mercantilism = neutral
 		law_free_trade = disapprove
 	}
 	
 	lawgroup_citizenship = {
-		law_ethnostate = disapprove
-		law_national_supremacy = neutral
+		law_ethnostate = approve
+		law_national_supremacy = approve
 		law_racial_segregation = approve
 		law_cultural_exclusion = neutral
 		law_multicultural = strongly_disapprove	
@@ -618,7 +611,7 @@ ideology_socialist = {
 		law_per_capita_based_taxation = disapprove
 		law_land_based_taxation = neutral
 		law_proportional_taxation = neutral
-		law_consumption_based_taxation = neutral
+		law_consumption_based_taxation = strongly_approve
 		law_graduated_taxation = approve
 	}
 }
@@ -696,6 +689,13 @@ ideology_patriarchal = {
 		law_women_own_property = disapprove
 		law_women_in_the_workplace = disapprove
 		law_womens_suffrage = strongly_disapprove
+	}
+
+	lawgroup_free_speech = {
+		law_outlawed_dissent = approve
+		law_censorship = approve
+		law_right_of_assembly = neutral
+		law_protected_speech = disapprove
 	}
 }
 

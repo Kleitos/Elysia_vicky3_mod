@@ -267,14 +267,6 @@
 
 	commander_weight = {
 		value = 0.5
-		if = {
-			limit = {
-				owner = { c:ELY ?= this }
-			}
-			multiply = {
-				value = 0.05
-			}
-		}
 	}
 
 	noble_chance = {
@@ -301,7 +293,7 @@
 		}
 		if = {
 			limit = {
-				owner = { c:ELY ?= this }
+				owner = { c:ELY ?= this}
 			}
 			add = {
 				value = 0.75

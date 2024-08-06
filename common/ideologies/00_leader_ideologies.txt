@@ -419,6 +419,18 @@ ideology_radical = {
 			}
 		}
 		# Invalid for pre-ACW USA
+		NOT = {
+			owner = {
+				AND = {
+					exists = c:USA
+					OR = {
+						c:USA = this
+						civil_war_origin_country = c:USA
+					}
+				}
+				has_journal_entry = je_acw_countdown
+			}
+		}
 		# Monarchs cannot be republicans
 		NOT = {
 			owner = {
@@ -868,11 +880,24 @@ ideology_abolitionist = {
 		}	
 		if = {
 			limit = { scope:interest_group = { is_interest_group_type = ig_intelligentsia } }
-			add = 150		
+			add = 150
+			
+			if = {
+				limit = {
+					owner = { has_journal_entry = je_acw_countdown }
+				}
+				add = 150
+			}		
 		}		
 		if = {
 			limit = { has_trait = tactful }
 			add = 75
+		}
+		if = {
+			limit = {
+				owner = { has_journal_entry = je_acw_countdown }
+			}
+			add = 100
 		}
 	}
 }
@@ -932,11 +957,25 @@ ideology_slaver = {
 		}		
 		if = {
 			limit = { scope:interest_group = { is_interest_group_type = ig_landowners } }
-			add = 500			
+			add = 500
+			
+			if = {
+				limit = {
+					owner = { has_journal_entry = je_acw_countdown }
+				}
+				add = 500
+			}			
 		}
 		if = {
 			limit = { scope:interest_group = { is_interest_group_type = ig_rural_folk } }
-			add = 250			
+			add = 250
+			
+			if = {
+				limit = {
+					owner = { has_journal_entry = je_acw_countdown }
+				}
+				add = 250
+			}			
 		}		
 		if = {
 			limit = { has_trait = cruel }
@@ -945,6 +984,12 @@ ideology_slaver = {
 		if = {
 			limit = { has_trait = bigoted }
 			add = 75
+		}
+		if = {
+			limit = {
+				owner = { has_journal_entry = je_acw_countdown }
+			}
+			add = 100
 		}
 		if = { # very difficult to reintroduce slavery once you ban it and its supporters have faded from the political scene
 			limit = {
@@ -986,8 +1031,7 @@ ideology_pacifist = {
 			}
 		}
 		scope:interest_group = {
-			NOR = {
-				is_interest_group_type = ig_armed_forces
+			NOT = {
 				is_interest_group_type = ig_armed_forces
 			}
 		}
@@ -1163,6 +1207,23 @@ ideology_jingoist_leader = {
 			add = 50
 		}
 		# less likely for conservative French IG's
+		if = {
+			limit = {
+				owner = {
+					exists = c:FRA
+					this = c:FRA
+					has_journal_entry = je_divided_monarchists
+				}
+				scope:interest_group = {
+					OR = {
+						is_interest_group_type = ig_landowners
+						is_interest_group_type = ig_petty_bourgeoisie
+						is_interest_group_type = ig_devout
+					}
+				}
+			}
+			add = -100
+		}
 		# conservative and/or reactionary leaders have a higher spawn chance if the Anti-Dreyfusards won.
 		if = {
 			limit = {
@@ -1328,7 +1389,7 @@ ideology_social_democrat = {
 		law_consumption_based_taxation = disapprove
 		law_land_based_taxation = disapprove
 		law_per_capita_based_taxation = neutral
-		law_proportional_taxation = approve
+		law_proportional_taxation = strongly_approve
 		law_graduated_taxation = strongly_approve
 	}
 
@@ -1666,7 +1727,7 @@ ideology_vanguardist = {
 	}			
 	
 	possible = {
-		owner = { has_technology_researched = socialism }
+		owner = { has_technology_researched = political_agitation }
 		# Agitator ideologies should disapprove of a current law
 		NAND = {
 			has_role = agitator
@@ -2641,6 +2702,22 @@ ideology_market_liberal = {
 			add = -75
 		}
 		# less likely for conservative French IG's
+		if = {
+			limit = {
+				owner = {
+					exists = c:FRA
+					this = c:FRA
+					has_journal_entry = je_divided_monarchists
+				}
+				scope:interest_group = {
+					OR = {
+						is_interest_group_type = ig_industrialists
+						is_interest_group_type = ig_petty_bourgeoisie
+					}
+				}
+			}
+			add = -100
+		}
 		# liberal and/or radical leaders have a higher spawn chance if the Dreyfusards won.
 		if = {
 			limit = {
@@ -2877,6 +2954,23 @@ ideology_authoritarian = {
 			add = -50
 		}
 		# less likely for conservative French IG's
+		if = {
+			limit = {
+				owner = {
+					exists = c:FRA
+					this = c:FRA
+					has_journal_entry = je_divided_monarchists
+				}
+				scope:interest_group = {
+					OR = {
+						is_interest_group_type = ig_landowners
+						is_interest_group_type = ig_petty_bourgeoisie
+						is_interest_group_type = ig_devout
+					}
+				}
+			}
+			add = -100
+		}
 		# conservative and/or reactionary leaders have a higher spawn chance if the Anti-Dreyfusards won.
 		if = {
 			limit = {
@@ -3024,6 +3118,22 @@ ideology_protectionist = {
 			add = -75
 		}
 		# less likely for conservative French IG's
+		if = {
+			limit = {
+				owner = {
+					exists = c:FRA
+					this = c:FRA
+					has_journal_entry = je_divided_monarchists
+				}
+				scope:interest_group = {
+					OR = {
+						is_interest_group_type = ig_industrialists
+						is_interest_group_type = ig_petty_bourgeoisie
+					}
+				}
+			}
+			add = -100
+		}
 	}
 }
 
@@ -3476,8 +3586,8 @@ ideology_land_reformer = {
 		law_land_based_taxation = strongly_disapprove
 		law_consumption_based_taxation = neutral
 		law_per_capita_based_taxation = neutral
-		law_proportional_taxation = neutral
-		law_graduated_taxation = neutral
+		law_proportional_taxation = strongly_approve
+		law_graduated_taxation = approve
 	}
 
 	lawgroup_land_reform = {
@@ -3924,8 +4034,8 @@ ideology_corporatist_leader = {
 	}
 	
 	lawgroup_education_system = {
-		law_religious_schools = approve
 		law_public_schools = approve
+		law_religious_schools = approve
 		law_private_schools = neutral	
 		law_no_schools = disapprove	
 	}	
@@ -3963,15 +4073,6 @@ ideology_corporatist_leader = {
 				has_variable = chose_vanguardism
 				has_variable = chose_fascism
 				has_variable = chose_ethno_nationalism
-			}
-		}
-		scope:interest_group = {
-			OR = {
-				is_interest_group_type = ig_landowners
-				is_interest_group_type = ig_devout
-				is_interest_group_type = ig_petty_bourgeoisie
-				is_interest_group_type = ig_rural_folk
-				is_interest_group_type = ig_trade_unions
 			}
 		}
 	}

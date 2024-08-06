@@ -4,6 +4,7 @@
 	
 	modifier = {
 		state_birth_rate_mult = 0.025
+		building_throughput_add = 0.05
 	}
 }
 
@@ -31,6 +32,7 @@ ig_trait_work_ethic = {
 	
 	modifier = {
 		building_throughput_add = 0.05
+		state_birth_rate_mult = 0.025
 	}
 }
 
@@ -40,6 +42,7 @@ ig_trait_asceticism = {
 	
 	modifier = {
 		state_radicals_from_sol_change_mult = -0.5
+		state_mortality_mult = -0.025
 	}
 }
 
@@ -49,6 +52,7 @@ ig_trait_kar_seva = {
 	
 	modifier = {
 		state_loyalists_from_sol_change_mult = 0.1
+		country_authority_mult = 0.1
 	}
 }
 
@@ -76,6 +80,7 @@ ig_trait_the_best_revenge = {
 	
 	modifier = {
 		state_mortality_mult = -0.025
+		state_conscription_rate_mult = 0.1
 	}
 }
 
@@ -103,6 +108,7 @@ ig_trait_heavenly_sovereign = {
 	
 	modifier = {
 		country_authority_mult = 0.15
+		state_loyalists_from_sol_change_mult = 0.1
 	}
 }
 
@@ -133,9 +139,19 @@ ig_trait_zakah = {
 	}
 }
 
+ig_trait_da_wat = {
+	icon = "gfx/interface/icons/ig_trait_icons/be_fruitful_and_multiply.dds"
+	min_approval = loyal
+	
+	modifier = {
+		state_conversion_mult = 0.5
+		country_authority_mult = 0.1
+	}
+}
+
 ig_trait_sharia = {
 	icon = "gfx/interface/icons/ig_trait_icons/divine_right.dds"
-	min_approval = loyal
+	min_approval = happy
 	
 	modifier = {
 		state_education_access_add = 0.1
@@ -143,21 +159,11 @@ ig_trait_sharia = {
 	}
 }
 
-
-ig_trait_da_wat = {
-	icon = "gfx/interface/icons/ig_trait_icons/be_fruitful_and_multiply.dds"
-	min_approval = happy
-	
-	modifier = {
-		country_authority_mult = 0.1
-		state_conversion_mult = 0.1
-	}
-}
 ig_trait_mecelle = {
 	icon = "gfx/interface/icons/ig_trait_icons/divine_right.dds"
 	min_approval = happy
 	
 	modifier = {
-		country_decree_cost_mult = -0.1
+		state_decree_cost_mult = -0.1
 	}
 }
