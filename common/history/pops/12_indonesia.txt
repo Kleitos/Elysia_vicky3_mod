@@ -780,7 +780,7 @@
 		}
 	}
 	s:STATE_CELEBES = {
-		region_state:TID = {
+		region_state:BTN = {
 			create_pop = {
 				culture = moluccan
 				size = 101200
@@ -1169,20 +1169,10 @@
 	}
 
 	s:STATE_BOUGAINVILLE = {
-		region_state:FRA = {
+		region_state:HLA = {
 			create_pop = {
 				culture = melanesian
 				size = 48000
-			}
-			create_pop = {
-				culture = french
-				religion = catholic
-				size = 400
-			}
-			create_pop = {
-				culture = french
-				religion = protestant
-				size = 160
 			}
 		}
 	}

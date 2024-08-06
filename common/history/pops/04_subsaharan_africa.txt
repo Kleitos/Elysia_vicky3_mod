@@ -2232,7 +2232,7 @@
 		}
 	}
 	s:STATE_NORTH_ANGOLA = {
-		region_state:KON = {
+		region_state:SPA = {
 			create_pop = {
 				culture = bakongo
 				size = 176404

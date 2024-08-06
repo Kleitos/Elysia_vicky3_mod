@@ -12,7 +12,7 @@
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_lancers
+				type = unit_type:combat_unit_type_cuirassiers
 				state_region = s:STATE_KASHMIR
 				count = 1
 			}
@@ -22,13 +22,25 @@
 				state_region = s:STATE_KASHMIR
 				count = 1
 			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_KASHMIR
+				count = 1
+			}
 		}
 
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_persia
+			hq_region = sr:region_north_india
 			name = FaujiAin
 
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_KASHMIR
+				count = 8
+			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -43,9 +55,15 @@
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_lancers
+				type = unit_type:combat_unit_type_cuirassiers
 				state_region = s:STATE_KASHMIR
 				count = 10
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_KASHMIR
+				count = 3
 			}
 			save_scope_as = ain_army
 		}
@@ -82,7 +100,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_PASHTUNISTAN
+				state_region = s:STATE_KASHMIR
 				count = 15
 			}
 			save_scope_as = qawaid_army
@@ -94,7 +112,7 @@
 			last_name = Gardner
 			culture = cu:yankee
 			historical = yes
-			hq = region_persia
+			hq = region_north_india
 			age = 51
 			traits = {
 				brave
@@ -109,20 +127,6 @@
 	}
 
 	c:BIC ?= {
-		create_character = { # BIC, general Not technically with the BIC army at game start, but infamous for the retreat from Kabul
-			is_general = yes
-			first_name = William_George_Keith
-			last_name = Elphinstone
-			culture = cu:scottish
-			interest_group = ig_armed_forces
-			ideology = ideology_royalist
-			birth_date = 1782.1.26
-			commander_rank = commander_rank_2
-			traits = {
-				reckless
-				tactful
-			}
-		}
 
 		create_military_formation = {
 			type = army
@@ -170,9 +174,21 @@
 				state_region = s:STATE_AWADH
 				count = 5
 			}
+		}
+
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_north_india
+			name = Indian_Navy
+
+			combat_unit = { # Nothing the size of a frigate
+				type = unit_type:combat_unit_type_frigate
+				state_region = s:STATE_BOMBAY	
+				count = 1
+			}
 		}	
 	}
-	
+
 	c:SEI ?= {
 		create_military_formation = {
 			type = army
@@ -189,17 +205,6 @@
 				state_region = s:STATE_BOMBAY
 				count = 5
 			}
-		}
-		
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_north_india
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_CENTRAL_INDIA
-				count = 15
-			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
@@ -207,33 +212,16 @@
 				count = 5
 			}
 		}
+	}	
 
-		create_military_formation = {
-			type = fleet
-			hq_region = sr:region_south_india
-			name = Indian_Navy
-
-			combat_unit = { # Nothing the size of a frigate
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_BOMBAY	
-				count = 1
-			}
-		}	
-	}
-	
 	c:MYS ?= {
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_south_india
-
+			
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_CIRCARS
-				count = 5
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_TRAVANCORE
 				count = 5
 			}
 
@@ -242,18 +230,27 @@
 				state_region = s:STATE_MYSORE
 				count = 5
 			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_TRAVANCORE
+				count = 5
+			}
 		}
 	}
+
 	c:HYD ?= {
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_south_india
-
+			
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
 				state_region = s:STATE_MADRAS
 				count = 15
 			}
 		}
-	}	
+	}
 }
+
+

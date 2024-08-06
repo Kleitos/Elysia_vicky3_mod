@@ -24,7 +24,7 @@
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_lancers
+				type = unit_type:combat_unit_type_cuirassiers
 				state_region = s:STATE_PERNAMBUCO
 				count = 1
 			}
@@ -48,7 +48,7 @@
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_lancers
+				type = unit_type:combat_unit_type_cuirassiers
 				state_region = s:STATE_PERNAMBUCO
 				count = 1
 			}
@@ -72,7 +72,7 @@
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_lancers
+				type = unit_type:combat_unit_type_cuirassiers
 				state_region = s:STATE_PARAIBA
 				count = 1
 			}
@@ -121,11 +121,12 @@
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_lancers
+				type = unit_type:combat_unit_type_cuirassiers
 				state_region = s:STATE_ECUADOR
 				count = 1
 			}
 		}
+		
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_la_plata
@@ -137,21 +138,21 @@
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_lancers
+				type = unit_type:combat_unit_type_cuirassiers
 				state_region = s:STATE_SANTIAGO
-				count = 2
+				count = 5
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_LOS_RIOS
-				count = 2
+				count = 5
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_mobile_artillery
 				state_region = s:STATE_SANTIAGO
-				count = 1
+				count = 5
 			}
 		}
 
@@ -162,7 +163,7 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
 				state_region = s:STATE_SANTIAGO
-				count = 1
+				count = 5
 			}
 		}
 	}
@@ -180,18 +181,29 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_BAJO_PARAGUAY
-				count = 5
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_TUCUMAN
 				count = 1
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_lancers
+				type = unit_type:combat_unit_type_cuirassiers
+				state_region = s:STATE_BUENOS_AIRES
+				count = 1
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_BAJO_PARAGUAY
+				count = 5
+			}
+		}
+
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_la_plata
+
+			combat_unit = { # Nothing the size of a frigate
+				type = unit_type:combat_unit_type_frigate
 				state_region = s:STATE_BUENOS_AIRES
 				count = 1
 			}
@@ -207,20 +219,8 @@
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_lancers
+				type = unit_type:combat_unit_type_cuirassiers
 				state_region = s:STATE_URUGUAY
-				count = 1
-			}
-		}
-
-		create_military_formation = {
-			type = fleet
-			hq_region = sr:region_la_plata
-			name = Armada_Argentina
-
-			combat_unit = { # Nothing the size of a frigate
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_BUENOS_AIRES
 				count = 1
 			}
 		}
@@ -277,7 +277,7 @@
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_lancers
+				type = unit_type:combat_unit_type_cuirassiers
 				state_region = s:STATE_RIO_GRANDE_DO_SUL
 				count = 1
 			}
@@ -300,6 +300,7 @@
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_gran_colombia
+			name = Ejrcito_de_la_Nueva_Granada
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -326,7 +327,7 @@
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_lancers
+				type = unit_type:combat_unit_type_cuirassiers
 				state_region = s:STATE_CAUCA
 				count = 2
 			}
@@ -339,31 +340,10 @@
 		}
 	}
 
-	c:WYU ?= {
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_gran_colombia
-			name = 
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_ZULIA
-				count = 3
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_ZULIA
-				count = 2
-			}
-		}
-	}
-
 	c:ORN ?= {
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_gran_colombia
-			name = 
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -373,11 +353,29 @@
 		}
 	}
 
+	c:WYU ?= {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_gran_colombia
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_ZULIA
+				count = 3
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_cuirassiers
+				state_region = s:STATE_ZULIA
+				count = 2
+			}
+		}
+	}
+
 	c:WIN ?= {
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_gran_colombia
-			name = 
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry

@@ -48,18 +48,6 @@
 				state_region = s:STATE_SHANDONG
 				count = 10
 			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_SHANDONG
-				count = 5
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_SHANDONG
-				count = 5
-			}
 			save_scope_as = plain_yellow_banner
 		}
 
@@ -262,12 +250,6 @@
 				state_region = s:STATE_EASTERN_HUBEI
 				count = 15
 			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_FORMOSA
-				count = 5
-			}
 			save_scope_as = bordered_red_scope
 		}
 
@@ -437,42 +419,6 @@
 		}
 
 		create_military_formation = {
-			type = army
-			hq_region = sr:region_south_china
-			name = YunGui_Green_Standard_Army
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_QINGHAI
-				count = 10
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_OUTER_MANCHURIA
-				count = 5
-			}
-		}
-
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_south_china
-			name = Sichuan_Green_Standard_Army
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_SOUTHERN_MANCHURIA
-				count = 20
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_NORTHERN_MANCHURIA
-				count = 10
-			}
-		}
-
-		create_military_formation = {
 			type = fleet
 			hq_region = sr:region_north_china
 			name = Bohai_Gulf_Fleet
@@ -589,111 +535,35 @@
 		}
 	}
 
-	c:JAP ?= {
+	c:SIB ?= {
 		create_military_formation = {
-			type = fleet
-			hq_region = sr:region_japan
-		
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_KANTO
-				count = 2
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate # War junks, but no modern ships
-				state_region = s:STATE_KANTO
-				count = 7
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_KANSAI
-				count = 2
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate # War junks, but no modern ships
-				state_region = s:STATE_KANSAI
-				count = 7
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate # War junks, but no modern ships
-				state_region = s:STATE_CHUGOKU
-				count = 3
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_KYUSHU
+			type = army
+			hq_region = sr:region_east_siberia
+			combat_unit = { # Selenginsk Infantry
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_IRKUTSK
 				count = 1
 			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate # War junks, but no modern ships
-				state_region = s:STATE_KYUSHU
-				count = 7
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate # War junks, but no modern ships
-				state_region = s:STATE_SHIKOKU
-				count = 10
-			}
-			save_scope_as = japan_fleet
-		}
 
-		create_character = {
-			is_admiral = yes
-			first_name = Nobuyoshi
-			last_name = Oda
-			age = 55
-			culture = cu:japanese
-			traits = {
-				expert_naval_commander
-				brave
+			combat_unit = { # Yakutsk Infantry
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_YAKUTSK
+				count = 1
 			}
-			save_scope_as = japan_admiral
-		}
-		
-		scope:japan_admiral = {
-			transfer_to_formation = scope:japan_fleet
-		}
 
-		create_military_formation = {
-			type = fleet
-			hq_region = sr:region_south_china
-		
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate # War junks, but no modern ships
-				state_region = s:STATE_FORMOSA
-				count = 8
+			combat_unit = { # Okhotsk Infantry
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_OKHOTSK
+				count = 1
 			}
-			save_scope_as = taiwan_fleet
-		}
 
-		create_character = {
-			is_admiral = yes
-			first_name = Mitsue
-			last_name = Matsudaira
-			age = 60
-			culture = cu:japanese
-			traits = {
-				experienced_naval_commander
-				ambitious
-			}
-			save_scope_as = taiwan_admiral
-		}
-		
-		scope:taiwan_admiral = {
-			transfer_to_formation = scope:taiwan_fleet
-		}
-
-		create_military_formation = {
-			type = fleet
-			hq_region = sr:region_indonesia
-			combat_unit = { # Nothing the size of a frigate
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_WESTERN_NEW_GUINEA
+			combat_unit = { # Kamchatka Infantry
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_KAMCHATKA
 				count = 1
 			}
 		}
 	}
 }
-
 
 

@@ -39,6 +39,10 @@
 			}
 			create_pop = {
 				culture = elysian
+				size = 2000
+			}
+			create_pop = {
+				culture = elysian
 				size = 39996
 			}
 			create_pop = {
@@ -75,7 +79,6 @@
 			}
 			create_pop = {
 				culture = inuit
-				religion = eskaleut
 				size = 4968
 			}
 		}
@@ -120,13 +123,27 @@
 		region_state:ELY = {
 			create_pop = {
 				culture = elysian
-				size = 20000
+				size = 3000
+			}
+			create_pop = {
+				culture = elysian
+				size = 500
+			}
+			create_pop = {
+				culture = elysian
+				size = 500
 			}
 		}
 		region_state:NZP = {
 			create_pop = {
 				culture = elysian
 				size = 40000
+			}
+		}
+		region_state:BNN = {
+			create_pop = {
+				culture = elysian
+				size = 20000
 			}
 		}
 	}
@@ -172,10 +189,6 @@
 		region_state:ELY = {
 			create_pop = {
 				culture = elysian
-				size = 12000
-			}
-			create_pop = {
-				culture = elysian
 				size = 8000
 			}
 		}
@@ -191,12 +204,30 @@
 				size = 4000
 			}
 		}
+		region_state:BNN = {
+			create_pop = {
+				culture = elysian
+				size = 12000
+			}
+		}
+		region_state:SLS = {
+			create_pop = {
+				culture = elysian
+				size = 1300
+			}
+		}
+		region_state:ABS = {
+			create_pop = {
+				culture = elysian
+				size = 6500
+			}
+		}
 	}
 	s:STATE_MONTANA = {
 		region_state:ELY = {
 			create_pop = {
 				culture = elysian
-				size = 10000
+				size = 5000
 			}
 			create_pop = {
 				culture = elysian
@@ -219,6 +250,12 @@
 			create_pop = {
 				culture = elysian
 				size = 14000
+			}
+		}
+		region_state:SLS = {
+			create_pop = {
+				culture = elysian
+				size = 5500
 			}
 		}
 	}
@@ -301,7 +338,7 @@
 		}
 	}
 	s:STATE_OKLAHOMA = {
-		region_state:SEQ = {
+		region_state:ELY = {
 			create_pop = {
 				culture = elysian
 				size = 2000
@@ -323,7 +360,7 @@
 		}
 	}
 	s:STATE_ARKANSAS = {
-		region_state:CHE = {
+		region_state:ELY = {
 			create_pop = {
 				culture = elysian
 				size = 12635
@@ -389,7 +426,7 @@
 				size = 16000
 			}
 		}
-		region_state:ELY = {
+		region_state:LKT = {
 			create_pop = {
 				culture = elysian
 				size = 22000
@@ -540,7 +577,13 @@
 			}
 			create_pop = {
 				culture = elysian
-				size = 8000
+				size = 3000
+			}
+		}
+		region_state:SML = {
+			create_pop = {
+				culture = elysian
+				size = 5000
 			}
 		}
 	}
@@ -549,6 +592,10 @@
 			create_pop = {
 				culture = elysian
 				size = 329836
+			}
+			create_pop = {
+				culture = elysian
+				size = 1000
 			}
 			create_pop = {
 				culture = elysian
@@ -595,6 +642,10 @@
 			create_pop = {
 				culture = elysian
 				size = 1250496
+			}
+			create_pop = {
+				culture = elysian
+				size = 2000
 			}
 			create_pop = {
 				culture = elysian
@@ -738,6 +789,10 @@
 			}
 			create_pop = {
 				culture = elysian
+				size = 1000
+			}
+			create_pop = {
+				culture = elysian
 				size = 6960
 			}
 		}
@@ -773,7 +828,7 @@
 				size = 8500
 			}
 			create_pop = {
-				culture = japanese
+				culture = han
 				size = 50000
 			}
 		}
@@ -804,8 +859,6 @@
 				culture = elysian
 				size = 600
 			}
-		}
-		region_state:ELY = {
 			create_pop = {
 				culture = elysian
 				size = 3996
@@ -835,9 +888,6 @@
 				culture = elysian
 				size = 52800
 			}
-		}
-		# Nova Scotia: 199906 in 1837
-		region_state:ELY = {
 			create_pop = {
 				culture = elysian
 				size = 196573
@@ -858,11 +908,8 @@
 				culture = elysian
 				size = 3000
 			}
-		}
-		region_state:ELY = {
 			create_pop = {
 				culture = inuit
-				religion = eskaleut
 				size = 4000
 			}
 			create_pop = {
@@ -883,7 +930,6 @@
 		region_state:ELY = {
 			create_pop = {
 				culture = inuit
-				religion = eskaleut
 				size = 7980
 			}
 			create_pop = {
@@ -1024,8 +1070,11 @@
 		region_state:ELY = {
 			create_pop = {
 				culture = inuit
-				religion = eskaleut
-				size = 11980
+				size = 11000
+			}
+			create_pop = {
+				culture = elysian
+				size = 980
 			}
 		}
 	}
@@ -1055,8 +1104,6 @@
 				culture = elysian
 				size = 2004
 			}
-		}
-		region_state:ELY = {
 			create_pop = {
 				culture = elysian
 				size = 12000
@@ -1081,12 +1128,18 @@
 		region_state:ELY = {
 			create_pop = {
 				culture = elysian
-				size = 28000
+				size = 22000
+			}
+		}
+		region_state:BNN = {
+			create_pop = {
+				culture = elysian
+				size = 6000
 			}
 		}
 	}
 	s:STATE_ARIZONA = {
-		region_state:PUE = {
+		region_state:ELY = {
 			create_pop = {
 				culture = elysian
 				size = 4000
@@ -1122,7 +1175,7 @@
 		}
 	}
 	s:STATE_NEW_MEXICO = {
-		region_state:PUE = {
+		region_state:ELY = {
 			create_pop = {
 				culture = elysian
 				size = 27796
@@ -1396,8 +1449,6 @@
 				culture = elysian
 				size = 72164
 			}
-		}
-		region_state:ELY = {
 			create_pop = {
 				culture = elysian
 				size = 5562
