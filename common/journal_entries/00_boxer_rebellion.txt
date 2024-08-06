@@ -4,13 +4,19 @@
     group = je_group_historical_content
 
     is_shown_when_inactive = {
-        exists = c:CHI
-        THIS = c:CHI
-        has_technology_researched = pan-nationalism
-        country_has_primary_culture = cu:manchu
+		c:CHI ?= this
+		OR = {
+			has_technology_researched = nationalism
+			any_country = { has_technology_researched = pan-nationalism }
+		}
+		country_has_primary_culture = cu:manchu
+		country_has_primary_culture = cu:han
     }
     possible = {
-        has_technology_researched = political_agitation
+		OR = {
+			has_technology_researched = pan-nationalism
+			any_country = { has_technology_researched = political_agitation  }
+		}
         any_state = {
         	state_region = { is_homeland = cu:han }
 	        NOT = { owner = ROOT }
