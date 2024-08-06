@@ -140,8 +140,8 @@
  VRD:0 "Vardar"
  VRD_ADJ:0 "Vardar"
  
- SLS:0 "Silesia"
- SLS_ADJ:0 "Silesian"
+ #SLS:0 "Silesia"
+ #SLS_ADJ:0 "Silesian"
  
  PZN:0 "Poznań"
  PZN_ADJ:0 "Poznań"
