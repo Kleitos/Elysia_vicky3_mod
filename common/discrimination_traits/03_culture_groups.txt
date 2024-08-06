@@ -59,27 +59,35 @@ iberian_culture_group={
 }
 
 czecho_slovak_culture_group={
+	heritage = yes
 }
 
 iranian_turanian_culture_group={
+	heritage = yes
 }
 
 romanian_culture_group={
+	heritage = yes
 }
 
 hungarian_culture_group={
+	heritage = yes
 }
 
 baltic_culture_group={
+	heritage = yes
 }
 
 native_north_american_culture_group={
+	heritage = yes
 }
 
 native_mesoamerican_culture_group={
+	heritage = yes
 }
 
 native_south_american_culture_group={
+	heritage = yes
 }
 
 west_african_culture_group={
@@ -98,24 +106,62 @@ southern_african_culture_group={
 	heritage = yes
 }
 
-siberian_culture_group = {}
+siberian_culture_group = {
+	heritage = yes
+ }
 
-hindustani = {}
-northeast_indian = {}
-dravidian = {}
-malay_culture = {}
-albanian_language = {}
-mongol_language = {}
-khmer_language = {}
-malagasy_language = {}
-burmese_language = {}
-korean_language = {}
-ainu_language = {}
-hmong_mien_language = {}
-tibetan_language = {}
-aboriginal_australian = {}
-indigenous_andean = {}
-south_american_group = {}
-north_american_group = {}
+hindustani = {
+	heritage = yes
+ }
+northeast_indian = {
+	heritage = yes
+ }
+dravidian = {
+	heritage = yes
+ }
+malay_culture = {
+	heritage = yes
+ }
+albanian_language = {
+	heritage = yes
+ }
+mongol_language = {
+	heritage = yes
+ }
+khmer_language = {
+	heritage = yes
+ }
+malagasy_language = {
+	heritage = yes
+ }
+burmese_language = {
+	heritage = yes
+ }
+korean_language = {
+	heritage = yes
+ }
+ainu_language = {
+	heritage = yes
+ }
+hmong_mien_language = {
+	heritage = yes
+ }
+tibetan_language = {
+	heritage = yes
+ }
+aboriginal_australian = {
+	heritage = yes
+ }
+indigenous_andean = {
+	heritage = yes
+ }
+south_american_group = {
+	heritage = yes
+ }
+north_american_group = {
+	heritage = yes
+ }
 
-elysian_culture_group = {}
+elysian_culture_group = {
+	heritage = yes
+ }
