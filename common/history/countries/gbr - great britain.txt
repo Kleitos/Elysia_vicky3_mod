@@ -82,6 +82,10 @@
 			name = brazilian_slave_trade_modifier
 			months = 600 # 50 Years
 		}
+		add_modifier = {
+			name = favored_by_destiny
+            months = -1
+		}
 
 		add_company = company_type:company_gwr
 		company:company_gwr = {

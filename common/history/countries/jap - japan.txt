@@ -41,19 +41,43 @@
 
 		ig:ig_armed_forces = {
 			add_ruling_interest_group = yes
+			
+			add_ideology = ideology_bakufu
 		}
 
 		ig:ig_intelligentsia = {
-			set_ig_bolstering = yes
 		}
 		
 		ig:ig_industrialists = {
 			set_ig_bolstering = yes
+			remove_ideology = ideology_individualist
+			
+			add_ideology = ideology_zaibatsu
 		}
 		
 		ig:ig_landowners = {
 			set_interest_group_name = ig_shogunate
 			add_ruling_interest_group = yes
+			
+			remove_ideology = ideology_paternalistic
+			remove_ideology = ideology_stratocratic
+			
+			add_ideology = ideology_bakufu
+			add_ideology = ideology_pacific_traders
+		}
+		
+		ig:ig_rural_folk = { 
+			remove_ideology = ideology_isolationist
+			remove_ideology = ideology_particularist
+			
+			add_ideology = ideology_shinto_moralist
+		}
+		
+		ig:ig_petty_bourgeoisie = { 
+			remove_ideology = ideology_reactionary
+			
+			add_ideology = ideology_shinto_moralist
+			add_ideology = ideology_pacific_traders
 		}
 
 		add_journal_entry = { type = je_terakoya }
@@ -61,6 +85,10 @@
 		add_modifier = {
 			name = elysian_aligned
 			months = very_long_modifier_time
+		}
+		add_modifier = {
+			name = favored_by_destiny
+            months = -1
 		}
 	}
 }
