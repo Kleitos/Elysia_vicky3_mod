@@ -66,6 +66,168 @@ je_the_paris_commune_france_button_b = {
 	}
 }
 
+french_monarchy_bonapartist_button = {
+	name = "bonapartist_button"
+	desc = "bonapartist_button_desc"
+
+	visible = {
+		owner = { 
+			has_variable = chose_initial_french_dynasty 
+			NOT = { has_variable = fra_divided_monarchists_freeze } 
+		}
+	}
+
+	possible = {
+		trigger_if = {
+			limit = {
+				has_variable = has_selected_bonapartist_once_var
+			}
+			custom_tooltip = {
+				text = cannot_choose_bonapartist_twice_tt
+				always = no
+			}
+		}
+		any_interest_group = {
+			is_in_government = yes
+			leader = {
+				has_ideology = ideology:ideology_bonapartist
+			}
+		}
+		custom_tooltip = {
+			text = not_already_supporting_bonapartism
+			NOT = { has_variable = supporting_bonapartist_var }
+		}
+	}
+	
+	selected = {
+		has_variable = supporting_bonapartist_var
+	}
+
+	effect = {
+		set_variable = supporting_bonapartist_var
+		set_variable = has_selected_bonapartist_once_var
+		remove_variable = supporting_orleanist_var
+		remove_variable = supporting_legitimist_var
+		custom_tooltip = {
+			text = supporting_bonapartist_tt
+		}
+		custom_tooltip = {
+			text = bonapartist_progress_increase_10_tt
+			je:je_divided_monarchists = {
+				add_progress = { value = 10 name = divided_monarchists_bonapartist_progress_bar }
+			}
+		}
+	}
+}
+
+french_monarchy_orleanist_button = {
+	name = "orleanist_button"
+	desc = "orleanist_button_desc"
+
+	visible = {
+		owner = { 
+			has_variable = chose_initial_french_dynasty 
+			NOT = { has_variable = fra_divided_monarchists_freeze } 
+		}
+	}
+
+	possible = {
+		trigger_if = {
+			limit = {
+				has_variable = has_selected_orleanist_once_var
+			}
+			custom_tooltip = {
+				text = cannot_choose_orleanist_twice_tt
+				always = no
+			}
+		}
+		any_interest_group = {
+			is_in_government = yes
+			leader = {
+				has_ideology = ideology:ideology_orleanist
+			}
+		}
+		custom_tooltip = {
+			text = not_already_supporting_orleanism
+			NOT = { has_variable = supporting_orleanist_var }
+		}
+	}
+	
+	selected = {
+		has_variable = supporting_orleanist_var
+	}
+
+	effect = {
+		# Only one of these variables can be active at a time
+		set_variable = supporting_orleanist_var
+		set_variable = has_selected_orleanist_once_var
+		remove_variable = supporting_bonapartist_var
+		remove_variable = supporting_legitimist_var
+		custom_tooltip = {
+			text = supporting_orleanism_tt
+		}
+		custom_tooltip = {
+			text = orleanist_progress_increase_10_tt
+			je:je_divided_monarchists = {
+				add_progress = { value = 10 name = divided_monarchists_orleanist_progress_bar }
+			}
+		}
+	}
+}
+
+french_monarchy_legitimist_button = {
+	name = "legitimist_button"
+	desc = "legitimist_button_desc"
+
+	visible = {
+		owner = { 
+			has_variable = chose_initial_french_dynasty 
+			NOT = { has_variable = fra_divided_monarchists_freeze } 
+		}
+	}
+
+	possible = {
+		trigger_if = {
+			limit = {
+				has_variable = has_selected_legitimist_once_var
+			}
+			custom_tooltip = {
+				text = cannot_choose_legitimist_twice_tt
+				always = no
+			}
+		}
+		any_interest_group = {
+			is_in_government = yes
+			leader = {
+				has_ideology = ideology:ideology_legitimist
+			}
+		}
+		custom_tooltip = {
+			text = not_already_supporting_legitimist
+			NOT = { has_variable = supporting_legitimist_var }
+		}
+	}
+	
+	selected = {
+		has_variable = supporting_legitimist_var
+	}
+
+	effect = {
+		set_variable = supporting_legitimist_var
+		set_variable = has_selected_legitimist_once_var
+		remove_variable = supporting_bonapartist_var
+		remove_variable = supporting_orleanist_var
+		custom_tooltip = {
+			text = supporting_legitimists_tt
+		}
+		custom_tooltip = {
+			text = legitimist_progress_increase_10_tt
+			je:je_divided_monarchists = {
+				add_progress = { value = 10 name = divided_monarchists_legitimist_progress_bar }
+			}
+		}
+	}
+}
 
 je_the_krakow_uprising_annex_button = {
 	name = "je_the_krakow_uprising_annex_button"
@@ -79,7 +241,7 @@ je_the_krakow_uprising_annex_button = {
 
 	possible = {
 		c:KRA ?= {
-			is_subject_of = c:BOH
+			is_subject_of = c:AUS
 			has_revolution = no
 		}
 		is_at_war = no
@@ -161,6 +323,148 @@ je_positivist_movement_suppress_positivism_button = {
 	}
 }
 
+je_sell_alaska_button = {
+	name = "je_sell_alaska_button"
+	desc = "je_sell_alaska_button_desc"
+
+	visible = { always = yes }
+
+	ai_chance = {
+		base = 0
+		modifier = {
+			trigger = { 
+				scaled_debt > 0
+			}
+			add = 25
+		}
+		modifier = {
+			trigger = { 
+				has_modifier = declared_bankruptcy
+			}
+			add = 50
+		}
+		modifier = {
+			trigger = { 
+				any_country = {
+					NOT = { this = root }
+					country_rank >= root.country_rank
+					has_interest_marker_in_region = sr:region_pacific_coast
+					relations:root <= relations_threshold:poor
+				}
+			}
+			add = 25
+		}
+		modifier = {
+			trigger = { 
+				any_country = {
+					NOT = { this = root }
+					country_rank >= root.country_rank
+					has_interest_marker_in_region = sr:region_pacific_coast
+					relations:root <= relations_threshold:cold
+				}
+			}
+			add = 50
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = has_alaska_sale_cooldown_tt
+			NOT = { has_variable = alaska_sale_cooldown }
+		}
+		has_state_in_state_region = STATE_ALASKA
+		custom_tooltip = {
+			text = friendly_nation_with_interest_in_alaska_tt
+			any_country = {
+				NOT = { is_subject = yes }
+				NOT = { this = root }
+				country_is_in_north_america = yes
+				relations:root >= 0
+				country_rank >= rank_value:great_power
+				any_scope_state = {
+					region = sr:region_pacific_coast
+					is_incorporated = yes
+				}
+			}
+		}
+	}
+
+	effect = {
+		set_variable = {
+			name = alaska_sale_cooldown
+			months = 12
+		}
+		save_scope_as = alaska_seller
+		random_country = {
+			limit = {
+				NOT = { is_subject = yes }
+				NOT = { this = root }
+				country_is_in_north_america = yes
+				relations:root >= 0
+				country_rank >= rank_value:great_power
+				any_scope_state = {
+					region = sr:region_pacific_coast
+					is_incorporated = yes
+				}
+			}
+			trigger_event = { id = alaska.4 popup = yes }
+		}
+	}
+}
+
+je_buy_alaska_button = {
+	name = "je_buy_alaska_button"
+	desc = "je_buy_alaska_button_desc"
+
+	visible = { always = yes }
+
+	ai_chance = {
+		base = 100
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = has_alaska_sale_cooldown_tt
+			NOT = { has_variable = alaska_sale_cooldown }
+		}
+		is_subject = no
+		s:STATE_ALASKA = {
+			any_scope_state = {
+				owner = {
+					NOT = {
+						root = this
+						is_country_type = decentralized
+					}
+					relations:root >= 0
+					OR = {
+						custom_tooltip = {
+							text = unfriendly_nation_with_interest_in_alaska_tt
+							any_country = {
+								country_rank >= prev.country_rank
+								NOT = { this = prev }
+								has_interest_marker_in_region = sr:region_pacific_coast
+								relations:prev < relations_threshold:cordial
+							}
+						}
+						scaled_debt > 0
+					}
+				}
+			}
+		}
+	}
+
+	effect = {
+		set_variable = {
+			name = alaska_sale_cooldown
+			months = 12
+		}
+		trigger_event = {
+			id = alaska.4
+			popup = yes
+		}
+	}
+}
+
 je_risorgimento_austrian_radicals_button = {
 	name = "je_risorgimento_austrian_radicals_button"
 	desc = "je_risorgimento_austrian_radicals_button_desc"
@@ -233,6 +537,7 @@ je_risorgimento_austrian_radicals_button = {
 					relations:root <= 20
 				}
 			}
+			add = 25
 		}
 	}
 
@@ -848,11 +1153,11 @@ je_marea_unire = {
 				is_subject_of = ROOT
 			}
 		}
-		c:TRS = {
+		c:TRS ?= {
 			is_player = no
 		}
 	}
-	
+
 	ai_chance = {
 		base = 100
 	}
@@ -860,13 +1165,12 @@ je_marea_unire = {
 	possible = {
 		is_at_war = no
 
-		exists = c:TRS
-        c:TRS = {
-        	is_subject = no
-            relations:root >= 25
-            is_at_war = no
-        }
-    }
+		c:TRS ?= {
+			is_subject = no
+			relations:root >= 25
+			is_at_war = no
+		}
+	}
 
 	effect = {
 		if = {
