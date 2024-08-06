@@ -149,10 +149,7 @@ company_caribbean_petroleum = {
 	}
 	
 	potential = {
-		OR = {
-			has_interest_marker_in_region = region_gran_colombia		
-			has_interest_marker_in_region = region_caribbean
-		}
+		has_interest_marker_in_region = region_gran_colombia
 	}
 	
 	attainable = {
