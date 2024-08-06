@@ -114,29 +114,29 @@ DIPLOMATIC_PLAYS = {
 }
 
 DIPLOMATIC_PLAYS = {
-	c:BIC = {
+	c:SPA = {
 		create_diplomatic_play = {
 		
-				target_state = s:STATE_KASHMIR.region_state:PAN
+				target_state = s:STATE_OMAN.region_state:OMA
 			
 			war = yes
 			
 			type = dp_conquer_state
 			
 			add_war_goal = {
-				holder = c:PAN
-				type = conquer_state
-				target_state = s:STATE_PUNJAB.region_state:BIC
-			}
-			add_war_goal = {
-				holder = c:PAN
+				holder = c:OMA
 				type = humiliation
-				target_country = c:BIC
+				target_country = c:SPA
 			}
 			add_war_goal = {
-				holder = c:PAN
+				holder = c:OMA
 				type = war_reparations
-				target_country = c:BIC
+				target_country = c:SPA
+			}
+			add_war_goal = {
+				holder = c:OMA
+				type = take_treaty_port
+				target_state = s:STATE_OMAN.region_state:SPA
 			}
 		}			
 	}
@@ -299,29 +299,64 @@ DIPLOMATIC_PLAYS = {
 	c:PER = {
 		create_diplomatic_play = {
 		
-				target_state = s:STATE_EASTERN_AFGHANISTAN.region_state:AFG
+				target_state = s:STATE_KABUL.region_state:KAB
 			
 			war = yes
 			
-			type = dp_annex_war
+			type = dp_return_state
 			
 			add_war_goal = {
-				holder = c:AFG
-				type = conquer_state
+				holder = c:PER
+				type = return_state
+				target_state = s:STATE_QUETTA.region_state:KAB
+			}
+			add_war_goal = {
+				holder = c:PER
+				type = return_state
+				target_state = s:STATE_CENTRAL_HIGHLANDS.region_state:KAB
+			}
+			add_war_goal = {
+				holder = c:PER
+				type = return_state
+				target_state = s:STATE_PASHTUNISTAN.region_state:KAB
+			}
+			add_war_goal = {
+				holder = c:KAB
+				type = return_state
 				target_state = s:STATE_PASHTUNISTAN.region_state:PER
 			}
 			add_war_goal = {
-				holder = c:AFG
-				type = conquer_state
-				target_state = s:STATE_WESTERN_AFGHANISTAN.region_state:PER
+				holder = c:KAB
+				type = return_state
+				target_state = s:STATE_KABUL.region_state:PER
 			}
 			add_war_goal = {
-				holder = c:AFG
+				holder = c:KAB
+				type = return_state
+				target_state = s:STATE_HERAT.region_state:PER
+			}
+			add_war_goal = {
+				holder = c:KAB
+				type = return_state
+				target_state = s:STATE_NORTHERN_BALUCHISTAN.region_state:PER
+			}
+			add_war_goal = {
+				holder = c:KAB
+				type = return_state
+				target_state = s:STATE_BALKH.region_state:PER
+			}
+			add_war_goal = {
+				holder = c:KAB
+				type = return_state
+				target_state = s:STATE_QUETTA.region_state:PER
+			}
+			add_war_goal = {
+				holder = c:KAB
 				type = humiliation
 				target_country = c:PER
 			}
 			add_war_goal = {
-				holder = c:AFG
+				holder = c:KAB
 				type = war_reparations
 				target_country = c:PER
 			}
@@ -333,16 +368,21 @@ DIPLOMATIC_PLAYS = {
 	c:PER = {
 		create_diplomatic_play = {
 		
-				target_state = s:STATE_BALUCHISTAN.region_state:MAK
+				target_state = s:STATE_BALUCHISTAN.region_state:KAL
 			
 			war = yes
 			
-			type = dp_annex_war
+			type = dp_return_state
 			
 			add_war_goal = {
-				holder = c:MAK
-				type = conquer_state
+				holder = c:KAL
+				type = return_state
 				target_state = s:STATE_BALUCHISTAN.region_state:PER
+			}
+			add_war_goal = {
+				holder = c:KAL
+				type = return_state
+				target_state = s:STATE_BALUCHISTAN.region_state:MAK
 			}
 			add_war_goal = {
 				holder = c:MAK
@@ -366,8 +406,28 @@ DIPLOMATIC_PLAYS = {
 			
 			war = yes
 			
-			type = dp_conquer_state
+			type = dp_return_state
 			
+			add_war_goal = {
+				holder = c:PER
+				type = return_state
+				target_state = s:STATE_KIRGHIZIA.region_state:KOK
+			}
+			add_war_goal = {
+				holder = c:PER
+				type = return_state
+				target_state = s:STATE_FERGANA.region_state:KOK
+			}
+			add_war_goal = {
+				holder = c:KOK
+				type = return_state
+				target_state = s:STATE_KIRGHIZIA.region_state:PER
+			}
+			add_war_goal = {
+				holder = c:KOK
+				type = return_state
+				target_state = s:STATE_TAJIKISTAN.region_state:PER
+			}
 			add_war_goal = {
 				holder = c:KOK
 				type = humiliation
@@ -377,6 +437,16 @@ DIPLOMATIC_PLAYS = {
 				holder = c:KOK
 				type = war_reparations
 				target_country = c:PER
+			}
+			add_war_goal = {
+				holder = c:PER
+				type = humiliation
+				target_country = c:KOK
+			}
+			add_war_goal = {
+				holder = c:PER
+				type = war_reparations
+				target_country = c:KOK
 			}
 		}			
 	}
