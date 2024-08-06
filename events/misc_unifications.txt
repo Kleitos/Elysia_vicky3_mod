@@ -109,7 +109,6 @@ formation.2 = {
 	option = {
 		name = formation.2.a
 		default_option = yes
-		#add_journal_entry = { type = je_cultural_shift_ubd }#
 		add_modifier = {
 			name = unification_prestige
 			months = very_long_modifier_time
@@ -230,7 +229,6 @@ formation.4 = {
 	option = {
 		name = formation.4.a
 		default_option = yes
-		#add_journal_entry = { type = je_cultural_shift_eth }#
 		add_modifier = {
 			name = unification_prestige
 			months = very_long_modifier_time
@@ -239,7 +237,6 @@ formation.4 = {
 		ai_chance = {
 			factor = 1
 		}
-				trigger_event = { id = ethiopia.2 }	
 	}
 }
 
@@ -295,7 +292,6 @@ formation.5 = {
 	option = {
 		name = formation.5.a
 		default_option = yes
-		#add_journal_entry = { type = je_cultural_shift_ibe }#
 		add_modifier = {
 			name = unification_prestige
 			months = very_long_modifier_time
@@ -605,7 +601,6 @@ formation.9 = {
 	option = {
 		name = formation.5.a
 		default_option = yes
-		#add_journal_entry = { type = je_cultural_shift_yug }#
 		add_modifier = {
 			name = unification_prestige
 			months = very_long_modifier_time
@@ -670,7 +665,6 @@ formation.10 = {
 	option = {
 		name = formation.5.a
 		default_option = yes
-		#add_journal_entry = { type = je_cultural_shift_sca }#
 		add_modifier = {
 			name = unification_prestige
 			months = very_long_modifier_time
@@ -683,10 +677,9 @@ formation.10 = {
 
 	option = {
 		name = formation.10.a
-		#add_journal_entry = { type = je_cultural_shift_sca }#
 		trigger = {
 			owns_entire_state_region = STATE_OSTROBOTHNIA
-			owns_entire_state_region = STATE_SOUTHERN_FINLAND
+			owns_entire_state_region = STATE_UUSIMAA
 		}
 		default_option = yes
 		add_modifier = {
@@ -751,7 +744,6 @@ formation.11 = {
 	option = {
 		name = formation.11.a
 		default_option = yes
-		#add_journal_entry = { type = je_cultural_shift_mal }#
 		add_modifier = {
 			name = unification_prestige
 			months = very_long_modifier_time
@@ -801,7 +793,6 @@ formation.12 = {
 	option = {
 		name = formation.5.a
 		default_option = yes
-		#add_journal_entry = { type = je_cultural_shift_trh }#
 		add_modifier = {
 			name = unification_prestige
 			months = very_long_modifier_time
@@ -1219,7 +1210,7 @@ formation.18 = {
 			limit = {
 				has_diplomatic_relevance = ROOT
 			}
-			post_notification = unification_notification_one_culture
+			post_notification = unification_notification_hre_culture
 		}
 	}
 

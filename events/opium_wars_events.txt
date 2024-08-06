@@ -256,8 +256,24 @@ opium_wars.2 = {
 		name = opium_wars.2.b
 		change_relations = {
 			country = scope:opium_wars_target_country
-			value = 20
+			value = 50
 		}
+		
+		every_subject_or_below = {
+			limit = { 
+				is_direct_subject_of = root
+				any_scope_building = {
+					is_building_type = building_opium_plantation
+				}
+			}
+			
+			add_liberty_desire = 50
+			change_relations = {
+				country = root
+				value = -50
+			}			
+		}
+		
 		hidden_effect = {	
 			every_country = {
 				limit = {
@@ -323,12 +339,6 @@ opium_wars.3 = {
 	}
 
 	immediate = {
-		every_primary_culture = {
-			limit = {
-				has_cultural_obsession = opium
-			}
-			remove_cultural_obsession = opium
-		}
 		if = {
 			limit = { has_modifier = opium_wars_addiction_modifier }
 			remove_modifier = opium_wars_addiction_modifier
@@ -363,9 +373,6 @@ opium_wars.3 = {
 		name = opium_wars.3.a
 		default_option = yes
 		every_primary_culture = {
-			limit = {
-				has_cultural_obsession = opium
-			}
 			remove_cultural_obsession = opium
 		}
 		add_modifier = {
@@ -381,9 +388,6 @@ opium_wars.3 = {
 	option = {
 		name = opium_wars.3.b
 		every_primary_culture = {
-			limit = {
-				has_cultural_obsession = opium
-			}
 			remove_cultural_obsession = opium
 		}
 		add_modifier = {
@@ -723,12 +727,6 @@ opium_wars.7 = {
 	}
 
 	immediate = {
-		every_primary_culture = {
-			limit = {
-				has_cultural_obsession = opium
-			}
-			remove_cultural_obsession = opium
-		}
 		random_scope_state = {
 			limit = {
 				NOR = {

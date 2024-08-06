@@ -1,1 +1,1 @@
-﻿namespace = peoples_springtime
+﻿
