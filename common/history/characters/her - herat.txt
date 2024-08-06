@@ -1,46 +1,44 @@
 ﻿CHARACTERS = {
-	c:HAR ?= {
+	c:HER = {
 		create_character = {
-			# Abu Bakr II ibn 'Abd al-Munan
-			first_name = "Abu_Bakr"
-			last_name = "Ali"
+			# Dost Mohammad Khan
+			first_name = "Kamran"
+			last_name = "Durrani"
 			historical = yes
 			ruler = yes
-			dna = dna_abu_bakr_ii
-			# unknown age
+			age = 43 # complete guesswork
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = {
-				ambitious
-			}
-		}	
-
-		create_character = {
-			# Ahmad III ibn Abu Bakr
-			first_name = Ahmad
-			last_name = Ali
-			historical = yes
-			heir = yes
-			dna = dna_abu_bakr_iii
-			age = 5 # born in 1830 or 1831
-			interest_group = ig_landowners
-			ideology = ideology_traditionalist
-			traits = {
-				trait_child
+				expensive_tastes
+				hedonist
+				basic_political_operator
 			}
 		}
-
 		create_character = {
-			# Vizier Gerad Mohammed
-			first_name = "Gerad"
-			last_name = Mohammed
+			first_name = "Nader"
+			last_name = "Durrani"
 			historical = yes
-			# unknown age
+			heir = yes
+			age = 11 # Complete guesswork
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = {
+			}
+		}
+		create_character = {
+			first_name = "Yar_Mohammed"
+			last_name = "Alakozai"
+			historical = yes
 			ig_leader = yes
+			is_general = yes
+			age = 48
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			traits = {
 				ambitious
+				experienced_political_operator
+				traditionalist_commander
 			}
 		}
 	}
