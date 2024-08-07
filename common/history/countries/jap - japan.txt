@@ -90,5 +90,9 @@
 			name = favored_by_destiny
             months = -1
 		}
+		add_modifier = {
+			name = subserviance_of_shrines
+            months = -1
+		}
 	}
 }
