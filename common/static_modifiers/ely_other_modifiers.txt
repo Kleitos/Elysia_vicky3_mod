@@ -138,7 +138,6 @@ favored_by_destiny = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
 	interest_group_approval_add = 5
 	state_radicals_from_sol_change_mult = -0.5
-	state_radicals_from_discrimination_mult = -0.5
 	tate_loyalists_from_sol_change_mult = 0.5
 	state_loyalists_from_sol_change_accepted_culture_mult = 0.5
 	state_turmoil_effects_mult = -0.5
