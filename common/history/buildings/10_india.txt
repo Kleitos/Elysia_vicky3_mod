@@ -1562,13 +1562,13 @@
 		}
 	}
 	s:STATE_INDIAN_OCEAN_TERRITORY={
-		region_state:NET={
+		region_state:DEN={
 			create_building={
 				building="building_sugar_plantation"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:NET"
+						country="c:DEN"
 						levels=3
 						region="STATE_HOLLAND"
 					}
@@ -1580,7 +1580,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:NET"
+						country="c:DEN"
 						levels=2
 					}
 				}

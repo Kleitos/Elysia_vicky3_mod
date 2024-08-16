@@ -313,9 +313,9 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:NET"
+						country="c:DEN"
 						levels=1
-						region="STATE_HOLLAND"
+						region="STATE_ZEALAND"
 					}
 				}
 				reserves=1
@@ -441,9 +441,9 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:NET"
+						country="c:DEN"
 						levels=3
-						region="STATE_HOLLAND"
+						region="STATE_ZEALAND"
 					}
 				}
 				reserves=1
@@ -460,21 +460,21 @@
 					}
 					building={
 						type="building_manor_house"
-						country="c:NET"
+						country="c:DEN"
 						levels=10
-						region="STATE_HOLLAND"
+						region="STATE_ZEALAND"
 					}
 					building={
 						type="building_manor_house"
-						country="c:NET"
+						country="c:DEN"
 						levels=2
-						region="STATE_FRIESLAND"
+						region="STATE_JUTLAND"
 					}					
 					building={
 						type="building_manor_house"
-						country="c:NET"
+						country="c:DEN"
 						levels=3
-						region="STATE_GELRE"
+						region="STATE_ZEALAND"
 					}					
 				}
 				reserves=1
@@ -491,15 +491,15 @@
 					}
 					building={
 						type="building_manor_house"
-						country="c:NET"
+						country="c:DEN"
 						levels=7
-						region="STATE_HOLLAND"
+						region="STATE_ZEALAND"
 					}
 					building={
 						type="building_manor_house"
-						country="c:NET"
+						country="c:DEN"
 						levels=2
-						region="STATE_FRIESLAND"
+						region="STATE_JUTLAND"
 					}					
 				}
 				reserves=1
@@ -510,9 +510,9 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:NET"
+						country="c:DEN"
 						levels=3
-						region="STATE_HOLLAND"
+						region="STATE_ZEALAND"
 					}
 				}
 				reserves=1
@@ -523,9 +523,9 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:NET"
+						country="c:DEN"
 						levels=2
-						region="STATE_HOLLAND"
+						region="STATE_ZEALAND"
 					}
 				}
 				reserves=1
@@ -536,15 +536,15 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:NET"
+						country="c:DEN"
 						levels=4
-						region="STATE_HOLLAND"
+						region="STATE_ZEALAND"
 					}
 					building={
 						type="building_manor_house"
-						country="c:NET"
+						country="c:DEN"
 						levels=1
-						region="STATE_FRIESLAND"
+						region="STATE_JUTLAND"
 					}
 					building={
 						type="building_manor_house"
@@ -561,9 +561,9 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:NET"
+						country="c:DEN"
 						levels=2
-						region="STATE_HOLLAND"
+						region="STATE_ZEALAND"
 					}
 				}
 				reserves=1
@@ -606,15 +606,15 @@
 					}
 					building={
 						type="building_manor_house"
-						country="c:NET"
+						country="c:DEN"
 						levels=4
-						region="STATE_HOLLAND"
+						region="STATE_ZEALAND"
 					}
 					building={
 						type="building_manor_house"
-						country="c:NET"
+						country="c:DEN"
 						levels=2
-						region="STATE_FRIESLAND"
+						region="STATE_JUTLAND"
 					}					
 				}
 				reserves=1
@@ -644,9 +644,9 @@
 					}
 					building={
 						type="building_manor_house"
-						country="c:NET"
+						country="c:DEN"
 						levels=4
-						region="STATE_HOLLAND"
+						region="STATE_ZEALAND"
 					}
 				}
 				reserves=1
@@ -657,9 +657,9 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:NET"
+						country="c:DEN"
 						levels=2
-						region="STATE_HOLLAND"
+						region="STATE_ZEALAND"
 					}
 				}
 				reserves=1
@@ -670,9 +670,9 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:NET"
+						country="c:DEN"
 						levels=1
-						region="STATE_HOLLAND"
+						region="STATE_ZEALAND"
 					}
 				}
 				reserves=1
@@ -683,9 +683,9 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:NET"
+						country="c:DEN"
 						levels=4
-						region="STATE_HOLLAND"
+						region="STATE_ZEALAND"
 					}
 				}
 				reserves=1
@@ -696,15 +696,15 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:NET"
+						country="c:DEN"
 						levels=3
-						region="STATE_HOLLAND"
+						region="STATE_ZEALAND"
 					}
 					building={
 						type="building_manor_house"
-						country="c:NET"
+						country="c:DEN"
 						levels=1
-						region="STATE_GELRE"
+						region="STATE_ZEALAND"
 					}					
 					building={
 						type="building_manor_house"
@@ -742,9 +742,9 @@
 					}
 					building={
 						type="building_manor_house"
-						country="c:NET"
+						country="c:DEN"
 						levels=4
-						region="STATE_HOLLAND"
+						region="STATE_ZEALAND"
 					}
 				}
 				reserves=1
@@ -774,9 +774,9 @@
 					}
 					building={
 						type="building_manor_house"
-						country="c:NET"
+						country="c:DEN"
 						levels=2
-						region="STATE_HOLLAND"
+						region="STATE_ZEALAND"
 					}
 				}
 				reserves=1
@@ -787,9 +787,9 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:NET"
+						country="c:DEN"
 						levels=1
-						region="STATE_HOLLAND"
+						region="STATE_ZEALAND"
 					}
 				}
 				reserves=1
@@ -800,9 +800,9 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:NET"
+						country="c:DEN"
 						levels=1
-						region="STATE_HOLLAND"
+						region="STATE_ZEALAND"
 					}
 				}
 				reserves=1
@@ -819,9 +819,9 @@
 					}
 					building={
 						type="building_manor_house"
-						country="c:NET"
+						country="c:DEN"
 						levels=1
-						region="STATE_HOLLAND"
+						region="STATE_ZEALAND"
 					}
 				}
 				reserves=1
@@ -838,9 +838,9 @@
 					}
 					building={
 						type="building_manor_house"
-						country="c:NET"
+						country="c:DEN"
 						levels=1
-						region="STATE_HOLLAND"
+						region="STATE_ZEALAND"
 					}
 				}
 				reserves=1
@@ -944,9 +944,9 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:NET"
+						country="c:DEN"
 						levels=1
-						region="STATE_HOLLAND"
+						region="STATE_ZEALAND"
 					}
 				}
 				reserves=1
@@ -1074,9 +1074,9 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:NET"
+						country="c:DEN"
 						levels=1
-						region="STATE_HOLLAND"
+						region="STATE_ZEALAND"
 					}
 				}
 				reserves=1
@@ -1087,9 +1087,9 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:NET"
+						country="c:DEN"
 						levels=1
-						region="STATE_HOLLAND"
+						region="STATE_ZEALAND"
 					}
 				}
 				reserves=1
@@ -1193,9 +1193,9 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:NET"
+						country="c:DEN"
 						levels=1
-						region="STATE_HOLLAND"
+						region="STATE_ZEALAND"
 					}
 				}
 				reserves=1

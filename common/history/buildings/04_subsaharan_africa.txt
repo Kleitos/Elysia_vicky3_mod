@@ -1,11 +1,11 @@
 ﻿BUILDINGS={
 	s:STATE_IVORY_COAST={
-		region_state:NET={
+		region_state:DEN={
 			create_building={
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:NET"
+						country="c:DEN"
 						levels=1
 					}
 				}
@@ -29,15 +29,15 @@
 		}
 	}
 	s:STATE_SENEGAL={
-		region_state:NET={
+		region_state:DEN={
 			create_building={
 				building="building_sugar_plantation"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:NET"
+						country="c:DEN"
 						levels=2
-						region="STATE_HOLLAND"
+						region="STATE_ZEALAND"
 					}
 				}
 				reserves=1
@@ -47,7 +47,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:NET"
+						country="c:DEN"
 						levels=1
 					}
 				}
@@ -651,12 +651,12 @@
 				activate_production_methods={ "pm_anchorage" }
 			}
 		}
-		region_state:NET={
+		region_state:DEN={
 			create_building={
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:NET"
+						country="c:DEN"
 						levels=1
 					}
 				}

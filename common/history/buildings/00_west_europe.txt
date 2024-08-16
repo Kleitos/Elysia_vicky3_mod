@@ -4076,12 +4076,12 @@
 		}
 	}
 	s:STATE_HOLLAND={
-		region_state:NET={
+		region_state:FRA={
 			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:NET"
+						country="c:FRA"
 						levels=3
 					}
 				}
@@ -4092,7 +4092,7 @@
 				building="building_construction_sector"
 				add_ownership={
 					country={
-						country="c:NET"
+						country="c:FRA"
 						levels=2
 					}
 				}
@@ -4103,7 +4103,7 @@
 				building="building_university"
 				add_ownership={
 					country={
-						country="c:NET"
+						country="c:FRA"
 						levels=2
 					}
 				}
@@ -4115,7 +4115,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:NET"
+						country="c:FRA"
 						levels=2
 						region="STATE_HOLLAND"
 					}
@@ -4127,7 +4127,7 @@
 				building="building_military_shipyards"
 				add_ownership={
 					country={
-						country="c:NET"
+						country="c:FRA"
 						levels=2
 					}
 				}
@@ -4138,12 +4138,12 @@
 				building="building_arms_industry"
 				add_ownership={
 					country={
-						country="c:NET"
+						country="c:FRA"
 						levels=2
 					}
 					building={
 						type="building_financial_district"
-						country="c:NET"
+						country="c:FRA"
 						levels=1
 						region="STATE_HOLLAND"
 					}
@@ -4156,13 +4156,13 @@
 				add_ownership={
 					building={
 						type="building_textile_mills"
-						country="c:NET"
+						country="c:FRA"
 						levels=2
 						region="STATE_HOLLAND"
 					}
 					building={
 						type="building_financial_district"
-						country="c:NET"
+						country="c:FRA"
 						levels=2
 						region="STATE_HOLLAND"
 					}
@@ -4175,7 +4175,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:NET"
+						country="c:FRA"
 						levels=2
 						region="STATE_HOLLAND"
 					}
@@ -4188,7 +4188,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:NET"
+						country="c:FRA"
 						levels=3
 						region="STATE_HOLLAND"
 					}
@@ -4201,7 +4201,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:NET"
+						country="c:FRA"
 						levels=3
 						region="STATE_HOLLAND"
 					}
@@ -4214,7 +4214,7 @@
 				add_ownership={
 					building={
 						type="building_fishing_wharf"
-						country="c:NET"
+						country="c:FRA"
 						levels=2
 						region="STATE_HOLLAND"
 					}
@@ -4226,7 +4226,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:NET"
+						country="c:FRA"
 						levels=5
 					}
 				}
@@ -4237,7 +4237,7 @@
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:NET"
+						country="c:FRA"
 						levels=5
 					}
 				}
@@ -4247,12 +4247,12 @@
 		}
 	}
 	s:STATE_FRIESLAND={
-		region_state:NET={
+		region_state:DEN={
 			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:NET"
+						country="c:DEN"
 						levels=1
 					}
 				}
@@ -4264,12 +4264,12 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:NET"
+						country="c:DEN"
 						levels=3
 						region="STATE_FRIESLAND"
 					}
 					country={
-						country="c:NET"
+						country="c:DEN"
 						levels=2
 					}
 				}
@@ -4281,7 +4281,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:NET"
+						country="c:DEN"
 						levels=1
 						region="STATE_FRIESLAND"
 					}
@@ -4294,7 +4294,7 @@
 				add_ownership={
 					building={
 						type="building_fishing_wharf"
-						country="c:NET"
+						country="c:DEN"
 						levels=3
 						region="STATE_FRIESLAND"
 					}
@@ -4306,7 +4306,7 @@
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:NET"
+						country="c:DEN"
 						levels=5
 					}
 				}
@@ -4317,7 +4317,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:NET"
+						country="c:DEN"
 						levels=3
 					}
 				}
@@ -4402,90 +4402,6 @@
 				add_ownership={
 					country={
 						country="c:FRA"
-						levels=10
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_no_organization" }
-			}
-		}
-	}
-	s:STATE_NIJMEGEN={
-		region_state:NET={
-			create_building={
-				building="building_government_administration"
-				add_ownership={
-					country={
-						country="c:NET"
-						levels=2
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_professional_bureaucrats" "pm_religious_bureaucrats" }
-			}
-			create_building={
-				building="building_furniture_manufacturies"
-				add_ownership={
-					building={
-						type="building_financial_district"
-						country="c:NET"
-						levels=1
-						region="STATE_NIJMEGEN"
-					}
-					building={
-						type="building_furniture_manufacturies"
-						country="c:NET"
-						levels=1
-						region="STATE_NIJMEGEN"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_handcrafted_furniture"  "pm_automation_disabled" "pm_luxury_furniture" }
-			}
-			create_building={
-				building="building_rye_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:NET"
-						levels=4
-						region="STATE_NIJMEGEN"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_apple_orchards" "pm_tools_disabled"  }
-			}
-			create_building={
-				building="building_logging_camp"
-				add_ownership={
-					building={
-						type="building_financial_district"
-						country="c:NET"
-						levels=1
-						region="STATE_NIJMEGEN"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_forestry" "pm_hardwood" "pm_no_equipment" "pm_road_carts"  }
-			}
-			create_building={
-				building="building_livestock_ranch"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:NET"
-						levels=2
-						region="STATE_NIJMEGEN"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_open_air_stockyards" "pm_simple_ranch" "pm_standard_fences" "pm_unrefrigerated"  }
-			}
-			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
-						country="c:NET"
 						levels=10
 					}
 				}

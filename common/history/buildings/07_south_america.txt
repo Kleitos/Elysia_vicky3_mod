@@ -84,9 +84,9 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:NET"
+						country="c:WIN"
 						levels=3
-						region="STATE_HOLLAND"
+						region="STATE_GUAYANA"
 					}
 				}
 				reserves=1
@@ -96,7 +96,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:NET"
+						country="c:WIN"
 						levels=3
 					}
 				}
