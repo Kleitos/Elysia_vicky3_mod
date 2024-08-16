@@ -820,7 +820,7 @@
 	}
 	# Zuidholland, Noordholland, Zeeland, and Utrecht
 	s:STATE_HOLLAND = {
-		region_state:NET = {
+		region_state:FRA = {
 			create_pop = {
 				culture = dutch
 				size = 842331
@@ -851,7 +851,7 @@
 	}
 	# Friesland, Overijssel, Groningen, and Drenthe
 	s:STATE_FRIESLAND = { 
-		region_state:NET = {
+		region_state:DEN = {
 			create_pop = {
 				culture = dutch
 				size = 528678
@@ -862,7 +862,7 @@
 				size = 134022
 			}
 			create_pop = {
-				culture = wallonian # French or Walloon Reformed
+				culture = danish # French or Walloon Reformed
 				religion = protestant
 				size = 425
 			}
@@ -872,34 +872,9 @@
 			}
 		}
 	}
+	# Noordbrabant, Gelderland, and Limburg
 	s:STATE_GELRE = {
 		region_state:FRA = {
-			create_pop = {
-				culture = french
-				size = 192091
-			}
-			create_pop = {
-				culture = wallonian
-				size = 673889
-			}
-			create_pop = {
-				culture = north_german # French or Walloon Reformed
-				size = 774
-			}
-			create_pop = {
-				culture = ashkenazi
-				size = 6705
-			}
-			create_pop = {
-				culture = dutch
-				religion = catholic
-				size = 19201
-			}
-		}
-	}
-	# Noordbrabant, Gelderland, and Limburg
-	s:STATE_NIJMEGEN = {
-		region_state:NET = {
 			create_pop = {
 				culture = dutch
 				size = 192091

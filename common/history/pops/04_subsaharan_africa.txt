@@ -1,6 +1,6 @@
 ﻿POPS = {
 	s:STATE_IVORY_COAST = {
-		region_state:NET = {
+		region_state:DEN = {
 			create_pop = {
 				culture = akan
 				size = 88000
@@ -92,7 +92,7 @@
 		}
 	}
 	s:STATE_SENEGAL = {
-		region_state:NET = {
+		region_state:DEN = {
 			create_pop = {
 				culture = fulbe
 				size = 95992
@@ -753,7 +753,7 @@
 				size = 6984
 			}
 		}
-		region_state:NET = {
+		region_state:DEN = {
 			create_pop = {
 				culture = akan
 				size = 45572
@@ -797,15 +797,6 @@
 				culture = mossi
 				size = 47996
 			}
-			create_pop = {
-				culture = ewe
-				size = 355996
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = ewe
-				size = 28000
-			}
 		}
 		region_state:ASH = {
 			create_pop = {
@@ -828,6 +819,17 @@
 				pop_type = slaves
 				culture = fon
 				size = 64004
+			}
+		}
+		region_state:EWE = {
+			create_pop = {
+				culture = ewe
+				size = 355996
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = ewe
+				size = 28000
 			}
 		}
 	}

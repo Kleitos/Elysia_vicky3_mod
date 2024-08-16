@@ -401,7 +401,7 @@
 				size = 41000
 			}
 			create_pop = {
-				culture = dutch
+				culture = danish
 				size = 23604
 			}
 		}
@@ -428,7 +428,7 @@
 				size = 21000
 			}
 			create_pop = {
-				culture = dutch
+				culture = danish
 				size = 2400
 			}
 		}
@@ -455,7 +455,7 @@
 				size = 19000
 			}
 			create_pop = {
-				culture = dutch
+				culture = danish
 				size = 1900
 			}
 		}
@@ -514,7 +514,7 @@
 				size = 12422
 			}
 			create_pop = {
-				culture = dutch
+				culture = danish
 				size = 800
 			}
 			create_pop = {
@@ -597,7 +597,7 @@
 				size = 12212
 			}
 			create_pop = {
-				culture = dutch
+				culture = danish
 				size = 300
 			}
 			create_pop = {
@@ -698,7 +698,7 @@
 				size = 160
 			}
 			create_pop = {
-				culture = dutch
+				culture = danish
 				size = 210
 			}
 		}

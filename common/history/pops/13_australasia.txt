@@ -128,7 +128,6 @@
 				culture = australiska
 				size = 800
 			}
-		region_state:WAS = {
 			create_pop = {
 				culture = aborigine
 				size = 29000
@@ -141,6 +140,7 @@
 			}
 		}
 	}
+	
 	s:STATE_CENTRAL_AUSTRALIA = {
 		region_state:WTI = {
 			create_pop = {

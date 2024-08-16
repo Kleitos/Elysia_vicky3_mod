@@ -863,7 +863,7 @@
 		}
 	}
 	s:STATE_INDIAN_OCEAN_TERRITORY = {
-		region_state:NET = {
+		region_state:DEN = {
 			create_pop = {
 				culture = sinhala
 				religion = sunni
