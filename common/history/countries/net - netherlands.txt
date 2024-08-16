@@ -37,9 +37,5 @@
 			institution = institution_colonial_affairs
 			level = 1
 		}
-		add_modifier = {
-			name = favored_by_destiny
-            months = -1
-		}
 	}
 }
