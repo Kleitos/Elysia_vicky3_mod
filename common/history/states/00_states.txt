@@ -3456,7 +3456,7 @@ STATES = {
 	s:STATE_GELRE = {
 		create_state = {
 			country = c:FRA
-			owned_provinces = { x0000DF xC0C0A0 x4C4894 xAF3A54 x41C0A0 "x8001E0" }
+			owned_provinces = { x0000DF xC0C0A0 x4C4894 xAF3A54 x41C0A0  }
 		}
 
 		add_homeland = cu:dutch
@@ -7243,7 +7243,7 @@ STATES = {
 	s:STATE_NORTH_RHINE = {
 		create_state = {
 			country = c:FRA
-			owned_provinces = { x9F4072 x834B66 x518021 x29CCD6 x486F6A }
+			owned_provinces = { x9F4072 x834B66 x518021 x29CCD6 x486F6A x8001E0 }
 		}
 		
 		add_homeland = cu:french
