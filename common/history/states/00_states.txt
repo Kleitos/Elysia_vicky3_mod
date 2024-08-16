@@ -87,7 +87,7 @@ STATES = {
 	}
 	s:STATE_HOLLAND = {
 		create_state = {
-			country = c:NET
+			country = c:FRA
 			owned_provinces = { "x01C0A0" "x777732" "x80C0A0" "xC04021" }
 		}
 		
@@ -1550,7 +1550,7 @@ STATES = {
 			state_type = unincorporated
 		}
 		create_state = {
-			country = c:NET
+			country = c:DEN
 			owned_provinces = { x6C8064 }
 			state_type = unincorporated
 
@@ -1564,7 +1564,7 @@ STATES = {
 		add_homeland = cu:mossi
 		add_homeland = cu:ewe
 		add_claim = c:GBR
-		add_claim = c:NET
+		add_claim = c:DEN
 	}
 	s:STATE_TOGO = {
 		create_state = {
@@ -2970,7 +2970,7 @@ STATES = {
 	}
 	s:STATE_INDIAN_OCEAN_TERRITORY = {
 		create_state = {
-			country = c:NET
+			country = c:DEN
 			owned_provinces = { xD690E0 x606CE0 xD0E090 x60E0B0 x95AAA3 x5B5C22 x5C2250 x5C2239 }
 			state_type = unincorporated
 
@@ -3445,17 +3445,9 @@ STATES = {
 		add_homeland = cu:wallonian
 		add_homeland = cu:french
 	}
-	s:STATE_NIJMEGEN = {
-		create_state = {
-			country = c:NET
-			owned_provinces = { "x41C0A0" "xAF3A54" }
-		}
-		
-		add_homeland = cu:dutch
-	}
 	s:STATE_FRIESLAND = {
 		create_state = {
-			country = c:NET
+			country = c:DEN
 			owned_provinces = { x41C021 xC0C021 xC041A0 x4141A0 x5A48A2 }
 		}
 		
@@ -3464,12 +3456,10 @@ STATES = {
 	s:STATE_GELRE = {
 		create_state = {
 			country = c:FRA
-			owned_provinces = { "x0000DF" "x4C4894" "xC0C0A0" }
+			owned_provinces = { x0000DF xC0C0A0 x4C4894 xAF3A54 x41C0A0 "x8001E0" }
 		}
 
 		add_homeland = cu:dutch
-		add_homeland = cu:wallonian
-		add_homeland = cu:french
 	}
 	s:STATE_JUTLAND = {
 		create_state = {
@@ -4968,7 +4958,7 @@ STATES = {
 	}
 	s:STATE_IVORY_COAST = {
 		create_state = {
-			country = c:NET
+			country = c:DEN
 			owned_provinces = { xA0BFCF }
 			state_type = unincorporated
 		}
@@ -4994,7 +4984,7 @@ STATES = {
 		add_homeland = cu:akan
 		add_homeland = cu:senufo
 		add_homeland = cu:dyula
-		add_claim = c:NET
+		add_claim = c:DEN
 	}
 	s:STATE_WINDWARD_COAST = {
 		create_state = {
@@ -5024,7 +5014,7 @@ STATES = {
 	}
 	s:STATE_SENEGAL = {
 		create_state = {
-			country = c:NET
+			country = c:DEN
 			owned_provinces = { 
 				xEF30C0 x339E4C xA80844 x267B18 x329831 x3A5023 
 			}
@@ -5053,7 +5043,7 @@ STATES = {
 		add_homeland = cu:wolof
 		add_homeland = cu:mande
 		add_homeland = cu:dyula
-		add_claim = c:NET
+		add_claim = c:DEN
 	}
 	s:STATE_GAMBIA = {
 		create_state = {
@@ -7253,7 +7243,7 @@ STATES = {
 	s:STATE_NORTH_RHINE = {
 		create_state = {
 			country = c:FRA
-			owned_provinces = { x9F4072 x8001E0 x834B66 x518021 x29CCD6 x486F6A }
+			owned_provinces = { x9F4072 x834B66 x518021 x29CCD6 x486F6A }
 		}
 		
 		add_homeland = cu:french
