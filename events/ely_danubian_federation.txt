@@ -94,6 +94,13 @@ danubian_fed.2 = {
 		add_journal_entry = { type = je_danube_before_storm }
 		trigger_event = { id = danubian_ultimatum.1 months = 60 }
 		c:AUS = {
+		create_character = {
+			template = aus_miklos_character_template
+			on_created = {
+				set_variable = miklos_variable
+				set_variable = memento_mori_immunity
+			}
+		}
 			remove_diplomatic_pact = {
 				country = c:BYZ
 				type = defensive_pact
