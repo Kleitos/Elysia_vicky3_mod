@@ -65,9 +65,29 @@ je_integrate_slovenes = {
 	group = je_group_elysian_content
 
 	complete = {
+		cu:slovene = {
+			NOT = { culture_is_discriminated_in = ROOT }
+		}
 		owns_entire_state_region = STATE_ISTRIA
 		owns_entire_state_region = STATE_SLOVENIA
-		has_variable = slovene_hero_var
+				NOT = {
+					any_scope_state = {
+						state_region = {
+							is_homeland = cu:slovene
+						}
+						radical_fraction = {
+							value >= 0.10
+							culture = cu:slovene
+						}
+					}
+				}
+		any_scope_state = {
+			state_region = s:STATE_SLOVENIA
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 2
+			}
+		}
 	}
 
 	on_complete = {
@@ -104,12 +124,32 @@ je_integrate_croats = {
 	group = je_group_elysian_content
 
 	complete = {
+		cu:croat = {
+			NOT = { culture_is_discriminated_in = ROOT }
+		}
 		owns_entire_state_region = STATE_BOSNIA
 		owns_entire_state_region = STATE_DALMATIA
 		owns_entire_state_region = STATE_CROATIA
 		owns_entire_state_region = STATE_SLAVONIA
 		owns_entire_state_region = STATE_ISTRIA
-		has_variable = croat_hero_var
+				NOT = {
+					any_scope_state = {
+						state_region = {
+							is_homeland = cu:croat
+						}
+						radical_fraction = {
+							value >= 0.10
+							culture = cu:croat
+						}
+					}
+				}
+		any_scope_state = {
+			state_region = s:STATE_CROATIA
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 2
+			}
+		}
 	}
 
 	on_complete = {
