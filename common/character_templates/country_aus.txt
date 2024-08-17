@@ -1,0 +1,17 @@
+aus_miklos_character_template = {
+	first_name = Myklos
+	last_name = Wesselenyi
+	historical = yes
+	birth_date = 1796.12.20
+    is_agitator = yes
+	culture = cu:hungarian
+	religion = rel:catholic
+	female = no
+	interest_group = ig_landowners
+	ideology = ideology_humanitarian_royalist
+	traits = {
+		literary
+		imposing
+		charismatic
+	}
+}
