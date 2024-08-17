@@ -1,7 +1,6 @@
 ﻿namespace = danubian_fed
 namespace = danubian_revolts
 namespace = danubian_breakup
-namespace = danubian_hero
 namespace = danubian_ultimatum
 namespace = danubian_culture
 namespace = danubian_wars
@@ -93,7 +92,7 @@ danubian_fed.2 = {
 		add_journal_entry = { type = je_pacify_serbs }
 		add_journal_entry = { type = je_pacify_romanians }
 		add_journal_entry = { type = je_danube_before_storm }
-		trigger_event = { id = danubian_ultimatum.1 months = 60 }	
+		trigger_event = { id = danubian_ultimatum.1 months = 60 }
 		c:AUS = {
 			remove_diplomatic_pact = {
 				country = c:BYZ
@@ -161,7 +160,10 @@ danubian_fed.3 = {
 	option = {
 		name = danubian_fed.3.a
 		change_tag = KUK
-		remove_modifier = austria_multicultural
+		remove_modifier = austria_multicultural	
+		ig:ig_landowners = {
+			remove_ideology = ideology_austrian_hegemony
+		}
 	}
 }
 
@@ -237,7 +239,19 @@ danubian_ultimatum.1 = {
 					has_law = law_type:law_cultural_exclusion
 				}
 			}
-		activate_law = law_type:law_racial_segregation
+		activate_law = law_type:law_cultural_exclusion
+		}
+		add_radicals = {
+			value = very_large_radicals
+			strata = rich
+		}
+		add_radicals = {
+			value = very_large_radicals
+			strata = middle
+		}
+		add_radicals = {
+			value = very_large_radicals
+			strata = poor
 		}
 	}
 
@@ -247,6 +261,18 @@ danubian_ultimatum.1 = {
 			base = 0
 		}
 		trigger_event = { id = danubian_breakup.1 }	
+		add_loyalists = {
+			value = very_large_radicals
+			strata = rich
+		}
+		add_loyalists = {
+			value = very_large_radicals
+			strata = middle
+		}
+		add_loyalists = {
+			value = very_large_radicals
+			strata = poor
+		}
 	}
 }
 
@@ -470,189 +496,6 @@ danubian_breakup.1 = {
 					}
 				}
 			}
-	}
-}
-
-# A New National Hero
-danubian_hero.1 = {
-	type = country_event
-	placement = root
-	
-	title = danubian_hero.1.t
-	desc = danubian_hero.1.d
-	flavor = danubian_hero.1.f
-	
-	gui_window = event_window_1char_tabloid
-
-	left_icon = scope:danubian_national_hero
-
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
-
-	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
-	
-	duration = 3
-
-	cooldown = { months = normal_modifier_time }
-	
-	trigger = {
-		# triggered by on_action on_battle_won pulse
-		has_journal_entry = je_danubian_federation
-		OR = { 
-			AND = {
-				NOT = { has_variable = slovene_hero_var }
-				NOT = { has_variable = slovenes_integrated }
-			}
-			AND = {
-				NOT = { has_variable = croat_hero_var }
-				NOT = { has_variable = croats_integrated }
-			}
-		}
-		# there exists a commander on the root side to be the national hero
-		OR = {
-			scope:attacker = {
-				owner = ROOT
-			}
-			scope:defender ?= {
-				owner = ROOT
-			}
-		}
-		scope:enemy_country = {
-			NOR = {
-				country_has_primary_culture = cu:slovene
-				country_has_primary_culture = cu:croat
-			}
-		}
-	}
-
-	immediate = {
-		if = {
-			limit = {
-				scope:attacker = {
-					owner = ROOT
-				}
-			}
-			scope:attacker = {
-				save_scope_as = danubian_national_hero
-			}
-		}
-		else = {
-			scope:defender = {
-				save_scope_as = danubian_national_hero
-			}
-		}
-		random_list = {
-			1 = {
-				trigger = { 
-				 	AND = {
-				 		NOT = { has_variable = slovene_hero_var }
-				 		NOT = { has_variable = slovenes_integrated }
-				 	}
-				}
-				create_character = {
-					ig_leader = no
-					female = no
-					is_general = yes
-					culture = cu:slovene
-					on_created = {
-						set_variable = {
-							name = danubian_hero_scope
-						}
-					}
-				}
-			}
-			1 = {
-				trigger = {  
-				 	AND = {
-				 		NOT = { has_variable = croat_hero_var }
-				 		NOT = { has_variable = croats_integrated }
-				 	}
-				}
-				create_character = {
-					ig_leader = no
-					female = no
-					is_general = yes
-					culture = cu:croat
-					on_created = {
-						set_variable = {
-							name = danubian_hero_scope
-						}
-					}
-				}
-			}
-		}
-
-		random_scope_character = { 
-			limit = { has_variable = danubian_hero_scope }
-			save_scope_as = danubian_national_hero
-			culture = {
-				save_scope_as = danubian_national_hero_culture
-			}
-		}
-	}
-
-	option = {
-		name = danubian_hero.1.a
-		default_option = yes
-
-		custom_tooltip = danubian_hero.1.hero_clarification
-
-		if = {
-			limit = {
-				scope:danubian_national_hero = {
-					culture = {
-						cu:slovene = this
-					}
-				}
-			}
-			set_variable = slovene_hero_var
-		}
-		else_if = {
-			limit = {
-				scope:danubian_national_hero = {
-					culture = {
-						cu:croat = this
-					}
-				}
-			}
-			set_variable = croat_hero_var
-		}
-
-		scope:danubian_national_hero = {
-			if = {
-				limit = {
-					NOR = {
-						has_trait = traditionalist_commander
-						has_trait = popular_commander
-						has_trait = celebrity_commander
-					}
-				}
-				add_trait = traditionalist_commander
-			}
-			else_if = {
-				limit = {
-					has_trait = traditionalist_commander
-				}
-				remove_trait = traditionalist_commander
-				add_trait = popular_commander
-			}
-			else_if = {
-				limit = {
-					has_trait = popular_commander
-				}
-				remove_trait = popular_commander
-				add_trait = celebrity_commander
-			}
-		}
-	}
-
-
-	option = {
-		name = danubian_hero.1.b
-
-		scope:danubian_national_hero = {
-			kill_character = yes
-		}
 	}
 }
 
