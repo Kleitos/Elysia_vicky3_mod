@@ -8,8 +8,6 @@
 			founding_date = 1649.10.29
 			identity = identity_trade_league
 			principle = principle_internal_trade_1
-
-			member = c:NET
 			member = c:BAV
 		}
 		if = {
