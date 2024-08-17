@@ -244,6 +244,27 @@
 			country = c:OLD
 			type = personal_union
 		}
+		set_relations = { country = c:GBR value = 25 }
+		set_relations = { country = c:SPA value = 25 }
+		set_relations = { country = c:SWE value = -25 }
+		set_relations = { country = c:PRU value = 25 }
+		create_diplomatic_pact = {
+			country = c:DEI
+			type = dominion
+		}	
+		create_diplomatic_pact = {
+			country = c:WIN
+			type = dominion
+		}
+		# Colony of Tasmania, historically called Van Dieman's Land until 1856
+		create_diplomatic_pact = {
+			country = c:GBR
+			type = defensive_pact
+		}
+		create_diplomatic_pact = {
+			country = c:PRU
+			type = defensive_pact
+		}
 	}
 	
 	c:BYZ = {
@@ -259,7 +280,7 @@
 			country = c:AUS
 			setting = yes
 		}
-		create_truce = {
+		create_bidirectional_truce = {
 			country = c:TUR
 			months = 48
 		}
@@ -282,25 +303,25 @@
 	}
 	
 	c:TUR = {
-		create_truce = {
+		create_bidirectional_truce = {
 			country = c:RUS
-			months = 48
+			months = 120
 		}
-		create_truce = {
+		create_bidirectional_truce = {
 			country = c:AUS
-			months = 48
+			months = 120
 		}
-		create_truce = {
+		create_bidirectional_truce = {
 			country = c:PER
-			months = 48
+			months = 120
 		}
-		create_truce = {
+		create_bidirectional_truce = {
 			country = c:LMV
-			months = 48
+			months = 120
 		}
-		create_truce = {
+		create_bidirectional_truce = {
 			country = c:SPA
-			months = 48
+			months = 120
 		}
 	}
 	
@@ -316,34 +337,15 @@
 		set_relations = { country = c:FRA value = -100 }
 	}	
 	
-	c:NET = {
-		set_relations = { country = c:GBR value = -25 }
-		set_relations = { country = c:SPA value = -100 }
-		set_relations = { country = c:SWE value = 25 }
-		set_relations = { country = c:FRA value = 100 }
-		set_relations = { country = c:BAV value = 100 }
-		set_relations = { country = c:PRU value = 25 }
-		create_diplomatic_pact = {
-			country = c:SAF
-			type = dominion
+	c:BIC = {
+		create_bidirectional_truce = {
+			country = c:MYS
+			months = 240
+		}
+		create_bidirectional_truce = {
+			country = c:HYD
+			months = 240
 		}	
-		create_diplomatic_pact = {
-			country = c:WIN
-			type = dominion
-		}
-		# Colony of Tasmania, historically called Van Dieman's Land until 1856
-		create_diplomatic_pact = {
-			country = c:TAS
-			type = dominion
-		}
-		create_diplomatic_pact = {
-			country = c:FRA
-			type = defensive_pact
-		}
-		create_diplomatic_pact = {
-			country = c:BAV
-			type = defensive_pact
-		}
 	}
 	
 	c:FRA = {
@@ -368,17 +370,17 @@
 	}	
 	
 	c:SPA = {
-		create_truce = {
+		create_bidirectional_truce = {
 			country = c:GBR
 			months = 180
 		}
-		create_truce = {
+		create_bidirectional_truce = {
 			country = c:BIC
 			months = 180
 		}
 		set_relations = { country = c:PRU value = 25 }
 		set_relations = { country = c:BAV value = -100 }
-		set_relations = { country = c:BRZ value = -50 }
+		set_relations = { country = c:BRZ value = -25 }
 		set_relations = { country = c:AUS value = 100 }
 		set_relations = { country = c:LMV value = 100 }
 		set_relations = { country = c:NET value = -100 }
@@ -414,10 +416,18 @@
 			country = c:SIL
 			type = dominion
 		}	
+		create_bidirectional_truce = {
+			country = c:MYS
+			months = 240
+		}
+		create_bidirectional_truce = {
+			country = c:HYD
+			months = 240
+		}
 	}
 	
 	c:SHW = {
-		create_truce = {
+		create_bidirectional_truce = {
 			country = c:EGY
 			months = 120
 		}
@@ -429,23 +439,23 @@
 	}
 	
 	c:PER = {
-		create_truce = {
+		create_bidirectional_truce = {
 			country = c:SPA
 			months = 240
 		}
-		create_truce = {
+		create_bidirectional_truce = {
 			country = c:RUS
 			months = 240
 		}
-		create_truce = {
+		create_bidirectional_truce = {
 			country = c:GBR
 			months = 240
 		}
-		create_truce = {
+		create_bidirectional_truce = {
 			country = c:SEI
 			months = 240
 		}
-		create_truce = {
+		create_bidirectional_truce = {
 			country = c:BIC
 			months = 240
 		}
@@ -464,11 +474,11 @@
 	}
 	
 	c:SEI = {		
-		create_truce = {
+		create_bidirectional_truce = {
 			country = c:GBR
 			months = 180
 		}
-		create_truce = {
+		create_bidirectional_truce = {
 			country = c:BIC
 			months = 180
 		}
@@ -515,6 +525,14 @@
 		create_diplomatic_pact = {
 			country = c:BHO
 			type = puppet
+		}
+		create_bidirectional_truce = {
+			country = c:MYS
+			months = 240
+		}
+		create_bidirectional_truce = {
+			country = c:HYD
+			months = 240
 		}
 	}
 	
@@ -582,6 +600,14 @@
 			country = c:LIB
 			type = puppet
 		}
+		create_bidirectional_truce = {
+			country = c:MYS
+			months = 240
+		}
+		create_bidirectional_truce = {
+			country = c:HYD
+			months = 240
+		}
 	}
 	
 	c:LMV = {
@@ -622,7 +648,7 @@
 	}
 	
 	c:BRZ = {
-		set_relations = { country = c:SPA value = -100 }
+		set_relations = { country = c:SPA value = -25 }
 		set_relations = { country = c:ARG value = -100 }	
 		set_relations = { country = c:GBR value = 50 }	
 		set_relations = { country = c:GRI value = -25 }	
