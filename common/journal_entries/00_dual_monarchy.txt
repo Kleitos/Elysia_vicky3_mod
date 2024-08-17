@@ -7,6 +7,31 @@
 		cu:hungarian = {
 			NOT = { culture_is_discriminated_in = ROOT }
 		}
+		owns_entire_state_region = STATE_BANAT
+		owns_entire_state_region = STATE_SOUTHERN_TRANSYLVANIA
+		owns_entire_state_region = STATE_NORTHERN_TRANSYLVANIA
+		owns_entire_state_region = STATE_BEKES
+		owns_entire_state_region = STATE_TRANSDANUBIA
+		owns_entire_state_region = STATE_CENTRAL_HUNGARY
+		owns_entire_state_region = STATE_DELVIDEK
+				NOT = {
+					any_scope_state = {
+						state_region = {
+							is_homeland = cu:hungarian
+						}
+						radical_fraction = {
+							value >= 0.10
+							culture = cu:hungarian
+						}
+					}
+				}
+		any_scope_state = {
+			state_region = s:STATE_CENTRAL_HUNGARY
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 2
+			}
+		}
 	}
 
 	on_complete = {
