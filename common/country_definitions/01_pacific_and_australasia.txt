@@ -508,16 +508,16 @@ MGD = {
 	capital = STATE_MINDANAO
 }
 
-YUZ = { # Yuanzhumin
-	color = { 97 44 96 }
-	
-	country_type = unrecognized
-
-	tier = principality
-	
-	cultures = { yuanzhumin }
-	capital = STATE_FORMOSA
-}
+#YUZ = { # Yuanzhumin
+#	color = { 97 44 96 }
+#	
+#	country_type = unrecognized
+#
+#	tier = principality
+#	
+#	cultures = { yuanzhumin }
+#	capital = STATE_FORMOSA
+#}
 
 PNS = { # Polynesia
 	color = { 244 140 30 }
