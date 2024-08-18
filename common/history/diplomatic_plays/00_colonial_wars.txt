@@ -1,36 +1,4 @@
 ﻿DIPLOMATIC_PLAYS = {
-	c:NET = {
-		create_diplomatic_play = {
-		
-				target_state = s:STATE_ACEH.region_state:ACE
-			
-			war = yes
-			
-			type = dp_annex_war
-
-			add_war_goal = {
-				holder = c:ACE
-				type = conquer_state
-				target_state = s:STATE_ACEH.region_state:DEI
-			}
-		}			
-	}
-	c:NET = {
-		create_diplomatic_play = {
-		
-			target_state = s:STATE_NORTH_SUMATRA.region_state:SAK
-			
-			war = yes
-			
-			type = dp_annex_war
-			
-			add_war_goal = {
-				holder = c:SAK
-				type = conquer_state
-				target_state = s:STATE_NORTH_SUMATRA.region_state:DEI
-			}
-		}	
-	}
 	c:DEI = {
 		create_diplomatic_play = {
 		
