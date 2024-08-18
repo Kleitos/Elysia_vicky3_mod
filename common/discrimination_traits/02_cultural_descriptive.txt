@@ -2,39 +2,50 @@
 #}
 
 african_settler = {
+	heritage = yes
 }
 
 finnic = {
+	heritage = yes
 }
 
 francophone = {
+	heritage = yes
 }
 
 hispanophone = {
+	heritage = yes
 }
 
 lusophone = {
+	heritage = yes
 }
 
 anglophone = {
+	heritage = yes
 }
 
 german_speaking = {
+	heritage = yes
 }
 
 italophone = {
+	heritage = yes
 }
 
 slavic = {
 }
 
 jugoslav = {
+	heritage = yes
 }
 
 jewish_group = {
+	heritage = yes
 }
 
 han_chinese = {
+	heritage = yes
 }
 
 arab_speaking = {
@@ -47,36 +58,45 @@ sinosphere = {
 }
 
 tai = {
+	heritage = yes
 }
 
 yamato = {
+	heritage = yes
 }
 
 himalayan = {
 }
 
 bantu = {
+	heritage = yes
 }
 
 ethiopian = {
+	heritage = yes
 }
 
 caucasus_group = {
+	heritage = yes
 }
 
 polynesian_group = {
+	heritage = yes
 }
 
 rumelian = {
 }
 
 celtic_people = {
+	heritage = yes
 }
 
 west_slavic = {
+	heritage = yes
 }
 
 east_slavic = {
+	heritage = yes
 }
 
 greek_culture = {
@@ -89,7 +109,9 @@ pagan_heritage = {}
 
 cushitic = {}
 
-berber_group = {}
+berber_group = {
+	heritage = yes
+}
 
 semite = {}
 
@@ -115,6 +137,8 @@ songhai_group = {}
 
 khoisan_group = {}
 
-nordic_group = {}
+nordic_group = {
+	heritage = yes
+}
 
 byzantine_legacy = {}
