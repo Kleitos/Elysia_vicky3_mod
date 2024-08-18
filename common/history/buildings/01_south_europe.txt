@@ -1903,9 +1903,21 @@
 						levels=2
 						region="STATE_NAVARRA"
 					}
+					building={
+						type="building_financial_district"
+						country="c:SPA"
+						levels=2
+						region="STATE_BEIRA"
+					}
+					building={
+						type="building_financial_district"
+						country="c:SPA"
+						levels=4
+						region="STATE_CASTILE"
+					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_pig_iron" "pm_automation_disabled"  }
+				activate_production_methods={ "pm_steel" "pm_automation_disabled"  }
 			}
 			create_building={
 				building="building_iron_mine"
@@ -1913,12 +1925,92 @@
 					building={
 						type="building_financial_district"
 						country="c:SPA"
-						levels=2
+						levels=10
 						region="STATE_NAVARRA"
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_coal_mine"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:SPA"
+						levels=5
+						region="STATE_VALENCIA"
+					}
+					building={
+						type="building_financial_district"
+						country="c:SPA"
+						levels=10
+						region="STATE_CASTILE"
+					}
+					building={
+						type="building_manor_house"
+						country="c:SPA"
+						levels=5
+						region="STATE_BEIRA"
+					}
+					building={
+						type="building_coal_mine"
+						country="c:SPA"
+						levels=5
+						region="STATE_BEIRA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_atmospheric_engine_pump_building_coal_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_steel_mills"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:SPA"
+						levels=8
+						region="STATE_VALENCIA"
+					}
+					building={
+						type="building_financial_district"
+						country="c:SPA"
+						levels=2
+						region="STATE_CASTILE"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_blister_steel_process" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_motor_industry"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:SPA"
+						levels=1
+						region="STATE_VALENCIA"
+					}
+					building={
+						type="building_financial_district"
+						country="c:SPA"
+						levels=2
+						region="STATE_CASTILE"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_steam_engines" "pm_automobiles_disabled" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_artillery_foundries"
+				add_ownership={
+					country={
+						country="c:SPA"
+						levels=2
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_cannons" "pm_automation_disabled"  }
 			}
 			create_building={
 				building="building_wheat_farm"
@@ -2223,6 +2315,82 @@
 	}
 	s:STATE_ANDALUSIA={
 		region_state:SPA={
+			create_building={
+				building="building_iron_mine"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:SPA"
+						levels=2
+						region="STATE_ANDALUSIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_atmospheric_engine_pump_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_lead_mine"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:SPA"
+						levels=2
+						region="STATE_ANDALUSIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_atmospheric_engine_pump_building_lead_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_sulfur_mine"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:SPA"
+						levels=4
+						region="STATE_ANDALUSIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_atmospheric_engine_pump_building_sulfur_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_chemical_plants"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:SPA"
+						levels=2
+						region="STATE_CATALONIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_artificial_fertilizers"  }
+			}
+			create_building={
+				building="building_explosives_factory"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:SPA"
+						levels=1
+						region="STATE_CATALONIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_leblanc_process"  }
+			}
+			create_building={
+				building="building_munition_plants"
+				add_ownership={
+					country={
+						country="c:SPA"
+						levels=2
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_percussion_caps" "pm_automation_disabled"  }
+			}
 			create_building={
 				building="building_government_administration"
 				add_ownership={
