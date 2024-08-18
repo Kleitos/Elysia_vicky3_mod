@@ -41,20 +41,14 @@ anglo_iberian_war.1 = {
 			annex = c:MEW
 			annex = c:BHO
 		}
-		c:GBR = {
-		trigger_event = { id = anglo_iberian_war.2 days = 180 }	
-		}	
-		c:SPA = {
-		trigger_event = { id = anglo_iberian_war.3 }	
-		}			
+		c:BAV = {
+		trigger_event = { id = anglo_iberian_war.2 }	
+		}		
 	}
 
     option = {
 		name = anglo_iberian_war.1.a
 		default_option = yes
-		ai_chance = {
-			base = 100
-		}
 	}
 }
 
@@ -82,6 +76,336 @@ anglo_iberian_war.2 = {
 	}
 
 	immediate = {
+		c:GBR = {
+			create_diplomatic_pact = {
+				country = c:DEN
+				type = defensive_pact
+			}
+			change_relations = {
+				country = c:DEN
+				value = 100
+			}			
+			change_relations = {
+				country = c:PRU
+				value = 100
+			}			
+			change_relations = {
+				country = c:SWE
+				value = -100
+			}			
+			change_relations = {
+				country = c:BAV
+				value = -100
+			}
+			change_relations = {
+				country = c:SPA
+				value = -100
+			}
+			change_relations = {
+				country = c:BOH
+				value = -100
+			}
+			set_secret_goal = {
+				country = c:SWE
+				secret_goal = antagonize
+			}			
+			set_secret_goal = {
+				country = c:BAV
+				secret_goal = antagonize
+			}			
+			set_secret_goal = {
+				country = c:SPA
+				secret_goal = antagonize
+			}		
+			set_secret_goal = {
+				country = c:DEN
+				secret_goal = befriend
+			}	
+			set_secret_goal = {
+				country = c:PRU
+				secret_goal = befriend
+			}				
+		}
+		c:DEN = {
+			change_relations = {
+				country = c:GBR
+				value = 100
+			}			
+			change_relations = {
+				country = c:SWE
+				value = -100
+			}			
+			change_relations = {
+				country = c:BAV
+				value = -100
+			}		
+			change_relations = {
+				country = c:BOH
+				value = -100
+			}
+			change_relations = {
+				country = c:SPA
+				value = -100
+			}
+			change_relations = {
+				country = c:PRU
+				value = 100
+			}
+			set_secret_goal = {
+				country = c:SWE
+				secret_goal = conquer
+			}			
+			set_secret_goal = {
+				country = c:BAV
+				secret_goal = antagonize
+			}			
+			set_secret_goal = {
+				country = c:SPA
+				secret_goal = antagonize
+			}	
+			set_secret_goal = {
+				country = c:GBR
+				secret_goal = befriend
+			}		
+			set_secret_goal = {
+				country = c:PRU
+				secret_goal = befriend
+			}				
+		}
+		c:PRU = {
+			change_relations = {
+				country = c:GBR
+				value = 100
+			}			
+			change_relations = {
+				country = c:DEN
+				value = 100
+			}			
+			change_relations = {
+				country = c:SWE
+				value = -100
+			}	
+			change_relations = {
+				country = c:BAV
+				value = -100
+			}		
+			change_relations = {
+				country = c:BOH
+				value = -100
+			}		
+			set_secret_goal = {
+				country = c:SWE
+				secret_goal = antagonize
+			}			
+			set_secret_goal = {
+				country = c:BAV
+				secret_goal = conquer
+			}			
+			set_secret_goal = {
+				country = c:BOH
+				secret_goal = antagonize
+			}	
+			set_secret_goal = {
+				country = c:GBR
+				secret_goal = befriend
+			}				
+		}
+		c:SWE = {
+			change_relations = {
+				country = c:SPA
+				value = 100
+			}	
+			change_relations = {
+				country = c:GBR
+				value = -100
+			}			
+			change_relations = {
+				country = c:DEN
+				value = -100
+			}	
+			change_relations = {
+				country = c:PRU
+				value = -100
+			}	
+			set_secret_goal = {
+				country = c:PRU
+				secret_goal = antagonize
+			}			
+			set_secret_goal = {
+				country = c:GBR
+				secret_goal = antagonize
+			}			
+			set_secret_goal = {
+				country = c:DEN
+				secret_goal = conquer
+			}			
+			set_secret_goal = {
+				country = c:SPA
+				secret_goal = befriend
+			}		
+			set_secret_goal = {
+				country = c:BAV
+				secret_goal = befriend
+			}					
+		}
+		c:SPA = {
+			create_diplomatic_pact = {
+				country = c:SWE
+				type = defensive_pact
+			}	
+			change_relations = {
+				country = c:SWE
+				value = 100
+			}		
+			change_relations = {
+				country = c:BAV
+				value = 100
+			}			
+			change_relations = {
+				country = c:GBR
+				value = -100
+			}			
+			change_relations = {
+				country = c:DEN
+				value = -100
+			}	
+			set_secret_goal = {
+				country = c:GBR
+				secret_goal = antagonize
+			}			
+			set_secret_goal = {
+				country = c:DEN
+				secret_goal = antagonize
+			}			
+			set_secret_goal = {
+				country = c:SWE
+				secret_goal = befriend
+			}			
+		}
+		c:BAV = {
+			create_diplomatic_pact = {
+				country = c:SWE
+				type = defensive_pact
+			}
+			change_relations = {
+				country = c:SPA
+				value = 100
+			}
+			change_relations = {
+				country = c:GBR
+				value = -100
+			}			
+			change_relations = {
+				country = c:DEN
+				value = -100
+			}	
+			set_secret_goal = {
+				country = c:GBR
+				secret_goal = antagonize
+			}			
+			set_secret_goal = {
+				country = c:DEN
+				secret_goal = antagonize
+			}			
+			set_secret_goal = {
+				country = c:SWE
+				secret_goal = befriend
+			}		
+			set_secret_goal = {
+				country = c:BAV
+				secret_goal = befriend
+			}	
+			create_diplomatic_pact = {
+				country = c:BOH
+				type = defensive_pact
+			}			
+			set_secret_goal = {
+				country = c:BOH
+				secret_goal = befriend
+			}	
+			change_relations = {
+				country = c:BOH
+				value = 100
+			}			
+		}
+		c:BOH = {
+			create_diplomatic_pact = {
+				country = c:SWE
+				type = defensive_pact
+			}
+			create_diplomatic_pact = {
+				country = c:SPA
+				type = defensive_pact
+			}
+			change_relations = {
+				country = c:SPA
+				value = 100
+			}
+			change_relations = {
+				country = c:SWE
+				value = 100
+			}
+			change_relations = {
+				country = c:BAV
+				value = 100
+			}
+			change_relations = {
+				country = c:GBR
+				value = -100
+			}			
+			change_relations = {
+				country = c:DEN
+				value = -100
+			}	
+			change_relations = {
+				country = c:PRU
+				value = -100
+			}	
+			set_secret_goal = {
+				country = c:GBR
+				secret_goal = antagonize
+			}			
+			set_secret_goal = {
+				country = c:DEN
+				secret_goal = antagonize
+			}			
+			set_secret_goal = {
+				country = c:PRU
+				secret_goal = antagonize
+			}			
+			set_secret_goal = {
+				country = c:SWE
+				secret_goal = befriend
+			}		
+			set_secret_goal = {
+				country = c:BAV
+				secret_goal = befriend
+			}				
+			set_secret_goal = {
+				country = c:PRU
+				secret_goal = antagonize
+			}				
+			set_secret_goal = {
+				country = c:RUS
+				secret_goal = conquer
+			}						
+		}
+			
+		s:STATE_BOHEMIA = {
+			remove_homeland = cu:south_german
+		}
+			
+		s:STATE_MORAVIA = {
+			remove_homeland = cu:south_german
+		}
+			
+		s:STATE_POSEN = {
+			remove_homeland = cu:north_german
+		}
+			
+		s:STATE_SILESIA = {
+			remove_homeland = cu:north_german
+		}
 	}
 
     option = {
@@ -91,40 +415,267 @@ anglo_iberian_war.2 = {
 			base = 100
 		}
 		create_diplomatic_play = {
-		
-				target_state = s:STATE_CASTILE.region_state:SPA
-			
-				escalation = 81
-			
-			type = dp_humiliation
-
+			target_country = c:DEN
+			war = no
+			escalation = 81
+			type = dp_conquer_state
+			target_state = s:STATE_SCHLESWIG_HOLSTEIN.region_state:DEN
 			
 			add_war_goal = {
 				holder = c:GBR
-				type = war_reparations
-				target_country = c:SPA
+				type = humiliation
+					target_country = c:SPA
 			}
 			add_war_goal = {
-				holder = c:BIC
-				type = annex_country
-				target_state = s:STATE_NAGPUR.region_state:SEI
+				holder = c:GBR
+				type = humiliation
+					target_country = c:SWE
 			}
-			
 			add_war_goal = {
 				holder = c:SPA
 				type = humiliation
-				target_country = c:GBR
+					target_country = c:GBR
 			}
 			add_war_goal = {
-				holder = c:SPA
-				type = war_reparations
-				target_country = c:GBR
+				holder = c:SWE
+				type = humiliation
+					target_country = c:GBR
+			}
+			add_war_goal = {
+				holder = c:BAV
+				type = humiliation
+					target_country = c:PRU
+			}
+			add_war_goal = {
+				holder = c:SWE
+				type = humiliation
+					target_country = c:PRU
+			}
+			add_war_goal = {
+				holder = c:SWE
+				type = humiliation
+					target_country = c:DEN
+			}
+			add_war_goal = {
+				holder = c:BOH
+				type = humiliation
+					target_country = c:PRU
+			}
+			add_war_goal = {
+				holder = c:PRU
+				type = humiliation
+					target_country = c:BOH
+			}
+			add_war_goal = {
+				holder = c:PRU
+				type = humiliation
+					target_country = c:BAV
 			}
 			
 			add_war_goal = {
 				holder = c:SEI
 				type = annex_country
 				target_state = s:STATE_BIHAR.region_state:BIC
+			}
+			
+			add_war_goal = {
+				holder = c:BIC
+				type = annex_country
+				target_state = s:STATE_BOMBAY.region_state:SEI
+			}
+			
+			add_war_goal = {
+				holder = c:LIB
+				type = annex_country
+				target_state = s:STATE_SIERRA_LEONE.region_state:SIL
+			}
+			add_war_goal = {
+				holder = c:SIL
+				type = annex_country
+				target_state = s:STATE_LIBERIA.region_state:LIB
+			}
+			add_war_goal = {
+				holder = c:NSW
+				type = annex_country
+				target_state = s:STATE_WESTERN_AUSTRALIA.region_state:WAS
+			}
+			
+			add_war_goal = {
+				holder = c:NSW
+				type = annex_country
+				target_state = s:STATE_SOUTH_AUSTRALIA.region_state:SAS
+			}
+			add_war_goal = {
+				holder = c:SAS
+				type = conquer_state
+				target_state = s:STATE_NEW_SOUTH_WALES.region_state:NSW
+				target_country = c:NSW
+			}
+			add_war_goal = {
+				holder = c:SAS
+				type = conquer_state
+				target_state = s:STATE_VICTORIA.region_state:NSW
+				target_country = c:NSW
+			}
+			add_war_goal = {
+				holder = c:WAS
+				type = conquer_state
+				target_state = s:STATE_QUEENSLAND.region_state:NSW
+				target_country = c:NSW
+			}
+			add_war_goal = {
+				holder = c:PRU
+				type = conquer_state
+				target_state = s:STATE_POMERANIA.region_state:BAV
+				target_country = c:BAV
+			}
+			add_war_goal = {
+				holder = c:PRU
+				type = conquer_state
+				target_state = s:STATE_WEST_GALICIA.region_state:BOH
+				target_country = c:BOH
+			}
+			add_war_goal = {
+				holder = c:PRU
+				type = conquer_state
+				target_state = s:STATE_SILESIA.region_state:BOH
+				target_country = c:BOH
+			}
+			add_war_goal = {
+				holder = c:BOH
+				type = conquer_state
+				target_state = s:STATE_WEST_GALICIA.region_state:PRU
+				target_country = c:PRU
+			}
+			add_war_goal = {
+				holder = c:BOH
+				type = conquer_state
+				target_state = s:STATE_POSEN.region_state:PRU
+				target_country = c:PRU
+			}
+			add_war_goal = {
+				holder = c:BOH
+				type = conquer_state
+				target_state = s:STATE_GREATER_POLAND.region_state:PRU
+				target_country = c:PRU
+			}
+			add_war_goal = {
+				holder = c:BOH
+				type = conquer_state
+				target_state = s:STATE_LESSER_POLAND.region_state:PRU
+				target_country = c:PRU
+			}
+			add_war_goal = {
+				holder = c:BOH
+				type = conquer_state
+				target_state = s:STATE_MAZOVIA.region_state:PRU
+				target_country = c:PRU
+			}
+			add_war_goal = {
+				holder = c:BAV
+				type = annex_country
+				target_state = s:STATE_HANNOVER.region_state:HAN
+				target_country = c:HAN
+			}
+			add_war_goal = {
+				holder = c:BAV
+				type = conquer_state
+				target_state = s:STATE_FRIESLAND.region_state:DEN
+				target_country = c:DEN
+			}
+			add_war_goal = {
+				holder = c:BAV
+				type = conquer_state
+				target_state = s:STATE_MECKLENBURG.region_state:PRU
+				target_country = c:PRU
+			}
+			add_war_goal = {
+				holder = c:BAV
+				type = conquer_state
+				target_state = s:STATE_HANNOVER.region_state:DEN
+				target_country = c:DEN
+			}
+			add_war_goal = {
+				holder = c:BAV
+				type = conquer_state
+				target_state = s:STATE_ELBE.region_state:DEN
+				target_country = c:DEN
+			}
+			add_war_goal = {
+				holder = c:BAV
+				type = conquer_state
+				target_state = s:STATE_BRUNSWICK.region_state:PRU
+				target_country = c:PRU
+			}
+			add_war_goal = {
+				holder = c:HAN
+				type = conquer_state
+				target_state = s:STATE_WESTPHALIA.region_state:BAV
+				target_country = c:BAV
+			}
+			add_war_goal = {
+				holder = c:HAN
+				type = conquer_state
+				target_state = s:STATE_RUHR.region_state:BAV
+				target_country = c:BAV
+			}
+			add_war_goal = {
+				holder = c:SWE
+				type = make_protectorate
+				target_country = c:DEN
+			}
+			add_war_goal = {
+				holder = c:DEN
+				type = make_protectorate
+				target_country = c:SWE
+			}
+			add_initiator_backers = {
+				country = c:SPA
+			}
+			add_initiator_backers = {
+				country = c:PHI
+			}
+			add_initiator_backers = {
+				country = c:BRZ
+			}
+			add_initiator_backers = {
+				country = c:SIL
+			}
+			add_initiator_backers = {
+				country = c:SWE
+			}
+			add_initiator_backers = {
+				country = c:SAS
+			}
+			add_initiator_backers = {
+				country = c:WAS
+			}
+			add_initiator_backers = {
+				country = c:BOH
+			}
+			add_initiator_backers = {
+				country = c:SEI
+			}
+			add_target_backers = {
+				country = c:GBR
+			}
+			add_target_backers = {
+				country = c:HAN
+			}
+			add_target_backers = {
+				country = c:BIC
+			}
+			add_target_backers = {
+				country = c:NSW
+			}
+			add_target_backers = {
+				country = c:ARG
+			}
+			add_target_backers = {
+				country = c:LIB
+			}
+			add_target_backers = {
+				country = c:PRU
 			}
 		}
 	}

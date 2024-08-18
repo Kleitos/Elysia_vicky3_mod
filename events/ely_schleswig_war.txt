@@ -1,6 +1,7 @@
 ﻿namespace = fred
 namespace = palatine_house
 namespace = kalmar_union
+namespace = hanseatic_war
 
 fred.1 = {
 	type = country_event
@@ -37,9 +38,14 @@ fred.1 = {
 			annex = c:SCH
 			annex = c:OLD
 			annex = c:HOL
+			annex = c:LUB
+			annex = c:HAM
+			annex = c:MST
+			annex = c:MEC
+			annex = c:BRE
 		}
 		c:BAV = {
-			trigger_event = { id = fred.3 }	
+			trigger_event = { id = fred.2 }	
 		}
 	}	
 }
@@ -71,138 +77,12 @@ fred.2 = {
 
     option = {
 		name = fred.2.a
-		ai_chance = {
-			base = 50
-		}
-		c:SWE = {
-			trigger_event = { id = kalmar_union.1 days = 30 }	
-		}
-		create_diplomatic_play = {
-			target_country = c:DEN
-				escalation = 70
-			type = dp_conquer_state
-			target_state = s:STATE_SCHLESWIG_HOLSTEIN.region_state:DEN
-			add_war_goal = {
-				holder = c:PRU
-				type = conquer_state
-				target_state = s:STATE_HANNOVER.region_state:DEN
-				target_country = c:DEN
-			}
-			add_war_goal = {
-				holder = c:PRU
-				type = war_reparations
-				target_country = c:DEN
-			}
-			add_war_goal = {
-				holder = c:PRU
-				type = humiliation
-				target_country = c:DEN
-			}
-			add_war_goal = {
-				holder = c:DEN
-				type = war_reparations
-				target_country = c:PRU
-			}
-			add_war_goal = {
-				holder = c:DEN
-				type = humiliation
-				target_country = c:PRU
-			}
-		}
-	}
-	option = {
-		name = fred.2.b
-		default_option = yes
-		ai_chance = {
-			base = 50
-		}
-		add_modifier = {
-			name = german_nationalism_rebukked
-			months = long_modifier_time
-		}
-	}
-}
-
-fred.3 = {
-	type = country_event
-	placement = ROOT
-
-	title = fred.3.t
-	desc = fred.3.d
-	flavor = fred.3.f
-
-	event_image = {
-		video = "gfx/event_pictures/unspecific_military_parade.bk2"
-	}
-
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
-
-	icon = "gfx/interface/icons/event_icons/event_default.dds"
-
-	duration = 3
-
-	trigger = {
-	}
-
-	immediate = {
-	}
-
-    option = {
-		name = fred.3.a
 		default_option = yes
 		c:SWE = {
-			trigger_event = { id = kalmar_union.1 days = 30 }	
+			annex = c:POM
+			trigger_event = { id = hanseatic_war.1 }	
 		}
-		ai_chance = {
-			base = 90
-		}
-		create_diplomatic_play = {
-			target_country = c:DEN
-				escalation = 70
-			type = dp_conquer_state
-			target_state = s:STATE_SCHLESWIG_HOLSTEIN.region_state:DEN
-			add_war_goal = {
-				holder = c:BAV
-				type = conquer_state
-				target_state = s:STATE_HANNOVER.region_state:DEN
-				target_country = c:DEN
-			}
-			add_war_goal = {
-				holder = c:BAV
-				type = war_reparations
-				target_country = c:DEN
-			}
-			add_war_goal = {
-				holder = c:BAV
-				type = humiliation
-				target_country = c:DEN
-			}
-			add_war_goal = {
-				holder = c:DEN
-				type = war_reparations
-				target_country = c:BAV
-			}
-			add_war_goal = {
-				holder = c:DEN
-				type = humiliation
-				target_country = c:BAV
-			}
-		}
-	}
-	option = {
-		name = fred.3.b
-		ai_chance = {
-			base = 25
-		}
-		add_modifier = {
-			name = government_admits_failure
-			months = long_modifier_time
-		}
-		c:PRU = {
-		trigger_event = { id = fred.2 }	
-		}
-	}
+	}	
 }
 
 palatine_house.1 = {
@@ -233,29 +113,66 @@ palatine_house.1 = {
     option = {
 		name = palatine_house.1.a
 		default_option = yes
-		ai_chance = {
-			base = 100
-		}
 		c:HAN = {
-			annex = c:HAM
-			annex = c:BRE
 			annex = c:BRA
 		}
 		c:BAV = {
-			trigger_event = { id = palatine_house.2 }	
 			annex = c:LIP
-			annex = c:SCM
+			remove_diplomatic_pact = {
+				country = c:BOH
+				type = personal_union
+			}	
+		}
+		c:PRU = {
+			annex = c:KRA
+			if = {
+				limit = { exists = s:STATE_MECKLENBURG.region_state:DEN }
+				s:STATE_MECKLENBURG.region_state:DEN = { set_state_owner = c:PRU }
+			}
+		}
+		c:BOH = {
+			activate_law = law_type:law_presidential_republic
+			activate_law = law_type:law_universal_suffrage
+			activate_law = law_type:law_homesteading
+				create_character = {
+					first_name = "Frantisek"
+					last_name = "Palacky"
+					historical = yes
+					birth_date = 1798.6.14
+					culture = cu:czech
+					ruler = yes
+					religion = protestant
+					noble = yes
+					interest_group = ig_petty_bourgeoisie
+					ideology = ideology_radical
+					traits = { 
+						persistent 
+						firebrand 
+						erudite
+					}
+				}
+		}
+		c:SPA = {
+			trigger_event = { id = anglo_iberian_war.1 }
+			create_diplomatic_pact = {
+				country = c:BAV
+				type = defensive_pact
+			}		
+			create_diplomatic_pact = {
+				country = c:SWE
+				type = defensive_pact
+			}		
 		}
 	}	
 }
 
-palatine_house.2 = {
+fred.3 = {
 	type = country_event
 	placement = ROOT
 
-	title = palatine_house.2.t
-	desc = palatine_house.2.d
-	flavor = palatine_house.2.f
+	title = fred.3.t
+	desc = fred.3.d
+	flavor = fred.3.f
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_military_parade.bk2"
@@ -275,62 +192,24 @@ palatine_house.2 = {
 	}
 
     option = {
-		name = palatine_house.2.a
+		name = fred.3.a
 		default_option = yes
 		ai_chance = {
-			base = 100
+			base = 90
 		}
-		c:BOH = {
-			annex = c:KRA
-		}
-		create_diplomatic_play = {
-			target_country = c:HAN
-				escalation = 81
-			type = dp_annex_war
-			target_state = s:STATE_HANNOVER.region_state:HAN
-			add_war_goal = {
-				holder = c:HAN
-				type = war_reparations
-				target_country = c:BAV
-			}
-			add_war_goal = {
-				holder = c:HAN
-				type = humiliation
-				target_country = c:BAV
-			}
-			add_war_goal = {
-				holder = c:HAN
-				type = war_reparations
-				target_country = c:BOH
-			}
-			add_war_goal = {
-				holder = c:HAN
-				type = humiliation
-				target_country = c:BOH
-			}
-			add_war_goal = {
-				holder = c:HAN
-				type = conquer_state
-				target_state = s:STATE_WESTPHALIA.region_state:BAV
-				target_country = c:BAV
-			}
-			add_war_goal = {
-				holder = c:HAN
-				type = conquer_state
-				target_state = s:STATE_RUHR.region_state:BAV
-				target_country = c:BAV
-			}
+		c:BAV = {
+			trigger_event = { id = fred.7 }	
 		}
 	}
 }
 
-kalmar_union.1 = {
+fred.4 = {
 	type = country_event
 	placement = ROOT
 
-	title = kalmar_union.1.t
-	desc = kalmar_union.1.d
-	flavor = kalmar_union.1.f
+	title = fred.4.t
+	desc = fred.4.d
+	flavor = fred.4.f
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_military_parade.bk2"
@@ -350,36 +229,245 @@ kalmar_union.1 = {
 	}
 
     option = {
-		name = kalmar_union.1.a
+		name = fred.4.a
 		default_option = yes
 		ai_chance = {
-			base = 100
+			base = 90
 		}
 		create_diplomatic_play = {
 			target_country = c:DEN
-				escalation = 81
-			type = dp_make_protectorate
-			target_state = s:STATE_ZEALAND.region_state:DEN
+				escalation = 70
+			type = dp_humiliation
+			target_state = s:STATE_BAVARIA.region_state:BAV
+			if = {
+				limit = { exists = s:STATE_POMERANIA.region_state:BAV }
+				add_war_goal = {
+					holder = c:DEN
+					type = conquer_state
+					target_state = s:STATE_POMERANIA.region_state:BAV
+					target_country = c:BAV
+				}
+			}
 			add_war_goal = {
-				holder = c:SWE
+				holder = c:BAV
+				type = conquer_state
+				target_state = s:STATE_HANNOVER.region_state:DEN
+				target_country = c:DEN
+			}
+			add_war_goal = {
+				holder = c:BAV
+				type = conquer_state
+				target_state = s:STATE_FRIESLAND.region_state:DEN
+				target_country = c:DEN
+			}
+			add_war_goal = {
+				holder = c:BAV
+				type = conquer_state
+				target_state = s:STATE_MECKLENBURG.region_state:DEN
+				target_country = c:DEN
+			}
+			add_war_goal = {
+				holder = c:BAV
+				type = conquer_state
+				target_state = s:STATE_SCHLESWIG_HOLSTEIN.region_state:DEN
+				target_country = c:DEN
+			}
+			add_war_goal = {
+				holder = c:BAV
 				type = war_reparations
 				target_country = c:DEN
 			}
 			add_war_goal = {
-				holder = c:SWE
+				holder = c:BAV
 				type = humiliation
 				target_country = c:DEN
 			}
 			add_war_goal = {
 				holder = c:DEN
 				type = war_reparations
-				target_country = c:SWE
+				target_country = c:BAV
 			}
-			add_war_goal = {
-				holder = c:DEN
-				type = humiliation
-				target_country = c:SWE
+		}
+	}
+	option = {
+		name = fred.4.b
+		ai_chance = {
+			base = 10
+		}
+		add_modifier = {
+			name = german_nationalism_rebukked
+			months = very_long_modifier_time
+		}
+	}
+}
+
+fred.6 = {
+	type = country_event
+	placement = ROOT
+
+	title = fred.6.t
+	desc = fred.6.d
+	flavor = fred.6.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = fred.6.a
+		default_option = yes
+		if = {
+			limit = { exists = s:STATE_SCHLESWIG_HOLSTEIN.region_state:DEN }
+			s:STATE_SCHLESWIG_HOLSTEIN.region_state:DEN = { set_state_owner = c:BAV }
+		}
+		if = {
+			limit = { exists = s:STATE_MECKLENBURG.region_state:DEN }
+			s:STATE_MECKLENBURG.region_state:DEN = { set_state_owner = c:BAV }
+		}
+		if = {
+			limit = { exists = s:STATE_FRIESLAND.region_state:DEN }
+			s:STATE_FRIESLAND.region_state:DEN = { set_state_owner = c:BAV }
+		}
+		if = {
+			limit = { exists = s:STATE_HANNOVER.region_state:DEN }
+			s:STATE_HANNOVER.region_state:DEN = { set_state_owner = c:BAV }
+		}
+		c:DEN= {
+			create_bidirectional_truce = {
+				country = c:BAV
+				months = 120
 			}
+		}
+	}
+}
+fred.7 = {
+	type = country_event
+	placement = ROOT
+
+	title = fred.7.t
+	desc = fred.7.d
+	flavor = fred.7.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = fred.7.a
+		default_option = yes
+		ai_chance = {
+			base = 95
+		}
+		c:BAV = {
+			trigger_event = { id = fred.4 }	
+		}
+	}
+
+    option = {
+		name = fred.7.b
+		ai_chance = {
+			base = 5
+		}
+		c:BAV = {
+			trigger_event = { id = fred.6 }	
+		}
+	}
+}
+
+
+hanseatic_war.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = hanseatic_war.1.t
+	desc = hanseatic_war.1.d
+	flavor = hanseatic_war.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = hanseatic_war.1.a
+		default_option = yes
+		ai_chance = {
+			base = 99
+		}
+		c:GBR = {
+			trigger_event = { id = palatine_house.1 }
+			create_diplomatic_pact = {
+				country = c:DEN
+				type = defensive_pact
+			}		
+		}
+		c:PRU = {
+			create_diplomatic_pact = {
+				country = c:DEN
+				type = defensive_pact
+			}		
+		}
+		c:BAV = {
+			create_diplomatic_pact = {
+				country = c:SWE
+				type = defensive_pact
+			}	
+		}
+		if = {
+			limit = { exists = s:STATE_POMERANIA.region_state:SWE }
+			s:STATE_POMERANIA.region_state:SWE = { set_state_owner = c:BAV }
+		}
+		if = {
+			limit = { exists = s:STATE_POMERANIA.region_state:UBD }
+			s:STATE_POMERANIA.region_state:UBD = { set_state_owner = c:BAV }
+		}
+	}
+
+    option = {
+		name = hanseatic_war.1.b
+		ai_chance = {
+			base = 1
+		}
+		c:BAV = {
+			trigger_event = { id = fred.3 }	
 		}
 	}
 }
@@ -420,7 +508,7 @@ kalmar_union.2 = {
 		}
 		create_diplomatic_play = {
 			target_country = c:DEN
-				escalation = 81
+				escalation = 80
 			type = dp_annex_war
 			target_state = s:STATE_ZEALAND.region_state:DEN
 			add_war_goal = {
