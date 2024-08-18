@@ -4179,6 +4179,7 @@ hungarian={
 		von_Benedek
 		Zrinyi
 		Stefics
+		Wesselenyi 
 	}
 	common_last_names={
 		Apponyi
@@ -4205,6 +4206,7 @@ hungarian={
 		Kiss
 		Knezich
 		Kogutowicz
+		Kossuth
 		Keler
 		Liszt
 		Lazar
