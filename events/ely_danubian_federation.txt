@@ -94,6 +94,9 @@ danubian_fed.2 = {
 		add_journal_entry = { type = je_danube_before_storm }
 		trigger_event = { id = danubian_ultimatum.1 months = 60 }
 		c:AUS = {
+		ig:ig_landowners = {
+			remove_ideology = ideology_austrian_hegemony
+		}
 		create_character = {
 			template = aus_miklos_character_template
 			on_created = {
@@ -168,9 +171,6 @@ danubian_fed.3 = {
 		name = danubian_fed.3.a
 		change_tag = KUK
 		remove_modifier = austria_multicultural	
-		ig:ig_landowners = {
-			remove_ideology = ideology_austrian_hegemony
-		}
 	}
 }
 
