@@ -4,32 +4,15 @@
 	group = je_group_elysian_content
 
 	is_shown_when_inactive = {
-		OR = {
-			c:GBR ?= THIS
-			c:SPA ?= THIS
-		}	
 	}
 
 	possible = {
-		OR = {
-			c:GBR ?= THIS
-			c:SPA ?= THIS
-			c:IBE ?= THIS
-		}	
 	}
 
 	complete = {
-		year >= 1848
 	}
 
 	on_complete = {
-		if = {
-			limit = {
-				exists = c:GBR
-				c:GBR = ROOT
-			}
-		trigger_event = { id = anglo_iberian_war.1 }
-		}
 	}
 	should_be_pinned_by_default = yes
 }
