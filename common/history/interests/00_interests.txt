@@ -20,6 +20,7 @@
 		add_declared_interest = region_andes
 		add_declared_interest = region_manchuria
 		add_declared_interest = region_caucasus
+		add_declared_interest = region_iberia	
 	}
 	c:BIC ?= {
 		add_declared_interest = region_himalayas
@@ -110,6 +111,18 @@
 	}
 	c:DEN ?= {
 		add_declared_interest = region_niger
+		add_declared_interest = region_iberia	
+		add_declared_interest = region_england	
+	}
+	c:SWE ?= {
+		add_declared_interest = region_niger
+		add_declared_interest = region_iberia	
+		add_declared_interest = region_england	
+	}
+	c:BAV ?= {
+		add_declared_interest = region_niger
+		add_declared_interest = region_iberia	
+		add_declared_interest = region_england	
 	}
 }	
 
