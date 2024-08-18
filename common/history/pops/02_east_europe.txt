@@ -3,7 +3,7 @@
 		region_state:SWE = {
 			create_pop = {
 				culture = russian
-				size = 800543
+				size = 600543
 			}
 			create_pop = {
 				culture = swedish
@@ -26,12 +26,8 @@
 				size = 12961
 			}
 			create_pop = {
-				culture = swedish
-				size = 4187
-			}
-			create_pop = {
-				culture = swedish
-				size = 20937
+				culture = karelian
+				size = 2025124
 			}
 		}
 	}

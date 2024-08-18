@@ -1086,10 +1086,14 @@
 		}
 	}
 	s:STATE_POMERANIA = {
-		region_state:PRU = {
+		region_state:POM = {
 			create_pop = {
 				culture = north_german
 				size = 1018800
+			}
+			create_pop = {
+				culture = swedish
+				size = 8800
 			}
 			create_pop = {
 				culture = north_german
