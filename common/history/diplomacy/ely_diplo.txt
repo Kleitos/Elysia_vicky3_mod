@@ -222,6 +222,10 @@
 			country = c:SAS
 			type = puppet
 		}
+		create_diplomatic_pact = {
+			country = c:POM
+			type = puppet
+		}
 	}
 	
 	c:NOR = {	
@@ -256,14 +260,25 @@
 			country = c:WIN
 			type = dominion
 		}
-		# Colony of Tasmania, historically called Van Dieman's Land until 1856
 		create_diplomatic_pact = {
-			country = c:GBR
-			type = defensive_pact
+			country = c:HAM
+			type = puppet
 		}
 		create_diplomatic_pact = {
-			country = c:PRU
-			type = defensive_pact
+			country = c:LUB
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:MEC
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:MST
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:BRE
+			type = puppet
 		}
 	}
 	
@@ -563,10 +578,6 @@
 			type = personal_union
 		}
 		create_diplomatic_pact = {
-			country = c:BRE
-			type = puppet
-		}
-		create_diplomatic_pact = {
 			country = c:LIP
 			type = puppet
 		}
@@ -607,6 +618,13 @@
 		create_bidirectional_truce = {
 			country = c:HYD
 			months = 240
+		}
+	}
+	
+	c:HAN = {
+		create_diplomatic_pact = {
+			country = c:BRA
+			type = puppet
 		}
 	}
 	
