@@ -42,7 +42,6 @@ franco_prussian_alliance = {
 	is_shown = {
  		is_player = yes
 		exists = c:FRA
-		exists = c:NET
 		exists = c:BAV
 		NOT = {
 			has_global_variable = break_franco_prussia
@@ -54,8 +53,8 @@ franco_prussian_alliance = {
 			c:FRA = {
 				NOT = {	
 					has_diplomatic_pact = {
-						type = defensive_pact
-						who = c:NET
+						type = alliance
+						who = c:BAV
 					}
 				}	
 			}
@@ -64,14 +63,6 @@ franco_prussian_alliance = {
 					has_diplomatic_pact = {
 						type = alliance
 						who = c:FRA
-					}
-				}	
-			}
-			c:NET= {
-				NOT = {	
-					has_diplomatic_pact = {
-						type = defensive_pact
-						who = c:BAV
 					}
 				}	
 			}
