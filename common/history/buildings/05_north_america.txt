@@ -41,6 +41,55 @@
 				activate_production_methods={ "pm_basic_port" }
 			}
 			create_building={
+				building="building_paper_mills"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:ELY"
+						levels=3
+						region="STATE_LOUISIANA"
+					}
+					country={
+						country="c:DEN"
+						levels=2
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_logging_camp"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:ELY"
+						levels=2
+						region="STATE_DISTRICT_OF_COLUMBIA"
+					}
+					building={
+						type="building_logging_camp"
+						country="c:ELY"
+						levels=3
+						region="STATE_LOUISIANA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_sulfur_mine"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:ELY"
+						levels=4
+						region="STATE_LOUISIANA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_atmospheric_engine_pump_building_sulfur_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
 				building="building_sugar_plantation"
 				add_ownership={
 					building={
@@ -302,6 +351,17 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_muskets" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_artillery_foundries"
+				add_ownership={
+					country={
+						country="c:ELY"
+						levels=2
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_cannons" "pm_automation_disabled"  }
 			}
 			create_building={
 				building="building_iron_mine"
@@ -681,17 +741,55 @@
 	s:STATE_MICHIGAN={
 		region_state:ELY={
 			create_building={
+				building="building_chemical_plants"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:ELY"
+						levels=2
+						region="STATE_MICHIGAN"
+					}
+					building={
+						type="building_financial_district"
+						country="c:ELY"
+						levels=2
+						region="STATE_DISTRICT_OF_COLUMBIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_artificial_fertilizers"  }
+			}
+			create_building={
 				building="building_logging_camp"
 				add_ownership={
 					building={
 						type="building_financial_district"
 						country="c:ELY"
-						levels=1
+						levels=5
 						region="STATE_MICHIGAN"
+					}
+					building={
+						type="building_financial_district"
+						country="c:ELY"
+						levels=2
+						region="STATE_DISTRICT_OF_COLUMBIA"
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_iron_mine"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:ELY"
+						levels=4
+						region="STATE_MICHIGAN"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_atmospheric_engine_pump_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
 			}
 			create_building={
 				building="building_sulfur_mine"
@@ -718,6 +816,25 @@
 				}
 				reserves=1
 				activate_production_methods={  "pm_sheep_farms" "pm_standard_fences" "pm_unrefrigerated" "pm_open_air_stockyards" }
+			}
+			create_building={
+				building="building_explosives_factory"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:ELY"
+						levels=1
+						region="STATE_PENNSYLVANIA"
+					}
+					building={
+						type="building_financial_district"
+						country="c:ELY"
+						levels=1
+						region="STATE_DISTRICT_OF_COLUMBIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_leblanc_process"  }
 			}
 		}
 	}
@@ -1543,12 +1660,31 @@
 					building={
 						type="building_financial_district"
 						country="c:ELY"
-						levels=2
+						levels=8
 						region="STATE_PENNSYLVANIA"
+					}
+					building={
+						type="building_financial_district"
+						country="c:GBR"
+						levels=2
+						region="STATE_DISTRICT_OF_COLUMBIA"
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_blister_steel_process" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_motor_industry"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:ELY"
+						levels=3
+						region="STATE_PENNSYLVANIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_steam_engines" "pm_automobiles_disabled" "pm_automation_disabled"  }
 			}
 			create_building={
 				building="building_construction_sector"
@@ -1592,17 +1728,6 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_lathe"  "pm_automation_disabled" "pm_luxury_furniture" }
-			}
-			create_building={
-				building="building_munition_plants"
-				add_ownership={
-					country={
-						country="c:ELY"
-						levels=1
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_percussion_caps" "pm_automation_disabled"  }
 			}
 			create_building={
 				building="building_glassworks"
@@ -1668,8 +1793,14 @@
 					building={
 						type="building_financial_district"
 						country="c:ELY"
-						levels=2
+						levels=4
 						region="STATE_PENNSYLVANIA"
+					}
+					building={
+						type="building_financial_district"
+						country="c:ELY"
+						levels=2
+						region="STATE_DISTRICT_OF_COLUMBIA"
 					}
 				}
 				reserves=1
@@ -1725,19 +1856,6 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
-			}
-			create_building={
-				building="building_explosives_factory"
-				add_ownership={
-					building={
-						type="building_financial_district"
-						country="c:ELY"
-						levels=1
-						region="STATE_PENNSYLVANIA"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_leblanc_process"  }
 			}
 		}
 	}
@@ -2523,15 +2641,76 @@
 					building={
 						type="building_financial_district"
 						country="c:ELY"
-						levels=1
+						levels=5
 						region="STATE_ONTARIO"
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
 			}
-		}
-		region_state:ELY={
+			create_building={
+				building="building_chemical_plants"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:ELY"
+						levels=1
+						region="STATE_ONTARIO"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_artificial_fertilizers"  }
+			}
+			create_building={
+				building="building_munition_plants"
+				add_ownership={
+					country={
+						country="c:ELY"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_percussion_caps" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_explosives_factory"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:ELY"
+						levels=1
+						region="STATE_PENNSYLVANIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_leblanc_process"  }
+			}
+			create_building={
+				building="building_lead_mine"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:ELY"
+						levels=2
+						region="STATE_ONTARIO"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_atmospheric_engine_pump_building_lead_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_iron_mine"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:ELY"
+						levels=4
+						region="STATE_ONTARIO"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_atmospheric_engine_pump_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+			}
 			create_building={
 				building="building_sulfur_mine"
 				add_ownership={
