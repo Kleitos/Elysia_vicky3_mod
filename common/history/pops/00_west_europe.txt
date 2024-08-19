@@ -538,11 +538,11 @@
 				size = 10279
 			}
 			create_pop = {
-				culture = flemish
+				culture = wallonian
 				size = 70121
 			}
 			create_pop = {
-				culture = flemish
+				culture = wallonian
 				religion = protestant
 				size = 2021
 			}
@@ -831,7 +831,7 @@
 				size = 327009
 			}
 			create_pop = {
-				culture = flemish
+				culture = wallonian
 				size = 26531
 			}
 			create_pop = {
@@ -929,11 +929,11 @@
 				size = 27847
 			}
 			create_pop = {
-				culture = flemish # 'Flemish & Dutch' in census data.
+				culture = dutch # 'Flemish & Dutch' in census data.
 				size = 40207
 			}
 			create_pop = {
-				culture = flemish
+				culture = wallonian
 				religion = protestant
 				size = 1355
 			}
@@ -952,7 +952,7 @@
 	s:STATE_FLANDERS = {
 		region_state:FRA = {
 			create_pop = {
-				culture = flemish # 'Flemish & Dutch' in census data.
+				culture = dutch # 'Flemish & Dutch' in census data.
 				size = 1482798
 			}
 			create_pop = {

@@ -36,7 +36,7 @@ POPS = {
 				size = 1592
 			}
 			create_pop = {
-				culture = flemish
+				culture = danish
 				size = 632
 			}
 			create_pop = {

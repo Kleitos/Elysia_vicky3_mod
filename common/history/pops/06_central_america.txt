@@ -169,7 +169,7 @@
 				size = 34704
 			}
 			create_pop = {
-				culture = flemish
+				culture = danish
 				size = 396
 			}
 			create_pop = {
