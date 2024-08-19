@@ -212,6 +212,7 @@ STATES = {
 		add_homeland = cu:russian
 		add_homeland = cu:swedish
 		add_homeland = cu:finnish
+		add_homeland = cu:karelian
 		add_claim = c:RUS
 	}
 	s:STATE_ALASKA = {
@@ -3185,7 +3186,7 @@ STATES = {
 			owned_provinces = { "x106000" "x5362AC" "x70C020" "xA0A080" "xD0854D" "xE0A0C0" }
 		}
 		add_homeland = cu:french
-		add_homeland = cu:flemish
+		add_homeland = cu:dutch
 	}
 	s:STATE_PICARDY = {
 		create_state = {
