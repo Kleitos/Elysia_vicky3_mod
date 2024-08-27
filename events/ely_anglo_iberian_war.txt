@@ -125,6 +125,7 @@ anglo_iberian_war.2 = {
 
 	immediate = {
 		c:GBR = {
+			trigger_event = { id = anglo_iberian_war.3 }
 			add_journal_entry = { type = je_danish_war_GBR }
 			create_diplomatic_pact = {
 				country = c:DEN
@@ -176,6 +177,7 @@ anglo_iberian_war.2 = {
 			}				
 		}
 		c:DEN = {
+			trigger_event = { id = anglo_iberian_war.3 }
 			add_journal_entry = { type = je_danish_war_DEN }
 			change_relations = {
 				country = c:GBR
@@ -223,6 +225,7 @@ anglo_iberian_war.2 = {
 			}				
 		}
 		c:PRU = {
+			trigger_event = { id = anglo_iberian_war.3 }
 			add_journal_entry = { type = je_danish_war_PRU }
 			change_relations = {
 				country = c:GBR
@@ -262,6 +265,7 @@ anglo_iberian_war.2 = {
 			}				
 		}
 		c:SWE = {
+			trigger_event = { id = anglo_iberian_war.3 }
 			add_journal_entry = { type = je_danish_war_SWE }
 			change_relations = {
 				country = c:SPA
@@ -301,6 +305,7 @@ anglo_iberian_war.2 = {
 			}					
 		}
 		c:SPA = {
+			trigger_event = { id = anglo_iberian_war.3 }
 			add_journal_entry = { type = je_danish_war_SPA }
 			create_diplomatic_pact = {
 				country = c:SWE
@@ -336,6 +341,7 @@ anglo_iberian_war.2 = {
 			}			
 		}
 		c:BAV = {
+			trigger_event = { id = anglo_iberian_war.3 }
 			add_journal_entry = { type = je_danish_war_BAV }
 			create_diplomatic_pact = {
 				country = c:SWE
@@ -383,6 +389,7 @@ anglo_iberian_war.2 = {
 			}			
 		}
 		c:BOH = {
+			trigger_event = { id = anglo_iberian_war.3 }
 			add_journal_entry = { type = je_danish_war_BOH }
 			create_diplomatic_pact = {
 				country = c:SWE
@@ -462,49 +469,67 @@ anglo_iberian_war.2 = {
 			remove_homeland = cu:north_german
 		}
 		c:HAN = {
+			trigger_event = { id = anglo_iberian_war.3 }
 			add_journal_entry = { type = je_danish_war_HAN }
 		}		
 		c:BIC = {
+			trigger_event = { id = anglo_iberian_war.3 }
 			add_journal_entry = { type = je_danish_war_BIC }
 		}		
 		c:SEI = {
+			trigger_event = { id = anglo_iberian_war.3 }
 			add_journal_entry = { type = je_danish_war_SEI }
 		}		
 		c:SIL = {
+			trigger_event = { id = anglo_iberian_war.3 }
 			add_journal_entry = { type = je_danish_war_SIL }
 		}		
 		c:LIB = {
+			trigger_event = { id = anglo_iberian_war.3 }
 			add_journal_entry = { type = je_danish_war_LIB }
 		}		
 		c:NSW = {
+			trigger_event = { id = anglo_iberian_war.3 }
 			add_journal_entry = { type = je_danish_war_NSW }
 		}		
 		c:SAS = {
+			trigger_event = { id = anglo_iberian_war.3 }
 			add_journal_entry = { type = je_danish_war_SAS }
 		}	
 		c:WAS = {
+			trigger_event = { id = anglo_iberian_war.3 }
 			add_journal_entry = { type = je_danish_war_WAS }
 		}	
 		c:BRZ = {
+			trigger_event = { id = anglo_iberian_war.3 }
 			add_journal_entry = { type = je_danish_war_BRZ }
 		}	
 		c:WIN = {
+			trigger_event = { id = anglo_iberian_war.3 }
 			add_journal_entry = { type = je_danish_war_WIN }
 		}	
 		c:ARG = {
+			trigger_event = { id = anglo_iberian_war.3 }
 			add_journal_entry = { type = je_danish_war_ARG }
 		}	
+		c:PHI = {
+			trigger_event = { id = anglo_iberian_war.3 }
+		}	
 		c:KAU = {
+			trigger_event = { id = anglo_iberian_war.4 }
 			add_journal_entry = { type = je_aboriginal_uprising_AUS }
 		}
 		c:KBU = {
+			trigger_event = { id = anglo_iberian_war.4 }
 			add_journal_entry = { type = je_mandika_uprising_MLI }
 		}	
 		c:GRI = {
+			trigger_event = { id = anglo_iberian_war.4 }
 			add_journal_entry = { type = je_guarani_uprising_ARG }
 			add_journal_entry = { type = je_guarani_uprising_BRZ }
 		}	
 		c:PAT = {
+			trigger_event = { id = anglo_iberian_war.4 }
 			add_journal_entry = { type = je_patagonian_uprising_ARG }
 		}		
 	}
@@ -813,10 +838,71 @@ anglo_iberian_war.3 = {
 	}
 
 	immediate = {		
+		c:AUS = {
+			trigger_event = { id = anglo_iberian_war.4 }
+		}
+		c:FRA = {
+			trigger_event = { id = anglo_iberian_war.4 }
+		}
+		c:LMV = {
+			trigger_event = { id = anglo_iberian_war.4 }
+		}
+		c:CHI = {
+			trigger_event = { id = anglo_iberian_war.4 }
+		}
+		c:ELY = {
+			trigger_event = { id = anglo_iberian_war.4 }
+		}
+		c:RUS = {
+			trigger_event = { id = anglo_iberian_war.4 }
+		}
+		c:TWT = {
+			trigger_event = { id = anglo_iberian_war.4 }
+		}
+		c:MYS = {
+			trigger_event = { id = anglo_iberian_war.4 }
+		}
+		c:JAP = {
+			trigger_event = { id = anglo_iberian_war.4 }
+		}	
 	}
 
     option = {
 		name = anglo_iberian_war.3.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+
+anglo_iberian_war.4 = {
+	type = country_event
+	placement = ROOT
+
+	title = anglo_iberian_war.4.t
+	desc = anglo_iberian_war.4.d
+	flavor = anglo_iberian_war.4.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {		
+	}
+
+    option = {
+		name = anglo_iberian_war.4.a
 		default_option = yes
 		ai_chance = {
 			base = 100
