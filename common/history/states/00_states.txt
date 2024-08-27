@@ -92,6 +92,7 @@ STATES = {
 		}
 		
 		add_homeland = cu:dutch
+		add_homeland = cu:wallonian
 	}
 	s:STATE_BALUCHISTAN = {
 		create_state = {
@@ -947,6 +948,7 @@ STATES = {
 		add_homeland = cu:platinean
 		add_homeland = cu:brazilian
 		add_homeland = cu:afro_brazilian
+		add_homeland = cu:afro_american
 		add_homeland = cu:sulista
 		add_claim = c:BRZ
 	}
@@ -1341,6 +1343,7 @@ STATES = {
 			}
 		}
 		add_homeland = cu:aborigine
+		add_claim = c:KAU
 	}
 	s:STATE_NORTH_ISLAND = {
 		create_state = {
@@ -1691,7 +1694,6 @@ STATES = {
 		add_homeland = cu:kru
 		add_homeland = cu:bassa
 		add_homeland = cu:kissi
-		add_homeland = cu:afro_american # TEMPORARY CIRCA 2022
 		add_claim = c:SIL
 	}
 	s:STATE_EMILIA = {
@@ -1952,7 +1954,7 @@ STATES = {
 		add_homeland = cu:amazonian
 		add_homeland = cu:cariban
 		add_homeland = cu:afro_caribbean
-		add_homeland = cu:anglo_colombian
+		add_homeland = cu:dutch_colonial
 		add_claim = c:AMZ
 		add_claim = c:ORN
 	}
@@ -1982,7 +1984,7 @@ STATES = {
 			owned_provinces = { xC0BD36 x99B927 xA10AB0 xF07001 x697EA6 xB82106 x5841B8 xB74261 x8D1FEB xB93DC4 x0F8E6D x61288E xBC6C89 x099D64 x50AB65 x14D855 x1F3215 xD21AF5 x30C912 x329D7B xCFCBBD x892DC3 x32A71C xFB6808 x7C4D18 xAE0139 x80C0D0 xADE561 x0BB82F xCAD9DE x489532 x21FE50 x2E012C x98746A x60CA07 xCE5729 x15CF72 x518468 xFEBC00 x126A77 xCCE24F x79BC37 x6EF825 x0E0FE3 x707001 x946F97 x4C19B0 x13D2AC x62CD57 xAE673B x707517 x105DC4 xF0BDA1 x56FF0A x60A3C6 x9110AF x7544FE xC19002 x0B8B6F x0A4927 xE14FFD x6E9361 x9719C1 x05FADB x606089 xF32B6C x924433 xE754CE x591C92 x8D3562 x1DD848 xBC1802 x89A412 xE33995 x1D9BB6 x69C02E x3F2448 x91E11E x0B905D x085984 x1D16FB x839E14 xD7EF29 x7ECC8A xF55F6B xD6F760 x6C0E82 xA715E1 x26EB9B xDBC941 x526909 x60868E x574151 xC088A0 xC0C011 x88081A }
 		}
 		
-		add_homeland = cu:anglo_colombian
+		add_homeland = cu:dutch_colonial
 		add_homeland = cu:afro_caribbean
 		add_homeland = cu:amazonian
 		add_homeland = cu:cariban
@@ -2086,7 +2088,7 @@ STATES = {
 				}
 			}
 		create_state = {
-			country = c:PRA
+			country = c:BRZ
 			owned_provinces = { 
 				x4AA845 xBEC87E x26B9C1 xDC9757 xB93B0C xA08090 x1BEEC7 xB1CCEE xB2D30E x0A4B09 x12590E x140E36 x73D4D4
 				x4BE6EE xB306A1 xD52D37 x9B8499 xEBB90E xD6E2EA xE4212F x05CF8B x4E60B2 x04CE13 xE6D232 x9A68C5
@@ -2113,8 +2115,8 @@ STATES = {
 		add_homeland = cu:amazonic
 		add_homeland = cu:amazonian
 		add_homeland = cu:afro_brazilian
-		add_claim = c:BRZ
 		add_claim = c:AMZ
+		add_claim = c:BRZ
 	}
 	s:STATE_MARANHAO = {
 		create_state = {
@@ -2129,7 +2131,6 @@ STATES = {
 		add_homeland = cu:nordestino
 		add_homeland = cu:afro_brazilian
 		add_homeland = cu:tupinamba
-		add_claim = c:AMZ
 	}
 	s:STATE_AMAZONAS = {
 		create_state = {
@@ -2163,7 +2164,7 @@ STATES = {
 		}
 
 		create_state = {
-			country = c:PRA
+			country = c:BRZ
 			owned_provinces = { 
 				x0A49A7 xA8E4E8 x4370B4 x87087A xA9FD52 x569250 x9FA745
 
@@ -2244,13 +2245,14 @@ STATES = {
 		add_homeland = cu:paulista
 		add_homeland = cu:amazonian
 		add_homeland = cu:guarani
+		add_homeland = cu:afro_brazilian
 		add_claim = c:BRZ
 		add_claim = c:GRI
 		add_claim = c:AMZ
 	}
 	s:STATE_RIO_GRANDE_DO_SUL = {
 		create_state = {
-			country = c:PNI
+			country = c:BRZ
 			owned_provinces = { x5F9728 xE69F64 x0445FE xD9D235 xF0F96F x118F07 xE933B3 xED55D2 xCC2135 x8A15FA x8E3579 xBEAF68 x19E79D x52B247 x067BE3 xD3A197 xCD9ECD x4EF206 x1956D3 xE5C3BD xA41E15 x8953B5 xA787A2 x9D8150 x38328C x6E0564 x783434 x38A72A xF1B2D9 x8F1635 xFF2920 x48F668 x7678F5 xB88B11 x45B9DF x5F39AB xCD5D1E x26F3A4 x161E6F x628161 x529B8E x16C462 x9FE393 xD8696A xA950E8 x782568 x9BDDA2 x22956B x4BBCCC x7F701B x00E2C3 x7600E6 xE17D15 x7DEC91 xE761EB x9A598B x583BA0 x633FB2 xC7E5A1 x036508 }
 		}
 		
@@ -2258,7 +2260,6 @@ STATES = {
 		add_homeland = cu:sulista
 		add_homeland = cu:afro_brazilian
 		add_homeland = cu:guarani		
-		add_claim = c:BRZ
 		add_claim = c:GRI
 	}
 	s:STATE_PARANA = {
@@ -2398,6 +2399,7 @@ STATES = {
 		
 		add_homeland = cu:platinean
 		add_homeland = cu:guarani
+		add_homeland = cu:afro_american
 		add_claim = c:GRI
 		add_claim = c:ARG
 	}
@@ -2409,6 +2411,7 @@ STATES = {
 		
 		add_homeland = cu:platinean
 		add_homeland = cu:guarani
+		add_homeland = cu:afro_american
 		add_claim = c:GRI
 		add_claim = c:ARG		
 	}
@@ -2428,6 +2431,7 @@ STATES = {
 		
 		add_homeland = cu:platinean
 		add_homeland = cu:patagonian
+		add_homeland = cu:afro_american
 		add_claim = c:ARG
 		add_claim = c:PAT
 	}
@@ -2461,7 +2465,8 @@ STATES = {
 		}
 
 		add_homeland = cu:platinean
-		add_homeland = cu:patagonian	
+		add_homeland = cu:patagonian
+		add_homeland = cu:afro_american	
 		add_claim = c:ARG	
 		add_claim = c:PAT
 	}
@@ -2472,7 +2477,8 @@ STATES = {
 		}
 		
 		add_homeland = cu:platinean
-		add_homeland = cu:patagonian	
+		add_homeland = cu:patagonian
+		add_homeland = cu:afro_american	
 		add_claim = c:PAT		
 	}
 	s:STATE_SANTA_FE = {
@@ -2491,6 +2497,7 @@ STATES = {
 		
 		add_homeland = cu:platinean	
 		add_homeland = cu:guarani
+		add_homeland = cu:afro_american
 		add_claim = c:GRI
 		add_claim = c:ARG			
 	}
@@ -2502,6 +2509,7 @@ STATES = {
 		add_homeland = cu:platinean
 		add_homeland = cu:brazilian
 		add_homeland = cu:afro_brazilian
+		add_homeland = cu:afro_american
 		add_homeland = cu:sulista
 		add_homeland = cu:guarani
 		add_claim = c:BRZ
@@ -2516,6 +2524,7 @@ STATES = {
 		
 		add_homeland = cu:platinean
 		add_homeland = cu:quechua	
+		add_homeland = cu:afro_american
 		add_claim = c:TWT
 	}
 	s:STATE_CHACO = {
@@ -2535,6 +2544,7 @@ STATES = {
 		
 		add_homeland = cu:platinean
 		add_homeland = cu:guarani	
+		add_homeland = cu:afro_american
 		add_claim = c:GRI	
 		add_claim = c:ARG
 	}
@@ -2558,6 +2568,7 @@ STATES = {
 			owned_provinces = { "x204070" "x2080F0" "x256EF2" "x5CCB77" "x5F3E39" "x702282" "x8C37BE" "x92E924" "xA3EF4A" "xAB66CC" "xC0183E" "xC11533" "xE6D25C" "xEAB107" }
 		}
 		add_homeland = cu:platinean
+		add_homeland = cu:afro_american
 		add_homeland = cu:guarani	
 		add_homeland = cu:quechua	
 		add_claim = c:ARG
@@ -2631,6 +2642,7 @@ STATES = {
 		
 		add_homeland = cu:patagonian
 		add_homeland = cu:aimara
+		add_homeland = cu:afro_american
 		add_claim = c:ARG
 	}
 	s:STATE_SOUTH_ATLANTIC_ISLANDS = {
@@ -2641,7 +2653,7 @@ STATES = {
 		}
 		
 		add_homeland = cu:patagonian
-		add_homeland = cu:british
+		add_homeland = cu:afro_american
 		add_claim = c:ARG
 	}
 	s:STATE_ICELAND = {
@@ -2721,6 +2733,7 @@ STATES = {
 		add_homeland = cu:maghrebi
 		add_homeland = cu:berber
 		add_claim = c:MOR
+		add_claim = c:SPA
 	}
 	s:STATE_ORAN = {
 		create_state = {
@@ -3369,8 +3382,7 @@ STATES = {
 		}
 		
 		
-		add_homeland = cu:portuguese
-		add_homeland = cu:spanish
+		add_homeland = cu:afro_caribeno
 
 	}	
 
@@ -3442,7 +3454,7 @@ STATES = {
 			owned_provinces = { "x0141A0" "x018061" "x800060" "x8041A0" "x808061" "x93FB2E" }
 		}
 
-		add_homeland = cu:flemish
+		add_homeland = cu:dutch
 		add_homeland = cu:wallonian
 		add_homeland = cu:french
 	}
@@ -3461,6 +3473,7 @@ STATES = {
 		}
 
 		add_homeland = cu:dutch
+		add_homeland = cu:wallonian
 	}
 	s:STATE_JUTLAND = {
 		create_state = {
@@ -3554,8 +3567,8 @@ STATES = {
 			state_type = unincorporated
 		}
 		
-		add_homeland = cu:afro_caribeno		
 		add_homeland = cu:afro_caribbean	
+		add_homeland = cu:dutch_colonial
 	}
 	s:STATE_KYKLADIAS = {
 		create_state = {
@@ -4453,6 +4466,7 @@ STATES = {
 		create_state = {
 			country = c:SPA
 			owned_provinces = { x21A090 x35554F x438029 x6021AF x6B7D25 xA50F53 xE60324 x65FD48 x16F859 xE0D920 x414325 xE020B0 xE23000 x22D39E xC52E48 xC53497 x9E9F57 x93DC46 x60A0AF x7D05E3 xA06030 xF87B77 x941594 }
+			state_type = unincorporated
 		}
 		add_homeland = cu:lacustrine_bantu
 		add_homeland = cu:swahili
@@ -5170,7 +5184,7 @@ STATES = {
 		create_state = {
 			country = c:HLA
 			owned_provinces = { 
-				"x97FBC3" "x9bc5ad" "x308254"
+				"x97FBC3" "x9BC5AD" "x308254"
 		add_claim = c:ELY
 			}
 		}
