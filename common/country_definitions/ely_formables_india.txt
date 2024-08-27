@@ -1,15 +1,4 @@
 ﻿
-# Dravistan
-DRA = {
-	color = { 170  206  162 }
-	
-	country_type = recognized
-
-	tier = empire
-	
-	cultures = { tamil kannada malayalam telegu }
-	capital = STATE_MADRAS
-}
 # Pakistan
 PAK = {
 	color = { 209 219 116}
@@ -32,29 +21,4 @@ BGD = {
 	
 	cultures = { bengali assamese bihari oriya }
 	capital = STATE_NORTH_BENGAL
-}
-
-#Rajputana
-RAJ = {
-	color = { 79  89  182 }
-	
-	country_type = unrecognized
-	
-	tier = principality
-	
-	cultures = { rajput }
-	capital = STATE_RAJPUTANA
-}
-
-#Marathas
-MAR = {
-	color = { 120  148  140 }
-	
-	country_type = unrecognized
-	
-	tier = principality
-	
-	cultures = { marathi }
-	capital = STATE_BOMBAY
-	is_named_from_capital = yes
 }
