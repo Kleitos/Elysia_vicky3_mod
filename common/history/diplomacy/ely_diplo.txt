@@ -226,6 +226,10 @@
 			country = c:POM
 			type = puppet
 		}
+		create_bidirectional_truce = {
+			country = c:PRU
+			months = 180
+		}
 	}
 	
 	c:NOR = {	
@@ -279,6 +283,10 @@
 		create_diplomatic_pact = {
 			country = c:BRE
 			type = puppet
+		}
+		create_bidirectional_truce = {
+			country = c:SWE
+			months = 180
 		}
 	}
 	
@@ -361,6 +369,18 @@
 			country = c:HYD
 			months = 240
 		}	
+		create_bidirectional_truce = {
+			country = c:PHI
+			months = 180
+		}
+		create_bidirectional_truce = {
+			country = c:BRZ
+			months = 180
+		}
+		create_bidirectional_truce = {
+			country = c:SIL
+			months = 180
+		}
 	}
 	
 	c:FRA = {
@@ -382,6 +402,14 @@
 			country = c:NET
 			type = trade_agreement
 		}
+		create_bidirectional_truce = {
+			country = c:GBR
+			months = 180
+		}
+		create_bidirectional_truce = {
+			country = c:AUS
+			months = 180
+		}
 	}	
 	
 	c:SPA = {
@@ -391,6 +419,10 @@
 		}
 		create_bidirectional_truce = {
 			country = c:BIC
+			months = 180
+		}
+		create_bidirectional_truce = {
+			country = c:LIB
 			months = 180
 		}
 		set_relations = { country = c:PRU value = 25 }
@@ -438,6 +470,10 @@
 		create_bidirectional_truce = {
 			country = c:HYD
 			months = 240
+		}
+		create_bidirectional_truce = {
+			country = c:NSW
+			months = 180
 		}
 	}
 	
@@ -549,6 +585,14 @@
 			country = c:HYD
 			months = 240
 		}
+		create_bidirectional_truce = {
+			country = c:LIB
+			months = 180
+		}
+		create_bidirectional_truce = {
+			country = c:ARG
+			months = 180
+		}
 	}
 	
 	c:BAV = {
@@ -580,6 +624,10 @@
 		create_diplomatic_pact = {
 			country = c:LIP
 			type = puppet
+		}
+		create_bidirectional_truce = {
+			country = c:PRU
+			months = 180
 		}
 	}
 	c:PRU = {
@@ -618,6 +666,26 @@
 		create_bidirectional_truce = {
 			country = c:HYD
 			months = 240
+		}
+		create_bidirectional_truce = {
+			country = c:PHI
+			months = 180
+		}
+		create_bidirectional_truce = {
+			country = c:SIL
+			months = 180
+		}
+		create_bidirectional_truce = {
+			country = c:SAS
+			months = 180
+		}
+		create_bidirectional_truce = {
+			country = c:WAS
+			months = 180
+		}
+		create_bidirectional_truce = {
+			country = c:SWE
+			months = 180
 		}
 	}
 	
@@ -666,6 +734,22 @@
 	}
 	
 	c:BRZ = {
+		create_bidirectional_truce = {
+			country = c:ARG
+			months = 180
+		}
+		create_bidirectional_truce = {
+			country = c:GBR
+			months = 180
+		}
+		create_bidirectional_truce = {
+			country = c:BIC
+			months = 180
+		}
+		create_bidirectional_truce = {
+			country = c:LIB
+			months = 180
+		}
 		set_relations = { country = c:SPA value = -25 }
 		set_relations = { country = c:ARG value = -100 }	
 		set_relations = { country = c:GBR value = 50 }	
