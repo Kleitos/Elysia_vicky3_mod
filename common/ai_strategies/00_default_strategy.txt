@@ -543,22 +543,6 @@ ai_strategy_default = {
 			add = 1000
 		}
 
-		if = { # Paraguay Should never surrender if they have the relevant JE
-			limit = {
-				c:PRG ?= this
-				has_journal_entry = je_expanding_paraguay
-				scope:diplomatic_play = {
-	                OR = {
-	                    has_play_goal = conquer_state
-	                    has_play_goal = return_state
-	                    has_play_goal = make_tributary
-	                    has_play_goal = make_protectorate
-	                }
-				}
-			}
-			add = 1000
-		}
-
 		if = { #Caucasian states & Kazakhstan should never surrender against Russia
 			limit = {
 				OR = {
@@ -589,14 +573,6 @@ ai_strategy_default = {
 			}
 			add = 1000
 		}
-
-        # Paraguay should be bold while they have the war JE.
-        if = {
-            limit = {
-            	has_journal_entry = je_expanding_paraguay
-            }
-            add = 25
-        }
 
 		# Italian minors should be willing to fight Austria
 		if = { 
@@ -642,55 +618,7 @@ ai_strategy_default = {
 				}
 			}
 			add = 0.25
-		}
-
-		# USA should Manifest a lot of Destiny
-		if = {
-			limit = {
-				has_journal_entry = je_manifest_destiny_mexico
-				scope:enemy_country = {
-					any_scope_state = {
-						OR = {
-							state_region = s:STATE_CALIFORNIA
-							state_region = s:STATE_NEVADA
-							state_region = s:STATE_UTAH
-							state_region = s:STATE_COLORADO
-							state_region = s:STATE_ARIZONA
-							state_region = s:STATE_NEW_MEXICO
-							state_region = s:STATE_TEXAS
-							state_region = s:STATE_KANSAS
-							state_region = s:STATE_OKLAHOMA # if they somehow lose it
-						}
-					}
-				}
-			}
-			add = 0.25
 		}		
-		
-		# French Natural Borders
-		if = {
-			limit = {
-				has_journal_entry = je_french_natural_borders
-				OR = {
-					has_strategy = ai_strategy_territorial_expansion
-					has_strategy = ai_strategy_restore_natural_borders
-				}
-				scope:enemy_country = {
-					any_scope_state = {
-						OR = {
-							state_region = {
-								is_homeland = cu:french
-							}
-							state_region = s:STATE_WALLONIA
-							state_region = s:STATE_FLANDERS
-							state_region = s:STATE_RHINELAND
-							state_region = s:STATE_NORTH_RHINE
-						}
-					}
-				}
-			}
-			add = 0.15
-		}			
 	}
 	
 	# Chance each update that the AI is willing to start changing a law (1 = 1%)
@@ -1095,34 +1023,6 @@ ai_strategy_default = {
 
 			if = {
 				limit = {
-					has_journal_entry = je_expanding_paraguay
-					scope:target_country = {
-						any_scope_state = {
-							state_region = s:STATE_CORRIENTES
-						}
-					}
-				}
-				add = 50
-			}
-
-			if = {
-				limit = {
-					has_journal_entry = je_expanding_paraguay
-					scope:target_country = {
-						any_scope_state = {
-							OR = {
-								state_region = s:STATE_SANTA_FE
-								state_region = s:STATE_PARANA
-								state_region = s:STATE_RIO_GRANDE_DO_SUL
-							}
-						}
-					}
-				}
-				add = 25
-			}
-
-			if = {
-				limit = {
 					has_journal_entry = je_age_of_princes
 					scope:target_state = {
 						OR = {
@@ -1157,60 +1057,6 @@ ai_strategy_default = {
 					}
 				}
 				add = 75
-			}
-
-			if = {
-				limit = {
-					has_journal_entry = je_manifest_destiny_mexico
-				}
-				
-				if = {
-					limit = {
-						scope:target_state = {
-							OR = {
-								state_region = s:STATE_COLORADO
-								state_region = s:STATE_UTAH
-								state_region = s:STATE_TEXAS
-								state_region = s:STATE_KANSAS
-								state_region = s:STATE_OKLAHOMA
-								state_region = s:STATE_ARIZONA						
-								state_region = s:STATE_CALIFORNIA
-								state_region = s:STATE_NEVADA
-								state_region = s:STATE_NEW_MEXICO								
-							}
-						}					
-					}
-					add = 50 
-					
-					if = {
-						limit = { is_adjacent_to_state = scope:target_state }
-						multiply = 2
-					}
-				}
-			}
-
-			if = {
-				limit = {
-					has_journal_entry = je_conquer_oregon
-					scope:target_state = {
-						OR = {
-							state_region = s:STATE_WASHINGTON
-							state_region = s:STATE_IDAHO
-							state_region = s:STATE_OREGON
-						}
-					}
-				}
-				add = 50
-			}
-
-			if = {
-				limit = {
-					has_journal_entry = je_alaska
-					scope:target_state = {
-						state_region = s:STATE_ALASKA
-					}
-				}
-				add = 50
 			}
 
 			if = {
@@ -1271,29 +1117,6 @@ ai_strategy_default = {
 					}
 				}
 				add = 15
-			}
-			
-			# French Natural Borders
-			if = {
-				limit = {
-					has_journal_entry = je_french_natural_borders
-					OR = {
-						has_strategy = ai_strategy_territorial_expansion
-						has_strategy = ai_strategy_restore_natural_borders
-					}
-					scope:target_state = {
-						OR = {
-							state_region = {
-								is_homeland = cu:french
-							}
-							state_region = s:STATE_WALLONIA
-							state_region = s:STATE_FLANDERS
-							state_region = s:STATE_RHINELAND
-							state_region = s:STATE_NORTH_RHINE
-						}
-					}
-				}
-				add = 25
 			}
 			
 			if = {
@@ -2227,29 +2050,6 @@ ai_strategy_default = {
 			}
 			add = 10
 		}
-
-		# USA should be confident against owners of their Manifest Destiny states
-		if = {
-			limit = {
-				has_journal_entry = je_manifest_destiny_mexico
-				scope:target_country = {
-					any_scope_state = {
-						OR = {
-							state_region = s:STATE_CALIFORNIA
-							state_region = s:STATE_NEVADA
-							state_region = s:STATE_UTAH
-							state_region = s:STATE_COLORADO
-							state_region = s:STATE_ARIZONA
-							state_region = s:STATE_NEW_MEXICO
-							state_region = s:STATE_TEXAS
-							state_region = s:STATE_KANSAS
-							state_region = s:STATE_OKLAHOMA # if they somehow lose it						
-						}
-					}
-				}
-			}
-			add = 1
-		}
 	
 		# Greek Nationalism
 		if = {
@@ -2282,31 +2082,6 @@ ai_strategy_default = {
 				has_journal_entry = je_risorgimento
 				scope:target_country = {
 					has_journal_entry = je_risorgimento
-				}
-			}
-			add = 0.5
-		}
-
-		# French Natural Borders
-		if = {
-			limit = {
-				has_journal_entry = je_french_natural_borders
-				OR = {
-					has_strategy = ai_strategy_territorial_expansion
-					has_strategy = ai_strategy_restore_natural_borders
-				}
-				scope:target_country = {
-					any_scope_state = {
-						OR = {
-							state_region = {
-								is_homeland = cu:french
-							}
-							state_region = s:STATE_WALLONIA
-							state_region = s:STATE_FLANDERS
-							state_region = s:STATE_RHINELAND
-							state_region = s:STATE_NORTH_RHINE
-						}
-					}
 				}
 			}
 			add = 0.5
@@ -2405,24 +2180,7 @@ ai_strategy_default = {
 				}
 			}
 			add = 2
-		}
-			
-        # Paraguay should be very bold while they have the war JE.
-        if = {
-            limit = {
-                has_journal_entry = je_expanding_paraguay
-                scope:target_country = {
-                    any_scope_state = {
-                        OR = {
-                            state_region = s:STATE_SANTA_FE
-                            state_region = s:STATE_PARANA
-                            state_region = s:STATE_RIO_GRANDE_DO_SUL
-                        }
-                    }
-                }
-            }
-            add = 2
-        }	
+		}	
 	}
 	
 	# How likely is the AI to start a diplomatic play against another country if their attitude allows for it
@@ -2581,73 +2339,6 @@ ai_strategy_default = {
 				}
 			}
 			add = 25
-		}
-
-		# USA should be extremely aggressive against owners of their Manifest Destiny states
-		if = {
-			limit = {
-				has_journal_entry = je_manifest_destiny_mexico
-				scope:target_country = {
-					any_scope_state = {
-						OR = {
-							state_region = s:STATE_CALIFORNIA
-							state_region = s:STATE_NEVADA
-							state_region = s:STATE_UTAH
-							state_region = s:STATE_COLORADO
-							state_region = s:STATE_ARIZONA
-							state_region = s:STATE_NEW_MEXICO
-							state_region = s:STATE_TEXAS
-							state_region = s:STATE_KANSAS
-							state_region = s:STATE_OKLAHOMA # if they somehow lose it	
-						}
-					}
-				}
-			}
-			add = 25
-		}
-
-		# Extra french aggression for Haiti renouncing debt payments
-		if = {
-			limit = {
-				has_variable = haiti_stops_paying_france_aggressor				
-				scope:target_country = {
-					has_variable = haiti_stops_paying_france_target
-					any_state = {
-						has_claim_by = root
-					}
-				}				
-			}
-			add = 5
-		}
-
-		# Extra aggression against Peru-Bolivia in general
-		if = {
-			limit = {
-				scope:target_country = {
-					has_journal_entry = je_peru_bolivia
-				}
-				OR = {
-					country_has_primary_culture = cu:south_andean
-					country_has_primary_culture = cu:north_andean
-					country_has_primary_culture = cu:platinean
-					country_has_primary_culture = cu:argentine
-					country_has_primary_culture = cu:chilean
-					country_has_primary_culture = cu:colombian
-					country_has_primary_culture = cu:ecuadorian
-				}
-			}
-			add = 25
-		}
-
-		# Even more aggression if you have the War of the Confederation JE
-		if = {
-			limit = {
-				has_journal_entry = je_war_of_the_confederation
-				scope:target_country = {
-					has_journal_entry = je_peru_bolivia
-				}
-			}
-			add = 75
 		}
 
 		# Veiled Protectorate
@@ -2973,38 +2664,6 @@ ai_strategy_default = {
 			}
 			add = 50
 		}
-
-        # Isolationist Paraguay under Francia should not go awol.
-        if = {
-            limit = {
-            	has_journal_entry = je_francocracia
-            }
-            multiply = 0.1
-        }
-        # Paraguay is less likely to be aggressive when modernizing.
-        if = {
-            limit = {
-            	has_journal_entry = je_modernizing_paraguay
-            }
-			multiply = 0.25
-        }
-		
-        # Paraguay should be highly aggressive while they have the war JE.
-        if = {
-            limit = {
-                has_journal_entry = je_expanding_paraguay
-                scope:target_country = {
-                    any_scope_state = {
-                        OR = {
-                            state_region = s:STATE_SANTA_FE
-                            state_region = s:STATE_PARANA
-                            state_region = s:STATE_RIO_GRANDE_DO_SUL
-                        }
-                    }
-                }
-            }
-            add = 25
-        }
 		
 		# Acre claimant wants Acre
 		if = {
@@ -4477,24 +4136,6 @@ ai_strategy_default = {
 				}					
 			}		
 
-			if = {
-				limit = {
-					scope:target_country = {
-						has_journal_entry = je_peru_bolivia
-					}
-					OR = {
-						country_has_primary_culture = cu:south_andean
-						country_has_primary_culture = cu:north_andean
-						country_has_primary_culture = cu:platinean
-						country_has_primary_culture = cu:argentine
-						country_has_primary_culture = cu:chilean
-						country_has_primary_culture = cu:colombian
-						country_has_primary_culture = cu:ecuadorian
-					}
-				}
-				add = -50
-			}
-
 			multiply = {
 				value = "ai_ideological_opinion(scope:target_country)"
 				multiply = 0.05
@@ -5040,24 +4681,6 @@ ai_strategy_default = {
 			if = {
 				limit = { has_je_conquest_reason = { TARGET = scope:target_country } }
 				add = 10000
-			}
-			
-			if = {
-				limit = {
-					scope:target_country = {
-						has_journal_entry = je_peru_bolivia
-					}
-					OR = {
-						country_has_primary_culture = cu:south_andean
-						country_has_primary_culture = cu:north_andean
-						country_has_primary_culture = cu:platinean
-						country_has_primary_culture = cu:argentine
-						country_has_primary_culture = cu:chilean
-						country_has_primary_culture = cu:colombian
-						country_has_primary_culture = cu:ecuadorian
-					}				
-				}
-				add = 100
 			}			
 
 			if = {
@@ -6193,24 +5816,6 @@ ai_strategy_default = {
 					}
 					add = 25
 				}
-			}
-
-			if = {
-				limit = {
-					scope:target_country = {
-						has_journal_entry = je_peru_bolivia
-					}
-					OR = {
-						country_has_primary_culture = cu:south_andean
-						country_has_primary_culture = cu:north_andean
-						country_has_primary_culture = cu:platinean
-						country_has_primary_culture = cu:argentine
-						country_has_primary_culture = cu:chilean
-						country_has_primary_culture = cu:colombian
-						country_has_primary_culture = cu:ecuadorian
-					}						
-				}
-				add = 75
 			}
 
 			# Relations with subject
