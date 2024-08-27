@@ -1094,7 +1094,7 @@ STATE_QUEBEC = {
         type = "bg_oil_extraction"
         undiscovered_amount = 25
     }
-    nav = 3045
+    naval_exit_id = 3045
 }
 
 STATE_NEWFOUNDLAND = {

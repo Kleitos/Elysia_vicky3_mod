@@ -247,6 +247,7 @@ STATE_EASTERN_NORWAY = {
             bg_fishing = 16
             bg_iron_mining = 17
             bg_coal_mining = 14
+			bg_gold_mining = 80
         }
         resource = {
             type = "bg_gold_fields"
