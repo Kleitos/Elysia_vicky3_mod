@@ -31,14 +31,8 @@
 			founding_date = 1834.01.01
 			identity = identity_trade_league
 			principle = principle_internal_trade_1
-			
-			member = c:LUB # After 1836, but member for gameplay balance reasons
-			member = c:BRA # After 1836, but member for gameplay balance reasons
-			member = c:MST # After 1836, but member for gameplay balance reasons
 			member = c:SAX # 1834
-			member = c:MEC # 1826 
 			member = c:ANH # 1821
-			member = c:WLD # 1834
 			
 			# Luxembourg joined the Zollverein in 1842
 
