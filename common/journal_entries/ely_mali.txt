@@ -1,0 +1,83 @@
+﻿je_mandika_uprising_MLI = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		AND = {
+			c:SIL ?= {
+				is_country_alive = yes
+				has_modifier = danish_war_exhausted
+			}
+			c:LIB ?= {
+				is_country_alive = yes
+				has_modifier = danish_war_exhausted
+			}
+		}
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:KBU
+				c:KBU = ROOT
+			}
+			c:KBU = {
+				trigger_event = { id = native_mandika.1 popup = yes }
+			}
+		}
+	}
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+
+	timeout = 3650
+}
+
+je_conquer_SIL = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+ 		is_at_war = no
+		c:KBU = {
+			army_size >= { 
+    		value =  c:SIL.army_size
+			}
+		}
+		NOT = { has_truce_with = c:SIL }
+		is_subject = no
+	}
+
+	on_complete = {
+		trigger_event = { id = native_mandika.2 }
+	}
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+}
+
+je_conquer_LIB = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+ 		is_at_war = no
+		c:KBU = {
+			army_size >= { 
+    		value =  c:LIB.army_size
+			}
+		}
+		NOT = { has_truce_with = c:LIB }
+		is_subject = no
+	}
+
+	on_complete = {
+		trigger_event = { id = native_mandika.3 }
+	}
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+}

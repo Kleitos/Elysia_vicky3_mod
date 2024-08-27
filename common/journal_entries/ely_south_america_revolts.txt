@@ -1,0 +1,167 @@
+﻿je_guarani_uprising_ARG = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		c:ARG ?= {
+			is_country_alive = yes
+			has_modifier = danish_war_exhausted
+		}
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:GRI
+				c:GRI = ROOT
+			}
+			c:GRI = {
+				trigger_event = { id = native_guarani.1 popup = yes }
+			}
+		}
+	}
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+
+	timeout = 3650
+}
+
+je_guarani_uprising_BRZ = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		c:BRZ ?= {
+			is_country_alive = yes
+			has_modifier = danish_war_exhausted
+		}
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:GRI
+				c:GRI = ROOT
+			}
+			c:GRI = {
+				trigger_event = { id = native_guarani.2 popup = yes }
+			}
+		}
+	}
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+
+	timeout = 3650
+}
+
+je_patagonian_uprising_ARG = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		c:ARG ?= {
+			is_country_alive = yes
+			has_modifier = danish_war_exhausted
+		}
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:PAT
+				c:PAT = ROOT
+			}
+			c:PAT = {
+				trigger_event = { id = native_patagonian.1 popup = yes }
+			}
+		}
+	}
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+
+	timeout = 3650
+}
+
+je_conquer_ARG = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		owns_entire_state_region = STATE_ALTO_PARAGUAY
+		owns_entire_state_region = STATE_BAJO_PARAGUAY
+		owns_entire_state_region = STATE_CORRIENTES
+		owns_entire_state_region = STATE_CHACO
+		owns_entire_state_region = STATE_SANTA_FE
+	}
+
+	on_complete = {
+		trigger_event = { id = native_guarani.3 }
+	}
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+}
+
+je_conquer_BRZ = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		owns_entire_state_region = STATE_MATO_GROSSO
+		owns_entire_state_region = STATE_RIO_GRANDE_DO_SUL
+		owns_entire_state_region = STATE_PARANA
+		owns_entire_state_region = STATE_SANTA_CATARINA
+	}
+
+	on_complete = {
+		trigger_event = { id = native_guarani.4 }
+	}
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+}
+
+je_reconquest_patagonia = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		owns_entire_state_region = STATE_BUENOS_AIRES
+		owns_entire_state_region = STATE_LA_PAMPA
+		owns_entire_state_region = STATE_TUCUMAN
+		owns_entire_state_region = STATE_RIO_NEGRO
+	}
+
+	on_complete = {
+		trigger_event = { id = native_patagonian.2 }
+	}
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+}
+
+je_reconquest_amazon_BRZ = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		owns_entire_state_region = STATE_PARA
+	}
+
+	on_complete = {
+		trigger_event = { id = native_arawak.1 }
+	}
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+}

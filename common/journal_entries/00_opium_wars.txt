@@ -162,5 +162,5 @@ je_opium_wars = {
 	weight = 10000
 	should_be_pinned_by_default = yes
 
-	timeout = 1825
+	timeout = 3650
 }

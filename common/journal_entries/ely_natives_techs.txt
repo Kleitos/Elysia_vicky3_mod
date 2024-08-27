@@ -1,0 +1,35 @@
+﻿je_plunder_tech_australia = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		owns_entire_state_region = STATE_NEW_SOUTH_WALES
+		owns_entire_state_region = STATE_VICTORIA
+		owns_entire_state_region = STATE_QUEENSLAND
+		owns_entire_state_region = STATE_WESTERN_AUSTRALIA
+		owns_entire_state_region = STATE_NORTHERN_TERRITORY
+		owns_entire_state_region = STATE_SOUTH_AUSTRALIA
+	}
+
+	on_complete = {
+		trigger_event = { id = plunder_tech_australia.1 }
+	}
+}
+
+je_plunder_tech_mandika = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		owns_entire_state_region = STATE_GAMBIA
+		owns_entire_state_region = STATE_SIERRA_LEONE
+		owns_entire_state_region = STATE_LIBERIA
+		owns_entire_state_region = STATE_GUINEA
+	}
+
+	on_complete = {
+		trigger_event = { id = plunder_tech_mali.1 }
+	}
+}
