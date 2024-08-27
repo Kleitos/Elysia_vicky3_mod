@@ -513,23 +513,3 @@ MGB = {
 		has_technology_researched = pan-nationalism
 	}
 }
-
-RAJ = {
-	use_culture_states = yes
-	
-	is_major_formation = no
-	
-	required_states_fraction = 1
-	
-	ai_will_do = { always = yes }
-}
-
-MAR = {
-	use_culture_states = yes
-	
-	is_major_formation = yes
-	
-	required_states_fraction = 0.75
-	
-	ai_will_do = { always = yes }
-}
