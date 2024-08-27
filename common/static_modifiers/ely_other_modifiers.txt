@@ -152,12 +152,18 @@ incan_revolution_fervor = {
 	state_turmoil_effects_mult = -100
 	political_movement_radicalism_mult = -100
 	interest_group_approval_add = 20
+	unit_offense_mult = 0.5
+	unit_defense_mult = 0.5
+	unit_morale_loss_mult = -0.75
 }
 
 incan_revolution_sickness = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
 	state_conscription_rate_mult = -0.25
 	country_war_exhaustion_casualties_mult = 0.5
+	unit_offense_mult = -0.5
+	unit_defense_mult = -0.5
+	unit_morale_loss_mult = 0.75
 }
 
 no_meta_game = {
@@ -216,4 +222,65 @@ subserviance_of_shrines = {
 	icon = gfx/interface/icons/timed_modifier_icons/establish_colony_positive.dds
 	interest_group_ig_armed_forces_pol_str_mult = 0.05
 	interest_group_ig_devout_pol_str_mult = -0.5
+}
+
+australian_colonization = {
+	icon = gfx/interface/icons/timed_modifier_icons/establish_colony_positive.dds
+	state_birth_rate_mult = 0.1
+	state_colony_growth_speed_mult = 0.5
+	state_assimilation_mult = 0.5	
+	state_migration_pull_mult = 0.02
+}
+
+danish_war_exhausted = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
+	state_conscription_rate_mult = -1
+	state_radicals_from_sol_change_mult = 0.25
+    state_loyalists_from_sol_change_mult = -0.25
+	unit_offense_mult = -0.5
+	unit_defense_mult = -0.5
+	unit_morale_loss_mult = 0.75
+	country_war_exhaustion_casualties_mult = 1.0
+}
+
+danish_war_oportunist = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	state_conscription_rate_mult = 1
+	unit_offense_mult = 0.5
+	unit_defense_mult = 0.5
+	unit_morale_loss_mult = -0.75
+	country_war_exhaustion_casualties_mult = -1.0
+	country_weekly_innovation_mult = 0.2
+	country_tech_spread_mult = 0.2
+	country_tech_research_speed_mult = 0.1
+}
+
+danish_war_fatigued = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
+	state_conscription_rate_mult = -1
+	state_radicals_from_sol_change_mult = 0.25
+    state_loyalists_from_sol_change_mult = -0.25
+	country_war_exhaustion_casualties_mult = 1.0
+}
+
+danish_war_winner = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	state_radicals_from_sol_change_mult = -0.25
+    state_loyalists_from_sol_change_mult = 0.25
+	country_authority_mult = 0.1
+	country_infamy_generation_mult = 0.25
+	state_turmoil_effects_mult = -0.5
+	political_movement_radicalism_mult = -0.5
+	country_prestige_add = 100
+}
+
+danish_war_looser = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	state_radicals_from_sol_change_mult = 0.25
+    state_loyalists_from_sol_change_mult = -0.25
+	country_authority_mult = -0.1
+	country_infamy_generation_mult = -0.1
+	state_turmoil_effects_mult = 0.1
+	political_movement_radicalism_mult = 0.1
+	country_prestige_add = -100
 }
