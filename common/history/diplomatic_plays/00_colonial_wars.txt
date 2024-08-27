@@ -155,7 +155,7 @@ DIPLOMATIC_PLAYS = {
 
 			add_war_goal = {
 				holder = c:BRU
-				type = annex_country
+				type = conquer_state
 				target_state = s:STATE_NORTH_BORNEO.region_state:SUL
 			}
 		}			
