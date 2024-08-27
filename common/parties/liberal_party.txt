@@ -6,13 +6,6 @@ liberal_party = {
 	name = {
 		first_valid = {
 			triggered_desc = {
-				desc = party_civilista_party
-				trigger = {
-					exists = c:PEU
-					THIS = c:PEU
-				}
-			}
-			triggered_desc = {
 				desc = party_national_civic_union
 				trigger = {
 					exists = c:ARG
@@ -25,21 +18,6 @@ liberal_party = {
 					exists = c:GBR
 					THIS = c:GBR
 					NOT = { has_law = law_type:law_free_trade }
-				}
-			}
-			triggered_desc = {
-				desc = party_republicans
-				trigger = {
-					exists = c:USA
-					THIS = c:USA
-					has_global_variable = american_civil_war
-				}
-			}
-			triggered_desc = {
-				desc = party_liberal_democrats
-				trigger = {
-					exists = c:SWI
-					THIS = c:SWI
 				}
 			}
 			triggered_desc = {
@@ -110,13 +88,6 @@ liberal_party = {
 				}
 			}
 			triggered_desc = {
-				desc = party_liberal_league
-				trigger = {
-					exists = c:LUX
-					THIS = c:LUX
-				}
-			}
-			triggered_desc = {
 				desc = party_young_finnish_party
 				trigger = {
 					exists = c:FIN
@@ -142,27 +113,6 @@ liberal_party = {
 				trigger = {
 					exists = c:PER
 					THIS = c:PER
-				}
-			}
-			triggered_desc = {
-				desc = party_blue_party
-				trigger = {
-					exists = c:PRG
-					THIS = c:PRG
-				}
-			}
-			triggered_desc = {
-				desc = party_great_liberal_party
-				trigger = {
-					exists = c:VNZ
-					THIS = c:VNZ
-				}
-			}
-			triggered_desc = {
-				desc = party_colorado_party
-				trigger = {
-					exists = c:URU
-					THIS = c:URU
 				}
 			}
 			triggered_desc = {
@@ -229,25 +179,6 @@ liberal_party = {
 				desc = party_national_liberal_party
 				trigger = {
 					country_has_primary_culture = cu:romanian
-				}
-			}
-			triggered_desc = {
-				desc = party_whig_party
-				trigger = {
-					OR = {
-						AND = {
-							country_has_primary_culture = cu:dixie
-							NOT = {
-								exists = c:USA
-								THIS = c:USA
-							}
-						}
-						AND = {
-							exists = c:USA
-							THIS = c:USA
-							NOT = { has_global_variable = american_civil_war }
-						}
-					}
 				}
 			}
 			triggered_desc = {
@@ -649,18 +580,6 @@ liberal_party = {
 		}
 		# Special weights for ACW
 		if = {
-			limit = {
-				owner = { 
-					OR = {
-						has_journal_entry = je_acw_countdown 
-						AND = { # JE not active yet at initialization
-							exists = c:USA
-							this = c:USA
-							year < 1837						
-						}
-					}				
-				}
-			}
 			if = {
 				limit = { leader = { has_ideology = ideology:ideology_slaver } }
 				add = {

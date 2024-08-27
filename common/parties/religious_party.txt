@@ -21,13 +21,6 @@ religious_party = {
 				}
 			}
 			triggered_desc = {
-				desc = party_catholic_right
-				trigger = {
-					exists = c:SWI
-					THIS = c:SWI
-				}
-			}
-			triggered_desc = {
 				desc = party_anti_revolutionary_party
 				trigger = {
 					exists = c:NET
@@ -49,13 +42,6 @@ religious_party = {
 				}
 			}
 			triggered_desc = {
-				desc = party_christian_peoples_party
-				trigger = {
-					exists = c:BEL
-					THIS = c:BEL
-				}
-			}
-			triggered_desc = {
 				desc = party_clerical_party
 				trigger = {
 					exists = c:FRA
@@ -67,15 +53,6 @@ religious_party = {
 				trigger = {
 					exists = c:RUS
 					THIS = c:RUS
-				}
-			}
-			triggered_desc = {
-				desc = party_know_nothing_party
-				trigger = {
-					OR = {
-						country_has_primary_culture = cu:yankee
-						country_has_primary_culture = cu:dixie
-					}
 				}
 			}
 			triggered_desc = {

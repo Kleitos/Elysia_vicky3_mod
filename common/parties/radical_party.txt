@@ -20,31 +20,10 @@ radical_party = {
 				}
 			}
 			triggered_desc = {
-				desc = party_free_democratic_party
-				trigger = {
-					exists = c:SWI
-					THIS = c:SWI
-				}
-			}
-			triggered_desc = {
 				desc = party_national_progressive_party
 				trigger = {
 					exists = c:FIN
 					THIS = c:FIN
-				}
-			}
-			triggered_desc = {
-				desc = party_free_thinking_democratic_league
-				trigger = {
-					exists = c:NET
-					THIS = c:NET
-				}
-			}
-			triggered_desc = {
-				desc = party_radical_liberal_party
-				trigger = {
-					exists = c:LUX
-					THIS = c:LUX
 				}
 			}
 			triggered_desc = {
@@ -66,13 +45,6 @@ radical_party = {
 				trigger = {
 					exists = c:PER
 					THIS = c:PER
-				}
-			}
-			triggered_desc = {
-				desc = party_mexican_liberal_party
-				trigger = {
-					exists = c:MEX
-					THIS = c:MEX
 				}
 			}
 			triggered_desc = {
@@ -155,31 +127,7 @@ radical_party = {
 							exists = c:JAP
 							THIS = c:JAP
 						}
-						AND = {
-							exists = c:USA
-							THIS = c:USA
-						}
 					}
-				}
-			}
-			triggered_desc = {
-				desc = party_radical_liberal_party
-				trigger = {
-					exists = c:ECU
-					THIS = c:ECU
-				}
-			}
-			triggered_desc = {
-				desc = party_national_union
-				trigger = {
-					exists = c:PEU
-					THIS = c:PEU
-				}
-			}
-			triggered_desc = {
-				desc = party_radical_liberal_party
-				trigger = {
-					country_has_primary_culture = cu:dixie
 				}
 			}
 			triggered_desc = {

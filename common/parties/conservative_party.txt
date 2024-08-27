@@ -13,13 +13,6 @@ conservative_party = {
 				}
 			}
 			triggered_desc = {
-				desc = party_constitutional_party
-				trigger = {
-					exists = c:PEU
-					THIS = c:PEU
-				}
-			}
-			triggered_desc = {
 				desc = party_national_autonomist
 				trigger = {
 					exists = c:ARG
@@ -31,13 +24,6 @@ conservative_party = {
 				trigger = {
 					exists = c:GBR
 					THIS = c:GBR
-				}
-			}
-			triggered_desc = {
-				desc = party_us_democrats
-				trigger = {
-					exists = c:USA
-					THIS = c:USA
 				}
 			}
 			triggered_desc = {
@@ -66,27 +52,6 @@ conservative_party = {
 				trigger = {
 					exists = c:FIN
 					THIS = c:FIN
-				}
-			}
-			triggered_desc = {
-				desc = party_catholic_party
-				trigger = {
-					exists = c:BEL
-					THIS = c:BEL
-				}
-			}
-			triggered_desc = {
-				desc = party_party_of_the_right
-				trigger = {
-					exists = c:LUX
-					THIS = c:LUX
-				}
-			}
-			triggered_desc = {
-				desc = party_peoples_party
-				trigger = {
-					exists = c:MON
-					THIS = c:MON
 				}
 			}
 			triggered_desc = {
@@ -286,20 +251,6 @@ conservative_party = {
 				}
 			}
 			triggered_desc = {
-				desc = party_blanco_party
-				trigger = {
-					exists = c:URU
-					THIS = c:URU
-				}
-			}
-			triggered_desc = {
-				desc = party_colorado_party
-				trigger = {
-					exists = c:PRG
-					THIS = c:PRG
-				}
-			}
-			triggered_desc = {
 				desc = party_the_right
 				trigger = {
 					OR = {
@@ -315,21 +266,9 @@ conservative_party = {
 				}
 			}
 			triggered_desc = {
-				desc = party_democratic_party
-				trigger = {
-					country_has_primary_culture = cu:dixie
-				}
-			}
-			triggered_desc = {
 				desc = party_hojre
 				trigger = {
 					country_has_primary_culture = cu:danish
-				}
-			}
-			triggered_desc = {
-				desc = party_liberal_conservative_party
-				trigger = {
-					country_has_primary_culture = cu:anglo_canadian
 				}
 			}
 			triggered_desc = {
@@ -726,18 +665,6 @@ conservative_party = {
 	
 		# Special weights for ACW
 		if = {
-			limit = {
-				owner = { 
-					OR = {
-						has_journal_entry = je_acw_countdown 
-						AND = { # JE not active yet at initialization
-							exists = c:USA
-							this = c:USA
-							year < 1837						
-						}
-					}				
-				}
-			}
 			if = {
 				limit = { leader = { has_ideology = ideology:ideology_slaver } }
 				add = {
