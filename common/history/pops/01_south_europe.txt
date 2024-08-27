@@ -378,11 +378,11 @@
 	s:STATE_CAPE_VERDE = {
 		region_state:SPA = {
 			create_pop = {
-				culture = portuguese
+				culture = afro_caribeno
 				size = 103532
 			}
 			create_pop = {
-				culture = afro_brazilian
+				culture = portuguese
 				size = 24666
 			}
 		}

@@ -24,7 +24,7 @@ POPS = {
 				size = 154400
 			}
 			create_pop = {
-				culture = anglo_colombian
+				culture = dutch_colonial
 				size = 3588
 			}
 			create_pop = {
@@ -81,7 +81,7 @@ POPS = {
 	s:STATE_BOLIVAR = {
 		region_state:WIN = {
 			create_pop = {
-				culture = anglo_colombian
+				culture = dutch_colonial
 				size = 144392
 			}
 			create_pop = {
@@ -686,7 +686,7 @@ POPS = {
 				size = 210
 			}
 		}
-		region_state:PRA = {
+		region_state:BRZ = {
 			create_pop = {
 				culture = amazonian
 				size = 36800
@@ -764,7 +764,7 @@ POPS = {
 		}
 	}
 	s:STATE_RIO_GRANDE_DO_SUL = {
-		region_state:PNI = {
+		region_state:BRZ = {
 			create_pop = {
 				culture = sulista
 				size = 116681
@@ -1061,7 +1061,7 @@ POPS = {
 				size = 642
 			}
 		}
-		region_state:PRA = {
+		region_state:BRZ = {
 			create_pop = {
 				culture = amazonic
 				size = 111297
