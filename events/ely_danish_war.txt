@@ -1,0 +1,1482 @@
+﻿namespace = danish_english_victory
+namespace = spanish_swedish_victory
+namespace = spanish_swedish_defeat
+namespace = danish_english_defeat
+namespace = danish_war_inconclusive
+
+danish_english_victory.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = danish_english_victory.1.t
+	desc = danish_english_victory.1.d
+	flavor = danish_english_victory.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_world_fair.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = danish_english_victory.1.a	
+		add_modifier = {
+			name = danish_war_winner
+			months = very_long_modifier_time
+		}	
+		s:STATE_KENYA = {
+			add_claim = c:GBR
+			remove_claim = c:SPA
+		}
+		s:STATE_RIFT_VALLEY = {
+			add_claim = c:GBR
+		}
+		s:STATE_TANGANYIKA = {
+			add_claim = c:GBR
+		}
+		s:STATE_LINDI = {
+			add_claim = c:GBR
+		}
+		s:STATE_NORTH_BORNEO = {
+			add_claim = c:GBR
+		}
+		s:STATE_MINDANAO = {
+			add_claim = c:GBR
+		}
+		s:STATE_LUZON = {
+			add_claim = c:GBR
+		}
+		s:STATE_MALAYA = {
+			add_claim = c:GBR
+		}
+		s:STATE_GHANA = {
+			remove_claim = c:DEN
+		}
+		if = {
+			limit = { exists = s:STATE_KENYA.region_state:SPA }
+			s:STATE_KENYA.region_state:SPA = { set_state_owner = c:GBR }
+		}
+		if = {
+			limit = { exists = s:STATE_GHANA.region_state:DEN }
+			s:STATE_GHANA.region_state:DEN = { set_state_owner = c:GBR }
+		}
+	}
+}
+
+danish_english_victory.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = danish_english_victory.2.t
+	desc = danish_english_victory.2.d
+	flavor = danish_english_victory.2.f
+
+	event_image = {	
+		video = "gfx/e	vent_pictures/unspecific_world_fair.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		c:SWE = {
+			remove_diplomatic_pact = {
+				country = c:NOR
+				type = personal_union
+			}	
+		}
+		c:DEN = {
+			create_diplomatic_pact = {
+				country = c:WIN
+				type = dominion
+			}		
+		}
+	}
+
+    option = {
+		name = danish_english_victory.2.a	
+		add_modifier = {
+			name = danish_war_winner
+			months = very_long_modifier_time
+		}	
+		s:STATE_MAURITANIA = {
+			add_claim = c:DEN
+			remove_claim = c:SPA
+		}
+		s:STATE_INNER_MAURITANIA = {
+			add_claim = c:DEN
+			remove_claim = c:SPA
+		}
+		s:STATE_WEST_SAHARA = {
+			add_claim = c:DEN
+			remove_claim = c:SPA
+		}
+		s:STATE_EAST_BORNEO = {
+			add_claim = c:DEN
+		}
+		s:STATE_WEST_BORNEO = {
+			add_claim = c:DEN
+		}
+		s:STATE_SCANIA = {
+			add_homeland = cu:danish
+		}
+		s:STATE_SOUTH_CAMEROON = {
+			add_claim = c:DEN
+			remove_claim = c:SPA
+		}
+		if = {
+			limit = { exists = s:STATE_MAURITANIA.region_state:SPA }
+			s:STATE_MAURITANIA.region_state:SPA = { set_state_owner = c:DEN }
+		}
+		if = {
+			limit = { exists = s:STATE_WEST_SAHARA.region_state:SPA }
+			s:STATE_WEST_SAHARA.region_state:SPA = { set_state_owner = c:DEN }
+		}
+		if = {
+			limit = { exists = s:STATE_SOUTH_CAMEROON.region_state:SPA }
+			s:STATE_SOUTH_CAMEROON.region_state:SPA = { set_state_owner = c:DEN }
+		}
+		c:DEN = {
+			create_diplomatic_pact = {
+				country = c:SWE
+				type = personal_union
+			}	
+			create_diplomatic_pact = {
+				country = c:NOR
+				type = personal_union
+			}	
+		}
+	}
+}
+
+danish_english_victory.3 = {
+	type = country_event
+	placement = ROOT
+
+	title = danish_english_victory.3.t
+	desc = danish_english_victory.3.d
+	flavor = danish_english_victory.3.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_world_fair.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = danish_english_victory.3.a	
+		add_modifier = {
+			name = danish_war_winner
+			months = very_long_modifier_time
+		}
+		s:STATE_TENASSERIM = {
+			add_claim = c:BIC
+		}
+		s:STATE_KACHIN = {
+			add_claim = c:BIC
+		}
+		s:STATE_SHAN_STATES = {
+			add_claim = c:BIC
+		}
+		s:STATE_BURMA = {
+			add_claim = c:BIC
+		}
+		s:STATE_PEGU = {
+			add_claim = c:BIC
+		}	
+		s:STATE_BALUCHISTAN = {
+			add_claim = c:BIC
+		}	
+		s:STATE_PUNJAB = {
+			add_claim = c:BIC
+		}	
+		s:STATE_KASHMIR = {
+			add_claim = c:BIC
+		}
+		s:STATE_HIMALAYAS = {
+			add_claim = c:BIC
+		}	
+	}
+}
+
+danish_english_victory.4 = {
+	type = country_event
+	placement = ROOT
+
+	title = danish_english_victory.4.t
+	desc = danish_english_victory.4.d
+	flavor = danish_english_victory.4.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_world_fair.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = danish_english_victory.4.a
+		add_modifier = {
+			name = danish_war_winner
+			months = very_long_modifier_time
+		}	
+		add_modifier = {
+			name = australian_colonization
+			months = very_long_modifier_time
+		}	
+		s:STATE_SOUTH_AUSTRALIA = {
+			remove_homeland = cu:australiska
+			add_homeland = cu:australian
+			add_claim = c:NSW
+		}	
+		s:STATE_WESTERN_AUSTRALIA = {
+			remove_homeland = cu:australiska
+			add_homeland = cu:australian
+			add_claim = c:NSW
+		}	
+		s:STATE_NORTHERN_TERRITORY = {
+			remove_homeland = cu:australiska
+			add_homeland = cu:australian
+			add_claim = c:NSW
+		}	
+		s:STATE_CENTRAL_AUSTRALIA = {
+			add_homeland = cu:australian
+			add_claim = c:WAS
+			remove_claim = c:KAU
+		}	
+		s:STATE_TASMANIA = {
+			add_homeland = cu:australian
+			add_claim = c:NSW
+		}	
+	}
+}
+danish_english_victory.5 = {
+	type = country_event
+	placement = ROOT
+
+	title = danish_english_victory.5.t
+	desc = danish_english_victory.5.d
+	flavor = danish_english_victory.5.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_world_fair.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = danish_english_victory.5.a	
+		add_modifier = {
+			name = danish_war_winner
+			months = very_long_modifier_time
+		}
+			
+		s:STATE_BOHEMIA = {
+			add_homeland = cu:south_german
+		}
+			
+		s:STATE_MORAVIA = {
+			add_homeland = cu:south_german
+		}
+			
+		s:STATE_POSEN = {
+			add_homeland = cu:north_german
+		}
+			
+		s:STATE_SILESIA = {
+			add_homeland = cu:north_german
+		}	
+	}
+}
+
+danish_english_victory.6 = {
+	type = country_event
+	placement = ROOT
+
+	title = danish_english_victory.6.t
+	desc = danish_english_victory.6.d
+	flavor = danish_english_victory.6.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_world_fair.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = danish_english_victory.6.a	
+		add_modifier = {
+			name = danish_war_winner
+			months = very_long_modifier_time
+		}
+		s:STATE_WINDWARD_COAST = {
+			add_claim = c:LIB
+			remove_claim = c:GBR
+		}	
+		s:STATE_GAMBIA = {
+			add_claim = c:LIB
+		}	
+		if = {
+			limit = { exists = s:STATE_WINDWARD_COAST.region_state:GBR }
+			s:STATE_WINDWARD_COAST.region_state:GBR = { set_state_owner = c:LIB }
+		}
+		if = {
+			limit = { exists = s:STATE_GAMBIA.region_state:GBR }
+			s:STATE_GAMBIA.region_state:GBR = { set_state_owner = c:LIB }
+		}
+	}
+}
+
+danish_english_victory.7 = {
+	type = country_event
+	placement = ROOT
+
+	title = danish_english_victory.7.t
+	desc = danish_english_victory.7.d
+	flavor = danish_english_victory.7.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_world_fair.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = danish_english_victory.7.a	
+		add_modifier = {
+			name = danish_war_winner
+			months = very_long_modifier_time
+		}
+	}
+}
+
+danish_english_victory.8 = {
+	type = country_event
+	placement = ROOT
+
+	title = danish_english_victory.8.t
+	desc = danish_english_victory.8.d
+	flavor = danish_english_victory.8.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_world_fair.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = danish_english_victory.8.a	
+		add_modifier = {
+			name = danish_war_winner
+			months = very_long_modifier_time
+		}
+		add_modifier = {
+			name = australian_colonization
+			months = very_long_modifier_time
+		}	
+		s:STATE_PARA = {
+			add_claim = c:WIN
+			remove_claim = c:BRZ
+			remove_homeland = cu:brazilian
+			remove_homeland = cu:amazonic
+			remove_homeland = cu:afro_brazilian
+			add_homeland = cu:dutch_colonial
+			add_homeland = cu:afro_caribbean
+		}	
+		s:STATE_AMAZONAS = {
+			add_claim = c:WIN
+			remove_claim = c:BRZ
+			add_homeland = cu:dutch_colonial
+			add_homeland = cu:afro_caribbean
+		}	
+	}
+}
+
+danish_english_victory.9 = {
+	type = country_event
+	placement = ROOT
+
+	title = danish_english_victory.9.t
+	desc = danish_english_victory.9.d
+	flavor = danish_english_victory.9.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_world_fair.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = danish_english_victory.9.a	
+		add_modifier = {
+			name = danish_war_winner
+			months = very_long_modifier_time
+		}
+		add_modifier = {
+			name = australian_colonization
+			months = very_long_modifier_time
+		}
+		s:STATE_MATO_GROSSO = {
+			add_claim = c:ARG
+			remove_claim = c:BRZ
+			remove_homeland = cu:brazilian
+			remove_homeland = cu:paulista
+			remove_homeland = cu:afro_brazilian
+			add_homeland = cu:platinean
+			add_homeland = cu:afro_american
+		}	
+		s:STATE_RIO_GRANDE_DO_SUL = {
+			add_claim = c:ARG
+			remove_claim = c:BRZ
+			remove_homeland = cu:brazilian
+			remove_homeland = cu:paulista
+			remove_homeland = cu:afro_brazilian
+			add_homeland = cu:platinean
+			add_homeland = cu:afro_american
+		}
+		s:STATE_URUGUAY = {
+			remove_claim = c:BRZ
+			remove_homeland = cu:brazilian
+			remove_homeland = cu:sulista
+			remove_homeland = cu:afro_brazilian
+		}
+		s:STATE_CORRIENTES = {
+			remove_claim = c:BRZ
+			remove_homeland = cu:brazilian
+			remove_homeland = cu:sulista
+			remove_homeland = cu:afro_brazilian
+			add_homeland = cu:platinean
+			add_homeland = cu:afro_american
+		}		
+	}
+}
+
+spanish_swedish_victory.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = spanish_swedish_victory.1.t
+	desc = spanish_swedish_victory.1.d
+	flavor = spanish_swedish_victory.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_world_fair.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = spanish_swedish_victory.1.a	
+		add_modifier = {
+			name = danish_war_winner
+			months = very_long_modifier_time
+		}
+		s:STATE_MINDANAO = {
+			add_claim = c:SPA
+		}
+		s:STATE_LUZON = {
+			add_claim = c:SPA
+		}
+		s:STATE_SENEGAL = {
+			add_claim = c:SPA
+			remove_claim = c:DEN
+		}
+		s:STATE_RIFT_VALLEY = {
+			add_claim = c:SPA
+		}
+		s:STATE_TANGANYIKA = {
+			add_claim = c:SPA
+		}
+		s:STATE_LINDI = {
+			add_claim = c:SPA
+		}
+		s:STATE_OMAN = {
+			add_claim = c:SPA
+		}
+		s:STATE_YEMEN = {
+			add_claim = c:SPA
+		}
+		s:STATE_MALAYA = {
+			add_claim = c:SPA
+		}
+		s:STATE_LOURENCO_MARQUES = {
+			add_claim = c:SPA
+		}
+		s:STATE_MOCAMBIQUE = {
+			add_claim = c:SPA
+		}
+		s:STATE_ZAMBEZIA = {
+			add_claim = c:SPA
+		}
+		if = {
+			limit = { exists = s:STATE_SENEGAL.region_state:DEN }
+			s:STATE_SENEGAL.region_state:DEN = { set_state_owner = c:SPA }
+		}
+	}
+}
+
+spanish_swedish_victory.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = spanish_swedish_victory.2.t
+	desc = spanish_swedish_victory.2.d
+	flavor = spanish_swedish_victory.2.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_world_fair.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		c:BAV = {
+			change_relations = {
+				country = c:FRA
+				value = 100
+			}
+			set_secret_goal = {
+				country = c:FRA
+				secret_goal = befriend
+			}		
+		}
+		c:FRA = {
+			change_relations = {
+				country = root
+				value = 100
+			}
+			set_secret_goal = {
+				country = root
+				secret_goal = befriend
+			}		
+		}	
+	}
+
+    option = {
+		name = spanish_swedish_victory.2.a	
+		add_modifier = {
+			name = danish_war_winner
+			months = very_long_modifier_time
+		}
+		c:BAV = {
+			annex = c:WLD
+			annex = c:HES
+			annex = c:NAS
+			annex = c:FRM			
+		}	
+		if = {
+			limit = { exists = s:STATE_FRIESLAND.region_state:SWE }
+			s:STATE_FRIESLAND.region_state:SWE = { set_state_owner = c:BAV }
+		}
+	}
+}
+
+spanish_swedish_victory.3 = {
+	type = country_event
+	placement = ROOT
+
+	title = spanish_swedish_victory.3.t
+	desc = spanish_swedish_victory.3.d
+	flavor = spanish_swedish_victory.3.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_world_fair.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		c:DEN = {
+			remove_diplomatic_pact = {
+				country = c:DEI
+				type = dominion
+			}	
+		}
+		c:SWE = {
+			create_diplomatic_pact = {
+				country = c:DEI
+				type = puppet
+			}	
+		}
+		c:SWE = {
+			create_diplomatic_pact = {
+				country = c:WIN
+				type = puppet
+			}	
+		}
+	}
+
+    option = {
+		name = spanish_swedish_victory.3.a	
+		add_modifier = {
+			name = danish_war_winner
+			months = very_long_modifier_time
+		}
+		s:STATE_EAST_BORNEO = {
+			add_claim = c:SWE
+		}
+		s:STATE_WEST_BORNEO = {
+			add_claim = c:SWE
+		}
+		s:STATE_GHANA = {
+			remove_claim = c:DEN
+			add_claim = c:SWE
+		}
+		s:STATE_IVORY_COAST = {
+			remove_claim = c:DEN
+			add_claim = c:SWE
+		}
+		s:STATE_TOGO = {
+			remove_claim = c:DEN
+			add_claim = c:SWE
+		}
+		if = {
+			limit = { exists = s:STATE_GHANA.region_state:DEN }
+			s:STATE_GHANA.region_state:DEN = { set_state_owner = c:SWE }
+		}
+		if = {
+			limit = { exists = s:STATE_GHANA.region_state:GBR }
+			s:STATE_GHANA.region_state:GBR = { set_state_owner = c:SWE }
+		}
+		if = {
+			limit = { exists = s:STATE_IVORY_COAST.region_state:DEN }
+			s:STATE_IVORY_COAST.region_state:DEN = { set_state_owner = c:SWE }
+		}
+		if = {
+			limit = { exists = s:STATE_TOGO.region_state:DEN }
+			s:STATE_TOGO.region_state:DEN = { set_state_owner = c:SWE }
+		}
+		c:SWE = {
+			create_diplomatic_pact = {
+				country = c:DEN
+				type = personal_union
+			}	
+		}
+	}
+}
+
+spanish_swedish_victory.4 = {
+	type = country_event
+	placement = ROOT
+
+	title = spanish_swedish_victory.4.t
+	desc = spanish_swedish_victory.4.d
+	flavor = spanish_swedish_victory.4.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_world_fair.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = spanish_swedish_victory.4.a	
+		add_modifier = {
+			name = danish_war_winner
+			months = very_long_modifier_time
+		}
+		s:STATE_TENASSERIM = {
+			add_claim = c:SEI
+		}
+		s:STATE_KACHIN = {
+			add_claim = c:SEI
+		}
+		s:STATE_SHAN_STATES = {
+			add_claim = c:SEI
+		}
+		s:STATE_BURMA = {
+			add_claim = c:SEI
+		}
+		s:STATE_PEGU = {
+			add_claim = c:SEI
+		}	
+		s:STATE_BALUCHISTAN = {
+			add_claim = c:SEI
+		}	
+		s:STATE_PUNJAB = {
+			add_claim = c:SEI
+		}	
+		s:STATE_KASHMIR = {
+			add_claim = c:SEI
+		}
+		s:STATE_HIMALAYAS = {
+			add_claim = c:SEI
+		}	
+	}
+}
+
+spanish_swedish_victory.5 = {
+	type = country_event
+	placement = ROOT
+
+	title = spanish_swedish_victory.5.t
+	desc = spanish_swedish_victory.5.d
+	flavor = spanish_swedish_victory.5.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_world_fair.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = spanish_swedish_victory.5.a	
+		add_modifier = {
+			name = danish_war_winner
+			months = very_long_modifier_time
+		}
+		add_modifier = {
+			name = australian_colonization
+			months = very_long_modifier_time
+		}	
+		s:STATE_NEW_SOUTH_WALES = {
+			remove_homeland = cu:australian
+			add_homeland = cu:australiska
+			add_claim = c:SAS
+		}	
+		s:STATE_VICTORIA = {
+			remove_homeland = cu:australian
+			add_homeland = cu:australiska
+			add_claim = c:SAS
+		}	
+		s:STATE_TASMANIA = {
+			add_homeland = cu:australiska
+			add_claim = c:SAS
+		}	
+	}
+}
+
+spanish_swedish_victory.6 = {
+	type = country_event
+	placement = ROOT
+
+	title = spanish_swedish_victory.6.t
+	desc = spanish_swedish_victory.6.d
+	flavor = spanish_swedish_victory.6.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_world_fair.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = spanish_swedish_victory.6.a	
+		add_modifier = {
+			name = danish_war_winner
+			months = very_long_modifier_time
+		}
+		add_modifier = {
+			name = australian_colonization
+			months = very_long_modifier_time
+		}	
+		s:STATE_QUEENSLAND = {
+			remove_homeland = cu:australian
+			add_homeland = cu:australiska
+			add_claim = c:WAS
+		}
+		s:STATE_CENTRAL_AUSTRALIA = {
+			add_homeland = cu:australiska
+			add_claim = c:WAS
+			remove_claim = c:KAU
+		}	
+	}
+}
+
+spanish_swedish_victory.7 = {
+	type = country_event
+	placement = ROOT
+
+	title = spanish_swedish_victory.7.t
+	desc = spanish_swedish_victory.7.d
+	flavor = spanish_swedish_victory.7.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_world_fair.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = spanish_swedish_victory.7.a	
+		add_modifier = {
+			name = danish_war_winner
+			months = very_long_modifier_time
+		}
+		s:STATE_WEST_PRUSSIA = {
+			add_claim = c:BOH
+		}	
+		s:STATE_EAST_PRUSSIA = {
+			add_claim = c:BOH
+		}	
+		s:STATE_VOLHYNIA = {
+			add_claim = c:BOH
+		}	
+		s:STATE_VILNIUS = {
+			add_claim = c:BOH
+		}	
+	}
+}
+
+spanish_swedish_victory.8 = {
+	type = country_event
+	placement = ROOT
+
+	title = spanish_swedish_victory.8.t
+	desc = spanish_swedish_victory.8.d
+	flavor = spanish_swedish_victory.8.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_world_fair.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = spanish_swedish_victory.8.a	
+		add_modifier = {
+			name = danish_war_winner
+			months = very_long_modifier_time
+		}
+		s:STATE_WINDWARD_COAST = {
+			add_claim = c:SIL
+			remove_claim = c:GBR
+		}	
+		if = {
+			limit = { exists = s:STATE_WINDWARD_COAST.region_state:GBR }
+			s:STATE_WINDWARD_COAST.region_state:GBR = { set_state_owner = c:LIB }
+		}
+		if = {
+			limit = { exists = s:STATE_GAMBIA.region_state:GBR }
+			s:STATE_GAMBIA.region_state:GBR = { set_state_owner = c:LIB }
+		}
+	}
+}
+
+spanish_swedish_victory.9 = {
+	type = country_event
+	placement = ROOT
+
+	title = spanish_swedish_victory.9.t
+	desc = spanish_swedish_victory.9.d
+	flavor = spanish_swedish_victory.9.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_world_fair.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = spanish_swedish_victory.9.a	
+		add_modifier = {
+			name = danish_war_winner
+			months = very_long_modifier_time
+		}
+		add_modifier = {
+			name = australian_colonization
+			months = very_long_modifier_time
+		}	
+		s:STATE_AMAZONAS = {
+			add_homeland = cu:brazilian
+			add_homeland = cu:amazonic
+			add_homeland = cu:afro_brazilian
+		}	
+	}
+}
+
+spanish_swedish_defeat.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = spanish_swedish_defeat.1.t
+	desc = spanish_swedish_defeat.1.d
+	flavor = spanish_swedish_defeat.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_vandalized_storefront.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = spanish_swedish_defeat.1.a		
+		add_modifier = {
+			name = danish_war_looser
+			months = very_long_modifier_time
+		}
+	}
+}
+
+spanish_swedish_defeat.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = spanish_swedish_defeat.2.t
+	desc = spanish_swedish_defeat.2.d
+	flavor = spanish_swedish_defeat.2.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_vandalized_storefront.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = spanish_swedish_defeat.2.a		
+		add_modifier = {
+			name = danish_war_looser
+			months = very_long_modifier_time
+		}
+	}
+}
+
+spanish_swedish_defeat.3 = {
+	type = country_event
+	placement = ROOT
+
+	title = spanish_swedish_defeat.3.t
+	desc = spanish_swedish_defeat.3.d
+	flavor = spanish_swedish_defeat.3.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_vandalized_storefront.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = spanish_swedish_defeat.3.a		
+		add_modifier = {
+			name = danish_war_looser
+			months = very_long_modifier_time
+		}
+	}
+}
+
+spanish_swedish_defeat.7 = {
+	type = country_event
+	placement = ROOT
+
+	title = spanish_swedish_defeat.7.t
+	desc = spanish_swedish_defeat.7.d
+	flavor = spanish_swedish_defeat.7.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_vandalized_storefront.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = spanish_swedish_defeat.7.a		
+		add_modifier = {
+			name = danish_war_looser
+			months = very_long_modifier_time
+		}
+	}
+}
+
+spanish_swedish_defeat.9 = {
+	type = country_event
+	placement = ROOT
+
+	title = spanish_swedish_defeat.9.t
+	desc = spanish_swedish_defeat.9.d
+	flavor = spanish_swedish_defeat.9.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_vandalized_storefront.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = spanish_swedish_defeat.9.a		
+		add_modifier = {
+			name = danish_war_looser
+			months = very_long_modifier_time
+		}
+	}
+}
+
+
+danish_english_defeat.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = danish_english_defeat.1.t
+	desc = danish_english_defeat.1.d
+	flavor = danish_english_defeat.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_vandalized_storefront.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = danish_english_defeat.1.a		
+		add_modifier = {
+			name = danish_war_looser
+			months = very_long_modifier_time
+		}
+	}
+}
+
+danish_english_defeat.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = danish_english_defeat.2.t
+	desc = danish_english_defeat.2.d
+	flavor = danish_english_defeat.2.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_vandalized_storefront.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = danish_english_defeat.2.a		
+		add_modifier = {
+			name = danish_war_looser
+			months = very_long_modifier_time
+		}
+	}
+}
+
+danish_english_defeat.5 = {
+	type = country_event
+	placement = ROOT
+
+	title = danish_english_defeat.5.t
+	desc = danish_english_defeat.5.d
+	flavor = danish_english_defeat.5.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_vandalized_storefront.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = danish_english_defeat.5.a		
+		add_modifier = {
+			name = danish_war_looser
+			months = very_long_modifier_time
+		}
+	}
+}
+
+danish_english_defeat.8 = {
+	type = country_event
+	placement = ROOT
+
+	title = danish_english_defeat.8.t
+	desc = danish_english_defeat.8.d
+	flavor = danish_english_defeat.8.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_vandalized_storefront.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = danish_english_defeat.8.a		
+		add_modifier = {
+			name = danish_war_looser
+			months = very_long_modifier_time
+		}
+	}
+}
+
+danish_english_defeat.9 = {
+	type = country_event
+	placement = ROOT
+
+	title = danish_english_defeat.9.t
+	desc = danish_english_defeat.9.d
+	flavor = danish_english_defeat.9.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_vandalized_storefront.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = danish_english_defeat.9.a		
+		add_modifier = {
+			name = danish_war_looser
+			months = very_long_modifier_time
+		}
+	}
+}
+
+danish_war_inconclusive.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = danish_war_inconclusive.1.t
+	desc = danish_war_inconclusive.1.d
+	flavor = danish_war_inconclusive.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = danish_war_inconclusive.1.a		
+		add_modifier = {
+			name = danish_war_fatigued
+			months = very_long_modifier_time
+		}
+	}
+}
+
+danish_war_inconclusive.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = danish_war_inconclusive.2.t
+	desc = danish_war_inconclusive.2.d
+	flavor = danish_war_inconclusive.2.f
+
+	event_image = {
+		video = "gfx/event_pictures/southamerica_war_civilians.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = danish_war_inconclusive.2.a
+		add_modifier = {
+			name = danish_war_exhausted
+			months = very_long_modifier_time
+		}	
+	}
+}

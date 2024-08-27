@@ -1,0 +1,1149 @@
+namespace = native_australia
+namespace = native_guarani
+namespace = native_patagonian
+namespace = native_arawak
+namespace = afro_brazilian_slave_revolt
+namespace = native_mandika
+
+native_australia.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = native_australia.1.t
+	desc = native_australia.1.d
+	flavor = native_australia.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/asia_sepoy_mutiny.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = native_australia.1.a
+		default_option = yes
+		c:KAU = {
+			add_journal_entry = { type = je_conquer_SAS }
+			add_journal_entry = { type = je_plunder_tech_australia }
+			add_modifier = {
+				name = danish_war_oportunist
+				months = very_long_modifier_time
+			}	
+		}
+		s:STATE_NEW_SOUTH_WALES = {
+			add_claim = c:KAU
+		}	
+		s:STATE_QUEENSLAND = {
+			add_claim = c:KAU
+		}	
+		s:STATE_VICTORIA = {
+			add_claim = c:KAU
+		}	
+		s:STATE_TASMANIA = {
+			add_claim = c:KAU
+		}	
+		s:STATE_SOUTH_AUSTRALIA = {
+			add_claim = c:KAU
+		}	
+		s:STATE_WESTERN_AUSTRALIA = {
+			add_claim = c:KAU
+		}	
+		s:STATE_NORTHERN_TERRITORY = {
+			add_claim = c:KAU
+		}	
+		s:STATE_CENTRAL_AUSTRALIA = {
+			remove_claim = c:KAU
+		}	
+	}	
+}
+
+native_australia.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = native_australia.2.t
+	desc = native_australia.2.d
+	flavor = native_australia.2.f
+
+	event_image = {
+		video = "gfx/event_pictures/asia_sepoy_mutiny.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		c:SWE = {
+			remove_diplomatic_pact = {
+				country = c:SAS
+				type = dominion
+			}	
+		}
+		c:SWE = {
+			remove_diplomatic_pact = {
+				country = c:SAS
+				type = puppet
+			}	
+		}
+	}
+
+    option = {
+		name = native_australia.2.a
+		default_option = yes
+		c:KAU = {
+			add_journal_entry = { type = je_conquer_WAS }
+		}
+		create_diplomatic_play = {
+			target_country = c:SAS
+			holder = c:KAU
+			war = yes
+			type = dp_annex_war
+			target_state = s:STATE_SOUTH_AUSTRALIA.region_state:SAS
+		}
+	}	
+}
+
+native_australia.3 = {
+	type = country_event
+	placement = ROOT
+
+	title = native_australia.3.t
+	desc = native_australia.3.d
+	flavor = native_australia.3.f
+
+	event_image = {
+		video = "gfx/event_pictures/asia_sepoy_mutiny.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		c:KAU = {
+			annex = c:WTI
+			annex = c:NNG
+			annex = c:MRN
+		}
+		c:SWE = {
+			remove_diplomatic_pact = {
+				country = c:WAS
+				type = dominion
+			}	
+		}
+		c:SWE = {
+			remove_diplomatic_pact = {
+				country = c:WAS
+				type = puppet
+			}	
+		}
+	}
+
+    option = {
+		name = native_australia.3.a
+		default_option = yes		
+		c:KAU = {
+			add_journal_entry = { type = je_conquer_NSW }
+		}
+		create_diplomatic_play = {
+			target_country = c:WAS
+			holder = c:KAU
+			war = yes
+			type = dp_annex_war
+			target_state = s:STATE_WESTERN_AUSTRALIA.region_state:WAS
+		}
+	}	
+}
+
+native_australia.4 = {
+	type = country_event
+	placement = ROOT
+
+	title = native_australia.4.t
+	desc = native_australia.4.d
+	flavor = native_australia.4.f
+
+	event_image = {
+		video = "gfx/event_pictures/asia_sepoy_mutiny.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		c:GBR = {
+			remove_diplomatic_pact = {
+				country = c:NSW
+				type = puppet
+			}	
+		}
+		c:GBR = {
+			remove_diplomatic_pact = {
+				country = c:AST
+				type = puppet
+			}	
+		}
+		c:GBR = {
+			remove_diplomatic_pact = {
+				country = c:NSW
+				type = dominion
+			}	
+		}
+		c:GBR = {
+			remove_diplomatic_pact = {
+				country = c:AST
+				type = dominion
+			}	
+		}
+	}
+
+    option = {
+		name = native_australia.4.a
+		default_option = yes
+		if = {
+			limit = {
+				exists = c:NSW
+			}			
+			create_diplomatic_play = {
+				target_country = c:NSW
+				holder = c:KAU
+				war = yes
+				type = dp_annex_war
+				target_state = s:STATE_NEW_SOUTH_WALES.region_state:NSW
+			}
+		}
+		else = {
+			limit = {
+				exists = c:AST
+			}			
+			create_diplomatic_play = {
+				target_country = c:AST
+				holder = c:KAU
+				war = yes
+				type = dp_annex_war
+				target_state = s:STATE_NEW_SOUTH_WALES.region_state:AST
+			}
+		}
+	}	
+}
+
+native_australia.4 = {
+	type = country_event
+	placement = ROOT
+
+	title = native_australia.4.t
+	desc = native_australia.4.d
+	flavor = native_australia.4.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = native_australia.4.a
+		default_option = yes	
+		s:STATE_QUEENSLAND = {
+			remove_homeland = cu:australian
+		}
+		s:STATE_NEW_SOUTH_WALES = {
+			remove_homeland = cu:australian
+		}
+		s:STATE_VICTORIA = {
+			remove_homeland = cu:australian
+		}
+		s:STATE_WESTERN_AUSTRALIA = {
+			remove_homeland = cu:australiska
+		}
+		s:STATE_NORTHERN_TERRITORY = {
+			remove_homeland = cu:australiska
+		}
+		s:STATE_SOUTH_AUSTRALIA = {
+			remove_homeland = cu:australiska
+		}
+	}	
+}
+
+native_guarani.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = native_guarani.1.t
+	desc = native_guarani.1.d
+	flavor = native_guarani.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/asia_sepoy_mutiny.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		if = {
+			limit = { exists = s:STATE_MATO_GROSSO.region_state:ARG }
+			s:STATE_MATO_GROSSO.region_state:ARG = { set_state_owner = c:GRI }
+		}
+		if = {
+			limit = { exists = s:STATE_ALTO_PARAGUAY.region_state:ARG }
+			s:STATE_ALTO_PARAGUAY.region_state:ARG = { set_state_owner = c:GRI }
+		}
+		if = {
+			limit = { exists = s:STATE_BAJO_PARAGUAY.region_state:ARG }
+			s:STATE_BAJO_PARAGUAY.region_state:ARG = { set_state_owner = c:GRI }
+		}
+		if = {
+			limit = { exists = s:STATE_CORRIENTES.region_state:ARG }
+			s:STATE_CORRIENTES.region_state:ARG = { set_state_owner = c:GRI }
+		}
+		if = {
+			limit = { exists = s:STATE_CHACO.region_state:ARG }
+			s:STATE_CHACO.region_state:ARG = { set_state_owner = c:GRI }
+		}
+		if = {
+			limit = { exists = s:STATE_JUJUY.region_state:ARG }
+			s:STATE_JUJUY.region_state:ARG = { set_state_owner = c:GRI }
+		}
+	}
+
+    option = {
+		name = native_guarani.1.a
+		default_option = yes
+		c:GRI = {
+			annex = c:GNI
+			add_journal_entry = { type = je_conquer_ARG }
+			add_modifier = {
+				name = danish_war_oportunist
+				months = very_long_modifier_time
+			}	
+		}
+		c:ARG = {
+			create_diplomatic_play = {
+				target_country = c:GRI
+				holder = c:ARG
+				war = yes
+				type = dp_return_state
+				target_state = s:STATE_SANTA_FE.region_state:GRI
+				add_war_goal = {
+					holder = c:ARG
+					type = return_state
+					target_state = s:STATE_MATO_GROSSO.region_state:GRI
+					target_country = c:GRI
+				}
+				add_war_goal = {
+					holder = c:ARG
+					type = return_state
+					target_state = s:STATE_ALTO_PARAGUAY.region_state:GRI
+					target_country = c:GRI
+				}
+				add_war_goal = {
+					holder = c:ARG
+					type = return_state
+					target_state = s:STATE_BAJO_PARAGUAY.region_state:GRI
+					target_country = c:GRI
+				}
+				add_war_goal = {
+					holder = c:ARG
+					type = return_state
+					target_state = s:STATE_CORRIENTES.region_state:GRI
+					target_country = c:GRI
+				}
+				add_war_goal = {
+					holder = c:ARG
+					type = return_state
+					target_state = s:STATE_CHACO.region_state:GRI
+					target_country = c:GRI
+				}
+				add_war_goal = {
+					holder = c:ARG
+					type = return_state
+					target_state = s:STATE_JUJUY.region_state:GRI
+					target_country = c:GRI
+				}
+				add_war_goal = {
+					holder = c:GRI
+					type = return_state
+					target_state = s:STATE_SANTA_FE.region_state:GRI
+					target_country = c:ARG
+				}
+				add_war_goal = {
+					holder = c:GRI
+					type = war_reparations
+					target_country = c:ARG
+				}
+			}
+		}	
+	}	
+}
+
+native_patagonian.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = native_patagonian.1.t
+	desc = native_patagonian.1.d
+	flavor = native_patagonian.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/asia_sepoy_mutiny.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		if = {
+			limit = { exists = s:STATE_RIO_NEGRO.region_state:ARG }
+			s:STATE_RIO_NEGRO.region_state:ARG = { set_state_owner = c:PAT }
+		}
+		if = {
+			limit = { exists = s:STATE_TUCUMAN.region_state:ARG }
+			s:STATE_TUCUMAN.region_state:ARG = { set_state_owner = c:PAT }
+		}
+	}
+
+    option = {
+		name = native_patagonian.1.a
+		default_option = yes
+		c:PAT = {
+			annex = c:THL
+			add_journal_entry = { type = je_reconquest_patagonia }
+			add_modifier = {
+				name = danish_war_oportunist
+				months = very_long_modifier_time
+			}	
+		}
+		c:ARG = {
+			create_diplomatic_play = {
+				target_country = c:PAT
+				holder = c:ARG
+				war = yes
+				type = dp_return_state
+				target_state = s:STATE_BUENOS_AIRES.region_state:PAT
+				add_war_goal = {
+					holder = c:ARG
+					type = return_state
+					target_state = s:STATE_RIO_NEGRO.region_state:PAT
+					target_country = c:PAT
+				}
+				add_war_goal = {
+					holder = c:PAT
+					type = return_state
+					target_state = s:STATE_BUENOS_AIRES.region_state:ARG
+					target_country = c:ARG
+				}
+				add_war_goal = {
+					holder = c:PAT
+					type = return_state
+					target_state = s:STATE_LA_PAMPA.region_state:ARG
+					target_country = c:ARG
+				}
+				add_war_goal = {
+					holder = c:PAT
+					type = war_reparations
+					target_country = c:ARG
+				}
+			}
+		}	
+	}	
+}
+
+native_guarani.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = native_guarani.2.t
+	desc = native_guarani.2.d
+	flavor = native_guarani.2.f
+
+	event_image = {
+		video = "gfx/event_pictures/asia_sepoy_mutiny.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		if = {
+			limit = { exists = s:STATE_MATO_GROSSO.region_state:BRZ }
+			s:STATE_MATO_GROSSO.region_state:BRZ = { set_state_owner = c:GRI }
+		}
+		if = {
+			limit = { exists = s:STATE_RIO_GRANDE_DO_SUL.region_state:BRZ }
+			s:STATE_RIO_GRANDE_DO_SUL.region_state:BRZ = { set_state_owner = c:GRI }
+		}
+		if = {
+			limit = { exists = s:STATE_PARANA.region_state:BRZ }
+			s:STATE_PARANA.region_state:BRZ = { set_state_owner = c:GRI }
+		}
+		if = {
+			limit = { exists = s:STATE_SANTA_CATARINA.region_state:BRZ }
+			s:STATE_SANTA_CATARINA.region_state:BRZ = { set_state_owner = c:GRI }
+		}
+		if = {
+			limit = { exists = s:STATE_PARA.region_state:BRZ }
+			s:STATE_PARA.region_state:BRZ = { set_state_owner = c:AMZ }
+		}
+		if = {
+			limit = { exists = s:STATE_AMAZONAS.region_state:BRZ }
+			s:STATE_AMAZONAS.region_state:BRZ = { set_state_owner = c:AMZ }
+		}
+	}
+
+    option = {
+		name = native_guarani.2.a
+		default_option = yes
+		c:GRI = {
+			add_journal_entry = { type = je_conquer_BRZ }
+			add_modifier = {
+				name = danish_war_oportunist
+				months = very_long_modifier_time
+			}	
+		}
+		c:AMZ = {
+			add_journal_entry = { type = je_reconquest_amazon_BRZ }
+			add_modifier = {
+				name = danish_war_oportunist
+				months = very_long_modifier_time
+			}	
+		}
+		c:BRZ = {
+			create_diplomatic_play = {
+				target_country = c:GRI
+				holder = c:BRZ
+				war = yes
+				type = dp_return_state
+				target_state = s:STATE_MATO_GROSSO.region_state:GRI
+				add_war_goal = {
+					holder = c:BRZ
+					type = return_state
+					target_state = s:STATE_RIO_GRANDE_DO_SUL.region_state:GRI
+					target_country = c:GRI
+				}
+				add_war_goal = {
+					holder = c:BRZ
+					type = return_state
+					target_state = s:STATE_PARANA.region_state:GRI
+					target_country = c:GRI
+				}
+				add_war_goal = {
+					holder = c:BRZ
+					type = return_state
+					target_state = s:STATE_SANTA_CATARINA.region_state:GRI
+					target_country = c:GRI
+				}
+				add_war_goal = {
+					holder = c:BRZ
+					type = return_state
+					target_state = s:STATE_PARA.region_state:AMZ
+					target_country = c:AMZ
+				}
+				add_war_goal = {
+					holder = c:BRZ
+					type = return_state
+					target_state = s:STATE_AMAZONAS.region_state:AMZ
+					target_country = c:AMZ
+				}
+				add_war_goal = {
+					holder = c:GRI
+					type = war_reparations
+					target_country = c:BRZ
+				}
+				add_war_goal = {
+					holder = c:AMZ
+					type = war_reparations
+					target_country = c:BRZ
+				}
+				add_target_backers = {
+					country = c:AMZ
+				}
+			}
+		}	
+	}	
+}
+
+native_patagonian.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = native_patagonian.2.t
+	desc = native_patagonian.2.d
+	flavor = native_patagonian.2.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = native_patagonian.2.a
+		default_option = yes	
+		s:STATE_RIO_NEGRO = {
+			remove_homeland = cu:platinean
+			remove_homeland = cu:afro_american
+			remove_claim = c:ARG	
+		}
+		s:STATE_TUCUMAN = {
+			remove_homeland = cu:platinean
+			remove_homeland = cu:afro_american
+			remove_claim = c:ARG	
+		}
+		s:STATE_BUENOS_AIRES = {
+			remove_homeland = cu:platinean
+			remove_homeland = cu:afro_american
+			remove_claim = c:ARG	
+		}
+		s:STATE_LA_PAMPA = {
+			remove_homeland = cu:platinean
+			remove_homeland = cu:afro_american
+			remove_claim = c:ARG	
+		}
+		s:STATE_ARAUCANIA = {
+			remove_claim = c:ARG	
+		}
+		s:STATE_PATAGONIA = {
+			remove_claim = c:ARG	
+		}
+	}	
+}
+
+native_arawak.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = native_arawak.1.t
+	desc = native_arawak.1.d
+	flavor = native_arawak.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		if = {
+			limit = { exists = s:STATE_AMAZONAS.region_state:TWT }
+			s:STATE_AMAZONAS.region_state:TWT = { set_state_owner = c:AMZ }
+		}
+		if = {
+			limit = { exists = s:STATE_AMAZONAS.region_state:INC }
+			s:STATE_AMAZONAS.region_state:INC = { set_state_owner = c:AMZ }
+		}
+	}
+
+    option = {
+		name = native_arawak.1.a
+		default_option = yes	
+		s:STATE_PARA = {
+			remove_homeland = cu:brazilian
+			remove_homeland = cu:amazonic
+			remove_homeland = cu:afro_brazilian
+			remove_claim = c:BRZ
+		}
+		s:STATE_AMAZONAS = {
+			remove_claim = c:BRZ
+		}
+	}	
+}
+
+native_guarani.3 = {
+	type = country_event
+	placement = ROOT
+
+	title = native_guarani.3.t
+	desc = native_guarani.3.d
+	flavor = native_guarani.3.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = native_guarani.3.a
+		default_option = yes	
+		s:STATE_ALTO_PARAGUAY = {
+			remove_homeland = cu:platinean
+			remove_homeland = cu:afro_american
+			remove_claim = c:ARG
+		}
+		s:STATE_BAJO_PARAGUAY = {
+			remove_homeland = cu:platinean
+			remove_homeland = cu:afro_american
+			remove_claim = c:ARG
+		}
+		s:STATE_CORRIENTES = {
+			remove_homeland = cu:platinean
+			remove_homeland = cu:afro_american
+			remove_claim = c:ARG
+		}
+		s:STATE_CHACO = {
+			remove_homeland = cu:platinean
+			remove_homeland = cu:afro_american
+			remove_claim = c:ARG
+		}
+		s:STATE_SANTA_FE = {
+			remove_homeland = cu:platinean
+			remove_homeland = cu:afro_american
+			remove_claim = c:ARG
+		}
+		s:STATE_JUJUY = {
+			remove_homeland = cu:platinean
+			remove_homeland = cu:afro_american
+			remove_claim = c:ARG
+		}
+	}	
+}
+
+native_guarani.4 = {
+	type = country_event
+	placement = ROOT
+
+	title = native_guarani.4.t
+	desc = native_guarani.4.d
+	flavor = native_guarani.4.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = native_guarani.4.a
+		default_option = yes	
+		c:BRZ = {
+			trigger_event = { id = afro_brazilian_slave_revolt.1 }
+		}	
+		s:STATE_MATO_GROSSO = {
+			remove_homeland = cu:brazilian
+			remove_homeland = cu:paulista
+			remove_homeland = cu:afro_brazilian
+			remove_claim = c:ARG
+			remove_claim = c:BRZ
+		}
+		s:STATE_RIO_GRANDE_DO_SUL = {
+			remove_homeland = cu:brazilian
+			remove_homeland = cu:paulista
+			remove_homeland = cu:afro_brazilian
+			remove_claim = c:BRZ
+		}
+		s:STATE_PARANA = {
+			remove_homeland = cu:brazilian
+			remove_homeland = cu:paulista
+			remove_homeland = cu:afro_brazilian
+			remove_claim = c:BRZ
+		}
+		s:STATE_SANTA_CATARINA = {
+			remove_homeland = cu:brazilian
+			remove_homeland = cu:paulista
+			remove_homeland = cu:afro_brazilian
+			remove_claim = c:BRZ
+		}
+	}	
+}
+
+afro_brazilian_slave_revolt.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = afro_brazilian_slave_revolt.1.t
+	desc = afro_brazilian_slave_revolt.1.d
+	flavor = afro_brazilian_slave_revolt.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/southamerica_slaves_night.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = { exists = c:AGJ }
+				exists = s:STATE_PERNAMBUCO.region_state:BRZ
+			}
+			create_country = {
+				tag = AGJ
+				origin = c:AGJ
+				state = s:STATE_PERNAMBUCO.region_state:BRZ
+			}
+		}
+		else_if = {
+			limit = {
+				exists = c:AGJ
+				exists = s:STATE_PERNAMBUCO.region_state:BRZ
+			}
+			s:STATE_PERNAMBUCO.region_state:BRZ = { set_state_owner = c:AGJ }
+		}
+		else_if = {
+			limit = {
+				NOT = { exists = c:AGJ }
+			}
+			random_country = {
+				limit = {
+					is_secessionist = yes
+					any_scope_state = {
+						state_region = s:STATE_PERNAMBUCO
+					}
+				}
+				change_tag = AGJ
+			}
+		}
+		if = {
+			limit = { exists = s:STATE_GOIAS.region_state:BRZ }
+			s:STATE_GOIAS.region_state:BRZ = { set_state_owner = c:AGJ }
+		}
+		if = {
+			limit = { exists = s:STATE_BAHIA.region_state:BRZ }
+			s:STATE_BAHIA.region_state:BRZ = { set_state_owner = c:AGJ }
+		}
+		if = {
+			limit = { exists = s:STATE_RIO_GRANDE_DO_NORTE.region_state:BRZ }
+			s:STATE_RIO_GRANDE_DO_NORTE.region_state:BRZ = { set_state_owner = c:AGJ }
+		}
+		if = {
+			limit = { exists = s:STATE_CEARA.region_state:BRZ }
+			s:STATE_CEARA.region_state:BRZ = { set_state_owner = c:AGJ }
+		}
+		if = {
+			limit = { exists = s:STATE_PIAUI.region_state:BRZ }
+			s:STATE_PIAUI.region_state:BRZ = { set_state_owner = c:AGJ }
+		}
+		if = {
+			limit = { exists = s:STATE_MARANHAO.region_state:BRZ }
+			s:STATE_MARANHAO.region_state:BRZ = { set_state_owner = c:AGJ }
+		}
+		if = {
+			limit = { exists = s:STATE_PARAIBA.region_state:BRZ }
+			s:STATE_PARAIBA.region_state:BRZ = { set_state_owner = c:AGJ }
+		}
+		c:AGJ = {
+			add_modifier = {
+				name = danish_war_oportunist
+				months = normal_modifier_time
+			}
+			add_modifier = {
+				name = taiping_land_socialization
+				months = normal_modifier_time
+			}
+			activate_law = law_type:law_presidential_republic
+			activate_law = law_type:law_universal_suffrage
+			activate_law = law_type:law_homesteading
+			activate_law = law_type:law_slavery_banned
+			activate_law = law_type:law_no_migration_controls
+		}
+		c:BRZ = {
+			create_diplomatic_play = {
+				target_country = c:AGJ
+				holder = c:BRZ
+				war = yes
+				type = dp_annex_war
+				target_state = s:STATE_PERNAMBUCO.region_state:AGJ
+				add_war_goal = {
+					holder = c:AGJ
+					type = annex_country
+					target_country = c:BRZ
+				}
+			}
+		}
+	}
+
+    option = {
+		name = afro_brazilian_slave_revolt.1.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}	
+	}
+
+    option = {
+		name = afro_brazilian_slave_revolt.1.b
+		play_as = c:AGJ
+	}	
+}
+
+native_mandika.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = native_mandika.1.t
+	desc = native_mandika.1.d
+	flavor = native_mandika.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		if = {
+			limit = { exists = s:STATE_GAMBIA.region_state:SIL }
+			s:STATE_GAMBIA.region_state:SIL = { set_state_owner = c:KBU }
+		}
+		if = {
+			limit = { exists = s:STATE_GAMBIA.region_state:GBR }
+			s:STATE_GAMBIA.region_state:GBR = { set_state_owner = c:KBU }
+		}
+		if = {
+			limit = { exists = s:STATE_GUINEA.region_state:SIL }
+			s:STATE_GUINEA.region_state:SIL = { set_state_owner = c:KBU }
+		}
+		if = {
+			limit = { exists = s:STATE_GUINEA.region_state:LIB }
+			s:STATE_GUINEA.region_state:LIB = { set_state_owner = c:KBU }
+		}
+	}
+
+    option = {
+		name = native_mandika.1.a
+		default_option = yes	
+		c:KBU = {
+			annex = c:SRR
+			annex = c:BND
+			annex = c:SSU
+			annex = c:FTJ
+			add_journal_entry = { type = je_conquer_SIL }
+			add_journal_entry = { type = je_plunder_tech_mandika }
+			add_modifier = {
+				name = danish_war_oportunist
+				months = very_long_modifier_time
+			}	
+		}
+	}	
+}
+
+native_mandika.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = native_mandika.2.t
+	desc = native_mandika.2.d
+	flavor = native_mandika.2.f
+
+	event_image = {
+		video = "gfx/event_pictures/asia_sepoy_mutiny.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		c:SPA = {
+			remove_diplomatic_pact = {
+				country = c:SIL
+				type = dominion
+			}	
+		}
+		c:SPA = {
+			remove_diplomatic_pact = {
+				country = c:SIL
+				type = puppet
+			}	
+		}
+	}
+
+    option = {
+		name = native_mandika.2.a
+		default_option = yes
+		c:KBU = {
+			add_journal_entry = { type = je_conquer_LIB }
+		}
+		create_diplomatic_play = {
+			target_country = c:SIL
+			holder = c:KBU
+			war = yes
+			type = dp_annex_war
+			target_state = s:STATE_SIERRA_LEONE.region_state:SIL
+		}
+	}	
+}
+
+native_mandika.3 = {
+	type = country_event
+	placement = ROOT
+
+	title = native_mandika.3.t
+	desc = native_mandika.3.d
+	flavor = native_mandika.3.f
+
+	event_image = {
+		video = "gfx/event_pictures/asia_sepoy_mutiny.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		c:KBU = {
+			annex = c:MDK
+			annex = c:KBD
+		}
+		c:GBR = {
+			remove_diplomatic_pact = {
+				country = c:LIB
+				type = dominion
+			}	
+		}
+		c:GBR = {
+			remove_diplomatic_pact = {
+				country = c:LIB
+				type = puppet
+			}	
+		}
+	}
+
+    option = {
+		name = native_mandika.3.a
+		default_option = yes		
+		c:KBU = {
+			add_journal_entry = { type = je_conquer_NSW }
+		}
+		create_diplomatic_play = {
+			target_country = c:LIB
+			holder = c:KBU
+			war = yes
+			type = dp_annex_war
+			target_state = s:STATE_LIBERIA.region_state:LIB
+		}
+	}	
+}

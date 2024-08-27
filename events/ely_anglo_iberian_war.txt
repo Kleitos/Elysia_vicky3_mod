@@ -27,6 +27,11 @@ anglo_iberian_war.1 = {
 			annex = c:AWA
 			annex = c:BUN
 			annex = c:ORI
+			end_truce = c:SPA
+			end_truce = c:SEI
+			end_truce = c:SIL
+			end_truce = c:BRZ
+			end_truce = c:PHI
 		}
 		c:SEI = {
 			annex = c:NAG
@@ -40,10 +45,53 @@ anglo_iberian_war.1 = {
 			annex = c:JAS
 			annex = c:MEW
 			annex = c:BHO
+			end_truce = c:GBR
+			end_truce = c:BIC
+			end_truce = c:LIB
+			end_truce = c:ARG
 		}
-		c:BAV = {
-		trigger_event = { id = anglo_iberian_war.2 }	
+		c:SPA = {
+		trigger_event = { id = anglo_iberian_war.2 }
+		}	
+		c:SPA = {
+			end_truce = c:GBR
+			end_truce = c:BIC
+			end_truce = c:LIB
+			end_truce = c:ARG
+			end_truce = c:NSW
+		}
+		c:GBR = {
+			end_truce = c:SPA
+			end_truce = c:SEI
+			end_truce = c:SIL
+			end_truce = c:PHI
+			end_truce = c:BRZ
+			end_truce = c:SAS
+			end_truce = c:WAS
+			end_truce = c:SWE
+		}	
+		c:PHI = {
+			end_truce = c:BIC
+			end_truce = c:GBR
+			end_truce = c:ARG
+			end_truce = c:LIB
+		}	
+		c:DEN = {
+			end_truce = c:SWE
+		}	
+		c:BRZ = {
+			end_truce = c:ARG
 		}		
+		c:PRU = {
+			end_truce = c:SWE
+			end_truce = c:BAV
+		}	
+		c:DEN = {
+			remove_diplomatic_pact = {
+				country = c:WIN
+				type = dominion
+			}		
+		}	
 	}
 
     option = {
@@ -77,6 +125,7 @@ anglo_iberian_war.2 = {
 
 	immediate = {
 		c:GBR = {
+			add_journal_entry = { type = je_danish_war_GBR }
 			create_diplomatic_pact = {
 				country = c:DEN
 				type = defensive_pact
@@ -127,6 +176,7 @@ anglo_iberian_war.2 = {
 			}				
 		}
 		c:DEN = {
+			add_journal_entry = { type = je_danish_war_DEN }
 			change_relations = {
 				country = c:GBR
 				value = 100
@@ -173,6 +223,7 @@ anglo_iberian_war.2 = {
 			}				
 		}
 		c:PRU = {
+			add_journal_entry = { type = je_danish_war_PRU }
 			change_relations = {
 				country = c:GBR
 				value = 100
@@ -211,6 +262,7 @@ anglo_iberian_war.2 = {
 			}				
 		}
 		c:SWE = {
+			add_journal_entry = { type = je_danish_war_SWE }
 			change_relations = {
 				country = c:SPA
 				value = 100
@@ -249,6 +301,7 @@ anglo_iberian_war.2 = {
 			}					
 		}
 		c:SPA = {
+			add_journal_entry = { type = je_danish_war_SPA }
 			create_diplomatic_pact = {
 				country = c:SWE
 				type = defensive_pact
@@ -283,6 +336,7 @@ anglo_iberian_war.2 = {
 			}			
 		}
 		c:BAV = {
+			add_journal_entry = { type = je_danish_war_BAV }
 			create_diplomatic_pact = {
 				country = c:SWE
 				type = defensive_pact
@@ -329,6 +383,7 @@ anglo_iberian_war.2 = {
 			}			
 		}
 		c:BOH = {
+			add_journal_entry = { type = je_danish_war_BOH }
 			create_diplomatic_pact = {
 				country = c:SWE
 				type = defensive_pact
@@ -406,6 +461,52 @@ anglo_iberian_war.2 = {
 		s:STATE_SILESIA = {
 			remove_homeland = cu:north_german
 		}
+		c:HAN = {
+			add_journal_entry = { type = je_danish_war_HAN }
+		}		
+		c:BIC = {
+			add_journal_entry = { type = je_danish_war_BIC }
+		}		
+		c:SEI = {
+			add_journal_entry = { type = je_danish_war_SEI }
+		}		
+		c:SIL = {
+			add_journal_entry = { type = je_danish_war_SIL }
+		}		
+		c:LIB = {
+			add_journal_entry = { type = je_danish_war_LIB }
+		}		
+		c:NSW = {
+			add_journal_entry = { type = je_danish_war_NSW }
+		}		
+		c:SAS = {
+			add_journal_entry = { type = je_danish_war_SAS }
+		}	
+		c:WAS = {
+			add_journal_entry = { type = je_danish_war_WAS }
+		}	
+		c:BRZ = {
+			add_journal_entry = { type = je_danish_war_BRZ }
+		}	
+		c:WIN = {
+			add_journal_entry = { type = je_danish_war_WIN }
+		}	
+		c:ARG = {
+			add_journal_entry = { type = je_danish_war_ARG }
+		}	
+		c:KAU = {
+			add_journal_entry = { type = je_aboriginal_uprising_AUS }
+		}
+		c:KBU = {
+			add_journal_entry = { type = je_mandika_uprising_MLI }
+		}	
+		c:GRI = {
+			add_journal_entry = { type = je_guarani_uprising_ARG }
+			add_journal_entry = { type = je_guarani_uprising_BRZ }
+		}	
+		c:PAT = {
+			add_journal_entry = { type = je_patagonian_uprising_ARG }
+		}		
 	}
 
     option = {
@@ -415,61 +516,16 @@ anglo_iberian_war.2 = {
 			base = 100
 		}
 		create_diplomatic_play = {
-			target_country = c:DEN
+			target_country = c:GBR
 			war = no
 			escalation = 81
 			type = dp_conquer_state
-			target_state = s:STATE_SCHLESWIG_HOLSTEIN.region_state:DEN
-			
+			target_state = s:STATE_MALAYA.region_state:GBR
 			add_war_goal = {
 				holder = c:GBR
-				type = humiliation
-					target_country = c:SPA
-			}
-			add_war_goal = {
-				holder = c:GBR
-				type = humiliation
-					target_country = c:SWE
-			}
-			add_war_goal = {
-				holder = c:SPA
-				type = humiliation
-					target_country = c:GBR
-			}
-			add_war_goal = {
-				holder = c:SWE
-				type = humiliation
-					target_country = c:GBR
-			}
-			add_war_goal = {
-				holder = c:BAV
-				type = humiliation
-					target_country = c:PRU
-			}
-			add_war_goal = {
-				holder = c:SWE
-				type = humiliation
-					target_country = c:PRU
-			}
-			add_war_goal = {
-				holder = c:SWE
-				type = humiliation
-					target_country = c:DEN
-			}
-			add_war_goal = {
-				holder = c:BOH
-				type = humiliation
-					target_country = c:PRU
-			}
-			add_war_goal = {
-				holder = c:PRU
-				type = humiliation
-					target_country = c:BOH
-			}
-			add_war_goal = {
-				holder = c:PRU
-				type = humiliation
-					target_country = c:BAV
+				type = dp_conquer_state
+				target_state = s:STATE_ZANZIBAR.region_state:SPA
+				target_country = c:SPA
 			}
 			
 			add_war_goal = {
@@ -580,7 +636,7 @@ anglo_iberian_war.2 = {
 			add_war_goal = {
 				holder = c:BAV
 				type = conquer_state
-				target_state = s:STATE_FRIESLAND.region_state:DEN
+				target_state = s:STATE_SCHLESWIG_HOLSTEIN.region_state:DEN
 				target_country = c:DEN
 			}
 			add_war_goal = {
@@ -593,12 +649,6 @@ anglo_iberian_war.2 = {
 				holder = c:BAV
 				type = conquer_state
 				target_state = s:STATE_HANNOVER.region_state:DEN
-				target_country = c:DEN
-			}
-			add_war_goal = {
-				holder = c:BAV
-				type = conquer_state
-				target_state = s:STATE_ELBE.region_state:DEN
 				target_country = c:DEN
 			}
 			add_war_goal = {
@@ -620,17 +670,73 @@ anglo_iberian_war.2 = {
 				target_country = c:BAV
 			}
 			add_war_goal = {
+				holder = c:WIN
+				type = conquer_state
+				target_state = s:STATE_PARA.region_state:BRZ
+				target_country = c:BRZ
+			}
+			add_war_goal = {
+				holder = c:WIN
+				type = conquer_state
+				target_state = s:STATE_AMAZONAS.region_state:BRZ
+				target_country = c:BRZ
+			}
+			add_war_goal = {
+				holder = c:ARG
+				type = conquer_state
+				target_state = s:STATE_MATO_GROSSO.region_state:BRZ
+				target_country = c:BRZ
+			}
+			add_war_goal = {
+				holder = c:ARG
+				type = conquer_state
+				target_state = s:STATE_RIO_GRANDE_DO_SUL.region_state:BRZ
+				target_country = c:BRZ
+			}
+			add_war_goal = {
+				holder = c:BRZ
+				type = return_state
+				target_state = s:STATE_MATO_GROSSO.region_state:ARG
+				target_country = c:ARG
+			}
+			add_war_goal = {
+				holder = c:BRZ
+				type = return_state
+				target_state = s:STATE_URUGUAY.region_state:ARG
+				target_country = c:ARG
+			}
+			add_war_goal = {
+				holder = c:BRZ
+				type = return_state
+				target_state = s:STATE_CORRIENTES.region_state:ARG
+				target_country = c:ARG
+			}
+			add_war_goal = {
+				holder = c:BRZ
+				type = return_state
+				target_state = s:STATE_PARA.region_state:WIN
+				target_country = c:WIN
+			}
+			add_war_goal = {
+				holder = c:BRZ
+				type = return_state
+				target_state = s:STATE_AMAZONAS.region_state:WIN
+				target_country = c:WIN
+			}
+			add_war_goal = {
 				holder = c:SWE
-				type = make_protectorate
+				type = conquer_state
+				target_state = s:STATE_FRIESLAND.region_state:DEN
 				target_country = c:DEN
 			}
 			add_war_goal = {
 				holder = c:DEN
-				type = make_protectorate
+				type = conquer_state
+				target_state = s:STATE_SCANIA.region_state:SWE
 				target_country = c:SWE
 			}
 			add_initiator_backers = {
-				country = c:SPA
+				country = c:BAV
 			}
 			add_initiator_backers = {
 				country = c:PHI
@@ -657,7 +763,7 @@ anglo_iberian_war.2 = {
 				country = c:SEI
 			}
 			add_target_backers = {
-				country = c:GBR
+				country = c:DEN
 			}
 			add_target_backers = {
 				country = c:HAN
@@ -676,6 +782,9 @@ anglo_iberian_war.2 = {
 			}
 			add_target_backers = {
 				country = c:PRU
+			}
+			add_target_backers = {
+				country = c:WIN
 			}
 		}
 	}

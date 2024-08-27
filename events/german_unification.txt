@@ -224,6 +224,33 @@ german_unification.2 = {
 			country = scope:german_unification_candidate
 			value = -50
 		}
+		s:STATE_DALMATIA = {
+			remove_claim = c:SGF	
+		}
+		s:STATE_CROATIA = {
+			remove_claim = c:SGF	
+		}
+		s:STATE_SLAVONIA = {
+			remove_claim = c:SGF	
+		}
+		s:STATE_BEKES = {
+			remove_claim = c:SGF	
+		}
+		s:STATE_TRANSDANUBIA = {
+			remove_claim = c:SGF	
+		}
+		s:STATE_DELVIDEK = {
+			remove_claim = c:SGF	
+		}
+		s:STATE_CENTRAL_HUNGARY = {
+			remove_claim = c:SGF	
+		}
+		s:STATE_ISTRIA = {
+			remove_claim = c:SGF	
+		}
+		s:STATE_BANAT = {
+			remove_claim = c:SGF	
+		}
 		every_scope_state = {
 			if = {
 				limit = { 	

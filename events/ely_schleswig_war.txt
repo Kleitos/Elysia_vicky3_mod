@@ -116,6 +116,38 @@ palatine_house.1 = {
 		c:HAN = {
 			annex = c:BRA
 		}
+		c:SWE = {
+			create_bidirectional_truce = {
+				country = c:SAS
+				months = 240
+			}
+		}
+		c:SWE = {
+			create_bidirectional_truce = {
+				country = c:WAS
+				months = 240
+			}
+		}
+		c:GBR = {
+			create_bidirectional_truce = {
+				country = c:NSW
+				months = 240
+			}
+		}
+		c:GBR = {
+			create_bidirectional_truce = {
+				country = c:AST
+				months = 240
+			}
+		}
+		if = {
+			limit = { exists = s:STATE_ELBE.region_state:DEN }
+			s:STATE_ELBE.region_state:DEN = { set_state_owner = c:HAN }
+		}
+		if = {
+			limit = { exists = s:STATE_ELBE.region_state:DEI }
+			s:STATE_ELBE.region_state:DEI = { set_state_owner = c:HAN }
+		}
 		c:BAV = {
 			annex = c:LIP
 			remove_diplomatic_pact = {
@@ -153,7 +185,7 @@ palatine_house.1 = {
 				}
 		}
 		c:SPA = {
-			trigger_event = { id = anglo_iberian_war.1 }
+			trigger_event = { id = anglo_iberian_war.1 }	
 			create_diplomatic_pact = {
 				country = c:BAV
 				type = defensive_pact
@@ -344,6 +376,14 @@ fred.6 = {
 		if = {
 			limit = { exists = s:STATE_HANNOVER.region_state:DEN }
 			s:STATE_HANNOVER.region_state:DEN = { set_state_owner = c:BAV }
+		}
+		if = {
+			limit = { exists = s:STATE_SCHLESWIG_HOLSTEIN.region_state:DEN }
+			s:STATE_SCHLESWIG_HOLSTEIN.region_state:DEN = { set_state_owner = c:BAV }
+		}
+		if = {
+			limit = { exists = s:STATE_SCHLESWIG_HOLSTEIN.region_state:DEN }
+			s:STATE_SCHLESWIG_HOLSTEIN.region_state:DEN = { set_state_owner = c:BAV }
 		}
 		c:DEN= {
 			create_bidirectional_truce = {

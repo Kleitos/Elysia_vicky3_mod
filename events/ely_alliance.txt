@@ -31,14 +31,6 @@ ely_alliance.1 = {
 				country = c:GER
 				value = 100
 			}
-			remove_diplomatic_pact = {
-				country = c:NET
-				type = rivalry
-			}
-			change_relations = {
-				country = c:NET
-				value = 100
-			}
 		}
 		c:GER = {
 			remove_diplomatic_pact = {
@@ -47,32 +39,6 @@ ely_alliance.1 = {
 			}
 			change_relations = {
 				country = c:FRA
-				value = 100
-			}
-			remove_diplomatic_pact = {
-				country = c:NET
-				type = rivalry
-			}
-			change_relations = {
-				country = c:NET
-				value = 100
-			}
-		}
-		c:NET = {
-			remove_diplomatic_pact = {
-				country = c:FRA
-				type = rivalry
-			}
-			change_relations = {
-				country = c:FRA
-				value = 100
-			}
-			remove_diplomatic_pact = {
-				country = c:GER
-				type = rivalry
-			}
-			change_relations = {
-				country = c:GER
 				value = 100
 			}
 		}
@@ -103,42 +69,6 @@ ely_alliance.1 = {
 			create_diplomatic_pact = {
 				country = c:FRA
 				type = alliance
-			}
-		}
-		c:FRA = {
-			set_secret_goal = {
-				country = c:NET
-				secret_goal = befriend			
-			}
-		}
-		c:GER = {
-			set_secret_goal = {
-				country = c:NET
-				secret_goal = befriend			
-			}
-		}
-		c:NET = {
-			set_secret_goal = {
-				country = c:FRA
-				secret_goal = befriend			
-			}
-		}
-		c:FRA = {
-			create_diplomatic_pact = {
-				country = c:NET
-				type = defensive_pact
-			}
-		}
-		c:NET = {
-			set_secret_goal = {
-				country = c:GER
-				secret_goal = befriend			
-			}
-		}
-		c:GER = {
-			create_diplomatic_pact = {
-				country = c:NET
-				type = defensive_pact
 			}
 		}
 	}
@@ -265,49 +195,15 @@ ely_alliance.3 = {
 				country = c:FRA
 				type = rivalry
 			}
-			remove_diplomatic_pact = {
-				country = c:NET
-				type = rivalry
-			}
 			change_relations = {
 				country = c:FRA
-				value = 100
-			}
-			change_relations = {
-				country = c:NET
 				value = 100
 			}
 		}
 		c:FRA = {
 			remove_diplomatic_pact = {
-				country = c:NET
-				type = rivalry
-			}
-			remove_diplomatic_pact = {
 				country = c:BAV
 				type = rivalry
-			}
-			change_relations = {
-				country = c:NET
-				value = 100
-			}
-			change_relations = {
-				country = c:BAV
-				value = 100
-			}
-		}
-		c:NET = {
-			remove_diplomatic_pact = {
-				country = c:FRA
-				type = rivalry
-			}
-			remove_diplomatic_pact = {
-				country = c:BAV
-				type = rivalry
-			}
-			change_relations = {
-				country = c:FRA
-				value = 100
 			}
 			change_relations = {
 				country = c:BAV
@@ -319,54 +215,6 @@ ely_alliance.3 = {
 	option = {
 	name = ely_alliance.1.a 
 		default_option = yes
-		c:BAV = {
-			set_secret_goal = {
-				country = c:NET
-				secret_goal = befriend			
-			}
-		}
-		c:FRA = {
-			set_secret_goal = {
-				country = c:NET
-				secret_goal = befriend			
-			}
-		}
-		c:NET = {
-			set_secret_goal = {
-				country = c:FRA
-				secret_goal = befriend			
-			}
-		}
-		c:NET = {
-			set_secret_goal = {
-				country = c:BAV
-				secret_goal = befriend			
-			}
-		}
-		c:FRA = {
-			create_diplomatic_pact = {
-				country = c:NET
-				type = defensive_pact
-			}
-		}
-		c:BAV = {
-			create_diplomatic_pact = {
-				country = c:NET
-				type = defensive_pact
-			}
-		}
-		c:NET = {
-			create_diplomatic_pact = {
-				country = c:FRA
-				type = defensive_pact
-			}
-		}
-		c:NET = {
-			create_diplomatic_pact = {
-				country = c:BAV
-				type = defensive_pact
-			}
-		}
 		c:FRA = {
 			set_secret_goal = {
 				country = c:BAV

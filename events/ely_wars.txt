@@ -176,7 +176,7 @@ india_revolt.2 = {
 
 india_revolt.3 = {
 	type = country_event
-	placement = c:MAR.capital
+	placement = c:NAG.capital
 
 	title = india_revolt.3.t
 	desc = india_revolt.3.d
@@ -195,25 +195,25 @@ india_revolt.3 = {
 	immediate = {
 		if = {
 			limit = {
-				NOT = { exists = c:MAR }
+				NOT = { exists = c:NAG }
 				exists = s:STATE_CENTRAL_INDIA.region_state:SEI
 			}
 			create_country = {
-				tag = MAR
+				tag = NAG
 				origin = c:SEI
 				state = s:STATE_CENTRAL_INDIA.region_state:SEI
 			}
 		}
 		else_if = {
 			limit = {
-				exists = c:MAR
+				exists = c:NAG
 				exists = s:STATE_CENTRAL_INDIA.region_state:SEI
 			}
-			s:STATE_CENTRAL_INDIA.region_state:SEI = { set_state_owner = c:MAR }
+			s:STATE_CENTRAL_INDIA.region_state:SEI = { set_state_owner = c:NAG }
 		}
 		else_if = {
 			limit = {
-				NOT = { exists = c:MAR }
+				NOT = { exists = c:NAG }
 			}
 			random_country = {
 				limit = {
@@ -222,14 +222,14 @@ india_revolt.3 = {
 						state_region = s:STATE_CENTRAL_INDIA
 					}
 				}
-				change_tag = MAR
+				change_tag = NAG
 			}
 		}
 		if = {
 			limit = { exists = s:STATE_NAGPUR.region_state:SEI }
-			s:STATE_NAGPUR.region_state:SEI = { set_state_owner = c:MAR }
+			s:STATE_NAGPUR.region_state:SEI = { set_state_owner = c:NAG }
 		}
-		c:MAR = {
+		c:NAG = {
 			add_modifier = {
 				name = war_for_independence
 				months = normal_modifier_time
@@ -303,29 +303,29 @@ india_revolt.3 = {
 		name = india_revolt.1.a
 		default_option = yes
 		create_diplomatic_play = {
-			target_country = c:MAR
+			target_country = c:NAG
 			type = dp_conquer_state
 			escalation = 81
-			target_state = s:STATE_CENTRAL_INDIA.region_state:MAR
+			target_state = s:STATE_CENTRAL_INDIA.region_state:NAG
 					add_war_goal = {
 						holder = c:SEI
 						type = conquer_state
-						target_state = s:STATE_NAGPUR.region_state:MAR
+						target_state = s:STATE_NAGPUR.region_state:NAG
 					}
 			}
 	}
 	option = {
 		name = india_revolt.1.b
-		play_as = c:MAR
+		play_as = c:NAG
 		create_diplomatic_play = {
-			target_country = c:MAR
+			target_country = c:NAG
 			type = dp_conquer_state
 			escalation = 81
-			target_state = s:STATE_CENTRAL_INDIA.region_state:MAR
+			target_state = s:STATE_CENTRAL_INDIA.region_state:NAG
 					add_war_goal = {
 						holder = c:SEI
 						type = conquer_state
-						target_state = s:STATE_NAGPUR.region_state:MAR
+						target_state = s:STATE_NAGPUR.region_state:NAG
 					}
 			}
 	}

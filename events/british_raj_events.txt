@@ -552,6 +552,26 @@ raj.6 = {
 			limit = { exists = s:STATE_SINDH.region_state:SEI }
 			s:STATE_SINDH.region_state:SEI = { set_state_owner = c:MUG }
 		}
+		if = {
+			limit = { exists = s:STATE_TENASSERIM.region_state:BIC }
+			s:STATE_TENASSERIM.region_state:BIC = { set_state_owner = c:BUR }
+		}
+		if = {
+			limit = { exists = s:STATE_KACHIN.region_state:BIC }
+			s:STATE_KACHIN.region_state:BIC = { set_state_owner = c:BUR }
+		}
+		if = {
+			limit = { exists = s:STATE_SHAN_STATES.region_state:BIC }
+			s:STATE_SHAN_STATES.region_state:BIC = { set_state_owner = c:BUR }
+		}
+		if = {
+			limit = { exists = s:STATE_BURMA.region_state:BIC }
+			s:STATE_BURMA.region_state:BIC = { set_state_owner = c:BUR }
+		}
+		if = {
+			limit = { exists = s:STATE_PEGU.region_state:BIC }
+			s:STATE_PEGU.region_state:BIC = { set_state_owner = c:BUR }
+		}
 		c:BIC = { 
 			add_modifier = {
 				name = weakened_by_mutiny

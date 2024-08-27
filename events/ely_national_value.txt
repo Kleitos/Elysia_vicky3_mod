@@ -240,5 +240,12 @@ ely_national_value.5 = {
 			remove_homeland = cu:inuit
 			add_homeland = cu:elysian
 		}
+		s:STATE_QUEBEC = {
+			remove_homeland = cu:inuit
+			add_homeland = cu:elysian
+		}
+		s:STATE_CHUKOTKA = {
+			remove_homeland = cu:inuit
+		}
 	}
 }

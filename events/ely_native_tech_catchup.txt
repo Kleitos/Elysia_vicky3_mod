@@ -1,0 +1,300 @@
+﻿namespace = plunder_tech_australia
+namespace = plunder_tech_mali
+
+plunder_tech_australia.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = plunder_tech_australia.1.t
+	desc = plunder_tech_australia.1.d
+	flavor = plunder_tech_australia.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		every_scope_state = {
+			limit = {
+				region = sr:region_oceania
+			}	
+			every_scope_pop = {
+				limit = {
+				NOT = {	culture = cu:aborigine }
+				NOT = {	is_pop_type = slaves }
+				}
+				change_poptype = pop_type:slaves
+			}
+		}
+	}
+
+    option = {
+		name = plunder_tech_australia.1.a
+		default_option = yes
+		add_technology_progress = {
+			technology = sericulture
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = enclosure
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = manufacturies
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = shaft_mining
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = cotton_gin
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = lathe
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = distillation
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = steelworking
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = prospecting
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = standing_army
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = navigation
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = drydocks
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = mandatory_service
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = gunsmithing
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = artillery
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = military_drill
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = napoleonic_warfare
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = admiralty
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = army_reserves
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = line_infantry
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = urbanization
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = urban_planning
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = rationalism
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = tech_bureaucracy
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = democracy
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = international_trade
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = centralization
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = international_relations
+			progress = 7500
+		}
+	}
+}
+
+plunder_tech_mali.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = plunder_tech_mali.1.t
+	desc = plunder_tech_mali.1.d
+	flavor = plunder_tech_mali.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = plunder_tech_mali.1.a
+		default_option = yes
+		add_technology_progress = {
+			technology = sericulture
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = enclosure
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = manufacturies
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = shaft_mining
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = cotton_gin
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = lathe
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = distillation
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = steelworking
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = prospecting
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = standing_army
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = navigation
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = drydocks
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = mandatory_service
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = gunsmithing
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = artillery
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = military_drill
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = napoleonic_warfare
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = admiralty
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = army_reserves
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = line_infantry
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = urbanization
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = urban_planning
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = rationalism
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = tech_bureaucracy
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = democracy
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = international_trade
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = centralization
+			progress = 7500
+		}
+		add_technology_progress = {
+			technology = international_relations
+			progress = 7500
+		}
+	}
+}
