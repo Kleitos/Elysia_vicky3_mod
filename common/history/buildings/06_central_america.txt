@@ -115,12 +115,12 @@
 				activate_production_methods={ "pm_no_organization" }
 			}
 		}
-		region_state:GBR={
+		region_state:ELY={
 			create_building={
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:GBR"
+						country="c:ELY"
 						levels=1
 					}
 				}

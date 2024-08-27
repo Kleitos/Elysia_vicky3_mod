@@ -236,7 +236,7 @@
 						type="building_financial_district"
 						country="c:RUS"
 						levels=2
-						region="STATE_INGRIA"
+						region="STATE_NOVGOROD"
 					}
 				}
 				reserves=1
@@ -249,7 +249,7 @@
 						type="building_manor_house"
 						country="c:RUS"
 						levels=4
-						region="STATE_INGRIA"
+						region="STATE_NOVGOROD"
 					}
 				}
 				reserves=1
@@ -281,7 +281,7 @@
 						type="building_financial_district"
 						country="c:RUS"
 						levels=8
-						region="STATE_INGRIA"
+						region="STATE_NOVGOROD"
 					}
 				}
 				reserves=1
@@ -294,7 +294,7 @@
 						type="building_manor_house"
 						country="c:RUS"
 						levels=5
-						region="STATE_INGRIA"
+						region="STATE_NOVGOROD"
 					}
 				}
 				reserves=1
@@ -311,7 +311,7 @@
 						type="building_manor_house"
 						country="c:RUS"
 						levels=1
-						region="STATE_INGRIA"
+						region="STATE_NOVGOROD"
 					}
 				}
 				reserves=1

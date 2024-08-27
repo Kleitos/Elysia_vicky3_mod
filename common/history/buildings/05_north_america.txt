@@ -50,7 +50,7 @@
 						region="STATE_LOUISIANA"
 					}
 					country={
-						country="c:DEN"
+						country="c:ELY"
 						levels=2
 					}
 				}
@@ -1665,7 +1665,7 @@
 					}
 					building={
 						type="building_financial_district"
-						country="c:GBR"
+						country="c:ELY"
 						levels=2
 						region="STATE_DISTRICT_OF_COLUMBIA"
 					}

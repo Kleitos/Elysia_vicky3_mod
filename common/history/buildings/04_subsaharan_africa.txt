@@ -87,15 +87,15 @@
 		}
 	}
 	s:STATE_GAMBIA={
-		region_state:SPA={
+		region_state:SIL={
 			create_building={
 				building="building_millet_farm"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:SPA"
+						country="c:SIL"
 						levels=2
-						region="STATE_ESTREMADURA"
+						region="STATE_GAMBIA"
 					}
 				}
 				reserves=1
@@ -105,7 +105,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:SPA"
+						country="c:SIL"
 						levels=1
 					}
 				}

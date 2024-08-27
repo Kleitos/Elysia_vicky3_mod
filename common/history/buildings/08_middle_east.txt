@@ -627,7 +627,7 @@
 						type="building_manor_house"
 						country="c:ARB"
 						levels=3
-						region="STATE_EASTERN_THRACE"
+						region="STATE_BAGHDAD"
 					}
 				}
 				reserves=1

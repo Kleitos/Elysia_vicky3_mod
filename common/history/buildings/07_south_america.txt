@@ -1832,13 +1832,13 @@
 		}
 	}
 	s:STATE_PARA={
-		region_state:PRA={
+		region_state:BRZ={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:PRA"
+						country="c:BRZ"
 						levels=1
 						region="STATE_PARA"
 					}
@@ -1851,7 +1851,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:PRA"
+						country="c:BRZ"
 						levels=2
 						region="STATE_PARA"
 					}
@@ -1863,7 +1863,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:PRA"
+						country="c:BRZ"
 						levels=1
 					}
 				}
@@ -1920,7 +1920,7 @@
 	s:STATE_AMAZONAS={
 		region_state:AMZ={
 		}
-		region_state:PRA={
+		region_state:BRZ={
 		}
 		region_state:TWT={
 		}
@@ -2020,13 +2020,13 @@
 		}
 	}
 	s:STATE_RIO_GRANDE_DO_SUL={
-		region_state:PNI={
+		region_state:BRZ={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:PNI"
+						country="c:BRZ"
 						levels=2
 						region="STATE_RIO_GRANDE_DO_SUL"
 					}
@@ -2039,7 +2039,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:PNI"
+						country="c:BRZ"
 						levels=2
 						region="STATE_RIO_GRANDE_DO_SUL"
 					}
@@ -2052,7 +2052,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:PNI"
+						country="c:BRZ"
 						levels=1
 						region="STATE_RIO_GRANDE_DO_SUL"
 					}
@@ -2064,7 +2064,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:PNI"
+						country="c:BRZ"
 						levels=1
 					}
 				}

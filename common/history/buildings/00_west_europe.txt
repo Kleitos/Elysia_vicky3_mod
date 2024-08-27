@@ -5983,7 +5983,7 @@
 						type="building_manor_house"
 						country="c:FRA"
 						levels=5
-						region="STATE_BRANDENBURG"
+						region="STATE_NORTH_RHINE"
 					}
 				}
 				reserves=1
