@@ -1168,7 +1168,7 @@ RUS_ivan_paskevich = {
 	age = 54
 	interest_group = ig_landowners
 	ideology = ideology_royalist
-	hq = region_poland
+	hq = region_russia
 	traits = {
 		brave
 		reckless
@@ -1581,7 +1581,7 @@ RUS_pyotr_ricord = { # RUS, Admiral
 	interest_group = ig_armed_forces
 	ideology = ideology_reformer
 	birth_date = 1776.2.9
-	hq = region_east_siberia
+	hq = region_russia
 	traits = {
 		basic_naval_commander
 		experienced_diplomat

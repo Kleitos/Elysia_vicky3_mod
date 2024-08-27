@@ -1,79 +1,4 @@
-﻿
-
-
-
-agitator_pierre_joseph_proudhon = {
-	first_name = Pierre-Joseph
-	last_name = Proudhon
-	historical = yes
-	culture = cu:french
-	religion = rel:atheist
-	female = no
-	interest_group = ig_intelligentsia
-	ideology = ideology_anarchist
-	birth_date = 1809.1.15
-	dna = dna_proudhon
-	traits = {
-		erudite # dude taught himself Latin
-		ambitious
-		persistent
-	}
-	agitator_usage = {
-		country_trigger = {
-			has_dlc_feature = voice_of_the_people_content
-			c:FRA ?= this
-		}
-        interest_group_trigger = {
-            is_marginal = no
-            OR = {
-                is_interest_group_type = ig_intelligentsia
-                is_interest_group_type = ig_trade_unions
-            } 
-        }   
-		earliest_usage_date = 1840.6.30 # first publication of "What is to be Done?""
-		latest_usage_date = 1865.1.19
-		chance = 50
-	}
-}
-
-agitator_errico_malatesta = {
-	first_name = Errico
-	last_name = Malatesta
-	historical = yes
-	culture = cu:south_italian
-	religion = rel:atheist
-	female = no
-	interest_group = ig_trade_unions
-	ideology = ideology_anarchist
-	birth_date = 1853.12.4
-	dna = dna_malatesta
-	traits = {
-		persistent
-		charismatic
-		inspirational_orator
-	}
-	agitator_usage = {
-		country_trigger = {
-			has_dlc_feature = voice_of_the_people_content
-			OR = {
-				c:SIC ?= this
-				c:ITA ?= this
-			}
-		}
-        interest_group_trigger = {
-            is_marginal = no
-            OR = {
-                is_interest_group_type = ig_intelligentsia
-                is_interest_group_type = ig_trade_unions
-            } 
-        }   
-		earliest_usage_date = 1872.9.15 # Malatesta met Bakunin at the Saint-Inier Congress
-		latest_usage_date = 1900.1.1
-		chance = 50
-	}
-}
-
-agitator_henry_ford = {
+﻿agitator_henry_ford = {
 	first_name = Henry
 	last_name = Ford
 	historical = yes
@@ -1412,43 +1337,6 @@ agitator_giuseppe_mazzini = {
 	}
 }
 
-fra_delescluze_character_template = {
-    first_name = Louis_Charles
-    last_name = Delescluze
-    historical = yes
-    birth_date = 1809.5.25
-    is_agitator = yes
-    female = no
-    culture = cu:french
-    interest_group = ig_intelligentsia
-    ideology = ideology_communist
-    dna = dna_louis_delescluze
-    traits = {
-        literary
-        inspirational_orator
-        brave
-    }
-}
-
-fra_blanqui_character_template = {
-    first_name = Louis
-    last_name = Blanqui
-    historical = yes
-    birth_date = 1805.2.8
-    culture = cu:french
-    religion = rel:atheist
-    is_agitator = yes
-    female = no
-    interest_group = ig_intelligentsia
-    ideology = ideology_communist
-    dna = dna_blanqui
-    traits = {
-        direct
-        basic_political_operator
-        ambitious
-    }
-}
-
 usa_john_brown_character_template = {
     first_name = John
     last_name = Brown
@@ -1519,24 +1407,6 @@ pol_rosa_luxemburg_character_template = {
 		firebrand
         brave
         romantic
-	}
-}
-fra_georges_sorel_character_template = {
-    first_name = Georges
-	last_name = Sorel
-	historical = yes
-	culture = cu:french
-	religion = rel:atheist
-	female = no
-    is_agitator = yes
-	interest_group = ig_intelligentsia
-	ideology = ideology_atheist
-	birth_date = 1847.11.2
-	dna = dna_georges_sorel
-	traits = {
-		erudite
-        innovative
-        engineer
 	}
 }
 fra_georges_boulanger_character_template = {

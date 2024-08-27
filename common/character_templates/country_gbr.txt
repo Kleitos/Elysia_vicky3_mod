@@ -1399,7 +1399,7 @@ GBR_james_dundas = {
     last_name = Dundas
     historical = yes
     age = 51
-    hq = region_iberia
+    hq = region_indochina
     traits = {
         cautious
     }
