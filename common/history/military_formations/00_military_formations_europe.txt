@@ -328,26 +328,7 @@
 			save_scope_as = karl_gen
 		}
 
-		create_character = { # General
-			is_general = yes
-			first_name = Julius
-			last_name = von_Haynau
-			historical = yes
-			birth_date = 1786.10.14
-			hq = region_poland
-			commander_rank = commander_rank_1
-			traits = {
-				wrathful
-				cruel
-			}
-			save_scope_as = haynau_gen
-		}
-
 		scope:karl_gen = {
-			transfer_to_formation = scope:ii_korps
-		}
-
-		scope:haynau_gen = {
 			transfer_to_formation = scope:ii_korps
 		}
 
@@ -1073,11 +1054,7 @@
 				state_region = s:STATE_KIEV
 				count = 2
 			}
-			combat_unit = { # Courland Lancer Regiment
-				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_RIGA
-				count = 1
-			}
+			combat_unit 
 
 			# 1st Artillery Division
 			combat_unit = { # 1st, 2nd, and 3rd Field Artillery Brigades
@@ -1343,12 +1320,6 @@
 				count = 1
 			}
 
-			combat_unit = { # Tomsk Jägers
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_TOMSK
-				count = 1
-			}
-
 			combat_unit = { # Kolyvan Jägers
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_AKMOLINSK
@@ -1412,7 +1383,7 @@
 
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_poland
+			hq_region = sr:region_russia
 			name = 5y_Pekhotniy_Korpus
 
 			combat_unit = { # Brest and Bialystok Infantry
@@ -2498,19 +2469,13 @@
 			hq_region = sr:region_russia
 		
 			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
+				type = unit_type:combat_unit_type_frigate
 				state_region = s:STATE_INGRIA
 				count = 23
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_RIGA
-				count = 2
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
 				state_region = s:STATE_INGRIA
 				count = 15
 			}
