@@ -83,7 +83,7 @@ company_el_aguila = {
 	prosperity_modifier = {
 		country_convoys_capacity_mult = 0.15
 		interest_group_ig_industrialists_approval_add = 3
-		building_oil_rig_throughput_add = 0.05
+		building_group_bg_oil_extraction_throughput_add = 0.05
 	}
 	
 	ai_weight = {
@@ -184,7 +184,7 @@ company_caribbean_petroleum = {
 	
 	prosperity_modifier = {
 		country_convoys_capacity_mult = 0.1
-		building_oil_rig_throughput_add = 0.05
+		building_group_bg_oil_extraction_throughput_add = 0.05
 		interest_group_ig_industrialists_approval_add = 3
 	}
 	
