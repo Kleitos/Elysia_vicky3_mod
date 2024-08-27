@@ -39,8 +39,8 @@
  ideology_elysian_army:0 "Stratokratos"
  ideology_elysian_bureaucracy:0 "Autokratos"
  ideology_elysian_populist:0 "Demokratos"
- ideology_elysian_economy_traditionals:0 ""
- ideology_elysian_economy_industrials:0 ""
+ ideology_elysian_economy_traditionals:0 "Agrarian Communities"
+ ideology_elysian_economy_industrials:0 "Industrials Lobbyist"
 
  ideology_elysian_egalitarian_desc:0 "Elysian men tended to the land, Elysian women tended to the people. What was born from necessity became the norm."
  ideology_anti_christian_radical_desc:0 "Abrahamist religions brought ruin to our ancestor's empire and others across the globe, we must enforce our heritage and prevent their perfidious lies to enter our society."
