@@ -82,8 +82,8 @@ ely_capital_fix.1 = {
 ely_capital.2 = {
 	type = country_event
 	placement = root
-	title = ely_capital.2.t
-	desc = ely_capital.2.d
+	title = ely_capital.1.t
+	desc = ely_capital.1.d
 
 	duration = 3
 
@@ -104,7 +104,7 @@ ely_capital.2 = {
 	}
 
 	option = {
-		name = ely_capital.2.a
+		name = ely_capital.1.a
 		add_radicals = {
 			value = very_large_radicals
 		}	
@@ -114,7 +114,7 @@ ely_capital.2 = {
 		}
 	}
 	option = {
-		name = ely_capital.2.b
+		name = ely_capital.1.b
 		default_option = yes
 		add_journal_entry = { type = je_fra_capital }
 		ai_chance = {
@@ -128,8 +128,8 @@ ely_capital.2 = {
 ely_capital_fix.2 = {
 	type = country_event
 	placement = root
-	title = ely_capital.2.t
-	desc = ely_capital.2.d
+	title = ely_capital.1.t
+	desc = ely_capital.1.d
 
 	duration = 3
 
@@ -150,7 +150,7 @@ ely_capital_fix.2 = {
 	}
 
 	option = {
-		name = ely_capital_fix.2.a
+		name = ely_capital_fix.1.a
 		remove_modifier = no_meta_game
 	}
 	
@@ -159,8 +159,8 @@ ely_capital_fix.2 = {
 ely_capital.3 = {
 	type = country_event
 	placement = root
-	title = ely_capital.3.t
-	desc = ely_capital.3.d
+	title = ely_capital.1.t
+	desc = ely_capital.1.d
 
 	duration = 3
 
@@ -181,7 +181,7 @@ ely_capital.3 = {
 	}
 
 	option = {
-		name = ely_capital.3.a
+		name = ely_capital.1.a
 		add_radicals = {
 			value = very_large_radicals
 		}	
@@ -191,7 +191,7 @@ ely_capital.3 = {
 		}
 	}
 	option = {
-		name = ely_capital.3.b
+		name = ely_capital.1.b
 		default_option = yes
 		add_journal_entry = { type = je_gbr_capital }
 		ai_chance = {
@@ -205,8 +205,8 @@ ely_capital.3 = {
 ely_capital_fix.3 = {
 	type = country_event
 	placement = root
-	title = ely_capital.3.t
-	desc = ely_capital.3.d
+	title = ely_capital.1.t
+	desc = ely_capital.1.d
 
 	duration = 3
 
@@ -227,7 +227,7 @@ ely_capital_fix.3 = {
 	}
 
 	option = {
-		name = ely_capital_fix.3.a
+		name = ely_capital_fix.1.a
 		remove_modifier = no_meta_game
 	}
 	
@@ -236,8 +236,8 @@ ely_capital_fix.3 = {
 ely_capital.4 = {
 	type = country_event
 	placement = root
-	title = ely_capital.4.t
-	desc = ely_capital.4.d
+	title = ely_capital.1.t
+	desc = ely_capital.1.d
 
 	duration = 3
 
@@ -258,7 +258,7 @@ ely_capital.4 = {
 	}
 
 	option = {
-		name = ely_capital.4.a
+		name = ely_capital.1.a
 		add_radicals = {
 			value = very_large_radicals
 		}	
@@ -268,7 +268,7 @@ ely_capital.4 = {
 		}
 	}
 	option = {
-		name = ely_capital.4.b
+		name = ely_capital.1.b
 		default_option = yes
 		add_journal_entry = { type = je_chi_capital }
 		ai_chance = {
@@ -282,8 +282,8 @@ ely_capital.4 = {
 ely_capital_fix.4 = {
 	type = country_event
 	placement = root
-	title = ely_capital.4.t
-	desc = ely_capital.4.d
+	title = ely_capital.1.t
+	desc = ely_capital.1.d
 
 	duration = 3
 
@@ -304,7 +304,84 @@ ely_capital_fix.4 = {
 	}
 
 	option = {
-		name = ely_capital_fix.4.a
+		name = ely_capital_fix.1.a
+		remove_modifier = no_meta_game
+	}
+	
+}		
+
+ely_capital.5 = {
+	type = country_event
+	placement = root
+	title = ely_capital.1.t
+	desc = ely_capital.1.d
+
+	duration = 3
+
+	event_image = {
+		video = "votp_agitator_speaking"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	trigger = {
+		# Triggered by JE
+	}
+
+	immediate = {
+			add_journal_entry = { type = je_byz_capital_fix }
+	}
+
+	option = {
+		name = ely_capital.1.a
+		add_radicals = {
+			value = very_large_radicals
+		}	
+		add_modifier = {
+			name = no_meta_game
+			months = -1
+		}
+	}
+	option = {
+		name = ely_capital.1.b
+		default_option = yes
+		add_journal_entry = { type = je_byz_capital }
+		ai_chance = {
+			base = 100
+		}
+		set_capital = STATE_EASTERN_THRACE
+	}
+	
+}	
+
+ely_capital_fix.5 = {
+	type = country_event
+	placement = root
+	title = ely_capital.1.t
+	desc = ely_capital.1.d
+
+	duration = 3
+
+	event_image = {
+		video = "votp_agitator_speaking"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	trigger = {
+		# Triggered by JE
+	}
+
+	immediate = {
+			add_journal_entry = { type = je_byz_capital }
+	}
+
+	option = {
+		name = ely_capital_fix.1.a
 		remove_modifier = no_meta_game
 	}
 	

@@ -37,6 +37,7 @@ byzantine_flavor.1 = {
 		add_journal_entry = { type = je_cultural_shift_byz_bulgarian }
 		add_journal_entry = { type = je_byz_megali_idea }
 		add_journal_entry = { type = je_cultural_shift_byz_greek }
+	}
 }
 
 byzantine_culture.1 = {
@@ -73,12 +74,14 @@ byzantine_culture.1 = {
 			base = 100
 		}
 		remove_primary_culture = cu:greek
+		hidden_effect = {
 			every_country = {
 				every_scope_pop = {
 					limit = { culture = cu:greek }
 					change_pop_culture = { target = cu:rhomaion value = 1 }
 				}
 			}
+		}
 
 		s:STATE_ATTICA = {
 			remove_homeland = cu:greek
@@ -132,6 +135,14 @@ byzantine_culture.1 = {
 			remove_homeland = cu:greek
 			add_homeland = cu:rhomaion
 		}
+		s:STATE_WESTERN_THRACE = {
+			remove_homeland = cu:greek
+			add_homeland = cu:rhomaion
+		}
+		s:STATE_SKOPIA = {
+			remove_homeland = cu:greek
+			add_homeland = cu:rhomaion
+		}
 	}
 }
 
@@ -169,12 +180,14 @@ byzantine_culture.2 = {
 			base = 100
 		}
 		remove_primary_culture = cu:bulgarian
+		hidden_effect = {
 			every_country = {
 				every_scope_pop = {
 					limit = { culture = cu:bulgarian }
 					change_pop_culture = { target = cu:rhomaion value = 1 }
 				}
 			}
+		}
 
 		s:STATE_BULGARIA = {
 			remove_homeland = cu:bulgarian
@@ -233,12 +246,14 @@ byzantine_culture.3 = {
 			base = 100
 		}
 		remove_primary_culture = cu:albanian
+		hidden_effect = {
 			every_country = {
 				every_scope_pop = {
 					limit = { culture = cu:albanian }
 					change_pop_culture = { target = cu:rhomaion value = 1 }
 				}
 			}
+		}
 
 		s:STATE_ALBANIA = {
 			remove_homeland = cu:albanian
@@ -291,12 +306,14 @@ byzantine_culture.4 = {
 		ai_chance = {
 			base = 100
 		}
+		hidden_effect = {
 			every_country = {
 				every_scope_pop = {
 					limit = { culture = cu:serb }
 					change_pop_culture = { target = cu:rhomaion value = 1 }
 				}
 			}
+		}
 
 		s:STATE_BOSNIA = {
 			remove_homeland = cu:serb
@@ -325,6 +342,10 @@ byzantine_culture.4 = {
 			add_homeland = cu:rhomaion
 		}
 		s:STATE_DELVIDEK = {
+			remove_homeland = cu:serb
+			add_homeland = cu:rhomaion
+		}
+		s:STATE_BANAT = {
 			remove_homeland = cu:serb
 			add_homeland = cu:rhomaion
 		}
@@ -364,12 +385,14 @@ byzantine_culture.6 = {
 		ai_chance = {
 			base = 100
 		}
+		hidden_effect = {
 			every_country = {
 				every_scope_pop = {
 					limit = { culture = cu:georgian }
 					change_pop_culture = { target = cu:rhomaion value = 1 }
 				}
 			}
+		}
 
 		s:STATE_GREATER_CAUCASUS = {
 			remove_homeland = cu:georgian
@@ -414,12 +437,14 @@ byzantine_culture.7 = {
 		ai_chance = {
 			base = 100
 		}
+		hidden_effect = {
 			every_country = {
 				every_scope_pop = {
 					limit = { culture = cu:armenian }
 					change_pop_culture = { target = cu:rhomaion value = 1 }
 				}
 			}
+		}
 
 		s:STATE_ARMENIA = {
 			remove_homeland = cu:armenian
@@ -455,6 +480,100 @@ byzantine_culture.7 = {
 		}
 		s:STATE_ADANA = {
 			remove_homeland = cu:armenian
+		}
+	}
+}
+byzantine_culture.8 = {
+	type = country_event
+	placement = ROOT
+	
+	title = byzantine_culture.8.t
+	desc = byzantine_culture.8.d
+	flavor = byzantine_culture.8.f
+	
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+	
+	trigger = {
+	}
+
+	immediate = {
+		cu:turkish = {
+			save_scope_as = armenian_scope
+		}
+	}
+
+	option = {
+		name = byzantine_culture.8.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+		add_primary_culture = cu:turko_roman
+		remove_primary_culture = cu:turkish
+		hidden_effect = {
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:turkish }
+					change_pop_culture = { target = cu:turko_roman value = 1 }
+				}
+			}
+		}
+
+		s:STATE_ALEPPO = {
+			remove_homeland = cu:turkish
+			add_homeland = cu:turko_roman
+		}
+		s:STATE_HUDAVENDIGAR = {
+			remove_homeland = cu:turkish
+			add_homeland = cu:turko_roman
+		}
+		s:STATE_AYDIN = {
+			remove_homeland = cu:turkish
+			add_homeland = cu:turko_roman
+		}
+		s:STATE_KONYA = {
+			remove_homeland = cu:turkish
+			add_homeland = cu:turko_roman
+		}
+		s:STATE_KASTAMONU = {
+			remove_homeland = cu:turkish
+			add_homeland = cu:turko_roman
+		}
+		s:STATE_TRABZON = {
+			remove_homeland = cu:turkish
+			add_homeland = cu:turko_roman
+		}
+		s:STATE_ERZURUM = {
+			remove_homeland = cu:turkish
+			add_homeland = cu:turko_roman
+		}
+		s:STATE_KARS = {
+			remove_homeland = cu:turkish
+			add_homeland = cu:turko_roman
+		}
+		s:STATE_ANKARA = {
+			remove_homeland = cu:turkish
+			add_homeland = cu:turko_roman
+		}
+		s:STATE_DIYARBAKIR = {
+			remove_homeland = cu:turkish
+			add_homeland = cu:turko_roman
+		}
+		s:STATE_ADANA = {
+			remove_homeland = cu:turkish
+			add_homeland = cu:turko_roman
+		}
+		s:STATE_EASTERN_THRACE = {
+			remove_homeland = cu:turkish
+			add_homeland = cu:turko_roman
 		}
 	}
 }

@@ -157,6 +157,7 @@ palatine_house.1 = {
 		}
 		c:PRU = {
 			annex = c:KRA
+			annex = c:ANH
 			if = {
 				limit = { exists = s:STATE_MECKLENBURG.region_state:DEN }
 				s:STATE_MECKLENBURG.region_state:DEN = { set_state_owner = c:PRU }

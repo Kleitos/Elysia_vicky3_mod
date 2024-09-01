@@ -328,32 +328,102 @@ byzantine_glory.1 = {
 	}
 
 	immediate = {
-		random_scope_state = {
-			limit = {
-					state_region = {
-						is_homeland = cu:turkish
-					}
-				}
-			save_scope_as = turkish_byzantine_scope
+		s:STATE_BOSNIA = {
+			add_claim = c:BYZ
+		}
+		s:STATE_MONTENEGRO = {
+			add_claim = c:BYZ
+		}
+		s:STATE_NORTHERN_SERBIA = {
+			add_claim = c:BYZ
+		}
+		s:STATE_SOUTHERN_SERBIA = {
+			add_claim = c:BYZ
+		}
+		s:STATE_DALMATIA = {
+			add_claim = c:BYZ
+		}
+		s:STATE_CROATIA = {
+			add_claim = c:BYZ
+		}
+		s:STATE_SLAVONIA = {
+			add_claim = c:BYZ
+		}
+		s:STATE_DELVIDEK = {
+			add_claim = c:BYZ
+		}
+		s:STATE_BANAT = {
+			add_claim = c:BYZ
 		}
 	}
 
     option = {
 		name = byzantine_glory.1.a
+		add_modifier = {
+			name = greek_nationalism
+			months = long_modifier_time
+		}
+		add_journal_entry = { type = je_cultural_shift_byz_serbian }
+		add_loyalists = {
+			value = very_large_radicals
+			culture = cu:rhomaion
+		}
+		every_scope_state = {
+			every_scope_pop = {
+				limit = {
+					culture = cu:turkish
+				}
+				move_pop = s:STATE_TURKMENIA.region_state:TRM
+			}
+		}
+	}
+
+    option = {
+		name = byzantine_glory.1.b
+		add_modifier = {
+			name = greek_nationalism
+			months = long_modifier_time
+		}
+		change_infamy = 50
+		add_journal_entry = { type = je_cultural_shift_byz_serbian }
+		add_loyalists = {
+			value = large_radicals
+			culture = cu:rhomaion
+			
+		}
+		add_radicals = {
+			value = very_large_radicals
+			culture = cu:turkish
+		}
+		every_scope_state = {
+			kill_population_percent_in_state = {
+				percent = 0.15
+				culture = cu:turkish
+			}
+		}
+	}
+
+    option = {
+		name = byzantine_glory.1.c
 		default_option = yes
 		add_modifier = {
 			name = greek_nationalism
 			months = long_modifier_time
 		}
-		every_scope_state = {
-					state_region = {
-						is_homeland = cu:turkish
-					}
-			add_modifier = {
-				name = decree_put_the_riot_down
-				months = long_modifier_time
-			}
+		add_primary_culture = cu:turkish
+		add_journal_entry = { type = je_cultural_shift_byz_serbian }
+		add_journal_entry = { type = je_cultural_shift_byz_turks }
+		add_radicals = {
+			value = very_large_radicals
+			culture = cu:rhomaion
 		}
+		add_loyalists = {
+			value = large_radicals
+			culture = cu:turkish
+			
+		}
+		activate_law = law_type:law_cultural_exclusion
+		activate_law = law_type:law_freedom_of_conscience
 	}
 }
 byzantine_glory.2 = {
@@ -388,6 +458,8 @@ byzantine_glory.2 = {
 			name = greek_nationalism
 			months = -1
 		}
+		add_journal_entry = { type = je_cultural_shift_byz_georgian }
+		add_journal_entry = { type = je_cultural_shift_byz_armenian }
 		s:STATE_TABRIZ = {
 			add_claim = c:BYZ
 		}

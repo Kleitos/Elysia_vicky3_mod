@@ -474,10 +474,6 @@ danubian_breakup.1 = {
 		name = danubian_breakup.1.b
 		play_as = c:HUN
 		c:HUN = {
-			add_modifier = {
-				name = war_for_independence
-				months = normal_modifier_time
-			}
 			activate_law = law_type:law_presidential_republic
 			activate_law = law_type:law_universal_suffrage
 			activate_law = law_type:law_homesteading

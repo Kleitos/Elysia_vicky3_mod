@@ -124,6 +124,37 @@ anglo_iberian_war.2 = {
 	}
 
 	immediate = {
+		c:AUS = {
+			trigger_event = { id = anglo_iberian_war.4 }
+		}
+		c:FRA = {
+			trigger_event = { id = anglo_iberian_war.4 }
+		}
+		c:LMV = {
+			trigger_event = { id = anglo_iberian_war.4 }
+			trigger_event = { id = italian_wars.1 days = 365  }
+		}
+		c:CHI = {
+			trigger_event = { id = anglo_iberian_war.4 }
+		}
+		c:ELY = {
+			trigger_event = { id = anglo_iberian_war.4 }
+		}
+		c:RUS = {
+			trigger_event = { id = anglo_iberian_war.4 }
+		}
+		c:NOV = {
+			trigger_event = { id = anglo_iberian_war.4 }
+		}
+		c:TWT = {
+			trigger_event = { id = anglo_iberian_war.4 }
+		}
+		c:MYS = {
+			trigger_event = { id = anglo_iberian_war.4 }
+		}
+		c:JAP = {
+			trigger_event = { id = anglo_iberian_war.4 }
+		}	
 		c:GBR = {
 			trigger_event = { id = anglo_iberian_war.3 }
 			add_journal_entry = { type = je_danish_war_GBR }
@@ -838,33 +869,6 @@ anglo_iberian_war.3 = {
 	}
 
 	immediate = {		
-		c:AUS = {
-			trigger_event = { id = anglo_iberian_war.4 }
-		}
-		c:FRA = {
-			trigger_event = { id = anglo_iberian_war.4 }
-		}
-		c:LMV = {
-			trigger_event = { id = anglo_iberian_war.4 }
-		}
-		c:CHI = {
-			trigger_event = { id = anglo_iberian_war.4 }
-		}
-		c:ELY = {
-			trigger_event = { id = anglo_iberian_war.4 }
-		}
-		c:RUS = {
-			trigger_event = { id = anglo_iberian_war.4 }
-		}
-		c:TWT = {
-			trigger_event = { id = anglo_iberian_war.4 }
-		}
-		c:MYS = {
-			trigger_event = { id = anglo_iberian_war.4 }
-		}
-		c:JAP = {
-			trigger_event = { id = anglo_iberian_war.4 }
-		}	
 	}
 
     option = {

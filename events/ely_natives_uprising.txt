@@ -413,7 +413,7 @@ native_guarani.1 = {
 				add_war_goal = {
 					holder = c:GRI
 					type = return_state
-					target_state = s:STATE_SANTA_FE.region_state:GRI
+					target_state = s:STATE_SANTA_FE.region_state:ARG
 					target_country = c:ARG
 				}
 				add_war_goal = {
@@ -493,6 +493,12 @@ native_patagonian.1 = {
 					holder = c:PAT
 					type = return_state
 					target_state = s:STATE_LA_PAMPA.region_state:ARG
+					target_country = c:ARG
+				}
+				add_war_goal = {
+					holder = c:PAT
+					type = return_state
+					target_state = s:conquer_state.region_state:ARG
 					target_country = c:ARG
 				}
 				add_war_goal = {
@@ -679,6 +685,10 @@ native_patagonian.2 = {
 		}
 		s:STATE_PATAGONIA = {
 			remove_claim = c:ARG	
+		}
+		s:STATE_SOUTH_ATLANTIC_ISLANDS = {
+			remove_claim = c:ARG	
+			add_homeland = cu:patagonian
 		}
 	}	
 }
@@ -937,10 +947,6 @@ afro_brazilian_slave_revolt.1 = {
 		c:AGJ = {
 			add_modifier = {
 				name = danish_war_oportunist
-				months = normal_modifier_time
-			}
-			add_modifier = {
-				name = taiping_land_socialization
 				months = normal_modifier_time
 			}
 			activate_law = law_type:law_presidential_republic

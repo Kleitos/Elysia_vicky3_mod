@@ -78,9 +78,9 @@ danish_english_victory.2 = {
 	type = country_event
 	placement = ROOT
 
-	title = danish_english_victory.2.t
-	desc = danish_english_victory.2.d
-	flavor = danish_english_victory.2.f
+	title = danish_english_victory.1.t
+	desc = danish_english_victory.1.d
+	flavor = danish_english_victory.1.f
 
 	event_image = {	
 		video = "gfx/e	vent_pictures/unspecific_world_fair.bk2"
@@ -171,9 +171,9 @@ danish_english_victory.3 = {
 	type = country_event
 	placement = ROOT
 
-	title = danish_english_victory.3.t
-	desc = danish_english_victory.3.d
-	flavor = danish_english_victory.3.f
+	title = danish_english_victory.1.t
+	desc = danish_english_victory.1.d
+	flavor = danish_english_victory.1.f
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_world_fair.bk2"
@@ -232,9 +232,9 @@ danish_english_victory.4 = {
 	type = country_event
 	placement = ROOT
 
-	title = danish_english_victory.4.t
-	desc = danish_english_victory.4.d
-	flavor = danish_english_victory.4.f
+	title = danish_english_victory.1.t
+	desc = danish_english_victory.1.d
+	flavor = danish_english_victory.1.f
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_world_fair.bk2"
@@ -293,9 +293,9 @@ danish_english_victory.5 = {
 	type = country_event
 	placement = ROOT
 
-	title = danish_english_victory.5.t
-	desc = danish_english_victory.5.d
-	flavor = danish_english_victory.5.f
+	title = danish_english_victory.1.t
+	desc = danish_english_victory.1.d
+	flavor = danish_english_victory.1.f
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_world_fair.bk2"
@@ -343,9 +343,9 @@ danish_english_victory.6 = {
 	type = country_event
 	placement = ROOT
 
-	title = danish_english_victory.6.t
-	desc = danish_english_victory.6.d
-	flavor = danish_english_victory.6.f
+	title = danish_english_victory.1.t
+	desc = danish_english_victory.1.d
+	flavor = danish_english_victory.1.f
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_world_fair.bk2"
@@ -392,9 +392,9 @@ danish_english_victory.7 = {
 	type = country_event
 	placement = ROOT
 
-	title = danish_english_victory.7.t
-	desc = danish_english_victory.7.d
-	flavor = danish_english_victory.7.f
+	title = danish_english_victory.1.t
+	desc = danish_english_victory.1.d
+	flavor = danish_english_victory.1.f
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_world_fair.bk2"
@@ -426,9 +426,9 @@ danish_english_victory.8 = {
 	type = country_event
 	placement = ROOT
 
-	title = danish_english_victory.8.t
-	desc = danish_english_victory.8.d
-	flavor = danish_english_victory.8.f
+	title = danish_english_victory.1.t
+	desc = danish_english_victory.1.d
+	flavor = danish_english_victory.1.f
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_world_fair.bk2"
@@ -479,9 +479,9 @@ danish_english_victory.9 = {
 	type = country_event
 	placement = ROOT
 
-	title = danish_english_victory.9.t
-	desc = danish_english_victory.9.d
-	flavor = danish_english_victory.9.f
+	title = danish_english_victory.1.t
+	desc = danish_english_victory.1.d
+	flavor = danish_english_victory.1.f
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_world_fair.bk2"
@@ -498,6 +498,14 @@ danish_english_victory.9 = {
 	}
 
 	immediate = {
+		if = {
+			limit = { exists = s:STATE_SOUTH_ATLANTIC_ISLANDS.region_state:GBR }
+			s:STATE_SOUTH_ATLANTIC_ISLANDS.region_state:GBR = { set_state_owner = c:ARG }
+		}
+		if = {
+			limit = { exists = s:STATE_SOUTH_ATLANTIC_ISLANDS.region_state:LIB }
+			s:STATE_SOUTH_ATLANTIC_ISLANDS.region_state:LIB = { set_state_owner = c:ARG }
+		}
 	}
 
     option = {
@@ -539,6 +547,10 @@ danish_english_victory.9 = {
 			remove_homeland = cu:brazilian
 			remove_homeland = cu:sulista
 			remove_homeland = cu:afro_brazilian
+			add_homeland = cu:platinean
+			add_homeland = cu:afro_american
+		}
+		s:STATE_SOUTH_ATLANTIC_ISLANDS = {
 			add_homeland = cu:platinean
 			add_homeland = cu:afro_american
 		}		
@@ -624,9 +636,9 @@ spanish_swedish_victory.2 = {
 	type = country_event
 	placement = ROOT
 
-	title = spanish_swedish_victory.2.t
-	desc = spanish_swedish_victory.2.d
-	flavor = spanish_swedish_victory.2.f
+	title = spanish_swedish_victory.1.t
+	desc = spanish_swedish_victory.1.d
+	flavor = spanish_swedish_victory.1.f
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_world_fair.bk2"
@@ -688,9 +700,9 @@ spanish_swedish_victory.3 = {
 	type = country_event
 	placement = ROOT
 
-	title = spanish_swedish_victory.3.t
-	desc = spanish_swedish_victory.3.d
-	flavor = spanish_swedish_victory.3.f
+	title = spanish_swedish_victory.1.t
+	desc = spanish_swedish_victory.1.d
+	flavor = spanish_swedish_victory.1.f
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_world_fair.bk2"
@@ -780,9 +792,9 @@ spanish_swedish_victory.4 = {
 	type = country_event
 	placement = ROOT
 
-	title = spanish_swedish_victory.4.t
-	desc = spanish_swedish_victory.4.d
-	flavor = spanish_swedish_victory.4.f
+	title = spanish_swedish_victory.1.t
+	desc = spanish_swedish_victory.1.d
+	flavor = spanish_swedish_victory.1.f
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_world_fair.bk2"
@@ -841,9 +853,9 @@ spanish_swedish_victory.5 = {
 	type = country_event
 	placement = ROOT
 
-	title = spanish_swedish_victory.5.t
-	desc = spanish_swedish_victory.5.d
-	flavor = spanish_swedish_victory.5.f
+	title = spanish_swedish_victory.1.t
+	desc = spanish_swedish_victory.1.d
+	flavor = spanish_swedish_victory.1.f
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_world_fair.bk2"
@@ -893,9 +905,9 @@ spanish_swedish_victory.6 = {
 	type = country_event
 	placement = ROOT
 
-	title = spanish_swedish_victory.6.t
-	desc = spanish_swedish_victory.6.d
-	flavor = spanish_swedish_victory.6.f
+	title = spanish_swedish_victory.1.t
+	desc = spanish_swedish_victory.1.d
+	flavor = spanish_swedish_victory.1.f
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_world_fair.bk2"
@@ -941,9 +953,9 @@ spanish_swedish_victory.7 = {
 	type = country_event
 	placement = ROOT
 
-	title = spanish_swedish_victory.7.t
-	desc = spanish_swedish_victory.7.d
-	flavor = spanish_swedish_victory.7.f
+	title = spanish_swedish_victory.1.t
+	desc = spanish_swedish_victory.1.d
+	flavor = spanish_swedish_victory.1.f
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_world_fair.bk2"
@@ -987,9 +999,9 @@ spanish_swedish_victory.8 = {
 	type = country_event
 	placement = ROOT
 
-	title = spanish_swedish_victory.8.t
-	desc = spanish_swedish_victory.8.d
-	flavor = spanish_swedish_victory.8.f
+	title = spanish_swedish_victory.1.t
+	desc = spanish_swedish_victory.1.d
+	flavor = spanish_swedish_victory.1.f
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_world_fair.bk2"
@@ -1033,9 +1045,9 @@ spanish_swedish_victory.9 = {
 	type = country_event
 	placement = ROOT
 
-	title = spanish_swedish_victory.9.t
-	desc = spanish_swedish_victory.9.d
-	flavor = spanish_swedish_victory.9.f
+	title = spanish_swedish_victory.1.t
+	desc = spanish_swedish_victory.1.d
+	flavor = spanish_swedish_victory.1.f
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_world_fair.bk2"
@@ -1110,9 +1122,9 @@ spanish_swedish_defeat.2 = {
 	type = country_event
 	placement = ROOT
 
-	title = spanish_swedish_defeat.2.t
-	desc = spanish_swedish_defeat.2.d
-	flavor = spanish_swedish_defeat.2.f
+	title = spanish_swedish_defeat.1.t
+	desc = spanish_swedish_defeat.1.d
+	flavor = spanish_swedish_defeat.1.f
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_vandalized_storefront.bk2"
@@ -1132,7 +1144,7 @@ spanish_swedish_defeat.2 = {
 	}
 
     option = {
-		name = spanish_swedish_defeat.2.a		
+		name = spanish_swedish_defeat.1.a		
 		add_modifier = {
 			name = danish_war_looser
 			months = very_long_modifier_time
@@ -1144,9 +1156,9 @@ spanish_swedish_defeat.3 = {
 	type = country_event
 	placement = ROOT
 
-	title = spanish_swedish_defeat.3.t
-	desc = spanish_swedish_defeat.3.d
-	flavor = spanish_swedish_defeat.3.f
+	title = spanish_swedish_defeat.1.t
+	desc = spanish_swedish_defeat.1.d
+	flavor = spanish_swedish_defeat.1.f
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_vandalized_storefront.bk2"
@@ -1166,7 +1178,7 @@ spanish_swedish_defeat.3 = {
 	}
 
     option = {
-		name = spanish_swedish_defeat.3.a		
+		name = spanish_swedish_defeat.1.a		
 		add_modifier = {
 			name = danish_war_looser
 			months = very_long_modifier_time
@@ -1178,9 +1190,9 @@ spanish_swedish_defeat.7 = {
 	type = country_event
 	placement = ROOT
 
-	title = spanish_swedish_defeat.7.t
-	desc = spanish_swedish_defeat.7.d
-	flavor = spanish_swedish_defeat.7.f
+	title = spanish_swedish_defeat.1.t
+	desc = spanish_swedish_defeat.1.d
+	flavor = spanish_swedish_defeat.1.f
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_vandalized_storefront.bk2"
@@ -1212,9 +1224,9 @@ spanish_swedish_defeat.9 = {
 	type = country_event
 	placement = ROOT
 
-	title = spanish_swedish_defeat.9.t
-	desc = spanish_swedish_defeat.9.d
-	flavor = spanish_swedish_defeat.9.f
+	title = spanish_swedish_defeat.1.t
+	desc = spanish_swedish_defeat.1.d
+	flavor = spanish_swedish_defeat.1.f
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_vandalized_storefront.bk2"
@@ -1234,7 +1246,7 @@ spanish_swedish_defeat.9 = {
 	}
 
     option = {
-		name = spanish_swedish_defeat.9.a		
+		name = spanish_swedish_defeat.1.a	
 		add_modifier = {
 			name = danish_war_looser
 			months = very_long_modifier_time
@@ -1281,9 +1293,9 @@ danish_english_defeat.2 = {
 	type = country_event
 	placement = ROOT
 
-	title = danish_english_defeat.2.t
-	desc = danish_english_defeat.2.d
-	flavor = danish_english_defeat.2.f
+	title = danish_english_defeat.1.t
+	desc = danish_english_defeat.1.d
+	flavor = danish_english_defeat.1.f
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_vandalized_storefront.bk2"
@@ -1303,7 +1315,7 @@ danish_english_defeat.2 = {
 	}
 
     option = {
-		name = danish_english_defeat.2.a		
+		name = danish_english_defeat.1.a	
 		add_modifier = {
 			name = danish_war_looser
 			months = very_long_modifier_time
@@ -1315,9 +1327,9 @@ danish_english_defeat.5 = {
 	type = country_event
 	placement = ROOT
 
-	title = danish_english_defeat.5.t
-	desc = danish_english_defeat.5.d
-	flavor = danish_english_defeat.5.f
+	title = danish_english_defeat.1.t
+	desc = danish_english_defeat.1.d
+	flavor = danish_english_defeat.1.f
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_vandalized_storefront.bk2"
@@ -1337,7 +1349,7 @@ danish_english_defeat.5 = {
 	}
 
     option = {
-		name = danish_english_defeat.5.a		
+		name = danish_english_defeat.1.a	
 		add_modifier = {
 			name = danish_war_looser
 			months = very_long_modifier_time
@@ -1349,9 +1361,9 @@ danish_english_defeat.8 = {
 	type = country_event
 	placement = ROOT
 
-	title = danish_english_defeat.8.t
-	desc = danish_english_defeat.8.d
-	flavor = danish_english_defeat.8.f
+	title = danish_english_defeat.1.t
+	desc = danish_english_defeat.1.d
+	flavor = danish_english_defeat.1.f
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_vandalized_storefront.bk2"
@@ -1371,7 +1383,7 @@ danish_english_defeat.8 = {
 	}
 
     option = {
-		name = danish_english_defeat.8.a		
+		name = danish_english_defeat.1.a	
 		add_modifier = {
 			name = danish_war_looser
 			months = very_long_modifier_time
@@ -1383,9 +1395,9 @@ danish_english_defeat.9 = {
 	type = country_event
 	placement = ROOT
 
-	title = danish_english_defeat.9.t
-	desc = danish_english_defeat.9.d
-	flavor = danish_english_defeat.9.f
+	title = danish_english_defeat.1.t
+	desc = danish_english_defeat.1.d
+	flavor = danish_english_defeat.1.f
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_vandalized_storefront.bk2"
@@ -1405,7 +1417,7 @@ danish_english_defeat.9 = {
 	}
 
     option = {
-		name = danish_english_defeat.9.a		
+		name = danish_english_defeat.1.a	
 		add_modifier = {
 			name = danish_war_looser
 			months = very_long_modifier_time
@@ -1451,9 +1463,9 @@ danish_war_inconclusive.2 = {
 	type = country_event
 	placement = ROOT
 
-	title = danish_war_inconclusive.2.t
-	desc = danish_war_inconclusive.2.d
-	flavor = danish_war_inconclusive.2.f
+	title = danish_war_inconclusive.1.t
+	desc = danish_war_inconclusive.1.d
+	flavor = danish_war_inconclusive.1.f
 
 	event_image = {
 		video = "gfx/event_pictures/southamerica_war_civilians.bk2"
