@@ -75,12 +75,6 @@ italian_wars.2 = {
 	}
 
 	immediate = {	
-		c:LMV = {
-			annex = c:SIC
-		}
-		c:BYZ = {
-			trigger_event = { id = italian_wars.2 }
-		}
 	}
 
     option = {

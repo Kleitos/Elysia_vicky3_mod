@@ -33,6 +33,7 @@ unification_culture.1 = {
 		ai_chance = {
 			base = 100
 		}
+		hidden_effect = {
 			every_country = {
 				every_scope_pop = {
 					limit = { culture = cu:francoprovencal }
@@ -47,7 +48,7 @@ unification_culture.1 = {
 					change_pop_culture = { target = cu:french value = 1 }
 				}
 			}
-
+		}
 		s:STATE_SAVOY = {
 			remove_homeland = cu:francoprovencal
 			add_homeland = cu:french
@@ -141,6 +142,11 @@ unification_culture.2 = {
 		ai_chance = {
 			base = 100
 		}
+		add_primary_culture = cu:german
+		remove_primary_culture = cu:north_german
+		remove_primary_culture = cu:south_german
+		remove_primary_culture = cu:alemannic
+		hidden_effect = {
 			every_country = {
 				every_scope_pop = {
 					limit = { culture = cu:north_german }
@@ -155,7 +161,7 @@ unification_culture.2 = {
 					change_pop_culture = { target = cu:german value = 1 }
 				}
 			}
-
+		}
 		s:STATE_POMERANIA = {
 			remove_homeland = cu:north_german
 			add_homeland = cu:german
@@ -309,6 +315,12 @@ unification_culture.3 = {
 		ai_chance = {
 			base = 100
 		}
+		add_primary_culture = cu:italian
+		remove_primary_culture = cu:north_italian
+		remove_primary_culture = cu:south_italian
+		remove_primary_culture = cu:maltese
+		remove_primary_culture = cu:corsican
+		hidden_effect = {	
 			every_country = {
 				every_scope_pop = {
 					limit = { culture = cu:north_italian }
@@ -327,7 +339,7 @@ unification_culture.3 = {
 					change_pop_culture = { target = cu:italian value = 1 }
 				}
 			}
-
+		}
 		s:STATE_VENETIA = {
 			remove_homeland = cu:north_italian
 			add_homeland = cu:italian
@@ -429,6 +441,12 @@ unification_culture.4 = {
 		ai_chance = {
 			base = 100
 		}
+		add_primary_culture = cu:iberian
+		remove_primary_culture = cu:spanish
+		remove_primary_culture = cu:catalan
+		remove_primary_culture = cu:portuguese
+		remove_primary_culture = cu:galician
+		hidden_effect = {		
 			every_country = {
 				every_scope_pop = {
 					limit = { culture = cu:spanish }
@@ -447,7 +465,7 @@ unification_culture.4 = {
 					change_pop_culture = { target = cu:iberian value = 1 }
 				}
 			}
-
+		}
 		s:STATE_ANDALUSIA = {
 			remove_homeland = cu:spanish
 			add_homeland = cu:iberian
@@ -589,6 +607,12 @@ unification_culture.5 = {
 		ai_chance = {
 			base = 100
 		}
+		add_primary_culture = cu:iranian_culture
+		remove_primary_culture = cu:persian
+		remove_primary_culture = cu:kurdish
+		remove_primary_culture = cu:pashtun
+		remove_primary_culture = cu:baluchi
+		hidden_effect = {
 			every_country = {
 				every_scope_pop = {
 					limit = { culture = cu:persian }
@@ -614,129 +638,112 @@ unification_culture.5 = {
 					limit = { culture = cu:hazara }
 					change_pop_culture = { target = cu:iranian_culture value = 1 }
 				}
+				every_scope_pop = {
+					limit = { culture = cu:mazanderani }
+					change_pop_culture = { target = cu:iranian_culture value = 1 }
+				}
+				every_scope_pop = {
+					limit = { culture = cu:luri }
+					change_pop_culture = { target = cu:iranian_culture value = 1 }
+				}
 			}
-
+		}
 		s:STATE_BALUCHISTAN = {
 			remove_homeland = cu:persian
+			remove_homeland = cu:baluchi
+			remove_homeland = cu:pashtun
 			add_homeland = cu:iranian_culture
-		}
+		}		
 		s:STATE_LARISTAN = {
 			remove_homeland = cu:persian
+			remove_homeland = cu:baluchi
+			add_homeland = cu:iranian_culture
+		}
+		s:STATE_KERMAN = {
+			remove_homeland = cu:persian
+			remove_homeland = cu:baluchi
+			add_homeland = cu:iranian_culture
+		}
+		s:STATE_NORTHERN_BALUCHISTAN = {
+			remove_homeland = cu:pashtun
+			remove_homeland = cu:baluchi
 			add_homeland = cu:iranian_culture
 		}
 		s:STATE_SISTAN = {
 			remove_homeland = cu:persian
+			remove_homeland = cu:baluchi
 			add_homeland = cu:iranian_culture
-		}
+		}		
 		s:STATE_KHORASAN = {
 			remove_homeland = cu:persian
 			add_homeland = cu:iranian_culture
-		}
-		s:STATE_KHUZESTAN = {
+		}	
+		s:STATE_ISFAHAN = {
 			remove_homeland = cu:persian
 			add_homeland = cu:iranian_culture
-		}
-		s:STATE_FARS = {
+		}	
+		s:STATE_KHIVA = {
 			remove_homeland = cu:persian
 			add_homeland = cu:iranian_culture
-		}
-		s:STATE_MAZANDARAN = {
+		}	
+		s:STATE_UZBEKIA = {
 			remove_homeland = cu:persian
 			add_homeland = cu:iranian_culture
-		}
+		}	
 		s:STATE_IRAKAJEMI = {
 			remove_homeland = cu:persian
 			add_homeland = cu:iranian_culture
 		}
+		s:STATE_SEMNAN = {
+			remove_homeland = cu:persian
+			add_homeland = cu:iranian_culture
+		}	
+		s:STATE_AZERBAIJAN = {
+			remove_homeland = cu:persian
+			add_homeland = cu:iranian_culture
+		}	
+		s:STATE_MERZ = {
+			remove_homeland = cu:persian
+			add_homeland = cu:iranian_culture
+		}	
+		s:STATE_TURKMENIA = {
+			remove_homeland = cu:persian
+			add_homeland = cu:iranian_culture
+		}	
 		s:STATE_TABRIZ = {
 			remove_homeland = cu:persian
+			add_homeland = cu:iranian_culture
+		}	
+		s:STATE_KHUZESTAN = {
+			remove_homeland = cu:persian
+			remove_homeland = cu:luri
 			add_homeland = cu:iranian_culture
 		}
 		s:STATE_LURISTAN = {
 			remove_homeland = cu:persian
+			remove_homeland = cu:luri
 			add_homeland = cu:iranian_culture
 		}
-		s:STATE_WESTERN_AFGHANISTAN = {
+		s:STATE_FARS = {
 			remove_homeland = cu:persian
+			remove_homeland = cu:luri
 			add_homeland = cu:iranian_culture
-		}
-		s:STATE_PASHTUNISTAN = {
+		}	
+		s:STATE_MAZANDARAN = {
 			remove_homeland = cu:persian
+			remove_homeland = cu:mazanderani
 			add_homeland = cu:iranian_culture
-		}
-		s:STATE_BALUCHISTAN = {
-			remove_homeland = cu:baluchi
-			add_homeland = cu:iranian_culture
-		}
-		s:STATE_LARISTAN = {
-			remove_homeland = cu:baluchi
-			add_homeland = cu:iranian_culture
-		}
-		s:STATE_SISTAN = {
-			remove_homeland = cu:baluchi
-			add_homeland = cu:iranian_culture
-		}
-		s:STATE_BALUCHISTAN = {
-			remove_homeland = cu:pashtun
-			add_homeland = cu:iranian_culture
-		}
-		s:STATE_WESTERN_AFGHANISTAN = {
-			remove_homeland = cu:pashtun
-			add_homeland = cu:iranian_culture
-		}
-		s:STATE_WESTERN_AFGHANISTAN = {
-			remove_homeland = cu:hazara
-			add_homeland = cu:iranian_culture
-		}
-		s:STATE_EASTERN_AFGHANISTAN = {
-			remove_homeland = cu:hazara
-			add_homeland = cu:iranian_culture
-		}
-		s:STATE_EASTERN_AFGHANISTAN = {
-			remove_homeland = cu:pashtun
-			add_homeland = cu:iranian_culture
-		}
-		s:STATE_PASHTUNISTAN = {
-			remove_homeland = cu:pashtun
-			add_homeland = cu:iranian_culture
-		}
-		s:STATE_WESTERN_AFGHANISTAN = {
-			remove_homeland = cu:tajik
-			add_homeland = cu:iranian_culture
-		}
-		s:STATE_EASTERN_AFGHANISTAN = {
-			remove_homeland = cu:tajik
-			add_homeland = cu:iranian_culture
-		}
-		s:STATE_TAJIKISTAN = {
-			remove_homeland = cu:tajik
-			add_homeland = cu:iranian_culture
-		}
-		s:STATE_KIRGHIZIA = {
-			remove_homeland = cu:tajik
+		}	
+		s:STATE_URMIA = {
+			remove_homeland = cu:persian
+			remove_homeland = cu:kurdish
 			add_homeland = cu:iranian_culture
 		}
 		s:STATE_ALEPPO = {
 			remove_homeland = cu:kurdish
 			add_homeland = cu:iranian_culture
 		}
-		s:STATE_KHORASAN = {
-			remove_homeland = cu:kurdish
-			add_homeland = cu:iranian_culture
-		}
-		s:STATE_TABRIZ = {
-			remove_homeland = cu:kurdish
-			add_homeland = cu:iranian_culture
-		}
-		s:STATE_LURISTAN = {
-			remove_homeland = cu:kurdish
-			add_homeland = cu:iranian_culture
-		}
 		s:STATE_MOSUL = {
-			remove_homeland = cu:kurdish
-			add_homeland = cu:iranian_culture
-		}
-		s:STATE_TRABZON = {
 			remove_homeland = cu:kurdish
 			add_homeland = cu:iranian_culture
 		}
@@ -748,10 +755,6 @@ unification_culture.5 = {
 			remove_homeland = cu:kurdish
 			add_homeland = cu:iranian_culture
 		}
-		s:STATE_DIYARBAKIR = {
-			remove_homeland = cu:kurdish
-			add_homeland = cu:iranian_culture
-		}
 		s:STATE_ADANA = {
 			remove_homeland = cu:kurdish
 			add_homeland = cu:iranian_culture
@@ -760,6 +763,64 @@ unification_culture.5 = {
 			remove_homeland = cu:kurdish
 			add_homeland = cu:iranian_culture
 		}
+		s:STATE_DIYARBAKIR = {
+			remove_homeland = cu:kurdish
+			add_homeland = cu:iranian_culture
+		}
+		s:STATE_PERSIAN_KURDISTAN = {
+			remove_homeland = cu:persian
+			remove_homeland = cu:kurdish
+			add_homeland = cu:iranian_culture
+		}	
+		s:STATE_BALKH = {
+			remove_homeland = cu:persian
+			remove_homeland = cu:pashtun
+			remove_homeland = cu:tajik
+			remove_homeland = cu:hazara
+			add_homeland = cu:iranian_culture
+		}	
+		s:STATE_QUETTA = {
+			remove_homeland = cu:pashtun
+			add_homeland = cu:iranian_culture
+		}		
+		s:STATE_PASHTUNISTAN = {
+			remove_homeland = cu:pashtun
+			add_homeland = cu:iranian_culture
+		}		
+		s:STATE_HERAT = {
+			remove_homeland = cu:pashtun
+			add_homeland = cu:iranian_culture
+		}		
+		s:STATE_KANDAHAR = {
+			remove_homeland = cu:pashtun
+			remove_homeland = cu:tajik
+			remove_homeland = cu:hazara
+			add_homeland = cu:iranian_culture
+		}	
+		s:STATE_CENTRAL_HIGHLANDS = {
+			remove_homeland = cu:pashtun
+			remove_homeland = cu:tajik
+			remove_homeland = cu:hazara
+			add_homeland = cu:iranian_culture
+		}		
+		s:STATE_KABUL = {
+			remove_homeland = cu:pashtun
+			remove_homeland = cu:tajik
+			remove_homeland = cu:hazara
+			add_homeland = cu:iranian_culture
+		}		
+		s:STATE_TAJIKISTAN = {
+			remove_homeland = cu:tajik
+			add_homeland = cu:iranian_culture
+		}
+		s:STATE_KIRGHIZIA = {
+			remove_homeland = cu:tajik
+			add_homeland = cu:iranian_culture
+		}
+		s:STATE_FERGANA = {
+			remove_homeland = cu:tajik
+			add_homeland = cu:iranian_culture
+		}		
 	}
 }
 
@@ -793,6 +854,16 @@ unification_culture.6 = {
 		ai_chance = {
 			base = 100
 		}
+		add_primary_culture = cu:turanian_culture
+		remove_primary_culture = cu:uzbek
+		remove_primary_culture = cu:kazak
+		remove_primary_culture = cu:kirgiz
+		remove_primary_culture = cu:turkmen
+		remove_primary_culture = cu:tatar
+		remove_primary_culture = cu:bashkir
+		remove_primary_culture = cu:chuvash
+		remove_primary_culture = cu:uighur
+		hidden_effect = {
 			every_country = {
 				every_scope_pop = {
 					limit = { culture = cu:uzbek }
@@ -810,78 +881,122 @@ unification_culture.6 = {
 					limit = { culture = cu:turkmen }
 					change_pop_culture = { target = cu:turanian_culture value = 1 }
 				}
+				every_scope_pop = {
+					limit = { culture = cu:tatar }
+					change_pop_culture = { target = cu:turanian_culture value = 1 }
+				}
+				every_scope_pop = {
+					limit = { culture = cu:bashkir }
+					change_pop_culture = { target = cu:turanian_culture value = 1 }
+				}
+				every_scope_pop = {
+					limit = { culture = cu:chuvash }
+					change_pop_culture = { target = cu:turanian_culture value = 1 }
+				}
+				every_scope_pop = {
+					limit = { culture = cu:uighur }
+					change_pop_culture = { target = cu:turanian_culture value = 1 }
+				}
 			}
-
-		s:STATE_KHIVA = {
-			remove_homeland = cu:uzbek
-			add_homeland = cu:turanian_culture
-		}
-		s:STATE_KHIVA = {
-			remove_homeland = cu:kazak
-			add_homeland = cu:turanian_culture
-		}
-		s:STATE_UZBEKIA = {
-			remove_homeland = cu:uzbek
-			add_homeland = cu:turanian_culture
-		}
-		s:STATE_UZBEKIA = {
-			remove_homeland = cu:kazak
-			add_homeland = cu:turanian_culture
 		}
 		s:STATE_TAJIKISTAN = {
 			remove_homeland = cu:uzbek
 			add_homeland = cu:turanian_culture
 		}
-		s:STATE_KIRGHIZIA = {
+		s:STATE_KHIVA = {
 			remove_homeland = cu:uzbek
-			add_homeland = cu:turanian_culture
-		}
-		s:STATE_KIRGHIZIA = {
-			remove_homeland = cu:kirgiz
-			add_homeland = cu:turanian_culture
-		}
-		s:STATE_TURKMENIA = {
-			remove_homeland = cu:uzbek
-			add_homeland = cu:turanian_culture
-		}
-		s:STATE_TURKMENIA = {
-			remove_homeland = cu:turkmen
-			add_homeland = cu:turanian_culture
-		}
-		s:STATE_SEMIRECHE = {
-			remove_homeland = cu:kirgiz
-			add_homeland = cu:turanian_culture
-		}
-		s:STATE_SEMIRECHE = {
-			remove_homeland = cu:kazak
-			add_homeland = cu:turanian_culture
-		}
-		s:STATE_SEMIRECHE = {
-			remove_homeland = cu:uighur
-			add_homeland = cu:turanian_culture
-		}
-		s:STATE_JETISY = {
-			remove_homeland = cu:kirgiz
-			add_homeland = cu:turanian_culture
-		}
-		s:STATE_JETISY = {
-			remove_homeland = cu:kazak
-			add_homeland = cu:turanian_culture
-		}
-		s:STATE_JETISY = {
-			remove_homeland = cu:uighur
-			add_homeland = cu:turanian_culture
-		}
-		s:STATE_AKMOLINSK = {
 			remove_homeland = cu:kazak
 			add_homeland = cu:turanian_culture
 		}
 		s:STATE_AKMOLINSK = {
 			remove_homeland = cu:uzbek
+			remove_homeland = cu:kazak
+			add_homeland = cu:turanian_culture
+		}
+		s:STATE_SYRDARYA = {
+			remove_homeland = cu:uzbek
+			remove_homeland = cu:kazak
+			add_homeland = cu:turanian_culture
+		}
+		s:STATE_UZBEKIA = {
+			remove_homeland = cu:uzbek
+			remove_homeland = cu:kazak
+			add_homeland = cu:turanian_culture
+		}
+		s:STATE_AKTOBE = {
+			remove_homeland = cu:kazak
 			add_homeland = cu:turanian_culture
 		}
 		s:STATE_URALSK = {
 			remove_homeland = cu:kazak
+			add_homeland = cu:turanian_culture
+		}
+		s:STATE_SEMIRECHE = {
+			remove_homeland = cu:kazak
+			remove_homeland = cu:kirgiz
+			remove_homeland = cu:uighur
+			add_homeland = cu:turanian_culture
+		}
+		s:STATE_JETISY = {
+			remove_homeland = cu:kazak
+			remove_homeland = cu:kirgiz
+			remove_homeland = cu:uighur
+			add_homeland = cu:turanian_culture
+		}
+		s:STATE_KIRGHIZIA = {
+			remove_homeland = cu:uzbek
+			remove_homeland = cu:kirgiz
+			add_homeland = cu:turanian_culture
+		}
+		s:STATE_FERGANA = {
+			remove_homeland = cu:uzbek
+			remove_homeland = cu:kirgiz
+			add_homeland = cu:turanian_culture
+		}
+		s:STATE_MERZ = {
+			remove_homeland = cu:turkmen
+			add_homeland = cu:turanian_culture
+		}
+		s:STATE_TURKMENIA = {
+			remove_homeland = cu:uzbek
+			remove_homeland = cu:turkmen
+			add_homeland = cu:turanian_culture
+		}
+		s:STATE_BALKH = {
+			remove_homeland = cu:uzbek
+			remove_homeland = cu:turkmen
+			add_homeland = cu:turanian_culture
+		}
+		s:STATE_DZUNGARIA = {
+			remove_homeland = cu:uighur
+			add_homeland = cu:turanian_culture
+		}
+		s:STATE_TIANSHAN = {
+			remove_homeland = cu:uighur
+			add_homeland = cu:turanian_culture
+		}
+		s:STATE_TARTARIA = {
+			remove_homeland = cu:tatar
+			add_homeland = cu:turanian_culture
+		}
+		s:STATE_SAMARA = {
+			remove_homeland = cu:tatar
+			add_homeland = cu:turanian_culture
+		}
+		s:STATE_KAZAN = {
+			remove_homeland = cu:tatar
+			add_homeland = cu:turanian_culture
+		}
+		s:STATE_CHUVASHIA = {
+			remove_homeland = cu:chuvash
+			add_homeland = cu:turanian_culture
+		}
+		s:STATE_UFA = {
+			remove_homeland = cu:bashkir
+			add_homeland = cu:turanian_culture
+		}
+		s:STATE_CHELYABINSK = {
+			remove_homeland = cu:bashkir
 			add_homeland = cu:turanian_culture
 		}
 	}
@@ -917,6 +1032,13 @@ unification_culture.7 = {
 		ai_chance = {
 			base = 100
 		}
+		add_primary_culture = cu:ethiopian_culture
+		remove_primary_culture = cu:amhara
+		remove_primary_culture = cu:afar
+		remove_primary_culture = cu:oromo
+		remove_primary_culture = cu:sidama
+		remove_primary_culture = cu:tigray
+		hidden_effect = {
 			every_country = {
 				every_scope_pop = {
 					limit = { culture = cu:amhara }
@@ -939,7 +1061,7 @@ unification_culture.7 = {
 					change_pop_culture = { target = cu:ethiopian_culture value = 1 }
 				}
 			}
-
+		}
 		s:STATE_OROMIA = {
 			remove_homeland = cu:oromo
 			add_homeland = cu:ethiopian_culture
@@ -1021,6 +1143,10 @@ unification_culture.8 = {
 		ai_chance = {
 			base = 100
 		}
+		add_primary_culture = cu:malian_culture
+		remove_primary_culture = cu:mande
+		remove_primary_culture = cu:bambara
+		hidden_effect = {
 			every_country = {
 				every_scope_pop = {
 					limit = { culture = cu:mande }
@@ -1030,18 +1156,13 @@ unification_culture.8 = {
 					limit = { culture = cu:bambara }
 					change_pop_culture = { target = cu:malian_culture value = 1 }
 				}
-				every_scope_pop = {
-					limit = { culture = cu:afro_american }
-					change_pop_culture = { target = cu:malian_culture value = 1 }
-				}
 			}
-
+		}
 		s:STATE_GUINEA = {
 			remove_homeland = cu:mande
 			add_homeland = cu:malian_culture
 		}
 		s:STATE_LIBERIA = {
-			remove_homeland = cu:afro_american
 			add_homeland = cu:malian_culture
 		}
 		s:STATE_INNER_MAURITANIA = {
@@ -1129,6 +1250,16 @@ unification_culture.9 = {
 		ai_chance = {
 			base = 100
 		}
+		add_primary_culture = cu:scandinavian
+		remove_primary_culture = cu:swedish
+		remove_primary_culture = cu:norwegian
+		remove_primary_culture = cu:sami
+		remove_primary_culture = cu:danish
+		remove_primary_culture = cu:icelandic
+		remove_primary_culture = cu:finnish
+		remove_primary_culture = cu:estonian
+		remove_primary_culture = cu:karelian
+		hidden_effect = {
 			every_country = {
 				every_scope_pop = {
 					limit = { culture = cu:swedish }
@@ -1155,13 +1286,19 @@ unification_culture.9 = {
 					change_pop_culture = { target = cu:scandinavian value = 1 }
 				}
 				every_scope_pop = {
+					limit = { culture = cu:karelian }
+					change_pop_culture = { target = cu:scandinavian value = 1 }
+				}
+				every_scope_pop = {
 					limit = { culture = cu:icelandic }
 					change_pop_culture = { target = cu:scandinavian value = 1 }
 				}
 			}
-
-		s:STATE_GOTLAND = {
+		}
+		s:STATE_INGRIA = {
 			remove_homeland = cu:swedish
+			remove_homeland = cu:finnish
+			remove_homeland = cu:karelian
 			add_homeland = cu:scandinavian
 		}
 		s:STATE_GOTALAND = {
@@ -1174,9 +1311,6 @@ unification_culture.9 = {
 		}
 		s:STATE_NORRLAND = {
 			remove_homeland = cu:swedish
-			add_homeland = cu:scandinavian
-		}
-		s:STATE_NORRLAND = {
 			remove_homeland = cu:sami
 			add_homeland = cu:scandinavian
 		}
@@ -1184,11 +1318,8 @@ unification_culture.9 = {
 			remove_homeland = cu:swedish
 			add_homeland = cu:scandinavian
 		}
-		s:STATE_SOUTHERN_FINLAND = {
+		s:STATE_UUSIMAA = {
 			remove_homeland = cu:swedish
-			add_homeland = cu:scandinavian
-		}
-		s:STATE_SOUTHERN_FINLAND = {
 			remove_homeland = cu:finnish
 			add_homeland = cu:scandinavian
 		}
@@ -1197,47 +1328,65 @@ unification_culture.9 = {
 			add_homeland = cu:scandinavian
 		}
 		s:STATE_WEST_KARELIA = {
+			remove_homeland = cu:swedish
 			remove_homeland = cu:finnish
 			add_homeland = cu:scandinavian
 		}
 		s:STATE_OSTROBOTHNIA = {
 			remove_homeland = cu:swedish
-			add_homeland = cu:scandinavian
-		}
-		s:STATE_OSTROBOTHNIA = {
-			remove_homeland = cu:sami
-			add_homeland = cu:scandinavian
-		}
-		s:STATE_OSTROBOTHNIA = {
 			remove_homeland = cu:finnish
 			add_homeland = cu:scandinavian
 		}
-		s:STATE_ESTONIA = {
-			remove_homeland = cu:estonian
+		s:STATE_WEST_KARELIA = {
+			remove_homeland = cu:swedish
+			remove_homeland = cu:finnish
 			add_homeland = cu:scandinavian
 		}
-		s:STATE_WESTERN_NORWAY = {
-			remove_homeland = cu:norwegian
+		s:STATE_OULU = {
+			remove_homeland = cu:swedish
+			remove_homeland = cu:finnish
+			remove_homeland = cu:sami
 			add_homeland = cu:scandinavian
 		}
-		s:STATE_NORTHERN_NORWAY = {
-			remove_homeland = cu:norwegian
+		s:STATE_EAST_KARELIA = {
+			remove_homeland = cu:swedish
+			remove_homeland = cu:finnish
+			remove_homeland = cu:karelian
+			add_homeland = cu:scandinavian
+		}
+		s:STATE_KOLA = {
+			remove_homeland = cu:swedish
+			remove_homeland = cu:finnish
+			remove_homeland = cu:sami
+			add_homeland = cu:scandinavian
+		}
+		s:STATE_KUOPIO = {
+			remove_homeland = cu:finnish
 			add_homeland = cu:scandinavian
 		}
 		s:STATE_NORTHERN_NORWAY = {
 			remove_homeland = cu:sami
+			remove_homeland = cu:norwegian
 			add_homeland = cu:scandinavian
 		}
 		s:STATE_EASTERN_NORWAY = {
 			remove_homeland = cu:norwegian
 			add_homeland = cu:scandinavian
 		}
-		s:STATE_EAST_KARELIA = {
-			remove_homeland = cu:finnish
+		s:STATE_WESTERN_NORWAY = {
+			remove_homeland = cu:norwegian
 			add_homeland = cu:scandinavian
 		}
-		s:STATE_ICELAND = {
-			remove_homeland = cu:icelandic
+		s:STATE_TALINN = {
+			remove_homeland = cu:estonian
+			add_homeland = cu:scandinavian
+		}
+		s:STATE_TARTU = {
+			remove_homeland = cu:estonian
+			add_homeland = cu:scandinavian
+		}
+		s:STATE_SCHLESWIG_HOLSTEIN = {
+			remove_homeland = cu:danish
 			add_homeland = cu:scandinavian
 		}
 		s:STATE_JUTLAND = {
@@ -1248,8 +1397,8 @@ unification_culture.9 = {
 			remove_homeland = cu:danish
 			add_homeland = cu:scandinavian
 		}
-		s:STATE_SCHLESWIG_HOLSTEIN = {
-			remove_homeland = cu:danish
+		s:STATE_ICELAND = {
+			remove_homeland = cu:icelandic
 			add_homeland = cu:scandinavian
 		}
 	}
@@ -1285,6 +1434,10 @@ unification_culture.10 = {
 		ai_chance = {
 			base = 100
 		}
+		add_primary_culture = cu:baltic_culture
+		remove_primary_culture = cu:latvian
+		remove_primary_culture = cu:lithuanian
+		hidden_effect = {
 			every_country = {
 				every_scope_pop = {
 					limit = { culture = cu:latvian }
@@ -1297,7 +1450,7 @@ unification_culture.10 = {
 					change_pop_culture = { target = cu:baltic_culture value = 1 }
 				}
 			}
-
+		}
 		s:STATE_LATVIA = {
 			remove_homeland = cu:latvian
 			add_homeland = cu:baltic_culture
@@ -1347,6 +1500,16 @@ unification_culture.11 = {
 		ai_chance = {
 			base = 100
 		}
+		add_primary_culture = cu:guinean_culture
+		remove_primary_culture = cu:yoruba
+		remove_primary_culture = cu:akan
+		remove_primary_culture = cu:bassa
+		remove_primary_culture = cu:edo
+		remove_primary_culture = cu:ewe
+		remove_primary_culture = cu:fon
+		remove_primary_culture = cu:ibo
+		remove_primary_culture = cu:kru
+		hidden_effect = {
 			every_country = {
 				every_scope_pop = {
 					limit = { culture = cu:yoruba }
@@ -1395,6 +1558,7 @@ unification_culture.11 = {
 					change_pop_culture = { target = cu:guinean_culture value = 1 }
 				}
 			}
+		}
 
 		s:STATE_DAHOMEY = {
 			remove_homeland = cu:fon
@@ -1517,6 +1681,7 @@ unification_culture.12 = {
 		ai_chance = {
 			base = 100
 		}
+		hidden_effect = {
 			every_country = {
 				every_scope_pop = {
 					limit = { culture = cu:lao }
@@ -1529,7 +1694,7 @@ unification_culture.12 = {
 					change_pop_culture = { target = cu:thai value = 1 }
 				}
 			}
-
+		}
 		s:STATE_LAOS = {
 			remove_homeland = cu:lao
 			add_homeland = cu:thai
@@ -1587,6 +1752,7 @@ unification_culture.13 = {
 		ai_chance = {
 			base = 100
 		}
+		hidden_effect = {
 			every_country = {
 				every_scope_pop = {
 					limit = { culture = cu:karen }
@@ -1599,7 +1765,7 @@ unification_culture.13 = {
 					change_pop_culture = { target = cu:burmese value = 1 }
 				}
 			}
-
+		}
 		s:STATE_TENASSERIM = {
 			remove_homeland = cu:karen
 			add_homeland = cu:burmese
@@ -1653,6 +1819,12 @@ unification_culture.14 = {
 		ai_chance = {
 			base = 100
 		}
+		add_primary_culture = cu:western_slavs
+		remove_primary_culture = cu:czech
+		remove_primary_culture = cu:slovak
+		remove_primary_culture = cu:polish
+		remove_primary_culture = cu:sorb
+		hidden_effect = {
 			every_country = {
 				every_scope_pop = {
 					limit = { culture = cu:czech }
@@ -1677,7 +1849,7 @@ unification_culture.14 = {
 					change_pop_culture = { target = cu:western_slavs value = 1 }
 				}
 			}
-
+		}
 		s:STATE_BOHEMIA = {
 			remove_homeland = cu:czech
 			add_homeland = cu:western_slavs
@@ -1696,9 +1868,6 @@ unification_culture.14 = {
 		}
 		s:STATE_SILESIA = {
 			remove_homeland = cu:sorb
-			add_homeland = cu:western_slavs
-		}
-		s:STATE_SILESIA = {
 			remove_homeland = cu:polish
 			add_homeland = cu:western_slavs
 		}
@@ -1775,6 +1944,12 @@ unification_culture.15 = {
 		ai_chance = {
 			base = 100
 		}
+		add_primary_culture = cu:yugoslavs
+		remove_primary_culture = cu:slovene
+		remove_primary_culture = cu:bosniak
+		remove_primary_culture = cu:croat
+		remove_primary_culture = cu:serb
+		hidden_effect = {
 			every_country = {
 				every_scope_pop = {
 					limit = { culture = cu:slovene }
@@ -1793,12 +1968,16 @@ unification_culture.15 = {
 					change_pop_culture = { target = cu:yugoslavs value = 1 }
 				}
 			}
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:serb }
+					change_pop_culture = { target = cu:yugoslavs value = 1 }
+				}
+			}
+		}
 
 		s:STATE_ISTRIA = {
 			remove_homeland = cu:slovene
-			add_homeland = cu:yugoslavs
-		}
-		s:STATE_ISTRIA = {
 			remove_homeland = cu:croat
 			add_homeland = cu:yugoslavs
 		}
@@ -1808,22 +1987,43 @@ unification_culture.15 = {
 		}
 		s:STATE_BOSNIA = {
 			remove_homeland = cu:bosniak
-			add_homeland = cu:yugoslavs
-		}
-		s:STATE_BOSNIA = {
+			remove_homeland = cu:serb
 			remove_homeland = cu:croat
 			add_homeland = cu:yugoslavs
 		}
 		s:STATE_DALMATIA = {
 			remove_homeland = cu:croat
+			remove_homeland = cu:serb
 			add_homeland = cu:yugoslavs
 		}
 		s:STATE_CROATIA = {
 			remove_homeland = cu:croat
+			remove_homeland = cu:serb
 			add_homeland = cu:yugoslavs
 		}
 		s:STATE_SLAVONIA = {
 			remove_homeland = cu:croat
+			remove_homeland = cu:serb
+			add_homeland = cu:yugoslavs
+		}
+		s:STATE_MONTENEGRO = {
+			remove_homeland = cu:serb
+			add_homeland = cu:yugoslavs
+		}
+		s:STATE_NORTHERN_SERBIA = {
+			remove_homeland = cu:serb
+			add_homeland = cu:yugoslavs
+		}
+		s:STATE_SOUTHERN_SERBIA = {
+			remove_homeland = cu:serb
+			add_homeland = cu:yugoslavs
+		}
+		s:STATE_DELVIDEK = {
+			remove_homeland = cu:serb
+			add_homeland = cu:yugoslavs
+		}
+		s:STATE_BANAT = {
+			remove_homeland = cu:serb
 			add_homeland = cu:yugoslavs
 		}
 	}

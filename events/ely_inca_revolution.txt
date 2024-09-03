@@ -198,6 +198,14 @@ ely_incan_revolution.1 = {
 			value = large_radicals
 			strata = rich
 		}
+		hidden_effect = {
+			c:INC = {
+				change_infamy = -100
+			}
+			c:TWT = {
+				change_infamy = -100
+			}		
+		}
 		create_diplomatic_play = {
 			target_country = c:INC
 			type = dp_annex_war
@@ -214,6 +222,14 @@ ely_incan_revolution.1 = {
 		name = ely_incan_revolution.1.b
 		default_option = yes
 		play_as = c:INC
+		hidden_effect = {
+			c:INC = {
+				change_infamy = -100
+			}
+			c:TWT = {
+				change_infamy = -100
+			}		
+		}
 		create_diplomatic_play = {
 			target_country = c:INC
 			type = dp_annex_war

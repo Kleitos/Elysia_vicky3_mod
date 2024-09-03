@@ -1,1 +1,693 @@
 ﻿namespace = russian_revolution
+
+russian_revolution.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = russian_revolution.1.t
+	desc = russian_revolution.1.d
+	flavor = russian_revolution.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {	
+		if = {
+			limit = {
+				NOT = { exists = c:ARM }
+				exists = s:STATE_ARMENIA.region_state:RUS
+			}
+			create_country = {
+				tag = ARM
+				origin = c:RUS
+				state = s:STATE_ARMENIA.region_state:RUS
+			}
+		}
+		else_if = {
+			limit = {
+				exists = c:ARM
+				exists = s:STATE_ARMENIA.region_state:RUS
+			}
+			s:STATE_ARMENIA.region_state:RUS = { set_state_owner = c:ARM }
+		}
+		else_if = {
+			limit = {
+				NOT = { exists = c:ARM }
+			}
+			random_country = {
+				limit = {
+					is_secessionist = yes
+					any_scope_state = {
+						state_region = s:STATE_ARMENIA
+					}
+				}
+				change_tag = ARM
+			}
+		}
+		if = {
+			limit = {
+				NOT = { exists = c:AZB }
+				exists = s:STATE_AZERBAIJAN.region_state:RUS
+			}
+			create_country = {
+				tag = AZB
+				origin = c:RUS
+				state = s:STATE_AZERBAIJAN.region_state:RUS
+			}
+		}
+		else_if = {
+			limit = {
+				exists = c:AZB
+				exists = s:STATE_AZERBAIJAN.region_state:RUS
+			}
+			s:STATE_AZERBAIJAN.region_state:RUS = { set_state_owner = c:AZB }
+		}
+		else_if = {
+			limit = {
+				NOT = { exists = c:AZB }
+			}
+			random_country = {
+				limit = {
+					is_secessionist = yes
+					any_scope_state = {
+						state_region = s:STATE_AZERBAIJAN
+					}
+				}
+				change_tag = AZB
+			}
+		}
+		if = {
+			limit = {
+				NOT = { exists = c:GEO }
+				exists = s:STATE_GREATER_CAUCASUS.region_state:RUS
+			}
+			create_country = {
+				tag = GEO
+				origin = c:RUS
+				state = s:STATE_GREATER_CAUCASUS.region_state:RUS
+			}
+		}
+		else_if = {
+			limit = {
+				exists = c:GEO
+				exists = s:STATE_GREATER_CAUCASUS.region_state:RUS
+			}
+			s:STATE_GREATER_CAUCASUS.region_state:RUS = { set_state_owner = c:GEO }
+		}
+		else_if = {
+			limit = {
+				NOT = { exists = c:GEO }
+			}
+			random_country = {
+				limit = {
+					is_secessionist = yes
+					any_scope_state = {
+						state_region = s:STATE_GREATER_CAUCASUS
+					}
+				}
+				change_tag = GEO
+			}
+		}
+		c:RUS = {
+			change_infamy = -300
+		}
+		c:NOV = {
+			every_scope_state = {
+				limit = {
+					is_incorporated = yes
+				}
+				set_variable = NOV_incorporated_state
+			}
+		}		
+	}
+
+    option = {
+		name = russian_revolution.1.a
+		default_option = yes
+		c:RUS = {
+			remove_diplomatic_pact = {
+				country = c:KZH
+				type = protectorate
+			}	
+			remove_diplomatic_pact = {
+				country = c:UZH
+				type = protectorate
+			}	
+			remove_diplomatic_pact = {
+				country = c:OZH
+				type = protectorate
+			}	
+			remove_diplomatic_pact = {
+				country = c:SIB
+				type = puppet
+			}	
+		}
+		if = {
+			limit = { exists = s:STATE_ELIZAVETPOL.region_state:RUS }
+			s:STATE_ELIZAVETPOL.region_state:RUS = { set_state_owner = c:ARM }
+		}
+		if = {
+			limit = { exists = s:STATE_KARS.region_state:RUS }
+			s:STATE_KARS.region_state:RUS = { set_state_owner = c:GEO }
+		}
+	}
+}
+
+russian_revolution.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = russian_revolution.2.t
+	desc = russian_revolution.2.d
+	flavor = russian_revolution.2.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		c:RUS = {
+			every_scope_state = {
+				limit = {
+					is_incorporated = yes
+				}
+				set_variable = RUS_incorporated_state
+			}
+		}				
+	}
+
+    option = {
+		name = russian_revolution.2.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+		
+		add_modifier = {
+			name = rus_revolution
+            months = short_modifier_time
+		}
+	}
+}
+
+russian_revolution.3 = {
+	type = country_event
+	placement = ROOT
+
+	title = russian_revolution.3.t
+	desc = russian_revolution.3.d
+	flavor = russian_revolution.3.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {		
+		every_scope_state = {
+			limit = {
+				owner = ROOT
+				has_variable = RUS_incorporated_state
+			}
+			set_state_type = incorporated
+		}
+	}
+
+    option = {
+		name = russian_revolution.3.a
+		default_option = yes
+		trigger_event = { id = russian_revolution.5 days = 90 }
+		remove_modifier = rus_revolution			
+		change_tag = RUS
+	}
+}
+
+russian_revolution.4 = {
+	type = country_event
+	placement = ROOT
+
+	title = russian_revolution.4.t
+	desc = russian_revolution.4.d
+	flavor = russian_revolution.4.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		every_scope_state = {
+			limit = {
+				owner = ROOT
+				has_variable = NOV_incorporated_state
+			}
+			set_state_type = incorporated
+		}		
+	}
+
+    option = {
+		name = russian_revolution.4.a
+		default_option = yes
+		remove_modifier = rus_autocratic
+	}
+}
+
+russian_revolution.5 = {
+	type = country_event
+	placement = ROOT
+
+	title = russian_revolution.5.t
+	desc = russian_revolution.5.d
+	flavor = russian_revolution.5.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {	
+		c:FRA ?= {
+			set_secret_goal = {
+				country = c:RUS
+				secret_goal = none
+			}
+		}
+		c:SWE ?= {
+			set_secret_goal = {
+				country = c:RUS
+				secret_goal = conquer
+			}
+		}
+		c:GBR ?= {
+			set_secret_goal = {
+				country = c:RUS
+				secret_goal = none
+			}
+		}
+		c:BOH ?= {
+			set_secret_goal = {
+				country = c:RUS
+				secret_goal = conquer
+			}
+		}
+		c:BAV ?= {
+			set_secret_goal = {
+				country = c:RUS
+				secret_goal = none
+			}
+		}
+		c:PRU ?= {
+			set_secret_goal = {
+				country = c:RUS
+				secret_goal = antagonize
+			}
+		}
+		c:AUS ?= {
+			set_secret_goal = {
+				country = c:RUS
+				secret_goal = antagonize
+			}
+		}
+		c:PER ?= {
+			set_secret_goal = {
+				country = c:RUS
+				secret_goal = conquer
+			}
+		}
+		c:TUR ?= {
+			set_secret_goal = {
+				country = c:RUS
+				secret_goal = conquer
+			}
+		}
+		c:CHI ?= {
+			set_secret_goal = {
+				country = c:RUS
+				secret_goal = antagonize
+			}
+		}
+		c:BYZ ?= {
+			set_secret_goal = {
+				country = c:RUS
+				secret_goal = none
+			}
+		}
+		c:ELY ?= {
+			set_secret_goal = {
+				country = c:RUS
+				secret_goal = antagonize
+			}
+		}
+		c:JAP ?= {
+			set_secret_goal = {
+				country = c:RUS
+				secret_goal = antagonize
+			}
+		}
+		c:LMV ?= {
+			set_secret_goal = {
+				country = c:RUS
+				secret_goal = befriend
+			}
+		}
+		c:SPA ?= {
+			set_secret_goal = {
+				country = c:RUS
+				secret_goal = befriend
+			}
+		}
+		c:RUS ?= {
+			set_secret_goal = {
+				country = c:FRA
+				secret_goal = befriend
+			}
+			set_secret_goal = {
+				country = c:LMV
+				secret_goal = befriend
+			}
+			set_secret_goal = {
+				country = c:SPA
+				secret_goal = befriend
+			}
+			set_secret_goal = {
+				country = c:JAP
+				secret_goal = antagonize
+			}
+			set_secret_goal = {
+				country = c:AUS
+				secret_goal = antagonize
+			}
+			set_secret_goal = {
+				country = c:BYZ
+				secret_goal = befriend
+			}
+			set_secret_goal = {
+				country = c:PER
+				secret_goal = conquer
+			}
+			set_secret_goal = {
+				country = c:TUR
+				secret_goal = antagonize
+			}
+			set_secret_goal = {
+				country = c:SWE
+				secret_goal = conquer
+			}
+			set_secret_goal = {
+				country = c:BOH
+				secret_goal = conquer
+			}
+			set_secret_goal = {
+				country = c:PRU
+				secret_goal = antagonize
+			}
+			set_secret_goal = {
+				country = c:BAV
+				secret_goal = befriend
+			}
+			set_secret_goal = {
+				country = c:GBR
+				secret_goal = befriend
+			}
+			set_secret_goal = {
+				country = c:CHI
+				secret_goal = antagonize
+			}
+			set_secret_goal = {
+				country = c:ELY
+				secret_goal = antagonize
+			}
+			set_secret_goal = {
+				country = c:KZH
+				secret_goal = conquer
+			}
+			set_secret_goal = {
+				country = c:UZH
+				secret_goal = conquer
+			}
+			set_secret_goal = {
+				country = c:OZH
+				secret_goal = conquer
+			}
+			set_secret_goal = {
+				country = c:KAZ
+				secret_goal = conquer
+			}
+			set_secret_goal = {
+				country = c:MOL
+				secret_goal = protect
+			}
+			set_secret_goal = {
+				country = c:WAL
+				secret_goal = protect
+			}
+			set_secret_goal = {
+				country = c:CIR
+				secret_goal = conquer
+			}
+			set_secret_goal = {
+				country = c:CHC
+				secret_goal = conquer
+			}
+			set_secret_goal = {
+				country = c:KHI
+				secret_goal = conquer
+			}
+			set_secret_goal = {
+				country = c:BUK
+				secret_goal = conquer
+			}
+			set_secret_goal = {
+				country = c:KOK
+				secret_goal = conquer
+			}
+			set_secret_goal = {
+				country = c:XIN
+				secret_goal = conquer
+			}
+			set_secret_goal = {
+				country = c:TUV
+				secret_goal = conquer
+			}
+			set_secret_goal = {
+				country = c:MGL
+				secret_goal = conquer
+			}
+			set_secret_goal = {
+				country = c:MCH
+				secret_goal = conquer
+			}
+			set_secret_goal = {
+				country = c:ARB
+				secret_goal = conquer
+			}
+			set_secret_goal = {
+				country = c:KUN
+				secret_goal = conquer
+			}
+			set_secret_goal = {
+				country = c:CHT
+				secret_goal = conquer
+			}
+			set_secret_goal = {
+				country = c:SIB
+				secret_goal = conquer
+			}
+			set_secret_goal = {
+				country = c:GEO
+				secret_goal = conquer
+			}
+			set_secret_goal = {
+				country = c:ARM
+				secret_goal = conquer
+			}
+			set_secret_goal = {
+				country = c:AZB
+				secret_goal = conquer
+			}
+		}
+	}
+
+    option = {
+		name = russian_revolution.5.a
+		default_option = yes
+		s:STATE_CHELYABINSK = {
+			add_claim = c:RUS
+		}	
+		s:STATE_INGRIA = {
+			add_claim = c:RUS
+		}	
+		s:STATE_SAMARA = {
+			add_claim = c:RUS
+		}	
+		trigger_event = { id = russian_revolution.6 days = 90 }
+		add_journal_entry = { type = je_the_eastern_border }
+		add_journal_entry = { type = je_pacify_the_steppes_NOV }
+
+		if = {
+			limit = {
+				has_dlc_feature = ep1_content
+			}
+			add_journal_entry = { type = je_conquest_of_central_asia }
+		}
+	}
+}
+
+russian_revolution.6 = {
+	type = country_event
+	placement = ROOT
+
+	title = russian_revolution.6.t
+	desc = russian_revolution.6.d
+	flavor = russian_revolution.6.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {	
+	}
+
+    option = {
+		name = russian_revolution.6.a
+		default_option = yes
+		ai_chance = {
+			base = 3
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_NOVGOROD
+			}
+			add_loyalists_in_state = {
+				value = very_large_radicals
+			}
+		}
+	}
+    option = {
+		name = russian_revolution.6.b
+		ai_chance = {
+			base = 3
+		}
+		set_capital = STATE_KIEV
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_KIEV
+			}
+			add_loyalists_in_state = {
+				value = very_large_radicals
+			}
+		}
+	}
+    option = {
+		name = russian_revolution.6.c
+		ai_chance = {
+			base = 3
+		}
+		set_capital = STATE_MINSK
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_MINSK
+			}
+			add_loyalists_in_state = {
+				value = very_large_radicals
+			}
+		}
+	}
+    option = {
+		name = russian_revolution.6.d
+		ai_chance = {
+			base = 1
+		}
+		set_capital = STATE_MOSCOW
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_MOSCOW
+			}
+			add_loyalists_in_state = {
+				value = very_large_radicals
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_KIEV
+			}
+			add_radicals_in_state = {
+				value = very_large_radicals
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_NOVGOROD
+			}
+			add_radicals_in_state = {
+				value = very_large_radicals
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_MINSK
+			}
+			add_radicals_in_state = {
+				value = very_large_radicals
+			}
+		}
+	}
+}

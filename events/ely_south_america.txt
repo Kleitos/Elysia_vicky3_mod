@@ -314,13 +314,14 @@ ely_south_america_integration.2 = {
 		ai_chance = {
 			base = 100
 		}
+		hidden_effect = {
 			every_country = {
 				every_scope_pop = {
 					limit = { culture = cu:aimara }
 					change_pop_culture = { target = cu:quechua value = 1 }
 				}
 			}
-			
+		}		
 		s:STATE_AREQUIPA = {
 			remove_homeland = cu:aimara
 		}
@@ -381,13 +382,14 @@ ely_south_america_integration.3 = {
 		ai_chance = {
 			base = 100
 		}
+		hidden_effect = {
 			every_country = {
 				every_scope_pop = {
 					limit = { culture = cu:muisca }
 					change_pop_culture = { target = cu:quechua value = 1 }
 				}
 			}
-
+		}
 		s:STATE_CAUCA = {
 			remove_homeland = cu:muisca
 		}

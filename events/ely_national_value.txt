@@ -221,14 +221,19 @@ ely_national_value.5 = {
 		ai_chance = {
 			base = 100
 		}
+		hidden_effect = {
 			every_country = {
 				every_scope_pop = {
 					limit = { culture = cu:inuit }
 					change_pop_culture = { target = cu:elysian value = 1 }
 				}
 			}
-
+		}
 		s:STATE_NUNAVUT = {
+			remove_homeland = cu:inuit
+			add_homeland = cu:elysian
+		}
+		s:STATE_NEWFOUNDLAND = {
 			remove_homeland = cu:inuit
 			add_homeland = cu:elysian
 		}

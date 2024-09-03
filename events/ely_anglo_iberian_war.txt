@@ -704,12 +704,6 @@ anglo_iberian_war.2 = {
 			add_war_goal = {
 				holder = c:BAV
 				type = conquer_state
-				target_state = s:STATE_HANNOVER.region_state:DEN
-				target_country = c:DEN
-			}
-			add_war_goal = {
-				holder = c:BAV
-				type = conquer_state
 				target_state = s:STATE_BRUNSWICK.region_state:PRU
 				target_country = c:PRU
 			}
