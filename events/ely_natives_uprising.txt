@@ -1141,9 +1141,6 @@ native_mandika.3 = {
     option = {
 		name = native_mandika.3.a
 		default_option = yes		
-		c:KBU = {
-			add_journal_entry = { type = je_conquer_NSW }
-		}
 		create_diplomatic_play = {
 			target_country = c:LIB
 			holder = c:KBU
