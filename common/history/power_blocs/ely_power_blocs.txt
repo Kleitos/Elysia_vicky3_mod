@@ -66,4 +66,26 @@
 			}
 		}
 	}
+
+	c:NOV = {
+		create_power_bloc = {
+			name = RUS_YASAK
+
+			map_color = { 78 134 62 }
+
+			founding_date = 1582.9.1 
+			identity = identity_trade_league
+			principle = principle_internal_trade_1
+
+			# subjects are automatically part of the bloc
+		}
+		if = {
+			limit = {
+				has_dlc_feature = power_bloc_features
+			}
+			power_bloc = {
+				add_principle = principle_transport_1
+			}
+		}
+	}
 }	
