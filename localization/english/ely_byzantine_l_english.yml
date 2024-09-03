@@ -3,6 +3,9 @@
   ##Cultures##
   
  byzantine_legacy:0 "Byzantine Legacy"
+ 
+ rhomaion:0 "Rhomaic"
+ turko_roman:0 "Turko-Rhomaic"
   
  ### Events ###
 
@@ -39,7 +42,18 @@
  byzantine_glory.1.t:0 "Rhomaion's Triumph"
  byzantine_glory.1.d:0 "We have done what was thought impossible, we have avanged Manzikert and centuries of Turkic rule over Rhomaion's people. The imperial eagle flies high over what was once the core of our empire, now it is time to work hard and suppress dissent to make it stay once and for all."
  byzantine_glory.1.f:0 ""
- byzantine_glory.1.a:0 "A triumphant returns for our soldiers and Heroes!"
+ byzantine_glory.1.a:0 "Expel the Turks, make them go back to their steppes"
+ byzantine_glory.1.b:0 "Let them taste our steel once more"
+ byzantine_glory.1.c:0 "The time for crusade is over, Let us show mercy."
+
+ byzantine_glory.2.t:0 "Reclaim the Caucasus"
+ byzantine_glory.2.d:0 "With the return of Anatolia, voice now cry to reunite with our Caucasian brethren, Armenia and Georgia were for long a part of the greater Rhoman world. Let us liberate them from false pretenders and altaic hordes."
+ byzantine_glory.2.f:0 ""
+ byzantine_glory.2.a:0 "March on"
+    
+ byzantine_culture.1.t:0 "Unifying the Greeks"
+ byzantine_culture.1.d:0 ""
+ byzantine_culture.1.f:0 "We are the True Heirs of Rome"
     
  byzantine_culture.2.t:0 "Uniting with the Bulgars"
  byzantine_culture.2.d:0 ""
@@ -60,8 +74,18 @@
  byzantine_culture.7.t:0 "Uniting with the Armenians"
  byzantine_culture.7.d:0 ""
  byzantine_culture.7.f:0 "We are the True Heirs of Rome"
+  
+ byzantine_culture.8.t:0 "The rhomanization of the turks"
+ byzantine_culture.8.d:0 ""
+ byzantine_culture.8.f:0 ""
+ byzantine_culture.8.a:0 "From ennemies to brothers"
  
  byzantine_culture.1.a:0 "We are all Rhomaioi"
+  
+ byzantine_flavor.1.t:0 "The Order Of Saint Constantine"
+ byzantine_flavor.1.d:0 "After the infamous sacking of Vienna by the Ottomans in 1684, a grand coalition of european powers formed to throw the muslim threat out of the Balkans. A modern crusade that lasted for the last century and a half managed to push back the turks to Constantinople, and in a ironic twist of fate, now it us pushing to reclaim the city of world's desire."
+ byzantine_flavor.1.f:0 ""
+ byzantine_flavor.1.a:0 "We will avenge 1453"
  
   ### Journals Entries ###
  
@@ -83,6 +107,9 @@
  je_cultural_shift_byz_greek:0 "Rhomaic Culture"
  je_cultural_shift_byz_greek_reason:0 "With the Elysians claiming the mantle of the Hellenic Legacy, we must ensure our disctinction from our wayward cousins."
  
+ je_byz_megali_idea:0 "Greco-Roman Heritage"
+ je_byz_megali_idea_reason:0 "Rome conquered Greece, but Rome's Heart was conquered by Greece. Thus went the saying. By reuniting the Greek Homelands, we can ensure their loyalty."
+ 
  je_cultural_shift_byz_bulgarian:0 "Assimilate the Bulgarians"
  je_cultural_shift_byz_bulgarian_reason:0 "The Bulgarians have both been foe and friends to our roman ancestor, now they share the same hatred towards the turks. Let us unite towards a common goal."
  
@@ -97,6 +124,9 @@
  
  je_cultural_shift_byz_armenian:0 "Assimilate the Armenians"
  je_cultural_shift_byz_armenian_reason:0 "The Armenians have always been present in the mountains of Anatolia. Sometimes friends, often foes, let us work on recounciling our differences."
+
+ je_cultural_shift_byz_turks:0 "Rhomanize the Turks"
+ je_cultural_shift_byz_turks_reason:0 "The Armenians have always been present in the mountains of Anatolia. Sometimes friends, often foes, let us work on recounciling our differences."
  
  je_byzantine_antioch:0 "Reconquest of Antioch"
  je_byzantine_antioch_reason:0 "Now that the Patriarch of Constantinople is once more under our wing, let us make good use of the situation and take back Antioch."

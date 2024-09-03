@@ -1,0 +1,150 @@
+﻿l_english:
+
+
+#Journal Entries#
+ 
+ je_fred:0 "The Succession of Denmark"
+ je_fred_reason:0 "The Danish king is old, and his only successor is a germanic prince from a distant house. Already the vultures from the Bavarian and Swedish claimants are preparing to move."
+ 
+ je_danish_war_GBR:0 "The war of Danish Succession"
+ je_danish_war_GBR_reason:0 "We have our own goals for the war."
+ 
+ je_danish_war_SPA:0 "The war of Danish Succession"
+ je_danish_war_SPA_reason:0 "We have our own goals for the war."
+ 
+ je_danish_war_DEN:0 "The war of Danish Succession"
+ je_danish_war_DEN_reason:0 "We have our own goals for the war."
+ 
+ je_danish_war_BAV:0 "The war of Danish Succession"
+ je_danish_war_BAV_reason:0 "We have our own goals for the war."
+ 
+ je_danish_war_SWE:0 "The war of Danish Succession"
+ je_danish_war_SWE_reason:0 "We have our own goals for the war."
+ 
+ je_danish_war_SEI:0 "The war of Danish Succession"
+ je_danish_war_SEI_reason:0 "We have our own goals for the war."
+ 
+ je_danish_war_BIC:0 "The war of Danish Succession"
+ je_danish_war_BIC_reason:0 "We have our own goals for the war."
+ 
+ je_danish_war_SAS:0 "The war of Danish Succession"
+ je_danish_war_SAS_reason:0 "We have our own goals for the war."
+ 
+ je_danish_war_WAS:0 "The war of Danish Succession"
+ je_danish_war_WAS_reason:0 "We have our own goals for the war."
+ 
+ je_danish_war_NSW:0 "The war of Danish Succession"
+ je_danish_war_NSW_reason:0 "We have our own goals for the war."
+ 
+ je_danish_war_PRU:0 "The war of Danish Succession"
+ je_danish_war_PRU_reason:0 "We have our own goals for the war."
+ 
+ je_danish_war_BOH:0 "The war of Danish Succession"
+ je_danish_war_BOH_reason:0 "We have our own goals for the war."
+ 
+ je_danish_war_SIL:0 "The war of Danish Succession"
+ je_danish_war_SIL_reason:0 "We have our own goals for the war."
+ 
+ je_danish_war_LIB:0 "The war of Danish Succession"
+ je_danish_war_LIB_reason:0 "We have our own goals for the war."
+ 
+ je_danish_war_HAN:0 "The war of Danish Succession"
+ je_danish_war_HAN_reason:0 "We have our own goals for the war."
+ 
+ je_danish_war_BRZ:0 "The war of Danish Succession"
+ je_danish_war_BRZ_reason:0 "We have our own goals for the war."
+ 
+ je_danish_war_WIN:0 "The war of Danish Succession"
+ je_danish_war_WIN_reason:0 "We have our own goals for the war."
+ 
+ je_danish_war_ARG:0 "The war of Danish Succession"
+ je_danish_war_ARG_reason:0 "We have our own goals for the war."
+ 
+ #Events#
+ 
+ fred.1.t:0 "The death of Frederick VI of Denmark"
+ fred.1.d:0 "The old king is dead, in his last moments he chose a distant relative of the duchy of Oldenburg to rule his realm after him. Repudiating the treaty of Ribe and annexing the remnants of the Hanseatic League, his majesty now style himself as King of the North."
+ fred.1.f:0 ""
+ fred.1.a:0 "A dark path ahead"
+ 
+ fred.2.t:0 "The death of Frederick VI of Denmark"
+ fred.2.d:0 "The old fool is dead, his successor trample on the freedom of our germanic brethren and masquerade as a 'Nordic' emperor, let us contact our friend in Sweden, perhaps we can make a deal."
+ fred.2.f:0 ""
+ fred.2.a:0 "Let us prepare"
+ 
+ hanseatic_war.1.t:0 "The death of Frederick VI of Denmark"
+ hanseatic_war.1.d:0 "The death of the Danish king, is the spark that might ignite a european war. The Bavarians have already contacted us in order to split the throne, but the massive colonial possessions of the Hanseatic League might trigger a response from our colonial rivals if we were to make a move."
+ hanseatic_war.1.f:0 ""
+ hanseatic_war.1.a:0 "A risk worth taking"
+ hanseatic_war.1.b:0 "We can't afford to anger the other colonial powers"
+ 
+ palatine_house.1.t:0 "The death of Frederick VI of Denmark"
+ palatine_house.1.d:0 "The Bavarians and Swedes have made clear their intent on carving up the Danish realm, with Sweden gaining the colonial spoils, as much as we love loosing a rival, the strengthening of Sweden is against our policies. Already a secret deal between the crowns of Denmark, Prussia and the United Kingdom of Great Britain and Northern Ireland has been signed in case of aggression."
+ palatine_house.1.f:0 ""
+ palatine_house.1.a:0 "That should deter them"
+ 
+ anglo_iberian_war.1.t:0 "The death of Frederick VI of Denmark"
+ anglo_iberian_war.1.d:0 "Great Britain has made a move to strengthen its colonial position by making a deal with the Danes. There is now an opportunity for us to enforce our claims on the Britons colonial possessions by siding with the Swedes."
+ anglo_iberian_war.1.f:0 ""
+ anglo_iberian_war.1.a:0 "The die is cast"
+ 
+ anglo_iberian_war.2.t:0 "The death of Frederick VI of Denmark"
+ anglo_iberian_war.2.d:0 "All negotiation have broken down, now everyone is mustering their armies, for war has come."
+ anglo_iberian_war.2.f:0 ""
+ anglo_iberian_war.2.a:0 "To War"
+ 
+ anglo_iberian_war.3.t:0 "The war of Danish Succession"
+ anglo_iberian_war.3.d:0 "Secret alliances, backroom deals and unwillingness to negotiate as lead us to war."
+ anglo_iberian_war.3.f:0 ""
+ anglo_iberian_war.3.a:0 "We will prevail"
+ 
+ anglo_iberian_war.4.t:0 "War in Europe"
+ anglo_iberian_war.4.d:0 "The death of one european monarch has lit the fuse of a War that now takes place on five continents."
+ anglo_iberian_war.4.f:0 ""
+ anglo_iberian_war.4.a:0 "Interesting times"
+ 
+ danish_english_victory.1.t:0 "Victory in the Danish War"
+ danish_english_victory.1.d:0 "During the war, our troops managed to take most of our own objectives for war and allowed us to negotiate from a position of strength."
+ danish_english_victory.1.f:0 ""
+ 
+ danish_english_victory.1.a:0 "Britain rules the waves"
+ danish_english_victory.2.a:0 "Denmark rules the north"
+ danish_english_victory.3.a:0 "We are the masters of India"
+ danish_english_victory.4.a:0 "Terra Australis is ours"
+ danish_english_victory.5.a:0 "Germany will be ruled by Prussia"
+ danish_english_victory.6.a:0 "Now to Consolidate our rule in Africa"
+ danish_english_victory.7.a:0 "We rule the Rhine, now about Prussia"
+ danish_english_victory.8.a:0 "We are masters of the Amazon"
+ danish_english_victory.9.a:0 "A glorious day"
+ 
+ spanish_swedish_victory.1.t:0 "Victory in the Danish War"
+ spanish_swedish_victory.1.d:0  "During the war, our troops managed to take most of our own objectives for war and allowed us to negotiate from a position of strength."
+ spanish_swedish_victory.1.f:0 ""
+ 
+ spanish_swedish_victory.1.a:0 "Viva Espana"
+ spanish_swedish_victory.2.a:0 "A step closer to Unify Germany"
+ spanish_swedish_victory.3.a:0 "Sweden rules the north"
+ spanish_swedish_victory.4.a:0 "We are the masters of India"
+ spanish_swedish_victory.5.a:0 "Now to Consolidate our rule in Australia"
+ spanish_swedish_victory.6.a:0 "Now to Consolidate our rule in Australia"
+ spanish_swedish_victory.7.a:0 "We will unite the western Slavs"
+ spanish_swedish_victory.8.a:0 "Now to Consolidate our rule in Africa"
+ spanish_swedish_victory.9.a:0 "We are masters of America"
+ 
+ spanish_swedish_defeat.1.t:0 "Defeat in the Danish War"
+ spanish_swedish_defeat.1.d:0 "We have been defeated, our soldiers lay dead and our ennemies flag fly high on what was once ours, it would take a miracle to rise from this crushing blow."
+ spanish_swedish_defeat.1.f:0 ""
+ spanish_swedish_defeat.1.a:0 "Woe to the vanquished"
+ 
+ danish_war_inconclusive.1.t:0 "Stalemate in the Danish War"
+ danish_war_inconclusive.1.d:0 "We have not been able to secure an adcantageous position to decisively win the war. Minor border changes, empty coffers and dead soldiers are all we can show for our commitment to that madness."
+ danish_war_inconclusive.1.f:0 ""
+ danish_war_inconclusive.1.a:0 "I am sick of war"
+ danish_war_inconclusive.2.a:0 "This better not give the natives any idea"
+ 
+ # Modifiers
+ 
+ danish_war_exhausted:0 "Exhausted from War"
+ danish_war_fatigued:0 "Fatigued of War"
+ danish_war_winner:0 "Winner of the Danish War"
+ danish_war_looser:0 "Looser of the Danish War"

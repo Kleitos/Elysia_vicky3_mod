@@ -16,7 +16,8 @@
 
  
  CONF_OF__RHINE: "Confederacy of the Rhine"
- LATIN_PACT: "Pact of Rome"
+ LATIN_PACT: "Bourbon Pact"
+ RUS_YASAK: "Yasak"
 
   ##Buildings##
  building_kiel_canal:0 "Kiel Canal"
@@ -71,13 +72,7 @@
  
  je_andean_pathway:0 "Andean Pathway"
  je_andean_pathway_reason:0 "The Elysians have achieved diverse marvelous feats of engineering, but the carving of entire mountains to let place for railroads is one we are more interested than any. Seeing as both our nation are on amicable terms we should ask for their expertise."
- 
- je_fred:0 "The Succession of Schleswig-Holstein"
- je_fred_reason:0 "The Treaty of Ribe, agreed to by the Danish King in order to gain control of both states, seemed to indicate that Schleswig and Holstein were to remain united, though that interpretation is being challenged."
- 
- je_anglo_iberian_war:0 "Anglo-Iberian war for India"
- je_anglo_iberian_war_reason:0 "While a tenuous peace was signed between our nations for the dismantling of previous Indian realms, push from colonial administrator and economic magnates to fully control the subcontinent at the expense of peace are more and more numerous. Border clashes become more numerous and war seems inevitable."
- 
+
  je_cultural_shift_fra:0 "The Greater French identity"
  je_cultural_shift_fra_reason:0 "In order to unite our people, we should take steps into creating a true national identity."
  
