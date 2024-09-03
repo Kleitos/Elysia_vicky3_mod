@@ -24,10 +24,6 @@
 		ig:ig_landowners = {
 			add_ruling_interest_group = yes
 		}
-
-		add_journal_entry = {
-			type = je_avert_greek_mutiny
-		}
 		add_modifier = {
 			name = favored_by_destiny
             months = -1
