@@ -1,0 +1,107 @@
+﻿ideology_nov_plutocratic = {
+	icon = "gfx/interface/icons/ideology_icons/plutocratic.dds"
+
+	lawgroup_governance_principles = {
+		law_monarchy = strongly_disapprove
+		law_presidential_republic = strongly_approve
+		law_parliamentary_republic = approve
+		law_theocracy = strongly_disapprove
+		law_council_republic = neutral
+	}
+
+	lawgroup_distribution_of_power = {
+		law_autocracy = strongly_disapprove
+		law_oligarchy = disapprove
+		law_landed_voting = approve	
+		law_wealth_voting = approve	
+		law_census_voting = neutral		
+		law_universal_suffrage = disapprove
+		law_anarchy = strongly_disapprove
+		law_single_party_state = disapprove
+		law_technocracy = strongly_approve
+	}
+	
+	lawgroup_bureaucracy = {
+		law_hereditary_bureaucrats = strongly_disapprove
+		law_appointed_bureaucrats = strongly_approve
+		law_elected_bureaucrats = neutral
+	}
+	
+	lawgroup_taxation = {
+		law_per_capita_based_taxation = approve
+		law_consumption_based_taxation = neutral
+		law_land_based_taxation = neutral
+		law_proportional_taxation = neutral
+		law_graduated_taxation = disapprove
+	}	
+	
+	lawgroup_colonization = {
+		law_colonial_exploitation = approve
+		law_no_colonial_affairs = neutral
+		law_colonial_resettlement = neutral
+		law_frontier_colonization = neutral
+	}
+}
+
+ideology_rus_patriarch = {
+	icon = "gfx/interface/icons/ideology_icons/russian_patriarch.dds"
+
+	lawgroup_governance_principles = {
+		law_monarchy = strongly_disapprove
+		law_presidential_republic = neutral
+		law_parliamentary_republic = neutral
+		law_theocracy = approve
+		law_council_republic = neutral
+	}
+
+	lawgroup_distribution_of_power = {
+		law_autocracy = strongly_disapprove
+		law_oligarchy = strongly_disapprove
+		law_landed_voting = neutral	
+		law_wealth_voting = neutral	
+		law_census_voting = approve		
+		law_universal_suffrage = strongly_approve
+		law_anarchy = strongly_disapprove
+		law_single_party_state = disapprove
+		law_technocracy = approve
+	}
+	
+	lawgroup_bureaucracy = {
+		law_hereditary_bureaucrats = strongly_disapprove
+		law_appointed_bureaucrats = neutral
+		law_elected_bureaucrats = strongly_approve
+	}
+		
+	lawgroup_internal_security = {
+		law_guaranteed_liberties = strongly_approve
+		law_no_home_affairs = neutral
+		law_national_guard = neutral
+		law_secret_police = strongly_disapprove
+	}
+
+	lawgroup_policing = {
+		law_local_police = disapprove
+		law_dedicated_police = neutral
+		law_militarized_police = strongly_disapprove
+		law_no_police = neutral
+	}
+}
+
+ideology_rus_moralist = {
+	icon = "gfx/interface/icons/ideology_icons/moralist.dds"
+
+	lawgroup_church_and_state = {
+		law_state_religion = strongly_disapprove
+		law_freedom_of_conscience = strongly_approve
+		law_total_separation = disapprove
+		law_state_atheism = strongly_disapprove
+	}
+
+	lawgroup_citizenship = {
+		law_ethnostate = neutral
+		law_national_supremacy = approve
+		law_racial_segregation = neutral
+		law_cultural_exclusion = disapprove
+		law_multicultural = strongly_disapprove	
+	}
+}
