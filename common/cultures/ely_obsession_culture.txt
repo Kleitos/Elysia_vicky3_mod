@@ -4744,7 +4744,7 @@ persian={
 uzbek={
 	color= rgb{ 150 70 55 }
 	religion = sunni
-	traits = { iranian_turanian_culture_group central_asian_heritage }
+	traits = { iranian_turanian_culture_group turkic central_asian_heritage }
 
     obsessions = {
         tea
@@ -4809,7 +4809,7 @@ uzbek={
 kazak={
 	color={ 83 102 46 }
 	religion = sunni
-	traits = { iranian_turanian_culture_group central_asian_heritage }
+	traits = { iranian_turanian_culture_group turkic central_asian_heritage }
 
     obsessions = {
         tea
@@ -4869,7 +4869,7 @@ kazak={
 kirgiz={
 	color={ 75 60 40 }
 	religion = sunni
-	traits = { iranian_turanian_culture_group central_asian_heritage }
+	traits = { iranian_turanian_culture_group turkic central_asian_heritage }
 
     obsessions = {
         tea
@@ -4983,7 +4983,7 @@ tajik={
 uighur={
 	color=rgb{ 84 92 109 }
 	religion = sunni
-	traits = { iranian_turanian_culture_group central_asian_heritage }
+	traits = { iranian_turanian_culture_group turkic central_asian_heritage }
 
     obsessions = {
         tea
@@ -5203,7 +5203,7 @@ hazara={
 turkmen={
 	color= hsv{ 0.84 0.21 0.75 }
 	religion = sunni
-	traits = { iranian_turanian_culture_group central_asian_heritage }
+	traits = { iranian_turanian_culture_group turkic central_asian_heritage }
 
     obsessions = {
         tea
@@ -8024,7 +8024,7 @@ assyrian={
 
 circassian = {
 	color= rgb{ 62 86 55 }
-	religion = sunni
+	religion = orthodox
 	traits = { caucasus_group european_heritage }
     obsessions = {
         tea

@@ -5,29 +5,9 @@
 	
 	obsessions = {
 		wine
-		tea
 	}	
 	
 	male_common_first_names = {
-		Ahmet Ali Azem
-		Bajram Behxhet
-		Davud
-		Ekrem Elez Enver Eqrem Esad
-		Fatmir Fejzi Fiqri
-		Gjergj Gjon
-		Hasan Hashim
-		Ibrahim Idhomene Iliaz Ishak Ismail Izet
-		Kara Kastriot Kostaq Koci Kopryly
-		Leke
-		Maliq Marin Musa Mustafa
-		Pandeli Petro
-		Qamil Qazim
-		Ramush Rexhep
-		Shefqet Skender Sulejman
-		Tewfik Theofan Turhan
-		Vasil Veton
-		Xhafer
-		mehdi
 		Alexandros Angelos Anastasios Aristidis Antonios Aristovoulos Alexios Andreas Agamemnon Avgoustos Anthimos Adam Anagnostis 
 		Beniamin
 		Charilaos Christos Christoforos Christodoulos
@@ -66,15 +46,6 @@
 		Valko Vasil Velizar Vulko
 	}
 	female_common_first_names = {
-		Adile Anjeze Antoneta
-		Esma
-		Julika
-		Kaje Kristina
-		Lenka
-		Margarita Marigo Melpomeni
-		Ruhije
-		Sadije Senije
-		Valentina
 		Aikaterini Aganiki Angeliki Asimina Anna Anastasia Alexandra Akrivi Amalia
 		Domnitsa Despina Domna
 		Evanthia Eliza Elpida Eleni Eleftheria Eirini Evfrosini
@@ -115,14 +86,6 @@
 	# some Hellenic forms of names from the "Livre d'Or de la Noblesse Ionienne"
 	# also added Souliotes
 	noble_last_names = { 
-		Alizoti Alltuni
-		Begolli Bushati
-		Frasheri
-		Kryeziu
-		Mjeda
-		Taushani Toptani
-		Vlora Vrioni
-		Zogu
 		Arvanitachi Argyropoulos
 		Benizelos Botsaris Boutzias Bousbos Boufis Bekas
 		Drakos Dousmanis Danglis
@@ -184,37 +147,6 @@
 		Tenev Todorov Tsaklev
 		Valkov Valnarov Vasilev Vazov Velchev
 		Zafirov Zhekov Zlatarev Zlatev
-		Ahmeti
-		Bardha Bazna Belishi Burbank Bushati Buza
-		Bej_Alizoti
-		Bej_Bicakciu
-		Bej_Delvina
-		Bej_Frasheri
-		Bej_Libohova
-		Bej_Ndroque
-		Bej_Prishtina
-		Bej_Verlaci
-		Bej_Vrioni
-		Bej_Ypi
-		Dine Dragoti Dukagiini Dushku
-		Evangjeli
-		Feza
-		Hoxha
-		Islami
-		Kadare Koculi Konica Konushevci Kosturi Kota
-		Logoreci
-		Merlika-Kruja Mitrovica Mula
-		Noli
-		Pashe_Permeti
-		Pashe_Tepelena
-		Pashe_Toptani
-		Poga
-		Qemal_Bej
-		Shahini Skiroi
-		Thaci Troja
-		Xoxe
-		al-Albani
-		Cabej Ceku
 	}
 
 	ethnicities = {
@@ -2842,4 +2774,160 @@ incan_culture ={
 		1 = native_american
 	}
 	graphics = decentralised_americas
+}
+
+turko_roman={
+	color= hsv{ 0.99 0.48 0.80 }
+	religion = sunni
+	traits = { turkic middle_eastern_heritage byzantine_legacy }
+	obsessions = {
+		tea
+	}
+	male_common_first_names={
+		Abdulhamid
+		Abdulkerim
+		Abdullah
+		Abdulrahim
+		Ahmet
+		Akif
+		Ali
+		Arif
+		Bahaeddin
+		Bekir
+		Celaleddin
+		Cemal
+		Cevad
+		Cevdet
+		Daud
+		Edhem
+		Emin
+		Enver
+		Fahri
+		Ferid
+		Fevzi
+		Fuat
+		Hafiz
+		Halil
+		Halim
+		Hamza
+		Hasan
+		Hayrullah
+		Husrev
+		Ibrahim
+		Iskender
+		Ismet
+		Izzet
+		Kamil
+		Kazim
+		Kemal
+		Lutfi
+		Mahmut
+		Mehmet
+		Mithat
+		Muhtar
+		Murat
+		Musa
+		Mustafa
+		Namik
+		Nazim
+		Numan
+		Nurettin
+		Nuri
+		Omar
+		Osman
+		Pertev
+		Rauf
+		Receb
+		Refet
+		Reshad
+		Rifat
+		Riza
+		Sabaheddin
+		Said
+		Selim
+		Shevket
+		Shukru
+		Suleyman
+		Talat
+		Tevfik
+		Vefik
+		Yunus
+		Yusuf
+		Ziya
+		Ziyauddin
+	}
+	female_common_first_names = {
+		Ayse
+		Emina
+		Fatma
+		Hatice
+		Kap-Ipha
+		Mihrengiz
+		Nurefsun 
+		Sadika Samiye Saffet Sefika Seniye
+		Zeliha
+	}	
+	noble_last_names = {
+		Ankuap
+		Arpazli
+		Balyan
+		Benderli
+		Cengic
+		Cihci
+		Karaosmanoglu
+		Koprulu
+		Maan
+		Marshan
+		Osmanoglu
+		Shakir
+		Talhosten
+		Vocibe
+	}
+	common_last_names={
+		Akbas
+		Burhan
+		Cakin
+		Eczacibashi
+		Engineri
+		Ercman
+		Hasagasi
+		Koc
+		Kosalay
+		Manas
+		Mulos
+		Oezal
+		Sabanci
+		Taymur
+		Yalaz
+		#
+		Bey
+		Pasha
+	}
+	male_regal_first_names = {
+		Abdulaziz Abdulmejid Abdulhamid Ahmet
+		Bayezid
+		Celaleddin
+		Kemaleddin
+		Murad Mehmet
+		Nizameddin Nureddin
+		Osman
+		Suleyman
+	}
+	female_regal_first_names = {
+		Atiye
+		Cemile
+		DU_zdidil
+		Edadil Emine
+		Fatma
+		Mihrimah 
+		Pertevniyal 
+		S_ehsuvar Saliha
+	}
+
+	ethnicities = {
+		1 = arab
+		2 = north_caucasian
+		1 = slavic
+	}
+	graphics = arabic
 }

@@ -2,6 +2,10 @@
 	color= hsv{ 202 176 48 }
 	religion = mazdayasna
 	traits = { iranian_turanian_culture_group middle_eastern_heritage }
+
+    obsessions = {
+        tea
+    }
 	male_common_first_names={
 		Abbas Abdolazim Abdolhossein Abdolsamad Abolghasem Ahmad
 		Bahram 
@@ -165,7 +169,7 @@ mongol={
 	traits = { north_asian_heritage mongol_language pagan_heritage }
 
     obsessions = {
-        tea
+        meat
     }
 	male_common_first_names={
 		Badamdorj
@@ -326,7 +330,7 @@ siberian={
 yakut={
 	color= hsv{ 0.24 0.49 0.50 }
 	religion = siberian_faith
-	traits = { north_asian_heritage siberian_culture_group pagan_heritage }
+	traits = { north_asian_heritage turkic siberian_culture_group pagan_heritage }
 
     obsessions = {
         liquor
