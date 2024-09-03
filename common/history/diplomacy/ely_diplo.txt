@@ -175,6 +175,62 @@
 	}
 	
 	c:RUS = {	
+		create_bidirectional_truce = {
+			country = c:PRU
+			months = 120
+		}
+		create_bidirectional_truce = {
+			country = c:GBR
+			months = 120
+		}
+		create_bidirectional_truce = {
+			country = c:SWE
+			months = 120
+		}
+		create_bidirectional_truce = {
+			country = c:FRA
+			months = 120
+		}
+		create_bidirectional_truce = {
+			country = c:BYZ
+			months = 120
+		}
+		create_bidirectional_truce = {
+			country = c:PER
+			months = 120
+		}
+		create_bidirectional_truce = {
+			country = c:CHI
+			months = 120
+		}
+		create_bidirectional_truce = {
+			country = c:ELY
+			months = 120
+		}
+		create_bidirectional_truce = {
+			country = c:JAP
+			months = 120
+		}
+		create_bidirectional_truce = {
+			country = c:TUR
+			months = 120
+		}
+		create_bidirectional_truce = {
+			country = c:BAV
+			months = 120
+		}
+		create_bidirectional_truce = {
+			country = c:AUS
+			months = 120
+		}
+		create_bidirectional_truce = {
+			country = c:SPA
+			months = 120
+		}
+		create_bidirectional_truce = {
+			country = c:LMV
+			months = 120
+		}
 		set_relations = { country = c:GBR value = -50 }
 		set_relations = { country = c:ELY value = -25 }
 		set_relations = { country = c:PRU value = -25 }
@@ -183,18 +239,6 @@
 		set_relations = { country = c:SWE value = -100 }
 		set_relations = { country = c:BYZ value = 50 }
 		set_relations = { country = c:TUR value = -100 }
-		create_diplomatic_pact = {
-			country = c:AZB
-			type = puppet
-		}
-		create_diplomatic_pact = {
-			country = c:GEO
-			type = puppet
-		}
-		create_diplomatic_pact = {
-			country = c:ARM
-			type = puppet
-		}
 		create_diplomatic_pact = {
 			country = c:SIB
 			type = puppet
@@ -693,6 +737,65 @@
 		create_diplomatic_pact = {
 			country = c:BRA
 			type = puppet
+		}
+	}
+	
+	c:NOV = {
+		create_bidirectional_truce = {
+			country = c:PRU
+			months = 120
+		}
+		create_bidirectional_truce = {
+			country = c:SWE
+			months = 120
+		}
+		create_bidirectional_truce = {
+			country = c:FRA
+			months = 120
+		}
+		create_bidirectional_truce = {
+			country = c:BYZ
+			months = 120
+		}
+		create_bidirectional_truce = {
+			country = c:PER
+			months = 120
+		}
+		create_bidirectional_truce = {
+			country = c:CHI
+			months = 120
+		}
+		create_bidirectional_truce = {
+			country = c:ELY
+			months = 120
+		}
+		create_bidirectional_truce = {
+			country = c:JAP
+			months = 120
+		}
+		create_bidirectional_truce = {
+			country = c:TUR
+			months = 120
+		}
+		create_bidirectional_truce = {
+			country = c:BAV
+			months = 120
+		}
+		create_bidirectional_truce = {
+			country = c:AUS
+			months = 120
+		}
+		create_bidirectional_truce = {
+			country = c:SPA
+			months = 120
+		}
+		create_bidirectional_truce = {
+			country = c:LMV
+			months = 120
+		}
+		create_bidirectional_truce = {
+			country = c:GBR
+			months = 120
 		}
 	}
 	
