@@ -1,0 +1,172 @@
+﻿CHARACTERS = {
+	c:NOV ?= {
+		create_character = {
+			first_name = Sergei
+			last_name = Petrovich
+			historical = yes
+			ruler = yes
+			birth_date = 1790.8.29
+			interest_group = ig_industrialists
+			ideology = ideology_market_liberal
+			traits = {
+				master_bureaucrat 
+				romantic
+				persistent
+			}
+		}
+
+		create_character = {
+			first_name = Kondraty
+			last_name = Ryleyev
+			historical = yes
+			birth_date = 1795.9.29
+			ig_leader = yes
+			interest_group = ig_intelligentsia
+			ideology = ideology_reformer
+			traits = {
+				literary
+				erudite
+			}
+		}
+
+		create_character = {
+			is_general = yes
+			first_name = Pyotr
+			last_name = Kakhovsky
+			historical = yes
+			birth_date = 1799.7.25
+			interest_group = ig_armed_forces			
+			ig_leader = yes
+			ideology = ideology_radical
+			hq = region_russia
+			traits = {
+				brave
+				reckless
+				romantic
+			}
+		}
+		
+		create_character = {
+			first_name = Yevhen
+			last_name = Hrebinka
+			historical = yes
+			culture=cu:ukrainian
+			birth_date = 1812.2.2 # Gregorian Calendar
+			ig_leader = yes
+			interest_group = ig_rural_folk
+			ideology = ideology_moderate
+			traits = {
+				romantic
+			}
+		}
+		
+		create_character = {
+			is_general = yes
+			first_name = Yevgeny
+			last_name = Obolensky
+			historical = yes
+			birth_date = 1796.10.17
+			interest_group = ig_industrialists		
+			ig_leader = yes
+			ideology = ideology_reformer
+			hq = region_russia
+			traits = {
+				brave 
+				romantic
+				experienced_artillery_commander
+			}
+		}
+		
+		create_character = {
+			is_general = yes
+			first_name = Nikita
+			last_name = Muravyov
+			historical = yes
+			birth_date = 1796.7.19
+			interest_group = ig_petty_bourgeoisie		
+			ig_leader = yes
+			ideology = ideology_radical
+			hq = region_russia
+			traits = {
+				master_bureaucrat 
+				romantic
+				erudite
+			}
+		}
+
+		create_character = {
+			is_general = yes
+			first_name = Pavel
+			last_name = Pestel
+			religion = protestant
+			historical = yes
+			birth_date = 1793.7.5
+			interest_group = ig_intelligentsia
+			ideology = ideology_republican_leader
+			hq = region_russia
+			traits = {
+				persistent
+				masterful_diplomat
+				romantic
+			}
+		}
+
+		create_character = {
+			is_general = yes
+			first_name = Sergey
+			last_name = Muravyov
+			historical = yes
+			birth_date = 1796.9.28
+			interest_group = ig_intelligentsia
+			ideology = ideology_republican_leader
+			hq = region_russia
+			traits = {
+				engineer
+				masterful_diplomat
+				innovative
+			}
+		}
+
+		create_character = {
+			is_general = yes
+			first_name = Michael
+			last_name = Lunin
+			historical = yes
+			birth_date = 1787.12.8
+			interest_group = ig_intelligentsia
+			ideology = ideology_reformer
+			hq = region_russia
+			traits = {
+			}
+		}
+
+		create_character = {
+			first_name = Ivan
+			last_name = Pushchin
+			historical = yes
+			birth_date = 1798.5.15
+			interest_group = ig_petty_bourgeoisie
+			ig_leader = yes
+			ideology = ideology_reformer
+			hq = region_dnieper
+			traits = {
+				tactful 
+			}
+		}
+
+		create_character = {
+			is_general = yes
+			first_name = Ivan
+			last_name = Yakushkin
+			historical = yes
+			birth_date = 1798.5.15
+			interest_group = ig_petty_bourgeoisie
+			ideology = ideology_reformer
+			hq = region_russia
+			traits = {
+				meticulous
+				surveyor
+			}
+		}
+	}
+}

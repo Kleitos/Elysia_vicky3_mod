@@ -5,6 +5,7 @@
 		    is_admiral = yes
 			first_name = Antonios 
 			last_name = Kriezis
+			historical = yes
 			culture = cu:greek
 			age = 40
 			traits = {
@@ -13,12 +14,26 @@
 		 }
 
 		}
+		create_character = {
+			# Petar II Petrovic-Njegos, Prince-Bishop of Montenegro
+			first_name = "Petar"
+			last_name = "Petrovic_Njegos"
+			historical = yes
+			culture = cu:bulgarian
+			age = 23
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			traits = {
+				ambitious
+			}
+		}
 		
 
 		create_character = {
 			is_general = yes
 			first_name = "Charilaos"
 			last_name = Vasos
+			historical = yes
 			culture = cu:greek
 			age = 37
 			traits = {
@@ -27,12 +42,12 @@
 		}
 		
 		create_character = {
-			#role = politician # Remove this line
 			first_name = "Gregorios"
-			last_name = ""
+			last_name = "Masouris"
+			historical = yes
 			ruler = yes
-			culture = cu:greek
 			age = 23
+			culture = cu:greek
 			interest_group = ig_devout
 			ideology = ideology_moderate
 			traits = {
@@ -41,17 +56,18 @@
 		}
 
 		create_character = {
-			#role = politician # Remove this line
-			first_name = "Konstantinos"
-			last_name = "Drakos"
-			culture = cu:greek
-			heir = yes
-			age = 9
-			interest_group = ig_landowners
+			is_general = yes
+			first_name = Kenjo
+			last_name = JankoviC_
+			historical = yes
+			birth_date = 1797.4.30 # Only birth year known
+			interest_group = ig_armed_forces
 			ideology = ideology_moderate
 			traits = {
-				ambitious
-			}
-		}	
+				brave
+				mountain_commander
+				basic_offensive_planner
+			}	
+		}
 	}
 }

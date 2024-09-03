@@ -9,6 +9,7 @@
 			heir = yes
 			first_name = Ieyoshi
 			last_name = Oda
+			historical = yes
 			birth_date = 1793.6.22
 			interest_group = ig_armed_forces
 			ideology = ideology_jingoist_leader

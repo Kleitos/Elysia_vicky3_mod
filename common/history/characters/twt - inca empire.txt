@@ -4,6 +4,7 @@
 			first_name = "Tupac"
 			last_name = "Amaru"
 			ruler = yes
+			historical = yes
 			birth_date = 1792.3.27
 			culture = cu:quechua
 			interest_group = ig_landowners
@@ -22,6 +23,7 @@
 			is_general = yes
 			first_name = Atahualpa
 			last_name = Huachaca
+			historical = yes
 			culture = cu:quechua
 			interest_group = ig_rural_folk
 			ig_leader = yes
