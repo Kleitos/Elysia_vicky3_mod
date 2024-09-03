@@ -47,7 +47,7 @@
 		}
 	}
 	s:STATE_KUBAN = { #DONE
-		region_state:RUS = {
+		region_state:NOV = {
 			create_pop = {
 				culture = circassian
 				size = 149000
@@ -209,7 +209,7 @@
 		}
 	}
 	s:STATE_SAMARA = { #DONE
-		region_state:RUS = {
+		region_state:NOV = {
 			create_pop = {
 				culture = russian
 				size = 1170657
@@ -260,7 +260,7 @@
 		}
 	}
 	s:STATE_KAZAN = { #DONE
-		region_state:RUS = {
+		region_state:NOV = {
 			create_pop = {
 				culture = tatar
 				size = 458719
@@ -293,7 +293,7 @@
 		}
 	}
 	s:STATE_TARTARIA = { #Saratov - and DONE
-		region_state:RUS = {
+		region_state:NOV = {
 			create_pop = {
 				culture = russian
 				size = 909377

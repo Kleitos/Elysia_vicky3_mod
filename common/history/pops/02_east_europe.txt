@@ -80,7 +80,7 @@
 		}
 	}
 	s:STATE_TVER = { #DONE
-		region_state:RUS = {
+		region_state:NOV = {
 			create_pop = {
 				culture = russian
 				size = 1149142
@@ -92,7 +92,7 @@
 		}
 	}
 	s:STATE_KURSK = { #DONE
-		region_state:RUS = {
+		region_state:NOV = {
 			create_pop = {
 				culture = russian
 				size = 1511408
@@ -104,7 +104,7 @@
 		}
 	}
 	s:STATE_NOVGOROD = { #DONE
-		region_state:RUS = {
+		region_state:NOV = {
 			create_pop = {
 				culture = russian
 				size = 801499
@@ -129,7 +129,7 @@
 		}
 	}
 	s:STATE_ROSTOV = {
-		region_state:RUS = {
+		region_state:NOV = {
 			create_pop = {
 				culture = russian
 				size = 427520
@@ -153,7 +153,7 @@
 		}
 	}
 	s:STATE_PERM = {
-		region_state:RUS = {
+		region_state:NOV = {
 			create_pop = {
 				culture = russian
 				size = 682318
