@@ -10,7 +10,6 @@
 			country_has_primary_culture = cu:wallonian
 			country_has_primary_culture = cu:french
 		}
-		c:FRA ?= THIS
 	}
 
 	possible = {
@@ -30,14 +29,6 @@
 				institution_investment_level = {
 					institution = institution_schools
 					value >= 3
-				}
-				institution_investment_level = {
-					institution = institution_police
-					value >= 2
-				}
-				institution_investment_level = {
-					institution = institution_home_affairs
-					value >= 1
 				}
 			}
 		AND = {
@@ -59,147 +50,158 @@
 
 }
 
-#je_cultural_shift_ger = {
-#	icon = "gfx/interface/icons/event_icons/unify.dds"
-#
-#	group = je_group_elysian_content
-#
-#	complete = {
-#	OR = { 
-#		AND = {	
-#            is_ai = no
-#				has_law = law_type:law_compulsory_primary_school
-#				OR = {
-#					has_law = law_type:law_religious_schools
-#					has_law = law_type:law_private_schools
-#					has_law = law_type:law_public_schools
-#				}
-#				institution_investment_level = {
-#					institution = institution_schools
-#					value >= 3
-#				}
-#				institution_investment_level = {
-#					institution = institution_police
-#					value >= 2
-#				}
-#				institution_investment_level = {
-#					institution = institution_home_affairs
-#					value >= 1
-#				}
-#			}
-#		AND = {
-#				is_ai = yes
-#				year >= 1886
-#			}	
-#		}
-#	}
-#
-#	on_complete = {
-#		if = {
-#			limit = {
-#				exists = c:GER
-#				c:GER = ROOT
-#			}
-#		trigger_event = { id = cultural_shift.1 }
-#		}
-#	}
-#
-#}
+je_cultural_shift_ger = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
 
-#je_cultural_shift_ita = {
-#	icon = "gfx/interface/icons/event_icons/unify.dds"
-#
-#	group = je_group_elysian_content
-#
-#
-#	complete = {
-#	OR = { 
-#		AND = {	
-#           is_ai = no
-#				has_law = law_type:law_compulsory_primary_school
-#				OR = {
-#					has_law = law_type:law_religious_schools
-#					has_law = law_type:law_private_schools
-#					has_law = law_type:law_public_schools
-#				}
-#				institution_investment_level = {
-#					institution = institution_schools
-#					value >= 3
-#				}
-#				institution_investment_level = {
-#					institution = institution_police
-#					value >= 2
-#				}
-#				institution_investment_level = {
-#					institution = institution_home_affairs
-#					value >= 1
-#				}
-#			}
-#		AND = {
-#				is_ai = yes
-#				year >= 1886
-#			}	
-#		}
-#	}
-#
-#	on_complete = {
-#		if = {
-#			limit = {
-#				exists = c:ITA
-#				c:ITA = ROOT
-#			}
-#		trigger_event = { id = cultural_shift.2 }
-#		}
-#	}
-#
-#}
+	group = je_group_elysian_content
 
-#je_cultural_shift_ibe = {
-#	icon = "gfx/interface/icons/event_icons/unify.dds"
-#
-#	group = je_group_elysian_content
-#
-#	complete = {
-#	OR = { 
-#		AND = {	
-#            is_ai = no
-#				has_law = law_type:law_compulsory_primary_school
-#				OR = {
-#					has_law = law_type:law_religious_schools
-#					has_law = law_type:law_private_schools
-#					has_law = law_type:law_public_schools
-#				}
-#				institution_investment_level = {
-#					institution = institution_schools
-#					value >= 3
-#				}
-#				institution_investment_level = {
-#					institution = institution_police
-#					value >= 2
-#				}
-#				institution_investment_level = {
-#					institution = institution_home_affairs
-#					value >= 1
-#				}
-#			}
-#		AND = {
-#				is_ai = yes
-#				year >= 1886
-#			}	
-#		}
-#	}
-#
-#	on_complete = {
-#		if = {
-#			limit = {
-#				exists = c:IBE
-#				c:IBE = ROOT
-#			}
-#		trigger_event = { id = cultural_shift.3 }
-#		}
-#	}
-#
-#}
+	is_shown_when_inactive = {
+		OR = {
+			country_has_primary_culture = cu:north_german
+			country_has_primary_culture = cu:south_german
+		}
+	}
+
+	possible = {
+		c:GER ?= THIS
+	}
+
+	complete = {
+	OR = { 
+		AND = {	
+            is_ai = no
+				has_law = law_type:law_compulsory_primary_school
+				OR = {
+					has_law = law_type:law_religious_schools
+					has_law = law_type:law_private_schools
+					has_law = law_type:law_public_schools
+				}
+				institution_investment_level = {
+					institution = institution_schools
+					value >= 3
+				}
+			}
+		AND = {
+				is_ai = yes
+				year >= 1886
+			}	
+		}
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:GER
+				c:GER = ROOT
+			}
+		trigger_event = { id = cultural_shift.1 }
+		}
+	}
+
+}
+
+je_cultural_shift_ita = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		OR = {
+			country_has_primary_culture = cu:north_italian
+			country_has_primary_culture = cu:south_italian
+		}
+	}
+
+	possible = {
+		c:ITA ?= THIS
+	}
+
+
+	complete = {
+	OR = { 
+		AND = {	
+           is_ai = no
+				has_law = law_type:law_compulsory_primary_school
+				OR = {
+					has_law = law_type:law_religious_schools
+					has_law = law_type:law_private_schools
+					has_law = law_type:law_public_schools
+				}
+				institution_investment_level = {
+					institution = institution_schools
+					value >= 3
+				}
+			}
+		AND = {
+				is_ai = yes
+				year >= 1886
+			}	
+		}
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:ITA
+				c:ITA = ROOT
+			}
+		trigger_event = { id = cultural_shift.2 }
+		}
+	}
+
+}
+
+je_cultural_shift_ibe = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		OR = {
+			country_has_primary_culture = cu:spanish
+			country_has_primary_culture = cu:catalan
+			country_has_primary_culture = cu:portuguese
+			country_has_primary_culture = cu:galician
+		}
+	}
+
+	possible = {
+		c:IBE ?= THIS
+	}
+
+	complete = {
+	OR = { 
+		AND = {	
+            is_ai = no
+				has_law = law_type:law_compulsory_primary_school
+				OR = {
+					has_law = law_type:law_religious_schools
+					has_law = law_type:law_private_schools
+					has_law = law_type:law_public_schools
+				}
+				institution_investment_level = {
+					institution = institution_schools
+					value >= 3
+				}
+			}
+		AND = {
+				is_ai = yes
+				year >= 1886
+			}	
+		}
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:IBE
+				c:IBE = ROOT
+			}
+		trigger_event = { id = cultural_shift.3 }
+		}
+	}
+
+}
 
 je_cultural_shift_per = {
 	icon = "gfx/interface/icons/event_icons/unify.dds"
@@ -236,14 +238,6 @@ je_cultural_shift_per = {
 					institution = institution_schools
 					value >= 3
 				}
-				institution_investment_level = {
-					institution = institution_police
-					value >= 2
-				}
-				institution_investment_level = {
-					institution = institution_home_affairs
-					value >= 1
-				}
 			}
 		AND = {
 				is_ai = yes
@@ -264,530 +258,531 @@ je_cultural_shift_per = {
 
 }
 
-#je_cultural_shift_trh = {
-#	icon = "gfx/interface/icons/event_icons/unify.dds"
-#
-#	group = je_group_elysian_content
-#
-#	complete = {
-#	OR = { 
-#		AND = {	
-#            is_ai = no
-#				has_law = law_type:law_compulsory_primary_school
-#				OR = {
-#					has_law = law_type:law_religious_schools
-#					has_law = law_type:law_private_schools
-#					has_law = law_type:law_public_schools
-#				}
-#				institution_investment_level = {
-#					institution = institution_schools
-#					value >= 3
-#				}
-#				institution_investment_level = {
-#					institution = institution_police
-#					value >= 2
-#				}
-#				institution_investment_level = {
-#					institution = institution_home_affairs
-#					value >= 1
-#				}
-#			}
-#		AND = {
-#				is_ai = yes
-#				year >= 1886
-#			}	
-#		}
-#	}
-#
-#	on_complete = {
-#		if = {
-#			limit = {
-#				exists = c:TRH
-#				c:TRH = ROOT
-#			}
-#		trigger_event = { id = cultural_shift.5 }
-#		}
-#	}
-#
-#}
+je_cultural_shift_trh = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
 
-#je_cultural_shift_eth = {
-#	icon = "gfx/interface/icons/event_icons/unify.dds"
-#
-#	group = je_group_elysian_content
-#
-#	complete = {
-#	OR = { 
-#		AND = {	
-#            is_ai = no
-#				has_law = law_type:law_compulsory_primary_school
-#				OR = {
-#					has_law = law_type:law_religious_schools
-#					has_law = law_type:law_private_schools
-#					has_law = law_type:law_public_schools
-#				}
-#				institution_investment_level = {
-#					institution = institution_schools
-#					value >= 3
-#				}
-#				institution_investment_level = {
-#					institution = institution_police
-#					value >= 2
-#				}
-#				institution_investment_level = {
-#					institution = institution_home_affairs
-#					value >= 1
-#				}
-#			}
-#		AND = {
-#				is_ai = yes
-#				year >= 1886
-#			}	
-#		}
-#	}
-#
-#	on_complete = {
-#		if = {
-#			limit = {
-#				exists = c:ETH
-#				c:ETH = ROOT
-#			}
-#		trigger_event = { id = cultural_shift.6 }
-#		}
-#	}
-#
-#}
+	group = je_group_elysian_content
 
-#je_cultural_shift_mal = {
-#	icon = "gfx/interface/icons/event_icons/unify.dds"
-#
-#	group = je_group_elysian_content
-#
-#	complete = {
-#	OR = { 
-#		AND = {	
-#            is_ai = no
-#				has_law = law_type:law_compulsory_primary_school
-#				OR = {
-#					has_law = law_type:law_religious_schools
-#					has_law = law_type:law_private_schools
-#					has_law = law_type:law_public_schools
-#				}
-#				institution_investment_level = {
-#					institution = institution_schools
-#					value >= 3
-#				}
-#				institution_investment_level = {
-#					institution = institution_police
-#					value >= 2
-#				}
-#				institution_investment_level = {
-#					institution = institution_home_affairs
-#					value >= 1
-#				}
-#			}
-#		AND = {
-#				is_ai = yes
-#				year >= 1886
-#			}	
-#		}
-#	}
-#
-#	on_complete = {
-#		if = {
-#			limit = {
-#				exists = c:MAL
-#				c:MAL = ROOT
-#			}
-#		trigger_event = { id = cultural_shift.7 }
-#		}
-#	}
-#
-#}
+	is_shown_when_inactive = {
+		OR = {
+			country_has_primary_culture = cu:uzbek
+			country_has_primary_culture = cu:kazak
+			country_has_primary_culture = cu:kirgiz
+			country_has_primary_culture = cu:turkmen
+			country_has_primary_culture = cu:tatar
+			country_has_primary_culture = cu:bashkir
+			country_has_primary_culture = cu:chuvash
+			country_has_primary_culture = cu:uighur
+		}
+	}
 
-#je_cultural_shift_sca = {
-#	icon = "gfx/interface/icons/event_icons/unify.dds"
-#
-#	group = je_group_elysian_content
-#
-#	complete = {
-#	OR = { 
-#		AND = {	
-#            is_ai = no
-#				has_law = law_type:law_compulsory_primary_school
-#				OR = {
-#					has_law = law_type:law_religious_schools
-#					has_law = law_type:law_private_schools
-#					has_law = law_type:law_public_schools
-#				}
-#				institution_investment_level = {
-#					institution = institution_schools
-#					value >= 3
-#				}
-#				institution_investment_level = {
-#					institution = institution_police
-#					value >= 2
-#				}
-#				institution_investment_level = {
-#					institution = institution_home_affairs
-#					value >= 1
-#				}
-#			}
-#		AND = {
-#				is_ai = yes
-#				year >= 1886
-#			}	
-#		}
-#	}
-#
-#	on_complete = {
-#		if = {
-#			limit = {
-#				exists = c:SCA
-#				c:SCA = ROOT
-#			}
-#		trigger_event = { id = cultural_shift.8 }
-#		}
-#	}
-#
-#}
+	possible = {
+		c:TRH ?= THIS
+	}
 
-#je_cultural_shift_ubd = {
-#	icon = "gfx/interface/icons/event_icons/unify.dds"
-#
-#	group = je_group_elysian_content
-#
-#	complete = {
-#	OR = { 
-#		AND = {	
-#            is_ai = no
-#				has_law = law_type:law_compulsory_primary_school
-#				OR = {
-#					has_law = law_type:law_religious_schools
-#					has_law = law_type:law_private_schools
-#					has_law = law_type:law_public_schools
-#				}
-#				institution_investment_level = {
-#					institution = institution_schools
-#					value >= 3
-#				}
-#				institution_investment_level = {
-#					institution = institution_police
-#					value >= 2
-#				}
-#				institution_investment_level = {
-#					institution = institution_home_affairs
-#					value >= 1
-#				}
-#			}
-#		AND = {
-#				is_ai = yes
-#				year >= 1886
-#			}	
-#		}
-#	}
-#
-#	on_complete = {
-#		if = {
-#			limit = {
-#				exists = c:UBD
-#				c:UBD = ROOT
-#			}
-#		trigger_event = { id = cultural_shift.9 }
-#		}
-#	}
-#
-#}
+	complete = {
+	OR = { 
+		AND = {	
+            is_ai = no
+				has_law = law_type:law_compulsory_primary_school
+				OR = {
+					has_law = law_type:law_religious_schools
+					has_law = law_type:law_private_schools
+					has_law = law_type:law_public_schools
+				}
+				institution_investment_level = {
+					institution = institution_schools
+					value >= 3
+				}
+			}
+		AND = {
+				is_ai = yes
+				year >= 1886
+			}	
+		}
+	}
 
-#je_cultural_shift_tai = {
-#	icon = "gfx/interface/icons/event_icons/unify.dds"
-#
-#	group = je_group_elysian_content
-#
-#	is_shown_when_inactive = {
-#		OR = {
-#			country_has_primary_culture = cu:lao
-#			country_has_primary_culture = cu:thai
-#			country_has_primary_culture = cu:shan
-#		}
-#		c:SIA ?= THIS
-#	}
-#
-#	possible = {
-#		c:SIA ?= THIS
-#	}
-#
-#	complete = {
-#	OR = { 
-#		AND = {	
-#            is_ai = no
-#				has_law = law_type:law_compulsory_primary_school
-#				OR = {
-#					has_law = law_type:law_religious_schools
-#					has_law = law_type:law_private_schools
-#					has_law = law_type:law_public_schools
-#				}
-#				institution_investment_level = {
-#					institution = institution_schools
-#					value >= 3
-#				}
-#				institution_investment_level = {
-#					institution = institution_police
-#					value >= 2
-#				}
-#				institution_investment_level = {
-#					institution = institution_home_affairs
-#					value >= 1
-#				}
-#			}
-#		AND = {
-#				is_ai = yes
-#				year >= 1886
-#			}	
-#		}
-#	}
-#
-#	on_complete = {
-#		if = {
-#			limit = {
-#				exists = c:SIA
-#				c:SIA = ROOT
-#			}
-#		trigger_event = { id = unification_culture.12 }
-#		}
-#	}
-#
-#}
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:TRH
+				c:TRH = ROOT
+			}
+		trigger_event = { id = cultural_shift.5 }
+		}
+	}
 
-#je_cultural_shift_ngr = {
-#	icon = "gfx/interface/icons/event_icons/unify.dds"
-#
-#	group = je_group_elysian_content
-#
-#	is_shown_when_inactive = {
-#		OR = {
-#			country_has_primary_culture = cu:yoruba
-#			country_has_primary_culture = cu:akan
-#			country_has_primary_culture = cu:bassa
-#			country_has_primary_culture = cu:edo
-#			country_has_primary_culture = cu:ewe
-#			country_has_primary_culture = cu:fon
-#			country_has_primary_culture = cu:ibo
-#			country_has_primary_culture = cu:kru
-#		}
-#		c:NGR ?= THIS
-#	}
-#
-#	possible = {
-#		c:NGR ?= THIS
-#	}
-#
-#	complete = {
-#	OR = { 
-#		AND = {	
-#            is_ai = no
-#				has_law = law_type:law_compulsory_primary_school
-#				OR = {
-#					has_law = law_type:law_religious_schools
-#					has_law = law_type:law_private_schools
-#					has_law = law_type:law_public_schools
-#				}
-#				institution_investment_level = {
-#					institution = institution_schools
-#					value >= 3
-#				}
-#				institution_investment_level = {
-#					institution = institution_police
-#					value >= 2
-#				}
-#				institution_investment_level = {
-#					institution = institution_home_affairs
-#					value >= 1
-#				}
-#			}
-#		AND = {
-#				is_ai = yes
-#				year >= 1886
-#			}	
-#		}
-#	}
-#
-#	on_complete = {
-#		if = {
-#			limit = {
-#				exists = c:NGR
-#				c:NGR = ROOT
-#			}
-#		trigger_event = { id = cultural_shift.10 }
-#		}
-#	}
-#
-#}
+}
 
-#je_cultural_shift_bur = {
-#	icon = "gfx/interface/icons/event_icons/unify.dds"
-#
-#	group = je_group_elysian_content
-#
-#	is_shown_when_inactive = {
-#		OR = {
-#			country_has_primary_culture = cu:karen
-#			country_has_primary_culture = cu:burmese
-#			country_has_primary_culture = cu:kachin
-#		}
-#		c:BUR ?= THIS
-#	}
-#
-#	possible = {
-#		c:BUR ?= THIS
-#	}
-#
-#	complete = {
-#	OR = { 
-#		AND = {	
-#            is_ai = no
-#				has_law = law_type:law_compulsory_primary_school
-#				OR = {
-#					has_law = law_type:law_religious_schools
-#					has_law = law_type:law_private_schools
-#					has_law = law_type:law_public_schools
-#				}
-#				institution_investment_level = {
-#					institution = institution_schools
-#					value >= 3
-#				}
-#				institution_investment_level = {
-#					institution = institution_police
-#					value >= 2
-#				}
-#				institution_investment_level = {
-#					institution = institution_home_affairs
-#					value >= 1
-#				}
-#			}
-#		AND = {
-#				is_ai = yes
-#				year >= 1886
-#			}	
-#		}
-#	}
-#
-#	on_complete = {
-#		if = {
-#			limit = {
-#				exists = c:BUR
-#				c:BUR = ROOT
-#			}
-#		trigger_event = { id = unification_culture.13 }
-#		}
-#	}
-#
-#}
+je_cultural_shift_eth = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
 
-#je_cultural_shift_zap = {
-#	icon = "gfx/interface/icons/event_icons/unify.dds"
-#
-#	group = je_group_elysian_content
-#
-#	is_shown_when_inactive = {
-#		OR = {
-#			country_has_primary_culture = cu:czech
-#			country_has_primary_culture = cu:slovak
-#			country_has_primary_culture = cu:polish
-#			country_has_primary_culture = cu:sorb
-#		}
-#		c:ZAP ?= THIS
-#	}
-#
-#	possible = {
-#		c:ZAP ?= THIS
-#	}
-#
-#	complete = {
-#	OR = { 
-#		AND = {	
-#            is_ai = no
-#				has_law = law_type:law_compulsory_primary_school
-#				OR = {
-#					has_law = law_type:law_religious_schools
-#					has_law = law_type:law_private_schools
-#					has_law = law_type:law_public_schools
-#				}
-#				institution_investment_level = {
-#					institution = institution_schools
-#					value >= 3
-#				}
-#				institution_investment_level = {
-#					institution = institution_police
-#					value >= 2
-#				}
-#				institution_investment_level = {
-#					institution = institution_home_affairs
-#					value >= 1
-#				}
-#			}
-#		AND = {
-#				is_ai = yes
-#				year >= 1886
-#			}	
-#		}
-#	}
-#
-#	on_complete = {
-#		if = {
-#			limit = {
-#				exists = c:ZAP
-#				c:ZAP = ROOT
-#			}
-#		trigger_event = { id = cultural_shift.11 }
-#		}
-#	}
-#
-#}
+	group = je_group_elysian_content
 
-#je_cultural_shift_yug = {
-#	icon = "gfx/interface/icons/event_icons/unify.dds"
-#
-#	group = je_group_elysian_content
-#
-#	complete = {
-#	OR = { 
-#		AND = {	
-#            is_ai = no
-#				has_law = law_type:law_compulsory_primary_school
-#				OR = {
-#					has_law = law_type:law_religious_schools
-#					has_law = law_type:law_private_schools
-#					has_law = law_type:law_public_schools
-#				}
-#				institution_investment_level = {
-#					institution = institution_schools
-#					value >= 3
-#				}
-#				institution_investment_level = {
-#					institution = institution_police
-#					value >= 2
-#				}
-#				institution_investment_level = {
-#					institution = institution_home_affairs
-#					value >= 1
-#				}
-#			}
-#		AND = {
-#				is_ai = yes
-#				year >= 1886
-#			}	
-#		}
-#	}
-#
-#	on_complete = {
-#		if = {
-#			limit = {
-#				exists = c:YUG
-#				c:YUG = ROOT
-#			}
-#		trigger_event = { id = cultural_shift.12 }
-#		}
-#	}
-#
-#}
+	is_shown_when_inactive = {
+		OR = {
+			country_has_primary_culture = cu:amhara
+			country_has_primary_culture = cu:afar
+			country_has_primary_culture = cu:oromo
+			country_has_primary_culture = cu:sidama
+			country_has_primary_culture = cu:tigray
+		}
+	}
+
+	possible = {
+		c:ETH ?= THIS
+	}
+
+	complete = {
+	OR = { 
+		AND = {	
+            is_ai = no
+				has_law = law_type:law_compulsory_primary_school
+				OR = {
+					has_law = law_type:law_religious_schools
+					has_law = law_type:law_private_schools
+					has_law = law_type:law_public_schools
+				}
+				institution_investment_level = {
+					institution = institution_schools
+					value >= 3
+				}
+			}
+		AND = {
+				is_ai = yes
+				year >= 1886
+			}	
+		}
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:ETH
+				c:ETH = ROOT
+			}
+		trigger_event = { id = cultural_shift.6 }
+		}
+	}
+
+}
+
+je_cultural_shift_mal = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		OR = {
+			country_has_primary_culture = cu:mande
+			country_has_primary_culture = cu:bambara
+		}
+	}
+
+	possible = {
+		c:MAL ?= THIS
+	}
+
+	complete = {
+	OR = { 
+		AND = {	
+            is_ai = no
+				has_law = law_type:law_compulsory_primary_school
+				OR = {
+					has_law = law_type:law_religious_schools
+					has_law = law_type:law_private_schools
+					has_law = law_type:law_public_schools
+				}
+				institution_investment_level = {
+					institution = institution_schools
+					value >= 3
+				}
+			}
+		AND = {
+				is_ai = yes
+				year >= 1886
+			}	
+		}
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:MAL
+				c:MAL = ROOT
+			}
+		trigger_event = { id = cultural_shift.7 }
+		}
+	}
+
+}
+
+je_cultural_shift_sca = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		OR = {
+			country_has_primary_culture = cu:swedish
+			country_has_primary_culture = cu:norwegian
+			country_has_primary_culture = cu:sami
+			country_has_primary_culture = cu:danish
+			country_has_primary_culture = cu:icelandic
+			country_has_primary_culture = cu:finnish
+			country_has_primary_culture = cu:estonian
+			country_has_primary_culture = cu:karelian
+		}
+	}
+
+	possible = {
+		c:SCA ?= THIS
+	}
+
+	complete = {
+	OR = { 
+		AND = {	
+            is_ai = no
+				has_law = law_type:law_compulsory_primary_school
+				OR = {
+					has_law = law_type:law_religious_schools
+					has_law = law_type:law_private_schools
+					has_law = law_type:law_public_schools
+				}
+				institution_investment_level = {
+					institution = institution_schools
+					value >= 3
+				}
+			}
+		AND = {
+				is_ai = yes
+				year >= 1886
+			}	
+		}
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:SCA
+				c:SCA = ROOT
+			}
+		trigger_event = { id = cultural_shift.8 }
+		}
+	}
+
+}
+
+je_cultural_shift_ubd = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		OR = {
+			country_has_primary_culture = cu:latvian
+			country_has_primary_culture = cu:lithuanian
+		}
+	}
+
+	possible = {
+		c:UBD ?= THIS
+	}
+
+	complete = {
+	OR = { 
+		AND = {	
+            is_ai = no
+				has_law = law_type:law_compulsory_primary_school
+				OR = {
+					has_law = law_type:law_religious_schools
+					has_law = law_type:law_private_schools
+					has_law = law_type:law_public_schools
+				}
+				institution_investment_level = {
+					institution = institution_schools
+					value >= 3
+				}
+			}
+		AND = {
+				is_ai = yes
+				year >= 1886
+			}	
+		}
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:UBD
+				c:UBD = ROOT
+			}
+		trigger_event = { id = cultural_shift.9 }
+		}
+	}
+
+}
+
+je_cultural_shift_tai = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		OR = {
+			country_has_primary_culture = cu:lao
+			country_has_primary_culture = cu:thai
+			country_has_primary_culture = cu:shan
+		}
+		c:SIA ?= THIS
+	}
+
+	possible = {
+		c:SIA ?= THIS
+	}
+
+	complete = {
+	OR = { 
+		AND = {	
+            is_ai = no
+				has_law = law_type:law_compulsory_primary_school
+				OR = {
+					has_law = law_type:law_religious_schools
+					has_law = law_type:law_private_schools
+					has_law = law_type:law_public_schools
+				}
+				institution_investment_level = {
+					institution = institution_schools
+					value >= 3
+				}
+			}
+		AND = {
+				is_ai = yes
+				year >= 1886
+			}	
+		}
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:SIA
+				c:SIA = ROOT
+			}
+		trigger_event = { id = unification_culture.12 }
+		}
+	}
+
+}
+
+je_cultural_shift_ngr = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		OR = {
+			country_has_primary_culture = cu:yoruba
+			country_has_primary_culture = cu:akan
+			country_has_primary_culture = cu:bassa
+			country_has_primary_culture = cu:edo
+			country_has_primary_culture = cu:ewe
+			country_has_primary_culture = cu:fon
+			country_has_primary_culture = cu:ibo
+			country_has_primary_culture = cu:kru
+		}
+	}
+
+	possible = {
+		c:NGR ?= THIS
+	}
+
+	complete = {
+	OR = { 
+		AND = {	
+            is_ai = no
+				has_law = law_type:law_compulsory_primary_school
+				OR = {
+					has_law = law_type:law_religious_schools
+					has_law = law_type:law_private_schools
+					has_law = law_type:law_public_schools
+				}
+				institution_investment_level = {
+					institution = institution_schools
+					value >= 3
+				}
+			}
+		AND = {
+				is_ai = yes
+				year >= 1886
+			}	
+		}
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:NGR
+				c:NGR = ROOT
+			}
+		trigger_event = { id = cultural_shift.10 }
+		}
+	}
+
+}
+
+je_cultural_shift_bur = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		OR = {
+			country_has_primary_culture = cu:karen
+			country_has_primary_culture = cu:burmese
+			country_has_primary_culture = cu:kachin
+		}
+		c:BUR ?= THIS
+	}
+
+	possible = {
+		c:BUR ?= THIS
+	}
+
+	complete = {
+	OR = { 
+		AND = {	
+            is_ai = no
+				has_law = law_type:law_compulsory_primary_school
+				OR = {
+					has_law = law_type:law_religious_schools
+					has_law = law_type:law_private_schools
+					has_law = law_type:law_public_schools
+				}
+				institution_investment_level = {
+					institution = institution_schools
+					value >= 3
+				}
+			}
+		AND = {
+				is_ai = yes
+				year >= 1886
+			}	
+		}
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:BUR
+				c:BUR = ROOT
+			}
+		trigger_event = { id = unification_culture.13 }
+		}
+	}
+
+}
+
+je_cultural_shift_zap = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		OR = {
+			country_has_primary_culture = cu:czech
+			country_has_primary_culture = cu:slovak
+			country_has_primary_culture = cu:polish
+			country_has_primary_culture = cu:sorb
+		}
+	}
+
+	possible = {
+		c:ZAP ?= THIS
+	}
+
+	complete = {
+	OR = { 
+		AND = {	
+            is_ai = no
+				has_law = law_type:law_compulsory_primary_school
+				OR = {
+					has_law = law_type:law_religious_schools
+					has_law = law_type:law_private_schools
+					has_law = law_type:law_public_schools
+				}
+				institution_investment_level = {
+					institution = institution_schools
+					value >= 3
+				}
+			}
+		AND = {
+				is_ai = yes
+				year >= 1886
+			}	
+		}
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:ZAP
+				c:ZAP = ROOT
+			}
+		trigger_event = { id = cultural_shift.11 }
+		}
+	}
+
+}
+
+je_cultural_shift_yug = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		OR = {
+			country_has_primary_culture = cu:slovene
+			country_has_primary_culture = cu:bosniak
+			country_has_primary_culture = cu:croat
+			country_has_primary_culture = cu:serb
+		}
+	}
+
+	possible = {
+		c:YUG ?= THIS
+	}
+
+	complete = {
+	OR = { 
+		AND = {	
+            is_ai = no
+				has_law = law_type:law_compulsory_primary_school
+				OR = {
+					has_law = law_type:law_religious_schools
+					has_law = law_type:law_private_schools
+					has_law = law_type:law_public_schools
+				}
+				institution_investment_level = {
+					institution = institution_schools
+					value >= 3
+				}
+			}
+		AND = {
+				is_ai = yes
+				year >= 1886
+			}	
+		}
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:YUG
+				c:YUG = ROOT
+			}
+		trigger_event = { id = cultural_shift.12 }
+		}
+	}
+
+}

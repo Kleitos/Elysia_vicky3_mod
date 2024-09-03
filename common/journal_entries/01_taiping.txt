@@ -140,7 +140,7 @@ je_heavenly_kingdom_main = {
 					var:missionary_works_counter >= 5
 					game_date >= 1846
 				}
-				game_date >= 1856
+				game_date >= 1846
 			}
 		}
 		is_subject = no

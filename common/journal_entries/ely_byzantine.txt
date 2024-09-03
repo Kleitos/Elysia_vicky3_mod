@@ -194,14 +194,12 @@ je_cultural_shift_byz_bulgarian = {
 	group = je_group_elysian_content
 
 	complete = {
-	OR = { 
-		AND = {	
-            is_ai = no
 		owns_entire_state_region = STATE_DOBRUDJA
 		owns_entire_state_region = STATE_SKOPIA
 		owns_entire_state_region = STATE_WESTERN_THRACE
 		owns_entire_state_region = STATE_NORTHERN_THRACE
 		owns_entire_state_region = STATE_BULGARIA
+		owns_entire_state_region = STATE_EASTERN_THRACE
 		OR = {
 			has_law = law_type:law_religious_schools
 			has_law = law_type:law_private_schools
@@ -210,20 +208,6 @@ je_cultural_shift_byz_bulgarian = {
 		institution_investment_level = {
 			institution = institution_schools
 			value >= 1
-		}
-		institution_investment_level = {
-			institution = institution_police
-			value >= 1
-		}
-		institution_investment_level = {
-			institution = institution_home_affairs
-			value >= 1
-		}
-			}
-		AND = {
-				is_ai = yes
-				year >= 1842
-			}	
 		}
 	}
 	
@@ -266,13 +250,11 @@ je_cultural_shift_byz_albanian = {
 	group = je_group_elysian_content
 
 	complete = {
-	OR = { 
-		AND = {	
-            is_ai = no
 		owns_entire_state_region = STATE_ALBANIA
 		owns_entire_state_region = STATE_SKOPIA
 		owns_entire_state_region = STATE_MONTENEGRO
 		owns_entire_state_region = STATE_SOUTHERN_SERBIA
+		owns_entire_state_region = STATE_EASTERN_THRACE
 		OR = {
 			has_law = law_type:law_religious_schools
 			has_law = law_type:law_private_schools
@@ -280,21 +262,7 @@ je_cultural_shift_byz_albanian = {
 		}
 		institution_investment_level = {
 			institution = institution_schools
-			value >= 2
-		}
-		institution_investment_level = {
-			institution = institution_police
 			value >= 1
-		}
-		institution_investment_level = {
-			institution = institution_home_affairs
-			value >= 1
-		}
-			}
-		AND = {
-				is_ai = yes
-				year >= 1847
-			}	
 		}
 	}
 	
@@ -382,23 +350,6 @@ je_byz_megali_idea = {
 		owns_entire_state_region = STATE_EASTERN_THRACE
 		owns_entire_state_region = STATE_IONIAN_ISLANDS
 		owns_entire_state_region = STATE_PELOPONNESE
-		OR = {
-			has_law = law_type:law_religious_schools
-			has_law = law_type:law_private_schools
-			has_law = law_type:law_public_schools
-		}
-		institution_investment_level = {
-			institution = institution_schools
-			value >= 2
-		}
-		institution_investment_level = {
-			institution = institution_police
-			value >= 1
-		}
-		institution_investment_level = {
-			institution = institution_home_affairs
-			value >= 1
-		}
 	}	
 
 	on_complete = {
@@ -423,9 +374,6 @@ je_cultural_shift_byz_serbian = {
 	group = je_group_elysian_content
 
 	complete = {
-	OR = { 
-		AND = {	
-            is_ai = no
 		owns_entire_state_region = STATE_MONTENEGRO
 		owns_entire_state_region = STATE_NORTHERN_SERBIA
 		owns_entire_state_region = STATE_SOUTHERN_SERBIA
@@ -434,6 +382,7 @@ je_cultural_shift_byz_serbian = {
 		owns_entire_state_region = STATE_CROATIA
 		owns_entire_state_region = STATE_SLAVONIA
 		owns_entire_state_region = STATE_DELVIDEK
+		owns_entire_state_region = STATE_EASTERN_THRACE
 		has_law = law_type:law_compulsory_primary_school
 		OR = {
 			has_law = law_type:law_racial_segregation
@@ -446,29 +395,7 @@ je_cultural_shift_byz_serbian = {
 		}
 		institution_investment_level = {
 			institution = institution_schools
-			value >= 3
-		}
-		institution_investment_level = {
-			institution = institution_police
-			value >= 2
-		}
-		institution_investment_level = {
-			institution = institution_home_affairs
 			value >= 1
-		}
-			}
-		AND = {
-				is_ai = yes
-				year >= 1852
-		owns_entire_state_region = STATE_MONTENEGRO
-		owns_entire_state_region = STATE_NORTHERN_SERBIA
-		owns_entire_state_region = STATE_SOUTHERN_SERBIA
-		owns_entire_state_region = STATE_BOSNIA
-		owns_entire_state_region = STATE_DALMATIA
-		owns_entire_state_region = STATE_CROATIA
-		owns_entire_state_region = STATE_SLAVONIA
-		owns_entire_state_region = STATE_DELVIDEK
-			}	
 		}
 	}
 	
@@ -491,10 +418,9 @@ je_cultural_shift_byz_georgian = {
 	group = je_group_elysian_content
 
 	complete = {
-	OR = { 
-		AND = {	
 		owns_entire_state_region = STATE_GREATER_CAUCASUS
 		owns_entire_state_region = STATE_KARS
+		owns_entire_state_region = STATE_EASTERN_THRACE
 		has_law = law_type:law_compulsory_primary_school
 		has_law = law_type:law_cultural_exclusion
 		OR = {
@@ -504,23 +430,7 @@ je_cultural_shift_byz_georgian = {
 		}
 		institution_investment_level = {
 			institution = institution_schools
-			value >= 3
-		}
-		institution_investment_level = {
-			institution = institution_police
-			value >= 2
-		}
-		institution_investment_level = {
-			institution = institution_home_affairs
 			value >= 1
-		}
-		}
-		AND = {
-		owns_entire_state_region = STATE_GREATER_CAUCASUS
-		owns_entire_state_region = STATE_KARS
-				is_ai = yes
-				year >= 1886
-			}	
 		}
 	}
 
@@ -542,8 +452,6 @@ je_cultural_shift_byz_armenian = {
 	group = je_group_elysian_content
 
 	complete = {
-	OR = { 
-		AND = {	
 		owns_entire_state_region = STATE_ARMENIA
 		owns_entire_state_region = STATE_KARS
 		owns_entire_state_region = STATE_AZERBAIJAN
@@ -552,6 +460,7 @@ je_cultural_shift_byz_armenian = {
 		owns_entire_state_region = STATE_ERZURUM
 		owns_entire_state_region = STATE_DIYARBAKIR
 		owns_entire_state_region = STATE_ADANA
+		owns_entire_state_region = STATE_EASTERN_THRACE
 		has_law = law_type:law_compulsory_primary_school
 		has_law = law_type:law_cultural_exclusion
 		OR = {
@@ -561,28 +470,7 @@ je_cultural_shift_byz_armenian = {
 		}
 		institution_investment_level = {
 			institution = institution_schools
-			value >= 3
-		}
-		institution_investment_level = {
-			institution = institution_police
-			value >= 2
-		}
-		institution_investment_level = {
-			institution = institution_home_affairs
 			value >= 1
-		}
-			}
-		AND = {
-		owns_entire_state_region = STATE_ARMENIA
-		owns_entire_state_region = STATE_KARS
-		owns_entire_state_region = STATE_AZERBAIJAN
-		owns_entire_state_region = STATE_TRABZON
-		owns_entire_state_region = STATE_ERZURUM
-		owns_entire_state_region = STATE_DIYARBAKIR
-		owns_entire_state_region = STATE_ADANA
-				is_ai = yes
-				year >= 1886
-			}	
 		}
 	}
 
@@ -593,6 +481,58 @@ je_cultural_shift_byz_armenian = {
 				c:BYZ = ROOT
 			}
 		trigger_event = { id = byzantine_culture.7 }
+		}
+	}
+
+}
+
+je_cultural_shift_byz_turks = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		owns_entire_state_region = STATE_ALEPPO
+		owns_entire_state_region = STATE_HUDAVENDIGAR
+		owns_entire_state_region = STATE_AYDIN
+		owns_entire_state_region = STATE_KONYA
+		owns_entire_state_region = STATE_KASTAMONU
+		owns_entire_state_region = STATE_TRABZON
+		owns_entire_state_region = STATE_ERZURUM
+		owns_entire_state_region = STATE_KARS
+		owns_entire_state_region = STATE_ANKARA
+		owns_entire_state_region = STATE_DIYARBAKIR
+		owns_entire_state_region = STATE_ADANA
+		owns_entire_state_region = STATE_EASTERN_THRACE
+		has_law = law_type:law_compulsory_primary_school
+		has_law = law_type:law_cultural_exclusion
+		OR = {
+			has_law = law_type:law_religious_schools
+			has_law = law_type:law_private_schools
+			has_law = law_type:law_public_schools
+		}
+		institution_investment_level = {
+			institution = institution_schools
+			value >= 1
+		}
+		any_scope_state = {
+			state_region = {
+				is_homeland = cu:turkish
+			}
+			radical_fraction = {
+				value <= 0.15
+				culture = cu:turkish
+			}
+		}
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:BYZ
+				c:BYZ = ROOT
+			}
+		trigger_event = { id = byzantine_culture.8 }
 		}
 	}
 

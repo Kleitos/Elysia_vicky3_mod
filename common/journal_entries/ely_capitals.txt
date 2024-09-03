@@ -148,7 +148,7 @@ je_chi_capital = {
 	}
 
 	complete = {
-		owns_entire_state_region = STATE_HOME_COUNTIES
+		owns_entire_state_region = STATE_BEIJING
 		any_scope_state = {
 			state_region = s:STATE_BEIJING
 				is_capital = no
@@ -175,5 +175,50 @@ je_chi_capital_fix = {
 
 	on_complete = {
 		trigger_event = { id = ely_capital_fix.4 }
+	}
+}
+
+je_byz_capital = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+
+	is_shown_when_inactive = {
+		exists = c:BYZ
+		THIS = c:BYZ
+	}
+
+	possible = {
+		THIS = c:BYZ
+	}
+
+	complete = {
+		owns_entire_state_region = STATE_EASTERN_THRACE
+		any_scope_state = {
+			state_region = s:STATE_EASTERN_THRACE
+				is_capital = no
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = ely_capital.5 }
+	}
+}
+
+je_byz_capital_fix = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		owns_entire_state_region = STATE_EASTERN_THRACE
+		any_scope_state = {
+			state_region = s:STATE_EASTERN_THRACE
+				is_capital = yes
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = ely_capital_fix.5 }
 	}
 }
