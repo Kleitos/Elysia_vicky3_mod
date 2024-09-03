@@ -995,35 +995,24 @@
 				count = 14
 			}
 
-			combat_unit = { # His Majesty the King of Prussia’s Grenadier Regiment, L.-Gds. Volhynia Regiment
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_VOLHYNIA
-				count = 2
-			}
-
-			combat_unit = { # Field Marshal Graf von der Osten-Saken’s and Kazan Jägers
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_KAZAN
-				count = 2
-			}
-
 			# Guards Cavalry
 			combat_unit = { # Chevalier Guards, L.-Gds. Horse, L.-Gds. Cuirassiers, Her Majesty’s Life-Cuirassiers, L.-Gds. Podolia Cuirassiers
 				type = unit_type:combat_unit_type_cuirassiers
-				state_region = s:STATE_KURSK
+				state_region = s:STATE_MOSCOW
 				count = 5
+			}
+
+			# Guards Light Cavalry
+			combat_unit = { #  L.-Gds. Horse-Grenadier Regiment, L.-Gds. Dragoon Regiment
+				type = unit_type:combat_unit_type_dragoons
+				state_region = s:STATE_MOSCOW
+				count = 2
 			}
 
 			combat_unit = { #  His Imperial Highness the Grand Duke Michael Pavlovich’s L.-Gds. Lancer Regiment, His Highness the Tsesarevich Constantine Pavlovich’s L.-Gds. Lancer Regiment
 				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_NOVGOROD
+				state_region = s:STATE_MOSCOW
 				count = 2
-			}
-
-			combat_unit = { # L.-Gds. Hussar Regiment and L.-Gds. Cossack Regiment, L.-Gds. Grodno Hussar Regiment and the Ataman Cossack Regiment of His Imperial Highness the Heir and Tsesarevich
-				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_NOVGOROD
-				count = 4
 			}
 			save_scope_as = gvardeyskiy_korpus_army
 		}
@@ -1035,26 +1024,24 @@
 
 		scope:vorontsov_gen = {
 			transfer_to_formation = scope:gvardeyskiy_korpus_army
-		}		
+		}
 
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_russia
 			name = 1y_Pekhotniy_Korpus
 
+			combat_unit = { # Neva and Sofiya Infantry, Narva and Kopore Jägers, Prince Wilhelm of Prussia’s and Prince Karl of Prussia’s Infantry, Old Ingermanland and New Ingermanland Infantry
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_MOSCOW
+				count = 10
+			}	
+
 			combat_unit = { #  Field Marshal Prince Kutuzov of Smolensk’s and Velikie-Luki Jägers
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_SMOLENSK
 				count = 4
 			}
-
-			# 1st Light Cavalry Division
-			combat_unit = { # Sumy and Klyastitsy Hussar Regiments.
-				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_KIEV
-				count = 2
-			}
-			combat_unit 
 
 			# 1st Artillery Division
 			combat_unit = { # 1st, 2nd, and 3rd Field Artillery Brigades
@@ -1067,29 +1054,10 @@
 				state_region = s:STATE_SMOLENSK
 				count = 1
 			}
-
-			# 1st Reserve Cavalry Corps
-			combat_unit = { # Yekaterinoslav and His Imperial Highness the Grand Duke Michael Pavlovich’s Cuirassier Regiments
-				type = unit_type:combat_unit_type_cuirassiers
-				state_region = s:STATE_KHARKOV
-				count = 1
-			}
 			combat_unit = { # Astrakhan and Pskov Cuirassier Regments
 				type = unit_type:combat_unit_type_cuirassiers
 				state_region = s:STATE_ASTRAKHAN
 				count = 2
-			}
-
-			combat_unit = { # 1st Horse-Artillery Division
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_ROSTOV
-				count = 1
-			}
-
-			combat_unit = { # Tenginsk and Navaginsk Infantry, Kabarda and Kura Jägers
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_KUBAN
-				count = 4
 			}
 
 			combat_unit = { # Apsheron Infantry
@@ -1114,12 +1082,6 @@
 				type = unit_type:combat_unit_type_hussars
 				state_region = s:STATE_ARMENIA
 				count = 2
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_KARS
-				count = 5
 			}
 
 			# Caucasus Artillery Division
@@ -1147,52 +1109,10 @@
 			hq_region = sr:region_russia
 			name = 2y_Pekhotniy_Korpus
 
-			combat_unit = { # Belozersk, Vologda Infantry
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_TVER
-				count = 2
-			}
-
-			combat_unit = { # Schlüsselburg and Ladoga Jägers
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_NOVGOROD
-				count = 2
-			}
-
-			combat_unit = { # Arkhangelsk Infantry
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_ARKHANGELSK
-				count = 1
-			}
-
-			combat_unit = { # Kostroma and Galich Jägers
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_GALICH
-				count = 2
-			}
-
 			combat_unit = { # Murom Infantry
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_MOSCOW
 				count = 1
-			}
-
-			combat_unit = { # Nizhnii-Novgorod Infantry, Nizovsk and Simbirsk Jägers
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_KAZAN
-				count = 3
-			}
-
-			# 2nd Light Cavalry Division
-			combat_unit = { # Yelisavetgrad and Lubny Hussar Regiments
-				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_KHARKOV
-				count = 2
-			}
-			combat_unit = { # Smolensk and Kharkov Lancer Regiments
-				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_KHARKOV
-				count = 2
 			}
 
 			# 2nd Artillery Division
@@ -1213,13 +1133,6 @@
 				state_region = s:STATE_ORYOL
 				count = 3
 			}
-
-			combat_unit = { # 2nd Horse-Artillery Division
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_ROSTOV
-				count = 1
-			}
-			save_scope_as = ii_pekhotniy_korpus
 		}
 
 		create_character = {
@@ -1236,35 +1149,10 @@
 			hq_region = sr:region_dnieper
 			name = 3y_Pekhotniy_Korpus
 
-			combat_unit = { # Field Marshal the Duke of Wellington’s and Mogilev Infantry, Vitebsk and Polotsk Jägers
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_MOGILEV
-				count = 4
-			}
-
-			combat_unit = { # Field Marshal Graf Dibich of the Transbalkans’ and Poltava Infantry, Aleksopol and Kremenchug Jägers
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_KIEV
-				count = 4
-			}
-
-			combat_unit = { # Yelets and Sevsk Infantry, Orel Jägers
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_KURSK
-				count = 3
-			}
-
 			combat_unit = { # Bryansk Jägers
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_ORYOL
 				count = 1
-			}
-
-			# 3rd Light Cavalry Division
-			combat_unit = { # Field Marshal Graf Wittgenstein’s and the Prince of Orange’s Hussar Regiments.
-				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_KIEV
-				count = 2
 			}
 
 			# 3rd Artillery Division
@@ -1285,12 +1173,6 @@
 				state_region = s:STATE_MOSCOW
 				count = 3
 			}
-
-			combat_unit = { # 3rd Horse-Artillery Division
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_ROSTOV
-				count = 1
-			}
 			save_scope_as = iii_pekhotniy_korpus
 		}
 
@@ -1308,66 +1190,10 @@
 			hq_region = sr:region_west_siberia
 			name = 4y_Pekhotniy_Korpus
 
-			combat_unit = { # Yekaterinburg Infantry
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_URAL
-				count = 1
-			}
-
-			combat_unit = { # Tobolsk Infantry
+			combat_unit = { # Kolyvan Jägers
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_TOBOLSK
 				count = 1
-			}
-
-			combat_unit = { # Kolyvan Jägers
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_AKMOLINSK
-				count = 1
-			}
-
-
-			combat_unit = { # Azov and Dnieper Infantry
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_KHARKOV
-				count = 2
-			}
-
-			combat_unit = { # Ukraine and Odessa Jägers
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_CHERSON
-				count = 2
-			}
-
-			# 4th Light Cavalry Division
-			combat_unit = { # Pavlograd and Archduke Ferdinand’s Hussar Regiments.
-				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_KHARKOV
-				count = 2
-			}
-			combat_unit = { # Voznesensk and Olviopol Lancer Regiments.
-				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_CHERSON
-				count = 2
-			}
-
-			# 4th Artillery Division
-			combat_unit = { # 10th, 11th, and 12th Field Artillery Brigades
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_KHARKOV
-				count = 3
-			}
-			combat_unit = { # 4th Horse-Artillery Brigade
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_KHARKOV
-				count = 1
-			}
-
-			# 1st Reserve Cavalry Corps
-			combat_unit = { # Belgorod and Chuguev Lancer Regiments, Borisoglebsk and Serpukhov Lancer Regiments
-				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_KURSK
-				count = 4
 			}
 			save_scope_as = iiii_pekhotniy_korpus
 		}
@@ -1384,111 +1210,17 @@
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_russia
-			name = 5y_Pekhotniy_Korpus
-
-			combat_unit = { # Brest and Bialystok Infantry
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_BREST
-				count = 2
-			}
-
-			combat_unit = { # Volhynia Infantry
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_VOLHYNIA
-				count = 1
-			}
-
-			combat_unit = { # Minsk Infantry
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_MINSK
-				count = 1
-			}
-
-			combat_unit = { # Podolia and Zhitomir Jägers
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_KIEV
-				count = 2
-			}
-
-			# 5th Light Cavalry Division
-			combat_unit = { # Akhtyrka and Aleksandriya Hussar Regiments
-				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_KIEV
-				count = 2
-			}
-			combat_unit = { # Bug and Odessa Lancer Regiments
-				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_CHERSON
-				count = 2
-			}
-
-			# 5th Artillery Division
-			combat_unit = { # 13th, 14th, and 15th Field Artillery Brigades
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_TARTARIA
-				count = 3
-			}
-			combat_unit = { # 5th Horse-Artillery Brigade
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_TARTARIA
-				count = 1
-			}
-
-			# 2nd Reserve Cavalry Corps
-			combat_unit = { # Ukraine and Novo-Arkhangelsk Lancer Regiments, Novo-Mirgorod and Yelisavetgrad Lancer Regiments
-				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_CHERSON
-				count = 4
-			}
-			save_scope_as = v_pekhotniy_korpus
-		}
-
-		create_character = {
-			template = RUS_ivan_paskevich
-			save_scope_as = paskevich_gen
-		}
-
-		scope:paskevich_gen = {
-			transfer_to_formation = scope:v_pekhotniy_korpus
-		}
-
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_russia
 			name = Otdelniy_Grenaderskiy_Korpus
-
-			combat_unit = { # Kiev and His Royal Highness Prince Eugene of Württemberg’s Grenadiers
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_KIEV
-				count = 2
-			}
-
-			combat_unit = { # Yekaterinoslav Grenadiers and Prince Paul of Mecklenburg’s Carabiniers
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_KHARKOV
-				count = 2
-			}
-
-			combat_unit = { # Siberia and Field Marshal Graf Rumyantsov of the Transdanube’s Grenadiers
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_URAL
-				count = 2
-			}
-
-			combat_unit = { # Generalissimus Prince Suvorov’s Grenadiers and Astrakhan Carabiniers
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_ASTRAKHAN
+			
+			combat_unit = { # His Imperial Highness the Grand Duke Michael Pavlovich’s and Yamburg Lancer Regiments
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_MOSCOW
 				count = 2
 			}
 
 			# 7th Light Cavalry Division
 			combat_unit = { #  His Imperial Highness the Grand Duke Michael Pavlovich’s and His Majesty the King of Württemberg’s Hussar Regiments
 				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_MINSK
-				count = 2
-			}
-			combat_unit = { # His Imperial Highness the Grand Duke Michael Pavlovich’s and Yamburg Lancer Regiments
-				type = unit_type:combat_unit_type_lancers
 				state_region = s:STATE_MOSCOW
 				count = 2
 			}
@@ -1502,13 +1234,6 @@
 			combat_unit = { # 7th Horse-Artillery Brigade
 				type = unit_type:combat_unit_type_mobile_artillery
 				state_region = s:STATE_MOSCOW
-				count = 1
-			}
-
-			# 1st Reserve Cavalry Corps
-			combat_unit = { # Yekaterinoslav and His Imperial Highness the Grand Duke Michael Pavlovich’s Cuirassier Regiments
-				type = unit_type:combat_unit_type_cuirassiers
-				state_region = s:STATE_KHARKOV
 				count = 1
 			}
 
@@ -1535,163 +1260,6 @@
 
 		scope:karsky_gen = {
 			transfer_to_formation = scope:grenaderskiy_korpus
-		}
-
-#		create_military_formation = { # Irregular Forces, Cossack Hosts
-#			type = army
-#			hq_region = sr:region_dniepr
-#			name = Donskoe_Voisko
-#
-#			# Don Cossacks
-#			combat_unit = {
-#				type = unit_type:combat_unit_type_hussars
-#				state_region = s:STATE_KHARKOV
-#				count = 5
-#			}
-#			# Don Cossacks
-#			combat_unit = {
-#				type = unit_type:combat_unit_type_hussars
-#				state_region = s:STATE_TARTARIA
-#				count = 10
-#			}
-#			# Don Cossacks
-#			combat_unit = {
-#				type = unit_type:combat_unit_type_hussars
-#				state_region = s:STATE_ROSTOV
-#				count = 8
-#			}
-#			# Siberian Cossack Line
-#			combat_unit = { # Regiments 1-10
-#				type = unit_type:combat_unit_type_hussars
-#				state_region = s:STATE_URAL
-#				count = 10
-#			}
-#			# Don Cossacks
-#			combat_unit = {
-#				type = unit_type:combat_unit_type_hussars
-#				state_region = s:STATE_KUBAN
-#				count = 6
-#			}
-#			# Don Cossacks
-#			combat_unit = {
-#				type = unit_type:combat_unit_type_hussars
-#				state_region = s:STATE_KUBAN
-#				count = 12
-#			}
-#			# Don Cossacks
-#			combat_unit = {
-#				type = unit_type:combat_unit_type_hussars
-#				state_region = s:STATE_ROSTOV
-#				count = 13
-#			}
-#		}
-
-		create_military_formation = {
-			type = fleet
-			hq_region = sr:region_russia
-			name = Baltiyskiy_Flot
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_ARKHANGELSK
-				count = 1
-			}
-			save_scope_as = rus_baltic_fleet
-		}
-
-		create_character = {
-			template = RUS_mikhail_lazarev
-			save_scope_as = lazarev_adm
-		}
-		scope:lazarev_adm = {
-			transfer_to_formation = scope:rus_baltic_fleet
-		}
-
-		create_character = {
-			template = RUS_pyotr_ricord
-			save_scope_as = ricord_adm
-		}
-
-		scope:ricord_adm = {
-			transfer_to_formation = scope:rus_baltic_fleet
-		}
-
-		create_military_formation = {
-			type = fleet
-			hq_region = sr:region_dnieper
-			name = Chernomorskiy_Flot
-		
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_CHERSON
-				count = 6
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_ROSTOV
-				count = 1
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_CRIMEA
-				count = 5
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_CHERSON
-				count = 7
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_CRIMEA
-				count = 7
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_ROSTOV
-				count = 4
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_KHARKOV
-				count = 1
-			}
-			save_scope_as = rus_black_sea_fleet
-		}
-
-		create_character = {
-			template = RUS_fabian_gottlieb_von_bellingshausen
-			save_scope_as = bellingshausen_adm
-		}
-		scope:bellingshausen_adm = {
-			transfer_to_formation = scope:rus_black_sea_fleet
-		}
-
-		create_military_formation = {
-			type = fleet
-			hq_region = sr:region_east_siberia
-			name = Okhotskaya_Voyennaya_Flotiliya
-		
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_OKHOTSK
-				count = 1
-			}
-			save_scope_as = rus_okhotsk_fleet
-		}
-		
-		create_character = {
-			template = RUS_vasily_zavoyko
-			save_scope_as = zavoyko_adm
-		}
-		scope:zavoyko_adm = {
-			transfer_to_formation = scope:rus_okhotsk_fleet
 		}
 	}
 
@@ -3651,6 +3219,546 @@
 				state_region = s:STATE_POMERANIA
 				count = 1
 			}
+		}
+	}
+	c:NOV ?= {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_russia
+
+			combat_unit = { # L.-Gds. Preobrazhenskii and Semenovskii regiments, L.-Gds. Izmailovskii and Jäger regiments, Livgardets 3:e finska skarpskyttebataljon (Finland)
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_KURSK
+				count = 5
+			}
+
+			combat_unit = { # L.-Gds. Lithuania Regiment
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_CHERSON
+				count = 1
+			}
+
+			combat_unit = { # His Majesty the King of Prussia’s Grenadier Regiment, L.-Gds. Volhynia Regiment
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_VOLHYNIA
+				count = 2
+			}
+
+			combat_unit = { # Field Marshal Graf von der Osten-Saken’s and Kazan Jägers
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_KAZAN
+				count = 2
+			}
+
+			combat_unit = { # L.-Gds. Horse Artillery
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_KURSK
+				count = 2
+			}
+
+			combat_unit = { # 1-3. L.-Gds. Artillery Brigade
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_KURSK
+				count = 3
+			}
+
+			combat_unit = { # L.-Gds. Hussar Regiment and L.-Gds. Cossack Regiment, L.-Gds. Grodno Hussar Regiment and the Ataman Cossack Regiment of His Imperial Highness the Heir and Tsesarevich
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_NOVGOROD
+				count = 4
+			}	
+		}	
+
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_russia
+
+			combat_unit = { # Reval and Estonia Jägers
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_NOVGOROD
+				count = 4
+			}
+
+			# 1st Light Cavalry Division
+			combat_unit = { # Sumy and Klyastitsy Hussar Regiments.
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_KIEV
+				count = 2
+			}
+			combat_unit = { # St. Petersburg Lancer Regiment
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_KIEV
+				count = 1
+			}
+			combat_unit = { # Courland Lancer Regiment
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_KIEV
+				count = 1
+			}
+
+			# 1st Reserve Cavalry Corps
+			combat_unit = { # Yekaterinoslav and His Imperial Highness the Grand Duke Michael Pavlovich’s Cuirassier Regiments
+				type = unit_type:combat_unit_type_cuirassiers
+				state_region = s:STATE_KHARKOV
+				count = 1
+			}
+
+			combat_unit = { # 1st Horse-Artillery Division
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_ROSTOV
+				count = 1
+			}
+
+			combat_unit = { # Tenginsk and Navaginsk Infantry, Kabarda and Kura Jägers
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_KUBAN
+				count = 4
+			}
+		}
+
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_russia
+
+			combat_unit = { # Belozersk, Vologda Infantry
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_TVER
+				count = 2
+			}
+
+			combat_unit = { # Schlüsselburg and Ladoga Jägers
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_NOVGOROD
+				count = 2
+			}
+
+			combat_unit = { # Olonets Infantry
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_ARKHANGELSK
+				count = 1
+			}
+
+			combat_unit = { # Arkhangelsk Infantry
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_ARKHANGELSK
+				count = 1
+			}
+
+			combat_unit = { # Kostroma and Galich Jägers
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_GALICH
+				count = 2
+			}
+
+			combat_unit = { # Nizhnii-Novgorod Infantry, Nizovsk and Simbirsk Jägers
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_KAZAN
+				count = 3
+			}
+
+			# 2nd Light Cavalry Division
+			combat_unit = { # Yelisavetgrad and Lubny Hussar Regiments
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_KHARKOV
+				count = 2
+			}
+			combat_unit = { # Smolensk and Kharkov Lancer Regiments
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_KHARKOV
+				count = 2
+			}
+
+			combat_unit = { # 2nd Horse-Artillery Division
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_ROSTOV
+				count = 1
+			}
+			save_scope_as = ii_pekhotniy_korpus
+		}
+
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_dnieper
+
+			combat_unit = { # Field Marshal the Duke of Wellington’s and Mogilev Infantry, Vitebsk and Polotsk Jägers
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_MOGILEV
+				count = 4
+			}
+
+			combat_unit = { # Field Marshal Graf Dibich of the Transbalkans’ and Poltava Infantry, Aleksopol and Kremenchug Jägers
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_KIEV
+				count = 4
+			}
+
+			combat_unit = { # Yelets and Sevsk Infantry, Orel Jägers
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_KURSK
+				count = 3
+			}
+
+			# 3rd Light Cavalry Division
+			combat_unit = { # Field Marshal Graf Wittgenstein’s and the Prince of Orange’s Hussar Regiments.
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_KIEV
+				count = 2
+			}
+			combat_unit = { # Lithuania and Volhynia Lancer Regiments.
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_KURSK
+				count = 2
+			}
+
+			combat_unit = { # 3rd Horse-Artillery Division
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_ROSTOV
+				count = 1
+			}
+			save_scope_as = iii_pekhotniy_korpus
+		}
+
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_west_siberia
+
+			combat_unit = { # Yekaterinburg Infantry
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_ROSTOV
+				count = 1
+			}
+
+			combat_unit = { # Tobolsk Infantry
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_KUBAN
+				count = 1
+			}
+
+			combat_unit = { # Tomsk Jägers
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_KURSK
+				count = 1
+			}
+
+			combat_unit = { # Selenginsk Infantry
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_CRIMEA
+				count = 1
+			}
+
+			combat_unit = { # Yakutsk Infantry
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_CHERSON
+				count = 1
+			}
+
+			combat_unit = { # Okhotsk Infantry
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_KAZAN
+				count = 1
+			}
+
+			combat_unit = { # Kamchatka Infantry
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_SAMARA
+				count = 1
+			}
+
+			combat_unit = { # Azov and Dnieper Infantry
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_KHARKOV
+				count = 2
+			}
+
+			combat_unit = { # Ukraine and Odessa Jägers
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_CHERSON
+				count = 2
+			}
+
+			# 4th Light Cavalry Division
+			combat_unit = { # Pavlograd and Archduke Ferdinand’s Hussar Regiments.
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_KHARKOV
+				count = 2
+			}
+			combat_unit = { # Voznesensk and Olviopol Lancer Regiments.
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_CHERSON
+				count = 2
+			}
+
+			# 4th Artillery Division
+			combat_unit = { # 10th, 11th, and 12th Field Artillery Brigades
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_KHARKOV
+				count = 3
+			}
+			combat_unit = { # 4th Horse-Artillery Brigade
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_KHARKOV
+				count = 1
+			}
+
+			# 1st Reserve Cavalry Corps
+			combat_unit = { # Belgorod and Chuguev Lancer Regiments, Borisoglebsk and Serpukhov Lancer Regiments
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_KURSK
+				count = 4
+			}
+		}
+
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_russia
+			name = 5y_Pekhotniy_Korpus
+
+			combat_unit = { # Brest and Bialystok Infantry
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_BREST
+				count = 2
+			}
+
+			combat_unit = { # Volhynia Infantry
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_VOLHYNIA
+				count = 1
+			}
+
+			combat_unit = { # Minsk Infantry
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_MINSK
+				count = 1
+			}
+
+			combat_unit = { # Podolia and Zhitomir Jägers
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_KIEV
+				count = 2
+			}
+
+			# 5th Light Cavalry Division
+			combat_unit = { # Akhtyrka and Aleksandriya Hussar Regiments
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_KIEV
+				count = 2
+			}
+			combat_unit = { # Bug and Odessa Lancer Regiments
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_CHERSON
+				count = 2
+			}
+
+			# 5th Artillery Division
+			combat_unit = { # 13th, 14th, and 15th Field Artillery Brigades
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_TARTARIA
+				count = 3
+			}
+			combat_unit = { # 5th Horse-Artillery Brigade
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_TARTARIA
+				count = 1
+			}
+
+			# 2nd Reserve Cavalry Corps
+			combat_unit = { # Ukraine and Novo-Arkhangelsk Lancer Regiments, Novo-Mirgorod and Yelisavetgrad Lancer Regiments
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_CHERSON
+				count = 4
+			}
+		}
+
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_russia
+
+			combat_unit = { # Kiev and His Royal Highness Prince Eugene of Württemberg’s Grenadiers
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_KIEV
+				count = 2
+			}
+
+			combat_unit = { # Yekaterinoslav Grenadiers and Prince Paul of Mecklenburg’s Carabiniers
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_KHARKOV
+				count = 2
+			}
+
+			combat_unit = { # Siberia and Field Marshal Graf Rumyantsov of the Transdanube’s Grenadiers
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_URAL
+				count = 2
+			}
+
+			combat_unit = { # Generalissimus Prince Suvorov’s Grenadiers and Astrakhan Carabiniers
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_ASTRAKHAN
+				count = 2
+			}
+
+			# 1st Reserve Cavalry Corps
+			combat_unit = { # Yekaterinoslav and His Imperial Highness the Grand Duke Michael Pavlovich’s Cuirassier Regiments
+				type = unit_type:combat_unit_type_cuirassiers
+				state_region = s:STATE_KHARKOV
+				count = 1
+			}
+		}
+
+		create_military_formation = { # Irregular Forces, Cossack Hosts
+			type = army
+			hq_region = sr:region_dniepr
+			name = Donskoe_Voisko
+
+			# Don Cossacks
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_KHARKOV
+				count = 5
+			}
+			# Don Cossacks
+			combat_unit = {
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_TARTARIA
+				count = 10
+			}
+			# Don Cossacks
+			combat_unit = {
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_ROSTOV
+				count = 8
+			}
+			# Siberian Cossack Line
+			combat_unit = { # Regiments 1-10
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_URAL
+				count = 10
+			}
+			# Don Cossacks
+			combat_unit = {
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_KUBAN
+				count = 6
+			}
+			# Don Cossacks
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_KUBAN
+				count = 12
+			}
+			# Don Cossacks
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_ROSTOV
+				count = 13
+			}
+		}
+
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_russia
+			name = Baltiyskiy_Flot
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigate
+				state_region = s:STATE_ARKHANGELSK
+				count = 1
+			}
+		}
+
+		create_character = {
+			template = RUS_mikhail_lazarev
+			save_scope_as = lazarev_adm
+		}
+		scope:lazarev_adm = {
+			transfer_to_formation = scope:rus_baltic_fleet
+		}
+
+		create_character = {
+			template = RUS_pyotr_ricord
+			save_scope_as = ricord_adm
+		}
+
+		scope:ricord_adm = {
+			transfer_to_formation = scope:rus_baltic_fleet
+		}
+
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_dnieper
+			name = Chernomorskiy_Flot
+		
+			combat_unit = {
+				type = unit_type:combat_unit_type_man_o_war
+				state_region = s:STATE_CHERSON
+				count = 6
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_man_o_war
+				state_region = s:STATE_ROSTOV
+				count = 1
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_man_o_war
+				state_region = s:STATE_CRIMEA
+				count = 5
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigate
+				state_region = s:STATE_CHERSON
+				count = 7
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigate
+				state_region = s:STATE_CRIMEA
+				count = 7
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigate
+				state_region = s:STATE_ROSTOV
+				count = 4
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigate
+				state_region = s:STATE_KHARKOV
+				count = 1
+			}
+			save_scope_as = rus_black_sea_fleet
+		}
+
+		create_character = {
+			template = RUS_fabian_gottlieb_von_bellingshausen
+			save_scope_as = bellingshausen_adm
+		}
+		scope:bellingshausen_adm = {
+			transfer_to_formation = scope:rus_black_sea_fleet
+		}
+
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_east_siberia
+			name = Okhotskaya_Voyennaya_Flotiliya
+		
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigate
+				state_region = s:STATE_OKHOTSK
+				count = 1
+			}
+			save_scope_as = rus_okhotsk_fleet
+		}
+		
+		create_character = {
+			template = RUS_vasily_zavoyko
+			save_scope_as = zavoyko_adm
+		}
+		scope:zavoyko_adm = {
+			transfer_to_formation = scope:rus_okhotsk_fleet
 		}
 	}
 }
