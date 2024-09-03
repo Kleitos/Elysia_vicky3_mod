@@ -535,3 +535,23 @@ DIPLOMATIC_PLAYS = {
 		}			
 	}
 }
+
+DIPLOMATIC_PLAYS = {
+	c:RUS = {
+		create_diplomatic_play = {	
+		
+				target_state = s:STATE_NOVGOROD.region_state:NOV
+			war = no
+			escalation = 81
+			
+			type = dp_annex_war
+
+
+			add_war_goal = {
+				holder = c:NOV
+				type = annex_country
+				target_state = s:STATE_MOSCOW.region_state:RUS
+			}
+		}			
+	}
+}
