@@ -688,6 +688,7 @@ DON = {
 	states = {
 		STATE_ROSTOV
 		STATE_KUBAN
+		STATE_STAVROPOL
 	}
 	ai_will_do = { always = no }
 }
