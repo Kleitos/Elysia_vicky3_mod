@@ -366,6 +366,10 @@ je_danubian_storm = {
 
 	progressbar = yes
 
+	fail = {
+		has_variable = danube_storm_fail
+	}
+
 	weight = 10000
 	should_be_pinned_by_default = yes
 	
@@ -404,10 +408,18 @@ je_danube_control_over_serbia = {
 			name = danubian_storm_var
 			add = 1
 		}
+		c:AUS = {
+			set_variable = {
+				name = danube_storm_fail
+			}	
+		}
 	}
 
 	fail = {
 		AND = {
+			has_variable = danube_german_war
+			has_variable = danube_italian_war
+			has_variable = danube_romania_war
 			has_variable = danube_serb_war
 			is_at_war = no
 			has_truce_with = c:BYZ
@@ -424,7 +436,12 @@ je_danube_control_over_serbia = {
 	}
 
 	on_fail = {
-		trigger_event = { id = danish_storm_partition.1 popup = yes }
+		trigger_event = { id = danube_storm_partition.1 popup = yes }
+		c:AUS = {
+			set_variable = {
+				name = danube_storm_fail
+			}	
+		}
 	}	
 }	
 
@@ -465,7 +482,10 @@ je_danube_control_over_romania = {
 
 	fail = {
 		AND = {
+			has_variable = danube_german_war
+			has_variable = danube_italian_war
 			has_variable = danube_romania_war
+			has_variable = danube_serb_war
 			is_at_war = no
 			has_truce_with = c:RUS
 			NOR = {
@@ -481,7 +501,12 @@ je_danube_control_over_romania = {
 	}
 
 	on_fail = {
-		trigger_event = { id = danish_storm_partition.1 popup = yes }
+		trigger_event = { id = danube_storm_partition.1 popup = yes }
+		c:AUS = {
+			set_variable = {
+				name = danube_storm_fail
+			}	
+		}
 	}
 }
 
@@ -518,7 +543,10 @@ je_danube_control_over_dalmatia = {
 
 	fail = {
 		AND = {
+			has_variable = danube_german_war
 			has_variable = danube_italian_war
+			has_variable = danube_romania_war
+			has_variable = danube_serb_war
 			is_at_war = no
 			has_truce_with = c:ITA
 			NOR = {
@@ -530,7 +558,7 @@ je_danube_control_over_dalmatia = {
 	}
 
 	on_fail = {
-		trigger_event = { id = danish_storm_partition.1 popup = yes }
+		trigger_event = { id = danube_storm_partition.1 popup = yes }
 	}
 }
 
@@ -570,6 +598,9 @@ je_danube_control_over_austria = {
 	fail = {
 		AND = {
 			has_variable = danube_german_war
+			has_variable = danube_italian_war
+			has_variable = danube_romania_war
+			has_variable = danube_serb_war
 			is_at_war = no
 			has_truce_with = c:GER
 			NOR = {
@@ -583,6 +614,11 @@ je_danube_control_over_austria = {
 	}
 
 	on_fail = {
-		trigger_event = { id = danish_storm_partition.1 popup = yes }
+		trigger_event = { id = danube_storm_partition.1 popup = yes }
+		c:AUS = {
+			set_variable = {
+				name = danube_storm_fail
+			}	
+		}
 	}
 }
