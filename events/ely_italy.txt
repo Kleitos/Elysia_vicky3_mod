@@ -25,6 +25,7 @@ italian_wars.1 = {
 	immediate = {	
 		c:LMV = {
 			annex = c:SIC
+			trigger_event = { id = italian_wars.3 days = 730 }
 		}
 		c:BYZ = {
 			trigger_event = { id = italian_wars.2 }
@@ -34,9 +35,6 @@ italian_wars.1 = {
     option = {
 		name = italian_wars.1.a
 		default_option = yes
-		ai_chance = {
-			base = 100
-		}
 		create_diplomatic_play = {
 			target_country = c:SAR
 			war = no
@@ -79,7 +77,6 @@ italian_wars.2 = {
 
     option = {
 		name = italian_wars.2.a
-		default_option = yes
 		ai_chance = {
 			base = 5
 		}
@@ -89,11 +86,170 @@ italian_wars.2 = {
 	}
     option = {
 		name = italian_wars.2.b
+		default_option = yes
 		ai_chance = {
-			base = 5
+			base = 95
 		}
 		c:BYZ = {
 			trigger_event = { id = greek_revolt.2 }
+		}
+	}
+}
+
+italian_wars.3 = {
+	type = country_event
+	placement = ROOT
+
+	title = italian_wars.3.t
+	desc = italian_wars.3.d
+	flavor = italian_wars.3.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {	
+	}
+
+    option = {
+		name = italian_wars.3.a
+		default_option = yes
+		ai_chance = {
+			base = 95
+		}
+		c:PAP = {
+			trigger_event = { id = italian_wars.4 days = 10 }
+		}
+	}
+
+    option = {
+		name = italian_wars.3.b
+		default_option = yes
+		ai_chance = {
+			base = 5
+		}
+		c:PAP = {
+			trigger_event = { id = italian_wars.5 days = 10 }
+		}
+	}
+}
+
+italian_wars.4 = {
+	type = country_event
+	placement = ROOT
+
+	title = italian_wars.4.t
+	desc = italian_wars.4.d
+	flavor = italian_wars.4.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {	
+	}
+
+    option = {
+		name = italian_wars.4.a
+		default_option = yes
+		if = {
+			limit = { exists = s:STATE_ROMAGNA.region_state:PAP }
+			s:STATE_ROMAGNA.region_state:PAP = { set_state_owner = c:LMV }
+		}
+		if = {
+			limit = { exists = s:STATE_UMBRIA.region_state:PAP }
+			s:STATE_UMBRIA.region_state:PAP = { set_state_owner = c:LMV }
+		}
+	}
+}
+
+italian_wars.5 = {
+	type = country_event
+	placement = ROOT
+
+	title = italian_wars.5.t
+	desc = italian_wars.5.d
+	flavor = italian_wars.5.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {	
+	}
+
+    option = {
+		name = italian_wars.5.a
+		default_option = yes
+		create_diplomatic_play = {
+			target_country = c:LMV
+			war = no
+			escalation = 81
+			type = dp_conquer_state
+			target_state = s:STATE_TUSCANY.region_state:LMV
+			add_war_goal = {
+				holder = c:LMV
+				type = annex_country
+				target_state = s:STATE_LAZIO.region_state:PAP
+			}
+			add_war_goal = {
+				holder = c:PAP
+				type = conquer_state
+				target_state = s:STATE_EMILIA.region_state:LMV
+				target_country = c:LMV
+			}
+			add_war_goal = {
+				holder = c:PAP
+				type = conquer_state
+				target_state = s:STATE_ABRUZZO.region_state:LMV
+				target_country = c:LMV
+			}
+			add_war_goal = {
+				holder = c:PAP
+				type = humiliation
+				target_country = c:LMV
+			}
+			add_war_goal = {
+				holder = c:PAP
+				type = war_reparations
+				target_country = c:LMV
+			}
+			add_initiator_backers = {
+				country = c:FRA
+			}
+			add_initiator_backers = {
+				country = c:AUS
+			}
 		}
 	}
 }

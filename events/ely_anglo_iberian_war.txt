@@ -579,7 +579,7 @@ anglo_iberian_war.2 = {
 			target_state = s:STATE_MALAYA.region_state:GBR
 			add_war_goal = {
 				holder = c:GBR
-				type = dp_conquer_state
+				type = conquer_state
 				target_state = s:STATE_ZANZIBAR.region_state:SPA
 				target_country = c:SPA
 			}

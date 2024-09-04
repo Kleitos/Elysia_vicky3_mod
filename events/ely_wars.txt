@@ -381,7 +381,7 @@ greek_revolt.1 = {
 			target_country = c:BYZ
 			type = dp_conquer_state
 			escalation = 81
-			target_state = s:STATE_CYPRUS.region_state:BYZ
+			target_state = s:STATE_IONIAN_ISLANDS.region_state:BYZ
 			add_war_goal = {
 				holder = c:LMV
 				type = conquer_state
@@ -400,7 +400,7 @@ greek_revolt.1 = {
 			add_war_goal = {
 				holder = c:LMV
 				type = conquer_state
-				target_state = s:STATE_IONIAN_ISLANDS.region_state:BYZ
+				target_state = s:STATE_CYPRUS.region_state:BYZ
 			}
 			add_war_goal = {
 				holder = c:LMV
@@ -448,6 +448,9 @@ greek_revolt.2 = {
 	}
 
 	immediate = {
+		c:LMV = {
+			change_infamy = -100			
+		}
 	}
 	option = {
 		name = greek_revolt.2.a
