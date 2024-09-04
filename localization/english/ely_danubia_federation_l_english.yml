@@ -131,6 +131,11 @@
  danubian_wars.5.f:0 ""
  danubian_wars.5.a:0 "Let them come"
  
+ danube_storm_partition.1.t:0 "The end of a Dream"
+ danube_storm_partition.1.d:0 ""
+ danube_storm_partition.1.f:0 ""
+ danube_storm_partition.1.a:0 "It's over"
+ 
  # Modifiers
  
  austria_multicultural:0 "Cultural Chaos"
