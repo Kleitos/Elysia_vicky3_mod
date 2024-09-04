@@ -258,6 +258,10 @@ byzantine_resurgence.3 = {
 
 	immediate = {
 		if = {
+			limit = { c:SYR ?= { is_country_alive = yes } }
+			c:BYZ = { annex = c:SYR }	
+		}
+		if = {
 			limit = { exists = s:STATE_ERZURUM.region_state:EGY }
 			s:STATE_ERZURUM.region_state:EGY = { set_state_owner = c:TUR }
 		}
