@@ -404,6 +404,27 @@ je_danube_control_over_serbia = {
 			name = danubian_storm_var
 			add = 1
 		}
+	}
+
+	fail = {
+		AND = {
+			has_variable = danube_serb_war
+			is_at_war = no
+			has_truce_with = c:BYZ
+			NOR = {
+				owns_entire_state_region = STATE_DELVIDEK
+				owns_entire_state_region = STATE_BANAT
+				owns_entire_state_region = STATE_BOSNIA
+				owns_entire_state_region = STATE_NORTHERN_SERBIA
+				owns_entire_state_region = STATE_DALMATIA
+				owns_entire_state_region = STATE_CROATIA
+				owns_entire_state_region = STATE_SLAVONIA
+			}		
+		}
+	}
+
+	on_fail = {
+		trigger_event = { id = danish_storm_partition.1 popup = yes }
 	}	
 }	
 
@@ -441,6 +462,27 @@ je_danube_control_over_romania = {
 			add = 1
 		}
 	}	
+
+	fail = {
+		AND = {
+			has_variable = danube_romania_war
+			is_at_war = no
+			has_truce_with = c:RUS
+			NOR = {
+				owns_entire_state_region = STATE_SOUTHERN_TRANSYLVANIA
+				owns_entire_state_region = STATE_BANAT
+				owns_entire_state_region = STATE_NORTHERN_TRANSYLVANIA
+				owns_entire_state_region = STATE_BEKES
+				owns_entire_state_region = STATE_MOLDAVIA
+				owns_entire_state_region = STATE_WALLACHIA
+				owns_entire_state_region = STATE_BESSARABIA
+			}		
+		}
+	}
+
+	on_fail = {
+		trigger_event = { id = danish_storm_partition.1 popup = yes }
+	}
 }
 
 je_danube_control_over_dalmatia = {
@@ -473,6 +515,23 @@ je_danube_control_over_dalmatia = {
 			add = 1
 		}
 	}	
+
+	fail = {
+		AND = {
+			has_variable = danube_italian_war
+			is_at_war = no
+			has_truce_with = c:ITA
+			NOR = {
+				owns_entire_state_region = STATE_SOUTH_TYROL
+				owns_entire_state_region = STATE_DALMATIA
+				owns_entire_state_region = STATE_ISTRIA
+			}		
+		}
+	}
+
+	on_fail = {
+		trigger_event = { id = danish_storm_partition.1 popup = yes }
+	}
 }
 
 je_danube_control_over_austria = {
@@ -507,4 +566,23 @@ je_danube_control_over_austria = {
 			add = 1
 		}
 	}	
+
+	fail = {
+		AND = {
+			has_variable = danube_german_war
+			is_at_war = no
+			has_truce_with = c:GER
+			NOR = {
+				owns_entire_state_region = STATE_SOUTH_TYROL
+				owns_entire_state_region = STATE_STYRIA
+				owns_entire_state_region = STATE_TYROL
+				owns_entire_state_region = STATE_AUSTRIA
+				owns_entire_state_region = STATE_SLOVENIA
+			}		
+		}
+	}
+
+	on_fail = {
+		trigger_event = { id = danish_storm_partition.1 popup = yes }
+	}
 }
