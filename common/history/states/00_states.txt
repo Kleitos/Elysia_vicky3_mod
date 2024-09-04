@@ -7509,6 +7509,7 @@ STATES = {
 		}
 		
 		add_homeland = cu:maltese
+		add_homeland = cu:south_italian
 	}
 	s:STATE_UMBRIA = {
 		create_state = {
@@ -7536,6 +7537,7 @@ STATES = {
 		}
 		
 		add_homeland = cu:corsican
+		add_homeland = cu:north_italian
 	}
 
 	s:STATE_UTAH = {
