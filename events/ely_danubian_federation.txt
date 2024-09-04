@@ -4,7 +4,7 @@ namespace = danubian_breakup
 namespace = danubian_ultimatum
 namespace = danubian_culture
 namespace = danubian_wars
-namespace = danish_storm_partition
+namespace = danube_storm_partition
 
 
 danubian_fed.1 = {
@@ -240,6 +240,12 @@ danubian_fed.4 = {
 	}
 	
 	immediate = {
+		s:STATE_WEST_SLOVAKIA = {
+			add_claim = c:KUK
+		}
+		s:STATE_EAST_SLOVAKIA = {
+			add_claim = c:KUK
+		}
 	}
 
 	option = {
@@ -1068,13 +1074,13 @@ danubian_wars.5 = {
 }
 
 
-danish_storm_partition.1 = {
+danube_storm_partition.1 = {
 	type = country_event
 	placement = root
 	
-	title = danish_storm_partition.1.t
-	desc = danish_storm_partition.1.d
-	flavor = danish_storm_partition.1.f
+	title = danube_storm_partition.1.t
+	desc = danube_storm_partition.1.d
+	flavor = danube_storm_partition.1.f
 
 	duration = 3
 	
@@ -1108,7 +1114,7 @@ danish_storm_partition.1 = {
 	}
 
 	option = {
-		name = danish_storm_partition.1.a
+		name = danube_storm_partition.1.a
 		change_tag = HUN
 		if = {
 			limit = { exists = s:STATE_DELVIDEK.region_state:AUS }

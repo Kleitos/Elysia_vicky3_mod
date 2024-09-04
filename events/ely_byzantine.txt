@@ -259,7 +259,23 @@ byzantine_resurgence.3 = {
 	immediate = {
 		if = {
 			limit = { c:SYR ?= { is_country_alive = yes } }
-			c:BYZ = { annex = c:SYR }	
+			c:TUR = { annex = c:SYR }	
+		}
+		if = {
+			limit = { c:IRQ ?= { is_country_alive = yes } }
+			c:PER = { annex = c:IRQ }	
+		}
+		if = {
+			limit = { c:EOT ?= { is_country_alive = yes } }
+			c:EGY = { annex = c:EOT }	
+		}
+		if = {
+			limit = { c:LEB ?= { is_country_alive = yes } }
+			c:TUR = { annex = c:LEB }	
+		}
+		if = {
+			limit = { c:PAL ?= { is_country_alive = yes } }
+			c:EGY = { annex = c:PAL }	
 		}
 		if = {
 			limit = { exists = s:STATE_ERZURUM.region_state:EGY }
