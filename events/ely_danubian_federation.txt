@@ -4,6 +4,7 @@ namespace = danubian_breakup
 namespace = danubian_ultimatum
 namespace = danubian_culture
 namespace = danubian_wars
+namespace = danish_storm_partition
 
 
 danubian_fed.1 = {
@@ -1063,5 +1064,119 @@ danubian_wars.5 = {
 				target_country = c:AUS
 			}
 		}			
+	}
+}
+
+
+danish_storm_partition.1 = {
+	type = country_event
+	placement = root
+	
+	title = danish_storm_partition.1.t
+	desc = danish_storm_partition.1.d
+	flavor = danish_storm_partition.1.f
+
+	duration = 3
+	
+	event_image = {
+		video = "votp_conspiring"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	trigger = {
+	}
+	
+	immediate = {
+		remove_primary_culture = cu:slovene
+		remove_primary_culture = cu:croat
+		remove_primary_culture = cu:romanian
+		remove_primary_culture = cu:south_german
+		if = {
+			limit = {
+				NOT = { exists = c:ROM }
+				exists = s:STATE_WALLACHIA.region_state:AUS
+			}
+			create_country = {
+				tag = ROM
+				origin = c:AUS
+				state = s:STATE_WALLACHIA.region_state:AUS
+			}
+		}
+	}
+
+	option = {
+		name = danish_storm_partition.1.a
+		change_tag = HUN
+		if = {
+			limit = { exists = s:STATE_DELVIDEK.region_state:AUS }
+			s:STATE_DELVIDEK.region_state:AUS = { set_state_owner = c:BYZ }
+		}
+		if = {
+			limit = { exists = s:STATE_BANAT.region_state:AUS }
+			s:STATE_BANAT.region_state:AUS = { set_state_owner = c:BYZ }
+		}
+		if = {
+			limit = { exists = s:STATE_BOSNIA.region_state:AUS }
+			s:STATE_BOSNIA.region_state:AUS = { set_state_owner = c:BYZ }
+		}
+		if = {
+			limit = { exists = s:STATE_NORTHERN_SERBIA.region_state:AUS }
+			s:STATE_NORTHERN_SERBIA.region_state:AUS = { set_state_owner = c:BYZ }
+		}
+		if = {
+			limit = { exists = s:STATE_DALMATIA.region_state:AUS }
+			s:STATE_DALMATIA.region_state:AUS = { set_state_owner = c:BYZ }
+		}
+		if = {
+			limit = { exists = s:STATE_CROATIA.region_state:AUS }
+			s:STATE_CROATIA.region_state:AUS = { set_state_owner = c:BYZ }
+		}
+		if = {
+			limit = { exists = s:STATE_SLAVONIA.region_state:AUS }
+			s:STATE_SLAVONIA.region_state:AUS = { set_state_owner = c:BYZ }
+		}
+		if = {
+			limit = { exists = s:STATE_SOUTHERN_TRANSYLVANIA.region_state:AUS }
+			s:STATE_SOUTHERN_TRANSYLVANIA.region_state:AUS = { set_state_owner = c:ROM }
+		}
+		if = {
+			limit = { exists = s:STATE_NORTHERN_TRANSYLVANIA.region_state:AUS }
+			s:STATE_NORTHERN_TRANSYLVANIA.region_state:AUS = { set_state_owner = c:ROM }
+		}
+		if = {
+			limit = { exists = s:STATE_MOLDAVIA.region_state:AUS }
+			s:STATE_MOLDAVIA.region_state:AUS = { set_state_owner = c:ROM }
+		}
+		if = {
+			limit = { exists = s:STATE_BESSARABIA.region_state:AUS }
+			s:STATE_BESSARABIA.region_state:AUS = { set_state_owner = c:ROM }
+		}
+		if = {
+			limit = { exists = s:STATE_ISTRIA.region_state:AUS }
+			s:STATE_ISTRIA.region_state:AUS = { set_state_owner = c:ITA }
+		}
+		if = {
+			limit = { exists = s:STATE_STYRIA.region_state:AUS }
+			s:STATE_STYRIA.region_state:AUS = { set_state_owner = c:GER }
+		}
+		if = {
+			limit = { exists = s:STATE_TYROL.region_state:AUS }
+			s:STATE_TYROL.region_state:AUS = { set_state_owner = c:GER }
+		}
+		if = {
+			limit = { exists = s:STATE_AUSTRIA.region_state:AUS }
+			s:STATE_AUSTRIA.region_state:AUS = { set_state_owner = c:GER }
+		}
+		if = {
+			limit = { exists = s:STATE_SOUTH_TYROL.region_state:AUS }
+			s:STATE_SOUTH_TYROL.region_state:AUS = { set_state_owner = c:GER }
+		}
+		if = {
+			limit = { exists = s:STATE_SLOVENIA.region_state:AUS }
+			s:STATE_SLOVENIA.region_state:AUS = { set_state_owner = c:GER }
+		}
 	}
 }
