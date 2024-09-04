@@ -134,7 +134,6 @@ italian_wars.3 = {
 
     option = {
 		name = italian_wars.3.b
-		default_option = yes
 		ai_chance = {
 			base = 5
 		}
