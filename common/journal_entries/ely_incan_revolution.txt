@@ -42,14 +42,43 @@ je_win_andean_civilwar = {
 	}
 
 	on_complete = {
-		trigger_event = { id = ely_incan_revolution.2 }
-			add_journal_entry = { type = je_andean_pathway }
-			add_journal_entry = { type = je_reform_mines }
-			add_journal_entry = { type = je_andean_farming }
-			add_journal_entry = { type = je_andean_ranching }
-			add_journal_entry = { type = je_anti_ruler }
-			add_journal_entry = { type = je_sulfur_lead }
-			add_journal_entry = { type = je_cultural_shift_incan }
+		trigger_event = { id = ely_incan_post_war.1 }
+	}
+
+}
+
+je_crush_andean_civilwar = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+ 		is_at_war = no
+		owns_entire_state_region = STATE_ECUADOR
+		owns_entire_state_region = STATE_CAJAMARCA
+		owns_entire_state_region = STATE_LIMA
+		owns_entire_state_region = STATE_ICA
+		owns_entire_state_region = STATE_AREQUIPA
+		owns_entire_state_region = STATE_ACRE
+		owns_entire_state_region = STATE_LA_PAZ
+		owns_entire_state_region = STATE_POTOSI
+		owns_entire_state_region = STATE_SANTIAGO
+		owns_entire_state_region = STATE_LOS_RIOS
+		owns_entire_state_region = STATE_TARAPACA
+		owns_entire_state_region = STATE_ANTOFAGASTA
+		owns_entire_state_region = STATE_PASTAZA
+		NOT = { has_truce_with = c:TWT }
+		is_subject = no
+		OR = {
+			NOT = { exists = c:TWT }
+			c:TWT ?= {
+				is_country_alive = no
+			}
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = ely_incan_post_war.2 }
 	}
 
 }

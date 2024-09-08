@@ -74,7 +74,7 @@
 	}
 
 	goal_add_value = {
-		add = 60
+		add = 108
 	}
 	
     timeout = 3650
@@ -105,34 +105,13 @@ je_opium_wars = {
 	group = je_group_foreign_affairs
 	
 	complete = {
-		any_scope_state = {
-			is_treaty_port = yes
-			state_region = {
-				any_scope_state = {
-					owner = scope:target
-				}
-			}
+		c:CHI = {
+			has_modifier = lost_mandate_of_heaven
 		}
 	}
 
 	on_complete = {
-		trigger_event = {
-			id = opium_wars.5
-			days = 5
-		}
-	}
-
-	fail = {
-		custom_tooltip = {
-			text = opium_wars_fail_tt
-			scope:target = {
-				NOT = {
-					any_primary_culture = {
-						has_cultural_obsession = opium
-					}
-				}
-			}
-		}
+		trigger_event = { id = ely_china_opium.1 days = 5 }
 	}
 
 	invalid = {
@@ -145,22 +124,6 @@ je_opium_wars = {
 		remove_variable = opium_wars_aggressor
 	}
 
-	on_fail = {
-		custom_tooltip = {
-			text = opium_wars_fail_invalid_tt
-			remove_variable = opium_wars_aggressor
-		}
-	}
-
-	on_timeout = {
-		custom_tooltip = {
-			text = opium_wars_fail_invalid_tt
-			remove_variable = opium_wars_aggressor
-		}
-	}
-
 	weight = 10000
 	should_be_pinned_by_default = yes
-
-	timeout = 3650
 }

@@ -1,5 +1,5 @@
 ﻿je_chinese_missions = {
-	icon = "gfx/interface/icons/religion_icons/protestant.dds"
+	icon = "gfx/interface/icons/religion_icons/godworshippingsociety.dds"
 
 	group = je_group_historical_content
 
@@ -132,22 +132,11 @@ je_heavenly_kingdom_main = {
 	}
 
 	possible = {
-		custom_tooltip = {
-			text = missionaries_enough_time_tt
-			OR = {
-				AND = {
-					has_variable = missionary_works_counter
-					var:missionary_works_counter >= 5
-					game_date >= 1846
-				}
-				game_date >= 1846
-			}
-		}
 		is_subject = no
 		any_scope_state = {
 			is_incorporated = yes
 			any_scope_pop = {
-				has_pop_religion = protestant
+				has_pop_religion = godworshippingsociety
 			}
 			is_capital = no
 			state_region = { 
@@ -156,7 +145,6 @@ je_heavenly_kingdom_main = {
 					is_homeland = cu:hakka 
 				}
 			}
-			turmoil > 0.15
 		}
 	}
 
@@ -165,16 +153,13 @@ je_heavenly_kingdom_main = {
 			limit = {
 				is_incorporated = yes
 				any_scope_pop = {
-					has_pop_religion = protestant
+					has_pop_religion = godworshippingsociety
 				}
 				is_capital = no
 				state_region = { 
-					OR = {
-						is_homeland = cu:han 
-						is_homeland = cu:hakka 
-					}
+					is_homeland = cu:hakka 
 				}
-				turmoil > 0.15
+				turmoil > 0.05
 			}
 			add_modifier = {
 				name = god_worshippers
@@ -204,21 +189,17 @@ je_heavenly_kingdom_main = {
 	fail = {
 		any_scope_state = {
 			has_modifier = god_worshippers
-			count >= 4
+			count >= 5
 		}
 		any_scope_state = {
 			has_modifier = god_worshippers
-			any_scope_pop = {
-				has_pop_religion = protestant
-				religion_accepted = no
-			}
-			turmoil >= 0.15
+			turmoil >= 0.05
 		}
 	}
 
 	on_fail = {
 		trigger_event = {
-			id = heavenly.4
+			id = heavenly.4 days = 30
 		}
 	}
 
@@ -324,9 +305,7 @@ je_taiping_revolution = {
 	}
 
 	fail = {
-		NOT = {
-			exists = c:TPG
-		}
+		has_truce_with = c:CHI
 	}
 
 	weight = 1000
