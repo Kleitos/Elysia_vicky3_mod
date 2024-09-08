@@ -8,9 +8,9 @@
  BGD: "Bangladesh"
  BGD_ADJ: "	Bangladeshi"
  RAJ: "Rajputana"
- RAJ_ADJ: "	rajput"
+ RAJ_ADJ: "Rajput"
  MAR: "Marathas Confederacy"
- MAR_ADJ: "	Marathi"
+ MAR_ADJ: "Marathi"
  
 #Other Things
 
@@ -55,7 +55,9 @@
  austria_multicultural:0 "Secessionist Movements"
  crusading_spirit:0 "Anti-Ottoman Alliance"
  iran_arab_resistance:0 "Resistance to Arabisation"
- 
+ no_meta_game:0 "I love pain"
+ favored_by_destiny:0 "Lucky Nation"
+ ely_pop_growth:0 "Population Growth"
  
   ##Journals## 
  je_reform_bureaucracy:0 "Bureaucratic Reforms"
@@ -111,15 +113,21 @@
  
  je_cultural_shift_yug:0 "The Greater Yugoslav identity"
  je_cultural_shift_yug_reason:0 "In order to unite our people, we should take steps into creating a true national identity."
- 
+  
+ je_pop_growth:0 "Shifting demographics"
+ je_pop_growth_reason:0 ""
  
   ##Events##
- 
-	
+ 	
  cultural_shift.1.t:0 "New National Identity"
  cultural_shift.1.d:0 "Efforts have been taken to unify our people."
  cultural_shift.1.f:0 ""
  cultural_shift.1.a:0 "We are united"
+ 
+ pop_growth.1.1.t:0 "Fast population Growth"
+ pop_growth.1.1.d:0 "Better medicine and treatments as well as increased agricultural output as lead to a fast population growth as birth rate stays high and mortality rates declines. Analyst project a total demographic shift in a few decades."
+ pop_growth.1.1.f:0 ""
+ pop_growth.1.1.a:0 "We will have to adapt"
  
   ##African Groups##
  cushitic:0 "Cushitic Language"
@@ -147,8 +155,6 @@
  ideology_europe_nobles:0 "Noble Parliament"
  ideology_europe_nobles_desc:0 ""
  
- 
- ##Interest Group Flavoured##
     ###FRANCE###
  ideology_fra_nobles:0 "Etats Généraux, Noblesse"
  ideology_fra_nobles_desc:0 ""
@@ -161,6 +167,95 @@
  
  ideology_fra_enlightenement:0 "Les Lumières"
  ideology_fra_enlightenement_desc:0 "Members of the movement saw themselves as a progressive élite, and battled against religious and political persecution, fighting against what they saw as the irrationality, arbitrariness, obscurantism and superstition."
+  
+ revolution_indemnities:0 "Paying off the nobility"
+  
+    ###RUSSIA###
+ rus_revolution:0 "Revolutionnary Fervour"
+ rus_autocratic_eroding:0 "Removal of Aristocracy"
+ rus_autocratic:0 "Autocratic Rule in Russia"
+ 	
+ russian_revolution.1.t:0 "The Revolution is here"
+ russian_revolution.1.d:0 ""
+ russian_revolution.1.f:0 ""
+ russian_revolution.1.a:0 "I am Czar of all Russia"
+ 
+ russian_revolution.2.t:0 "Towards Revolution"
+ russian_revolution.2.d:0 ""
+ russian_revolution.2.f:0 ""
+ russian_revolution.2.a:0 "For the new Rus"
+ 
+ russian_revolution.3.t:0 "The Revolution Triumphant"
+ russian_revolution.3.d:0 ""
+ russian_revolution.3.f:0 ""
+ russian_revolution.3.a:0 "We are the Deluge"
+ 
+ russian_revolution.4.t:0 "The Revolution is crushed"
+ russian_revolution.4.d:0 ""
+ russian_revolution.4.f:0 ""
+ russian_revolution.4.a:0 "Order is restored"
+ 
+ russian_revolution.5.t:0 "Expension of the new State"
+ russian_revolution.5.d:0 ""
+ russian_revolution.5.f:0 ""
+ russian_revolution.5.a:0 "We must secure our interests"
+ 
+ russian_revolution.6.t:0 "A new Capital ?"
+ russian_revolution.6.d:0 ""
+ russian_revolution.6.f:0 ""
+ russian_revolution.6.a:0 "Novgorod, the Birth place of our revolution"
+ russian_revolution.6.b:0 "Kiev, the origin of the Rus"
+ russian_revolution.6.c:0 "Minsk, to re-unite little Russia with the Rus"
+ russian_revolution.6.d:0 "Moscow, appease and keep an eye on the old elite"
+ 
+ je_russian_civil_war_NOV:0 "Down with the Czar"
+ je_russian_civil_war_NOV_reason:0 ""
+ 
+ je_russian_civil_war_RUS:0 "Crush the Revolution"
+ je_russian_civil_war_RUS_reason:0 ""
+ 
+ je_pacify_the_steppes_NOV:0 "Pacification of the Steppes"
+ je_pacify_the_steppes_NOV_reason:1 "Despite nominal control over the Kazakh steppe since the 18th century, banditry and disloyalty plagues the territory. Kazakh rebels have begun striking again and again against our supply convoys and fortresses in the region.Only with the final pacification of the steppe may it truly be said that we are the sovereign of Kazakhstan."
+
+    ###ITALY###
+ 	
+ italian_wars.1.t:0 "The Conquest of Piedmont"
+ italian_wars.1.d:0 ""
+ italian_wars.1.f:0 ""
+ italian_wars.1.a:0 "One step closer to uniting the peninsula"
+ 	
+ italian_wars.2.t:0 "Turmoil in the Greek Islands"
+ italian_wars.2.d:0 ""
+ italian_wars.2.f:0 ""
+ italian_wars.2.a:0 "Punish the revolties"
+ italian_wars.2.b:0 "Let's keep it civil"
+ 	
+ italian_wars.3.t:0 "Uniting our holdings"
+ italian_wars.3.d:0 ""
+ italian_wars.3.f:0 ""
+ italian_wars.3.a:0 "Let's Settle for a compromise"
+ italian_wars.3.b:0 "All of Italy belongs to Us"
+ 	
+ italian_wars.4.t:0 "The Treaty of Venice"
+ italian_wars.4.d:0 ""
+ italian_wars.4.f:0 ""
+ italian_wars.4.a:0 "We won't forget this"
+ 	
+ italian_wars.5.t:0 "Lombardy's Ultimatum"
+ italian_wars.5.d:0 ""
+ italian_wars.5.f:0 ""
+ italian_wars.5.a:0 "We will teach those upstarts"
+ 	
+ greek_revolt.1.t:0 "Greek Revolt"
+ greek_revolt.1.d:0 ""
+ greek_revolt.1.f:0 ""
+ greek_revolt.1.a:0 "We will not give an inch"
+ 	
+ greek_revolt.2.t:0 "Greek Revolt"
+ greek_revolt.2.d:0 ""
+ greek_revolt.2.f:0 ""
+ greek_revolt.2.a:0 "We can't afford a second front"
+ 
  
  
  ##Westernization##

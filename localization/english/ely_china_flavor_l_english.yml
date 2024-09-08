@@ -1,0 +1,27 @@
+﻿l_english:
+
+
+#Journal Entries#
+ 
+ #Events#
+ 
+ ely_china_opium.1.t:0 "The Seizing of Hong Kong"
+ ely_china_opium.1.d:0 ""
+ ely_china_opium.1.f:0 ""
+ ely_china_opium.1.a:0 "Even the Qing yield to the Royal Navy"
+ 
+ ely_china_bystander.1.t:0 "The Burning of Beijing"
+ ely_china_bystander.1.d:0 ""
+ ely_china_bystander.1.f:0 ""
+ ely_china_bystander.1.a:0 "Those Barbarians"
+ 
+ ely_china_sellout.1.t:0 "The sale of China"
+ ely_china_sellout.1.d:0 ""
+ ely_china_sellout.1.f:0 ""
+ ely_china_sellout.1.a:0 "Greasing Palms is the best way to ensure our success"
+ 
+ # Modifiers
+ 
+ lost_mandate_of_heaven:0 "Loss of Mandate"
+ taiping_bribe_euros_give:0 "Paying Europeans"
+ taiping_bribe_euros_receive:0 "Taiping Bribe"

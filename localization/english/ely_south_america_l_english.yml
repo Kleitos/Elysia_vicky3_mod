@@ -26,6 +26,21 @@
  
  incan_culture:0 "Runakuna"
  
+  ##Modifiers##
+ ruler_of_andes:0 "Ruler of the Anti"
+ incan_mining:0 "Reformed mining system"
+ incan_farming:0 "Reformed farming system"
+ incan_ranching:0 "Reformed ranching system"
+ incan_revolution_fervor:0 "Glorious Revolution"
+ incan_revolution_sickness:0 "Revolution sickness"
+ incan_army_reforms:0 "Army Reforms"
+ incan_societal_reforms:0 "Societal Reforms"
+ incan_political_reforms:0 "Political Reforms"
+ incan_economic_reforms:0 "Economic Reforms"
+ incan_bureaucratic_reforms:0 "Bureaucratic Reforms"
+ incan_diplomatic_reforms:0 "Diplomatic Reforms"
+ incan_tax_reforms:0 "Tax Reforms"
+ 
  ### Journals Entries ###
  
  je_north_amazon_unification:0 "The Unification of Northern Arkadia"
@@ -60,6 +75,43 @@
  
  je_andean_pathway:0 "The Anti Pathway"
  je_andean_pathway_reason:0 "We have observed as the Elysians comquered their mountains for massive infrastructure projects. Maybe we could ask for their assistance for the mountains we call home."
+ 
+ je_incan_revolution:0 "Andean civil war"
+ je_incan_revolution_reason:0 ""
+ 
+ je_crush_andean_civilwar:0 "Crush the Revolution"
+ je_crush_andean_civilwar_reason:0 ""
+ 
+ je_win_andean_civilwar:0 "Topple the old order"
+ je_win_andean_civilwar_reason:0 ""
+ 
+ je_reform_mines:0 "Reform the mining industry"
+ je_reform_mines_reason:0 ""
+ 
+ je_reform_mines_2:0 "Expand the mining industry"
+ je_reform_mines_2_reason:0 ""
+ 
+ je_andean_pathway_2:0 "Expand the Anti Pathway"
+ je_andean_pathway_2_reason:0 ""
+ 
+ je_andean_farming:0 "Reform the Terrace farms"
+ je_andean_farming_reason:0 ""
+ 
+ je_andean_farming_2:0 "Expand the Terrace farms"
+ je_andean_farming_2_reason:0 ""
+ 
+ je_andean_ranching:0 "Reform Anti ranching"
+ je_andean_ranching_reason:0 ""
+ 
+ je_andean_ranching_2:0 "Expand Anti ranching"
+ je_andean_ranching_2_reason:0 ""
+ 
+ je_sulfur_lead:0 "World supplier of Sulfur"
+ je_sulfur_lead_reason:0 ""
+ 
+ je_anti_ruler:0 "Ruler of tha Anti"
+ je_anti_ruler_reason:0 ""
+ 
  
  ### Events ###
  
@@ -112,4 +164,133 @@
  inca_infrastructure.1.d:0 ""
  inca_infrastructure.1.f:0 ""
  inca_infrastructure.1.a:0 "One connection from north to south."
+ 
+ inca_infrastructure.2.t:0 "Expansion of the mining industry"
+ inca_infrastructure.2.d:0 ""
+ inca_infrastructure.2.f:0 ""
+ inca_infrastructure.2.a:0 "Dig deeply and greedily"
+ 
+ inca_infrastructure.3.t:0 "Expand the mines in the newly acquired territories"
+ inca_infrastructure.3.d:0 ""
+ inca_infrastructure.3.f:0 ""
+ inca_infrastructure.3.a:0 "The roaring fires of industry demands more"
+ 
+ inca_infrastructure.4.t:0 "The extansion of the Anti Pathway"
+ inca_infrastructure.4.d:0 ""
+ inca_infrastructure.4.f:0 ""
+ inca_infrastructure.4.a:0 "No mountains can stop us"
+ 
+ inca_glory.1.t:0 "Rulers of the Anti"
+ inca_glory.1.d:0 ""
+ inca_glory.1.f:0 ""
+ inca_glory.1.a:0 "These mountains are our home, now and forever"
+ 
+ inca_farms.1.t:0 "Reform the Terrace farms"
+ inca_farms.1.d:0 ""
+ inca_farms.1.f:0 ""
+ inca_farms.1.a:0 "An improved agriculture will benefit us."
+ 
+ inca_farms.2.t:0 "Expansion of the Modern Terrace farms"
+ inca_farms.2.d:0 ""
+ inca_farms.2.f:0 ""
+ inca_farms.2.a:0 "Put our knowledge to good use"
+ 
+ inca_farms.3.t:0 "A new ranching culture"
+ inca_farms.3.d:0 ""
+ inca_farms.3.f:0 ""
+ inca_farms.3.a:0 "More wool is needed"
+ 
+ inca_farms.4.t:0 "Expand the wool industry"
+ inca_farms.4.d:0 ""
+ inca_farms.4.f:0 ""
+ inca_farms.4.a:0 "What's next ? A talking Lama ?"
+ 
+ guano_act.1.t:0 "World supplier of Sulfur"
+ guano_act.1.d:0 ""
+ guano_act.1.f:0 ""
+ guano_act.1.a:0 "This probably won't have any downside."
+ 
+ ely_incan_revolution.1.t:0 "The People's Revolution"
+ ely_incan_revolution.1.d:0 ""
+ ely_incan_revolution.1.f:0 ""
+ ely_incan_revolution.1.a:0 "The land and people are ours"
+ ely_incan_revolution.1.b:0 "Down with the old order"
+ 
+ ely_incan_revolution.2.t:0 "The Shape of the Republic"
+ ely_incan_revolution.2.d:0 ""
+ ely_incan_revolution.2.f:0 ""
+ ely_incan_revolution.2.a:0 "A strong leader is needed"
+ ely_incan_revolution.2.b:0 "No one man shall be above another"
+ 
+ ely_incan_revolution.3.t:0 "Voting rights"
+ ely_incan_revolution.3.d:0 ""
+ ely_incan_revolution.3.f:0 ""
+ ely_incan_revolution.3.a:0 "Only the educated know what's best"
+ ely_incan_revolution.3.b:0 "Every man a vote"
+ 
+ ely_incan_revolution.4.t:0 "Bureaucratic Reforms"
+ ely_incan_revolution.4.d:0 ""
+ ely_incan_revolution.4.f:0 ""
+ ely_incan_revolution.4.a:0 "Officials appointed by the governement"
+ ely_incan_revolution.4.b:0 "Elect local commitees"
+ 
+ ely_incan_revolution.5.t:0 "A new army model"
+ ely_incan_revolution.5.d:0 ""
+ ely_incan_revolution.5.f:0 ""
+ ely_incan_revolution.5.a:0 "A dedicated professional corp"
+ ely_incan_revolution.5.b:0 "Rely our peoples willingness to take arms"
+ ely_incan_revolution.5.c:0 "Every man capable of holding a gun will"
+ 
+ ely_incan_revolution.6.t:0 "Land Distribution"
+ ely_incan_revolution.6.d:0 ""
+ ely_incan_revolution.6.f:0 ""
+ ely_incan_revolution.6.a:0 "Plantations is where the money's at"
+ ely_incan_revolution.6.b:0 "Every man deserve property"
+ 
+ ely_incan_revolution.7.t:0 "Economic Reforms"
+ ely_incan_revolution.7.d:0 ""
+ ely_incan_revolution.7.f:0 ""
+ ely_incan_revolution.7.a:0 "People should be in charge of their own business"
+ ely_incan_revolution.7.b:0 "Let's focus on the agricultural sector"
+ 
+ ely_incan_revolution.8.t:0 "Matter or State and Religion"
+ ely_incan_revolution.8.d:0 ""
+ ely_incan_revolution.8.f:0 ""
+ ely_incan_revolution.8.a:0 "Keep the church away from political power"
+ ely_incan_revolution.8.b:0 "People should be free in their belief"
+ ely_incan_revolution.8.c:0 "We are the children of Sun and Moon"
+ 
+ ely_incan_revolution.9.t:0 "Tax Reforms"
+ ely_incan_revolution.9.d:0 ""
+ ely_incan_revolution.9.f:0 ""
+ ely_incan_revolution.9.a:0 "Give the wealthy leniancy"
+ ely_incan_revolution.9.b:0 "Every man should pay its worth"
+ 
+ ely_incan_revolution.10.t:0 "Trade Reforms"
+ ely_incan_revolution.10.d:0 ""
+ ely_incan_revolution.10.f:0 ""
+ ely_incan_revolution.10.a:0 "Trade should be free of all bariers"
+ ely_incan_revolution.10.b:0 "Let us keep an eye on the flow of goods"
+ 
+ ely_incan_revolution.11.t:0 "Freedom of Speech"
+ ely_incan_revolution.11.d:0 ""
+ ely_incan_revolution.11.f:0 ""
+ ely_incan_revolution.11.a:0 "Let the people congregate but keep an eye on them"
+ ely_incan_revolution.11.b:0 "Every voice should be heard"
+ 
+ ely_incan_revolution.12.t:0 "Elysian Betrayal ?"
+ ely_incan_revolution.12.d:0 "For the last three centuries we called the elysians, our friends. We fought side by side against the british and iberians, and many elysian passed through our lands on their way to Asia while we offered them hospitality. Unbeknownst to us however, elysian merchants profited from our work while our people never saw the benefit, enriching themselves and their contacts in the old aristocratic elite. Gold, silver, jewels and more were taken from communal warehouses and exchanged for elysian or asian goods brought by the so called merchants."
+ ely_incan_revolution.12.f:0 ""
+ ely_incan_revolution.12.a:0 "How can we ever trust them again ?"
+ ely_incan_revolution.12.b:0 "The actions of misguided individuals does not erase the bonds forged by blood spilled together"
+ 
+ ely_incan_post_war.1.t:0 "The Glorious Revolution"
+ ely_incan_post_war.1.d:0 ""
+ ely_incan_post_war.1.f:0 ""
+ ely_incan_post_war.1.a:0 "Cast away our shackles"
+ 
+ ely_incan_post_war.2.t:0 "Crushing the Revolt"
+ ely_incan_post_war.2.d:0 ""
+ ely_incan_post_war.2.f:0 ""
+ ely_incan_post_war.2.a:0 "Order is Back"
  
