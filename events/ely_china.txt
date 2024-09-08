@@ -343,10 +343,10 @@ ely_china_bystander.1 = {
 			add_devastation = 100	
 		}
 		c:CHI = {
-		if = {
-			limit = { has_journal_entry = je_warlord_china }
-			chi_remove_1_fragile_unity = yes
-		}
+			if = {
+				limit = { has_journal_entry = je_warlord_china }
+				chi_remove_1_fragile_unity = yes
+			}
 			name = lost_mandate_of_heaven
 			months = long_modifier_time
 		}
@@ -698,6 +698,7 @@ ely_china_sellout.1 = {
 				name = taiping_bribe_euros_receive
 				months = long_modifier_time
 			}
+			}
 		}
 		if = {
 			limit = { exists = c:HUN }
@@ -705,6 +706,7 @@ ely_china_sellout.1 = {
 			add_modifier = {
 				name = taiping_bribe_euros_receive
 				months = long_modifier_time
+			}
 			}
 		}
 		if = {
@@ -783,13 +785,14 @@ ely_china_cixi.1 = {
 
 	duration = 3
 
-	event_image = {
-		video = "europenorthamerica_opium_smoker"
-	}
+	gui_window = event_window_1char_tabloid
+
+	left_icon = ruler
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
 
-	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 
 	trigger = {}
 
@@ -799,5 +802,91 @@ ely_china_cixi.1 = {
 	option = {
 		name = ely_china_cixi.1.a
 		default_option = yes
+		hidden_effect = {
+			ruler = {
+				kill_character = yes
+			}
+			if = {
+				limit = {
+					any_scope_character = {
+						is_heir = yes
+					}
+				}
+				heir = {
+					kill_character = yes
+				}
+			}
+		}
+		c:CHI = {
+			create_character = {
+				first_name = Cixi
+				last_name = Yehe_Nara
+				historical = yes
+				culture = cu:manchu
+				female = yes
+				ideology = ideology_royalist
+				interest_group = ig_landowners
+				birth_date = 1835.11.29
+				dna = dna_empress_dowager_cixi
+				traits = {
+					ambitious
+					reckless
+					experienced_political_operator
+				}   
+				ruler = yes
+			}
+			add_modifier = {
+				name = manchu_rallying_banners
+				months = -1
+			}	
+		}		
+		c:ELY = {
+			trigger_event = { id = ely_china_cixi.2 days = 60 }
+		}
 	}
 }	
+
+ely_china_cixi.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = ely_china_cixi.2.t
+	desc = ely_china_cixi.2.d
+	flavor = ely_china_cixi.2.f
+
+	duration = 3
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	trigger = {
+		# triggered by event
+	}
+
+	immediate = {
+	}
+
+	option = { # go opium wars
+		name = ely_china_cixi.2.a
+		default_option = yes
+		change_relations = {
+			country = c:CHI
+			value = 100
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+	option = { # not interested
+		name = ely_china_cixi.2.b		
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+	
