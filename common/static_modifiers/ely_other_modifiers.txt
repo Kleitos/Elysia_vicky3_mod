@@ -353,3 +353,50 @@ italian_compromise_receive = {
 	icon = gfx/interface/icons/timed_modifier_icons/coin_icon_large_positive.dds
 	country_tax_income_add = 1000
 }
+
+manchu_rallying_banners = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	state_conscription_rate_mult = 0.25
+	unit_offense_mult = 0.1
+	unit_defense_mult = 0.1
+	unit_morale_loss_mult = -0.1
+}
+
+ely_tech_boost = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_book_positive.dds
+	country_tech_research_speed_mult = 0.1
+	country_weekly_innovation_mult = 0.1
+}
+
+ely_tech_boost_prod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	country_production_tech_research_speed_mult = 0.1
+}
+
+ely_investments = {
+	icon = gfx/interface/icons/timed_modifier_icons/coin_icon_medium_positive.dds
+	country_tax_income_add = 5000
+	state_construction_mult = 0.05
+}
+
+north_china_reclaimed = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	country_authority_mult = 0.1
+	state_conscription_rate_mult = 0.25
+	unit_offense_mult = 0.1
+	unit_defense_mult = 0.1
+	unit_morale_loss_mult = -0.1
+	country_prestige_add = 100
+}
+
+china_reclaimed = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	country_authority_mult = 0.1
+	country_prestige_add = 100
+	state_radicals_from_sol_change_mult = -0.25
+    state_loyalists_from_sol_change_mult = 0.25
+	state_assimilation_mult = 0.5
+	state_conversion_mult = 0.5
+	country_bureaucracy_mult = 0.1
+	country_influence_mult = 0.1
+}
