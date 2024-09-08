@@ -57,7 +57,7 @@
 		}
 		
 		trigger_event = {
-			id = ely_infrastructure_event.6
+			id = ely_infrastructure_event.6 days = 5
 		}
 
 		add_journal_entry = {

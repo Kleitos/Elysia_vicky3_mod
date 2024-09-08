@@ -28,5 +28,10 @@
 			value = 0
 		}
 		add_journal_entry = { type = je_warlord_china }
+		
+		trigger_event = {
+			id = ely_china_opium_start.1
+			days = 5
+		}
 	}
 }
