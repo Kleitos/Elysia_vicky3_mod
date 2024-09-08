@@ -6222,7 +6222,6 @@ STATES = {
 		}
 		
 		add_homeland = cu:han
-		add_homeland = cu:mongol
 	}
 	s:STATE_QINGHAI = {
 		create_state = {
