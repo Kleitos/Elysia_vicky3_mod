@@ -242,6 +242,8 @@ danish_war_exhausted = {
 	unit_defense_mult = -0.5
 	unit_morale_loss_mult = 0.75
 	country_war_exhaustion_casualties_mult = 1.0
+	political_movement_radicalism_mult = -2
+	state_turmoil_effects_mult = -1
 }
 
 danish_war_oportunist = {
@@ -276,13 +278,12 @@ danish_war_winner = {
 }
 
 danish_war_looser = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
 	state_radicals_from_sol_change_mult = 0.25
     state_loyalists_from_sol_change_mult = -0.25
 	country_authority_mult = -0.1
 	country_infamy_generation_mult = -0.1
 	state_turmoil_effects_mult = 0.1
-	political_movement_radicalism_mult = 0.1
 	country_prestige_add = -100
 }
 
@@ -320,4 +321,35 @@ rus_revolution = {
 	state_conscription_rate_mult = 1
 	unit_offense_mult = 0.5
 	unit_defense_mult = 0.5
+}
+
+lost_mandate_of_heaven = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	state_radicals_from_sol_change_mult = 0.25
+    state_loyalists_from_sol_change_mult = -0.25
+	country_authority_mult = -0.1
+	state_turmoil_effects_mult = 0.1
+	country_prestige_add = -100
+}
+
+taiping_bribe_euros_give = {
+	icon = gfx/interface/icons/timed_modifier_icons/coin_icon_large_negative.dds
+	country_authority_mult = -0.1
+	country_prestige_add = -100
+	country_expenses_add = 20000
+}
+
+taiping_bribe_euros_receive = {
+	icon = gfx/interface/icons/timed_modifier_icons/coin_icon_large_positive.dds
+	country_tax_income_add = 2000
+}
+
+italian_compromise_give = {
+	icon = gfx/interface/icons/timed_modifier_icons/coin_icon_large_negative.dds
+	country_expenses_add = 2000
+}
+
+italian_compromise_receive = {
+	icon = gfx/interface/icons/timed_modifier_icons/coin_icon_large_positive.dds
+	country_tax_income_add = 1000
 }
