@@ -236,7 +236,7 @@ quechua={
 	traits = { indigenous_american_heritage south_american_group pagan_heritage }
 
     obsessions = {
-        fruit
+        tobacco
     }
 	male_common_first_names={
 		Amaru Atahualpa Atoc_Sopa Anco_Coyuch Aiyotechapun
@@ -315,7 +315,7 @@ guarani={
 	traits = { indigenous_american_heritage south_american_group pagan_heritage }
 
     obsessions = {
-        fruit
+        tobacco
     }
 	male_common_first_names={
 		Amaru Amapytu Amangy Arasunu 
@@ -371,7 +371,7 @@ aimara={
 	traits = { indigenous_american_heritage south_american_group pagan_heritage }
 
     obsessions = {
-        fruit
+        tobacco
     }
 	male_common_first_names={
 		Amaru Atahualpa Atoc_Sopa Anco_Coyuch Aiyotechapun
@@ -450,7 +450,7 @@ amazonian={
 	traits = { indigenous_american_heritage south_american_group pagan_heritage }
 
     obsessions = {
-        fruit
+        tobacco
     }
 	male_common_first_names={
 		Guama
@@ -551,7 +551,7 @@ patagonian={
 	traits = { indigenous_american_heritage south_american_group pagan_heritage }
 
     obsessions = {
-        fruit
+        tobacco
     }
 	male_common_first_names={
 		Ancamilla Aillavilu Abayuba Antiman Antinanco Aucaman
@@ -628,7 +628,7 @@ guajiro={
 	traits = { indigenous_american_heritage south_american_group pagan_heritage }
 
     obsessions = {
-        fruit
+        tobacco
     }
 	male_common_first_names={
 		Guama
@@ -711,7 +711,7 @@ tupinamba={
 	traits = { indigenous_american_heritage south_american_group pagan_heritage }
 
     obsessions = {
-        fruit
+        tobacco
     }
 	male_common_first_names={
 		Arah Arata
@@ -769,7 +769,7 @@ muisca={
 	traits = { indigenous_american_heritage south_american_group pagan_heritage }
 
     obsessions = {
-        fruit
+        tobacco
     }
 	male_common_first_names={
 		Guama
@@ -841,7 +841,7 @@ cariban = {
 	traits = { indigenous_american_heritage south_american_group pagan_heritage }
 
     obsessions = {
-        fruit
+        tobacco
     }
 	male_common_first_names={
 		Guama
