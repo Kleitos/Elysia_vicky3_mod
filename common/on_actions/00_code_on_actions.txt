@@ -42,7 +42,6 @@ on_monthly_pulse_country = {
 	events = {
 		communism.8 # Red Army
 		peoples_springtime.1
-		opium_wars.1
 		native_resettlement.1
 		meiji.13
 		bic_breakup.1
