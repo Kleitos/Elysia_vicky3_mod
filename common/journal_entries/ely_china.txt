@@ -1,0 +1,406 @@
+﻿je_reconquer_north_china = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+	}
+
+	on_complete = {
+		trigger_event = {
+			id = ely_china_north.1
+		}
+	}
+
+	current_value = {
+		value = var:china_north_var
+	}
+
+	goal_add_value = {
+		add = 5
+	}
+
+	progressbar = yes
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+	
+}
+
+je_reconquer_south_china = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+	}
+
+	on_complete = {
+		trigger_event = {
+			id = ely_china_south.1
+		}
+	}
+
+	current_value = {
+		value = var:china_south_var
+	}
+
+	goal_add_value = {
+		add = 4
+	}
+
+	progressbar = yes
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+	
+}
+
+je_reconquer_mongolia = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_elysian_content
+	
+	complete = {
+		owns_entire_state_region = STATE_URGA
+		owns_entire_state_region = STATE_ULIASTAI
+		owns_entire_state_region = STATE_ALXA
+		owns_entire_state_region = STATE_HINGGAN
+		owns_entire_state_region = STATE_ALTAI
+		owns_entire_state_region = STATE_BURYATIA
+		owns_entire_state_region = STATE_TUVA
+		OR = {
+			NOT = { exists = c:MGL }
+			c:MGL ?= {
+				is_country_alive = no
+			}
+		}
+		OR = {
+			NOT = { exists = c:TUV }
+			c:TUV ?= {
+				is_country_alive = no
+			}
+		}
+	}
+
+	on_complete = {
+		change_variable = {
+			name = china_north_var
+			add = 1
+		}
+		trigger_event = { id = ely_china_reconquer.1 days = 5 }
+	}
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+}
+
+je_consolidate_manchuria = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_elysian_content
+	
+	complete = {
+		owns_entire_state_region = STATE_SHENGJING
+		owns_entire_state_region = STATE_OUTER_MANCHURIA
+		owns_entire_state_region = STATE_SOUTHERN_MANCHURIA
+		owns_entire_state_region = STATE_NORTHERN_MANCHURIA
+		owns_entire_state_region = STATE_TRANS_BAIKAL
+		any_scope_state = {
+			state_region = s:STATE_SHENGJING
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 2
+			}
+		}
+		any_scope_state = {
+			state_region = s:STATE_SOUTHERN_MANCHURIA
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 2
+			}
+		}
+		any_scope_state = {
+			state_region = s:STATE_NORTHERN_MANCHURIA
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 2
+			}
+		}
+	}
+
+	on_complete = {
+		change_variable = {
+			name = china_north_var
+			add = 1
+		}
+		trigger_event = { id = ely_china_reconquer.2 days = 5 }
+	}
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+}
+
+je_reconquer_north_east = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_elysian_content
+	
+	complete = {
+		owns_entire_state_region = STATE_DZUNGARIA
+		owns_entire_state_region = STATE_GANSU
+		owns_entire_state_region = STATE_QINGHAI
+		OR = {
+			NOT = { exists = c:XIB }
+			c:XIB ?= {
+				is_country_alive = no
+			}
+		}
+	}
+
+	on_complete = {
+		change_variable = {
+			name = china_north_var
+			add = 1
+		}
+		trigger_event = { id = ely_china_reconquer.3 days = 5 }
+	}
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+}
+
+je_reconquer_yellow_river_plains = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_elysian_content
+	
+	complete = {
+		owns_entire_state_region = STATE_HENAN
+		owns_entire_state_region = STATE_NORTHERN_ANHUI
+		owns_entire_state_region = STATE_SHANXI
+		owns_entire_state_region = STATE_NINGXIA
+		owns_entire_state_region = STATE_XIAN
+		OR = {
+			NOT = { exists = c:SHN }
+			c:SHN ?= {
+				is_country_alive = no
+			}
+		}
+		OR = {
+			NOT = { exists = c:ZHI }
+			c:ZHI ?= {
+				is_country_alive = no
+			}
+		}
+		OR = {
+			NOT = { exists = c:XIB }
+			c:XIB ?= {
+				is_country_alive = no
+			}
+		}
+	}
+
+	on_complete = {
+		change_variable = {
+			name = china_north_var
+			add = 1
+		}
+		trigger_event = { id = ely_china_reconquer.4 days = 5 }
+	}
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+}
+
+je_reconquer_northern_coast = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_elysian_content
+	
+	complete = {
+		owns_entire_state_region = STATE_SHANDONG
+		owns_entire_state_region = STATE_JIANGSU
+		owns_entire_state_region = STATE_ZHILI
+		OR = {
+			NOT = { exists = c:SHA }
+			c:SHA ?= {
+				is_country_alive = no
+			}
+		}
+	}
+
+	on_complete = {
+		change_variable = {
+			name = china_north_var
+			add = 1
+		}
+		trigger_event = { id = ely_china_reconquer.4 days = 5 }
+	}
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+}
+
+je_reconquer_south_east = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_elysian_content
+	
+	complete = {
+		owns_entire_state_region = STATE_GUANGXI
+		owns_entire_state_region = STATE_YUNNAN
+		owns_entire_state_region = STATE_GUIZHOU
+		owns_entire_state_region = STATE_SICHUAN
+		OR = {
+			NOT = { exists = c:XIB }
+			c:XIB ?= {
+				is_country_alive = no
+			}
+		}
+	}
+
+	on_complete = {
+		change_variable = {
+			name = china_south_var
+			add = 1
+		}
+		trigger_event = { id = ely_china_reconquer.4 days = 5 }
+	}
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+}
+
+je_reconquer_south_center = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_elysian_content
+	
+	complete = {
+		owns_entire_state_region = STATE_CHONGQING
+		owns_entire_state_region = STATE_SOUTHERN_ANHUI
+		owns_entire_state_region = STATE_NANJING
+		owns_entire_state_region = STATE_HUNAN
+		owns_entire_state_region = STATE_JIANGXI
+		owns_entire_state_region = STATE_EASTERN_HUBEI
+		owns_entire_state_region = STATE_WESTERN_HUBEI
+		OR = {
+			NOT = { exists = c:SHN }
+			c:SHN ?= {
+				is_country_alive = no
+			}
+		}
+		OR = {
+			NOT = { exists = c:ZHI }
+			c:ZHI ?= {
+				is_country_alive = no
+			}
+		}
+		OR = {
+			NOT = { exists = c:XIB }
+			c:XIB ?= {
+				is_country_alive = no
+			}
+		}
+	}
+
+	on_complete = {
+		change_variable = {
+			name = china_south_var
+			add = 1
+		}
+		trigger_event = { id = ely_china_reconquer.4 days = 5 }
+	}
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+}
+
+je_reconquer_south_coast = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_elysian_content
+	
+	complete = {
+		owns_entire_state_region = STATE_ZHEJIANG
+		owns_entire_state_region = STATE_FUJIAN
+		owns_entire_state_region = STATE_SUZHOU
+		owns_entire_state_region = STATE_SHAOZHOU
+		owns_entire_state_region = STATE_GUANGDONG
+	}
+
+	on_complete = {
+		change_variable = {
+			name = china_south_var
+			add = 1
+		}
+		trigger_event = { id = ely_china_reconquer.4 days = 5 }
+	}
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+}
+
+je_crush_taiping = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_historical_content
+
+	complete = {
+		custom_tooltip = {
+			text = taiping_destroyed
+			hidden_trigger = {
+				NOT = {
+					exists = c:TPG
+				}
+			}
+		}
+	}
+
+	on_complete = {
+		change_variable = {
+			name = china_south_var
+			add = 1
+		}
+		trigger_event = { id = heavenly.5 days = 0 }
+		hidden_effect = {
+			remove_modifier = taiping_taiping_rebellion
+		}
+	}
+
+	weight = 1000
+	should_be_pinned_by_default = yes
+
+	transferable = no
+}
+
+je_sinicization = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		has_law = law_type:law_compulsory_primary_school
+		OR = {
+			has_law = law_type:law_religious_schools
+			has_law = law_type:law_private_schools
+			has_law = law_type:law_public_schools
+			}
+			institution_investment_level = {
+				institution = institution_schools
+				value >= 3
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = ely_china_culture.1 }
+	}
+
+}
