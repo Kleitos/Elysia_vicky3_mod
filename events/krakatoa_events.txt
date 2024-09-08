@@ -132,6 +132,9 @@ krakatoa.5 = { #krakatoa erupts but youre not the owner
 
 	option = { #send some humaritarian help
 		name = krakatoa.5.a
+		ai_chance = {
+			base = 0
+		}
 		change_relations = {
 			country = scope:krakatoa_country
 			value = 30
@@ -149,11 +152,13 @@ krakatoa.5 = { #krakatoa erupts but youre not the owner
 	option = { #it doesn't affect us that much
 		name = krakatoa.5.b
 		default_option = yes
+		ai_chance = {
+			base = 100
+		}
 		change_relations = {
 			country = scope:krakatoa_country
 			value = -30
 		}
-		change_infamy = 5
 		add_journal_entry = {	
 			type = je_krakatoa
 		}

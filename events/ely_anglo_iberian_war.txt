@@ -136,6 +136,7 @@ anglo_iberian_war.2 = {
 		}
 		c:CHI = {
 			trigger_event = { id = anglo_iberian_war.4 }
+			trigger_event = { id = ely_china_bystander.1 days = 365 }
 		}
 		c:ELY = {
 			trigger_event = { id = anglo_iberian_war.4 }

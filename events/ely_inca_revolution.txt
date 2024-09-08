@@ -1,5 +1,6 @@
 ﻿namespace = ely_incan_reform
 namespace = ely_incan_revolution
+namespace = ely_incan_post_war
 
 
 ely_incan_revolution.1 = {
@@ -97,6 +98,12 @@ ely_incan_revolution.1 = {
 			s:STATE_JUJUY.region_state:TWT = { set_state_owner = c:INC }
 		}
 		c:INC = {
+			every_scope_state = {
+				limit = {
+					is_incorporated = yes
+				}
+				set_variable = INC_incorporated_state
+			}
 			add_modifier = {
 				name = incan_revolution_fervor
 				months = normal_modifier_time
@@ -184,6 +191,13 @@ ely_incan_revolution.1 = {
 			}
 		}
 		c:TWT = {
+			add_journal_entry = { type = je_crush_andean_civilwar }
+			every_scope_state = {
+				limit = {
+					is_incorporated = yes
+				}
+				set_variable = TWT_incorporated_state
+			}
 			add_modifier = {
 				name = incan_revolution_sickness
 				months = normal_modifier_time
@@ -1055,6 +1069,18 @@ ely_incan_revolution.12 = {
 		ai_chance = {
 			base = 50
 		}
+		add_loyalists = {
+			value = medium_radicals
+			strata = middle
+		}
+		add_loyalists = {
+			value = medium_radicals
+			strata = poor
+		}
+		add_loyalists = {
+			value = medium_radicals
+			strata = rich
+		}
 		default_option = yes
 		c:INC = {
 			change_relations = {
@@ -1098,6 +1124,18 @@ ely_incan_revolution.12 = {
 		ai_chance = {
 			base = 50
 		}
+		add_radicals = {
+			value = medium_radicals
+			strata = middle
+		}
+		add_radicals = {
+			value = medium_radicals
+			strata = poor
+		}
+		add_radicals = {
+			value = medium_radicals
+			strata = rich
+		}
 		add_journal_entry = { type = je_muiscan_transfer }
 		add_journal_entry = { type = je_wayuu_transfer }
 		add_journal_entry = { type = je_guarani_expansion }
@@ -1122,5 +1160,95 @@ ely_incan_revolution.12 = {
 				secret_goal = befriend			
 			}
 		}
+		c:ELY.power_bloc = {
+			add_leverage = { target = c:INC value = 1000 }
+		}
 	}
 }		
+
+ely_incan_post_war.1 = {
+	type = country_event
+	placement = root
+	title = ely_incan_post_war.1.t
+	desc = ely_incan_post_war.1.d
+	flavor = ely_incan_post_war.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {		
+		every_scope_state = {
+			limit = {
+				owner = ROOT
+				has_variable = TWT_incorporated_state
+			}
+			set_state_type = incorporated
+		}
+	}
+
+    option = {
+		name = ely_incan_post_war.1.a
+		default_option = yes
+		add_journal_entry = { type = je_cultural_shift_incan }
+		add_journal_entry = { type = je_anti_ruler }
+		add_journal_entry = { type = je_andean_pathway }
+		add_journal_entry = { type = je_reform_mines }
+		add_journal_entry = { type = je_andean_farming }
+		add_journal_entry = { type = je_andean_ranching }
+		add_journal_entry = { type = je_sulfur_lead }
+		remove_modifier = incan_revolution_fervor	
+		trigger_event = { id = ely_incan_revolution.2 days = 10 }	
+	}
+}
+
+ely_incan_post_war.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = ely_incan_post_war.3.t
+	desc = ely_incan_post_war.3.d
+	flavor = ely_incan_post_war.3.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {		
+		every_scope_state = {
+			limit = {
+				owner = ROOT
+				has_variable = INC_incorporated_state
+			}
+			set_state_type = incorporated
+		}
+	}
+
+    option = {
+		name = ely_incan_post_war.2.a
+		default_option = yes
+		add_journal_entry = { type = je_cultural_shift_incan }
+		add_journal_entry = { type = je_anti_ruler }
+		remove_modifier = incan_revolution_sickness		
+	}
+}

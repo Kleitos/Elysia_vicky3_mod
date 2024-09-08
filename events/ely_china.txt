@@ -1,0 +1,803 @@
+﻿namespace = ely_china_flavor
+namespace = ely_china_opium
+namespace = ely_china_opium_start
+namespace = ely_china_bystander
+namespace = ely_china_sellout
+namespace = ely_china_cixi
+		
+ely_china_opium.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = ely_china_opium.1.t
+	desc = ely_china_opium.1.d
+	flavor = ely_china_opium.1.f
+
+	duration = 3
+
+	event_image = {
+		video = "europenorthamerica_opium_smoker"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	trigger = {}
+
+	immediate = {
+	}
+
+	option = {
+		name = ely_china_opium.1.a
+		default_option = yes
+		c:CHI = {
+			activate_law = law_type:law_no_migration_controls
+			activate_law = law_type:law_free_trade
+		}
+		trigger_event = {
+			id = opium_wars.5
+			days = 5
+		}
+		s:STATE_SHAOZHOU = {
+			set_owner_of_provinces = {
+				country = c:GBR
+				provinces = { xB03161 }
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_building = building_port
+					}
+				}
+				create_building={
+	 				building="building_port"
+	 				level=2
+	 				reserves=1
+	 			}
+			}
+		}
+	}
+}	
+
+ely_china_opium_start.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = opium_wars.1.t
+	desc = opium_wars.1.d
+	flavor = opium_wars.1.f
+
+	duration = 3
+
+	event_image = {
+		video = "europenorthamerica_opium_smoker"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+		set_variable = opium_wars_start_var
+		random_primary_culture = {
+			limit = {
+				has_cultural_obsession = opium
+			}
+			save_scope_as = addicted_culture
+		}
+	}
+
+	option = {
+		name = opium_wars.1.a
+		default_option = yes
+		set_variable = opium_wars_target
+		set_variable = {
+			name = opium_wars_completion_tracker
+			value = 0
+		}
+		add_journal_entry = {
+			type = je_opium_obsession
+		}	
+		add_modifier = {
+			name = opium_wars_addiction_modifier
+			months = long_modifier_time
+		}
+		ai_chance = {
+			base = 100
+		}
+		c:GBR = {
+			trigger_event = { id = ely_china_opium_start.2 days = 5 }
+		}		
+	}
+	option = {
+		name = opium_wars.1.b
+		add_modifier = {
+			name = opium_wars_addiction_modifier
+			months = very_long_modifier_time
+		}
+		add_radicals = {
+			value = medium_radicals
+		}		
+		if = {
+			limit = { has_journal_entry = je_warlord_china }
+			chi_remove_1_fragile_unity = yes
+		}				
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+ely_china_opium_start.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = opium_wars.2.t
+	desc = opium_wars.2.d
+	flavor = opium_wars.2.f
+
+	duration = 3
+
+	event_image = {
+		video = "europenorthamerica_opium_smoker"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	trigger = {
+		# triggered by event
+	}
+
+	immediate = {
+		save_scope_as = opium_wars_aggressor_country
+		random_country = {
+			limit = {
+				has_variable = opium_wars_target
+			}
+			save_scope_as = opium_wars_target_country
+			random_primary_culture = {
+				limit = {
+					has_cultural_obsession = opium
+				}
+				save_scope_as = opium_addicted_culture
+			}
+		}
+	}
+
+	option = { # go opium wars
+		name = opium_wars.2.a
+		default_option = yes
+		set_variable = opium_wars_aggressor
+		change_relations = {
+			country = c:CHI
+			value = -100
+		}
+		add_journal_entry = {
+			type = je_opium_wars
+			target = scope:opium_wars_target_country
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					NOT = { this = root }
+					OR = {
+						this = scope:opium_wars_target_country
+						has_overlapping_interests = scope:opium_wars_target_country
+						has_overlapping_interests = root
+					}			
+				}
+				post_notification = opium_wars_british_response_angry
+			}				
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+	option = { # not interested
+		name = opium_wars.2.b
+		change_relations = {
+			country = scope:opium_wars_target_country
+			value = 50
+		}
+		
+		every_subject_or_below = {
+			limit = { 
+				is_direct_subject_of = root
+				any_scope_building = {
+					is_building_type = building_opium_plantation
+				}
+			}
+			
+			add_liberty_desire = 50
+			change_relations = {
+				country = root
+				value = -50
+			}			
+		}
+		
+		hidden_effect = {	
+			every_country = {
+				limit = {
+					NOT = { this = root }
+					OR = {
+						this = scope:opium_wars_target_country
+						has_overlapping_interests = scope:opium_wars_target_country
+						has_overlapping_interests = root
+					}			
+				}
+				post_notification = opium_wars_british_response_passive
+			}	
+		
+			set_mutual_secret_goal = {
+				country = scope:opium_wars_target_country
+				secret_goal = befriend
+			}		
+		}		
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+		
+ely_china_bystander.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = ely_china_bystander.1.t
+	desc = ely_china_bystander.1.d
+	flavor = ely_china_bystander.1.f
+
+	duration = 3
+
+	event_image = {
+		video = "unspecific_naval_battle"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	trigger = {}
+
+	immediate = {
+		c:CHI = {
+			change_relations = {
+				country = c:GBR
+				value = -100
+			}			
+			change_relations = {
+				country = c:SPA
+				value = -100
+			}				
+			set_secret_goal = {
+				country = c:GBR
+				secret_goal = antagonize
+			}			
+			set_secret_goal = {
+				country = c:SPA
+				secret_goal = antagonize
+			}						
+		}
+		c:GBR = {
+			change_relations = {
+				country = c:CHI
+				value = -100
+			}					
+			set_secret_goal = {
+				country = c:CHI
+				secret_goal = antagonize
+			}						
+		}
+		c:SPA = {
+			change_relations = {
+				country = c:CHI
+				value = -100
+			}					
+			set_secret_goal = {
+				country = c:CHI
+				secret_goal = antagonize
+			}						
+		}
+	}
+
+	option = {
+		name = ely_china_bystander.1.a
+		default_option = yes
+		s:STATE_ZHEJIANG = {
+			add_devastation = 100
+		}
+		s:STATE_SUZHOU = {
+			add_devastation = 100
+		}
+		s:STATE_FUJIAN = {
+			add_devastation = 100
+		}
+		s:STATE_ZHEJIANG = {
+			add_devastation = 100
+		}
+		s:STATE_SHANDONG = {
+			add_devastation = 100
+		}
+		s:STATE_SHAOZHOU = {
+			add_devastation = 100
+		}
+		s:STATE_JIANGSU = {
+			add_devastation = 100
+		}
+		s:STATE_ZHILI = {
+			add_devastation = 100
+		}
+		s:STATE_SHENGJING = {
+			add_devastation = 100
+		}
+		s:STATE_BEIJING = {
+			add_devastation = 100
+		}
+		s:STATE_GUANGDONG = {
+			add_devastation = 100	
+		}
+		c:CHI = {
+		if = {
+			limit = { has_journal_entry = je_warlord_china }
+			chi_remove_1_fragile_unity = yes
+		}
+			name = lost_mandate_of_heaven
+			months = long_modifier_time
+		}
+	}
+}	
+		
+ely_china_sellout.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = ely_china_sellout.1.t
+	desc = ely_china_sellout.1.d
+	flavor = ely_china_sellout.1.f
+
+	duration = 3
+
+	event_image = {
+		video = "asia_westerners_arriving"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	trigger = {}
+
+	immediate = {
+		c:GBR = {
+			change_relations = {
+				country = c:TPG
+				value = 100
+			}					
+			set_secret_goal = {
+				country = c:TPG
+				secret_goal = befriend
+			}				
+			create_diplomatic_pact = {
+				country = c:TPG
+				type = foreign_investment_rights
+			}		
+		}
+		c:DEN = {
+			change_relations = {
+				country = c:TPG
+				value = 100
+			}					
+			set_secret_goal = {
+				country = c:TPG
+				secret_goal = befriend
+			}				
+			create_diplomatic_pact = {
+				country = c:TPG
+				type = foreign_investment_rights
+			}					
+		}
+		c:SWE = {
+			change_relations = {
+				country = c:TPG
+				value = 100
+			}					
+			set_secret_goal = {
+				country = c:TPG
+				secret_goal = befriend
+			}				
+			create_diplomatic_pact = {
+				country = c:TPG
+				type = foreign_investment_rights
+			}					
+		}
+		c:SPA = {
+			change_relations = {
+				country = c:TPG
+				value = 100
+			}					
+			set_secret_goal = {
+				country = c:TPG
+				secret_goal = befriend
+			}		
+			create_diplomatic_pact = {
+				country = c:TPG
+				type = foreign_investment_rights
+			}							
+		}
+		c:FRA = {
+			change_relations = {
+				country = c:TPG
+				value = 100
+			}					
+			set_secret_goal = {
+				country = c:TPG
+				secret_goal = befriend
+			}		
+			create_diplomatic_pact = {
+				country = c:TPG
+				type = foreign_investment_rights
+			}							
+		}
+		c:RUS = {
+			change_relations = {
+				country = c:TPG
+				value = 100
+			}					
+			set_secret_goal = {
+				country = c:TPG
+				secret_goal = befriend
+			}		
+			create_diplomatic_pact = {
+				country = c:TPG
+				type = foreign_investment_rights
+			}							
+		}
+		c:BYZ = {
+			change_relations = {
+				country = c:TPG
+				value = 100
+			}					
+			set_secret_goal = {
+				country = c:TPG
+				secret_goal = befriend
+			}		
+			create_diplomatic_pact = {
+				country = c:TPG
+				type = foreign_investment_rights
+			}							
+		}
+		if = {
+			limit = { exists = c:ITA }
+			c:ITA = {
+				change_relations = {
+					country = c:TPG
+					value = 100
+				}					
+				set_secret_goal = {
+					country = c:TPG
+					secret_goal = befriend
+				}		
+				create_diplomatic_pact = {
+					country = c:TPG
+					type = foreign_investment_rights
+				}							
+			}
+		}
+		if = {
+			limit = { exists = c:LMV }
+			c:LMV = {
+				change_relations = {
+					country = c:TPG
+					value = 100
+				}					
+				set_secret_goal = {
+					country = c:TPG
+					secret_goal = befriend
+				}		
+				create_diplomatic_pact = {
+					country = c:TPG
+					type = foreign_investment_rights
+				}							
+			}
+		}
+		if = {
+			limit = { exists = c:SGF }
+			c:SGF = {
+				change_relations = {
+					country = c:TPG
+					value = 100
+				}					
+				set_secret_goal = {
+					country = c:TPG
+					secret_goal = befriend
+				}		
+				create_diplomatic_pact = {
+					country = c:TPG
+					type = foreign_investment_rights
+				}							
+			}
+		}
+		if = {
+			limit = { exists = c:AUS }
+			c:AUS = {
+				change_relations = {
+					country = c:TPG
+					value = 100
+				}					
+				set_secret_goal = {
+					country = c:TPG
+					secret_goal = befriend
+				}		
+				create_diplomatic_pact = {
+					country = c:TPG
+					type = foreign_investment_rights
+				}							
+			}
+		}
+		if = {
+			limit = { exists = c:HUN }
+			c:HUN = {
+				change_relations = {
+					country = c:TPG
+					value = 100
+				}					
+				set_secret_goal = {
+					country = c:TPG
+					secret_goal = befriend
+				}		
+				create_diplomatic_pact = {
+					country = c:TPG
+					type = foreign_investment_rights
+				}							
+			}
+		}
+		if = {
+			limit = { exists = c:NGF }
+			c:NGF = {
+				change_relations = {
+					country = c:TPG
+					value = 100
+				}					
+				set_secret_goal = {
+					country = c:TPG
+					secret_goal = befriend
+				}		
+				create_diplomatic_pact = {
+					country = c:TPG
+					type = foreign_investment_rights
+				}							
+			}
+		}
+		c:CHI = {
+			change_relations = {
+				country = c:TPG
+				value = -100
+			}				
+			set_secret_goal = {
+				country = c:TPG
+				secret_goal = conquer
+			}								
+		}
+		c:ELY = {
+			change_relations = {
+				country = c:TPG
+				value = -100
+			}				
+			set_secret_goal = {
+				country = c:TPG
+				secret_goal = antagonize
+			}								
+		}
+		c:JAP = {
+			change_relations = {
+				country = c:TPG
+				value = -100
+			}				
+			set_secret_goal = {
+				country = c:TPG
+				secret_goal = antagonize
+			}								
+		}
+	}
+
+	option = {
+		name = ely_china_sellout.1.a
+		default_option = yes
+		c:CHI = {
+			if = {
+				limit = { has_journal_entry = je_warlord_china }
+				chi_remove_1_fragile_unity = yes
+			}
+		}
+		c:TPG = {	
+		set_country_type = recognized		
+			add_modifier = {
+				name = taiping_bribe_euros_give
+				months = long_modifier_time
+			}						
+		}
+		c:GBR = {	
+			add_modifier = {
+				name = taiping_bribe_euros_receive
+				months = long_modifier_time
+			}		
+		}
+		c:DEN = {
+			add_modifier = {
+				name = taiping_bribe_euros_receive
+				months = long_modifier_time
+			}				
+		}
+		c:SWE = {	
+			add_modifier = {
+				name = taiping_bribe_euros_receive
+				months = long_modifier_time
+			}			
+		}
+		c:SPA = {
+			add_modifier = {
+				name = taiping_bribe_euros_receive
+				months = long_modifier_time
+			}						
+		}
+		c:FRA = {
+			add_modifier = {
+				name = taiping_bribe_euros_receive
+				months = long_modifier_time
+			}						
+		}
+		c:RUS = {	
+			add_modifier = {
+				name = taiping_bribe_euros_receive
+				months = long_modifier_time
+			}			
+		}
+		c:BYZ = {
+			add_modifier = {
+				name = taiping_bribe_euros_receive
+				months = long_modifier_time
+			}						
+		}
+		if = {
+			limit = { exists = c:ITA }
+			c:ITA = {	
+			add_modifier = {
+				name = taiping_bribe_euros_receive
+				months = long_modifier_time
+			}					
+			}
+		}
+		if = {
+			limit = { exists = c:LMV }
+			c:LMV = {		
+			add_modifier = {
+				name = taiping_bribe_euros_receive
+				months = long_modifier_time
+			}				
+			}
+		}
+		if = {
+			limit = { exists = c:SGF }
+			c:SGF = {	
+			add_modifier = {
+				name = taiping_bribe_euros_receive
+				months = long_modifier_time
+			}				
+			}
+		}
+		if = {
+			limit = { exists = c:AUS }
+			c:AUS = {
+			add_modifier = {
+				name = taiping_bribe_euros_receive
+				months = long_modifier_time
+			}
+		}
+		if = {
+			limit = { exists = c:HUN }
+			c:HUN = {
+			add_modifier = {
+				name = taiping_bribe_euros_receive
+				months = long_modifier_time
+			}
+		}
+		if = {
+			limit = { exists = c:NGF }
+			c:NGF = {			
+			add_modifier = {
+				name = taiping_bribe_euros_receive
+				months = long_modifier_time
+			}			
+			}
+		}
+		s:STATE_ZHEJIANG = {
+			set_owner_of_provinces = {
+				country = c:RUS
+				provinces = { x301080 }
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_building = building_port
+					}
+				}
+				create_building={
+	 				building="building_port"
+	 				level=2
+	 				reserves=1
+	 			}
+			}
+		}
+		s:STATE_FUJIAN = {
+			set_owner_of_provinces = {
+				country = c:FRA
+				provinces = { x67D814 }
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_building = building_port
+					}
+				}
+				create_building={
+	 				building="building_port"
+	 				level=2
+	 				reserves=1
+	 			}
+			}
+		}
+		s:STATE_SUZHOU = {
+			set_owner_of_provinces = {
+				country = c:SWE
+				provinces = { x301000 }
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_building = building_port
+					}
+				}
+				create_building={
+	 				building="building_port"
+	 				level=2
+	 				reserves=1
+	 			}
+			}
+		}
+	}
+}	
+		
+ely_china_cixi.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = ely_china_cixi.1.t
+	desc = ely_china_cixi.1.d
+	flavor = ely_china_cixi.1.f
+
+	duration = 3
+
+	event_image = {
+		video = "europenorthamerica_opium_smoker"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	trigger = {}
+
+	immediate = {
+	}
+
+	option = {
+		name = ely_china_cixi.1.a
+		default_option = yes
+	}
+}	

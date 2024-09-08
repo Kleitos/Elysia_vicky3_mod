@@ -23,13 +23,49 @@ heavenly.1 = {
 		# Fired by journal entry
 	}
 	immediate = {
+		every_scope_state = {
+			limit = {				
+				state_region = {
+					is_homeland = cu:hakka
+				}
+					owner = ROOT
+			}
+			add_modifier = {
+				name = god_worshippers
+				months = short_modifier_time
+			}
+		}
+		every_scope_state = {
+			limit = {				
+				state_region = {
+					is_homeland = cu:min
+				}
+					owner = ROOT
+			}
+			add_modifier = {
+				name = god_worshippers
+				months = short_modifier_time
+			}
+		}
+		every_scope_state = {
+			limit = {				
+				state_region = {
+					is_homeland = cu:yue
+				}
+					owner = ROOT
+			}
+			add_modifier = {
+				name = god_worshippers
+				months = short_modifier_time
+			}
+		}
 		set_variable = { name = missionary_works_counter value = 1 }
 		random_scope_state = {
 			limit = { 
 				is_incorporated = yes
 				any_scope_pop = {
 					NOT = {
-						religion = rel:protestant
+						religion = rel:godworshippingsociety
 					}
 				}
 				any_neighbouring_state = {
@@ -67,8 +103,40 @@ heavenly.1 = {
 				name = missionary_schools_hospitals
 				months = normal_modifier_time
 			}
+		}
+		every_scope_state = {
+			limit = {				
+				state_region = {
+					is_homeland = cu:hakka
+				}
+					owner = ROOT
+			}
 			convert_population = {
-				target = rel:protestant 
+				target = rel:godworshippingsociety
+				value = 0.05
+			}
+		}
+		every_scope_state = {
+			limit = {				
+				state_region = {
+					is_homeland = cu:min
+				}
+					owner = ROOT
+			}
+			convert_population = {
+				target = rel:godworshippingsociety
+				value = 0.05
+			}
+		}
+		every_scope_state = {
+			limit = {				
+				state_region = {
+					is_homeland = cu:yue
+				}
+					owner = ROOT
+			}
+			convert_population = {
+				target = rel:godworshippingsociety
 				value = 0.05
 			}
 		}
@@ -79,9 +147,39 @@ heavenly.1 = {
 			country = scope:treaty_port_owner
 			value = -10
 		}
-		scope:missionary_state = {
+		every_scope_state = {
+			limit = {				
+				state_region = {
+					is_homeland = cu:hakka
+				}
+					owner = ROOT
+			}
 			convert_population = {
-				target = rel:protestant
+				target = rel:godworshippingsociety
+				value = 0.01
+			}
+		}
+		every_scope_state = {
+			limit = {				
+				state_region = {
+					is_homeland = cu:min
+				}
+					owner = ROOT
+			}
+			convert_population = {
+				target = rel:godworshippingsociety
+				value = 0.01
+			}
+		}
+		every_scope_state = {
+			limit = {				
+				state_region = {
+					is_homeland = cu:yue
+				}
+					owner = ROOT
+			}
+			convert_population = {
+				target = rel:godworshippingsociety
 				value = 0.01
 			}
 		}
@@ -135,7 +233,7 @@ heavenly.2 = {
 				months = short_modifier_time
 			}
 			convert_population = {
-				target = rel:protestant value = 0.1
+				target = rel:godworshippingsociety value = 0.1
 			}
 		}
 		if = {
@@ -153,7 +251,7 @@ heavenly.2 = {
 					historical = yes
 					birth_date = 1814.1.1
 					culture = cu:hakka
-					religion = rel:protestant
+					religion = rel:godworshippingsociety
 					interest_group = ig_devout
 					ideology = ideology_theocrat
 					is_agitator = yes
@@ -174,7 +272,7 @@ heavenly.2 = {
 			else = {
 				create_character = {
 					culture = cu:han
-					religion = rel:protestant
+					religion = rel:godworshippingsociety
 					interest_group = ig_devout
 					ideology = ideology_theocrat
 					is_agitator = yes
@@ -216,7 +314,7 @@ heavenly.3 = {
 		any_scope_state = {
 			has_variable = cult_center
 			any_scope_pop = {
-				has_pop_religion = protestant
+				has_pop_religion = godworshippingsociety
 			}
 			any_neighbouring_state = {
 				owner = ROOT
@@ -239,7 +337,7 @@ heavenly.3 = {
 			limit = {
 				has_variable = cult_center
 				any_scope_pop = {
-					has_pop_religion = protestant
+					has_pop_religion = godworshippingsociety
 				}
 				any_neighbouring_state = {
 					owner = ROOT
@@ -287,7 +385,7 @@ heavenly.3 = {
 				months = normal_modifier_time
 			}
 			convert_population = {
-				target = rel:protestant value = 0.1
+				target = rel:godworshippingsociety value = 0.1
 			}
 		}
 	}
@@ -336,29 +434,10 @@ heavenly.4 = {
 			}
 			remove_modifier = god_worshippers
 		}
-		c:CHI = {
-			every_scope_state = {
-				limit = {
-					is_incorporated = yes
-				}
-				set_variable = saved_incorporated_state
-			}
-		}		
-		random_scope_state = {
-			limit = {
-				has_variable = cult_center
-				any_scope_pop = {
-					has_pop_religion = protestant
-					religion_accepted = no
-				}
-				radical_fraction = { value >= 0.15 }
-			}
-			save_scope_as = heavenly_kingdom_spawn
-		}
 		create_country = {
 			tag = TPG
 			origin = this
-			state = scope:heavenly_kingdom_spawn
+			state = s:STATE_NANJING.region_state:CHI
 			on_created = {
 				ig:ig_devout = {
 					set_interest_group_name = ig_taiping_god_worshippers
@@ -467,6 +546,7 @@ heavenly.4 = {
 			}
 		}
 		c:TPG = { 
+		trigger_event = { id = ely_china_sellout.1 days = 180 }
 			save_scope_as = heavenly_kingdom_scope
 			set_variable = { name = gold_transfer value = c:CHI.gold_reserves } #This shouldn't be in the immediate, but it will throw a million errors if you put it somewhere else. DO NOT TOUCH.
 			change_variable = { name = gold_transfer divide = 3 }
@@ -487,6 +567,66 @@ heavenly.4 = {
 				months = long_modifier_time
 			}
 		}
+		if = {
+			limit = { exists = s:STATE_GUIZHOU.region_state:CHI }
+			s:STATE_GUIZHOU.region_state:CHI = { set_state_owner = c:TPG }
+		}
+		if = {
+			limit = { exists = s:STATE_CHONGQING.region_state:CHI }
+			s:STATE_CHONGQING.region_state:CHI = { set_state_owner = c:TPG }
+		}
+		if = {
+			limit = { exists = s:STATE_SICHUAN.region_state:CHI }
+			s:STATE_SICHUAN.region_state:CHI = { set_state_owner = c:TPG }
+		}
+		if = {
+			limit = { exists = s:STATE_SOUTHERN_ANHUI.region_state:CHI }
+			s:STATE_SOUTHERN_ANHUI.region_state:CHI = { set_state_owner = c:TPG }
+		}
+		if = {
+			limit = { exists = s:STATE_SHAOZHOU.region_state:CHI }
+			s:STATE_SHAOZHOU.region_state:CHI = { set_state_owner = c:TPG }
+		}
+		if = {
+			limit = { exists = s:STATE_GUANGDONG.region_state:CHI }
+			s:STATE_GUANGDONG.region_state:CHI = { set_state_owner = c:TPG }
+		}
+		if = {
+			limit = { exists = s:STATE_FUJIAN.region_state:CHI }
+			s:STATE_FUJIAN.region_state:CHI = { set_state_owner = c:TPG }
+		}
+		if = {
+			limit = { exists = s:STATE_GUANGXI.region_state:CHI }
+			s:STATE_GUANGXI.region_state:CHI = { set_state_owner = c:TPG }
+		}
+		if = {
+			limit = { exists = s:STATE_ZHEJIANG.region_state:CHI }
+			s:STATE_ZHEJIANG.region_state:CHI = { set_state_owner = c:TPG }
+		}
+		if = {
+			limit = { exists = s:STATE_SUZHOU.region_state:CHI }
+			s:STATE_SUZHOU.region_state:CHI = { set_state_owner = c:TPG }
+		}
+		if = {
+			limit = { exists = s:STATE_HUNAN.region_state:CHI }
+			s:STATE_HUNAN.region_state:CHI = { set_state_owner = c:TPG }
+		}
+		if = {
+			limit = { exists = s:STATE_JIANGXI.region_state:CHI }
+			s:STATE_JIANGXI.region_state:CHI = { set_state_owner = c:TPG }
+		}
+		if = {
+			limit = { exists = s:STATE_YUNNAN.region_state:CHI }
+			s:STATE_YUNNAN.region_state:CHI = { set_state_owner = c:TPG }
+		}
+		if = {
+			limit = { exists = s:STATE_EASTERN_HUBEI.region_state:CHI }
+			s:STATE_EASTERN_HUBEI.region_state:CHI = { set_state_owner = c:TPG }
+		}
+		if = {
+			limit = { exists = s:STATE_WESTERN_HUBEI.region_state:CHI }
+			s:STATE_WESTERN_HUBEI.region_state:CHI = { set_state_owner = c:TPG }
+		}
 	}
 
 	option = {
@@ -500,17 +640,13 @@ heavenly.4 = {
 			add_journal_entry = {
 				type = je_taiping_revolution
 			}
+			create_bidirectional_truce = {
+				country = c:CHI
+				months = 60
+			}
 		}
 		assign_taiping_states = yes
 		scope:heavenly_kingdom_scope ?= {		
-			create_diplomatic_play = {
-				name = taiping_rebellion
-				target_country = c:CHI
-				type = dp_taiping_rebellion
-			}
-			hidden_effect = { #Why? Because the Taiping Rebellion play grants an insane amount of infamy.
-				change_infamy = -150
-			}
 		}
 		hidden_effect = {
 			c:TPG = {
@@ -519,17 +655,6 @@ heavenly.4 = {
 					add_treasury = prev.var:gold_transfer_nil
 				}
 				add_treasury = var:gold_transfer	
-			}
-			random_diplomatic_play = {
-				limit = {
-					c:TPG = {
-						is_diplomatic_play_initiator = yes
-					}
-					c:CHI = {
-						is_diplomatic_play_target = yes
-					}
-				}
-				add_diplomatic_play_war_support = { target = c:TPG value = 100 }
 			}
 			every_state = {
 				limit = {
@@ -559,17 +684,13 @@ heavenly.4 = {
 			add_journal_entry = {
 				type = je_taiping_revolution
 			}
+			create_bidirectional_truce = {
+				country = c:CHI
+				months = 60
+			}
 		}
 		assign_taiping_states = yes
-		scope:heavenly_kingdom_scope = {		
-			create_diplomatic_play = {
-				name = taiping_rebellion
-				target_country = c:CHI
-				type = dp_taiping_rebellion
-			}
-			hidden_effect = {
-				change_infamy = -150
-			}
+		scope:heavenly_kingdom_scope = {	
 		}
 		hidden_effect = {
 			c:TPG = {
@@ -578,17 +699,6 @@ heavenly.4 = {
 					add_treasury = prev.var:gold_transfer_nil
 				}
 				add_treasury = var:gold_transfer	
-			}
-			random_diplomatic_play = {
-				limit = {
-					c:TPG = {
-						is_diplomatic_play_initiator = yes
-					}
-					c:CHI = {
-						is_diplomatic_play_target = yes
-					}
-				}
-				add_diplomatic_play_war_support = { target = c:TPG value = 100 }
 			}
 			every_state = {
 				limit = {
@@ -660,11 +770,11 @@ heavenly.5 = {
 			every_scope_state = {
 				limit = {
 					any_scope_pop = {
-						religion = rel:protestant
+						religion = rel:godworshippingsociety
 					}
 				}
 				add_religion_standard_of_living_modifier = {
-					religion = rel:protestant
+					religion = rel:godworshippingsociety
 					multiplier = -3
 				}
 				convert_population = {
@@ -703,7 +813,7 @@ heavenly.5 = {
 		name = heavenly.5.b
 		add_loyalists = {
 			value = 0.2
-			religion = rel:protestant
+			religion = rel:godworshippingsociety
 		}
 	}
 }
@@ -921,7 +1031,7 @@ CHI_missionaries.1 = {
 				months = normal_modifier_time
 			}
 			convert_population = {
-				target = rel:protestant 
+				target = rel:godworshippingsociety 
 				value = 0.03
 			}
 			add_radicals_in_state = {
@@ -940,7 +1050,7 @@ CHI_missionaries.1 = {
 				multiplier = 0.5
 			}
 			convert_population = {
-				target = rel:protestant 
+				target = rel:godworshippingsociety 
 				value = 0.01
 			}
 		}
@@ -1119,7 +1229,7 @@ CHI_missionaries.3 = {
 				months = normal_modifier_time
 			}
 			convert_population = {
-				target = rel:protestant 
+				target = rel:godworshippingsociety 
 				value = 0.01
 			}
 		}
@@ -1185,7 +1295,7 @@ CHI_missionaries.4 = {
 				months = normal_modifier_time
 			}
 			convert_population = {
-				target = rel:protestant 
+				target = rel:godworshippingsociety 
 				value = 0.01
 			}
 		}

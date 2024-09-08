@@ -233,8 +233,10 @@ canal_events.6 = { #Owner getting the offer
 	}
 
 	option = { #Yes
-		name = canal_events.6.a
-		default_option = yes
+		name = canal_events.6.a		
+		ai_chance = {
+			base = 0
+		}
 		trigger = {
             any_country = {
                 has_variable = panama_canal_var
@@ -254,6 +256,10 @@ canal_events.6 = { #Owner getting the offer
 
 	option = { #No
 		name = canal_events.6.b
+		default_option = yes		
+		ai_chance = {
+			base = 100
+		}
 		trigger = {
             any_country = {
                 has_variable = panama_canal_var
@@ -327,9 +333,6 @@ canal_events.8 = { #Deal rejected
 		change_relations = {
 			country = scope:panama_owner_scope
 			value = -20
-		}
-		s:STATE_PANAMA = {
- 			add_claim = scope:panama_scope
 		}
 	}
 }

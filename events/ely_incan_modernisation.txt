@@ -169,7 +169,7 @@ inca_infrastructure.1 = {
 inca_infrastructure.2 = {
 	type = country_event
 	event_image = {
-		video = "gfx/event_pictures/unspecific_trains.bk2"
+		video = "gfx/event_pictures/europenorthamerica_gold_prospectors.bk2"
 	}
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
@@ -330,7 +330,7 @@ inca_infrastructure.2 = {
 inca_infrastructure.3 = {
 	type = country_event
 	event_image = {
-		video = "gfx/event_pictures/unspecific_trains.bk2"
+		video = "gfx/event_pictures/europenorthamerica_gold_prospectors.bk2"
 	}
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
@@ -564,7 +564,7 @@ inca_infrastructure.4 = {
 inca_glory.1 = {
 	type = country_event
 	event_image = {
-		video = "gfx/event_pictures/unspecific_trains.bk2"
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
 	}
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
@@ -620,7 +620,7 @@ inca_glory.1 = {
 inca_farms.1 = {
 	type = country_event
 	event_image = {
-		video = "gfx/event_pictures/unspecific_trains.bk2"
+		video = "gfx/event_pictures/africa_prosperous_farm.bk2"
 	}
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
@@ -754,7 +754,7 @@ inca_farms.1 = {
 inca_farms.2 = {
 	type = country_event
 	event_image = {
-		video = "gfx/event_pictures/unspecific_trains.bk2"
+		video = "gfx/event_pictures/africa_prosperous_farm.bk2"
 	}
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
@@ -861,7 +861,7 @@ inca_farms.2 = {
 inca_farms.3 = {
 	type = country_event
 	event_image = {
-		video = "gfx/event_pictures/unspecific_trains.bk2"
+		video = "gfx/event_pictures/africa_prosperous_farm.bk2"
 	}
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
@@ -1022,7 +1022,7 @@ inca_farms.3 = {
 inca_farms.4 = {
 	type = country_event
 	event_image = {
-		video = "gfx/event_pictures/unspecific_trains.bk2"
+		video = "gfx/event_pictures/africa_prosperous_farm.bk2"
 	}
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
@@ -1140,7 +1140,7 @@ inca_farms.4 = {
 guano_act.1 = {
 	type = country_event
 	event_image = {
-		video = "gfx/event_pictures/unspecific_trains.bk2"
+		video = "gfx/event_pictures/unspecific_world_fair.bk2"
 	}
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"

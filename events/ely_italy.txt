@@ -127,6 +127,38 @@ italian_wars.3 = {
 		ai_chance = {
 			base = 95
 		}
+		add_modifier = {
+			name = italian_compromise_give
+			months = long_modifier_time
+		}	
+		c:FRA = {
+			change_relations = {
+				country = c:LMV
+				value = -20
+			}
+			create_bidirectional_truce = {
+				country = c:LMV
+				months = 60
+			}
+			add_modifier = {
+				name = italian_compromise_receive
+				months = long_modifier_time
+			}	
+		}
+		c:AUS = {
+			change_relations = {
+				country = c:LMV
+				value = -20
+			}
+			create_bidirectional_truce = {
+				country = c:LMV
+				months = 60
+			}
+			add_modifier = {
+				name = italian_compromise_receive
+				months = long_modifier_time
+			}	
+		}
 		c:PAP = {
 			trigger_event = { id = italian_wars.4 days = 10 }
 		}
@@ -137,7 +169,23 @@ italian_wars.3 = {
 		ai_chance = {
 			base = 5
 		}
+		c:FRA = {
+			change_relations = {
+				country = c:LMV
+				value = -100
+			}
+		}
+		c:AUS = {
+			change_relations = {
+				country = c:LMV
+				value = -100
+			}
+		}
 		c:PAP = {
+			change_relations = {
+				country = c:LMV
+				value = -100
+			}
 			trigger_event = { id = italian_wars.5 days = 10 }
 		}
 	}
@@ -171,6 +219,24 @@ italian_wars.4 = {
     option = {
 		name = italian_wars.4.a
 		default_option = yes
+		c:PAP = {
+			change_relations = {
+				country = c:LMV
+				value = -100
+			}
+			change_relations = {
+				country = c:FRA
+				value = -100
+			}
+			change_relations = {
+				country = c:AUS
+				value = -100
+			}
+			create_bidirectional_truce = {
+				country = c:LMV
+				months = 60
+			}
+		}
 		if = {
 			limit = { exists = s:STATE_ROMAGNA.region_state:PAP }
 			s:STATE_ROMAGNA.region_state:PAP = { set_state_owner = c:LMV }

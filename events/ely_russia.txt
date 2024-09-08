@@ -9,7 +9,7 @@ russian_revolution.1 = {
 	flavor = russian_revolution.1.f
 
 	event_image = {
-		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+		video = "gfx/event_pictures/europenorthamerica_before_the_battle.bk2"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
@@ -173,7 +173,7 @@ russian_revolution.2 = {
 	flavor = russian_revolution.2.f
 
 	event_image = {
-		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+		video = "gfx/event_pictures/europenorthamerica_before_the_battle.bk2"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
@@ -208,6 +208,48 @@ russian_revolution.2 = {
 			name = rus_revolution
             months = short_modifier_time
 		}
+		c:GBR = {
+			change_relations = {
+				country = c:NOV
+				value = 100
+			}	
+			set_secret_goal = {
+				country = c:NOV
+				secret_goal = befriend
+			}		
+			create_diplomatic_pact = {
+				country = c:NOV
+				type = foreign_investment_rights
+			}
+		}
+		c:FRA = {
+			change_relations = {
+				country = c:NOV
+				value = 100
+			}	
+			set_secret_goal = {
+				country = c:NOV
+				secret_goal = befriend
+			}	
+			create_diplomatic_pact = {
+				country = c:NOV
+				type = foreign_investment_rights
+			}
+		}
+		c:BAV = {
+			change_relations = {
+				country = c:NOV
+				value = 100
+			}	
+			set_secret_goal = {
+				country = c:NOV
+				secret_goal = befriend
+			}	
+			create_diplomatic_pact = {
+				country = c:NOV
+				type = foreign_investment_rights
+			}
+		}
 	}
 }
 
@@ -220,7 +262,7 @@ russian_revolution.3 = {
 	flavor = russian_revolution.3.f
 
 	event_image = {
-		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
@@ -261,7 +303,7 @@ russian_revolution.4 = {
 	flavor = russian_revolution.4.f
 
 	event_image = {
-		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
@@ -300,7 +342,7 @@ russian_revolution.5 = {
 	flavor = russian_revolution.5.f
 
 	event_image = {
-		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
@@ -590,7 +632,7 @@ russian_revolution.6 = {
 	flavor = russian_revolution.6.f
 
 	event_image = {
-		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
