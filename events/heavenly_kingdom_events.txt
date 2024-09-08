@@ -765,8 +765,26 @@ heavenly.5 = {
 	option = { # mass re-conversions
 		name = heavenly.5.a
 		default_option = yes
+		ai_chance = {
+			base = 100
+		}
 		custom_tooltip = {
-			text = mass_reconversion_tt
+			text = chi_religious_massacre_tt
+			every_scope_state = {
+				kill_population_percent_in_state = {
+					percent = 0.15
+					religion = rel:sunni
+				}
+			}
+			every_scope_state = {
+				kill_population_percent_in_state = {
+					percent = 0.15
+					religion = rel:godworshippingsociety
+				}
+			}
+		}
+		custom_tooltip = {
+			text = chi_mass_reconversion_christian_tt
 			every_scope_state = {
 				limit = {
 					any_scope_pop = {
@@ -778,7 +796,24 @@ heavenly.5 = {
 					multiplier = -3
 				}
 				convert_population = {
-					target = rel:confucian value = 0.1
+					target = rel:confucian value = 0.15
+				}
+			}
+		}
+		custom_tooltip = {
+			text = chi_mass_reconversion_sunni_tt
+			every_scope_state = {
+				limit = {
+					any_scope_pop = {
+						religion = rel:sunni
+					}
+				}
+				add_religion_standard_of_living_modifier = {
+					religion = rel:sunni
+					multiplier = -3
+				}
+				convert_population = {
+					target = rel:confucian value = 0.15
 				}
 			}
 		}
@@ -794,7 +829,7 @@ heavenly.5 = {
 		}
 		create_incident = {
 			country = scope:christian_gp
-			value = 25
+			value = 5
 		}
 		every_country = {
 			limit = {
@@ -811,6 +846,9 @@ heavenly.5 = {
 	}
 	option = { # mercy and pardons
 		name = heavenly.5.b
+		ai_chance = {
+			base = 0
+		}
 		add_loyalists = {
 			value = 0.2
 			religion = rel:godworshippingsociety

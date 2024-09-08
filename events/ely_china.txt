@@ -4,6 +4,10 @@ namespace = ely_china_opium_start
 namespace = ely_china_bystander
 namespace = ely_china_sellout
 namespace = ely_china_cixi
+namespace = ely_china_reconquer
+namespace = ely_china_north
+namespace = ely_china_south
+namespace = ely_china_culture
 		
 ely_china_opium.1 = {
 	type = country_event
@@ -797,12 +801,48 @@ ely_china_cixi.1 = {
 	trigger = {}
 
 	immediate = {
+		c:MCH = {
+			every_scope_state = {
+				limit = {
+					is_incorporated = yes
+				}
+				set_variable = MCH_incorporated_state
+			}
+		}
+		c:CHI = {
+			annex = c:MCH
+		}
+		c:RUS = {			
+			set_secret_goal = {
+				country = c:XIN
+				secret_goal = conquer
+			}			
+			set_secret_goal = {
+				country = c:MGL
+				secret_goal = conquer
+			}			
+			set_secret_goal = {
+				country = c:TUV
+				secret_goal = conquer
+			}		
+			set_secret_goal = {
+				country = c:SIB
+				secret_goal = conquer
+			}	
+		}	
 	}
 
 	option = {
 		name = ely_china_cixi.1.a
 		default_option = yes
 		hidden_effect = {
+			every_scope_state = {
+				limit = {
+					owner = ROOT
+					has_variable = MCH_incorporated_state
+				}
+				set_state_type = incorporated
+			}
 			ruler = {
 				kill_character = yes
 			}
@@ -837,8 +877,9 @@ ely_china_cixi.1 = {
 			}
 			add_modifier = {
 				name = manchu_rallying_banners
-				months = -1
+				months = very_long_modifier_time
 			}	
+		remove_modifier = opium_wars_lost		
 		}		
 		c:ELY = {
 			trigger_event = { id = ely_china_cixi.2 days = 60 }
@@ -871,12 +912,25 @@ ely_china_cixi.2 = {
 	immediate = {
 	}
 
-	option = { # go opium wars
+	option = { # go Cixi
 		name = ely_china_cixi.2.a
 		default_option = yes
-		change_relations = {
-			country = c:CHI
-			value = 100
+		c:CHI = {
+			trigger_event = { id = ely_china_cixi.3 days = 60 }
+		}
+		c:ELY = {
+			change_relations = {
+				country = c:CHI
+				value = 100
+			}			
+			set_secret_goal = {
+				country = c:CHI
+				secret_goal = befriend
+			}	
+			create_diplomatic_pact = {
+				country = c:CHI
+				type = foreign_investment_rights
+			}
 		}
 		ai_chance = {
 			base = 100
@@ -889,4 +943,601 @@ ely_china_cixi.2 = {
 		}
 	}
 }
+
+ely_china_cixi.3 = {
+	type = country_event
+	placement = ROOT
+
+	title = ely_china_cixi.3.t
+	desc = ely_china_cixi.3.d
+	flavor = ely_china_cixi.3.f
+
+	duration = 3
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	trigger = {
+		# triggered by event
+	}
+
+	immediate = {
+		s:STATE_TRANS_BAIKAL = {
+			add_claim = c:CHI
+		}
+		set_variable = {
+			name = china_north_var
+			value = 0
+		}
+		c:CHI = {			
+			set_secret_goal = {
+				country = c:MGL
+				secret_goal = conquer
+			}	
+			set_secret_goal = {
+				country = c:SHA
+				secret_goal = conquer
+			}	
+			set_secret_goal = {
+				country = c:ZHI
+				secret_goal = conquer
+			}	
+			set_secret_goal = {
+				country = c:SHN
+				secret_goal = conquer
+			}	
+			set_secret_goal = {
+				country = c:XIB
+				secret_goal = conquer
+			}	
+			set_secret_goal = {
+				country = c:TIB
+				secret_goal = conquer
+			}
+			set_secret_goal = {
+				country = c:XIN
+				secret_goal = conquer
+			}
+			set_secret_goal = {
+				country = c:TUV
+				secret_goal = conquer
+			}
+			set_secret_goal = {
+				country = c:SIB
+				secret_goal = conquer
+			}
+		}
+	}
+
+	option = { 
+		name = ely_china_cixi.2.a
+		default_option = yes
+		c:CHI = {
+			add_journal_entry = { type = je_reconquer_north_china }
+			add_journal_entry = { type = je_consolidate_manchuria }
+			add_modifier = {
+				name = ely_tech_boost
+				months = normal_modifier_time
+			}	
+			add_modifier = {
+				name = ely_tech_boost_prod
+				months = long_modifier_time
+			}	
+			add_modifier = {
+				name = ely_investments
+				months = normal_modifier_time
+			}	
+			change_relations = {
+				country = c:ELY
+				value = 100
+			}			
+			set_secret_goal = {
+				country = c:ELY
+				secret_goal = befriend
+			}
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+			
+ely_china_reconquer.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = ely_china_reconquer.1.t
+	desc = ely_china_reconquer.1.d
+	flavor = ely_china_reconquer.1.f
+
+	duration = 3
+
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	trigger = {}
+
+	immediate = {
+		s:STATE_DZUNGARIA = {
+			add_claim = c:CHI
+		}
+		s:STATE_GANSU = {
+			add_claim = c:CHI
+		}
+		s:STATE_QINGHAI = {
+			add_claim = c:CHI
+		}
+		s:STATE_HENAN = {
+			add_claim = c:CHI
+		}
+		s:STATE_NORTHERN_ANHUI = {
+			add_claim = c:CHI
+		}
+		s:STATE_SHANXI = {
+			add_claim = c:CHI
+		}
+		s:STATE_NINGXIA = {
+			add_claim = c:CHI
+		}
+		s:STATE_XIAN = {
+			add_claim = c:CHI
+		}
+	}
+
+	option = {
+		name = ely_china_reconquer.1.a
+		default_option = yes
+		s:STATE_ALXA = {
+			add_homeland = cu:han
+		}
+		s:STATE_HINGGAN = {
+			add_homeland = cu:han
+		}
+		c:CHI = {
+		remove_modifier = ely_tech_boost		
+		remove_modifier = ely_tech_boost_prod
+			add_modifier = {
+				name = ely_tech_boost
+				months = normal_modifier_time
+			}	
+			add_modifier = {
+				name = ely_investments
+				months = normal_modifier_time
+			}	
+			add_modifier = {
+				name = ely_tech_boost_prod
+				months = long_modifier_time
+			}	
+			add_journal_entry = { type = je_reconquer_north_east }
+			add_journal_entry = { type = je_reconquer_yellow_river_plains }
+			add_journal_entry = { type = je_reconquer_northern_coast }
+		}
+	}
+}	
+			
+ely_china_reconquer.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = ely_china_reconquer.2.t
+	desc = ely_china_reconquer.2.d
+	flavor = ely_china_reconquer.2.f
+
+	duration = 3
+
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	trigger = {}
+
+	immediate = {
+		s:STATE_URGA = {
+			add_claim = c:CHI
+		}
+		s:STATE_ULIASTAI = {
+			add_claim = c:CHI
+		}
+		s:STATE_ALXA = {
+			add_claim = c:CHI
+		}
+		s:STATE_HINGGAN = {
+			add_claim = c:CHI
+		}
+		s:STATE_ALTAI = {
+			add_claim = c:CHI
+		}
+		s:STATE_BURYATIA = {
+			add_claim = c:CHI
+		}
+		s:STATE_IRKUTSK = {
+			add_claim = c:CHI
+		}
+		s:STATE_TUVA = {
+			add_claim = c:CHI
+		}
+	}
+
+	option = {
+		name = ely_china_reconquer.2.a
+		default_option = yes
+		s:STATE_SOUTHERN_MANCHURIA = {
+			add_homeland = cu:han
+		}
+		s:STATE_NORTHERN_MANCHURIA = {
+			add_homeland = cu:han
+		}
+		c:CHI = {
+		remove_modifier = ely_tech_boost		
+		remove_modifier = ely_tech_boost_prod		
+		remove_modifier = ely_investments
+			add_modifier = {
+				name = ely_tech_boost
+				months = normal_modifier_time
+			}	
+			add_modifier = {
+				name = ely_tech_boost_prod
+				months = long_modifier_time
+			}	
+			add_modifier = {
+				name = ely_investments
+				months = normal_modifier_time
+			}	
+			add_journal_entry = { type = je_reconquer_mongolia }
+		}
+	}
+}	
+		
+ely_china_reconquer.3 = {
+	type = country_event
+	placement = ROOT
+
+	title = ely_china_reconquer.3.t
+	desc = ely_china_reconquer.3.d
+	flavor = ely_china_reconquer.3.f
+
+	duration = 3
+
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	trigger = {}
+
+	immediate = {
+	}
+
+	option = {
+		name = ely_china_reconquer.3.a
+		default_option = yes
+		s:STATE_DZUNGARIA = {
+			add_homeland = cu:han
+		}
+		s:STATE_GANSU = {
+			add_homeland = cu:han
+		}
+		s:STATE_QINGHAI = {
+			add_homeland = cu:han
+		}
+		c:CHI = {
+		remove_modifier = ely_tech_boost		
+		remove_modifier = ely_tech_boost_prod
+		remove_modifier = ely_investments
+			add_modifier = {
+				name = ely_tech_boost
+				months = normal_modifier_time
+			}	
+			add_modifier = {
+				name = ely_investments
+				months = normal_modifier_time
+			}	
+			add_modifier = {
+				name = ely_tech_boost_prod
+				months = long_modifier_time
+			}		
+		}
+	}
+}	
+
+ely_china_reconquer.4 = {
+	type = country_event
+	placement = ROOT
+
+	title = ely_china_reconquer.4.t
+	desc = ely_china_reconquer.4.d
+	flavor = ely_china_reconquer.4.f
+
+	duration = 3
+
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	trigger = {}
+
+	immediate = {
+	}
+
+	option = {
+		name = ely_china_reconquer.4.a
+		default_option = yes
+		c:CHI = {
+		remove_modifier = ely_tech_boost		
+		remove_modifier = ely_tech_boost_prod
+		remove_modifier = ely_investments
+			add_modifier = {
+				name = ely_tech_boost
+				months = normal_modifier_time
+			}	
+			add_modifier = {
+				name = ely_investments
+				months = normal_modifier_time
+			}	
+			add_modifier = {
+				name = ely_tech_boost_prod
+				months = long_modifier_time
+			}		
+		}
+	}
+}	
+			
+ely_china_north.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = ely_china_north.1.t
+	desc = ely_china_north.1.d
+	flavor = ely_china_north.1.f
+
+	duration = 3
+
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	trigger = {}
+
+	immediate = {
+		set_variable = {
+			name = china_south_var
+			value = 0
+		}
+		every_state = {
+			limit = {
+				owner = c:TPG
+				OR = {	
+					is_split_state = no
+					state_region = {
+						any_state = {
+							is_treaty_port = yes
+						}
+					}
+				}
+			}
+			this.state_region = {
+				add_claim = c:CHI
+			}
+		}
+	}
+
+	option = {
+		name = ely_china_north.1.a
+		default_option = yes
+		c:CHI = {
+		remove_modifier = ely_tech_boost		
+		remove_modifier = ely_tech_boost_prod
+		remove_modifier = ely_investments
+			add_modifier = {
+				name = ely_tech_boost
+				months = very_long_modifier_time
+			}	
+			add_modifier = {
+				name = ely_investments
+				months = very_long_modifier_time
+			}	
+			add_modifier = {
+				name = ely_tech_boost_prod
+				months = very_long_modifier_time
+			}	
+			add_modifier = {
+				name = north_china_reclaimed
+				months = very_long_modifier_time
+			}	
+			add_journal_entry = { type = je_reconquer_south_china }
+			add_journal_entry = { type = je_reconquer_south_east }
+			add_journal_entry = { type = je_reconquer_south_center }
+			add_journal_entry = { type = je_reconquer_south_coast }
+			add_journal_entry = { type = je_crush_taiping }
+		}
+	}
+}	
+			
+ely_china_south.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = ely_china_south.1.t
+	desc = ely_china_south.1.d
+	flavor = ely_china_south.1.f
+
+	duration = 3
+
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	trigger = {}
+
+	immediate = {
+	}
+
+	option = {
+		name = ely_china_south.1.a
+		default_option = yes
+		c:CHI = {
+		remove_modifier = ely_tech_boost		
+		remove_modifier = ely_tech_boost_prod
+		remove_modifier = ely_investments
+			add_modifier = {
+				name = ely_tech_boost
+				months = very_long_modifier_time
+			}	
+			add_modifier = {
+				name = ely_investments
+				months = very_long_modifier_time
+			}	
+			add_modifier = {
+				name = ely_tech_boost_prod
+				months = very_long_modifier_time
+			}	
+			add_modifier = {
+				name = china_reclaimed
+				months = -1
+			}	
+			add_journal_entry = { type = je_sinicization }
+		}
+	}
+}	
+
+ely_china_culture.1 = {
+	type = country_event
+	placement = ROOT
 	
+	title = ely_china_culture.1.t
+	desc = ely_china_culture.1.d
+	flavor = ely_china_culture.1.f
+	
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+	
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = ely_china_culture.1.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+		remove_primary_culture = cu:manchu
+		hidden_effect = {
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:min }
+					change_pop_culture = { target = cu:han value = 1 }
+				}
+				every_scope_pop = {
+					limit = { culture = cu:hakka }
+					change_pop_culture = { target = cu:han value = 1 }
+				}
+				every_scope_pop = {
+					limit = { culture = cu:yue }
+					change_pop_culture = { target = cu:han value = 1 }
+				}
+				every_scope_pop = {
+					limit = { culture = cu:miao }
+					change_pop_culture = { target = cu:han value = 1 }
+				}
+				every_scope_pop = {
+					limit = { culture = cu:zhuang }
+					change_pop_culture = { target = cu:han value = 1 }
+				}
+				every_scope_pop = {
+					limit = { culture = cu:yi }
+					change_pop_culture = { target = cu:han value = 1 }
+				}
+				every_scope_pop = {
+					limit = { culture = cu:manchu }
+					change_pop_culture = { target = cu:han value = 1 }
+				}
+			}
+		}
+		s:STATE_GUANGDONG = {
+			remove_homeland = cu:yue
+			remove_homeland = cu:min
+			remove_homeland = cu:miao
+		}
+		s:STATE_FUJIAN = {
+			remove_homeland = cu:min
+			remove_homeland = cu:hakka
+		}
+		s:STATE_JIANGXI = {
+			remove_homeland = cu:hakka
+		}
+		s:STATE_SHAOZHOU = {
+			remove_homeland = cu:yue
+			remove_homeland = cu:hakka
+		}
+		s:STATE_GUANGXI = {
+			remove_homeland = cu:yue
+			remove_homeland = cu:zhuang
+		}
+		s:STATE_YUNNAN = {
+			remove_homeland = cu:yi
+			remove_homeland = cu:zhuang
+		}
+		s:STATE_GUIZHOU = {
+			remove_homeland = cu:yi
+			remove_homeland = cu:zhuang
+		}
+		s:STATE_SICHUAN = {
+			remove_homeland = cu:yi
+		}
+		s:STATE_SHENGJING = {
+			remove_homeland = cu:manchu
+		}
+		s:STATE_OUTER_MANCHURIA = {
+			remove_homeland = cu:manchu
+			remove_homeland = cu:siberian
+			add_homeland = cu:han
+		}
+		s:STATE_SOUTHERN_MANCHURIA = {
+			remove_homeland = cu:manchu
+			add_homeland = cu:han
+		}
+		s:STATE_NORTHERN_MANCHURIA = {
+			remove_homeland = cu:manchu
+			add_homeland = cu:han
+		}
+	}
+}

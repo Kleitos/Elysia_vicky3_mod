@@ -427,12 +427,15 @@ byzantine_glory.1 = {
 			value = very_large_radicals
 			culture = cu:rhomaion
 		}
-		every_scope_state = {
-			every_scope_pop = {
-				limit = {
-					culture = cu:turkish
+		custom_tooltip = {
+			text = byz_cultural_deportation_tt
+			every_scope_state = {
+				every_scope_pop = {
+					limit = {
+						culture = cu:turkish
+					}
+					move_pop = s:STATE_TURKMENIA.region_state:TRM
 				}
-				move_pop = s:STATE_TURKMENIA.region_state:TRM
 			}
 		}
 	}
@@ -457,10 +460,13 @@ byzantine_glory.1 = {
 			value = very_large_radicals
 			culture = cu:turkish
 		}
-		every_scope_state = {
-			kill_population_percent_in_state = {
-				percent = 0.15
-				culture = cu:turkish
+		custom_tooltip = {
+			text = byz_cultural_massacre_tt
+			every_scope_state = {
+				kill_population_percent_in_state = {
+					percent = 0.15
+					culture = cu:turkish
+				}
 			}
 		}
 	}
