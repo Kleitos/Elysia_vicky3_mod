@@ -599,7 +599,7 @@ ideology_reformer = {
 	character_ideology = yes
 	
 	lawgroup_citizenship = {
-		law_multicultural = disapprove	
+		law_multicultural = strongly_disapprove	
 		law_ethnostate = disapprove
 		law_national_supremacy = disapprove
 		law_racial_segregation = neutral
@@ -2104,7 +2104,7 @@ ideology_anarchist = {
 		law_national_supremacy = strongly_disapprove
 		law_racial_segregation = disapprove
 		law_cultural_exclusion = approve
-		law_multicultural = strongly_approve	
+		law_multicultural = strongly_disapprove	
 	}	
 
 	lawgroup_distribution_of_power = {
@@ -3116,7 +3116,7 @@ ideology_humanitarian = {
 		law_national_supremacy = strongly_disapprove
 		law_racial_segregation = disapprove
 		law_cultural_exclusion = neutral
-		law_multicultural = approve	
+		law_multicultural = strongly_disapprove	
 	}
 
 	lawgroup_internal_security = {
@@ -3636,7 +3636,7 @@ ideology_integralist = {
 	lawgroup_citizenship = {
 		law_cultural_exclusion = approve
 		law_racial_segregation = neutral
-		law_multicultural = disapprove	
+		law_multicultural = strongly_disapprove	
 		law_ethnostate = disapprove
 		law_national_supremacy = disapprove
 	}
@@ -4073,7 +4073,7 @@ ideology_humanitarian_royalist = {
 		law_national_supremacy = neutral
 		law_racial_segregation = neutral
 		law_cultural_exclusion = approve
-		law_multicultural = disapprove	
+		law_multicultural = strongly_disapprove	
 	}
 
 	lawgroup_free_speech = {

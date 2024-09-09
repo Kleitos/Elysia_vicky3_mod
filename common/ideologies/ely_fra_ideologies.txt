@@ -141,7 +141,7 @@ ideology_fra_enlightenement = {
 	icon = "gfx/interface/icons/ideology_icons/unused/atheist.dds"
 	
 	lawgroup_citizenship = {
-		law_multicultural = disapprove
+		law_multicultural = strongly_disapprove
 		law_ethnostate = disapprove
 		law_national_supremacy = disapprove
 		law_racial_segregation = neutral

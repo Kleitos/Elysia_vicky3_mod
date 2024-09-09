@@ -33,7 +33,7 @@
 		law_national_supremacy = strongly_disapprove
 		law_racial_segregation = disapprove
 		law_cultural_exclusion = neutral
-		law_multicultural = approve	
+		law_multicultural = strongly_disapprove	
 	}
 
 	lawgroup_trade_policy = {		
