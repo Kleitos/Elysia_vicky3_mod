@@ -57,7 +57,7 @@ FRA_victor_de_broglie = {
 	birth_date = 1785.11.28
 	ig_leader = yes
 	interest_group = ig_landowners
-	ideology = ideology_orleanist
+	ideology = ideology_legitimist
 	traits = {
 		experienced_political_operator
 		tactful
@@ -102,7 +102,7 @@ FRA_jean-francois_mocquard = {
 	ig_leader = yes
 	dna = dna_jean_francois_mocquard
 	interest_group = ig_petty_bourgeoisie
-	ideology = ideology_orleanist
+	ideology = ideology_legitimist
 	traits = {
 		experienced_diplomat
 		meticulous
@@ -117,7 +117,7 @@ FRA_francois-rene_de_chateaubriand = {
 	dna = dna_francois_rene_de_chateaubriand
 	ig_leader = yes
 	interest_group = ig_devout
-	ideology = ideology_orleanist
+	ideology = ideology_legitimist
 	traits = {
 		romantic
 		inspirational_orator
@@ -182,7 +182,7 @@ FRA_thomas_bugeaud = {
 	dna = dna_thomas_robert_bugeaud
 	birth_date = 1784.10.15
 	interest_group = ig_rural_folk
-	ideology = ideology_orleanist
+	ideology = ideology_legitimist
 	traits = {
 		resupply_commander
 		ambitious
@@ -364,7 +364,7 @@ FRA_louis_antoine_de_bourbon = {
 	birth_date = 1775.8.6
 	culture = cu:french
 	interest_group = ig_armed_forces
-	ideology = ideology_orleanist
+	ideology = ideology_legitimist
 	traits = {
 		basic_offensive_planner # see the battle of Trocadero
 		bigoted
@@ -386,7 +386,7 @@ FRA_henri_de_bourbon = {
 	birth_date = 1820.9.29
 	culture = cu:french
 	interest_group = ig_landowners
-	ideology = ideology_orleanist
+	ideology = ideology_legitimist
 	traits = {
 		arrogant
 		basic_political_operator
@@ -408,7 +408,7 @@ FRA_jean_de_bourbon = {
 	birth_date = 1822.5.15
 	culture = cu:spanish
 	interest_group = ig_landowners
-	ideology = ideology_orleanist
+	ideology = ideology_legitimist
 	traits = {
 		# "liberal tendencies"
 		reserved
@@ -430,7 +430,7 @@ FRA_carlos_de_bourbon = {
 	culture = cu:spanish
 	dna = dna_infante_carlos_count_of_madrid
 	interest_group = ig_landowners
-	ideology = ideology_orleanist
+	ideology = ideology_legitimist
 	traits = {
 		basic_offensive_planner
 		ambitious
@@ -452,7 +452,7 @@ FRA_jacques_de_bourbon = {
 	birth_date = 1870.6.27
 	culture = cu:spanish
 	interest_group = ig_armed_forces
-	ideology = ideology_orleanist
+	ideology = ideology_legitimist
 	traits = {
 		# suspected of liberal tendencies (gah!)
 		surveyor
@@ -474,7 +474,7 @@ FRA_alfonso_carlos_de_bourbon = {
 	birth_date = 1849.9.12
 	culture = cu:spanish
 	interest_group = ig_armed_forces
-	ideology = ideology_orleanist
+	ideology = ideology_legitimist
 	traits = {
 		stalwart_defender
 		pious
@@ -496,7 +496,7 @@ FRA_alfonso_de_bourbon = {
 	birth_date = 1886.5.17
 	culture = cu:spanish
 	interest_group = ig_armed_forces
-	ideology = ideology_orleanist
+	ideology = ideology_legitimist
 	traits = {
 		arrogant
 		expensive_tastes
