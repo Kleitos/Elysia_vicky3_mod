@@ -310,7 +310,7 @@ DEI = {
 	
 	tier = principality
 	
-	cultures = { north_german }
+	cultures = { dutch }
 	capital = STATE_WEST_JAVA
 }
 
