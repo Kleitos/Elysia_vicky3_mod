@@ -800,13 +800,6 @@ je_andean_farming = {
 			}	
 		}
 		any_scope_state = {
-			state_region = s:STATE_POTOSI
-			any_scope_building = {
-				is_building_type = building_maize_farm
-				level >= 10
-			}	
-		}
-		any_scope_state = {
 			state_region = s:STATE_CAJAMARCA
 			any_scope_building = {
 				is_building_type = building_maize_farm
@@ -815,27 +808,6 @@ je_andean_farming = {
 		}
 		any_scope_state = {
 			state_region = s:STATE_LIMA
-			any_scope_building = {
-				is_building_type = building_maize_farm
-				level >= 10
-			}	
-		}
-		any_scope_state = {
-			state_region = s:STATE_ICA
-			any_scope_building = {
-				is_building_type = building_maize_farm
-				level >= 10
-			}	
-		}
-		any_scope_state = {
-			state_region = s:STATE_AREQUIPA
-			any_scope_building = {
-				is_building_type = building_maize_farm
-				level >= 10
-			}	
-		}
-		any_scope_state = {
-			state_region = s:STATE_JUJUY
 			any_scope_building = {
 				is_building_type = building_maize_farm
 				level >= 10
@@ -944,13 +916,6 @@ je_andean_ranching = {
 			}
 		}
 		any_scope_state = {
-			state_region = s:STATE_TARAPACA
-			any_scope_building = {
-				is_building_type = building_livestock_ranch
-				level >= 20
-			}
-		}
-		any_scope_state = {
 			state_region = s:STATE_ANTOFAGASTA
 			any_scope_building = {
 				is_building_type = building_livestock_ranch
@@ -965,13 +930,6 @@ je_andean_ranching = {
 			}
 		}
 		any_scope_state = {
-			state_region = s:STATE_POTOSI
-			any_scope_building = {
-				is_building_type = building_livestock_ranch
-				level >= 10
-			}
-		}
-		any_scope_state = {
 			state_region = s:STATE_CAJAMARCA
 			any_scope_building = {
 				is_building_type = building_livestock_ranch
@@ -980,27 +938,6 @@ je_andean_ranching = {
 		}
 		any_scope_state = {
 			state_region = s:STATE_LIMA
-			any_scope_building = {
-				is_building_type = building_livestock_ranch
-				level >= 10
-			}
-		}
-		any_scope_state = {
-			state_region = s:STATE_ICA
-			any_scope_building = {
-				is_building_type = building_livestock_ranch
-				level >= 10
-			}
-		}
-		any_scope_state = {
-			state_region = s:STATE_AREQUIPA
-			any_scope_building = {
-				is_building_type = building_livestock_ranch
-				level >= 10
-			}
-		}
-		any_scope_state = {
-			state_region = s:STATE_JUJUY
 			any_scope_building = {
 				is_building_type = building_livestock_ranch
 				level >= 10
