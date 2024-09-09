@@ -17,7 +17,7 @@
 		activate_law = law_type:law_professional_army
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_women_own_property
-		activate_law = law_type:law_colonial_	exploitation
+		activate_law = law_type:law_colonial_exploitation
 		
 		add_taxed_goods = g:liquor
 
