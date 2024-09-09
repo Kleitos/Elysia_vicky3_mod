@@ -569,47 +569,35 @@
 			type = fleet
 			hq_region = sr:region_france
 			name = Escadre_du_Nord # Somewhat anachronistic formation
-		
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_FRENCH_LOW_COUNTRIES
-				count = 1
-			}
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_BRITTANY
-				count = 2
-			}
-
-			combat_unit = {
+			combat_unit = {	
 				type = unit_type:combat_unit_type_man_o_war
 				state_region = s:STATE_NORMANDY
 				count = 1
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
+				type = unit_type:combat_unit_type_frigate
+				state_region = s:STATE_FRENCH_LOW_COUNTRIES
+				count = 5
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigate
+				state_region = s:STATE_BRITTANY
+				count = 8
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigate
+				state_region = s:STATE_NORMANDY
+				count = 5
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigate
 				state_region = s:STATE_POITOU
-				count = 1
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_FRENCH_LOW_COUNTRIES
-				count = 5
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_BRITTANY
-				count = 10
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_NORMANDY
-				count = 5
+				count = 3
 			}
 		}
 
@@ -621,25 +609,13 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_war
 				state_region = s:STATE_PROVENCE
-				count = 4
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_LANGUEDOC
-				count = 2
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_AQUITAINE
-				count = 2
+				count = 1
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
 				state_region = s:STATE_PROVENCE
-				count = 10
+				count = 7
 			}
 
 			combat_unit = {
