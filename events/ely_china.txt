@@ -974,7 +974,61 @@ ely_china_cixi.3 = {
 			name = china_north_var
 			value = 0
 		}
-		c:CHI = {			
+		c:CHI = {	
+			create_character = {
+				ig_leader = yes
+				interest_group = ig:ig_landowners
+				ideology = ideology_market_liberal
+				on_created = {
+					set_variable = memento_mori_immunity
+				}
+			}	
+			create_character = {
+				ig_leader = yes
+				interest_group = ig:ig_petty_bourgeoisie
+				ideology = ideology_royalist
+			}
+			create_character = {
+				ig_leader = yes
+				interest_group = ig:ig_rural_folk
+				ideology = ideology_land_reformer
+			}	
+			create_character = {
+				ig_leader = yes
+				interest_group = ig:ig_intelligentsia
+				ideology = ideology_republican_leader
+				traits = {
+					ambitious
+					persistent
+					inspirational_orator
+				}   
+			}	
+			ig:ig_landowners = {
+				remove_ideology = ideology_scholar_paternalistic
+				remove_ideology = ideology_patriarchal
+				remove_ideology = ideology_stratocratic
+				add_ideology = ideology_chi_scholar_paternalistic
+				add_ideology = ideology_chi_banner
+				add_ideology = ideology_patriarchal_suffrage
+				add_ideology = ideology_modernizer
+			}
+			ig:ig_armed_forces = {
+				remove_ideology = ideology_jingoist
+				remove_ideology = ideology_patriotic
+				add_ideology = ideology_chi_banner
+				add_ideology = ideology_chi_manchu
+			}
+			ig:ig_intelligentsia = {
+				remove_ideology = ideology_republican
+				remove_ideology = ideology_liberal
+				add_ideology = ideology_liberal_modern
+				add_ideology = ideology_chi_scholar_paternalistic
+			}
+			ig:ig_devout = {
+				remove_ideology = ideology_confucian
+				add_ideology = ideology_chi_confucian
+				add_ideology = ideology_meritocratic
+			}	
 			set_secret_goal = {
 				country = c:MGL
 				secret_goal = conquer
@@ -1015,7 +1069,7 @@ ely_china_cixi.3 = {
 	}
 
 	option = { 
-		name = ely_china_cixi.2.a
+		name = ely_china_cixi.3.a
 		default_option = yes
 		c:CHI = {
 			add_journal_entry = { type = je_reconquer_north_china }
@@ -1118,7 +1172,7 @@ ely_china_reconquer.1 = {
 				name = ely_tech_boost_prod
 				months = long_modifier_time
 			}	
-			add_journal_entry = { type = je_reconquer_north_east }
+			add_journal_entry = { type = je_reconquer_north_west }
 			add_journal_entry = { type = je_reconquer_yellow_river_plains }
 			add_journal_entry = { type = je_reconquer_northern_coast }
 		}
@@ -1370,7 +1424,7 @@ ely_china_north.1 = {
 				months = very_long_modifier_time
 			}	
 			add_journal_entry = { type = je_reconquer_south_china }
-			add_journal_entry = { type = je_reconquer_south_east }
+			add_journal_entry = { type = je_reconquer_south_west }
 			add_journal_entry = { type = je_reconquer_south_center }
 			add_journal_entry = { type = je_reconquer_south_coast }
 			add_journal_entry = { type = je_crush_taiping }

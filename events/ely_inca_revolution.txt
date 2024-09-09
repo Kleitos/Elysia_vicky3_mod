@@ -123,6 +123,7 @@ ely_incan_revolution.1 = {
 				add_ideology = ideology_incan_rich_rights
 				add_ideology = ideology_incan_rich_army
 				add_ideology = ideology_incan_rich_economy
+				add_ideology = ideology_incan_rich_admin
 			}
 			ig:ig_petty_bourgeoisie = {
 				remove_ideology = ideology_patriotic
@@ -132,6 +133,7 @@ ely_incan_revolution.1 = {
 				add_ideology = ideology_incan_middle_rights
 				add_ideology = ideology_incan_middle_army
 				add_ideology = ideology_incan_middle_economy
+				add_ideology = ideology_incan_middle_admin
 			}
 			ig:ig_armed_forces = {
 				remove_ideology = ideology_jingoist
@@ -141,6 +143,7 @@ ely_incan_revolution.1 = {
 				add_ideology = ideology_incan_middle_rights
 				add_ideology = ideology_incan_middle_army
 				add_ideology = ideology_incan_middle_economy
+				add_ideology = ideology_incan_middle_admin
 			}
 			ig:ig_intelligentsia = {
 				remove_ideology = ideology_anti_clerical
@@ -151,6 +154,7 @@ ely_incan_revolution.1 = {
 				add_ideology = ideology_incan_middle_rights
 				add_ideology = ideology_incan_middle_army
 				add_ideology = ideology_incan_middle_economy
+				add_ideology = ideology_incan_middle_admin
 			}
 			ig:ig_industrialists = {
 				remove_ideology = ideology_laissez_faire
@@ -160,15 +164,17 @@ ely_incan_revolution.1 = {
 				add_ideology = ideology_incan_rich_rights
 				add_ideology = ideology_incan_rich_army
 				add_ideology = ideology_incan_rich_economy
+				add_ideology = ideology_incan_rich_admin
 			}
 			ig:ig_devout = {
 				remove_ideology = ideology_patriarchal
 				remove_ideology = ideology_pious
 				remove_ideology = ideology_moralist
-				add_ideology = ideology_incan_middle_land
-				add_ideology = ideology_incan_middle_rights
-				add_ideology = ideology_incan_middle_army
-				add_ideology = ideology_incan_middle_economy
+				add_ideology = ideology_incan_rich_land
+				add_ideology = ideology_incan_rich_rights
+				add_ideology = ideology_incan_rich_army
+				add_ideology = ideology_incan_rich_economy
+				add_ideology = ideology_incan_rich_admin
 			}
 			ig:ig_rural_folk = {
 				remove_ideology = ideology_particularist
@@ -178,6 +184,7 @@ ely_incan_revolution.1 = {
 				add_ideology = ideology_incan_poor_rights
 				add_ideology = ideology_incan_poor_army
 				add_ideology = ideology_incan_poor_economy
+				add_ideology = ideology_incan_poor_admin
 			}
 			ig:ig_trade_unions = {
 				remove_ideology = ideology_populist
@@ -188,6 +195,7 @@ ely_incan_revolution.1 = {
 				add_ideology = ideology_incan_poor_rights
 				add_ideology = ideology_incan_poor_army
 				add_ideology = ideology_incan_poor_economy
+				add_ideology = ideology_incan_poor_admin
 			}
 		}
 		c:TWT = {
