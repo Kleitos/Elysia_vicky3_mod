@@ -147,7 +147,7 @@ je_consolidate_manchuria = {
 	should_be_pinned_by_default = yes
 }
 
-je_reconquer_north_east = {
+je_reconquer_north_west = {
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 
 	group = je_group_elysian_content
@@ -248,7 +248,7 @@ je_reconquer_northern_coast = {
 	should_be_pinned_by_default = yes
 }
 
-je_reconquer_south_east = {
+je_reconquer_south_west = {
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 
 	group = je_group_elysian_content
