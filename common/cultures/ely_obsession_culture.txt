@@ -7376,7 +7376,7 @@ sumatran={
 }
 
 
-dutch_colonial={ # Displayed as "Dutch Colonists" in localization
+german_colonial={ # Displayed as "Dutch Colonists" in localization
 	color= hsv{ 230 130 50 }
 	religion = protestant
 	traits = { beneluxian_culture_group european_heritage }
