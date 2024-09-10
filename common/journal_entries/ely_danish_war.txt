@@ -281,6 +281,7 @@ je_danish_war_SWE = {
 		c:DEN ?= {
 			has_truce_with = c:SWE
 		}
+		owns_entire_state_region = STATE_SCANIA
 	}
 
 	on_complete = {
@@ -291,6 +292,7 @@ je_danish_war_SWE = {
 		has_truce_with = c:GBR
 		c:DEN ?= {
 			has_truce_with = c:SWE
+			owns_entire_state_region = STATE_SCANIA
 		}
 		OR = {
 			exists = c:NSW
