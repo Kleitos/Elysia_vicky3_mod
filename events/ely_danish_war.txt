@@ -190,6 +190,12 @@ danish_english_victory.3 = {
 	}
 
 	immediate = {
+		c:GBR = {
+			create_diplomatic_pact = {
+				country = c:BIC
+				type = dominion
+			}		
+		}
 	}
 
     option = {
@@ -251,6 +257,12 @@ danish_english_victory.4 = {
 	}
 
 	immediate = {
+		c:GBR = {
+			create_diplomatic_pact = {
+				country = c:NSW
+				type = dominion
+			}		
+		}
 	}
 
     option = {
@@ -362,6 +374,12 @@ danish_english_victory.6 = {
 	}
 
 	immediate = {
+		c:GBR = {
+			create_diplomatic_pact = {
+				country = c:LIB
+				type = dominion
+			}		
+		}
 	}
 
     option = {
@@ -498,6 +516,12 @@ danish_english_victory.9 = {
 	}
 
 	immediate = {
+		c:GBR = {
+			create_diplomatic_pact = {
+				country = c:ARG
+				type = dominion
+			}		
+		}
 		if = {
 			limit = { exists = s:STATE_SOUTH_ATLANTIC_ISLANDS.region_state:GBR }
 			s:STATE_SOUTH_ATLANTIC_ISLANDS.region_state:GBR = { set_state_owner = c:ARG }
@@ -730,12 +754,10 @@ spanish_swedish_victory.3 = {
 				country = c:DEI
 				type = puppet
 			}	
-		}
-		c:SWE = {
 			create_diplomatic_pact = {
 				country = c:WIN
 				type = puppet
-			}	
+			}
 		}
 		if = {
 			limit = { exists = s:STATE_SCHLESWIG_HOLSTEIN.region_state:DEN }
@@ -815,6 +837,12 @@ spanish_swedish_victory.4 = {
 	}
 
 	immediate = {
+		c:SPA = {
+			create_diplomatic_pact = {
+				country = c:SEI
+				type = dominion
+			}	
+		}	
 	}
 
     option = {
@@ -876,6 +904,12 @@ spanish_swedish_victory.5 = {
 	}
 
 	immediate = {
+		c:SWE = {
+			create_diplomatic_pact = {
+				country = c:SAS
+				type = dominion
+			}	
+		}	
 	}
 
     option = {
@@ -928,6 +962,12 @@ spanish_swedish_victory.6 = {
 	}
 
 	immediate = {
+		c:SWE = {
+			create_diplomatic_pact = {
+				country = c:WAS
+				type = dominion
+			}	
+		}
 	}
 
     option = {
@@ -1022,6 +1062,12 @@ spanish_swedish_victory.8 = {
 	}
 
 	immediate = {
+		c:SPA = {
+			create_diplomatic_pact = {
+				country = c:SIL
+				type = dominion
+			}	
+		}
 	}
 
     option = {
@@ -1068,6 +1114,12 @@ spanish_swedish_victory.9 = {
 	}
 
 	immediate = {
+		c:SPA = {
+			create_diplomatic_pact = {
+				country = c:BRZ
+				type = dominion
+			}	
+		}
 	}
 
     option = {

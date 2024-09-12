@@ -52,13 +52,33 @@ anglo_iberian_war.1 = {
 		}
 		c:SPA = {
 		trigger_event = { id = anglo_iberian_war.2 }
-		}	
-		c:SPA = {
 			end_truce = c:GBR
 			end_truce = c:BIC
 			end_truce = c:LIB
 			end_truce = c:ARG
 			end_truce = c:NSW
+			remove_diplomatic_pact = {
+				country = c:BRZ
+				type = dominion
+			}	
+			remove_diplomatic_pact = {
+				country = c:SEI
+				type = dominion
+			}	
+			remove_diplomatic_pact = {
+				country = c:SIL
+				type = dominion
+			}	
+		}	
+		c:SWE = {	
+			remove_diplomatic_pact = {
+				country = c:WAS
+				type = puppet
+			}		
+			remove_diplomatic_pact = {
+				country = c:SAS
+				type = puppet
+			}		
 		}
 		c:GBR = {
 			end_truce = c:SPA
@@ -69,6 +89,22 @@ anglo_iberian_war.1 = {
 			end_truce = c:SAS
 			end_truce = c:WAS
 			end_truce = c:SWE
+			remove_diplomatic_pact = {
+				country = c:BIC
+				type = dominion
+			}		
+			remove_diplomatic_pact = {
+				country = c:ARG
+				type = dominion
+			}		
+			remove_diplomatic_pact = {
+				country = c:NSW
+				type = puppet
+			}	
+			remove_diplomatic_pact = {
+				country = c:LIB
+				type = puppet
+			}		
 		}	
 		c:PHI = {
 			end_truce = c:BIC
@@ -136,7 +172,7 @@ anglo_iberian_war.2 = {
 		}
 		c:CHI = {
 			trigger_event = { id = anglo_iberian_war.4 }
-			trigger_event = { id = ely_china_bystander.1 days = 365 }
+			trigger_event = { id = ely_china_bystander.1 days = 365  }
 		}
 		c:ELY = {
 			trigger_event = { id = anglo_iberian_war.4 }
@@ -583,6 +619,11 @@ anglo_iberian_war.2 = {
 				type = conquer_state
 				target_state = s:STATE_ZANZIBAR.region_state:SPA
 				target_country = c:SPA
+			}
+			add_war_goal = {
+				holder = c:GBR
+				type = ban_slavery
+				target_country = c:BRZ
 			}
 			
 			add_war_goal = {
