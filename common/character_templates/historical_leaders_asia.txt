@@ -111,7 +111,7 @@ chi_cixi_template = {
     female = yes
     ideology = ideology_royalist
     interest_group = ig_landowners
-    birth_date = 1835.11.29
+    birth_date = 1821.11.29
     dna = dna_empress_dowager_cixi
     traits = {
        ambitious
