@@ -159,6 +159,12 @@ ely_china_opium_start.2 = {
 	}
 
 	immediate = {
+		c:GBR = {
+			create_bidirectional_truce = {
+				country = c:CHI
+				months = 60
+			}
+		}
 		save_scope_as = opium_wars_aggressor_country
 		random_country = {
 			limit = {
