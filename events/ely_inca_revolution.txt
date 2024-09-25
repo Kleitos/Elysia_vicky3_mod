@@ -217,15 +217,31 @@ ely_incan_revolution.1 = {
 	option = {
 		name = ely_incan_revolution.1.a
 		add_loyalists = {
-			value = large_radicals
+			value = very_large_radicals
 			strata = rich
 		}
 		hidden_effect = {
 			c:INC = {
 				change_infamy = -100
+				change_relations = {
+					country = c:TWT
+					value = -100
+				}					
+				set_secret_goal = {
+					country = c:TWT
+					secret_goal = conquer
+				}
 			}
 			c:TWT = {
 				change_infamy = -100
+				change_relations = {
+					country = c:INC
+					value = -100
+				}					
+				set_secret_goal = {
+					country = c:INC
+					secret_goal = conquer
+				}
 			}		
 		}
 		create_diplomatic_play = {
@@ -237,6 +253,24 @@ ely_incan_revolution.1 = {
 				holder = c:INC
 				type = annex_country
 				target_state = s:STATE_LIMA.region_state:TWT
+			}
+		}
+		c:INC = {
+			create_military_formation = {
+				type = army
+				hq_region = sr:region_andes
+
+				combat_unit = {
+					type = unit_type:combat_unit_type_irregular_infantry
+					state_region = sr:region_andes
+					count = 10
+				}
+
+				combat_unit = {
+					type = unit_type:combat_unit_type_cannon_artillery
+					state_region = sr:region_andes
+					count = 5
+				}
 			}
 		}
 	}
@@ -247,9 +281,25 @@ ely_incan_revolution.1 = {
 		hidden_effect = {
 			c:INC = {
 				change_infamy = -100
+				change_relations = {
+					country = c:TWT
+					value = -100
+				}					
+				set_secret_goal = {
+					country = c:TWT
+					secret_goal = conquer
+				}
 			}
 			c:TWT = {
 				change_infamy = -100
+				change_relations = {
+					country = c:INC
+					value = -100
+				}					
+				set_secret_goal = {
+					country = c:INC
+					secret_goal = conquer
+				}
 			}		
 		}
 		create_diplomatic_play = {
@@ -261,6 +311,24 @@ ely_incan_revolution.1 = {
 				holder = c:INC
 				type = annex_country
 				target_state = s:STATE_LIMA.region_state:TWT
+			}
+		}
+		c:INC = {
+			create_military_formation = {
+				type = army
+				hq_region = sr:region_andes
+
+				combat_unit = {
+					type = unit_type:combat_unit_type_irregular_infantry
+					state_region = sr:region_andes
+					count = 10
+				}
+
+				combat_unit = {
+					type = unit_type:combat_unit_type_cannon_artillery
+					state_region = sr:region_andes
+					count = 5
+				}
 			}
 		}
 	}
@@ -305,15 +373,15 @@ ely_incan_revolution.2 = {
 			is_decaying = yes
 		}	
 		add_loyalists = {
-			value = small_radicals
+			value = very_large_radicals
 			strata = rich
 		}
 		add_loyalists = {
-			value = small_radicals
+			value = very_large_radicals
 			strata = middle
 		}
 		add_radicals = {
-			value = medium_radicals
+			value = very_large_radicals
 			strata = poor
 		}
 		activate_law = law_type:law_presidential_republic
@@ -329,15 +397,15 @@ ely_incan_revolution.2 = {
 			is_decaying = yes
 		}	
 		add_loyalists = {
-			value = small_radicals
+			value = very_large_radicals
 			strata = middle
 		}
 		add_loyalists = {
-			value = medium_radicals
+			value = very_large_radicals
 			strata = poor
 		}
 		add_radicals = {
-			value = small_radicals
+			value = very_large_radicals
 			strata = rich
 		}
 		activate_law = law_type:law_parliamentary_republic
@@ -375,15 +443,15 @@ ely_incan_revolution.3 = {
 			base = 50
 		}
 		add_loyalists = {
-			value = small_radicals
+			value = very_large_radicals
 			strata = rich
 		}
 		add_loyalists = {
-			value = small_radicals
+			value = very_large_radicals
 			strata = middle
 		}
 		add_radicals = {
-			value = medium_radicals
+			value = very_large_radicals
 			strata = poor
 		}
 		activate_law = law_type:law_census_voting
@@ -395,15 +463,15 @@ ely_incan_revolution.3 = {
 		}
 		default_option = yes
 		add_loyalists = {
-			value = small_radicals
+			value = very_large_radicals
 			strata = middle
 		}
 		add_loyalists = {
-			value = medium_radicals
+			value = very_large_radicals
 			strata = poor
 		}
 		add_radicals = {
-			value = small_radicals
+			value = very_large_radicals
 			strata = rich
 		}
 		activate_law = law_type:law_universal_suffrage
@@ -447,15 +515,15 @@ ely_incan_revolution.4 = {
 			is_decaying = yes
 		}	
 		add_loyalists = {
-			value = small_radicals
+			value = very_large_radicals
 			strata = rich
 		}
 		add_radicals = {
-			value = small_radicals
+			value = very_large_radicals
 			strata = middle
 		}
 		add_radicals = {
-			value = medium_radicals
+			value = very_large_radicals
 			strata = poor
 		}
 		activate_law = law_type:law_appointed_bureaucrats
@@ -471,15 +539,15 @@ ely_incan_revolution.4 = {
 			base = 50
 		}
 		add_loyalists = {
-			value = small_radicals
+			value = very_large_radicals
 			strata = middle
 		}
 		add_loyalists = {
-			value = medium_radicals
+			value = very_large_radicals
 			strata = poor
 		}
 		add_radicals = {
-			value = small_radicals
+			value = very_large_radicals
 			strata = rich
 		}
 		activate_law = law_type:law_elected_bureaucrats
@@ -522,15 +590,15 @@ ely_incan_revolution.5 = {
 			is_decaying = yes
 		}	
 		add_loyalists = {
-			value = small_radicals
+			value = very_large_radicals
 			strata = rich
 		}
 		add_loyalists = {
-			value = small_radicals
+			value = very_large_radicals
 			strata = middle
 		}
 		add_radicals = {
-			value = medium_radicals
+			value = very_large_radicals
 			strata = poor
 		}
 		activate_law = law_type:law_professional_army
@@ -546,15 +614,15 @@ ely_incan_revolution.5 = {
 			is_decaying = yes
 		}	
 		add_loyalists = {
-			value = small_radicals
+			value = very_large_radicals
 			strata = middle
 		}
 		add_loyalists = {
-			value = medium_radicals
+			value = very_large_radicals
 			strata = poor
 		}
 		add_radicals = {
-			value = small_radicals
+			value = very_large_radicals
 			strata = rich
 		}
 		activate_law = law_type:law_national_militia
@@ -571,15 +639,15 @@ ely_incan_revolution.5 = {
 		}	
 		default_option = yes
 		add_loyalists = {
-			value = small_radicals
+			value = very_large_radicals
 			strata = middle
 		}
 		add_loyalists = {
-			value = small_radicals
+			value = very_large_radicals
 			strata = poor
 		}
 		add_loyalists = {
-			value = small_radicals
+			value = very_large_radicals
 			strata = rich
 		}
 		activate_law = law_type:law_mass_conscription
@@ -617,15 +685,15 @@ ely_incan_revolution.6 = {
 			base = 50
 		}
 		add_loyalists = {
-			value = large_radicals
+			value = very_large_radicals
 			strata = rich
 		}
 		add_loyalists = {
-			value = small_radicals
+			value = very_large_radicals
 			strata = middle
 		}
 		add_radicals = {
-			value = large_radicals
+			value = very_large_radicals
 			strata = poor
 		}
 		activate_law = law_type:law_commercialized_agriculture
@@ -637,15 +705,15 @@ ely_incan_revolution.6 = {
 		}
 		default_option = yes
 		add_loyalists = {
-			value = small_radicals
+			value = very_large_radicals
 			strata = middle
 		}
 		add_loyalists = {
-			value = large_radicals
+			value = very_large_radicals
 			strata = poor
 		}
 		add_radicals = {
-			value = medium_radicals
+			value = very_large_radicals
 			strata = rich
 		}
 		activate_law = law_type:law_homesteading
@@ -689,15 +757,15 @@ ely_incan_revolution.7 = {
 			is_decaying = yes
 		}
 		add_loyalists = {
-			value = medium_radicals
+			value = very_large_radicals
 			strata = rich
 		}
 		add_loyalists = {
-			value = small_radicals
+			value = very_large_radicals
 			strata = middle
 		}
 		add_radicals = {
-			value = medium_radicals
+			value = very_large_radicals
 			strata = poor
 		}
 		activate_law = law_type:law_laissez_faire
@@ -713,15 +781,15 @@ ely_incan_revolution.7 = {
 			is_decaying = yes
 		}
 		add_radicals = {
-			value = small_radicals
+			value = very_large_radicals
 			strata = middle
 		}
 		add_loyalists = {
-			value = medium_radicals
+			value = very_large_radicals
 			strata = poor
 		}
 		add_radicals = {
-			value = small_radicals
+			value = very_large_radicals
 			strata = rich
 		}
 		activate_law = law_type:law_agrarianism
@@ -764,15 +832,15 @@ ely_incan_revolution.8 = {
 			is_decaying = yes
 		}
 		add_radicals = {
-			value = small_radicals
+			value = very_large_radicals
 			strata = rich
 		}
 		add_radicals = {
-			value = medium_radicals
+			value = very_large_radicals
 			strata = middle
 		}
 		add_radicals = {
-			value = large_radicals
+			value = very_large_radicals
 			strata = poor
 		}
 		activate_law = law_type:law_total_separation
@@ -788,15 +856,15 @@ ely_incan_revolution.8 = {
 			is_decaying = yes
 		}
 		add_radicals = {
-			value = small_radicals
+			value = very_large_radicals
 			strata = middle
 		}
 		add_radicals = {
-			value = medium_radicals
+			value = very_large_radicals
 			strata = poor
 		}
 		add_radicals = {
-			value = medium_radicals
+			value = very_large_radicals
 			strata = rich
 		}
 		activate_law = law_type:law_freedom_of_conscience
@@ -808,15 +876,15 @@ ely_incan_revolution.8 = {
 		}
 		default_option = yes
 		add_loyalists = {
-			value = medium_radicals
+			value = very_large_radicals
 			strata = middle
 		}
 		add_loyalists = {
-			value = medium_radicals
+			value = very_large_radicals
 			strata = poor
 		}
 		add_loyalists = {
-			value = medium_radicals
+			value = very_large_radicals
 			strata = rich
 		}
 	}
@@ -859,11 +927,11 @@ ely_incan_revolution.9 = {
 			is_decaying = yes
 		}
 		add_loyalists = {
-			value = large_radicals
+			value = very_large_radicals
 			strata = rich
 		}
 		add_loyalists = {
-			value = small_radicals
+			value = very_large_radicals
 			strata = middle
 		}
 		add_radicals = {
@@ -883,11 +951,11 @@ ely_incan_revolution.9 = {
 			is_decaying = yes
 		}
 		add_loyalists = {
-			value = small_radicals
+			value = very_large_radicals
 			strata = middle
 		}
 		add_loyalists = {
-			value = large_radicals
+			value = very_large_radicals
 			strata = poor
 		}
 		add_radicals = {
@@ -934,11 +1002,11 @@ ely_incan_revolution.10 = {
 			is_decaying = yes
 		}
 		add_loyalists = {
-			value = large_radicals
+			value = very_large_radicals
 			strata = rich
 		}
 		add_loyalists = {
-			value = small_radicals
+			value = very_large_radicals
 			strata = middle
 		}
 		add_radicals = {
@@ -959,11 +1027,11 @@ ely_incan_revolution.10 = {
 			is_decaying = yes
 		}
 		add_loyalists = {
-			value = small_radicals
+			value = very_large_radicals
 			strata = middle
 		}
 		add_loyalists = {
-			value = large_radicals
+			value = very_large_radicals
 			strata = poor
 		}
 		add_radicals = {
@@ -1006,15 +1074,15 @@ ely_incan_revolution.11 = {
 		}
 		default_option = yes
 		add_loyalists = {
-			value = large_radicals
+			value = very_large_radicals
 			strata = rich
 		}
 		add_loyalists = {
-			value = small_radicals
+			value = very_large_radicals
 			strata = middle
 		}
 		add_radicals = {
-			value = medium_radicals
+			value = very_large_radicals
 			strata = poor
 		}
 		activate_law = law_type:law_right_of_assembly
@@ -1025,15 +1093,15 @@ ely_incan_revolution.11 = {
 			base = 50
 		}
 		add_loyalists = {
-			value = small_radicals
+			value = very_large_radicals
 			strata = middle
 		}
 		add_loyalists = {
-			value = large_radicals
+			value = very_large_radicals
 			strata = poor
 		}
 		add_radicals = {
-			value = medium_radicals
+			value = very_large_radicals
 			strata = rich
 		}
 		activate_law = law_type:law_protected_speech
@@ -1078,15 +1146,15 @@ ely_incan_revolution.12 = {
 			base = 50
 		}
 		add_loyalists = {
-			value = medium_radicals
+			value = very_large_radicals
 			strata = middle
 		}
 		add_loyalists = {
-			value = medium_radicals
+			value = very_large_radicals
 			strata = poor
 		}
 		add_loyalists = {
-			value = medium_radicals
+			value = very_large_radicals
 			strata = rich
 		}
 		default_option = yes
@@ -1133,15 +1201,15 @@ ely_incan_revolution.12 = {
 			base = 50
 		}
 		add_radicals = {
-			value = medium_radicals
+			value = very_large_radicals
 			strata = middle
 		}
 		add_radicals = {
-			value = medium_radicals
+			value = very_large_radicals
 			strata = poor
 		}
 		add_radicals = {
-			value = medium_radicals
+			value = very_large_radicals
 			strata = rich
 		}
 		add_journal_entry = { type = je_muiscan_transfer }
@@ -1224,9 +1292,9 @@ ely_incan_post_war.2 = {
 	type = country_event
 	placement = ROOT
 
-	title = ely_incan_post_war.3.t
-	desc = ely_incan_post_war.3.d
-	flavor = ely_incan_post_war.3.f
+	title = ely_incan_post_war.1.t
+	desc = ely_incan_post_war.1.d
+	flavor = ely_incan_post_war.1.f
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_military_parade.bk2"

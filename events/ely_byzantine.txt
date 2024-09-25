@@ -411,6 +411,28 @@ byzantine_glory.1 = {
 		s:STATE_BANAT = {
 			add_claim = c:BYZ
 		}
+		random_country = {
+			limit = {
+				any_scope_state = {
+					OR = {
+						state_region = s:STATE_TURKMENIA
+						state_region = s:STATE_BALKH
+						state_region = s:STATE_MERZ
+					}
+				}
+			}
+			save_scope_as = tur_expulsion_destination_country
+			random_scope_state = {
+				limit = {
+					OR = {
+						state_region = s:STATE_TURKMENIA
+						state_region = s:STATE_BALKH
+						state_region = s:STATE_MERZ
+					}
+				}
+				save_scope_as = tur_expulsion_destination_state
+			}
+		}
 	}
 
     option = {
@@ -429,13 +451,19 @@ byzantine_glory.1 = {
 		}
 		custom_tooltip = {
 			text = byz_cultural_deportation_tt
-			every_scope_state = {
-				every_scope_pop = {
-					limit = {
-						culture = cu:turkish
-					}
-					move_pop = s:STATE_TURKMENIA.region_state:TRM
+			every_scope_pop = {
+				limit = {
+					culture = cu:turkish
+					strata = middle
 				}
+				move_pop = scope:tur_expulsion_destination_state
+			}
+			every_scope_pop = {
+				limit = {
+					culture = cu:turkish
+					strata = rich
+				}
+				move_pop = scope:tur_expulsion_destination_state
 			}
 		}
 	}

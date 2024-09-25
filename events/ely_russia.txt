@@ -121,14 +121,6 @@ russian_revolution.1 = {
 		}
 		c:RUS = {
 			change_infamy = -300
-		}
-		c:NOV = {
-			every_scope_state = {
-				limit = {
-					is_incorporated = yes
-				}
-				set_variable = NOV_incorporated_state
-			}
 		}		
 	}
 
@@ -186,15 +178,7 @@ russian_revolution.2 = {
 	trigger = {
 	}
 
-	immediate = {
-		c:RUS = {
-			every_scope_state = {
-				limit = {
-					is_incorporated = yes
-				}
-				set_variable = RUS_incorporated_state
-			}
-		}				
+	immediate = {			
 	}
 
     option = {
@@ -276,13 +260,6 @@ russian_revolution.3 = {
 	}
 
 	immediate = {		
-		every_scope_state = {
-			limit = {
-				owner = ROOT
-				has_variable = RUS_incorporated_state
-			}
-			set_state_type = incorporated
-		}
 	}
 
     option = {
@@ -316,14 +293,7 @@ russian_revolution.4 = {
 	trigger = {
 	}
 
-	immediate = {
-		every_scope_state = {
-			limit = {
-				owner = ROOT
-				has_variable = NOV_incorporated_state
-			}
-			set_state_type = incorporated
-		}		
+	immediate = {		
 	}
 
     option = {

@@ -1,0 +1,2924 @@
+﻿namespace = ely_france_south
+namespace = french_north_africa
+namespace = france_civil_war
+namespace = france_post_civil_war
+namespace = frankish_culture
+namespace = frankish_empire
+
+ely_france_south.1 = {
+	type = country_event
+	placement = ROOT
+	title = ely_france_south.1.t
+	desc = ely_france_south.1.d
+	flavor = ely_france_south.1.f
+
+	duration = 3
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_springtime_of_nations.bk2"
+	}
+
+	trigger = {
+	}
+
+	immediate = {
+		set_variable = { 
+			name = control_south_france
+			value = 0
+		}
+	}
+
+	option = {
+		name = ely_france_south.1.a
+		default_option = yes
+		add_journal_entry = { type = je_FRA_control_south }
+		add_journal_entry = { type = je_develop_south_FRA }
+			trigger_event = { id = ely_france_south.3 days = 1825 }
+			trigger_event = { id = ely_france_south.4 days = 3650 }
+			trigger_event = { id = ely_france_south.5 days = 5475 }
+		every_scope_state = {
+			limit = {				
+				OR = {
+					state_region = {
+						is_homeland = cu:occitan
+					}			
+					state_region = {
+						is_homeland = cu:francoprovencal
+					}
+				}
+					owner = ROOT
+			}
+			add_modifier = {
+				name = autonomy_south_medium
+				months = -1
+			}
+		}
+	}	
+
+}
+
+ely_france_south.2 = {
+	type = country_event
+	placement = ROOT
+	title = ely_france_south.2.t
+	desc = ely_france_south.2.d
+	flavor = ely_france_south.2.f
+
+	duration = 3
+
+	event_image = {
+		video = "votp_french_algeria"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = { exists = c:ATV }
+				exists = s:STATE_ALGIERS.region_state:FRA
+			}
+			create_country = {
+				tag = ATV
+				origin = c:FRA
+				state = s:STATE_ALGIERS.region_state:FRA
+			}
+		}
+		c:FRA = {
+			create_diplomatic_pact = {
+				country = c:ATV
+				type = dominion
+			}		
+			change_infamy = -50
+		}
+	}
+
+	option = {
+		name = ely_france_south.2.a
+		ai_chance = {
+			base = 10
+		}
+		c:ATV = {
+			add_journal_entry = { type = je_the_algerian_departements }
+			add_journal_entry = { type = je_french_foreign_legion }
+			add_journal_entry = { type = je_conquest_of_tunisia }
+			add_journal_entry = { type = je_conquest_of_morocco }
+			add_journal_entry = { type = je_incursion_in_tunisia }
+			add_journal_entry = { type = je_incursion_in_morocco }
+			activate_law = law_type:law_colonial_resettlement
+			activate_law = law_type:law_local_police
+			activate_law = law_type:law_state_religion
+			activate_law = law_type:law_presidential_republic
+			activate_law = law_type:law_racial_segregation
+			activate_law = law_type:law_land_based_taxation
+			activate_law = law_type:law_appointed_bureaucrats
+			activate_law = law_type:law_religious_schools
+			activate_law = law_type:law_mercantilism
+			activate_law = law_type:law_laissez_faire
+		}
+		if = {
+			limit = { exists = s:STATE_ORAN.region_state:FRA }
+			s:STATE_ORAN.region_state:FRA = { set_state_owner = c:ATV }
+		}
+		if = {
+			limit = { exists = s:STATE_CONSTANTINE.region_state:FRA }
+			s:STATE_CONSTANTINE.region_state:FRA = { set_state_owner = c:ATV }
+		}
+		if = {
+			limit = { exists = s:STATE_EAST_SAHARA.region_state:FRA }
+			s:STATE_EAST_SAHARA.region_state:FRA = { set_state_owner = c:ATV }
+		}
+		s:STATE_EAST_SAHARA = {
+			add_claim = c:ATV
+		}
+		s:STATE_SAHARA = {
+			add_claim = c:ATV
+		}
+		s:STATE_TUNISIA = {
+			add_claim = c:ATV
+		}
+		s:STATE_LIBYA = {
+			add_claim = c:ATV
+		}
+		s:STATE_INNER_MOROCCO = {
+			add_claim = c:ATV
+		}
+		s:STATE_AL_RIF = {
+			add_claim = c:ATV
+		}
+		s:STATE_FEZ = {
+			add_claim = c:ATV
+		}
+		s:STATE_MARRAKECH = {
+			add_claim = c:ATV
+		}
+		s:STATE_TRIPOLI = {
+			add_claim = c:ATV
+		}
+		s:STATE_WEST_SAHARA = {
+			add_claim = c:ATV
+		}
+		s:STATE_SAHARA = {
+			add_claim = c:ATV
+		}
+		s:STATE_EAST_SAHARA = {
+			add_claim = c:ATV
+		}
+		s:STATE_LIBYAN_DESERT = {
+			add_claim = c:ATV
+		}
+		s:STATE_MATRUH = {
+			add_claim = c:ATV
+		}
+		custom_tooltip = {
+			text = occ_happy_colony_tt
+			change_variable = {
+				name = control_south_france
+				add = 1
+			}
+			set_variable = {
+				name = south_colonization_happy
+			}
+		}
+	}	
+
+	option = {
+		name = ely_france_south.2.b
+		default_option = yes
+		ai_chance = {
+			base = 90
+		}
+		c:FRA = { 
+			annex = c:ATV
+			activate_law = law_type:law_colonial_resettlement
+		}
+		add_journal_entry = { type = je_the_algerian_departements }
+		add_journal_entry = { type = je_french_foreign_legion }
+		add_journal_entry = { type = je_conquest_of_tunisia }
+		add_journal_entry = { type = je_conquest_of_morocco }
+		add_journal_entry = { type = je_incursion_in_tunisia }
+		add_journal_entry = { type = je_incursion_in_morocco }
+		custom_tooltip = {
+			text = occ_angry_colony_tt
+			change_variable = {
+				name = control_south_france
+				add = -1
+			}
+		}
+		s:STATE_EAST_SAHARA = {
+			add_claim = c:FRA
+		}
+		s:STATE_SAHARA = {
+			add_claim = c:FRA
+		}
+		s:STATE_TUNISIA = {
+			add_claim = c:FRA
+		}
+		s:STATE_LIBYA = {
+			add_claim = c:FRA
+		}
+		s:STATE_INNER_MOROCCO = {
+			add_claim = c:FRA
+		}
+		s:STATE_FEZ = {
+			add_claim = c:FRA
+		}
+		s:STATE_AL_RIF = {
+			add_claim = c:FRA
+		}
+		s:STATE_MARRAKECH = {
+			add_claim = c:FRA
+		}
+		s:STATE_TRIPOLI = {
+			add_claim = c:FRA
+		}
+		s:STATE_WEST_SAHARA = {
+			add_claim = c:FRA
+		}
+		s:STATE_SAHARA = {
+			add_claim = c:FRA
+		}
+		s:STATE_EAST_SAHARA = {
+			add_claim = c:FRA
+		}
+		s:STATE_LIBYAN_DESERT = {
+			add_claim = c:FRA
+		}
+		s:STATE_MATRUH = {
+			add_claim = c:FRA
+		}
+	}	
+
+}
+
+ely_france_south.3 = {
+	type = country_event
+	placement = ROOT
+	title = ely_france_south.3.t
+	desc = ely_france_south.3.d
+	flavor = ely_france_south.3.f
+
+	duration = 3
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_trains.bk2"
+	}
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = ely_france_south.3.a
+		ai_chance = {
+			base = 10
+		}
+		custom_tooltip = {
+			text = occ_happy_railway_tt
+			change_variable = {
+				name = control_south_france
+				add = 1
+			}
+			set_variable = {
+				name = south_railway_happy
+			}
+		}
+		add_radicals = {
+			culture = cu:french
+			strata = rich
+			value = medium_radicals
+		}
+		add_radicals = {
+			culture = cu:wallonian
+			strata = rich
+			value = medium_radicals
+		}
+		add_loyalists = {
+			culture = cu:occitan
+			strata = rich
+			value = medium_radicals
+		}
+		add_loyalists = {
+			culture = cu:francoprovencal
+			strata = rich
+			value = medium_radicals
+		}
+		every_scope_state = {
+			limit = {				
+				OR = {
+					state_region = {
+						is_homeland = cu:occitan
+					}			
+					state_region = {
+						is_homeland = cu:francoprovencal
+					}
+				}
+					owner = ROOT
+			}
+			add_modifier = {
+				name = fra_national_construction
+				months = long_modifier_time
+			}
+		}
+	}	
+
+	option = {
+		name = ely_france_south.3.b
+		default_option = yes
+		ai_chance = {
+			base = 90
+		}
+		c:FRA = {
+			activate_law = law_type:law_laissez_faire
+		}
+		ig:ig_landowners = {
+			leader = { set_ideology = ideology:ideology_orleanist }
+		}
+		ig:ig_petty_bourgeoisie = {
+			leader = { set_ideology = ideology:ideology_orleanist }
+		}
+		custom_tooltip = {
+			text = occ_angry_railway_tt
+			change_variable = {
+				name = control_south_france
+				add = -1
+			}
+		}
+		add_radicals = {
+			culture = cu:occitan
+			strata = rich
+			value = medium_radicals
+		}
+		add_radicals = {
+			culture = cu:francoprovencal
+			strata = rich
+			value = medium_radicals
+		}
+		add_loyalists = {
+			culture = cu:french
+			strata = rich
+			value = medium_radicals
+		}
+		add_loyalists = {
+			culture = cu:wallonian
+			strata = rich
+			value = medium_radicals
+		}
+	}	
+
+}
+
+ely_france_south.4 = {
+	type = country_event
+	placement = ROOT
+	title = ely_france_south.4.t
+	desc = ely_france_south.4.d
+	flavor = ely_france_south.4.f
+
+	duration = 3
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = ely_france_south.4.a
+		ai_chance = {
+			base = 10
+		}
+		add_primary_culture = cu:occitan
+		add_primary_culture = cu:francoprovencal
+		c:FRA = {
+			activate_law = law_type:law_cultural_exclusion
+			add_journal_entry = { type = je_cultural_shift_fra }
+		}
+		ig:ig_devout = {
+			leader = { set_ideology = ideology:ideology_humanitarian_royalist }
+		}
+		custom_tooltip = {
+			text = occ_happy_culture_tt
+			change_variable = {
+				name = control_south_france
+				add = 1
+			}
+			set_variable = {
+				name = south_culture_happy
+			}
+			set_variable = {
+				name = dutch_culture_angry
+			}
+		}
+		add_radicals = {
+			culture = cu:french
+			value = very_large_radicals
+		}
+		add_radicals = {
+			culture = cu:wallonian
+			value = very_large_radicals
+		}
+		add_radicals = {
+			culture = cu:dutch
+			value = very_large_radicals
+		}
+		add_radicals = {
+			culture = cu:alemannic
+			value = very_large_radicals
+		}
+		add_loyalists = {
+			culture = cu:occitan
+			value = very_large_radicals
+		}
+		add_loyalists = {
+			culture = cu:francoprovencal
+			value = very_large_radicals
+		}
+		custom_tooltip = {
+			text = franco_german_tensions_tt
+			c:GER = {			
+				change_relations = {
+					country = c:FRA
+					value = -50
+				}
+				set_secret_goal = {
+					country = c:FRA
+					secret_goal = none
+				}					
+			}
+			c:FRA = {			
+				change_relations = {
+					country = c:GER
+					value = -50
+				}
+				set_secret_goal = {
+					country = c:GER
+					secret_goal = none
+				}						
+			}
+		}
+	}
+
+	option = {
+		name = ely_france_south.4.b
+		default_option = yes
+		ai_chance = {
+			base = 90
+		}
+		custom_tooltip = {
+			text = occ_angry_culture_tt
+			change_variable = {
+				name = control_south_france
+				add = -1
+			}
+		}
+		c:FRA = {
+			add_journal_entry = { type = je_cultural_shift_frankish }
+		}
+		add_radicals = {
+			culture = cu:occitan
+			value = very_large_radicals
+		}
+		add_radicals = {
+			culture = cu:francoprovencal
+			value = very_large_radicals
+		}
+		add_loyalists = {
+			culture = cu:french
+			value = very_large_radicals
+		}
+		add_loyalists = {
+			culture = cu:wallonian
+			value = very_large_radicals
+		}
+		add_loyalists = {
+			culture = cu:dutch
+			value = very_large_radicals
+		}
+		add_loyalists = {
+			culture = cu:alemannic
+			value = very_large_radicals
+		}
+		add_primary_culture = cu:alemannic
+		add_primary_culture = cu:dutch
+		add_primary_culture = cu:wallonian
+		add_primary_culture = cu:flemish
+		add_journal_entry = { type = je_reunite_dutch_diaspora }
+		hidden_effect = {
+			every_scope_state = {
+				limit = {				
+					state_region = {
+						is_homeland = cu:dutch
+					}
+						owner = ROOT
+				}
+				every_scope_pop = {
+					limit = { culture = cu:dutch }
+					change_pop_culture = { target = cu:flemish value = 0.25 }
+				}
+			}
+		}
+	}
+
+}
+
+ely_france_south.5 = {
+	type = country_event
+	placement = ROOT
+	title = ely_france_south.5.t
+	desc = ely_france_south.5.d
+	flavor = ely_france_south.5.f
+
+	duration = 3
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = ely_france_south.5.a
+		default_option = yes
+		custom_tooltip = {
+			text = occ_angry_protest_tt
+			set_variable = {
+				name = south_protest_happened
+			}
+		}
+		add_modifier = {
+			name = modifier_brewing_insurrection
+			months = normal_modifier_time
+		}
+	}	
+
+}
+
+ely_france_south.6 = {
+	type = country_event
+	placement = ROOT
+	title = ely_france_south.6.t
+	desc = ely_france_south.6.d
+	flavor = ely_france_south.6.f
+
+	duration = 3
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+		set_global_variable = break_franco_germany
+		every_scope_state = {
+			limit = {				
+				OR = {
+					state_region = {
+						is_homeland = cu:occitan
+					}			
+					state_region = {
+						is_homeland = cu:francoprovencal
+					}
+				}
+					owner = ROOT
+			}
+			remove_modifier = autonomy_south_medium 
+		}
+		c:GER = {			
+			change_relations = {
+				country = c:FRA
+				value = -100
+			}
+			set_secret_goal = {
+				country = c:FRA
+				secret_goal = antagonize
+			}		
+			remove_diplomatic_pact = {
+				country = c:FRA
+				type = alliance
+			}						
+		}
+		c:FRA = {			
+			change_relations = {
+				country = c:GER
+				value = -100
+			}
+			set_secret_goal = {
+				country = c:GER
+				secret_goal = antagonize
+			}	
+			remove_diplomatic_pact = {
+				country = c:FRA
+				type = alliance
+			}								
+		}
+	}
+
+	option = {
+		name = ely_france_south.6.a
+		default_option = yes
+		if = {
+			limit = {
+				has_variable = dutch_culture_angry
+			}
+			trigger_event = { id = france_civil_war.1 days = 5 }
+		}
+		remove_modifier = modifier_brewing_insurrection 
+		add_modifier = {
+			name = national_anthem_modifier
+			months = normal_modifier_time
+		}
+		add_loyalists = {
+			culture = cu:francoprovencal
+			value = very_large_radicals
+		}
+		add_loyalists = {
+			culture = cu:occitan
+			value = very_large_radicals
+		}
+	}
+
+}
+
+ely_france_south.7 = {
+	type = country_event
+	placement = ROOT
+	title = ely_france_south.6.t
+	desc = ely_france_south.6.d
+	flavor = ely_france_south.6.f
+
+	duration = 3
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+		every_scope_state = {
+			limit = {				
+				OR = {
+					state_region = {
+						is_homeland = cu:occitan
+					}			
+					state_region = {
+						is_homeland = cu:francoprovencal
+					}
+				}
+					owner = ROOT
+			}
+			remove_modifier = autonomy_south_medium 
+		}
+	}
+
+	option = {
+		name = ely_france_south.6.a
+		default_option = yes
+		if = {
+			limit = {
+				has_variable = dutch_culture_angry
+			}
+			trigger_event = { id = france_civil_war.1 days = 5}
+		}
+		remove_modifier = modifier_brewing_insurrection 
+		trigger_event = { id = france_civil_war.2 days = 5 }
+	}
+
+}
+
+france_civil_war.1 = {
+	type = country_event
+	placement = ROOT
+	title = france_civil_war.1.t
+	desc = france_civil_war.1.d
+	flavor = france_civil_war.1.f
+
+	duration = 3
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = { exists = c:NET }
+				exists = s:STATE_HOLLAND.region_state:FRA
+			}
+			create_country = {
+				tag = NET
+				origin = c:FRA
+				state = s:STATE_HOLLAND.region_state:FRA
+			}
+		}
+		s:STATE_HOLLAND = {
+			add_claim = c:FRA
+		}
+		s:STATE_FLANDERS = {
+			add_claim = c:FRA
+		}
+		s:STATE_GELRE = {
+			add_claim = c:FRA
+		}
+		if = {
+			limit = { exists = s:STATE_FRIESLAND.region_state:GER }
+			s:STATE_FRIESLAND.region_state:GER = { set_state_owner = c:NET }
+		}
+		if = {
+			limit = { exists = s:STATE_FLANDERS.region_state:FRA }
+			s:STATE_FLANDERS.region_state:FRA = { set_state_owner = c:NET }
+		}
+		if = {
+			limit = { exists = s:STATE_GELRE.region_state:FRA }
+			s:STATE_GELRE.region_state:FRA = { set_state_owner = c:NET }
+		}
+	}
+
+	option = {
+		name = france_civil_war.1.a
+		default_option = yes
+		create_diplomatic_play = {
+			target_country = c:NET
+			war = no
+			escalation = 81
+			type = dp_return_state
+			target_state = s:STATE_HOLLAND.region_state:NET
+			add_war_goal = {
+				holder = c:FRA
+				type = return_state
+				target_state = s:STATE_FLANDERS.region_state:NET
+				target_country = c:NET
+			}
+			add_war_goal = {
+				holder = c:FRA
+				type = return_state
+				target_state = s:STATE_GELRE.region_state:NET
+				target_country = c:NET
+			}
+			add_war_goal = {
+				holder = c:GER
+				type = conquer_state
+				target_state = s:STATE_FRIESLAND.region_state:NET
+				target_country = c:NET
+			}
+			add_initiator_backers = {
+				country = c:GER
+			}
+			add_target_backers = {
+				country = c:GBR
+			}
+		}
+	}
+
+}
+
+france_civil_war.2 = {
+	type = country_event
+	placement = ROOT
+	title = france_civil_war.2.t
+	desc = france_civil_war.2.d
+	flavor = france_civil_war.2.f
+
+	duration = 3
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = { exists = c:OCC }
+				exists = s:STATE_PROVENCE.region_state:FRA
+			}
+			create_country = {
+				tag = OCC
+				origin = c:FRA
+				state = s:STATE_PROVENCE.region_state:FRA
+			}
+		}
+		if = {
+			limit = {
+				NOT = { exists = c:BRI }
+				exists = s:STATE_BRITTANY.region_state:FRA
+			}
+			create_country = {
+				tag = BRI
+				origin = c:FRA
+				state = s:STATE_BRITTANY.region_state:FRA
+			}
+		}
+		if = {
+			limit = {
+				NOT = { exists = c:SAV }
+				exists = s:STATE_SAVOY.region_state:FRA
+			}
+			create_country = {
+				tag = SAV
+				origin = c:FRA
+				state = s:STATE_SAVOY.region_state:FRA
+			}
+		}
+		if = {
+			limit = { exists = s:STATE_LANGUEDOC.region_state:FRA }
+			s:STATE_LANGUEDOC.region_state:FRA = { set_state_owner = c:OCC }
+		}
+		if = {
+			limit = { exists = s:STATE_RHONE.region_state:FRA }
+			s:STATE_RHONE.region_state:FRA = { set_state_owner = c:OCC }
+		}
+		if = {
+			limit = { exists = s:STATE_GUYENNE.region_state:FRA }
+			s:STATE_GUYENNE.region_state:FRA = { set_state_owner = c:OCC }
+		}
+		if = {
+			limit = { exists = s:STATE_AUVERGNE_LIMOUSIN.region_state:FRA }
+			s:STATE_AUVERGNE_LIMOUSIN.region_state:FRA = { set_state_owner = c:OCC }
+		}
+		if = {
+			limit = { exists = s:STATE_AQUITAINE.region_state:FRA }
+			s:STATE_AQUITAINE.region_state:FRA = { set_state_owner = c:OCC }
+		}
+		if = {
+			limit = { exists = s:STATE_EAST_SWITZERLAND.region_state:FRA }
+			s:STATE_EAST_SWITZERLAND.region_state:FRA = { set_state_owner = c:SAV }
+		}
+		if = {
+			limit = { exists = s:STATE_WEST_SWITZERLAND.region_state:FRA }
+			s:STATE_WEST_SWITZERLAND.region_state:FRA = { set_state_owner = c:SAV }
+		}
+		if = {
+			limit = { exists = s:STATE_CORSICA.region_state:FRA }
+			s:STATE_CORSICA.region_state:FRA = { set_state_owner = c:OCC }
+		}
+		s:STATE_SAVOY = {
+			add_claim = c:FRA
+		}
+		s:STATE_EAST_SWITZERLAND = {
+			add_claim = c:FRA
+		}
+		s:STATE_WEST_SWITZERLAND = {
+			add_claim = c:FRA
+		}
+		s:STATE_LANGUEDOC = {
+			add_claim = c:FRA
+		}
+		s:STATE_BRITTANY = {
+			add_claim = c:FRA
+		}
+		s:STATE_RHONE = {
+			add_claim = c:FRA
+		}
+		s:STATE_GUYENNE = {
+			add_claim = c:FRA
+		}
+		s:STATE_AUVERGNE_LIMOUSIN = {
+			add_claim = c:FRA
+		}
+		s:STATE_PROVENCE = {
+			add_claim = c:FRA
+		}
+		s:STATE_AQUITAINE = {
+			add_claim = c:FRA
+		}
+		c:OCC = {
+			activate_law = law_type:law_presidential_republic
+			activate_law = law_type:law_wealth_voting
+			activate_law = law_type:law_freedom_of_conscience
+			activate_law = law_type:law_women_own_property
+			activate_law = law_type:law_per_capita_based_taxation
+			activate_law = law_type:law_appointed_bureaucrats
+			activate_law = law_type:law_right_of_assembly
+			activate_law = law_type:law_national_supremacy
+			activate_law = law_type:law_protectionism # Corn Laws, babyyy
+			activate_law = law_type:law_interventionism
+			activate_law = law_type:law_religious_schools
+			activate_law = law_type:law_per_capita_based_taxation
+			activate_law = law_type:law_poor_laws
+			activate_law = law_type:law_charitable_health_system
+			activate_law = law_type:law_dedicated_police
+			activate_law = law_type:law_professional_army
+			activate_law = law_type:law_tenant_farmers
+		}
+		c:BRI = {
+			activate_law = law_type:law_presidential_republic
+			activate_law = law_type:law_wealth_voting
+			activate_law = law_type:law_freedom_of_conscience
+			activate_law = law_type:law_women_own_property
+			activate_law = law_type:law_per_capita_based_taxation
+			activate_law = law_type:law_appointed_bureaucrats
+			activate_law = law_type:law_right_of_assembly
+			activate_law = law_type:law_national_supremacy
+			activate_law = law_type:law_protectionism # Corn Laws, babyyy
+			activate_law = law_type:law_interventionism
+			activate_law = law_type:law_religious_schools
+			activate_law = law_type:law_per_capita_based_taxation
+			activate_law = law_type:law_poor_laws
+			activate_law = law_type:law_charitable_health_system
+			activate_law = law_type:law_dedicated_police
+			activate_law = law_type:law_professional_army
+			activate_law = law_type:law_tenant_farmers
+		}
+		c:SAV = {		
+			activate_law = law_type:law_parliamentary_republic
+			activate_law = law_type:law_freedom_of_conscience
+			activate_law = law_type:law_census_voting
+			activate_law = law_type:law_national_supremacy
+			activate_law = law_type:law_mercantilism
+			activate_law = law_type:law_interventionism
+			activate_law = law_type:law_migration_controls
+			activate_law = law_type:law_right_of_assembly		
+			activate_law = law_type:law_per_capita_based_taxation
+			activate_law = law_type:law_religious_schools
+			activate_law = law_type:law_national_militia
+			activate_law = law_type:law_homesteading
+		}
+		c:FRA = {
+			add_journal_entry = { type = je_crush_secession }
+		}
+	}
+
+	option = {
+		name = france_civil_war.2.a
+		default_option = yes
+		c:OCC = {
+			trigger_event = { id = france_civil_war.3 days = 5 }
+		}
+	}
+
+	option = {
+		name = france_civil_war.2.b
+		play_as = c:OCC
+		c:OCC = {
+			trigger_event = { id = france_civil_war.3 days = 5 }
+		
+		}
+	}
+
+}
+
+france_civil_war.3 = {
+	type = country_event
+	placement = ROOT
+	title = france_civil_war.3.t
+	desc = france_civil_war.3.d
+	flavor = france_civil_war.3.f
+
+	duration = 3
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = france_civil_war.2.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+		c:FRA = {			
+			trigger_event = { id = france_civil_war.4 days = 5 }
+		}
+		c:SAV = {
+			activate_law = law_type:law_monarchy
+		}
+		c:ITA = {
+			annex = c:PAP
+		}
+		c:OCC = {
+			create_diplomatic_pact = {
+				country = c:SAV
+				type = personal_union
+			}	
+			create_character = {
+				first_name = "Victor"
+				last_name = "de_Bourbon"
+				historical = yes
+				heir = yes
+				birth_date = 1848.3.30
+				culture = cu:occitan
+				dna = dna_infante_carlos_count_of_madrid
+				interest_group = ig_landowners
+				ideology = ideology_legitimist
+				traits = {
+					basic_political_operator
+					arrogant
+					meticulous
+					bigoted
+				}
+				on_created = {
+					set_variable = {
+						name = legitimist_leader
+					}				
+				}
+			}
+			create_character = {
+				first_name = "Raimon"
+				last_name = "de_Bourbon"
+				historical = yes
+				ruler = yes
+				birth_date = 1822.5.15
+				culture = cu:occitan
+				dna = dna_infante_juan_count_of_morizon
+				interest_group = ig_landowners
+				ideology = ideology_legitimist
+				traits = {
+					reserved
+					basic_offensive_planner
+					ambitious
+					pious
+					surveyor
+					stalwart_defender
+				}
+				on_created = {
+					add_modifier = {
+						name = last_troubadour_king
+					}
+					set_variable = {
+						name = legitimist_leader
+					}				
+				}
+			}
+			activate_law = law_type:law_monarchy
+			create_diplomatic_pact = {
+				country = c:SPA
+				type = defensive_pact
+			}	
+			create_diplomatic_pact = {
+				country = c:ITA
+				type = defensive_pact
+			}	
+			change_relations = {
+				country = c:SPA
+				value = 100
+			}	
+			change_relations = {
+				country = c:ITA
+				value = 100
+			}			
+			set_secret_goal = {
+				country = c:SPA
+				secret_goal = befriend
+			}		
+			set_secret_goal = {
+				country = c:SPA
+				secret_goal = befriend
+			}	
+		}
+		c:SPA.power_bloc = {
+			add_leverage = { target = c:OCC value = 1000 }
+		}
+	}
+
+	option = {
+		name = france_civil_war.2.b
+		ai_chance = {
+			base = 0
+		}
+		c:FRA = {			
+			trigger_event = { id = france_civil_war.5 days = 5 }
+		}
+	}
+
+}
+
+france_civil_war.4 = {
+	type = country_event
+	placement = ROOT
+	title = france_civil_war.4.t
+	desc = france_civil_war.4.d
+	flavor = france_civil_war.4.f
+
+	duration = 3
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+		if = {
+			limit = { exists = s:STATE_CORSICA.region_state:OCC }
+			s:STATE_CORSICA.region_state:OCC = { set_state_owner = c:ITA }
+		}
+		if = {
+			limit = { exists = c:ATV }
+			c:FRA = { annex = c:ATV	}
+		}
+	}
+
+	option = {
+		name = france_civil_war.4.a
+		default_option = yes
+		create_diplomatic_play = {
+			target_country = c:OCC
+			war = no
+			escalation = 81
+			type = dp_return_state
+			target_state = s:STATE_PROVENCE.region_state:OCC
+			add_war_goal = {
+				holder = c:FRA
+				type = return_state
+				target_state = s:STATE_LANGUEDOC.region_state:OCC
+				target_country = c:OCC
+			}
+			add_war_goal = {
+				holder = c:FRA
+				type = return_state
+				target_state = s:STATE_RHONE.region_state:OCC
+				target_country = c:OCC
+			}
+			add_war_goal = {
+				holder = c:FRA
+				type = return_state
+				target_state = s:STATE_GUYENNE.region_state:OCC
+				target_country = c:OCC
+			}
+			add_war_goal = {
+				holder = c:FRA
+				type = return_state
+				target_state = s:STATE_AUVERGNE_LIMOUSIN.region_state:OCC
+				target_country = c:OCC
+			}
+			add_war_goal = {
+				holder = c:FRA
+				type = return_state
+				target_state = s:STATE_AQUITAINE.region_state:OCC
+				target_country = c:OCC
+			}
+			add_war_goal = {
+				holder = c:FRA
+				type = return_state
+				target_state = s:STATE_EAST_SWITZERLAND.region_state:SAV
+				target_country = c:SAV
+			}
+			add_war_goal = {
+				holder = c:FRA
+				type = return_state
+				target_state = s:STATE_WEST_SWITZERLAND.region_state:SAV
+				target_country = c:SAV
+			}
+			add_war_goal = {
+				holder = c:FRA
+				type = return_state
+				target_state = s:STATE_SAVOY.region_state:SAV
+				target_country = c:SAV
+			}
+			add_war_goal = {
+				holder = c:FRA
+				type = conquer_state
+				target_state = s:STATE_NAVARRA.region_state:SPA
+				target_country = c:SPA
+			}
+			add_war_goal = {
+				holder = c:FRA
+				type = conquer_state
+				target_state = s:STATE_CORSICA.region_state:ITA
+				target_country = c:ITA
+			}
+			add_war_goal = {
+				holder = c:GER
+				type = conquer_state
+				target_state = s:STATE_MALTA.region_state:ITA
+				target_country = c:ITA
+			}
+				add_war_goal = {
+					holder = c:ITA
+					type = conquer_state
+					target_state = s:STATE_TUNISIA.region_state:FRA
+					target_country = c:FRA
+				}
+				add_war_goal = {
+					holder = c:ITA
+					type = conquer_state
+					target_state = s:STATE_TRIPOLI.region_state:FRA
+					target_country = c:FRA
+				}
+				add_war_goal = {
+					holder = c:ITA
+					type = conquer_state
+					target_state = s:STATE_LIBYAN_DESERT.region_state:FRA
+					target_country = c:FRA
+				}
+				add_war_goal = {
+					holder = c:ITA
+					type = conquer_state
+					target_state = s:STATE_TUNISIA.region_state:FRA
+					target_country = c:FRA
+				}
+				add_war_goal = {
+					holder = c:ITA
+					type = conquer_state
+					target_state = s:STATE_LIBYA.region_state:FRA
+					target_country = c:FRA
+				}
+				add_war_goal = {
+					holder = c:SPA
+					type = conquer_state
+					target_state = s:STATE_WEST_SAHARA.region_state:FRA
+					target_country = c:FRA
+				}
+				add_war_goal = {
+					holder = c:SPA
+					type = conquer_state
+					target_state = s:STATE_MARRAKECH.region_state:FRA
+					target_country = c:FRA
+				}
+				add_war_goal = {
+					holder = c:SPA
+					type = conquer_state
+					target_state = s:STATE_FEZ.region_state:FRA
+					target_country = c:FRA
+				}
+				add_war_goal = {
+					holder = c:SPA
+					type = conquer_state
+					target_state = s:STATE_AL_RIF.region_state:FRA
+					target_country = c:FRA
+				}
+				add_war_goal = {
+					holder = c:SPA
+					type = conquer_state
+					target_state = s:STATE_INNER_MOROCCO.region_state:FRA
+					target_country = c:FRA
+				}
+				add_war_goal = {
+					holder = c:OCC
+					type = conquer_state
+					target_state = s:STATE_CONSTANTINE.region_state:FRA
+					target_country = c:FRA
+				}
+				add_war_goal = {
+					holder = c:OCC
+					type = conquer_state
+					target_state = s:STATE_ORAN.region_state:FRA
+					target_country = c:FRA
+				}
+				add_war_goal = {
+					holder = c:OCC
+					type = conquer_state
+					target_state = s:STATE_EAST_SAHARA.region_state:FRA
+					target_country = c:FRA
+				}
+				add_war_goal = {
+					holder = c:OCC
+					type = conquer_state
+					target_state = s:STATE_ALGIERS.region_state:FRA
+					target_country = c:FRA
+				}
+				add_war_goal = {
+					holder = c:OCC
+					type = conquer_state
+					target_state = s:STATE_SAHARA.region_state:FRA
+					target_country = c:FRA
+				}
+				add_war_goal = {
+					holder = c:GER
+					type = conquer_state
+					target_state = s:STATE_NORTH_ANGOLA.region_state:SPA
+					target_country = c:SPA
+				}
+				add_war_goal = {
+					holder = c:GER
+					type = conquer_state
+					target_state = s:STATE_SOUTH_ANGOLA.region_state:SPA
+					target_country = c:SPA
+				}
+			add_initiator_backers = {
+				country = c:GER
+			}
+			add_target_backers = {
+				country = c:SPA
+			}
+			add_target_backers = {
+				country = c:ITA
+			}
+			add_target_backers = {
+				country = c:SAV
+			}
+		}
+		create_diplomatic_play = {
+			target_country = c:BRI
+			war = no
+			escalation = 81
+			type = dp_annex_war
+			target_state = s:STATE_BRITTANY.region_state:BRI
+			add_initiator_backers = {
+				country = c:GER
+			}
+			add_target_backers = {
+				country = c:GBR
+			}
+		}
+	}
+}
+
+france_civil_war.5 = {
+	type = country_event
+	placement = ROOT
+	title = france_civil_war.5.t
+	desc = france_civil_war.5.d
+	flavor = france_civil_war.5.f
+
+	duration = 3
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+		if = {
+			limit = { exists = c:ATV }
+			c:FRA = { annex = c:ATV	}
+		}
+	}
+
+	option = {
+		name = france_civil_war.4.a
+		default_option = yes
+		create_diplomatic_play = {
+			target_country = c:OCC
+			war = no
+			escalation = 81
+			type = dp_return_state
+			target_state = s:STATE_PROVENCE.region_state:OCC
+			add_war_goal = {
+				holder = c:FRA
+				type = return_state
+				target_state = s:STATE_LANGUEDOC.region_state:OCC
+				target_country = c:OCC
+			}
+			add_war_goal = {
+				holder = c:FRA
+				type = return_state
+				target_state = s:STATE_RHONE.region_state:OCC
+				target_country = c:OCC
+			}
+			add_war_goal = {
+				holder = c:FRA
+				type = return_state
+				target_state = s:STATE_GUYENNE.region_state:OCC
+				target_country = c:OCC
+			}
+			add_war_goal = {
+				holder = c:FRA
+				type = return_state
+				target_state = s:STATE_AUVERGNE_LIMOUSIN.region_state:OCC
+				target_country = c:OCC
+			}
+			add_war_goal = {
+				holder = c:FRA
+				type = return_state
+				target_state = s:STATE_AQUITAINE.region_state:OCC
+				target_country = c:OCC
+			}
+			add_war_goal = {
+				holder = c:FRA
+				type = return_state
+				target_state = s:STATE_EAST_SWITZERLAND.region_state:SAV
+				target_country = c:SAV
+			}
+			add_war_goal = {
+				holder = c:FRA
+				type = return_state
+				target_state = s:STATE_WEST_SWITZERLAND.region_state:SAV
+				target_country = c:SAV
+			}
+			add_war_goal = {
+				holder = c:FRA
+				type = return_state
+				target_state = s:STATE_SAVOY.region_state:SAV
+				target_country = c:SAV
+			}
+				add_war_goal = {
+					holder = c:OCC
+					type = conquer_state
+					target_state = s:STATE_TUNISIA.region_state:FRA
+					target_country = c:FRA
+				}
+				add_war_goal = {
+					holder = c:OCC
+					type = conquer_state
+					target_state = s:STATE_TRIPOLI.region_state:FRA
+					target_country = c:FRA
+				}
+				add_war_goal = {
+					holder = c:OCC
+					type = conquer_state
+					target_state = s:STATE_LIBYAN_DESERT.region_state:FRA
+					target_country = c:FRA
+				}
+				add_war_goal = {
+					holder = c:OCC
+					type = conquer_state
+					target_state = s:STATE_TUNISIA.region_state:FRA
+					target_country = c:FRA
+				}
+				add_war_goal = {
+					holder = c:OCC
+					type = conquer_state
+					target_state = s:STATE_LIBYA.region_state:FRA
+					target_country = c:FRA
+				}
+				add_war_goal = {
+					holder = c:OCC
+					type = conquer_state
+					target_state = s:STATE_WEST_SAHARA.region_state:FRA
+					target_country = c:FRA
+				}
+				add_war_goal = {
+					holder = c:OCC
+					type = conquer_state
+					target_state = s:STATE_MARRAKECH.region_state:FRA
+					target_country = c:FRA
+				}
+				add_war_goal = {
+					holder = c:OCC
+					type = conquer_state
+					target_state = s:STATE_FEZ.region_state:FRA
+					target_country = c:FRA
+				}
+				add_war_goal = {
+					holder = c:OCC
+					type = conquer_state
+					target_state = s:STATE_AL_RIF.region_state:FRA
+					target_country = c:FRA
+				}
+				add_war_goal = {
+					holder = c:OCC
+					type = conquer_state
+					target_state = s:STATE_INNER_MOROCCO.region_state:FRA
+					target_country = c:FRA
+				}
+				add_war_goal = {
+					holder = c:OCC
+					type = conquer_state
+					target_state = s:STATE_CONSTANTINE.region_state:FRA
+					target_country = c:FRA
+				}
+				add_war_goal = {
+					holder = c:OCC
+					type = conquer_state
+					target_state = s:STATE_ORAN.region_state:FRA
+					target_country = c:FRA
+				}
+				add_war_goal = {
+					holder = c:OCC
+					type = conquer_state
+					target_state = s:STATE_EAST_SAHARA.region_state:FRA
+					target_country = c:FRA
+				}
+				add_war_goal = {
+					holder = c:OCC
+					type = conquer_state
+					target_state = s:STATE_ALGIERS.region_state:FRA
+					target_country = c:FRA
+				}
+				add_war_goal = {
+					holder = c:OCC
+					type = conquer_state
+					target_state = s:STATE_SAHARA.region_state:FRA
+					target_country = c:FRA
+				}
+			add_initiator_backers = {
+				country = c:GER
+			}
+			add_target_backers = {
+				country = c:SAV
+			}
+		}
+		create_diplomatic_play = {
+			target_country = c:BRI
+			war = no
+			escalation = 81
+			type = dp_annex_war
+			target_state = s:STATE_BRITTANY.region_state:BRI
+			add_initiator_backers = {
+				country = c:GER
+			}
+			add_target_backers = {
+				country = c:GBR
+			}
+		}
+	}
+}
+
+french_north_africa.1 = {
+	type = country_event
+	placement = scope:algeria_tunis_state_scope
+	title = french_north_africa.1.t
+	desc = french_north_africa.1.d
+	flavor = french_north_africa.1.f
+
+	duration = 3
+
+	event_image = {
+		video = "votp_french_algeria"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	trigger = {
+		# Triggered by JE
+	}
+
+	immediate = {
+		s:STATE_TUNISIA = {
+			add_homeland = cu:pied_noir
+		}
+		s:STATE_TRIPOLI = {
+			add_homeland = cu:pied_noir
+		}
+		s:STATE_LIBYA = {
+			add_homeland = cu:pied_noir
+		}
+		s:STATE_LIBYAN_DESERT = {
+			add_homeland = cu:pied_noir
+		}
+		s:STATE_MATRUH = {
+			add_homeland = cu:pied_noir
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_TUNISIA
+			}
+			save_scope_as = algeria_tunis_state_scope
+		}
+	}
+
+	option = { # Focus on partying with the lads
+		name = algeria_events.1.a
+		ai_chance = {
+			base = 0
+		}
+		ig:ig_armed_forces = {
+			add_modifier = {
+				name = vanquished_barbary
+				months = normal_modifier_time
+			}
+		}
+		add_loyalists = {
+			pop_type = officers
+			value = large_radicals
+		}
+		add_loyalists = {
+			pop_type = soldiers
+			value = medium_radicals
+		}
+	}
+	option = { # Focus on migration
+		name = algeria_events.1.b
+		default_option = yes
+		ai_chance = {
+			base = 1
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_TUNISIA
+			}
+			add_modifier = {
+				name = algerian_migration
+				months = long_modifier_time
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_TRIPOLI
+			}
+			add_modifier = {
+				name = algerian_migration
+				months = long_modifier_time
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_LIBYA
+			}
+			add_modifier = {
+				name = algerian_migration
+				months = long_modifier_time
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_LIBYAN_DESERT
+			}
+			add_modifier = {
+				name = algerian_migration
+				months = long_modifier_time
+			}
+		}
+	}
+	option = {  # Focus on appeasement
+		name = algeria_events.1.c
+		ai_chance = {
+			base = 0
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_TUNISIA
+			}
+			add_loyalists_in_state = {
+				culture = cu:berber
+				value = small_radicals
+			}
+			add_loyalists_in_state = {
+				culture = cu:maghrebi
+				value = small_radicals
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_TRIPOLI
+			}
+			add_loyalists_in_state = {
+				culture = cu:berber
+				value = small_radicals
+			}
+			add_loyalists_in_state = {
+				culture = cu:maghrebi
+				value = small_radicals
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_LIBYA
+			}
+			add_loyalists_in_state = {
+				culture = cu:berber
+				value = small_radicals
+			}
+			add_loyalists_in_state = {
+				culture = cu:maghrebi
+				value = small_radicals
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_LIBYAN_DESERT
+			}
+			add_loyalists_in_state = {
+				culture = cu:berber
+				value = small_radicals
+			}
+			add_loyalists_in_state = {
+				culture = cu:maghrebi
+				value = small_radicals
+			}
+		}
+	}
+}
+
+french_north_africa.2 = {
+	type = country_event
+	placement = scope:algeria_maroc_state_scope
+	title = french_north_africa.2.t
+	desc = french_north_africa.2.d
+	flavor = french_north_africa.2.f
+
+	duration = 3
+
+	event_image = {
+		video = "votp_french_algeria"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	trigger = {
+		# Triggered by JE
+	}
+
+	immediate = {
+		s:STATE_INNER_MOROCCO = {
+			add_homeland = cu:pied_noir
+		}
+		s:STATE_FEZ = {
+			add_homeland = cu:pied_noir
+		}
+		s:STATE_AL_RIF = {
+			add_homeland = cu:pied_noir
+		}
+		s:STATE_MARRAKECH = {
+			add_homeland = cu:pied_noir
+		}
+		s:STATE_WEST_SAHARA = {
+			add_homeland = cu:pied_noir
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_INNER_MOROCCO
+			}
+			save_scope_as = algeria_maroc_state_scope
+		}
+	}
+
+	option = { # Focus on partying with the lads
+		name = algeria_events.1.a
+		ai_chance = {
+			base = 0
+		}
+		ig:ig_armed_forces = {
+			add_modifier = {
+				name = vanquished_barbary
+				months = normal_modifier_time
+			}
+		}
+		add_loyalists = {
+			pop_type = officers
+			value = large_radicals
+		}
+		add_loyalists = {
+			pop_type = soldiers
+			value = medium_radicals
+		}
+	}
+	option = { # Focus on migration
+		name = algeria_events.1.b
+		default_option = yes
+		ai_chance = {
+			base = 1
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_INNER_MOROCCO
+			}
+			add_modifier = {
+				name = algerian_migration
+				months = long_modifier_time
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_FEZ
+			}
+			add_modifier = {
+				name = algerian_migration
+				months = long_modifier_time
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_AL_RIF
+			}
+			add_modifier = {
+				name = algerian_migration
+				months = long_modifier_time
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_MARRAKECH
+			}
+			add_modifier = {
+				name = algerian_migration
+				months = long_modifier_time
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_WEST_SAHARA
+			}
+			add_modifier = {
+				name = algerian_migration
+				months = long_modifier_time
+			}
+		}
+	}
+	option = {  # Focus on appeasement
+		name = algeria_events.1.c
+		ai_chance = {
+			base = 0
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_INNER_MOROCCO
+			}
+			add_loyalists_in_state = {
+				culture = cu:berber
+				value = small_radicals
+			}
+			add_loyalists_in_state = {
+				culture = cu:maghrebi
+				value = small_radicals
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_FEZ
+			}
+			add_loyalists_in_state = {
+				culture = cu:berber
+				value = small_radicals
+			}
+			add_loyalists_in_state = {
+				culture = cu:maghrebi
+				value = small_radicals
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_AL_RIF
+			}
+			add_loyalists_in_state = {
+				culture = cu:berber
+				value = small_radicals
+			}
+			add_loyalists_in_state = {
+				culture = cu:maghrebi
+				value = small_radicals
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_MARRAKECH
+			}
+			add_loyalists_in_state = {
+				culture = cu:berber
+				value = small_radicals
+			}
+			add_loyalists_in_state = {
+				culture = cu:maghrebi
+				value = small_radicals
+			}
+		}
+	}
+}
+
+french_north_africa.3 = {
+	type = country_event
+	placement = ROOT
+	title = french_north_africa.3.t
+	desc = french_north_africa.3.d
+	flavor = french_north_africa.3.f
+
+	duration = 3
+
+	event_image = {
+		video = "votp_french_algeria"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = { 
+		name = french_north_africa.3.a
+		create_diplomatic_play = {		
+	
+			target_state = s:STATE_TUNISIA.region_state:TUN
+			war = yes			
+			type = dp_annex_war
+		}
+			change_infamy = -50
+	}
+}
+
+french_north_africa.4 = {
+	type = country_event
+	placement = ROOT
+	title = french_north_africa.4.t
+	desc = french_north_africa.4.d
+	flavor = french_north_africa.4.f
+
+	duration = 3
+
+	event_image = {
+		video = "votp_french_algeria"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = { 
+		name = french_north_africa.4.a
+		create_diplomatic_play = {		
+	
+			target_state = s:STATE_INNER_MOROCCO.region_state:MOR
+			war = yes			
+			type = dp_annex_war
+		}
+			change_infamy = -50
+	}
+}
+
+frankish_culture.1 = {
+	type = country_event
+	placement = ROOT
+	
+	title = frankish_culture.1.t
+	desc = frankish_culture.1.d
+	flavor = frankish_culture.1.f
+	
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+	
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = frankish_culture.1.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+		add_primary_culture = cu:frankish
+		remove_primary_culture = cu:dutch
+		remove_primary_culture = cu:alemannic
+		trigger_event = { id = frankish_empire.1 days = 365 }
+		hidden_effect = {
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:french }
+					change_pop_culture = { target = cu:frankish value = 1 }
+				}
+				every_scope_pop = {
+					limit = { culture = cu:wallonian }
+					change_pop_culture = { target = cu:frankish value = 1 }
+				}
+				every_scope_pop = {
+					limit = { culture = cu:flemish }
+					change_pop_culture = { target = cu:frankish value = 1 }
+				}
+				every_scope_pop = {
+					limit = { culture = cu:dutch }
+					change_pop_culture = { target = cu:frankish value = 1 }
+				}
+				every_scope_pop = {
+					limit = { culture = cu:alemannic }
+					change_pop_culture = { target = cu:frankish value = 0.5 }
+				}
+			}
+		}
+		every_scope_state = {
+			limit = { state_region = { is_homeland = cu:french } }
+			add_homeland = cu:frankish
+		}
+		s:STATE_WURTTEMBERG = {
+			remove_homeland = cu:alemannic
+			add_homeland = cu:frankish
+		}
+		s:STATE_BADEN = {
+			remove_homeland = cu:alemannic
+			add_homeland = cu:frankish
+		}
+		s:STATE_ALSACE_LORRAINE = {
+			remove_homeland = cu:alemannic
+			add_homeland = cu:frankish
+		}
+		s:STATE_EAST_SWITZERLAND = {
+			remove_homeland = cu:alemannic
+			add_homeland = cu:frankish
+		}
+		s:STATE_WEST_SWITZERLAND = {
+			remove_homeland = cu:alemannic
+			add_homeland = cu:frankish
+		}
+		s:STATE_FRIESLAND = {
+			remove_homeland = cu:dutch
+			add_homeland = cu:frankish
+		}
+		s:STATE_GELRE = {
+			remove_homeland = cu:dutch
+			remove_homeland = cu:flemish
+			add_homeland = cu:frankish
+		}
+		s:STATE_HOLLAND = {
+			remove_homeland = cu:dutch
+			remove_homeland = cu:flemish
+			add_homeland = cu:frankish
+		}
+		s:STATE_FLANDERS = {
+			remove_homeland = cu:wallonian
+			remove_homeland = cu:flemish
+			add_homeland = cu:frankish
+		}
+		s:STATE_WALLONIA = {
+			remove_homeland = cu:wallonian
+			add_homeland = cu:frankish
+		}
+		s:STATE_RHINELAND = {
+			remove_homeland = cu:wallonian
+			add_homeland = cu:frankish
+		}
+		s:STATE_NORTH_RHINE = {
+			remove_homeland = cu:wallonian
+			add_homeland = cu:frankish
+		}
+	}
+}
+
+france_post_civil_war.1 = {
+	type = country_event
+	placement = ROOT
+	
+	title = france_post_civil_war.1.t
+	desc = france_post_civil_war.1.d
+	flavor = france_post_civil_war.1.f
+	
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+	
+	trigger = {
+	}
+
+	immediate = {
+		random_country = {
+			limit = {
+				any_scope_state = {
+					OR = {
+						state_region = s:STATE_LOMBARDY
+						state_region = s:STATE_PIEDMONT
+					}
+				}
+			}
+			save_scope_as = arpitan_expulsion_destination_country
+			random_scope_state = {
+				limit = {
+					OR = {
+						state_region = s:STATE_LOMBARDY
+						state_region = s:STATE_PIEDMONT
+					}
+				}
+				save_scope_as = arpitan_expulsion_destination_state
+			}
+		}
+		random_country = {
+			limit = {
+				any_scope_state = {
+					OR = {
+						state_region = s:STATE_VALENCIA
+						state_region = s:STATE_CATALONIA
+					}
+				}
+			}
+			save_scope_as = occ_expulsion_destination_country
+			random_scope_state = {
+				limit = {
+					OR = {
+						state_region = s:STATE_PIEDMONT
+						state_region = s:STATE_CATALONIA
+					}
+				}
+				save_scope_as = occ_expulsion_destination_state
+			}
+		}
+		random_country = {
+			limit = {
+				any_scope_state = {
+					OR = {
+						state_region = s:STATE_ULSTER
+						state_region = s:STATE_MUNSTER
+						state_region = s:STATE_LEINSTER
+						state_region = s:STATE_CONNAUGHT
+					}
+				}
+			}
+			save_scope_as = breton_expulsion_destination_country
+			random_scope_state = {
+				limit = {
+					OR = {
+						state_region = s:STATE_ULSTER
+						state_region = s:STATE_MUNSTER
+						state_region = s:STATE_LEINSTER
+						state_region = s:STATE_CONNAUGHT
+					}
+				}
+				save_scope_as = breton_expulsion_destination_state
+			}
+		}
+	}
+
+	option = {
+		name = france_post_civil_war.1.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+		s:STATE_BRITTANY = {
+			add_devastation = 30	
+			add_modifier = {
+				name = breton_standard_of_living_modifier_negative
+				months = very_long_modifier_time
+			}
+			add_homeland = cu:french
+		}
+		s:STATE_SAVOY = {
+			add_devastation = 30
+			add_modifier = {
+				name = francoprovencal_standard_of_living_modifier_negative
+				months = very_long_modifier_time
+			}
+			add_homeland = cu:french	
+		}
+		s:STATE_WEST_SWITZERLAND = {
+			add_devastation = 30
+			add_modifier = {
+				name = francoprovencal_standard_of_living_modifier_negative
+				months = very_long_modifier_time
+			}	
+			add_homeland = cu:french
+		}
+		s:STATE_EAST_SWITZERLAND = {
+			add_devastation = 30
+			add_modifier = {
+				name = francoprovencal_standard_of_living_modifier_negative
+				months = very_long_modifier_time
+			}
+			add_homeland = cu:french	
+		}
+		s:STATE_RHONE = {
+			add_devastation = 30	
+			add_modifier = {
+				name = francoprovencal_standard_of_living_modifier_negative
+				months = very_long_modifier_time
+			}
+			add_modifier = {
+				name = occitan_standard_of_living_modifier_negative
+				months = very_long_modifier_time
+			}
+			add_homeland = cu:french
+		}
+		s:STATE_AUVERGNE_LIMOUSIN = {
+			add_devastation = 30	
+			add_modifier = {
+				name = occitan_standard_of_living_modifier_negative
+				months = very_long_modifier_time
+			}
+			add_homeland = cu:french
+		}
+		s:STATE_AQUITAINE = {
+			add_devastation = 30
+			add_modifier = {
+				name = occitan_standard_of_living_modifier_negative
+				months = very_long_modifier_time
+			}
+			add_homeland = cu:french	
+		}
+		s:STATE_PROVENCE = {
+			add_devastation = 30	
+			add_modifier = {
+				name = occitan_standard_of_living_modifier_negative
+				months = very_long_modifier_time
+			}
+			add_homeland = cu:french
+		}
+		s:STATE_LANGUEDOC = {
+			add_devastation = 30	
+			add_modifier = {
+				name = occitan_standard_of_living_modifier_negative
+				months = very_long_modifier_time
+			}
+			add_homeland = cu:french
+		}
+		custom_tooltip = {
+			text = occ_pops_deported_tt
+			every_scope_pop = {
+				limit = {
+					culture = cu:occitan
+					strata = middle
+				}
+				move_pop = scope:occ_expulsion_destination_state
+			}
+			every_scope_pop = {
+				limit = {
+					culture = cu:occitan
+					strata = rich
+				}
+				move_pop = scope:occ_expulsion_destination_state
+			}
+			every_scope_pop = {
+				limit = {
+					culture = cu:francoprovencal
+					strata = middle
+				}
+				move_pop = scope:arpitan_expulsion_destination_state
+			}
+			every_scope_pop = {
+				limit = {
+					culture = cu:francoprovencal
+					strata = rich
+				}
+				move_pop = scope:arpitan_expulsion_destination_state
+			}
+			every_scope_pop = {
+				limit = {
+					culture = cu:breton
+					strata = middle
+				}
+				move_pop = scope:breton_expulsion_destination_state
+			}
+			every_scope_pop = {
+				limit = {
+					culture = cu:breton
+					strata = rich
+				}
+				move_pop = scope:breton_expulsion_destination_state
+			}
+			every_scope_state = {
+				kill_population_percent_in_state = {
+					percent = 0.02
+					culture = cu:occitan
+				}
+			}
+			every_scope_state = {
+				kill_population_percent_in_state = {
+					percent = 0.02
+					culture = cu:francoprovencal
+				}
+			}
+			every_scope_state = {
+				kill_population_percent_in_state = {
+					percent = 0.02
+					culture = cu:breton
+				}
+			}
+		}
+	}
+}
+
+france_post_civil_war.2 = {
+	type = country_event
+	placement = ROOT
+	
+	title = france_post_civil_war.2.t
+	desc = france_post_civil_war.2.d
+	flavor = france_post_civil_war.2.f
+	
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+	
+	trigger = {
+	}
+
+	immediate = {
+		c:FRA = {
+			change_relations = {
+				country = c:OCC
+				value = -100
+			}			
+			change_relations = {
+				country = c:SPA
+				value = -100
+			}				
+			change_relations = {
+				country = c:ITA
+				value = -100
+			}				
+			set_secret_goal = {
+				country = c:OCC
+				secret_goal = conquer
+			}			
+			set_secret_goal = {
+				country = c:SPA
+				secret_goal = antagonize
+			}	
+			set_secret_goal = {
+				country = c:ITA
+				secret_goal = antagonize
+			}						
+		}
+		c:SPA = {
+			change_relations = {
+				country = c:OCC
+				value = 100
+			}				
+			change_relations = {
+				country = c:FRA
+				value = -100
+			}
+			set_secret_goal = {
+				country = c:FRA
+				secret_goal = antagonize
+			}				
+			set_secret_goal = {
+				country = c:OCC
+				secret_goal = befriend
+			}						
+		}
+		c:ITA = {
+			change_relations = {
+				country = c:OCC
+				value = 100
+			}			
+			change_relations = {
+				country = c:FRA
+				value = -100
+			}
+			set_secret_goal = {
+				country = c:FRA
+				secret_goal = antagonize
+			}					
+			set_secret_goal = {
+				country = c:OCC
+				secret_goal = befriend
+			}						
+		}
+		c:OCC = {
+			change_relations = {
+				country = c:SPA
+				value = 100
+			}	
+			change_relations = {
+				country = c:ITA
+				value = 100
+			}					
+			change_relations = {
+				country = c:FRA
+				value = -100
+			}
+			set_secret_goal = {
+				country = c:FRA
+				secret_goal = antagonize
+			}	
+			set_secret_goal = {
+				country = c:SPA
+				secret_goal = befriend
+			}	
+			set_secret_goal = {
+				country = c:ITA
+				secret_goal = befriend
+			}							
+		}
+	}
+
+	option = {
+		name = france_post_civil_war.2.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+		c:OCC = {
+			annex = c:SAV
+			add_modifier = {
+				name = won_occitan_revolt
+				months = long_modifier_time
+			}
+		}
+		c:FRA = {
+			add_modifier = {
+				name = lost_occitan_revolt
+				months = long_modifier_time
+			}
+		}
+		add_radicals = {
+			culture = cu:francoprovencal
+			value = large_radicals
+		}
+		add_loyalists = {
+			culture = cu:occitan
+			value = medium_radicals
+		}
+	}
+
+	option = {
+		name = france_post_civil_war.2.b
+		add_loyalists = {
+			culture = cu:francoprovencal
+			value = medium_radicals
+		}
+		add_loyalists = {
+			culture = cu:occitan
+			value = medium_radicals
+		}
+		c:OCC = {
+			add_modifier = {
+				name = won_occitan_revolt
+				months = long_modifier_time
+			}
+		}
+		c:FRA = {
+			add_modifier = {
+				name = lost_occitan_revolt
+				months = long_modifier_time
+			}
+		}
+	}
+}
+
+frankish_empire.1 = {
+	type = country_event
+	placement = ROOT
+	title = frankish_empire.1.t
+	desc = frankish_empire.1.d
+	flavor = frankish_empire.1.f
+
+	duration = 3
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_springtime_of_nations.bk2"
+	}
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = frankish_empire.1.a
+		ai_chance = {
+			base = 50
+		}
+		custom_tooltip = {
+			text = reunite_frankish_empire_1_tt
+			set_variable = { 
+				name = frankish_empire_reunite
+			}
+		}
+		trigger_event = { id = frankish_empire.3 days = 5 }
+	}
+
+	option = {
+		name = frankish_empire.1.b
+		default_option = yes
+		ai_chance = {
+			base = 50
+		}
+	}	
+
+}
+
+frankish_empire.2 = {
+	type = country_event
+	placement = ROOT
+	title = frankish_empire.2.t
+	desc = frankish_empire.2.d
+	flavor = frankish_empire.2.f
+
+	duration = 3
+
+	event_image = {
+		video = "votp_french_algeria"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = { exists = c:SAF }
+				exists = s:STATE_CAPE_COLONY.region_state:FRA
+			}
+			create_country = {
+				tag = SAF
+				origin = c:FRA
+				state = s:STATE_CAPE_COLONY.region_state:FRA
+			}
+		}
+		if = {
+			limit = {
+				NOT = { exists = c:TAS }
+				exists = s:STATE_TASMANIA.region_state:FRA
+			}
+			create_country = {
+				tag = TAS
+				origin = c:FRA
+				state = s:STATE_TASMANIA.region_state:FRA
+			}
+		}
+		c:FRA = {
+			create_diplomatic_pact = {
+				country = c:SAF
+				type = dominion
+			}		
+			create_diplomatic_pact = {
+				country = c:TAS
+				type = dominion
+			}		
+		}
+	}
+
+	option = {
+		name = frankish_empire.2.a
+		default_option = yes
+		ai_chance = {
+			base = 50
+		}
+		c:SAF = {
+			activate_law = law_type:law_colonial_resettlement
+			activate_law = law_type:law_local_police
+			activate_law = law_type:law_freedom_of_conscience
+			activate_law = law_type:law_presidential_republic
+			activate_law = law_type:law_racial_segregation
+			activate_law = law_type:law_per_capita_based_taxation
+			activate_law = law_type:law_appointed_bureaucrats
+			activate_law = law_type:law_private_schools
+			activate_law = law_type:law_free_trade
+			activate_law = law_type:law_laissez_faire
+		}
+		c:TAS = {
+			activate_law = law_type:law_colonial_resettlement
+			activate_law = law_type:law_local_police
+			activate_law = law_type:law_freedom_of_conscience
+			activate_law = law_type:law_presidential_republic
+			activate_law = law_type:law_racial_segregation
+			activate_law = law_type:law_per_capita_based_taxation
+			activate_law = law_type:law_appointed_bureaucrats
+			activate_law = law_type:law_private_schools
+			activate_law = law_type:law_free_trade
+			activate_law = law_type:law_laissez_faire
+		}
+		if = {
+			limit = { exists = s:STATE_ZULULAND.region_state:FRA }
+			s:STATE_ZULULAND.region_state:FRA = { set_state_owner = c:SAF }
+		}
+		if = {
+			limit = { exists = s:STATE_VRYSTAAT.region_state:FRA }
+			s:STATE_VRYSTAAT.region_state:FRA = { set_state_owner = c:SAF }
+		}
+		if = {
+			limit = { exists = s:STATE_TRANSVAAL.region_state:FRA }
+			s:STATE_TRANSVAAL.region_state:FRA = { set_state_owner = c:SAF }
+		}
+		if = {
+			limit = { exists = s:STATE_NORTHERN_CAPE.region_state:FRA }
+			s:STATE_NORTHERN_CAPE.region_state:FRA = { set_state_owner = c:SAF }
+		}
+		if = {
+			limit = { exists = s:STATE_BOTSWANA.region_state:FRA }
+			s:STATE_BOTSWANA.region_state:FRA = { set_state_owner = c:SAF }
+		}
+		if = {
+			limit = { exists = s:STATE_NAMAQUALAND.region_state:FRA }
+			s:STATE_NAMAQUALAND.region_state:FRA = { set_state_owner = c:SAF }
+		}
+		if = {
+			limit = { exists = s:STATE_HEREROLAND.region_state:FRA }
+			s:STATE_HEREROLAND.region_state:FRA = { set_state_owner = c:SAF }
+		}
+		s:STATE_BOTSWANA = {
+			add_claim = c:SAF
+			add_homeland = cu:boer
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_NAMAQUALAND = {
+			add_claim = c:SAF
+			add_homeland = cu:boer
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_HEREROLAND = {
+			add_claim = c:SAF
+			add_homeland = cu:boer
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_EASTERN_CAPE = {
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_CAPE_COLONY = {
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_NORTHERN_CAPE = {
+			add_claim = c:SAF
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_ZULULAND = {
+			add_claim = c:SAF
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_VRYSTAAT = {
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_TRANSVAAL = {
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_TASMANIA = {
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_SOLOMON_ISLANDS = {
+			add_claim = c:TAS
+			add_homeland = cu:tasmanian
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_BOUGAINVILLE = {
+			add_claim = c:TAS
+			add_homeland = cu:tasmanian
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_NAURU = {
+			add_claim = c:TAS
+			add_homeland = cu:tasmanian
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_VANUATU = {
+			add_claim = c:TAS
+			add_homeland = cu:tasmanian
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_KANAK = {
+			add_claim = c:TAS
+			add_homeland = cu:tasmanian
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+	}	
+
+	option = {
+		name = frankish_empire.2.b
+		ai_chance = {
+			base = 50
+		}
+		c:FRA = { 
+			annex = c:SAF
+			annex = c:TAS
+		}
+		s:STATE_BOTSWANA = {
+			add_claim = c:FRA
+			add_homeland = cu:boer
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_NAMAQUALAND = {
+			add_claim = c:FRA
+			add_homeland = cu:boer
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_HEREROLAND = {
+			add_claim = c:FRA
+			add_homeland = cu:boer
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_EASTERN_CAPE = {
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_CAPE_COLONY = {
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_NORTHERN_CAPE = {
+			add_claim = c:FRA
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_ZULULAND = {
+			add_claim = c:FRA
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_VRYSTAAT = {
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_TRANSVAAL = {
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_TASMANIA = {
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_SOLOMON_ISLANDS = {
+			add_claim = c:FRA
+			add_homeland = cu:tasmanian
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_BOUGAINVILLE = {
+			add_claim = c:FRA
+			add_homeland = cu:tasmanian
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_NAURU = {
+			add_claim = c:FRA
+			add_homeland = cu:tasmanian
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_VANUATU = {
+			add_claim = c:FRA
+			add_homeland = cu:tasmanian
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_KANAK = {
+			add_claim = c:FRA
+			add_homeland = cu:tasmanian
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+	}	
+
+}
+
+frankish_empire.3 = {
+	type = country_event
+	placement = ROOT
+	title = frankish_empire.3.t
+	desc = frankish_empire.3.d
+	flavor = frankish_empire.3.f
+
+	duration = 3
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_springtime_of_nations.bk2"
+	}
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = frankish_empire.3.a
+		default_option = yes
+		ai_chance = {
+			base = 90
+		}
+		c:GER = {
+			add_modifier = {
+				name = friesland_selling
+				months = normal_modifier_time
+			}
+		}
+		c:FRA = {
+			add_modifier = {
+				name = friesland_purchase
+				months = normal_modifier_time
+			}
+		}
+	}
+
+	option = {
+		name = frankish_empire.3.b
+		ai_chance = {
+			base = 10
+		}
+	}	
+
+}

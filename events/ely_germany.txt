@@ -1,0 +1,147 @@
+namespace = ely_germany
+
+ely_germany.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = ely_germany.1.t
+	desc = ely_germany.1.d
+	flavor = ely_germany.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {	
+	}
+
+    option = {
+		name = ely_germany.1.a
+		default_option = yes
+		add_radicals = {
+			value = very_large_radicals
+		}
+	}
+}
+
+ely_germany.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = ely_germany.1.t
+	desc = ely_germany.1.d
+	flavor = ely_germany.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {	
+		remove_modifier = german_nationalism_rebukked
+	}
+
+    option = {
+		name = ely_germany.1.a
+		default_option = yes
+			add_modifier = {
+				name = german_nationalism_rebukked
+				months = normal_modifier_time
+			}	
+	}
+}
+
+ely_germany.3 = {
+	type = country_event
+	placement = ROOT
+
+	title = ely_germany.1.t
+	desc = ely_germany.1.d
+	flavor = ely_germany.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {	
+		remove_modifier = general_strikes
+	}
+
+    option = {
+		name = ely_germany.1.a
+		default_option = yes
+			add_modifier = {
+				name = general_strikes
+				months = normal_modifier_time
+			}	
+	}
+}
+
+ely_germany.4 = {
+	type = country_event
+	placement = ROOT
+
+	title = ely_germany.4.t
+	desc = ely_germany.4.d
+	flavor = ely_germany.4.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {	
+		remove_modifier = general_strikes
+		remove_modifier = german_nationalism_rebukked
+	}
+
+    option = {
+		name = ely_germany.1.a
+		default_option = yes
+			add_loyalists = {
+				value = very_large_radicals
+			}
+			add_modifier = {
+				name = new_colossus
+				months = normal_modifier_time
+			}	
+	}
+}

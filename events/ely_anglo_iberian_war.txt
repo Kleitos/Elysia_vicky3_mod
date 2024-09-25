@@ -90,10 +90,6 @@ anglo_iberian_war.1 = {
 			end_truce = c:WAS
 			end_truce = c:SWE
 			remove_diplomatic_pact = {
-				country = c:BIC
-				type = dominion
-			}		
-			remove_diplomatic_pact = {
 				country = c:ARG
 				type = dominion
 			}		
@@ -542,6 +538,7 @@ anglo_iberian_war.2 = {
 		}		
 		c:BIC = {
 			trigger_event = { id = anglo_iberian_war.3 }
+			trigger_event = { id = anglo_iberian_war.5 days = 90 }
 			add_journal_entry = { type = je_danish_war_BIC }
 		}		
 		c:SEI = {
@@ -849,6 +846,12 @@ anglo_iberian_war.2 = {
 				country = c:SWE
 			}
 			add_initiator_backers = {
+				country = c:NOR
+			}
+			add_initiator_backers = {
+				country = c:UBD
+			}
+			add_initiator_backers = {
 				country = c:SAS
 			}
 			add_initiator_backers = {
@@ -952,6 +955,43 @@ anglo_iberian_war.4 = {
 		default_option = yes
 		ai_chance = {
 			base = 100
+		}
+	}
+}
+
+anglo_iberian_war.5 = {
+	type = country_event
+	placement = ROOT
+
+	title = anglo_iberian_war.5.t
+	desc = anglo_iberian_war.5.d
+	flavor = anglo_iberian_war.5.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {		
+	}
+
+    option = {
+		name = anglo_iberian_war.5.a
+		default_option = yes
+		c:GBR = {
+			remove_diplomatic_pact = {
+				country = c:BIC
+				type = dominion
+			}
 		}
 	}
 }

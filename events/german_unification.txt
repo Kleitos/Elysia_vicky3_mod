@@ -415,6 +415,12 @@ german_unification.4 = {
 	trigger = {
 	}
 
+	immediate = {
+		c:GER = {
+			add_journal_entry = { type = je_unite_GER }
+		}
+	}
+
 	option = {
 		name = german_unification.4.a
 		default_option = yes
