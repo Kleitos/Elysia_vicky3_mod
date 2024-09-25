@@ -6,12 +6,12 @@ greenland_ely_verybig_money = {
 
 greenland_ely_big_money = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
-	country_expenses_add = 57700
+	country_expenses_add = 15500
 }
 
 greenland_den_big_money = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
-	country_tax_income_add = 57700
+	country_tax_income_add = 15500
 }
 
 
