@@ -2931,3 +2931,456 @@ turko_roman={
 	}
 	graphics = arabic
 }
+
+frankish={
+	color= rgb{ 76 118 155 }
+	religion = catholic
+	traits = { francophone german_speaking beneluxian_culture_group european_heritage }
+	
+	obsessions = {
+		wine
+	}
+	
+	male_common_first_names={
+		Adolf Adriaan Albert Alexander Alfons Andries 
+		Bonifaas Boudewijn Baudouin Blaise
+		David Diederik Desire Damien Didier
+		Edmond Etienne 
+		Filip Frans Frederik Feullien Florent 
+		Hendrik Herman
+		Ignaas Ignace Isidore
+		Jan 
+		Jean-Baptiste
+		Jean_Francois
+		Jean-Jacques
+		Jean-Louis
+		Jochem Josse Jozef 
+		Karel
+		Laurens Leopold Leonard
+		Manfred Mathias Mathieu
+		Nikolaas
+		Philippe-Joseph
+		Pieter
+		Pierre-Guillaume
+		Sylvain
+		Theodoor
+		Werner Willem
+		Achille Adolphe Adrien Aimable Alphonse Amedee Antoine Armand Auguste Augustin Alcide Andre Alexandre Athanase Abel Ambroise Aristide AlbE_ric Archambaud Alexis
+		Bertrand Bernardin Bernard Barthelemy
+		Charles Constant Camille Claude CE_lestin Christophe Cyprien Clement
+		Daniel Denis Donat Dominique
+		Elie Eugene Edouard E_tienne Emile Emmanuel E_vrard ElzE_ar
+		Fernand Francois Frederic Felicien Felix Firmin Ferdinand
+		Georges Guillaume Gustave Gaston Guy Germain Gilles Gerard_2
+		Henri Hippolyte Hubert Hugo Hercule Hugues Hyacinthe
+		Jacques Jean Joseph Jules Julien Jeremie JE_rO_me Just
+		Lazare Louis Lucien Leopold_2 Leon Laurent Lazare LE_onide LE_once Lambert
+		Matthieu Michel Marcel Maximilien Maxime Maurice MoI_se
+		Napoleon Nicolas
+		Olivier Oscar Octave Odilon
+		Patrice Paul Philippe Pierre Prosper Pascal
+		Quentin
+		Robert Roland Rodolphe Raymond RenE_ RE_my
+		Sebastien Simon
+		Thibaut Thierry Thomas Theophile Theodore ThE_obald
+		Ulysse
+		Vincent Victor
+		Xavier
+		Yves
+	}
+	female_common_first_names = {
+		Alix Amelie Andree 
+		Cecilia_2
+		Helene
+		Madeleine Merie-Alix
+		Vincentia
+		Yvonne
+		Clementine Christine
+		Hendrika Henrieette
+		Josepha Josephine
+		Leocadie 
+		Nathalie
+		Stefanie
+		Adelaide_2 Adele_2 Alexandrine Amelie_2 Angelique Anne Antoinette Athenais Augustine
+		Beatrice Blanche
+		Camille Caroline Catherine Charlotte Claire Clemence Clotilde
+		Delphine Diane DesirE_e
+		Eleonore_2 Ernestine Eugenie Eulalie
+		Francoise
+		Gabrielle
+		Henriette Hortense
+		Jeanne Julie Juliette Justine
+		LE_ontine Leopoldine Louise Louise-Victorine
+		Marcelle Marguerite Marie Marie-Anne Marie-Felix Marthe Mathilde Melanie
+		Pauline Paule
+		SE_raphine Sibylle Sophie Stephanie Suzanne
+		Therese_2
+		Victoire Victorine Virginie
+	}	
+	noble_last_names = {
+		d_Aumont
+		Baraguey_d_Hilliers Bergeret de_Beauharnais de_Bussiere de_Broglie de_Boisdeffre
+		de_Chastellux de_Chodron_de_Courcel de_CambacE_rE_s de_Croy de_Castelnau de_Cools
+		Decazes de_Durfort
+		d_Essling
+		Fesch
+		Gros de_Gramont de_Guerin de_Gueydon de_Goyon
+		Kellermann
+		Lagrange de_Lamartine de_La_Luzerne de_Leuchtenberg de_Langle_de_Cary
+		Marbot de_MacMahon de_Montmorency-Laval Maret de_Morny MassE_na
+		de_Noailles Ney_d_Elchingen
+		Oudinot
+		Pasquier de_Pourtales de_Polignac de_Persigny PalE_ologue
+		de_La_Rochefoucauld de_Rochebouet de_Rohan-Chabot
+		Suchet de_Sabran de_Saulx de_SE_rent
+		de_Talleyrand-PE_rigord
+		van_Asseliers
+		van_Boisschot du_Bois_de_Vroylande
+		Coomans_de_Brachene de_Croeser Coopieters_-t_Wallant
+		De_Duerwaerder
+		Goddyn
+		Van_Huele
+		de_Jaegher
+		de_Kerchove_de_Denterghem
+		De_Munck_Moerman
+		van_der_Noot Van_Naemen
+		De_Smedt
+		de_Watervliet
+		van_Zuylen_van_Nyevelt
+		Quarles_van_Ufford
+		de_Croy
+		Goubau
+		d_Harscamp
+		de_Laguiche
+		de_Merode
+		de_Thezan_Poujol
+		d_Ursel d_Udekem
+		de_Selys_Longchamps
+		de_Coppin_de_Falaen
+		de_Theux_de_Meylandt
+		du_Val_de_Beaulieu
+		Annez_de_Zillebroeck
+		Boucqueau_de_Villeraye
+		Desmanet_de_Biesme
+		Surlet_de_Chokier
+		Surmont_de_Volsberghe
+		de_Jonghe_d_Ardoye
+		de_Meer_de_Moorsel
+		de_Theux_de_Meylandt
+		Vilain_XIIII
+	}
+	common_last_names={
+		Allard
+		Barbanson
+		Barthelemy
+		Baugniet
+		Beaucarne
+		Berger
+		Berthels
+		Beyts
+		Biver
+		Blargnies
+		Bredart
+		Brialmont
+		Cauvin
+		Claus
+		Clerix
+		Collet
+		Cols
+		Coquilhat
+		David
+		Davignon
+		Defacqz
+		Deguise
+		Delacroix
+		Desmanet_de_Biesme
+		Destriveaux
+		Dethier
+		Devaux
+		Deville
+		Dewandre
+		Dhanis
+		Dreze
+		Dumont
+		Fallon
+		Fendius
+		Figeys
+		Fleury-Dubay
+		Fleussu
+		Forgeur
+		Frison
+		Fuchs
+		Gendebien
+		Goffint
+		Henry
+		Heusghem
+		Huysman_d_Annecroix
+		Jacques
+		Joos
+		Jottrand
+		Lahure
+		Lardinois
+		Lebeau
+		Leclercq
+		Lefebvre
+		Leman
+		Malou
+		Marcq
+		Marlet
+		Masbourg
+		Nagelmackers
+		Nalinne
+		Nothomb
+		Orban
+		Picquet
+		Pirmez
+		Pirson
+		Petillon
+		Raikem
+		Roeser
+		Rogier
+		Rouen
+		Rouppe
+		Seron
+		Thonus
+		Thorn
+		Tiberghien
+		Wahis
+		Wangermee
+		Wyvekens
+		Zoude
+		d_Arenberg
+		d_Huart
+		d_Omalius
+		d_Oreye
+		d_Oultremont
+		de_Baillet
+		de_Beaufort
+		de_Behr
+		de_Bocarme
+		de_Bousies
+		de_Broqueville
+		de_Brouckere
+		de_Burlet
+		de_Celles
+		de_Chasteler
+		de_Decker
+		de_Dixmude
+		de_Gerlache
+		de_Grez
+		de_Hemptinne
+		de_Labbeville
+		de_Lannoy
+		de_Leuze
+		de_Ligne
+		de_Melin
+		de_Merode
+		de_Pelichy
+		de_Quarre
+		de_Riquet
+		de_Robaulx
+		de_Rouille
+		de_Sauvage
+		de_Stassart
+		de_Stockem
+		de_Secus
+		de_Trazegnies
+		de_Trooz
+		de_Viron
+		de_Waha
+		du_Bois
+		du_Bus
+		du_Pont
+		le_Cocq
+		le_Hon
+		van_Snick
+		Andries
+		Barbanson
+		Barthelemy
+		Beaucarne
+		Beernaert
+		Berthels
+		Bethune
+		Beyts
+		Bischoff
+		Blomme
+		Bosmans
+		Buylaert
+		Buyse
+		Claes
+		Claus
+		Cogels
+		Cols
+		Coppens
+		Coppieters
+		Corten
+		Cruts
+		Dayeneux
+		Delberke
+		Delehaye
+		Delwarde
+		Destouvelles
+		Deswert
+		Devaux
+		Dhanis
+		Domis
+		Fransman
+		Gelders
+		Geudens
+		Goethals
+		Hennequin
+		Huysman_d_Annecroix
+		Jacobs
+		Janssens
+		Joos
+		Jottrand
+		Kockaert
+		Ledeganck
+		Lefebvre
+		Liedts
+		Marcq
+		Meeus
+		Morel
+		Moyersoen
+		Mulle
+		Nypels
+		Ooms
+		Osy
+		Peemans
+		Peeters
+		Petens
+		Rodenbach
+		Roels
+		Rosseuw
+		Rouppe
+		Rutten
+		Schollaert
+		Serruys
+		Simons
+		Speelman
+		Struye
+		Terlinden
+		Teuwens
+		Thienpont
+		Tilkens
+		Vandive
+		Verbeke
+		Vercruysse
+		Verduyn
+		Vergauwen
+		Verseyden_de_Varick
+		Verwilghen
+		Wallaert
+		Wannaar
+		Werbrouck
+		Wyvekens
+		d_Ansembourg
+		d_Arschot_Schoonhoven
+		d_Hanens
+		de_Brouckere
+		de_Celles
+		de_Coninck
+		de_Decker
+		de_Foere
+		de_Gaesebeke
+		de_Ghellink
+		de_Grez
+		de_Haerne
+		de_Jonghe
+		de_Langhe
+		de_Leeuw
+		de_Leuze
+		de_Man
+		de_Meester
+		de_Muelenaere
+		de_Merode
+		de_Pelichy
+		de_Renesse
+		de_Robiano
+		de_Rodes
+		de_Roo
+		de_Ryckere
+		de_Smet
+		de_Tiecken
+		de_Viron
+		de_Woelmont
+		du_Bois
+		van_Caloen
+		van_Casteel
+		van_Crombrugghe
+		van_Dievoet
+		van_Dorpe
+		van_Havre
+		van_Hoobrouck
+		van_Innis
+		van_Meenen
+		van_Neste
+		van_Snick
+		van_Tongerloo
+		van_Volden_de_Lombeke
+		van_Zeeland
+		van_de_Kerchove
+		van_de_Werve_de_Vorselaar
+		van_de_Weyer
+		van_den_Broucke
+		van_den_Hove
+		van_der_Belen
+		van_der_Bruggen
+		van_der_Burch
+		van_der_Eecken
+		van_der_Linden
+		van_der_Linden_d_Hooghvorst
+		van_der_Looy
+		Anthoine Archinard Augereau Aucouturier Alavoine Achard Astouin Astaix Avond
+		Baraguey Bazaine Billot Bosquet Boulanger Bourbaki Boue_de_Lapeyrere Bouet-Willaumez Bugeaud Beaugendre Bronchard Baudet Bodinier Bouillet BiE_re Beslay Bac Bavoux Bezanson Bidard Bonnin Bougueret Boussingault Bouzique Buvignier
+		Caillard Canrobert Courbet Cousin-Mountauban de_Castellane Combes ClouE_ Cornet Colas Chauvet Carrere Chartier Combelles Chaude Colin Cruchon Cauvry ChaudE_ Collet Cottrel Charron Caudrelier Courcelles Cibiel Coquerel Coutenceau
+		Davout Depre Dubail Dubois Duchene Dupetit-Thouars Desbordes DelcassE_ Dortignacq Dargassies Desgrange Daumain Decaup Dozol Duboc Darche Deloffre Dutiron Denizot Dufour Devilly Dhers Dartigue Degy Delpech Daime Delaire DE_gousE_e Daix Delespaul Debrotonne Demortreux Denissel Desaincthorent Ducluzeau Dudouyt
+		Exelmans Emmery Esquirou
+		Foch Forey Franchet_d_Esperey Freycinet Faidherbe Fily Fleury Forestier Figuet Farconnet Ferrouillat Foucqueteau Favart Favand Freslon Fresneau
+		Gallieni Gouraud Guillaumat de_Gaulle Gain Georget Gabory Guillarme Garrigou Genin GE_raud Godivier Germain Gardent Goujon Gonnor Guyon 
+		Hamelin Harispe Hoche Humbert d_Hilliers Habierre Herbelin Harquet
+		Jamais Jaures Joffre JaurE_guiberry Jousselin
+		Lebouef Lyautey Leygoute Lignon Lallement Lacroix Lafourcade Le_Bars Lachaise Leman Lorillon Lecointe Langlade Leblanc Lagagner Leroy Lapize Lannelongue Lebon Lebelleguy Lubbert Luminais Luneau Lherbette Lortet
+		Marmontel Murat de_Montaignac Mazel Maitron ME_nager Meili Mathonat Marrast Madesclaire Malbois Mispoulet Milhoux Moutou
+		Niboyet Nivelle Nancy Neboux Nempon Nadaud Nourry Nachet Normant
+		Oudin Ory Osmont
+		Petain Pellissier Pothier Pasquier Pautrat Payan Passerieu Paulmier Ponson PiE_trois Pardon Paullian Perrenet Pigeon Pleignard Plocq
+		Quenon Quinet
+		Ringeval Roux Rabot Riviere Roche Riou Ricaux Roquebert Rottie Royannez Radoing Regembal Reibell Repellin Rouher Royol
+		Saget de_Saint_Arnaud SouliE_ Sobrier StE_venot Soubigou StoecklE_ Simiot Signard Saint-Beuve Saint-Romme
+		Trebutien Trousselier Tuvache Taschereau Tanchard Tassel Teulon Tixier Totain Trinchan
+		Vaillant Ventresque Villette Vivier Vaidis Vilette Voilquin Vilain Vignerte Vinoy Valladier Vavin Vendois Vergnes Vernhette Viox
+		Wattelier Winant Warnet Walferdin
+	}
+	male_regal_first_names={
+		Albert
+		Antoine
+		Charles
+		Ferdinand-Philippe Francois
+		Henri
+		Louis
+		Philippe
+		Leopold_2
+	}
+	female_regal_first_names={
+		Charlotte
+		Anne
+		ClE_mentine
+		Francoise
+		HE_lE_ne
+		Isabelle
+		Louise
+		Marie Marie_ThE_rE_se Marie_Henriette Mathilde
+		Stephanie
+	}
+	regal_last_names={
+		d_Artois
+		Bonaparte de_Bourbon de_Bourbon-CondE_
+		d_Orleans
+	}
+
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
