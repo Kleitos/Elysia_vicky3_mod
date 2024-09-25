@@ -34,30 +34,6 @@
 }
 
 DIPLOMATIC_PLAYS = {
-	c:TUR = {
-		create_diplomatic_play = {
-		
-				target_state = s:STATE_TRIPOLI.region_state:TRI
-			
-			war = yes
-			
-			type = dp_annex_war
-
-			add_war_goal = {
-				holder = c:TRI
-				type = humiliation
-				target_country = c:TUR
-			}
-			add_war_goal = {
-				holder = c:TRI
-				type = war_reparations
-				target_country = c:TUR
-			}
-		}			
-	}
-}
-
-DIPLOMATIC_PLAYS = {
 	c:SEI = {
 		create_diplomatic_play = {
 		
@@ -552,6 +528,69 @@ DIPLOMATIC_PLAYS = {
 				type = annex_country
 				target_state = s:STATE_MOSCOW.region_state:RUS
 			}
+		}			
+	}
+}
+
+DIPLOMATIC_PLAYS = {
+	c:FRA = {
+		create_diplomatic_play = {	
+		
+				target_state = s:STATE_CONSTANTINE.region_state:CON
+			war = no
+			escalation = 81
+			
+			type = dp_annex_war
+
+
+			add_war_goal = {
+				holder = c:CON
+				type = conquer_state
+				target_state = s:STATE_CONSTANTINE.region_state:FRA
+			}
+		}	
+		create_diplomatic_play = {	
+		
+				target_state = s:STATE_CONSTANTINE.region_state:AIT
+			war = no
+			escalation = 81
+			
+			type = dp_annex_war
+
+
+			add_war_goal = {
+				holder = c:AIT
+				type = conquer_state
+				target_state = s:STATE_CONSTANTINE.region_state:FRA
+			}
+		}
+		create_diplomatic_play = {	
+		
+				target_state = s:STATE_ORAN.region_state:MAS
+			war = no
+			escalation = 81
+			
+			type = dp_annex_war
+
+
+			add_war_goal = {
+				holder = c:AIT
+				type = conquer_state
+				target_state = s:STATE_ALGIERS.region_state:FRA
+			}
+			add_war_goal = {
+				holder = c:AIT
+				type = conquer_state
+				target_state = s:STATE_ORAN.region_state:FRA
+			}
+		}
+		create_diplomatic_play = {	
+		
+				target_state = s:STATE_EAST_SAHARA.region_state:TUG
+			war = no
+			escalation = 81
+			
+			type = dp_annex_war
 		}			
 	}
 }
