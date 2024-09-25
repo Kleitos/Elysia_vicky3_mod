@@ -1230,13 +1230,13 @@
 		}
 	}
 	s:STATE_TRIPOLI={
-		region_state:TRI={
+		region_state:TUN={
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
 					building={
 						type="building_fishing_wharf"
-						country="c:TRI"
+						country="c:TUN"
 						levels=1
 						region="STATE_TRIPOLI"
 					}
@@ -1249,7 +1249,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:TRI"
+						country="c:TUN"
 						levels=1
 						region="STATE_TRIPOLI"
 					}
@@ -1261,7 +1261,7 @@
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:TRI"
+						country="c:TUN"
 						levels=9
 					}
 				}
@@ -1272,7 +1272,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:TRI"
+						country="c:TUN"
 						levels=1
 					}
 				}
@@ -1282,13 +1282,13 @@
 		}
 	}
 	s:STATE_LIBYA={
-		region_state:TRI={
+		region_state:TUN={
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
 					building={
 						type="building_fishing_wharf"
-						country="c:TRI"
+						country="c:TUN"
 						levels=1
 						region="STATE_LIBYA"
 					}
@@ -1301,7 +1301,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:TRI"
+						country="c:TUN"
 						levels=2
 						region="STATE_LIBYA"
 					}
@@ -1313,7 +1313,7 @@
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:TRI"
+						country="c:TUN"
 						levels=6
 					}
 				}
@@ -1323,7 +1323,7 @@
 		}
 	}
 	s:STATE_LIBYAN_DESERT={
-		region_state:TRI={
+		region_state:TUN={
 		}
 	}
 	s:STATE_SAHARA={
