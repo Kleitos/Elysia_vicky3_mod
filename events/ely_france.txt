@@ -167,12 +167,6 @@ ely_france_south.2 = {
 		s:STATE_WEST_SAHARA = {
 			add_claim = c:ATV
 		}
-		s:STATE_SAHARA = {
-			add_claim = c:ATV
-		}
-		s:STATE_EAST_SAHARA = {
-			add_claim = c:ATV
-		}
 		s:STATE_LIBYAN_DESERT = {
 			add_claim = c:ATV
 		}
@@ -242,12 +236,6 @@ ely_france_south.2 = {
 			add_claim = c:FRA
 		}
 		s:STATE_WEST_SAHARA = {
-			add_claim = c:FRA
-		}
-		s:STATE_SAHARA = {
-			add_claim = c:FRA
-		}
-		s:STATE_EAST_SAHARA = {
 			add_claim = c:FRA
 		}
 		s:STATE_LIBYAN_DESERT = {
@@ -2570,6 +2558,17 @@ frankish_empire.2 = {
 				state = s:STATE_TASMANIA.region_state:FRA
 			}
 		}
+		if = {
+			limit = {
+				NOT = { exists = c:ATV }
+				exists = s:STATE_ALGIERS.region_state:FRA
+			}
+			create_country = {
+				tag = ATV
+				origin = c:FRA
+				state = s:STATE_ALGIERS.region_state:FRA
+			}
+		}
 		c:FRA = {
 			create_diplomatic_pact = {
 				country = c:SAF
@@ -2578,7 +2577,11 @@ frankish_empire.2 = {
 			create_diplomatic_pact = {
 				country = c:TAS
 				type = dominion
-			}		
+			}	
+			create_diplomatic_pact = {
+				country = c:ATV
+				type = dominion
+			}			
 		}
 	}
 
@@ -2611,6 +2614,164 @@ frankish_empire.2 = {
 			activate_law = law_type:law_private_schools
 			activate_law = law_type:law_free_trade
 			activate_law = law_type:law_laissez_faire
+		}
+		c:ATV = {
+			activate_law = law_type:law_colonial_resettlement
+			activate_law = law_type:law_local_police
+			activate_law = law_type:law_state_religion
+			activate_law = law_type:law_presidential_republic
+			activate_law = law_type:law_racial_segregation
+			activate_law = law_type:law_per_capita_based_taxation
+			activate_law = law_type:law_appointed_bureaucrats
+			activate_law = law_type:law_religious_schools
+			activate_law = law_type:law_free_trade
+			activate_law = law_type:law_laissez_faire
+		}
+		if = {
+			limit = { exists = s:STATE_ORAN.region_state:FRA }
+			s:STATE_ORAN.region_state:FRA = { set_state_owner = c:ATV }
+		}
+		if = {
+			limit = { exists = s:STATE_CONSTANTINE.region_state:FRA }
+			s:STATE_CONSTANTINE.region_state:FRA = { set_state_owner = c:ATV }
+		}
+		if = {
+			limit = { exists = s:STATE_EAST_SAHARA.region_state:FRA }
+			s:STATE_EAST_SAHARA.region_state:FRA = { set_state_owner = c:ATV }
+		}
+		if = {
+			limit = { exists = s:STATE_SAHARA.region_state:FRA }
+			s:STATE_SAHARA.region_state:FRA = { set_state_owner = c:ATV }
+		}
+		if = {
+			limit = { exists = s:STATE_TUNISIA.region_state:FRA }
+			s:STATE_TUNISIA.region_state:FRA = { set_state_owner = c:ATV }
+		}
+		if = {
+			limit = { exists = s:STATE_LIBYA.region_state:FRA }
+			s:STATE_LIBYA.region_state:FRA = { set_state_owner = c:ATV }
+		}
+		if = {
+			limit = { exists = s:STATE_INNER_MOROCCO.region_state:FRA }
+			s:STATE_INNER_MOROCCO.region_state:FRA = { set_state_owner = c:ATV }
+		}
+		if = {
+			limit = { exists = s:STATE_FEZ.region_state:FRA }
+			s:STATE_FEZ.region_state:FRA = { set_state_owner = c:ATV }
+		}
+		if = {
+			limit = { exists = s:STATE_AL_RIF.region_state:FRA }
+			s:STATE_AL_RIF.region_state:FRA = { set_state_owner = c:ATV }
+		}
+		if = {
+			limit = { exists = s:STATE_MARRAKECH.region_state:FRA }
+			s:STATE_MARRAKECH.region_state:FRA = { set_state_owner = c:ATV }
+		}
+		if = {
+			limit = { exists = s:STATE_TRIPOLI.region_state:FRA }
+			s:STATE_TRIPOLI.region_state:FRA = { set_state_owner = c:ATV }
+		}
+		if = {
+			limit = { exists = s:STATE_WEST_SAHARA.region_state:FRA }
+			s:STATE_WEST_SAHARA.region_state:FRA = { set_state_owner = c:ATV }
+		}
+		if = {
+			limit = { exists = s:STATE_LIBYAN_DESERT.region_state:FRA }
+			s:STATE_LIBYAN_DESERT.region_state:FRA = { set_state_owner = c:ATV }
+		}
+		if = {
+			limit = { exists = s:STATE_MATRUH.region_state:FRA }
+			s:STATE_MATRUH.region_state:FRA = { set_state_owner = c:ATV }
+		}
+		s:STATE_ALGIERS = {
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_ORAN = {
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_CONSTANTINE = {
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_EAST_SAHARA = {
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_SAHARA = {
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_TUNISIA = {
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_LIBYA = {
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_INNER_MOROCCO = {
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_FEZ = {
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_AL_RIF = {
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_MARRAKECH = {
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_TRIPOLI = {
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_WEST_SAHARA = {
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_LIBYAN_DESERT = {
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_MATRUH = {
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
 		}
 		if = {
 			limit = { exists = s:STATE_ZULULAND.region_state:FRA }
@@ -2758,6 +2919,97 @@ frankish_empire.2 = {
 		c:FRA = { 
 			annex = c:SAF
 			annex = c:TAS
+			annex = c:ATV
+		}
+		s:STATE_ALGIERS = {
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_ORAN = {
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_CONSTANTINE = {
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_EAST_SAHARA = {
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_SAHARA = {
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_TUNISIA = {
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_LIBYA = {
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_INNER_MOROCCO = {
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_FEZ = {
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_AL_RIF = {
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_MARRAKECH = {
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_TRIPOLI = {
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_WEST_SAHARA = {
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_LIBYAN_DESERT = {
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_MATRUH = {
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
 		}
 		s:STATE_BOTSWANA = {
 			add_claim = c:FRA
