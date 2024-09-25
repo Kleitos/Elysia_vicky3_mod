@@ -1087,7 +1087,7 @@ dutch_colonial={ # Displayed as "Dutch Colonists" in localization
 flemish={
 	color= rgb{ 250 180 80 }
 	religion = catholic
-	traits = { beneluxian_culture_group european_heritage }
+	traits = { beneluxian_culture_group francophone european_heritage }
 
     obsessions = {
         liquor
@@ -3450,7 +3450,7 @@ basque={
 spanish={
 	color= rgb{ 220 220 30 }
 	religion = catholic
-	traits = { iberian_culture_group hispanophone european_heritage }
+	traits = { iberian_culture_group hispanophone european_heritage latin_group }
 
     obsessions = {
         wine
@@ -3633,7 +3633,7 @@ spanish={
 catalan={
 	color= rgb{ 225 110 35 }
 	religion = catholic
-	traits = { iberian_culture_group european_heritage }
+	traits = { iberian_culture_group european_heritage latin_group }
 
     obsessions = {
         wine
@@ -3784,7 +3784,7 @@ catalan={
 portuguese={
 	color= rgb{ 160 220 30 }
 	religion = catholic
-	traits = { iberian_culture_group lusophone european_heritage }
+	traits = { iberian_culture_group lusophone european_heritage latin_group }
 
     obsessions = {
         wine
@@ -4519,7 +4519,7 @@ north_caucasian={
 
 maghrebi={
 	color= hsv{ 0.32 0.58 0.30 }
-	traits = { arab_speaking middle_eastern_heritage }
+	traits = { arab_speaking middle_eastern_heritage north_african }
 	religion = sunni
 	obsessions = {
 		coffee
@@ -4630,7 +4630,7 @@ maghrebi={
 berber={ # Amazigh
 	color= rgb{ 90 130 115 }
 	religion = sunni
-	traits = { berber_group arab_speaking middle_eastern_heritage }
+	traits = { berber_group arab_speaking middle_eastern_heritage north_african }
 
     obsessions = {
         coffee
@@ -6436,7 +6436,7 @@ sorb={
 corsican = {
 	color= hsv{ 0.49 0.51 0.84 }
 	religion = catholic
-	traits = { european_heritage francophone italophone }
+	traits = { european_heritage latin_group italophone }
 
     obsessions = {
         wine
@@ -8141,8 +8141,8 @@ circassian = {
 
 francoprovencal = {
 	color= rgb{ 158 41 12 }
-	religion = catholic
-	traits = { francophone swiss european_heritage }
+	religion = protestant
+	traits = { swiss latin_group european_heritage }
     obsessions = {
         wine
     }
@@ -8302,7 +8302,7 @@ alemannic={
 tasmanian ={
 	color= hsv{ 0.10 0.80 0.86 }
 	religion = protestant
-	traits = { beneluxian_culture_group european_heritage }
+	traits = { beneluxian_culture_group european_heritage european_heritage francophone }
 
     obsessions = {
         liquor
@@ -10946,4 +10946,597 @@ kho ={
 		1 = arab
 	}
 	graphics = arabic
+}
+
+occitan={
+	color= rgb{ 164 193 223 }
+	religion = protestant
+	traits = { latin_group european_heritage }
+
+	# the best wine is from Occitania, of course.
+	obsessions = {
+		wine
+	}
+
+	male_common_first_names={
+		August Adrian Antonin Avit AristO_tel Andrieu Arnaut AnfO_s Alexandre Agustin AlE_xi Armand
+		Brut Bernat BerenguiE_r Beneset Bonifaci
+		Claudi Cesar Constantin Constanci Carles ClamenC_ Ciprian Cesari Crestian CailU_s
+		DA_vid
+		Emilian Edoard Enric EstE_ve EugE_ni
+		Fermin Felip FE_lix Frederic Folco FrancE_s
+		GregO_ri GuilhE_m Gaston Gui
+		Imbert Ipolit
+		Joan Joan_Luc Juli JosE_p Just Joan_Marc JO_rdi
+		Luc Leon LoI_s
+		Marc MatE_u Marcellin Maurici Martin Maximin MiquE_u
+		Norbert Nicolau
+		OnE_st OnO_ri Olimp
+		Pau PE_ire Plini Pascal
+		Raimon RogiE_r Roman
+		Sarnin Septimi Sicard SilvE_stre Severin Simmac SE_rgi
+		TomA_s TeodO_si TeodO_r Teofil
+		Victor
+		XaviE_r
+	}
+	female_common_first_names={
+		AdelaI_da
+		Basilida
+		Clotilda Catarina Clara
+		ElisabE_t
+		FiladE_lfa
+		Jana Julia
+		EstE_la
+		Maria Marianna
+		Susana
+		TerE_sa
+		Urraca
+	}
+	common_last_names = {
+		Ayrinhac AubanE_u Arnaudin d_AstrO_s
+		Brunet Bernard Blanc de_BordE_u Boya Barrera Benaset
+		de_Camelat
+		Devoluy DO_sque DadO_r Delseny Desporrins DaugE_r Dulau DuclO_s
+		Eyt
+		Fallen Four_Pome de_Fondevila
+		Giera Garcin GojA_s Gonzales de_GastellU_
+		Jouveau Jauverd
+		Lacor Lescar Lalanne Lafont
+		Mistral Matieu Manciet
+		NavarrO_t
+		Polinet Palay PlantE_ Peirotet
+		Romanilha Rostaing Renan
+		Sarran de_Salanovat
+		Tavan
+		VigE_r VerdiE_r Verlhac	
+	}
+
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+
+north_italian={
+	color= hsv{ 0.38 0.27 0.86 }
+	religion = catholic
+	traits = { italophone european_heritage latin_group }
+	
+	obsessions = {
+		wine
+	}	
+	
+	male_common_first_names={
+		Alessandro Alfonso Ambrogio Amedeo Andrea Angelo Antonio Agostino
+		Bernardino Bartolomeo Benedetto Bonaventura Bernardo
+		Camillo Carlo Cesare Costanzo Casimiro Cristoforo
+		Davide Domenico Damiano
+		Enrico Enzo Ettore Efisio Emiliano Ernesto
+		Fabrizio Faustino Federico Felice Ferdinando Fiorenzo Francesco Filippo Filiberto
+		Gaetano Gennaro Girolamo Giulio Giuseppe Guglielmo Giacomo Giorgio Gaspare Gaetano
+		Innocenzo Ignazio Ippolito Ilario
+		Leopoldo Luigi Luca Lorenzo
+		Marco Massimo Matteo Maurizio Massimo
+		Nicola
+		Oreste Ottavio
+		Paolo Pasquale Pietro Prospero
+		Raffaele Roberto Ruggiero Romualdo
+		Scipione Silvio Simone Serafino Secondo Sebastiano
+		Tancredi Tommaso
+		Ugo Umberto Urbano
+		Vincenzo Vittorio
+	}
+	female_common_first_names = {
+		Beatrice
+		Camilla Cassandra Cristina
+		Giovannella
+		Livia Lucrezia Luisa
+		Maddalena Maria Melania Metilde
+		Sofia
+		Teresa
+	}	
+	noble_last_names = {
+		Avogadro_della_Motta d_Azeglio Annoni_di_Cerro Avogadro_di_Casanova d_Alberti_della_Briga d_Arcais
+		Borghese di_Boglio Baldassi Bon_Compagni_di_Mombello Bottone_di_San_Giuseppe Boyl_di_Putifigari Bronzini_Zapelloni De_Benedetti
+		Capodilista Carniani Colli_di_Felizzano Colonna di_Calabiana Costa_de_Beauregard Costa_della_Torre De_Castro De_Chambost
+		Ferrero_La_Marmora De_Ferrari de_Foresta Falqui_Pes Fecia_di_Cossato
+		Gebaix_de_Sonnaz Girod_De_Montfalcon
+		d_Ittiri_LedA_
+		de_Launay
+		Massimo De_Marchi de_Martinel Moffa_di_Lisio_Gribaldi
+		Odescalchi Orsini
+		Pallavicino Pacoret_de_Saint_Bon Pecori-Giraldi Pellion_di_Persano Pernati_di_Momo Petitti_Bagliani_di_Roreto Ponzo_di_San_Martino
+		Ricardi_di_Netro di_Robilant
+		Sacchetti di_Savoia di_Savoia-Aosta Solaro_della_Margarita di_Salmour Santa_Croce_Villahermosa Solaroli_di_Briona Somis_di_Chavrie
+		Toesca Torelli Thaon_di_Revel
+	}
+	common_last_names={
+		Acton Albricci Agnes Airenti Amaretti Ara Arminjon Arnulfo Arrifo Asproni Astengo Avigdor Avondo
+		Badoglio Baldissera Baratieri Bava-Beccaris Baldassi Benci Baino Barbier BeldI_ Bellono Benintendi Berruti Bersezio Berti Bertini Bertoldi Bezzi Biancheri Bianchetti Bianchi Billiet Blanc Bo Bolmida Bona Borella Botta Bottero Brignone Brofferio Brunati Brunet Brunier Bruschetti Buffa Buraggi Buttini
+		Cadorna Cagni Canevaro Capello Caviglia Ceccherini Cialdini Cusani Cabella Caboni Cambieri Campana Canalis Cantara Capriolo Carquet Carta Casaretto Cassinis Castelli Cavalli Cavallini Chenal Chiaves ChiO_ Cobianchi Colli Cornero Correnti Corsi Costa Crosa Cugia
+		Dezza Demaria Depretis Durando Daziani Decandia Delfino Delitala
+		Emo
+		Fanti Fara Filomarino Fara Farina Farini Ferraciu Fescot
+		Garibaldi Giardino Govone Gallenga Gallisai Gallo Galvagno Gastinelli Genina Gerbore Germanetti Geymet Ghiglini Gianolio Gilardini Ginet Giovanola Graffigna Grixoni Guglianetti Guillet
+		Imperiali Isola
+		Lachenal Lanza Louaraz
+		Malan La_Marmora Mambretti Menabrea Mozzoni Mameli Mamiani Mantelli Marassi Mari Marongiu Martelli Martin Mathieu Mautino Mazza Melegari Mellana Menabrea Mezzena Michelini Miglietti Miglioretti Minoglio Moia Mongellaz Monticelli Mossi Musso
+		Naytana Niccolini Nino Notta
+		Orengo Oytana
+		Pelloux Perruchetti Pianelli Porro Presbitero Paleocapa Pallavicino Pallieri Pareto Pateri Pescatore Peyrone Pezzani Piacenzi Piane Picinelli Pistone Polleri Polto Porqueddu Pugioni
+		Quaglia
+		Ramorino Ricotti-Magnani Rattazzi Ravina Rezasco Riccardi Ricci Richetta Robecchi Roberti Rocci Rodini Rossi Rubin
+		Sacchi Saletta Sanna Solari Sanguineti Sanna_Denti Sanna_Sanna Sappa Saracco Sauli Scano Scapini Sella Serra Sineo Siotto_Pintor Solari Spano Spinola Sulis
+		Tecchio Tegas Tola Torelli Tuveri
+		Vaccari Valerio Valvassori Vicari
+		Zupelli Zirio
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+
+south_italian={
+	color= rgb{ 97 77 117 }
+	religion = catholic
+	traits = { italophone european_heritage latin_group }
+	
+	obsessions = {
+		wine
+	}	
+	
+	male_common_first_names={
+		Alessandro Armando Augusto Achille Antonio Agesilao
+		Bartolomeo Benedetto
+		Carlo Cesare Corrado Cesidio Corradino Cristoforo Carcano Carmine
+		Domenico Donato
+		Enrico Enzo Ettore Emanuele
+		Fabio Fabrizio Ferdinando Francesco Fausto
+		Gaetano Giacomo Giovanni Giulio Giuseppe Guglielmo GiosuE_ Goffredo Giorgio Giustino
+		Ignazio
+		Leopoldo Lorenzo Ludovico Luca Luigi Ludovico
+		Marcantonio Marino Mario Matteo Marco Monaldo Michele Melchiorre
+		Nicola
+		Orazio Oronzio
+		Pierfrancesco Paolo Pasquale Pietro Pellegrino
+		Raimondo Raffaele
+		Sigismondo Salvatore Sebastiano Saverio
+		Tommasso
+		Vincenzo
+	}
+	female_common_first_names = {
+		Anna Amalia Antonia Alfonsa Alssandra Alssandrina Augusta
+		Beatrice Bianca Barbara Benedetta
+		Clotilde Carlotta Carolina Caterina Cristina Cecilia Cornelia Costanza
+		Enrichetta Eleonora Eulalia Elena Emanuela Elisabetta
+		Filippina Francesca
+		Giuseppina Giovanna Giulia Giustiniana
+		Isabella Ippolita
+		Luisa Luisa_Carlotta Lucrezia Laura Lucia Leonora
+		Maria Maria_Anna Maria_Luisa Maria_Enrichetta Mercedes Maria_Barbara Michela Margherita Marianna
+		Paolina
+		Sofia
+		Vittoria Violante
+	}	
+	noble_last_names = {
+		Afan_de_Rivera Antici d_Albergo d_Ayala
+		Barracco Berlingieri Bufalari Baccarini Di_Brocchetti
+		Caetani CalA__Ulloa Caracciolo di_Cesare Ceccarini di_Crollalanza
+		Donnorso_di_Serracapriola
+		Ercolani d_Escamard
+		Filangieri
+		Galluppi Giannuzzi-Savelli della_Genga
+		Lanfranci Lucifero de_Liguori Leopardi de_Luca
+		Montani_da_Pesaro Marchesani
+		Ondedei Osmani
+		Piccolomini Pignatelli del_Pezzo
+		de_Riseis della_Rovere De_Renzi de_Rilliet del_Re
+		Sanfelice Spinello de_Samuele_Cagnazzi Sgariglia Smeducci Sammarruco di_Sangro
+		de_Thomasis
+		d_Urso
+		Visconti
+		Winspeare
+		Zurlo Zorniotti
+	}
+	common_last_names={
+		Anfora Avitabile Alianelli Antonelli Assanti Acclavio
+		Barberini-Colonna Bonaccorsi Benci Bozzelli Baldacchini Briganti Bausan Bianchini
+		Caraga Cattaneo Chigi Clary Cosenz Cianciulli Cuoco Costa Campagna Capocci Capasso Croce Carrascosa Colletta
+		Diaz Durini Delfico
+		Ferrari Filangieri Filioli Fergola Fardella Forteguerri Ferri Fortunato
+		Gironda Gravina Grifeo Garzia Gagliardo Galdi Guarini Genoino Gussone Gio Giannuzzi Galletti
+		Imbriani Intonti
+		Lanza Lombardo Lunardi Landi Lanza Longobardi
+		Molinelli Mezzacapo Milano Morelli
+		Nunziante Naselli
+		Orsini Ottaviani Oliva
+		Pironti Pepe Poerio Palmieri Persico Parisi PaternO_ Pianell Pignatelli Pionati Parisio
+		Quandel
+		Ritucci Ruggiero Romano Rosaroll Ricciardi Rosica
+		Scammacca Scovazzo Sansone Sannia Schipa Silvati Settimo Scialoja Statella Santangelo
+		Torlonia Turrisi Troya Tommasi Tenore Tafuri Torelli Tardio Troisi
+		Vernazza Valiante Vignale Vecchione
+		Zunica Zurlo
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+
+maltese={
+	color= hsv{ 0.40 0.03 0.58 }
+	religion = catholic
+	traits = { italophone european_heritage latin_group }
+	male_common_first_names={
+		Alessandru
+		Beru
+		Duminku
+		Enrico
+		Evarist
+		Ferlad
+		Fernardu
+		Frangisku
+		Gabriel
+		Gorg
+		Joseph
+		Karmenu
+		Lawrenz
+		Marju
+		Mikiel
+		Ninu
+		Pawlu
+		Rokku
+		Saber
+		Ugo
+		Valent
+	}
+	female_common_first_names = {
+		Agatha
+		Aloisetta
+		Atanasia
+		Beatrici
+		Dorothea
+		Duminka
+		Elizabetta
+		Fawstina
+		Guljetta
+		Guzeppa
+		Helena
+		Karmena
+		Lucija
+		Margerita
+		Marthese
+		Therese
+		Vittorja
+	}	
+	noble_last_names = {
+		Cachia
+		Micallef
+		Moscati
+		Tabone
+	}
+	common_last_names={
+		Abela
+		Adami
+		Azzopardi
+		Boffa
+		Borg
+		Buhagiar
+		Cassar
+		Cumbo
+		Farrugia
+		Frendo
+		Gonzi
+		Howard
+		Mifsud
+		Mintoff
+		Mizzi
+		Muscat
+		Olivier
+		Puli
+		Pullicino
+		Strickland
+		Vella
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+
+pied_noir ={
+	color= rgb{ 164 193 223 }
+	religion = catholic
+	traits = { francophone beneluxian_culture_group european_heritage north_african african_settler }
+
+	obsessions = {
+		wine
+	}
+	male_common_first_names={
+		Adolf
+		Adolphe
+		Adriaan
+		Albert
+		Alexander
+		Alexandre
+		Alfons
+		Alphonse
+		Andries
+		Antoine
+		Auguste
+		Bonifaas
+		Boudewijn
+		Camille
+		Charles
+		Constant
+		David
+		Diederik
+		Desire
+		Edmond
+		Emmanuel
+		Etienne
+		Eugene
+		Ferdinand
+		Filip
+		Frans
+		Francois
+		Frederik
+		Felix
+		Guillaume
+		Gustave
+		Hendrik
+		Henri
+		Herman
+		Ignaas
+		Ignace
+		Jan
+		Jean
+		Jean-Baptiste
+		Jean_Francois
+		Jean-Jacques
+		Jean-Louis
+		Jochem
+		Joseph
+		Josse
+		Jozef
+		Jules
+		Karel
+		Laurens
+		Leopold
+		Louis
+		Lucien
+		Leon
+		Leonard
+		Manfred
+		Mathias
+		Nicolas
+		Nikolaas
+		Olivier
+		Paul
+		Philippe
+		Philippe-Joseph
+		Pierre
+		Pieter
+		Robert
+		Sylvain
+		Theodoor
+		Victor
+		Vincent
+		Werner
+		Willem
+	}
+	female_common_first_names = {
+		Clementine Charlotte Christine
+		Hendrika Henrieette
+		Josepha Josephine
+		Leocadie Louise
+		Marie Mathilde
+		Nathalie
+		Stefanie
+	}	
+	noble_last_names = {
+		van_Asseliers
+		van_Boisschot du_Bois_de_Vroylande
+		Coomans_de_Brachene de_Croeser Coopieters_-t_Wallant
+		De_Duerwaerder
+		Goddyn
+		Van_Huele
+		de_Jaegher
+		de_Kerchove_de_Denterghem
+		De_Munck_Moerman
+		van_der_Noot Van_Naemen
+		De_Smedt
+		de_Watervliet
+		van_Zuylen_van_Nyevelt
+		Quarles_van_Ufford
+		
+		Annez_de_Zillebroeck
+		Boucqueau_de_Villeraye
+		Desmanet_de_Biesme
+		Surlet_de_Chokier
+		Surmont_de_Volsberghe
+		de_Jonghe_d_Ardoye
+		de_Meer_de_Moorsel
+		de_Theux_de_Meylandt
+		Vilain_XIIII
+	}
+	common_last_names={
+		Andries
+		Barbanson
+		Barthelemy
+		Beaucarne
+		Beernaert
+		Berthels
+		Bethune
+		Beyts
+		Bischoff
+		Blomme
+		Bosmans
+		Buylaert
+		Buyse
+		Claes
+		Claus
+		Cogels
+		Cols
+		Coppens
+		Coppieters
+		Corten
+		Cruts
+		Dayeneux
+		Delberke
+		Delehaye
+		Delwarde
+		Destouvelles
+		Deswert
+		Devaux
+		Dhanis
+		Domis
+		Fransman
+		Gelders
+		Geudens
+		Goethals
+		Hennequin
+		Huysman_d_Annecroix
+		Jacobs
+		Janssens
+		Joos
+		Jottrand
+		Kockaert
+		Ledeganck
+		Lefebvre
+		Liedts
+		Marcq
+		Meeus
+		Morel
+		Moyersoen
+		Mulle
+		Nypels
+		Ooms
+		Osy
+		Peemans
+		Peeters
+		Petens
+		Rodenbach
+		Roels
+		Rosseuw
+		Rouppe
+		Rutten
+		Schollaert
+		Serruys
+		Simons
+		Speelman
+		Struye
+		Terlinden
+		Teuwens
+		Thienpont
+		Tilkens
+		Vandive
+		Verbeke
+		Vercruysse
+		Verduyn
+		Vergauwen
+		Verseyden_de_Varick
+		Verwilghen
+		Wallaert
+		Wannaar
+		Werbrouck
+		Wyvekens
+		d_Ansembourg
+		d_Arschot_Schoonhoven
+		d_Hanens
+		de_Brouckere
+		de_Celles
+		de_Coninck
+		de_Decker
+		de_Foere
+		de_Gaesebeke
+		de_Ghellink
+		de_Grez
+		de_Haerne
+		de_Jonghe
+		de_Langhe
+		de_Leeuw
+		de_Leuze
+		de_Man
+		de_Meester
+		de_Muelenaere
+		de_Merode
+		de_Pelichy
+		de_Renesse
+		de_Robiano
+		de_Rodes
+		de_Roo
+		de_Ryckere
+		de_Smet
+		de_Tiecken
+		de_Viron
+		de_Woelmont
+		du_Bois
+		van_Caloen
+		van_Casteel
+		van_Crombrugghe
+		van_Dievoet
+		van_Dorpe
+		van_Havre
+		van_Hoobrouck
+		van_Innis
+		van_Meenen
+		van_Neste
+		van_Snick
+		van_Tongerloo
+		van_Volden_de_Lombeke
+		van_Zeeland
+		van_de_Kerchove
+		van_de_Werve_de_Vorselaar
+		van_de_Weyer
+		van_den_Broucke
+		van_den_Hove
+		van_der_Belen
+		van_der_Bruggen
+		van_der_Burch
+		van_der_Eecken
+		van_der_Linden
+		van_der_Linden_d_Hooghvorst
+		van_der_Looy
+	}
+	male_regal_first_names = {
+		Albert
+		Boudewijn
+		Karel
+		Leopold
+		Filip
+	}
+	female_regal_first_names = {
+		Charlotte Clementine
+		Elisabeth
+		Louise
+		Marie Maria_Hendrika Mathilde
+		Stefanie
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
 }
