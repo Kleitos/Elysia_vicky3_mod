@@ -62,7 +62,7 @@
 		}
 	}
 	s:STATE_CORSICA = {
-		region_state:LMV = {
+		region_state:FRA = {
 			create_pop = {
 				culture = corsican
 				size = 190540

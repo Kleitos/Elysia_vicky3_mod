@@ -696,7 +696,7 @@
 		}
 	}
 	s:STATE_TRIPOLI = {
-		region_state:TRI = {
+		region_state:TUN = {
 			create_pop = {
 				culture = maghrebi
 				size = 169628
@@ -721,7 +721,7 @@
 		}
 	}
 	s:STATE_LIBYA = {
-		region_state:TRI = {
+		region_state:TUN = {
 			create_pop = {
 				culture = bedouin
 				size = 171604
@@ -746,7 +746,7 @@
 		}
 	}
 	s:STATE_LIBYAN_DESERT = {
-		region_state:TRI = {
+		region_state:TUN = {
 			create_pop = {
 				culture = bedouin
 				size = 30000
