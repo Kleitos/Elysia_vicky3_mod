@@ -1,0 +1,345 @@
+﻿je_conquest_of_tunisia = {
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		owns_entire_state_region = STATE_TUNISIA
+		owns_entire_state_region = STATE_TRIPOLI
+		owns_entire_state_region = STATE_LIBYA
+		owns_entire_state_region = STATE_LIBYAN_DESERT
+	}
+
+	on_complete = {
+		trigger_event = { id = french_north_africa.1 days = 5 }
+	}
+	
+}
+
+je_incursion_in_tunisia = {
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+ 		is_at_war = no
+		ROOT = {
+			army_size > { 
+    		value =  c:TUN.army_size
+    		multiply = 1
+			}
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = french_north_africa.3 days = 5 }
+	}
+	
+}
+
+je_conquest_of_morocco = {
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		owns_entire_state_region = STATE_MARRAKECH
+		owns_entire_state_region = STATE_FEZ
+	}
+
+	on_complete = {
+		trigger_event = { id = french_north_africa.2 days = 5 }
+	}
+	
+}
+
+je_incursion_in_morocco = {
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+ 		is_at_war = no
+		ROOT = {
+			army_size > { 
+    		value =  c:MOR.army_size
+    		multiply = 1
+			}
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = french_north_africa.4 days = 5 }
+	}
+	
+}
+
+je_FRA_control_south = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+
+	current_value = {
+		value = var:control_south_france
+	}
+
+	goal_add_value = {
+		add = 5
+	}
+
+	progressbar = yes
+
+	weight = 100
+	should_be_pinned_by_default = yes
+
+	complete = {
+		custom_tooltip = {
+			text = keep_control_south_tt
+			var:control_south_france = 4
+		}
+		custom_tooltip = {
+			text = occ_happy_tt
+			has_variable = south_colonization_happy
+			has_variable = south_industrialisation_happy
+			has_variable = south_railway_happy
+			has_variable = south_culture_happy
+			has_variable = south_protest_happened
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = ely_france_south.6 days = 5 }
+	}
+
+	fail = {
+		custom_tooltip = {
+			text = loose_control_south_tt
+			var:control_south_france <= 3
+			has_variable = south_protest_happened
+		}
+	}
+
+	on_fail = {
+		trigger_event = { id = ely_france_south.7 days = 5 }
+	}
+	
+}
+
+je_develop_south_FRA = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		any_scope_state = {
+			state_region = s:STATE_SAVOY
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 2
+			}
+		}
+		any_scope_state = {
+			state_region = s:STATE_LANGUEDOC
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 5
+			}
+		}
+		any_scope_state = {
+			state_region = s:STATE_GUYENNE
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 3
+			}
+		}
+		any_scope_state = {
+			state_region = s:STATE_AQUITAINE
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 3
+			}
+		}
+		any_scope_state = {
+			state_region = s:STATE_EAST_SWITZERLAND
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 3
+			}
+		}
+		any_scope_state = {
+			state_region = s:STATE_WEST_SWITZERLAND
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 5
+			}
+		}
+		any_scope_state = {
+			state_region = s:STATE_PROVENCE
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 7
+			}
+		}
+		any_scope_state = {
+			state_region = s:STATE_AUVERGNE_LIMOUSIN
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 7
+			}
+		}
+		any_scope_state = {
+			state_region = s:STATE_RHONE
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 10
+			}
+		}
+	}
+
+	on_complete = {
+		custom_tooltip = {
+			text = occ_happy_industry_tt
+			change_variable = {
+				name = control_south_france
+				add = 1
+			}
+			set_variable = {
+				name = south_industrialisation_happy
+			}
+		}
+	}
+
+	weight = 10
+
+	should_be_pinned_by_default = yes
+
+	timeout = 5475
+
+	on_timeout = {
+		custom_tooltip = {
+			text = occ_angry_industry_tt
+			change_variable = {
+				name = control_south_france
+				add = -1
+			}
+			set_variable = {
+				name = south_industrialisation_angry
+			}
+		}
+	}
+}	
+
+je_crush_secession = {
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		OR = {
+			NOT = { exists = c:OCC }
+			c:OCC ?= {
+				is_country_alive = no
+			}
+		}
+		OR = {
+			NOT = { exists = c:SAV }
+			c:SAV ?= {
+				is_country_alive = no
+			}
+		}
+		OR = {
+			NOT = { exists = c:BRI }
+			c:BRI ?= {
+				is_country_alive = no
+			}
+		}
+		owns_entire_state_region = STATE_BRITTANY
+		owns_entire_state_region = STATE_SAVOY
+		owns_entire_state_region = STATE_EAST_SWITZERLAND
+		owns_entire_state_region = STATE_WEST_SWITZERLAND
+		owns_entire_state_region = STATE_PROVENCE
+		owns_entire_state_region = STATE_LANGUEDOC
+		owns_entire_state_region = STATE_RHONE
+		owns_entire_state_region = STATE_GUYENNE
+		owns_entire_state_region = STATE_AUVERGNE_LIMOUSIN
+		owns_entire_state_region = STATE_AQUITAINE
+	}
+
+	on_complete = {
+		trigger_event = { id = france_post_civil_war.1 days = 5 }
+	}
+	
+}
+
+je_survive_occ = {
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		has_truce_with = c:FRA
+	}
+
+	on_complete = {
+		trigger_event = { id = france_post_civil_war.2 days = 5 }
+	}
+	
+}
+
+je_cultural_shift_frankish = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		has_law = law_type:law_compulsory_primary_school
+		OR = {
+			has_law = law_type:law_religious_schools
+			has_law = law_type:law_private_schools
+			has_law = law_type:law_public_schools
+		}
+		institution_investment_level = {
+			institution = institution_schools
+			value >= 3
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = frankish_culture.1 }
+	}
+
+}
+
+je_reunite_dutch_diaspora = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		country_or_subject_owns_entire_state_region = STATE_ZULULAND
+		country_or_subject_owns_entire_state_region = STATE_VRYSTAAT
+		country_or_subject_owns_entire_state_region = STATE_TRANSVAAL
+		country_or_subject_owns_entire_state_region = STATE_CAPE_COLONY
+		country_or_subject_owns_entire_state_region = STATE_NORTHERN_CAPE
+		country_or_subject_owns_entire_state_region = STATE_TASMANIA
+		country_or_subject_owns_entire_state_region = STATE_ALGIERS
+		country_or_subject_owns_entire_state_region = STATE_ORAN
+		country_or_subject_owns_entire_state_region = STATE_CONSTANTINE
+		country_or_subject_owns_entire_state_region = STATE_EAST_SAHARA
+		country_or_subject_owns_entire_state_region = STATE_SAHARA
+		country_or_subject_owns_entire_state_region = STATE_LIBYA
+		country_or_subject_owns_entire_state_region = STATE_INNER_MOROCCO
+		country_or_subject_owns_entire_state_region = STATE_FEZ
+		country_or_subject_owns_entire_state_region = STATE_AL_RIF
+		country_or_subject_owns_entire_state_region = STATE_MARRAKECH
+		country_or_subject_owns_entire_state_region = STATE_TRIPOLI
+		country_or_subject_owns_entire_state_region = STATE_WEST_SAHARA
+		country_or_subject_owns_entire_state_region = STATE_LIBYAN_DESERT
+		country_or_subject_owns_entire_state_region = STATE_MATRUH
+	}
+
+	on_complete = {
+		trigger_event = { id = frankish_empire.2 days = 5 }
+	}
+
+}

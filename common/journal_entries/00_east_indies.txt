@@ -8,7 +8,7 @@
 			is_goal_complete = yes
 		}
 		calc_true_if = {
-			amount >= 20
+			amount >= 15
 			country_or_subject_owns_entire_state_region = STATE_BURMA
 			country_or_subject_owns_entire_state_region = STATE_KACHIN
 			country_or_subject_owns_entire_state_region = STATE_SHAN_STATES

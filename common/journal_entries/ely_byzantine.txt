@@ -144,6 +144,10 @@ je_byzantine_dominance = {
 		NOT = { has_truce_with = c:EGY }
 		is_subject = no
 		owns_entire_state_region = STATE_ADANA
+		c:EGY = {
+			is_subject = no
+			owns_entire_state_region = STATE_SINAI
+		}
 	}
 
 	on_complete = {

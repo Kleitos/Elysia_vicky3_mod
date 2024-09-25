@@ -1,0 +1,38 @@
+﻿je_unite_GER = {
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	group = je_group_internal_affairs
+
+	on_monthly_pulse = {
+		random_events = {
+			70 = 0
+			10 = ely_germany.1
+			10 = ely_germany.2
+			10 = ely_germany.3
+		}
+	}
+
+	complete = {
+		owns_entire_state_region = STATE_POMERANIA
+		owns_entire_state_region = STATE_BADEN
+		owns_entire_state_region = STATE_BAVARIA
+		owns_entire_state_region = STATE_FRANCONIA
+		owns_entire_state_region = STATE_BRUNSWICK
+		owns_entire_state_region = STATE_ELBE
+		owns_entire_state_region = STATE_WESTPHALIA
+		owns_entire_state_region = STATE_ANHALT
+		owns_entire_state_region = STATE_SCHLESWIG_HOLSTEIN
+		owns_entire_state_region = STATE_HANNOVER
+		owns_entire_state_region = STATE_SAXONY
+		owns_entire_state_region = STATE_HESSE
+		owns_entire_state_region = STATE_MECKLENBURG
+		owns_entire_state_region = STATE_EAST_PRUSSIA
+		owns_entire_state_region = STATE_WEST_PRUSSIA
+		owns_entire_state_region = STATE_WURTTEMBERG
+		owns_entire_state_region = STATE_BRANDENBURG
+	}
+
+	on_complete = {
+		trigger_event = ely_germany.4
+	}
+}

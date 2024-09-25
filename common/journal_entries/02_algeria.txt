@@ -119,15 +119,6 @@ je_the_algerian_departements = {
 					}
 				}
 			}
-			custom_tooltip = {
-				text = je_the_algerian_departements_tt_2
-				cu:maghrebi = {
-					NOT = { culture_is_discriminated_in = ROOT }
-				}
-				cu:berber = {
-					NOT = { culture_is_discriminated_in = ROOT }
-				}
-			}
 		}
 	}
 
