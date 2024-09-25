@@ -44,16 +44,6 @@ ITA = {
 			country_has_primary_culture = cu:north_italian
 			country_has_primary_culture = cu:south_italian
 		}
-		any_country = {
-			filter = {
-				OR = {
-					country_has_primary_culture = cu:north_italian
-					country_has_primary_culture = cu:south_italian				
-				}
-			}
-			has_technology_researched = nationalism	
-			percent = 1
-		}
 	}
 }
 
