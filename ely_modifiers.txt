@@ -1,0 +1,182 @@
+﻿empress_eirene_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	character_popularity_add = 50
+}
+
+modifier_elysian_opportunity = {
+	icon = gfx/interface/icons/timed_modifier_icons/establish_colony_positive.dds
+	state_accepted_birth_rate_mult = 0.1
+	state_colony_growth_speed_mult = 0.5
+}
+
+modifier_wife_trade = {
+	icon = gfx/interface/icons/timed_modifier_icons/slavery_negative.dds
+	state_accepted_birth_rate_mult = 0.05
+	country_infamy_decay_mult = -0.2
+	state_assimilation_mult = 1
+	state_conversion_mult = 1
+	country_prestige_mult = -0.25
+}
+
+modifier_elysian_family = {
+	icon = gfx/interface/icons/timed_modifier_icons/Possible/population_loyalist.dds
+	state_assimilation_mult = 2
+	state_conversion_mult = 2
+}
+
+modifier_through_river_styx = {
+	icon = gfx/interface/icons/timed_modifier_icons/autocracy_neutral.dds
+	state_birth_rate_mult = -0.05
+	state_assimilation_mult = 0.25
+	state_conversion_mult = 0.25
+}
+
+modifier_elysian_fire_corp = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
+	unit_kill_rate_add = 0.25
+	unit_morale_damage_mult = 0.25
+	country_military_goods_cost_mult = 0.1
+	unit_supply_consumption_mult = 0.05
+}
+
+modifier_modern_fire_corp = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	unit_kill_rate_add = 0.33
+	unit_morale_damage_mult = 0.33
+}
+
+modifier_oigos_marshes_drain = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	state_construction_mult = 0.15
+	state_infrastructure_mult = 0.15
+}
+
+modifier_modern_pathway = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	state_construction_mult = 0.25
+	state_infrastructure_mult = 0.25
+	state_market_access_price_impact = 0.1
+}
+
+modifier_elysian_highway_old = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+	state_construction_mult = 0.05
+	state_infrastructure_mult = 0.05
+	state_tax_capacity_mult = -0.25
+	building_railway_throughput_add = 0.05
+	state_market_access_price_impact = 0.05
+}
+
+modifier_elysian_highway_new = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	state_construction_mult = 0.2
+	state_infrastructure_mult = 0.2
+	building_railway_throughput_add = 0.25
+	state_market_access_price_impact = 0.1
+}
+
+modifier_greenland_infrastructure = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	building_group_bg_mining_throughput_add = 1
+	building_group_bg_ranching_throughput_add = 1
+	state_construction_mult = 1
+	state_infrastructure_mult = 1
+	state_migration_pull_mult = 0.75
+	building_port_throughput_add = 0.25
+	state_building_port_max_level_add = 2
+}
+
+modifier_elysian_games = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	country_bureaucracy_mult = -0.2
+	country_prestige_add = 100
+	state_assimilation_mult = 1
+	state_conversion_mult = 1
+	country_influence_mult = 1
+}
+
+modifier_elysian_blood = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+	state_migration_pull_mult = -0.25
+	state_assimilation_mult = 1
+	state_conversion_mult = 1
+}
+
+modifier_elysian_schooling = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_book_positive.dds
+	state_education_access_add = 0.33
+	country_society_weekly_innovation_mult = 0.33
+	state_assimilation_mult = 1
+	state_conversion_mult = 1
+}
+
+modifier_elysian_bureaucracy = {
+	icon = gfx/interface/icons/timed_modifier_icons/bureaucracy_positive.dds
+	country_bureaucracy_mult = 0.2
+	country_authority_mult = 0.05
+	state_assimilation_mult = 1
+	state_conversion_mult = 1	
+}
+
+modifier_elysian_production = {
+	icon = gfx/interface/icons/timed_modifier_icons/landed_voting_positive.dds
+	building_throughput_add = 0.05
+	country_max_companies_add = 3
+	country_influence_mult = 0.2
+	state_political_strength_from_welfare_mult = -0.25
+	state_welfare_payments_add = -0.2
+}
+
+elysian_stab_in_the_back = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	interest_group_approval_add = 2
+	interest_group_pop_attraction_mult = 0.25
+	state_radicals_from_sol_change_mult = 1
+	state_radicals_from_discrimination_mult = 1
+}
+
+pagan_world_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/lepsius_globe_positive_modifier.dds
+	state_assimilation_mult = 1
+	state_conversion_mult = 1
+}
+
+ely_big_money = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 57700
+}
+
+ely_verybig_money = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 100000
+}
+
+modifier_elysian_navy_old = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+	interest_group_ig_armed_forces_pol_str_mult = 0.05
+	unit_navy_defense_mult = 0.1
+	unit_navy_offense_mult = 0.25
+	country_military_goods_cost_mult = 0.1
+	unit_supply_consumption_mult = 0.05
+}
+
+modifier_elysian_navy_new = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	interest_group_ig_armed_forces_pol_str_mult = 0.05
+	unit_navy_defense_mult = 0.33
+	unit_navy_offense_mult = 0.33
+}
+
+modifier_elsysian_dockyard = {
+	icon = gfx/interface/icons/timed_modifier_icons/colonial_exploitation_positive.dds
+	state_building_naval_base_max_level_add = 5
+	building_naval_base_throughput_add = 0.25
+	building_shipyards_throughput_add = 0.25
+	building_group_bg_fishing_throughput_add = 0.25
+	building_group_bg_whaling_throughput_add = 0.25
+	building_port_throughput_add = 0.25
+	state_building_port_max_level_add = 2
+	state_construction_mult = 0.05
+	state_infrastructure_mult = 0.05
+	state_market_access_price_impact = 0.1
+}
