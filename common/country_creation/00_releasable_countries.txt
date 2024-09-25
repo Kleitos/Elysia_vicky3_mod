@@ -2376,14 +2376,11 @@ KAU = {
 #	ai_will_do = { always = no }
 #}
 
-#SAV = {
-#	states = {
-#		STATE_SAVOY
-#		STATE_RHONE
-#	}
-#	
-#	ai_will_do = { always = no }
-#}
+SAV = {
+	use_culture_states = yes
+	
+	ai_will_do = { always = no }
+}
 
 #RHE = {
 #	states = { 

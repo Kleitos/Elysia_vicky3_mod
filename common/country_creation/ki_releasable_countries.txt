@@ -356,11 +356,7 @@ BRB = { #
 #}
 
 ATV = { # 
-	states = {
-		STATE_ALGIERS
-		STATE_ORAN
-		STATE_CONSTANTINE
-	}
+	use_culture_states = yes
 	
 	ai_will_do = { always = no }
 }
