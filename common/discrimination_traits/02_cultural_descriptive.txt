@@ -33,6 +33,10 @@ italophone = {
 	heritage = yes
 }
 
+latin_group = {
+	heritage = yes
+}
+
 slavic = {
 }
 
@@ -136,6 +140,8 @@ kanuri_group = {}
 songhai_group = {}
 
 khoisan_group = {}
+
+north_african = {}
 
 nordic_group = {
 	heritage = yes
