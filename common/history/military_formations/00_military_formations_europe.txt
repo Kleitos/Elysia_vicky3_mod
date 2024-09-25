@@ -404,17 +404,6 @@
 	}
 
 	c:FRA ?= {
-		create_military_formation = {
-			type = fleet
-			hq_region = sr:region_rhine
-			name = Marine_Royale
-
-			combat_unit = { # Nothing the size of a frigate
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_FLANDERS
-				count = 1
-			}
-		}
 		
 		activate_production_method = {
 			building_type = building_naval_base
@@ -437,12 +426,6 @@
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_RHONE
-				count = 5
-			}
-
-			combat_unit = {
 				type = unit_type:combat_unit_type_lancers
 				state_region = s:STATE_ILE_DE_FRANCE
 				count = 5
@@ -459,6 +442,12 @@
 			type = army
 			hq_region = sr:region_occitania
 			name = 2e_Corps_dArme
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_RHONE
+				count = 5
+			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
@@ -507,24 +496,6 @@
 				type = unit_type:combat_unit_type_skirmish_infantry
 				state_region = s:STATE_ALSACE_LORRAINE
 				count = 10
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_BURGUNDY
-				count = 5
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_CHAMPAGNE
-				count = 5
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_FRANCHE_COMTE
-				count = 5
 			}
 			save_scope_as = thirdcorpfra
 		}
@@ -784,6 +755,86 @@
 
 		scope:colborne_gen = {
 			transfer_to_formation = scope:home_army_army
+		}
+
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_senegal
+			name = Army_of_the_Mediterranean
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_EAST_ANGLIA
+				count = 5
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_YORKSHIRE
+				count = 10
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_YORKSHIRE
+				count = 1
+			}
+			save_scope_as = army_med_army
+		}
+
+		create_character = {
+			template = GBR_matthew_whitworth_aylmer
+			save_scope_as = aylmer_gen
+		}
+
+		scope:aylmer_gen = {
+			transfer_to_formation = scope:army_med_army
+		}
+
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_la_plata
+			name = Army_of_the_West_Indies
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_WALES
+				count = 10
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_LANCASHIRE
+				count = 9
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_YORKSHIRE
+				count = 3
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_ULSTER
+				count = 6
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_ULSTER
+				count = 1
+			}
+			save_scope_as = west_indies_army
+		}
+
+		create_character = {
+			template = GBR_henry_hardinge
+			save_scope_as = hardinge_gen
+		}
+
+		scope:hardinge_gen = {
+			transfer_to_formation = scope:west_indies_army
 		}
 		
 		create_military_formation = {
