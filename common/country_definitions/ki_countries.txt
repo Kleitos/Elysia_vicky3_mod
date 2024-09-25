@@ -742,7 +742,7 @@ ATV = { #Altava
 	
 	tier = kingdom
 	
-	cultures = { french }
+	cultures = { pied_noir }
 	religion = catholic
 	capital = STATE_ALGIERS
 }
