@@ -33,6 +33,6 @@
 	}
 
 	on_complete = {
-		trigger_event = ely_germany.4
+			trigger_event = { id = ely_germany.4 days = 5 }
 	}
 }
