@@ -470,3 +470,11 @@ friesland_selling = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
 	country_tax_income_add = 8000
 }
+
+commited_to_war = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	state_radicals_from_discrimination_mult = -100
+	state_radicals_from_sol_change_mult = -100
+	state_turmoil_effects_mult = -100
+	political_movement_radicalism_mult = -100
+}
