@@ -219,7 +219,7 @@ SAS = { # South Australia
 	tier = principality
 	
 	capital = STATE_SOUTH_AUSTRALIA
-	cultures = { australian }
+	cultures = { australiska }
 }
 
 UNT = { # United Tribes of New Zealand
