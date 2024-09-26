@@ -189,6 +189,10 @@ anglo_iberian_war.2 = {
 			trigger_event = { id = anglo_iberian_war.4 }
 		}	
 		c:GBR = {
+			add_modifier = {
+				name = commited_to_war
+				months = normal_modifier_time
+			}
 			trigger_event = { id = anglo_iberian_war.3 }
 			add_journal_entry = { type = je_danish_war_GBR }
 			create_diplomatic_pact = {
@@ -241,6 +245,10 @@ anglo_iberian_war.2 = {
 			}				
 		}
 		c:DEN = {
+			add_modifier = {
+				name = commited_to_war
+				months = normal_modifier_time
+			}
 			trigger_event = { id = anglo_iberian_war.3 }
 			add_journal_entry = { type = je_danish_war_DEN }
 			change_relations = {
@@ -289,6 +297,10 @@ anglo_iberian_war.2 = {
 			}				
 		}
 		c:PRU = {
+			add_modifier = {
+				name = commited_to_war
+				months = normal_modifier_time
+			}
 			trigger_event = { id = anglo_iberian_war.3 }
 			add_journal_entry = { type = je_danish_war_PRU }
 			change_relations = {
@@ -329,6 +341,10 @@ anglo_iberian_war.2 = {
 			}				
 		}
 		c:SWE = {
+			add_modifier = {
+				name = commited_to_war
+				months = normal_modifier_time
+			}
 			trigger_event = { id = anglo_iberian_war.3 }
 			add_journal_entry = { type = je_danish_war_SWE }
 			change_relations = {
@@ -369,6 +385,10 @@ anglo_iberian_war.2 = {
 			}					
 		}
 		c:SPA = {
+			add_modifier = {
+				name = commited_to_war
+				months = normal_modifier_time
+			}
 			trigger_event = { id = anglo_iberian_war.3 }
 			add_journal_entry = { type = je_danish_war_SPA }
 			create_diplomatic_pact = {
@@ -405,6 +425,10 @@ anglo_iberian_war.2 = {
 			}			
 		}
 		c:BAV = {
+			add_modifier = {
+				name = commited_to_war
+				months = normal_modifier_time
+			}
 			trigger_event = { id = anglo_iberian_war.3 }
 			add_journal_entry = { type = je_danish_war_BAV }
 			create_diplomatic_pact = {
@@ -453,6 +477,10 @@ anglo_iberian_war.2 = {
 			}			
 		}
 		c:BOH = {
+			add_modifier = {
+				name = commited_to_war
+				months = normal_modifier_time
+			}
 			trigger_event = { id = anglo_iberian_war.3 }
 			add_journal_entry = { type = je_danish_war_BOH }
 			create_diplomatic_pact = {
@@ -533,51 +561,113 @@ anglo_iberian_war.2 = {
 			remove_homeland = cu:north_german
 		}
 		c:HAN = {
+			add_modifier = {
+				name = commited_to_war
+				months = normal_modifier_time
+			}
 			trigger_event = { id = anglo_iberian_war.3 }
 			add_journal_entry = { type = je_danish_war_HAN }
 		}		
 		c:BIC = {
+			add_modifier = {
+				name = commited_to_war
+				months = normal_modifier_time
+			}
 			trigger_event = { id = anglo_iberian_war.3 }
 			trigger_event = { id = anglo_iberian_war.5 days = 90 }
 			add_journal_entry = { type = je_danish_war_BIC }
 		}		
 		c:SEI = {
+			add_modifier = {
+				name = commited_to_war
+				months = normal_modifier_time
+			}
 			trigger_event = { id = anglo_iberian_war.3 }
 			add_journal_entry = { type = je_danish_war_SEI }
 		}		
 		c:SIL = {
+			add_modifier = {
+				name = commited_to_war
+				months = normal_modifier_time
+			}
 			trigger_event = { id = anglo_iberian_war.3 }
 			add_journal_entry = { type = je_danish_war_SIL }
 		}		
 		c:LIB = {
+			add_modifier = {
+				name = commited_to_war
+				months = normal_modifier_time
+			}
 			trigger_event = { id = anglo_iberian_war.3 }
 			add_journal_entry = { type = je_danish_war_LIB }
 		}		
 		c:NSW = {
+			add_modifier = {
+				name = commited_to_war
+				months = normal_modifier_time
+			}
 			trigger_event = { id = anglo_iberian_war.3 }
 			add_journal_entry = { type = je_danish_war_NSW }
 		}		
 		c:SAS = {
+			add_modifier = {
+				name = commited_to_war
+				months = normal_modifier_time
+			}
 			trigger_event = { id = anglo_iberian_war.3 }
 			add_journal_entry = { type = je_danish_war_SAS }
 		}	
 		c:WAS = {
+			add_modifier = {
+				name = commited_to_war
+				months = normal_modifier_time
+			}
 			trigger_event = { id = anglo_iberian_war.3 }
 			add_journal_entry = { type = je_danish_war_WAS }
 		}	
+		c:UBD = {
+			add_modifier = {
+				name = commited_to_war
+				months = normal_modifier_time
+			}
+			trigger_event = { id = anglo_iberian_war.3 }
+		}	
 		c:BRZ = {
+			add_modifier = {
+				name = commited_to_war
+				months = normal_modifier_time
+			}
 			trigger_event = { id = anglo_iberian_war.3 }
 			add_journal_entry = { type = je_danish_war_BRZ }
 		}	
 		c:WIN = {
+			add_modifier = {
+				name = commited_to_war
+				months = normal_modifier_time
+			}
 			trigger_event = { id = anglo_iberian_war.3 }
 			add_journal_entry = { type = je_danish_war_WIN }
 		}	
 		c:ARG = {
+			add_modifier = {
+				name = commited_to_war
+				months = normal_modifier_time
+			}
 			trigger_event = { id = anglo_iberian_war.3 }
 			add_journal_entry = { type = je_danish_war_ARG }
 		}	
 		c:PHI = {
+			add_modifier = {
+				name = commited_to_war
+				months = normal_modifier_time
+			}
+			trigger_event = { id = anglo_iberian_war.3 }
+		}	
+		c:DEI = {
+			add_modifier = {
+				name = commited_to_war
+				months = normal_modifier_time
+			}
 			trigger_event = { id = anglo_iberian_war.3 }
 		}	
 		c:KAU = {
@@ -616,6 +706,16 @@ anglo_iberian_war.2 = {
 				type = conquer_state
 				target_state = s:STATE_ZANZIBAR.region_state:SPA
 				target_country = c:SPA
+			}
+			add_war_goal = {
+				holder = c:GBR
+				type = transfer_subject
+				target_country = c:PHI
+			}
+			add_war_goal = {
+				holder = c:PRU
+				type = transfer_subject
+				target_country = c:UBD
 			}
 			add_war_goal = {
 				holder = c:GBR
@@ -886,6 +986,9 @@ anglo_iberian_war.2 = {
 			}
 			add_target_backers = {
 				country = c:WIN
+			}
+			add_target_backers = {
+				country = c:DEI
 			}
 		}
 	}

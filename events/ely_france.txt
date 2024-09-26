@@ -656,9 +656,9 @@ ely_france_south.6 = {
 ely_france_south.7 = {
 	type = country_event
 	placement = ROOT
-	title = ely_france_south.6.t
-	desc = ely_france_south.6.d
-	flavor = ely_france_south.6.f
+	title = ely_france_south.7.t
+	desc = ely_france_south.7.d
+	flavor = ely_france_south.7.f
 
 	duration = 3
 
@@ -687,7 +687,7 @@ ely_france_south.7 = {
 	}
 
 	option = {
-		name = ely_france_south.6.a
+		name = ely_france_south.7.a
 		default_option = yes
 		if = {
 			limit = {
@@ -737,6 +737,18 @@ france_civil_war.1 = {
 		}
 		s:STATE_GELRE = {
 			add_claim = c:FRA
+		}
+		c:NET = {	
+			every_scope_state = {
+				limit = {
+					owner = c:NET
+				}
+				set_state_type = incorporated
+			}
+			add_modifier = {
+				name = commited_to_war
+				months = normal_modifier_time
+			}
 		}
 		if = {
 			limit = { exists = s:STATE_FRIESLAND.region_state:GER }
@@ -903,6 +915,10 @@ france_civil_war.2 = {
 			add_claim = c:FRA
 		}
 		c:OCC = {
+			add_modifier = {
+				name = commited_to_war
+				months = normal_modifier_time
+			}
 			activate_law = law_type:law_presidential_republic
 			activate_law = law_type:law_wealth_voting
 			activate_law = law_type:law_freedom_of_conscience
@@ -920,8 +936,18 @@ france_civil_war.2 = {
 			activate_law = law_type:law_dedicated_police
 			activate_law = law_type:law_professional_army
 			activate_law = law_type:law_tenant_farmers
+			every_scope_state = {
+				limit = {
+					owner = c:OCC
+				}
+				set_state_type = incorporated
+			}
 		}
 		c:BRI = {
+			add_modifier = {
+				name = commited_to_war
+				months = normal_modifier_time
+			}
 			activate_law = law_type:law_presidential_republic
 			activate_law = law_type:law_wealth_voting
 			activate_law = law_type:law_freedom_of_conscience
@@ -940,7 +966,11 @@ france_civil_war.2 = {
 			activate_law = law_type:law_professional_army
 			activate_law = law_type:law_tenant_farmers
 		}
-		c:SAV = {		
+		c:SAV = {
+			add_modifier = {
+				name = commited_to_war
+				months = normal_modifier_time
+			}		
 			activate_law = law_type:law_parliamentary_republic
 			activate_law = law_type:law_freedom_of_conscience
 			activate_law = law_type:law_census_voting
@@ -953,6 +983,12 @@ france_civil_war.2 = {
 			activate_law = law_type:law_religious_schools
 			activate_law = law_type:law_national_militia
 			activate_law = law_type:law_homesteading
+			every_scope_state = {
+				limit = {
+					owner = c:SAV
+				}
+				set_state_type = incorporated
+			}
 		}
 		c:FRA = {
 			add_journal_entry = { type = je_crush_secession }
@@ -1211,108 +1247,108 @@ france_civil_war.4 = {
 				target_state = s:STATE_MALTA.region_state:ITA
 				target_country = c:ITA
 			}
-				add_war_goal = {
-					holder = c:ITA
-					type = conquer_state
-					target_state = s:STATE_TUNISIA.region_state:FRA
-					target_country = c:FRA
-				}
-				add_war_goal = {
-					holder = c:ITA
-					type = conquer_state
-					target_state = s:STATE_TRIPOLI.region_state:FRA
-					target_country = c:FRA
-				}
-				add_war_goal = {
-					holder = c:ITA
-					type = conquer_state
-					target_state = s:STATE_LIBYAN_DESERT.region_state:FRA
-					target_country = c:FRA
-				}
-				add_war_goal = {
-					holder = c:ITA
-					type = conquer_state
-					target_state = s:STATE_TUNISIA.region_state:FRA
-					target_country = c:FRA
-				}
-				add_war_goal = {
-					holder = c:ITA
-					type = conquer_state
-					target_state = s:STATE_LIBYA.region_state:FRA
-					target_country = c:FRA
-				}
-				add_war_goal = {
-					holder = c:SPA
-					type = conquer_state
-					target_state = s:STATE_WEST_SAHARA.region_state:FRA
-					target_country = c:FRA
-				}
-				add_war_goal = {
-					holder = c:SPA
-					type = conquer_state
-					target_state = s:STATE_MARRAKECH.region_state:FRA
-					target_country = c:FRA
-				}
-				add_war_goal = {
-					holder = c:SPA
-					type = conquer_state
-					target_state = s:STATE_FEZ.region_state:FRA
-					target_country = c:FRA
-				}
-				add_war_goal = {
-					holder = c:SPA
+			add_war_goal = {
+				holder = c:ITA
+				type = conquer_state
+				target_state = s:STATE_TUNISIA.region_state:FRA
+				target_country = c:FRA
+			}
+			add_war_goal = {
+				holder = c:ITA
+				type = conquer_state
+				target_state = s:STATE_TRIPOLI.region_state:FRA
+				target_country = c:FRA
+			}
+			add_war_goal = {
+				holder = c:ITA
+				type = conquer_state
+				target_state = s:STATE_LIBYAN_DESERT.region_state:FRA
+				target_country = c:FRA
+			}
+			add_war_goal = {
+				holder = c:ITA
+				type = conquer_state
+				target_state = s:STATE_TUNISIA.region_state:FRA
+				target_country = c:FRA
+			}
+			add_war_goal = {
+				holder = c:ITA
+				type = conquer_state
+				target_state = s:STATE_LIBYA.region_state:FRA
+				target_country = c:FRA
+			}
+			add_war_goal = {
+				holder = c:SPA
+				type = conquer_state
+				target_state = s:STATE_WEST_SAHARA.region_state:FRA
+				target_country = c:FRA
+			}
+			add_war_goal = {
+				holder = c:SPA
+				type = conquer_state
+				target_state = s:STATE_MARRAKECH.region_state:FRA
+				target_country = c:FRA
+			}
+			add_war_goal = {
+				holder = c:SPA
+				type = conquer_state
+				target_state = s:STATE_FEZ.region_state:FRA
+				target_country = c:FRA
+			}
+			add_war_goal = {
+				holder = c:SPA
 					type = conquer_state
 					target_state = s:STATE_AL_RIF.region_state:FRA
 					target_country = c:FRA
-				}
-				add_war_goal = {
-					holder = c:SPA
-					type = conquer_state
-					target_state = s:STATE_INNER_MOROCCO.region_state:FRA
-					target_country = c:FRA
-				}
-				add_war_goal = {
-					holder = c:OCC
-					type = conquer_state
-					target_state = s:STATE_CONSTANTINE.region_state:FRA
-					target_country = c:FRA
-				}
-				add_war_goal = {
-					holder = c:OCC
-					type = conquer_state
-					target_state = s:STATE_ORAN.region_state:FRA
-					target_country = c:FRA
-				}
-				add_war_goal = {
-					holder = c:OCC
-					type = conquer_state
-					target_state = s:STATE_EAST_SAHARA.region_state:FRA
-					target_country = c:FRA
-				}
-				add_war_goal = {
-					holder = c:OCC
-					type = conquer_state
-					target_state = s:STATE_ALGIERS.region_state:FRA
-					target_country = c:FRA
-				}
-				add_war_goal = {
-					holder = c:OCC
-					type = conquer_state
-					target_state = s:STATE_SAHARA.region_state:FRA
-					target_country = c:FRA
-				}
-				add_war_goal = {
-					holder = c:GER
-					type = conquer_state
-					target_state = s:STATE_NORTH_ANGOLA.region_state:SPA
-					target_country = c:SPA
-				}
-				add_war_goal = {
-					holder = c:GER
-					type = conquer_state
-					target_state = s:STATE_SOUTH_ANGOLA.region_state:SPA
-					target_country = c:SPA
-				}
+			}
+			add_war_goal = {
+				holder = c:SPA
+				type = conquer_state
+				target_state = s:STATE_INNER_MOROCCO.region_state:FRA
+				target_country = c:FRA
+			}
+			add_war_goal = {
+				holder = c:OCC
+				type = conquer_state
+				target_state = s:STATE_CONSTANTINE.region_state:FRA
+				target_country = c:FRA
+			}
+			add_war_goal = {
+				holder = c:OCC
+				type = conquer_state
+				target_state = s:STATE_ORAN.region_state:FRA
+				target_country = c:FRA
+			}
+			add_war_goal = {
+				holder = c:OCC
+				type = conquer_state
+				target_state = s:STATE_EAST_SAHARA.region_state:FRA
+				target_country = c:FRA
+			}
+			add_war_goal = {
+				holder = c:OCC
+				type = conquer_state
+				target_state = s:STATE_ALGIERS.region_state:FRA
+				target_country = c:FRA
+			}
+			add_war_goal = {
+				holder = c:OCC
+				type = conquer_state
+				target_state = s:STATE_SAHARA.region_state:FRA
+				target_country = c:FRA
+			}
+			add_war_goal = {
+				holder = c:GER
+				type = conquer_state
+				target_state = s:STATE_NORTH_ANGOLA.region_state:SPA
+				target_country = c:SPA
+			}
+			add_war_goal = {
+				holder = c:GER
+				type = conquer_state
+				target_state = s:STATE_SOUTH_ANGOLA.region_state:SPA
+				target_country = c:SPA
+			}
 			add_initiator_backers = {
 				country = c:GER
 			}

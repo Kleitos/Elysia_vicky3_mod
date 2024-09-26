@@ -398,6 +398,22 @@ ely_china_sellout.1 = {
 			create_diplomatic_pact = {
 				country = c:TPG
 				type = foreign_investment_rights
+			}	
+			create_bidirectional_truce = {
+				country = c:CHI
+				months = 60
+			}	
+			create_bidirectional_truce = {
+				country = c:SHA
+				months = 60
+			}
+			create_bidirectional_truce = {
+				country = c:SHN
+				months = 60
+			}
+			create_bidirectional_truce = {
+				country = c:ZHI
+				months = 60
 			}		
 		}
 		c:DEN = {
@@ -412,7 +428,23 @@ ely_china_sellout.1 = {
 			create_diplomatic_pact = {
 				country = c:TPG
 				type = foreign_investment_rights
-			}					
+			}
+			create_bidirectional_truce = {
+				country = c:CHI
+				months = 60
+			}	
+			create_bidirectional_truce = {
+				country = c:SHA
+				months = 60
+			}
+			create_bidirectional_truce = {
+				country = c:SHN
+				months = 60
+			}	
+			create_bidirectional_truce = {
+				country = c:ZHI
+				months = 60
+			}						
 		}
 		c:SWE = {
 			change_relations = {
@@ -426,7 +458,23 @@ ely_china_sellout.1 = {
 			create_diplomatic_pact = {
 				country = c:TPG
 				type = foreign_investment_rights
-			}					
+			}	
+			create_bidirectional_truce = {
+				country = c:CHI
+				months = 60
+			}	
+			create_bidirectional_truce = {
+				country = c:SHA
+				months = 60
+			}
+			create_bidirectional_truce = {
+				country = c:SHN
+				months = 60
+			}	
+			create_bidirectional_truce = {
+				country = c:ZHI
+				months = 60
+			}				
 		}
 		c:SPA = {
 			change_relations = {
@@ -440,7 +488,23 @@ ely_china_sellout.1 = {
 			create_diplomatic_pact = {
 				country = c:TPG
 				type = foreign_investment_rights
-			}							
+			}		
+			create_bidirectional_truce = {
+				country = c:CHI
+				months = 60
+			}	
+			create_bidirectional_truce = {
+				country = c:SHA
+				months = 60
+			}
+			create_bidirectional_truce = {
+				country = c:SHN
+				months = 60
+			}				
+			create_bidirectional_truce = {
+				country = c:ZHI
+				months = 60
+			}			
 		}
 		c:FRA = {
 			change_relations = {
@@ -454,7 +518,23 @@ ely_china_sellout.1 = {
 			create_diplomatic_pact = {
 				country = c:TPG
 				type = foreign_investment_rights
-			}							
+			}
+			create_bidirectional_truce = {
+				country = c:CHI
+				months = 60
+			}	
+			create_bidirectional_truce = {
+				country = c:SHA
+				months = 60
+			}
+			create_bidirectional_truce = {
+				country = c:SHN
+				months = 60
+			}
+			create_bidirectional_truce = {
+				country = c:ZHI
+				months = 60
+			}									
 		}
 		c:RUS = {
 			change_relations = {
@@ -468,7 +548,23 @@ ely_china_sellout.1 = {
 			create_diplomatic_pact = {
 				country = c:TPG
 				type = foreign_investment_rights
-			}							
+			}	
+			create_bidirectional_truce = {
+				country = c:CHI
+				months = 60
+			}	
+			create_bidirectional_truce = {
+				country = c:SHA
+				months = 60
+			}
+			create_bidirectional_truce = {
+				country = c:SHN
+				months = 60
+			}		
+			create_bidirectional_truce = {
+				country = c:ZHI
+				months = 60
+			}						
 		}
 		c:BYZ = {
 			change_relations = {
@@ -482,6 +578,22 @@ ely_china_sellout.1 = {
 			create_diplomatic_pact = {
 				country = c:TPG
 				type = foreign_investment_rights
+			}
+			create_bidirectional_truce = {
+				country = c:CHI
+				months = 60
+			}	
+			create_bidirectional_truce = {
+				country = c:SHA
+				months = 60
+			}
+			create_bidirectional_truce = {
+				country = c:SHN
+				months = 60
+			}		
+			create_bidirectional_truce = {
+				country = c:ZHI
+				months = 60
 			}							
 		}
 		if = {
@@ -498,7 +610,23 @@ ely_china_sellout.1 = {
 				create_diplomatic_pact = {
 					country = c:TPG
 					type = foreign_investment_rights
-				}							
+				}	
+				create_bidirectional_truce = {
+					country = c:CHI
+					months = 60
+				}	
+				create_bidirectional_truce = {
+					country = c:SHA
+					months = 60
+				}
+				create_bidirectional_truce = {
+					country = c:SHN
+					months = 60
+				}		
+				create_bidirectional_truce = {
+					country = c:ZHI
+					months = 60
+				}						
 			}
 		}
 		if = {
@@ -515,6 +643,22 @@ ely_china_sellout.1 = {
 				create_diplomatic_pact = {
 					country = c:TPG
 					type = foreign_investment_rights
+				}
+				create_bidirectional_truce = {
+					country = c:CHI
+					months = 60
+				}	
+				create_bidirectional_truce = {
+					country = c:SHA
+					months = 60
+				}
+				create_bidirectional_truce = {
+					country = c:SHN
+					months = 60
+				}		
+				create_bidirectional_truce = {
+					country = c:ZHI
+					months = 60
 				}							
 			}
 		}
@@ -532,7 +676,23 @@ ely_china_sellout.1 = {
 				create_diplomatic_pact = {
 					country = c:TPG
 					type = foreign_investment_rights
-				}							
+				}	
+				create_bidirectional_truce = {
+					country = c:CHI
+					months = 60
+				}	
+				create_bidirectional_truce = {
+					country = c:SHA
+					months = 60
+				}
+				create_bidirectional_truce = {
+					country = c:SHN
+					months = 60
+				}		
+				create_bidirectional_truce = {
+					country = c:ZHI
+					months = 60
+				}						
 			}
 		}
 		if = {
@@ -549,7 +709,23 @@ ely_china_sellout.1 = {
 				create_diplomatic_pact = {
 					country = c:TPG
 					type = foreign_investment_rights
-				}							
+				}		
+				create_bidirectional_truce = {
+					country = c:CHI
+					months = 60
+				}	
+				create_bidirectional_truce = {
+					country = c:SHA
+					months = 60
+				}
+				create_bidirectional_truce = {
+					country = c:SHN
+					months = 60
+				}		
+				create_bidirectional_truce = {
+					country = c:ZHI
+					months = 60
+				}					
 			}
 		}
 		if = {
@@ -566,7 +742,23 @@ ely_china_sellout.1 = {
 				create_diplomatic_pact = {
 					country = c:TPG
 					type = foreign_investment_rights
-				}							
+				}			
+				create_bidirectional_truce = {
+					country = c:CHI
+					months = 60
+				}	
+				create_bidirectional_truce = {
+					country = c:SHA
+					months = 60
+				}
+				create_bidirectional_truce = {
+					country = c:SHN
+					months = 60
+				}		
+				create_bidirectional_truce = {
+					country = c:ZHI
+					months = 60
+				}				
 			}
 		}
 		if = {
@@ -583,7 +775,56 @@ ely_china_sellout.1 = {
 				create_diplomatic_pact = {
 					country = c:TPG
 					type = foreign_investment_rights
-				}							
+				}			
+				create_bidirectional_truce = {
+					country = c:CHI
+					months = 60
+				}	
+				create_bidirectional_truce = {
+					country = c:SHA
+					months = 60
+				}
+				create_bidirectional_truce = {
+					country = c:SHN
+					months = 60
+				}		
+				create_bidirectional_truce = {
+					country = c:ZHI
+					months = 60
+				}				
+			}
+		}
+		if = {
+			limit = { exists = c:GER }
+				c:GER = {
+					change_relations = {
+						country = c:TPG
+						value = 100
+					}					
+					set_secret_goal = {
+						country = c:TPG
+						secret_goal = befriend
+					}		
+					create_diplomatic_pact = {
+						country = c:TPG
+						type = foreign_investment_rights
+					}			
+				create_bidirectional_truce = {
+					country = c:CHI
+					months = 60
+				}	
+				create_bidirectional_truce = {
+					country = c:SHA
+					months = 60
+				}
+				create_bidirectional_truce = {
+					country = c:SHN
+					months = 60
+				}		
+				create_bidirectional_truce = {
+					country = c:ZHI
+					months = 60
+				}				
 			}
 		}
 		c:CHI = {
@@ -604,7 +845,23 @@ ely_china_sellout.1 = {
 			set_secret_goal = {
 				country = c:TPG
 				secret_goal = antagonize
-			}								
+			}		
+			create_bidirectional_truce = {
+				country = c:CHI
+				months = 60
+			}	
+			create_bidirectional_truce = {
+				country = c:SHA
+				months = 60
+			}
+			create_bidirectional_truce = {
+				country = c:SHN
+				months = 60
+			}		
+			create_bidirectional_truce = {
+				country = c:ZHI
+				months = 60
+			}							
 		}
 		c:JAP = {
 			change_relations = {
@@ -614,7 +871,23 @@ ely_china_sellout.1 = {
 			set_secret_goal = {
 				country = c:TPG
 				secret_goal = antagonize
-			}								
+			}		
+			create_bidirectional_truce = {
+				country = c:CHI
+				months = 60
+			}	
+			create_bidirectional_truce = {
+				country = c:SHA
+				months = 60
+			}
+			create_bidirectional_truce = {
+				country = c:SHN
+				months = 60
+			}		
+			create_bidirectional_truce = {
+				country = c:ZHI
+				months = 60
+			}							
 		}
 	}
 
@@ -679,28 +952,37 @@ ely_china_sellout.1 = {
 		if = {
 			limit = { exists = c:ITA }
 			c:ITA = {	
-			add_modifier = {
-				name = taiping_bribe_euros_receive
-				months = long_modifier_time
-			}					
+				add_modifier = {
+					name = taiping_bribe_euros_receive
+					months = long_modifier_time
+				}					
 			}
 		}
 		if = {
 			limit = { exists = c:LMV }
 			c:LMV = {		
-			add_modifier = {
-				name = taiping_bribe_euros_receive
-				months = long_modifier_time
-			}				
+				add_modifier = {
+					name = taiping_bribe_euros_receive
+					months = long_modifier_time
+				}				
 			}
 		}
 		if = {
 			limit = { exists = c:SGF }
 			c:SGF = {	
-			add_modifier = {
-				name = taiping_bribe_euros_receive
-				months = long_modifier_time
-			}				
+				add_modifier = {
+					name = taiping_bribe_euros_receive
+					months = long_modifier_time
+				}				
+			}
+		}
+		if = {
+			limit = { exists = c:GER }
+			c:GER = {	
+				add_modifier = {
+					name = taiping_bribe_euros_receive
+					months = long_modifier_time
+				}				
 			}
 		}
 		if = {
@@ -940,6 +1222,16 @@ ely_china_cixi.2 = {
 				country = c:CHI
 				type = foreign_investment_rights
 			}
+		}
+		c:CHI = {
+			change_relations = {
+				country = c:ELY
+				value = 100
+			}			
+			set_secret_goal = {
+				country = c:ELY
+				secret_goal = befriend
+			}	
 		}
 		ai_chance = {
 			base = 100

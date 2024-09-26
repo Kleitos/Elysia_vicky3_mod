@@ -145,3 +145,96 @@ ely_germany.4 = {
 			}	
 	}
 }
+
+ely_germany.5 = {
+	type = country_event
+	placement = ROOT
+
+	title = ely_germany.5.t
+	desc = ely_germany.5.d
+	flavor = ely_germany.5.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {	
+		remove_modifier = general_strikes
+		remove_modifier = german_nationalism_rebukked
+	}
+
+    option = {
+		name = ely_germany.5.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+		c:PRU = {
+			annex = c:SAX
+		}
+		add_loyalists = {
+			value = very_large_radicals
+		}
+		create_diplomatic_play = {
+			target_country = c:PRU
+			war = no
+			escalation = 81
+			type = dp_return_state
+			target_state = s:STATE_WEST_PRUSSIA.region_state:PRU
+			add_war_goal = {
+				holder = c:GER
+				type = return_state
+				target_state = s:STATE_EAST_PRUSSIA.region_state:PRU
+				target_country = c:PRU
+			}
+			add_war_goal = {
+				holder = c:GER
+				type = return_state
+				target_state = s:STATE_BRANDENBURG.region_state:PRU
+				target_country = c:PRU
+			}
+			add_war_goal = {
+				holder = c:GER
+				type = return_state
+				target_state = s:STATE_SAXONY.region_state:PRU
+				target_country = c:PRU
+			}
+			add_war_goal = {
+				holder = c:PRU
+				type = annex_country
+				target_state = s:STATE_BAVARIA.region_state:GER
+				target_country = c:GER
+			}
+		}
+	}
+
+    option = {
+		name = ely_germany.5.b
+		ai_chance = {
+			base = 0
+		}
+		c:GER = {
+			add_modifier = {
+				name = german_nationalism_rebukked
+				months = normal_modifier_time
+			}
+			add_modifier = {
+				name = general_strikes
+				months = normal_modifier_time
+			}	
+			add_radicals = {
+				value = very_large_radicals
+			}
+		}
+	}
+}

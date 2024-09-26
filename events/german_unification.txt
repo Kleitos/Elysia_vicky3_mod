@@ -418,6 +418,7 @@ german_unification.4 = {
 	immediate = {
 		c:GER = {
 			add_journal_entry = { type = je_unite_GER }
+			trigger_event = { id = ely_germany.5 days = 1825 }
 		}
 	}
 
