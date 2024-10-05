@@ -346,6 +346,12 @@ je_danish_war_SEI = {
 
 	on_timeout = {
 		trigger_event = { id = danish_war_inconclusive.2 popup = yes }
+		c:SPA = {
+			create_diplomatic_pact = {
+				country = c:SEI
+				type = dominion
+			}		
+		}
 	}
 	
 }
@@ -376,6 +382,12 @@ je_danish_war_BIC = {
 
 	on_timeout = {
 		trigger_event = { id = danish_war_inconclusive.2 popup = yes }
+		c:GBR = {
+			create_diplomatic_pact = {
+				country = c:BIC
+				type = dominion
+			}		
+		}
 	}
 	
 }
@@ -408,6 +420,12 @@ je_danish_war_SAS = {
 
 	on_timeout = {
 		trigger_event = { id = danish_war_inconclusive.2 popup = yes }
+		c:SWE = {
+			create_diplomatic_pact = {
+				country = c:SAS
+				type = dominion
+			}		
+		}
 	}
 	
 }
@@ -439,6 +457,12 @@ je_danish_war_WAS = {
 
 	on_timeout = {
 		trigger_event = { id = danish_war_inconclusive.2 popup = yes }
+		c:SWE = {
+			create_diplomatic_pact = {
+				country = c:WAS
+				type = dominion
+			}		
+		}
 	}
 	
 }
@@ -475,6 +499,12 @@ je_danish_war_NSW = {
 
 	on_timeout = {
 		trigger_event = { id = danish_war_inconclusive.2 popup = yes }
+		c:GBR = {
+			create_diplomatic_pact = {
+				country = c:NSW
+				type = dominion
+			}		
+		}
 	}
 	
 }
@@ -597,6 +627,12 @@ je_danish_war_SIL = {
 
 	on_timeout = {
 		trigger_event = { id = danish_war_inconclusive.2 popup = yes }
+		c:SPA = {
+			create_diplomatic_pact = {
+				country = c:SIL
+				type = dominion
+			}		
+		}
 	}
 	
 }
@@ -627,6 +663,12 @@ je_danish_war_LIB = {
 
 	on_timeout = {
 		trigger_event = { id = danish_war_inconclusive.2 popup = yes }
+		c:GBR = {
+			create_diplomatic_pact = {
+				country = c:LIB
+				type = dominion
+			}		
+		}
 	}
 	
 }
@@ -713,6 +755,12 @@ je_danish_war_BRZ = {
 
 	on_timeout = {
 		trigger_event = { id = danish_war_inconclusive.2 popup = yes }
+		c:SPA = {
+			create_diplomatic_pact = {
+				country = c:BRZ
+				type = dominion
+			}		
+		}
 	}
 	
 }
@@ -750,6 +798,12 @@ je_danish_war_WIN = {
 
 	on_timeout = {
 		trigger_event = { id = danish_war_inconclusive.2 popup = yes }
+		c:WIN = {
+			create_diplomatic_pact = {
+				country = c:DEN
+				type = dominion
+			}		
+		}
 	}
 	
 }
@@ -791,6 +845,12 @@ je_danish_war_ARG = {
 
 	on_timeout = {
 		trigger_event = { id = danish_war_inconclusive.2 popup = yes }
+		c:GBR = {
+			create_diplomatic_pact = {
+				country = c:ARG
+				type = dominion
+			}		
+		}
 	}
 	
 }
