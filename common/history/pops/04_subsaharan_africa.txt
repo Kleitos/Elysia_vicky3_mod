@@ -2017,22 +2017,7 @@
 		}
 	}
 	s:STATE_CONGO = {
-		region_state:BOB = {
-			create_pop = {
-				culture = bakongo
-				size = 20200
-			}
-			create_pop = {
-				culture = fluvian_bantu
-				size = 21600
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = fluvian_bantu
-				size = 2400
-			}
-		}
-		region_state:LNG = {
+		region_state:KON = {
 			create_pop = {
 				culture = bakongo
 				size = 36200
@@ -2046,8 +2031,6 @@
 				culture = fluvian_bantu
 				size = 9000
 			}
-		}
-		region_state:TKE = {
 			create_pop = {
 				culture = bakongo
 				size = 29000
@@ -2065,6 +2048,19 @@
 				pop_type = slaves
 				culture = bakongo
 				size = 3000
+			}
+			create_pop = {
+				culture = bakongo
+				size = 20200
+			}
+			create_pop = {
+				culture = fluvian_bantu
+				size = 21600
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = fluvian_bantu
+				size = 2400
 			}
 		}
 	}
@@ -2187,8 +2183,6 @@
 				culture = bakongo
 				size = 30000
 			}
-		}
-		region_state:YKA = {
 			create_pop = {
 				culture = bakongo
 				size = 165000
@@ -2416,7 +2410,7 @@
 				size = 20000
 			}
 		}
-		region_state:LNG = {
+		region_state:KON = {
 			create_pop = {
 				culture = bakongo
 				size = 32000
