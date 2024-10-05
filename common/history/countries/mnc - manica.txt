@@ -1,6 +1,6 @@
 ﻿COUNTRIES = {
 	c:MNC = {
-		effect_starting_technology_tier_3_tech = yes
+		effect_starting_technology_tier_4_tech = yes
 
 		set_tax_level = medium
 		
