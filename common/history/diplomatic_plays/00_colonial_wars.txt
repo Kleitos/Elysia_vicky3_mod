@@ -455,6 +455,26 @@ DIPLOMATIC_PLAYS = {
 }
 
 DIPLOMATIC_PLAYS = {
+	c:KBU = {
+		create_diplomatic_play = {
+		
+				target_state = s:STATE_GUINEA.region_state:FTJ
+			
+			war = yes
+			
+			type = dp_annex_war
+
+			
+			add_war_goal = {
+				holder = c:FTJ
+				type = annex_country
+				target_state = s:STATE_GUINEA.region_state:KBU
+			}
+		}			
+	}
+}
+
+DIPLOMATIC_PLAYS = {
 	c:MNC = {
 		create_diplomatic_play = {
 		
