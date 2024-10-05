@@ -664,6 +664,12 @@ anglo_iberian_war.2 = {
 			trigger_event = { id = anglo_iberian_war.3 }
 		}	
 		c:DEI = {
+			annex = c:YOG
+			annex = c:SRK
+			annex = c:JMB
+			annex = c:SMB
+			annex = c:PON
+			annex = c:BNJ
 			add_modifier = {
 				name = commited_to_war
 				months = normal_modifier_time
