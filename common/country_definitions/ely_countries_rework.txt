@@ -331,7 +331,7 @@ SPA = {
 
 	tier = kingdom
 	
-	cultures = { spanish }
+	cultures = { spanish portuguese }
 	capital = STATE_TOLEDO
 }
 
@@ -926,7 +926,7 @@ SLO = {
 TUR = {
 	color = { 170  206  162 }
 	
-	country_type = unrecognized
+	country_type = recognized
 
 	tier = empire
 	
@@ -2912,7 +2912,7 @@ TPG = {
 	color = { 100 150 20 }
 	country_type = unrecognized
 	tier = kingdom
-	cultures = { han }
+	cultures = { hakka min yue }
 	religion = godworshippingsociety
 	capital = STATE_NANJING
 }
