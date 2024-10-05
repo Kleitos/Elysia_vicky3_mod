@@ -2712,6 +2712,43 @@
 		}
 		region_state:JAP={
 			create_building={
+				building="building_paper_mills"
+				add_ownership={
+					building={
+						type="building_paper_mills"
+						country="c:JAP"
+						levels=2
+						region="STATE_HOKKAIDO"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_logging_camp"
+				add_ownership={
+					building={
+						type="building_logging_camp"
+						country="c:JAP"
+						levels=5
+						region="STATE_HOKKAIDO"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_forestry" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_port"
+				add_ownership={
+					country={
+						country="c:JAP"
+						levels=3
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_basic_port" }
+			}
+			create_building={
 				building="building_barracks"
 				add_ownership={
 					country={
@@ -2727,11 +2764,35 @@
 	s:STATE_TOHOKU={
 		region_state:JAP={
 			create_building={
-				building="building_government_administration"
+				building="building_paper_mills"
+				add_ownership={
+					building={
+						type="building_paper_mills"
+						country="c:JAP"
+						levels=2
+						region="STATE_TOHOKU"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_port"
 				add_ownership={
 					country={
 						country="c:JAP"
 						levels=3
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_basic_port" }
+			}
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:JAP"
+						levels=5
 					}
 				}
 				reserves=1
@@ -2792,11 +2853,33 @@
 	s:STATE_KANTO={
 		region_state:JAP={
 			create_building={
+				building="building_military_shipyards"
+				add_ownership={
+					country={
+						country="c:JAP"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_military_shipbuilding_wooden"  }
+			}
+			create_building={
+				building="building_shipyards"
+				add_ownership={
+					country={
+						country="c:JAP"
+						levels=2
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_basic_shipbuilding"  }
+			}
+			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
 						country="c:JAP"
-						levels=3
+						levels=5
 					}
 				}
 				reserves=1
@@ -2885,11 +2968,11 @@
 				add_ownership={
 					country={
 						country="c:JAP"
-						levels=1
+						levels=3
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_anchorage" }
+				activate_production_methods={ "pm_basic_port" }
 			}
 			create_building={
 				building="building_barracks"
@@ -3035,11 +3118,44 @@
 	s:STATE_KANSAI={
 		region_state:JAP={
 			create_building={
+				building="building_port"
+				add_ownership={
+					country={
+						country="c:JAP"
+						levels=3
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_basic_port" }
+			}
+			create_building={
+				building="building_military_shipyards"
+				add_ownership={
+					country={
+						country="c:JAP"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_military_shipbuilding_wooden"  }
+			}
+			create_building={
+				building="building_shipyards"
+				add_ownership={
+					country={
+						country="c:JAP"
+						levels=2
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_basic_shipbuilding"  }
+			}
+			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
 						country="c:JAP"
-						levels=7
+						levels=10
 					}
 				}
 				reserves=1
@@ -3176,22 +3292,59 @@
 	s:STATE_KYUSHU={
 		region_state:JAP={
 			create_building={
+				building="building_paper_mills"
+				add_ownership={
+					building={
+						type="building_paper_mills"
+						country="c:JAP"
+						levels=2
+						region="STATE_KYUSHU"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_logging_camp"
+				add_ownership={
+					building={
+						type="building_logging_camp"
+						country="c:JAP"
+						levels=5
+						region="STATE_KYUSHU"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_forestry" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts"  }
+			}
+			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
 						country="c:JAP"
-						levels=4
+						levels=5
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
 			}
 			create_building={
-				building="building_shipyards"
+				building="building_military_shipyards"
 				add_ownership={
 					country={
 						country="c:JAP"
 						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_military_shipbuilding_wooden"  }
+			}
+			create_building={
+				building="building_shipyards"
+				add_ownership={
+					country={
+						country="c:JAP"
+						levels=2
 					}
 				}
 				reserves=1
@@ -3304,7 +3457,7 @@
 				add_ownership={
 					country={
 						country="c:JAP"
-						levels=1
+						levels=4
 					}
 				}
 				reserves=1
@@ -3349,18 +3502,51 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_anchorage" }
+				activate_production_methods={ "pm_basic_port" }
 			}
 		}
 	}
 	s:STATE_CHUGOKU={
 		region_state:JAP={
 			create_building={
-				building="building_government_administration"
+				building="building_port"
 				add_ownership={
 					country={
 						country="c:JAP"
 						levels=3
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_basic_port" }
+			}
+			create_building={
+				building="building_military_shipyards"
+				add_ownership={
+					country={
+						country="c:JAP"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_military_shipbuilding_wooden"  }
+			}
+			create_building={
+				building="building_shipyards"
+				add_ownership={
+					country={
+						country="c:JAP"
+						levels=2
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_basic_shipbuilding"  }
+			}
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:JAP"
+						levels=5
 					}
 				}
 				reserves=1
@@ -3486,11 +3672,70 @@
 	s:STATE_SHIKOKU={
 		region_state:JAP={
 			create_building={
-				building="building_government_administration"
+				building="building_military_shipyards"
 				add_ownership={
 					country={
 						country="c:JAP"
 						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_military_shipbuilding_wooden"  }
+			}
+			create_building={
+				building="building_shipyards"
+				add_ownership={
+					country={
+						country="c:JAP"
+						levels=2
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_basic_shipbuilding"  }
+			}
+			create_building={
+				building="building_paper_mills"
+				add_ownership={
+					building={
+						type="building_paper_mills"
+						country="c:JAP"
+						levels=2
+						region="STATE_SHIKOKU"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled"  }
+			}
+			create_building={
+				building="building_logging_camp"
+				add_ownership={
+					building={
+						type="building_logging_camp"
+						country="c:JAP"
+						levels=5
+						region="STATE_SHIKOKU"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_forestry" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_port"
+				add_ownership={
+					country={
+						country="c:JAP"
+						levels=3
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_basic_port" }
+			}
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:JAP"
+						levels=5
 					}
 				}
 				reserves=1

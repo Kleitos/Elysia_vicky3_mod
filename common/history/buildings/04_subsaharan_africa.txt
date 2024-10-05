@@ -1893,11 +1893,7 @@
 		}
 	}
 	s:STATE_CONGO={
-		region_state:BOB={
-		}
-		region_state:LNG={
-		}
-		region_state:TKE={
+		region_state:KON={
 		}
 	}
 	s:STATE_CONGO_ORIENTALE={
@@ -1944,8 +1940,6 @@
 				reserves=1
 				activate_production_methods={ "pm_no_organization" }
 			}
-		}
-		region_state:YKA={
 		}
 	}
 	s:STATE_EQUATEUR={
@@ -2061,7 +2055,7 @@
 	s:STATE_GABON={
 		region_state:FNG={
 		}
-		region_state:LNG={
+		region_state:KON={
 		}
 	}
 	s:STATE_ZAMBIA={

@@ -766,13 +766,13 @@
 					building={
 						type="building_financial_district"
 						country="c:LMV"
-						levels=2
+						levels=1
 						region="STATE_LOMBARDY"
 					}
 					building={
 						type="building_financial_district"
 						country="c:SIC"
-						levels=4
+						levels=2
 						region="STATE_CAMPANIA"
 					}
 				}
@@ -785,13 +785,13 @@
 					building={
 						type="building_financial_district"
 						country="c:LMV"
-						levels=2
+						levels=1
 						region="STATE_LOMBARDY"
 					}
 					building={
 						type="building_financial_district"
 						country="c:SIC"
-						levels=5
+						levels=3
 						region="STATE_CAMPANIA"
 					}
 				}
@@ -804,13 +804,13 @@
 					building={
 						type="building_financial_district"
 						country="c:LMV"
-						levels=2
+						levels=1
 						region="STATE_LOMBARDY"
 					}
 					building={
 						type="building_financial_district"
 						country="c:SIC"
-						levels=5
+						levels=3
 						region="STATE_CAMPANIA"
 					}
 				}
@@ -823,12 +823,12 @@
 					building={
 						type="building_financial_district"
 						country="c:LMV"
-						levels=2
+						levels=1
 						region="STATE_LOMBARDY"
 					}
 					country={
 						country="c:LMV"
-						levels=3
+						levels=2
 					}
 				}
 				reserves=1
@@ -934,7 +934,7 @@
 				add_ownership={
 					country={
 						country="c:SIC"
-						levels=1
+						levels=5
 					}
 				}
 				reserves=1
@@ -1424,7 +1424,7 @@
 				add_ownership={
 					country={
 						country="c:LMV"
-						levels=2
+						levels=5
 					}
 				}
 				reserves=1
@@ -2244,6 +2244,19 @@
 				reserves=1
 				activate_production_methods={ "pm_open_air_stockyards" "pm_simple_ranch" "pm_standard_fences" "pm_unrefrigerated"  }
 			}
+			create_building={
+				building="building_railway"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:SPA"
+						levels=1
+						region="STATE_TOLEDO"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_early_trains"  "pm_wooden_passenger_carriages" }
+			}
 		}
 	}
 	s:STATE_NAVARRA={
@@ -2440,11 +2453,24 @@
 				activate_production_methods={ "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts"  }
 			}
 			create_building={
+				building="building_railway"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:SPA"
+						levels=2
+						region="STATE_TOLEDO"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_early_trains"  "pm_wooden_passenger_carriages" }
+			}
+			create_building={
 				building="building_port"
 				add_ownership={
 					country={
 						country="c:SPA"
-						levels=1
+						levels=5
 					}
 				}
 				reserves=1
@@ -3261,11 +3287,24 @@
 				activate_production_methods={ "default_building_silk_plantation" "pm_road_carts"  }
 			}
 			create_building={
+				building="building_railway"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:SPA"
+						levels=1
+						region="STATE_TOLEDO"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_early_trains"  "pm_wooden_passenger_carriages" }
+			}
+			create_building={
 				building="building_port"
 				add_ownership={
 					country={
 						country="c:SPA"
-						levels=2
+						levels=5
 					}
 				}
 				reserves=1
@@ -3633,6 +3672,36 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_railway"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:SPA"
+						levels=2
+						region="STATE_TOLEDO"
+					}
+					building={
+						type="building_financial_district"
+						country="c:SPA"
+						levels=2
+						region="STATE_ALENTEJO"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_early_trains"  "pm_wooden_passenger_carriages" }
+			}
+			create_building={
+				building="building_port"
+				add_ownership={
+					country={
+						country="c:SPA"
+						levels=5
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_basic_port" }
 			}
 		}
 	}
