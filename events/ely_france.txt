@@ -1348,6 +1348,44 @@ france_civil_war.4 = {
 				type = annex_country
 				target_country = c:KON
 			}
+			add_war_goal = {
+				holder = c:ITA
+				type = humiliation
+				target_country = c:GER
+			}
+			add_war_goal = {
+				holder = c:ITA
+				type = war_reparations
+				target_country = c:GER
+			}
+			add_war_goal = {
+				holder = c:SPA
+				type = humiliation
+				target_country = c:FRA
+			}
+			add_war_goal = {
+				holder = c:SPA
+				type = war_reparations
+				target_country = c:FRA
+			}
+			add_war_goal = {
+				holder = c:ITA
+				type = conquer_state
+				target_state = s:STATE_DALMATIA.region_state:GER
+				target_country = c:GER
+			}
+			add_war_goal = {
+				holder = c:ITA
+				type = conquer_state
+				target_state = s:STATE_ISTRIA.region_state:GER
+				target_country = c:GER
+			}
+			add_war_goal = {
+				holder = c:ITA
+				type = conquer_state
+				target_state = s:STATE_SOUTH_TYROL.region_state:GER
+				target_country = c:GER
+			}
 			add_initiator_backers = {
 				country = c:GER
 			}

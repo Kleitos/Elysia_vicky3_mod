@@ -1030,10 +1030,7 @@ native_mandika.1 = {
 		name = native_mandika.1.a
 		default_option = yes	
 		c:KBU = {
-			annex = c:SRR
-			annex = c:BND
 			annex = c:SSU
-			annex = c:FTJ
 			add_journal_entry = { type = je_conquer_SIL }
 			add_journal_entry = { type = je_plunder_tech_mandika }
 			add_modifier = {
@@ -1121,7 +1118,6 @@ native_mandika.3 = {
 
 	immediate = {
 		c:KBU = {
-			annex = c:MDK
 			annex = c:KBD
 		}
 		c:GBR = {
