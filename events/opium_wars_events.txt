@@ -157,6 +157,9 @@ opium_wars.4 = {
 	}
 
 	immediate = {
+		every_primary_culture = {
+			remove_cultural_obsession = opium
+		}
 		if = {
 			limit = { has_modifier = opium_wars_addiction_modifier }
 			remove_modifier = opium_wars_addiction_modifier

@@ -23,12 +23,18 @@ italian_wars.1 = {
 	}
 
 	immediate = {	
+		c:SIC = {
+			every_scope_state = {
+				limit = {
+					is_incorporated = yes
+				}
+				set_variable = SIC_incorporated_state
+			}
+		}
 		c:LMV = {
 			annex = c:SIC
 			trigger_event = { id = italian_wars.3 days = 730 }
-		}
-		c:BYZ = {
-			trigger_event = { id = italian_wars.2 }
+			trigger_event = { id = italian_wars.2 days = 60 }
 		}
 	}
 
@@ -45,6 +51,15 @@ italian_wars.1 = {
 				holder = c:SAR
 				type = annex_country
 				target_state = s:STATE_LOMBARDY.region_state:LMV
+			}
+		}
+		hidden_effect = {
+			every_scope_state = {
+				limit = {
+					owner = ROOT
+					has_variable = INC_incorporated_state
+				}
+				set_state_type = incorporated
 			}
 		}
 	}
@@ -80,8 +95,8 @@ italian_wars.2 = {
 		ai_chance = {
 			base = 5
 		}
-		c:BYZ = {
-			trigger_event = { id = greek_revolt.1 }
+		c:LMV = {
+			trigger_event = { id = greek_revolt.1 days = 5 }
 		}
 	}
     option = {
@@ -90,8 +105,8 @@ italian_wars.2 = {
 		ai_chance = {
 			base = 95
 		}
-		c:BYZ = {
-			trigger_event = { id = greek_revolt.2 }
+		c:LMV = {
+			trigger_event = { id = greek_revolt.2 days = 5 }
 		}
 	}
 }
