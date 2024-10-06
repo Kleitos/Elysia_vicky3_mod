@@ -783,6 +783,7 @@ hakka={
 	
 	obsessions = {
 		tea
+		opium
 	}
 	male_common_first_names={
 		Chen
@@ -855,6 +856,7 @@ min={
 	
 	obsessions = {
 		tea
+		opium
 	}
 	male_common_first_names={
 		Bing
@@ -922,6 +924,7 @@ yue={
 	
 	obsessions = {
 		tea
+		opium
 	}
 	male_common_first_names={
 		Chen

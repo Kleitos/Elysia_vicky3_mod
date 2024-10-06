@@ -2571,8 +2571,8 @@ yoruba={
 
 bakongo={
 	color= hsv{ 0.28 0.29 0.60 }
-	religion = bantu_faith
-	traits = { central_african_culture_group bantu african_heritage pagan_heritage }
+	religion = catholic
+	traits = { central_african_culture_group bantu african_heritage }
 	male_common_first_names={
 		Garcia
 		Kenje
