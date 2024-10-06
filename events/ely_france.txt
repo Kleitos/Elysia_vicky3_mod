@@ -1447,7 +1447,7 @@ france_civil_war.5 = {
 	}
 
 	option = {
-		name = france_civil_war.4.a
+		name = france_civil_war.5.a
 		default_option = yes
 		create_diplomatic_play = {
 			target_country = c:OCC
@@ -3760,6 +3760,12 @@ union_of_frankogerman.3 = {
 	}
 
 	trigger = {
+		c:FRA = {
+			create_diplomatic_pact = {
+				country = c:GER
+				type = personal_union
+			}
+		}
 	}
 
 	immediate = {
@@ -3768,10 +3774,14 @@ union_of_frankogerman.3 = {
 	option = {
 		name = union_of_frankogerman.3.a
 		default_option = yes
+		c:GER = {
+			add_liberty_desire = -50	
+		}
 		c:FRA = {
-			create_diplomatic_pact = {
-				country = c:GER
-				type = personal_union
+			ruler = {
+				add_modifier = {
+					name = franko_german_wedding_mod
+				}
 			}
 			trigger_event = { id = union_of_frankogerman.5 days = 1825 }	
 			hidden_effect = {
@@ -3833,16 +3843,21 @@ union_of_frankogerman.4 = {
 	}
 
 	immediate = {
-	}
-
-	option = {
-		name = union_of_frankogerman.4.a
-		default_option = yes
 		c:GER = {
 			create_diplomatic_pact = {
 				country = c:FRA
 				type = personal_union
 			}
+		}
+	}
+
+	option = {
+		name = union_of_frankogerman.4.a
+		default_option = yes
+		c:FRA = {
+			add_liberty_desire = -50	
+		}
+		c:GER = {
 			trigger_event = { id = union_of_frankogerman.5 days = 1825 }	
 			hidden_effect = {
 				if = {
