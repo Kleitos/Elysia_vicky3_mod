@@ -2,7 +2,7 @@
 	c:BAV ?= {
 		create_character = {
 			first_name = "Ludwig_I"
-			last_name = "von_Bayern"
+			last_name = "von_Wittelsbach"
 			historical = yes
 			ruler = yes
 			age = 50
@@ -20,7 +20,7 @@
 		create_character = {
 			# Maximilian II of Bavaria
 			first_name = "Maximilian"
-			last_name = "von_Bayern"
+			last_name = "von_Wittelsbach"
 			historical = yes
 			heir = yes
 			age = 25
