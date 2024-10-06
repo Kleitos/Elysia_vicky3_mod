@@ -478,3 +478,11 @@ commited_to_war = {
 	state_turmoil_effects_mult = -100
 	political_movement_radicalism_mult = -100
 }
+
+franko_german_wedding_mod= {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	character_popularity_add = 100
+	country_legitimacy_base_add = 25
+	country_authority_mult = 0.15
+	country_influence_mult = 0.1
+}
