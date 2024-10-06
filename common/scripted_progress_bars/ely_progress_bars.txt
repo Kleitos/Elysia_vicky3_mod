@@ -1,0 +1,34 @@
+﻿union_of_frankogerman_progress_bar = {
+	name = "union_of_frankogerman_progress_bar_name"
+	desc = "union_of_frankogerman_progress_bar_fra_desc"
+	second_desc = "union_of_frankogerman_progress_bar_ger_desc"
+
+	double_sided_gold = yes
+    
+    weekly_progress = {
+		if = {
+		limit = {
+			NOT = {
+				scope:journal_entry = { 
+					union_of_frankogerman_balance = "scripted_bar_progress(union_of_frankogerman_progress_bar)" 
+				}
+			}
+		}
+		scope:journal_entry = { 
+		subtract = {
+			desc = "union_of_frankogerman_progress_bar_reset"
+				value = "scripted_bar_progress(union_of_frankogerman_progress_bar)"
+			} 
+		}
+		add = {
+			desc = "union_of_frankogerman_progress_bar_var"
+				value = union_of_frankogerman_balance
+			}
+		}
+	}
+            
+	start_value = 50
+	min_value = 0
+	max_value = 100
+
+}
