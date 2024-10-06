@@ -4,6 +4,7 @@ namespace = france_civil_war
 namespace = france_post_civil_war
 namespace = frankish_culture
 namespace = frankish_empire
+namespace = union_of_frankogerman
 
 ely_france_south.1 = {
 	type = country_event
@@ -383,6 +384,10 @@ ely_france_south.4 = {
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
 	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_art_gallery.bk2"
+	}
 
 	trigger = {
 	}
@@ -2059,7 +2064,7 @@ frankish_culture.1 = {
 		add_primary_culture = cu:frankish
 		remove_primary_culture = cu:dutch
 		remove_primary_culture = cu:alemannic
-		trigger_event = { id = frankish_empire.1 days = 365 }
+		trigger_event = { id = frankish_empire.1 days = 1825 }
 		hidden_effect = {
 			every_country = {
 				every_scope_pop = {
@@ -2565,28 +2570,34 @@ frankish_empire.1 = {
 	}
 
 	immediate = {
+		s:STATE_FRIESLAND = {
+			add_claim = c:FRA
+		}
 	}
 
 	option = {
 		name = frankish_empire.1.a
-		ai_chance = {
-			base = 50
+		default_option = yes
+		if = {
+			limit = { exists = s:STATE_FRIESLAND.region_state:GER }	
+			c:GER = { trigger_event = { id = frankish_empire.3 days = 5 } }
 		}
-		custom_tooltip = {
-			text = reunite_frankish_empire_1_tt
+		c:GER = {
 			set_variable = { 
-				name = frankish_empire_reunite
+				name = frankish_empire_reunite_ger_var
 			}
+			add_journal_entry = { type = je_frankogerman_wedding }		
 		}
-		trigger_event = { id = frankish_empire.3 days = 5 }
-	}
+		c:FRA = {
+			set_variable = { 
+				name = frankish_empire_reunite_fra_var
+			}
+			add_journal_entry = { type = je_frankogerman_wedding }		
+		}
+	}	
 
 	option = {
-		name = frankish_empire.1.b
-		default_option = yes
-		ai_chance = {
-			base = 50
-		}
+		name = frankish_empire.1.b	
 	}	
 
 }
@@ -2657,7 +2668,20 @@ frankish_empire.2 = {
 			create_diplomatic_pact = {
 				country = c:ATV
 				type = dominion
+			}	
+			change_relations = {
+				country = c:SAF
+				value = 100
 			}			
+			change_relations = {
+				country = c:TAS
+				value = 100
+			}	
+			change_relations = {
+				country = c:ATV
+				value = 100
+			}
+			add_journal_entry = { type = je_reunite_germanic_colonies }			
 		}
 	}
 
@@ -2668,6 +2692,15 @@ frankish_empire.2 = {
 			base = 50
 		}
 		c:SAF = {
+			add_liberty_desire = -50		
+			change_relations = {
+				country = c:FRA
+				value = 100
+			}
+			set_secret_goal = {
+				country = c:FRA
+				secret_goal = befriend
+			}
 			activate_law = law_type:law_colonial_resettlement
 			activate_law = law_type:law_local_police
 			activate_law = law_type:law_freedom_of_conscience
@@ -2680,6 +2713,15 @@ frankish_empire.2 = {
 			activate_law = law_type:law_laissez_faire
 		}
 		c:TAS = {
+			add_liberty_desire = -50		
+			change_relations = {
+				country = c:FRA
+				value = 100
+			}
+			set_secret_goal = {
+				country = c:FRA
+				secret_goal = befriend
+			}
 			activate_law = law_type:law_colonial_resettlement
 			activate_law = law_type:law_local_police
 			activate_law = law_type:law_freedom_of_conscience
@@ -2692,6 +2734,15 @@ frankish_empire.2 = {
 			activate_law = law_type:law_laissez_faire
 		}
 		c:ATV = {
+			add_liberty_desire = -50		
+			change_relations = {
+				country = c:FRA
+				value = 100
+			}
+			set_secret_goal = {
+				country = c:FRA
+				secret_goal = befriend
+			}
 			activate_law = law_type:law_colonial_resettlement
 			activate_law = law_type:law_local_police
 			activate_law = law_type:law_state_religion
@@ -3226,7 +3277,7 @@ frankish_empire.3 = {
 		name = frankish_empire.3.a
 		default_option = yes
 		ai_chance = {
-			base = 90
+			base = 1
 		}
 		c:GER = {
 			add_modifier = {
@@ -3240,13 +3291,637 @@ frankish_empire.3 = {
 				months = normal_modifier_time
 			}
 		}
+		if = {
+			limit = { exists = s:STATE_FRIESLAND.region_state:GER }
+			s:STATE_FRIESLAND.region_state:GER = { set_state_owner = c:FRA }
+		}
 	}
 
 	option = {
 		name = frankish_empire.3.b
-		ai_chance = {
-			base = 10
+		custom_tooltip = {
+			text = franco_german_tensions_tt
+			c:GER = {			
+				change_relations = {
+					country = c:FRA
+					value = -50
+				}
+				set_secret_goal = {
+					country = c:FRA
+					secret_goal = none
+				}					
+			}
+			c:FRA = {			
+				change_relations = {
+					country = c:GER
+					value = -50
+				}
+				set_secret_goal = {
+					country = c:GER
+					secret_goal = none
+				}						
+			}
 		}
+	}	
+
+}
+
+frankish_empire.4 = {
+	type = country_event
+	placement = ROOT
+	title = frankish_empire.4.t
+	desc = frankish_empire.4.d
+	flavor = frankish_empire.4.f
+
+	duration = 3
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	event_image = {
+		video = "votp_french_algeria"
+	}
+
+	trigger = {
+	}
+
+	immediate = {
+		c:FRA = {			
+			change_relations = {
+				country = c:DEI
+				value = 100
+			}			
+			change_relations = {
+				country = c:WIN
+				value = 100
+			}				
+		}
+	}
+
+	option = {
+		name = frankish_empire.4.a		
+		default_option = yes
+		c:DEI ?= {
+			add_liberty_desire = -50		
+			change_relations = {
+				country = c:FRA
+				value = 100
+			}
+			set_secret_goal = {
+				country = c:FRA
+				secret_goal = befriend
+			}
+		}	
+		c:WIN ?= {
+			add_liberty_desire = -50		
+			change_relations = {
+				country = c:FRA
+				value = 100
+			}
+			set_secret_goal = {
+				country = c:FRA
+				secret_goal = befriend
+			}
+		}
+		s:STATE_GUAYANA = {
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_BOLIVAR = {
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_INDIAN_OCEAN_TERRITORY = {
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_WEST_INDIES = {
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_WEST_JAVA = {
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_EAST_JAVA = {
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_CENTRAL_JAVA = {
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_NORTH_SUMATRA = {
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_SOUTH_SUMATRA = {
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}
+		s:STATE_ACEH = {
+			add_modifier = {
+				name = australian_colonization
+				months = very_long_modifier_time
+			}
+		}	
+	}	
+
+}
+
+frankish_empire.5 = {
+	type = country_event
+	placement = ROOT
+	title = frankish_empire.5.t
+	desc = frankish_empire.5.d
+	flavor = frankish_empire.5.f
+
+	duration = 3
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_springtime_of_nations.bk2"
+	}
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = frankish_empire.5.a	
+		default_option = yes
+		s:STATE_GUAYANA = {
+			add_claim = c:FRA
+		}
+		s:STATE_BOLIVAR = {
+			add_claim = c:FRA
+		}
+		s:STATE_INDIAN_OCEAN_TERRITORY = {
+			add_claim = c:FRA
+		}
+		s:STATE_WEST_INDIES = {
+			add_claim = c:FRA
+		}
+		s:STATE_WEST_JAVA = {
+			add_claim = c:FRA
+		}
+		s:STATE_EAST_JAVA = {
+			add_claim = c:FRA
+		}
+		s:STATE_CENTRAL_JAVA = {
+			add_claim = c:FRA
+		}
+		s:STATE_NORTH_SUMATRA = {
+			add_claim = c:FRA
+		}
+		s:STATE_SOUTH_SUMATRA = {
+			add_claim = c:FRA
+		}
+		s:STATE_ACEH = {
+			add_claim = c:FRA
+		}
+	}	
+
+}
+
+union_of_frankogerman.1 = {
+	type = country_event
+	placement = ROOT
+	title = union_of_frankogerman.1.t
+	desc = union_of_frankogerman.1.d
+	flavor = union_of_frankogerman.1.f
+
+	duration = 3
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_springtime_of_nations.bk2"
+	}
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = union_of_frankogerman.1.a
+		default_option = yes
+		c:FRA = {
+			hidden_effect = {
+				ruler = {
+					kill_character = yes
+				}
+				if = {
+					limit = {
+						any_scope_character = {
+							is_heir = yes
+						}
+					}
+					heir = {
+						kill_character = yes
+					}
+				}
+			}
+			create_character = {
+				first_name = Ferdinand
+				last_name = de_Orleans
+				historical = yes
+				culture = cu:frankish
+				female = no
+				ideology = ideology_orleanist
+				interest_group = ig_industrialists
+				birth_date = 1844.07.12
+				dna = dna_ferdinand_philippe_of_orleans
+				traits = {
+					ambitious
+					popular_commander
+					basic_offensive_planner
+					experienced_political_operator
+					persistent
+					erudite
+				}   
+				ruler = yes
+				on_created = {
+					set_variable = {
+						name = is_married
+					}
+					set_variable = {
+						name = orleanist_leader
+					}
+				}
+			}
+			trigger_event = { id = union_of_frankogerman.3 days = 1825 }	
+		}
+		c:GER = {
+			hidden_effect = {
+				ruler = {
+					kill_character = yes
+				}
+				if = {
+					limit = {
+						any_scope_character = {
+							is_heir = yes
+						}
+					}
+					heir = {
+						kill_character = yes
+					}
+				}
+			}
+			create_character = {
+				first_name = Sophie
+				last_name = von_Wittelsbach
+				historical = yes
+				culture = cu:south_german
+				female = yes
+				ideology = ideology_feminist
+				interest_group = ig_intelligentsia
+				birth_date = 1847.02.23
+				dna = dna_louise_michel
+				traits = {
+					brave
+					firebrand
+					persistent
+					demagogue
+					honorable
+				}   
+				ruler = yes
+				on_created = {
+					set_variable = {
+						name = is_married
+					}
+				}
+			}
+		}	
+	}	
+
+}
+
+union_of_frankogerman.2 = {
+	type = country_event
+	placement = ROOT
+	title = union_of_frankogerman.2.t
+	desc = union_of_frankogerman.2.d
+	flavor = union_of_frankogerman.2.f
+
+	duration = 3
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_springtime_of_nations.bk2"
+	}
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = union_of_frankogerman.2.a
+		default_option = yes
+		c:FRA = {
+			hidden_effect = {
+				ruler = {
+					kill_character = yes
+				}
+				if = {
+					limit = {
+						any_scope_character = {
+							is_heir = yes
+						}
+					}
+					heir = {
+						kill_character = yes
+					}
+				}
+			}
+			create_character = {
+				first_name = Marguerite
+				last_name = de_Orleans
+				historical = yes
+				culture = cu:frankish
+				female = yes
+				ideology = ideology_orleanist
+				interest_group = ig_industrialists
+				birth_date = 1844.07.12
+				dna = dna_louise_michel
+				traits = {
+					persistent
+					demagogue
+					honorable
+					firebrand
+					brave
+					romantic
+				}   
+				ruler = yes
+				on_created = {
+					set_variable = {
+						name = is_married
+					}
+					set_variable = {
+						name = orleanist_leader
+					}
+				}
+			}
+		}
+		c:GER = {
+			hidden_effect = {
+				ruler = {
+					kill_character = yes
+				}
+				if = {
+					limit = {
+						any_scope_character = {
+							is_heir = yes
+						}
+					}
+					heir = {
+						kill_character = yes
+					}
+				}
+			}
+			create_character = {
+				first_name = Maximilian
+				last_name = von_Wittelsbach
+				historical = yes
+				culture = cu:south_german
+				female = no
+				ideology = ideology_humanitarian_royalist
+				interest_group = ig_intelligentsia
+				birth_date = 1849.12.12
+				dna = dna_maximillian_von_bayern
+				traits = {
+					tactful
+					romantic
+					experienced_offensive_planner
+					surveyor
+					basic_diplomat
+				}   
+				ruler = yes
+				on_created = {
+					set_variable = {
+						name = is_married
+					}
+				}
+			}
+			trigger_event = { id = union_of_frankogerman.4 days = 1825 }	
+		}	
+	}	
+
+}
+
+union_of_frankogerman.3 = {
+	type = country_event
+	placement = ROOT
+	title = union_of_frankogerman.3.t
+	desc = union_of_frankogerman.3.d
+	flavor = union_of_frankogerman.3.f
+
+	duration = 3
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_springtime_of_nations.bk2"
+	}
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = union_of_frankogerman.3.a
+		default_option = yes
+		c:FRA = {
+			create_diplomatic_pact = {
+				country = c:GER
+				type = personal_union
+			}
+			trigger_event = { id = union_of_frankogerman.5 days = 1825 }	
+			hidden_effect = {
+				if = {
+					limit = {
+						any_scope_character = {
+							is_heir = yes
+						}
+					}
+					heir = {
+						kill_character = yes
+					}
+				}
+			}
+			create_character = {
+				first_name = Emmanuel
+				last_name = de_Orleans
+				historical = yes
+				culture = cu:frankish
+				female = no
+				ideology = ideology_orleanist
+				interest_group = ig_industrialists
+				birth_date = 1872.01.18
+				traits = {
+					basic_political_operator
+					persistent
+					explorer
+				}   
+				heir = yes
+				on_created = {
+					set_variable = {
+						name = orleanist_leader
+					}
+				}
+			}
+		}	
+	}	
+
+}
+
+union_of_frankogerman.4 = {
+	type = country_event
+	placement = ROOT
+	title = union_of_frankogerman.4.t
+	desc = union_of_frankogerman.4.d
+	flavor = union_of_frankogerman.4.f
+
+	duration = 3
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_springtime_of_nations.bk2"
+	}
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = union_of_frankogerman.4.a
+		default_option = yes
+		c:GER = {
+			create_diplomatic_pact = {
+				country = c:FRA
+				type = personal_union
+			}
+			trigger_event = { id = union_of_frankogerman.5 days = 1825 }	
+			hidden_effect = {
+				if = {
+					limit = {
+						any_scope_character = {
+							is_heir = yes
+						}
+					}
+					heir = {
+						kill_character = yes
+					}
+				}
+			}
+			create_character = {
+				first_name = Christoph
+				last_name = von_Wittelsbach
+				historical = yes
+				culture = cu:south_german
+				female = no
+				ideology = ideology_orleanist
+				interest_group = ig_industrialists
+				birth_date = 1879.04.22
+				traits = {
+					basic_political_operator
+					persistent
+					explorer
+				}   
+				heir = yes
+				on_created = {
+					set_variable = {
+						name = orleanist_leader
+					}
+				}
+			}
+		}	
+	}	
+
+}
+
+union_of_frankogerman.5 = {
+	type = country_event
+	placement = ROOT
+	title = union_of_frankogerman.5.t
+	desc = union_of_frankogerman.5.d
+	flavor = union_of_frankogerman.5.f
+
+	duration = 3
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_springtime_of_nations.bk2"
+	}
+
+	trigger = {
+	}
+
+	immediate = {
+		if = {
+			limit = { c:GER ?= { is_subject_of = c:FRA } }			
+			c:FRA = { annex = c:GER }
+		}
+		if = {
+			limit = { c:FRA ?= { is_subject_of = c:GER } }			
+			c:GER = { annex = c:FRA }
+		}
+	}
+
+	option = {
+		name = union_of_frankogerman.5.a
+		default_option = yes
+		change_tag = HRE
+		set_capital = STATE_NORTH_RHINE
+		add_primary_culture = cu:frankish
+		add_primary_culture = cu:alemannic
+		add_primary_culture = cu:south_german
+		add_primary_culture = cu:north_german
 	}	
 
 }
