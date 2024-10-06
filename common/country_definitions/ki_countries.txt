@@ -81,15 +81,15 @@ ZAP = {
 #	
 #	cultures = { afro_caribeno afro_antillean afro_caribbean caribeno}
 #}
-#HRE = {
-#	color = { 221  221  186 }
-#	country_type = recognized
-#	
-#	tier = hegemony
-#	
-#	cultures = { north_german south_german alemannic francoprovencal north_italian flemish wallonian dutch }
-#	capital = STATE_AUSTRIA
-#}
+HRE = {
+	color = rgb { 0.1 0.21 0.34 }
+	country_type = recognized
+	
+	tier = hegemony
+	
+	cultures = { north_german south_german alemannic frankish }
+	capital = STATE_NORTH_RHINE
+}
 
 #IFR = {
 #	color = { 120 0 0 }
