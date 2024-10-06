@@ -165,11 +165,11 @@
 				size = 490868
 			}
 			create_pop = {
-				culture = anglo_colombian
+				culture = dutch_colonial
 				size = 34704
 			}
 			create_pop = {
-				culture = danish
+				culture = dutch
 				size = 396
 			}
 			create_pop = {
