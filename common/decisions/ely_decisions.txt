@@ -1,39 +1,80 @@
-﻿formalis_elysian_games_decision = {
+﻿integrate_elyric = {
 	is_shown = {
 		exists = c:ELY
-		this = c:ELY
+		root = c:ELY
+		NOT = { has_variable = integrate_elyric_ended }
+		has_variable = integrate_elyric_started
 	}
 
 	possible = {
-		this = c:ELY
-		has_technology_researched = organized_sports
-		hidden_trigger = {
-			NOT = { has_variable = formalis_elysian_games_decision_taken }
+		is_at_war = no
+		custom_tooltip = {
+			text = integrate_elyric_cooldown_tt
+			NOT = { has_variable = integrate_elyric_cooldown }
+		}
+		any_subject_or_below = {
+			country_has_primary_culture = cu:elyric
+			relations:root >= relations_threshold:amicable
 		}
 	}
-	
+
 	when_taken = {
+		trigger_event = { id = elyric.1 days = 0 popup = yes }
 		set_variable = {
-			name = formalis_elysian_games_decision_taken
-			value = yes
-		}
-		add_modifier = {
-			name = modifier_elysian_games
+			name = integrate_elyric_cooldown
+			years = 1
 		}
 	}
 
 	ai_chance = {
-		base = 0
-		modifier = {
-			trigger = { bureaucracy > 0 }
-			add = 5
+		value = 100
+	}
+}
+
+annex_client_states = {
+	is_shown = {
+		exists = c:ELY
+		root = c:ELY
+		NOT = { has_variable = ely_imperial_ended }
+		has_variable = ely_imperial_started
+	}
+
+	possible = {
+		is_at_war = no
+		custom_tooltip = {
+			text = ely_imperial_cooldown_tt
+			NOT = { has_variable = ely_imperial_cooldown }
 		}
-		modifier = {
-			OR = {
-				is_diplomatic_play_committed_participant = yes
-				is_at_war = yes
-			}
-			add = -1000
-		}		
+		any_subject_or_below = {
+			has_variable = ely_imperial_target
+		}
+	}
+
+	when_taken = {
+		trigger_event = { id = ely_expansion.1 days = 0 popup = yes }
+		set_variable = {
+			name = ely_imperial_cooldown
+			years = 1
+		}
+	}
+
+	ai_chance = {
+		value = 100
+	}
+}
+
+remove_debuff_aus = {
+	is_shown = {
+		exists = c:AUS
+		root = c:AUS
+		has_variable = AUS_debuff
+	}
+
+	possible = {	
+ 		is_player = yes
+	}
+
+	when_taken = {
+		remove_modifier = austrian_army_collapse 
 	}
 }

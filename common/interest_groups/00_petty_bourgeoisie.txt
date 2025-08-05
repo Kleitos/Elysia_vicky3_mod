@@ -10,6 +10,17 @@
 		ideology_patriotic
 	}
 
+	character_ideologies = {
+		ideology_moderate
+		ideology_traditionalist
+		ideology_jingoist_leader
+		ideology_protectionist
+		ideology_orleanist
+		ideology_bonapartist
+		ideology_legitimist
+		ideology_sovereignist_leader
+	}
+
 	enable = {
 		always = yes
 	}
@@ -20,7 +31,7 @@
 		ig_trait_middle_managers
 		ig_trait_xenophobia
 	}
-	
+
 	on_enable = {
 		ig:ig_petty_bourgeoisie = {
 			if = {
@@ -35,9 +46,9 @@
 				limit = {
 					owner = { c:TUR ?= this }
 				}
-						set_ig_trait = ig_trait:ig_trait_xenophobia
-						set_ig_trait = ig_trait:ig_trait_effendi
-						set_ig_trait = ig_trait:ig_trait_reorganization
+				set_ig_trait = ig_trait:ig_trait_xenophobia
+				set_ig_trait = ig_trait:ig_trait_effendi
+				set_ig_trait = ig_trait:ig_trait_reorganization
 			}
 			else_if = {
 				limit = {
@@ -64,6 +75,43 @@
 				set_ig_trait = ig_trait:ig_trait_civil_service
 				set_ig_trait = ig_trait:ig_trait_old_lady_of_threadneedle_street
 			}
+			else_if = {
+				limit = {
+					owner = {
+						OR = {
+							c:BIC ?= this
+							any_primary_culture = {
+								has_discrimination_trait = south_asian_heritage
+							}
+						}
+					}
+				}
+				remove_ideology = ideology_reactionary
+				add_ideology = ideology_modernizer
+				if = {
+					limit = {
+						owner = {
+							c:BIC ?= this
+						}
+					}
+					# Name
+					set_interest_group_name = ig_bhadralok
+
+					# Ideologies
+					remove_ideology = ideology_patriotic
+					add_ideology = ideology_sovereignist
+
+					# Traits
+					set_ig_trait = ig_trait:ig_trait_swadesh
+					set_ig_trait = ig_trait:ig_trait_lines_of_credit
+					set_ig_trait = ig_trait:ig_trait_cooperative_agencies
+				}
+				else = {
+					set_ig_trait = ig_trait:ig_trait_xenophobia
+					set_ig_trait = ig_trait:ig_trait_middle_managers
+					set_ig_trait = ig_trait:ig_trait_treasury_bonds
+				}
+			}
 			else = {
 				set_ig_trait = ig_trait:ig_trait_xenophobia
 				set_ig_trait = ig_trait:ig_trait_middle_managers
@@ -73,26 +121,54 @@
 	}
 
 	on_disable = {}
+	priority_cultures = { #Country scope
+		rule = {
+			trigger = {
+				c:BIC ?= this
+				any_primary_culture = {
+					cu:british = this
+				}
+			}
+			cultures = {
+				assamese avadhi baluchi bengali bihari gujarati kannada malayalam marathi oriya panjabi pathan rajput sindi tamil telegu hindustani bundeli pahari gondi bageli chhattisgarhi deccani
+			}
+		}
+	}
 	on_character_ig_membership = {}
 
 	pop_potential = {
 		custom_tooltip = {
 			text = would_be_accepted_under_national_supremacy_tt
 			this.culture = {
-				AND = {
-					shares_heritage_trait_with_any_primary_culture = prev.owner
-					shares_non_heritage_trait_with_any_primary_culture = prev.owner
+				OR = {
+					AND = {
+						shares_heritage_trait_with_any_primary_culture = prev.owner
+						shares_non_heritage_trait_with_any_primary_culture = prev.owner
+					}
+					AND = {
+						c:BIC ?= prev.owner
+						has_discrimination_trait = south_asian_heritage
+					}
 				}
 			}
 		}
 		NOR = {
 			is_pop_type = aristocrats
-			is_pop_type = capitalists
+			trigger_if = {
+				limit = {
+					NOT = {
+						c:BIC ?= owner
+					}
+				}
+				is_pop_type = capitalists
+			}
 		}
 		OR = {
 			pop_employment_building_group = bg_manufacturing
 			pop_employment_building_group = bg_service
 			pop_employment_building_group = bg_urban_facilities
+			pop_employment_building_group = bg_private_infrastructure
+			pop_employment_building_group = bg_financial_districts
 			pop_employment_building_group = bg_government
 			pop_employment_building_group = bg_logging
 			pop_employment_building_group = bg_mining
@@ -120,7 +196,24 @@
 	}
 
 	pop_weight = {
-		value = 50
+		if = {
+			limit = {
+				strata = lower
+			}
+			add = {
+				desc = "POP_BASE_ATTRACTION"
+				value = 15
+			}
+		}
+		else_if = {
+			limit = {
+				strata = middle
+			}
+			add = {
+				desc = "POP_BASE_ATTRACTION"
+				value = 30
+			}
+		}
 
 		add = {
 			desc = "POP_SHOPKEEPERS"
@@ -128,7 +221,7 @@
 				limit = {
 					is_pop_type = shopkeepers
 				}
-				value = 250
+				value = 150
 			}
 		}
 
@@ -206,6 +299,36 @@
 			}
 		}
 
+		if = {
+			limit = {
+				c:BIC ?= owner
+				culture = {
+					has_discrimination_trait = european_heritage
+				}
+			}
+			multiply = {
+				desc = "POP_INDIA_COLONIAL_RULE"
+				value = 0.1
+			}
+		}
+
+		if = {
+			limit = {
+				c:BIC ?= owner
+				culture = {
+					has_discrimination_trait = south_asian_heritage
+				}
+				OR = {
+					is_pop_type = capitalists
+					is_pop_type = shopkeepers
+				}
+			}
+			add = {
+				desc = "POP_INDIA_MONEYED_ELITES"
+				value = 75
+			}
+		}
+
 		multiply = {
 			desc = "LEADER_POPULARITY"
 			scope:interest_group = {
@@ -245,7 +368,7 @@
 				min = 0
 			}
 		}
-		
+
 		if = {
 			limit = {
 				scope:interest_group = {
@@ -338,11 +461,34 @@
 		value = 1.0
 	}
 
+	executive_weight = {
+		value = 1.5
+		
+		# The company owning BIC should not get non-industrialist executives
+		if = {
+			limit = {
+				exists = scope:company
+				exists = c:BIC
+				c:BIC = {
+					exists = owning_company
+					owning_company = scope:company
+				}
+			}
+			multiply = {
+				value = 0
+			}
+		}
+	}
+
 	noble_chance = {
 		value = 0.1
 	}
 
 	female_commander_chance = {
+		value = 0.0
+	}
+
+	female_executive_chance = {
 		value = 0.0
 	}
 
@@ -372,7 +518,7 @@
 
 	female_agitator_chance = {
 		value = 0.025
-		
+
 		if = {
 			limit = {
 				owner = {
@@ -383,8 +529,8 @@
 			add = {
 				value = 0.025
 			}
-		}	
-		
+		}
+
 		if = {
 			limit = {
 				owner = {
@@ -407,22 +553,27 @@
 			add = {
 				value = 0.025
 			}
-		}		
+		}
+		if = {
+			limit = {
+				owner = { c:ELY ?= this}
+			}
+			add = {
+				value = 0.75
+			}
+		}
 	}
 
 	# The chance that a commander belonging to this IG takes over leadership when it changes
 	# scope:character is the most popular commander in the IG
 	commander_leader_chance = {
 		value = 0.25
-		if = {
-			limit = {
-				exists = scope:character
-			}
-			multiply = {
-				value = 1
-				add = scope:character.popularity
-				min = 0
-			}
-		}
+		multiply = ig_commander_leader_chance_mult
+	}
+
+	# The chance that a executive belonging to this IG takes over leadership when it changes
+	# scope:character is the most popular executive in the IG
+	executive_leader_chance = {
+		value = 0.5
 	}
 }

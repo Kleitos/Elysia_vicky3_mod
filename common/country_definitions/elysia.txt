@@ -9,6 +9,18 @@
 	capital = STATE_DISTRICT_OF_COLUMBIA
 }
 
+TWT = { # Tawantinsuyu
+	color = rgb { 0.1 0.21 0.34 }
+	
+	country_type = recognized
+	
+	tier = empire
+	
+	cultures = { quechua aimara }
+	
+	capital = STATE_ICA
+}
+
 INC = { # Tawantinsuyu
 	color = rgb { 0.1 0.21 0.34 }
 	
@@ -19,4 +31,15 @@ INC = { # Tawantinsuyu
 	cultures = { quechua aimara }
 	
 	capital = STATE_LA_PAZ
+}
+
+JAM = {
+	color = { 183 54 42 }
+	
+	country_type = recognized
+
+	tier = principality
+	
+	cultures = { arkadian }
+	capital = STATE_MIRANDA
 }

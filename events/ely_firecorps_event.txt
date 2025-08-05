@@ -63,6 +63,9 @@ fire_corps_event.2 = {
 	}
 	
 	immediate = {
+		add_journal_entry = {
+			type = je_fire_corps
+		}
 	}
 
 	option = {
@@ -100,6 +103,9 @@ fire_corps_event.3 = {
 	}
 	
 	immediate = {
+		add_journal_entry = {
+			type = je_fire_corps
+		}
 	}
 
 	option = {

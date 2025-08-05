@@ -1,5 +1,6 @@
 ﻿namespace = ely_south_america_diplo
 namespace = ely_south_america_integration
+namespace = ely_inca_flavour
 
 ### Diplomatic Expansion ###
 
@@ -30,16 +31,24 @@ ely_south_america_diplo.1 = {
 				country = c:MUI
 				type = puppet
 			}
+			create_bidirectional_truce = {
+				country = c:TWT
+				months = 40
+			}
 		}
 	}
 	option = {
-	name = ely_south_america_diplo.1.a 
-		add_journal_entry = {
-			type = je_muiscan_unification
-		}
-		create_diplomatic_pact = {
-			country = c:MUI
-			type = puppet
+		name = ely_south_america_diplo.1.a 
+		default_option = yes
+			add_journal_entry = {
+				type = je_muiscan_unification
+			}
+			
+		c:TWT = {
+			create_diplomatic_pact = {
+				country = c:MUI
+				type = puppet
+			}
 		}
 	}
 }
@@ -68,10 +77,11 @@ ely_south_america_diplo.2 = {
 	immediate = {
 	}
 	option = {
-	name = ely_south_america_diplo.2.a 
-		add_journal_entry = {
-			type = je_cultural_shift_muiscan
-		}
+		name = ely_south_america_diplo.2.a 
+		default_option = yes
+			add_journal_entry = {
+				type = je_cultural_shift_muiscan
+			}
 			annex = c:MUI
 	}
 }
@@ -103,17 +113,24 @@ ely_south_america_diplo.3 = {
 				country = c:WYU
 				type = puppet
 			}
+			create_bidirectional_truce = {
+				country = c:TWT
+				months = 40
+			}
 		}
 	}
 	option = {
-	name = ely_south_america_diplo.3.a 
-		add_journal_entry = {
-			type = je_wayuu_unification
-		}
+		name = ely_south_america_diplo.3.a 
+		default_option = yes
+			add_journal_entry = {
+				type = je_wayuu_unification
+			}
+		c:TWT = {
 			create_diplomatic_pact = {
 				country = c:WYU
 				type = puppet
 			}
+		}
 	}
 }
 
@@ -141,97 +158,12 @@ ely_south_america_diplo.4 = {
 	immediate = {
 	}
 	option = {
-	name = ely_south_america_diplo.4.a 
+		name = ely_south_america_diplo.4.a 
+		default_option = yes
 			annex = c:WYU
-		s:STATE_ZULIA = {
-			add_homeland = cu:quechua
-		}
-	}
-}
-
-ely_south_america_diplo.5 = {
-	type = country_event
-
-	title = ely_south_america_diplo.5.t
-	desc = ely_south_america_diplo.5.d
-	flavor = ely_south_america_diplo.5.f
-
-	event_image = {
-		video = "gfx/event_pictures/southamerica_aristocrats.bk2"
-	}
-
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/southamerica/aristocrats"
-
-	icon = "gfx/interface/icons/event_icons/event_map.dds"
-
-	duration = 3
-
-	trigger = {
-	}
-
-	immediate = {
-		c:ELY = {
-			remove_diplomatic_pact = {
-				country = c:GRI
-				type = protectorate
+			s:STATE_ZULIA = {
+				add_homeland = cu:quechua
 			}
-		}
-		c:GRI = {
-			random_scope_state = {
-				limit = {
-					is_homeland = cu:quechua
-					}
-				save_scope_as = quechua_scope
-			}
-		}
-	}
-	option = {
-		name = ely_south_america_diplo.5.a 
-		annex = c:GRI
-	}
-}
-
-ely_south_america_diplo.6 = {
-	type = country_event
-
-	title = ely_south_america_diplo.6.t
-	desc = ely_south_america_diplo.6.d
-	flavor = ely_south_america_diplo.6.f
-
-	event_image = {
-		video = "gfx/event_pictures/southamerica_aristocrats.bk2"
-	}
-
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/southamerica/aristocrats"
-
-	icon = "gfx/interface/icons/event_icons/event_map.dds"
-
-	duration = 3
-
-	trigger = {
-	}
-
-	immediate = {
-		c:ELY = {
-			remove_diplomatic_pact = {
-				country = c:PAT
-				type = protectorate
-			}
-		}
-		c:PAT = {
-			random_scope_state = {
-				limit = {
-					is_homeland = cu:aimara
-					}
-				save_scope_as = aimara_scope
-			}
-		}
-	}
-	option = {
-		name = ely_south_america_diplo.6.a 
-		annex = c:PAT	
 	}
 }
 
@@ -259,18 +191,6 @@ ely_south_america_integration.1 = {
 	}
 
 	immediate = {
-		if = {
-			limit = {
-				c:TWT ?= this
-			}
-			remove_primary_culture = cu:aimara
-		}
-		if = {
-			limit = {
-				c:INC ?= this
-			}
-			remove_primary_culture = cu:aimara
-		}
 	}
 
 	option = {
@@ -279,7 +199,130 @@ ely_south_america_integration.1 = {
 		ai_chance = {
 			base = 100
 		}
-		trigger_event = { id = ely_south_america_integration.2 days = 10 }	
+		c:TWT = {
+			trigger_event = { id = ely_south_america_integration.2 }
+		}
+		remove_primary_culture = cu:aimara
+		remove_primary_culture = cu:quechua
+		add_primary_culture = cu:incan_culture
+		hidden_effect = {
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:aimara }
+					change_pop_culture = { target = cu:incan_culture value = 1 }
+				}
+			}
+				every_scope_pop = {
+					limit = { culture = cu:quechua }
+					change_pop_culture = { target = cu:incan_culture value = 1 }
+				}
+			}
+		}		
+		s:STATE_ZULIA = {
+			remove_homeland = cu:aimara
+			remove_homeland = cu:quechua
+			add_homeland = cu:incan_culture
+		}
+		s:STATE_ECUADOR = {
+			remove_homeland = cu:aimara
+			remove_homeland = cu:quechua
+			add_homeland = cu:incan_culture
+		}
+		s:STATE_CAUCA = {
+			remove_homeland = cu:aimara
+			remove_homeland = cu:quechua
+			add_homeland = cu:incan_culture
+		}
+		s:STATE_PASTAZA = {
+			remove_homeland = cu:aimara
+			remove_homeland = cu:quechua
+			add_homeland = cu:incan_culture
+		}
+		s:STATE_CAJAMARCA = {
+			remove_homeland = cu:aimara
+			remove_homeland = cu:quechua
+			add_homeland = cu:incan_culture
+		}
+		s:STATE_LIMA = {
+			remove_homeland = cu:aimara
+			remove_homeland = cu:quechua
+			add_homeland = cu:incan_culture
+		}
+		s:STATE_ICA = {
+			remove_homeland = cu:aimara
+			remove_homeland = cu:quechua
+			add_homeland = cu:incan_culture
+		}	
+		s:STATE_AREQUIPA = {
+			remove_homeland = cu:aimara
+			remove_homeland = cu:quechua
+			add_homeland = cu:incan_culture
+		}
+		s:STATE_SANTA_CRUZ = {
+			remove_homeland = cu:aimara
+			remove_homeland = cu:quechua
+			add_homeland = cu:incan_culture
+		}
+		s:STATE_LA_PAZ = {
+			remove_homeland = cu:aimara
+			remove_homeland = cu:quechua
+			add_homeland = cu:incan_culture
+		}
+		s:STATE_TUCUMAN = {
+			remove_homeland = cu:aimara
+			remove_homeland = cu:quechua
+			add_homeland = cu:incan_culture
+		}
+		s:STATE_JUJUY = {
+			remove_homeland = cu:aimara
+			remove_homeland = cu:quechua
+			add_homeland = cu:incan_culture
+		}
+		s:STATE_POTOSI = {
+			remove_homeland = cu:aimara
+			remove_homeland = cu:quechua
+			add_homeland = cu:incan_culture
+		}
+		s:STATE_TARAPACA = {
+			remove_homeland = cu:aimara
+			remove_homeland = cu:quechua
+			add_homeland = cu:incan_culture
+		}
+		s:STATE_ANTOFAGASTA = {
+			remove_homeland = cu:aimara
+			remove_homeland = cu:quechua
+			add_homeland = cu:incan_culture
+		}
+		s:STATE_SANTIAGO = {
+			remove_homeland = cu:aimara
+			remove_homeland = cu:quechua
+			add_homeland = cu:incan_culture
+		}
+		s:STATE_LOS_RIOS = {
+			remove_homeland = cu:aimara
+			remove_homeland = cu:quechua
+			add_homeland = cu:incan_culture
+		}
+		s:STATE_ARAUCANIA = {
+			remove_homeland = cu:aimara
+			remove_homeland = cu:quechua
+			add_homeland = cu:incan_culture
+		}
+		s:STATE_LA_PAMPA = {
+			remove_homeland = cu:aimara
+			remove_homeland = cu:quechua
+			add_homeland = cu:incan_culture
+		}
+		s:STATE_RIO_NEGRO = {
+			remove_homeland = cu:aimara
+			remove_homeland = cu:quechua
+			add_homeland = cu:incan_culture
+		}
+		s:STATE_PATAGONIA = {
+			remove_homeland = cu:aimara
+			remove_homeland = cu:quechua
+			add_homeland = cu:incan_culture
+		}
 	}
 }
 
@@ -314,41 +357,15 @@ ely_south_america_integration.2 = {
 		ai_chance = {
 			base = 100
 		}
-		hidden_effect = {
-			every_country = {
-				every_scope_pop = {
-					limit = { culture = cu:aimara }
-					change_pop_culture = { target = cu:quechua value = 1 }
-				}
-			}
-		}		
-		s:STATE_AREQUIPA = {
-			remove_homeland = cu:aimara
+		c:TWT = {
+			change_infamy = 10
+			add_journal_entry = { type = je_cultural_shift_muiscan }
 		}
-		s:STATE_LA_PAZ = {
-			remove_homeland = cu:aimara
-		}
-		s:STATE_POTOSI = {
-			remove_homeland = cu:aimara
-		}
-		s:STATE_TARAPACA = {
-			remove_homeland = cu:aimara
-		}
-		s:STATE_ANTOFAGASTA = {
-			remove_homeland = cu:aimara
-		}
-		s:STATE_SANTIAGO = {
-			remove_homeland = cu:aimara
-			add_homeland = cu:quechua
-		}
-		s:STATE_LOS_RIOS = {
-			remove_homeland = cu:aimara
-			add_homeland = cu:quechua
-		}
-		s:STATE_ARAUCANIA = {
-			remove_homeland = cu:aimara
-			add_homeland = cu:quechua
-		}
+	}
+
+	option = {
+		name = ely_south_america_integration.2.b
+		default_option = yes
 	}
 }
 
@@ -386,7 +403,7 @@ ely_south_america_integration.3 = {
 			every_country = {
 				every_scope_pop = {
 					limit = { culture = cu:muisca }
-					change_pop_culture = { target = cu:quechua value = 1 }
+					change_pop_culture = { target = cu:incan_culture value = 1 }
 				}
 			}
 		}
@@ -395,11 +412,52 @@ ely_south_america_integration.3 = {
 		}
 		s:STATE_ANTIOQUIA = {
 			remove_homeland = cu:muisca
-			add_homeland = cu:quechua
+			add_homeland = cu:incan_culture
 		}
 		s:STATE_CUNDINAMARCA = {
 			remove_homeland = cu:muisca
-			add_homeland = cu:quechua
+			add_homeland = cu:incan_culture
+		}
+		s:STATE_GUAVIARE = {
+			remove_homeland = cu:muisca
+			add_homeland = cu:incan_culture
 		}
 	}
 }	
+
+ely_inca_flavour.1 = {
+	type = country_event
+
+	title = ely_inca_flavour.1.t
+	desc = ely_inca_flavour.1.d
+	flavor = ely_inca_flavour.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/southamerica_aristocrats.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/southamerica/aristocrats"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	duration = 4
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+	option = {
+		name = ely_inca_flavour.1.a 
+		default_option = yes
+		c:TWT = {
+			add_journal_entry = { type = je_anti_ruler }
+			add_journal_entry = { type = je_andean_pathway }
+			add_journal_entry = { type = je_reform_mines }
+			add_journal_entry = { type = je_andean_farming }
+			add_journal_entry = { type = je_andean_ranching }
+			add_journal_entry = { type = je_sulfur_lead }
+		}
+	}
+}

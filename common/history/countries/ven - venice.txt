@@ -1,2 +1,21 @@
 ﻿COUNTRIES = {
+	c:VEN ?= {
+		# set_next_election_date = ???
+		
+		effect_starting_technology_tier_2_tech = yes
+		effect_starting_politics_liberal = yes
+		
+		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_wealth_voting
+		activate_law = law_type:law_free_trade
+		activate_law = law_type:law_right_of_assembly
+			
+		trigger_event = { id = ely_italian_flavour.1 popup = yes }
+		
+		add_modifier = {
+			name = echoes_of_revolution
+			days = long_modifier_time
+		}
+	}
 }

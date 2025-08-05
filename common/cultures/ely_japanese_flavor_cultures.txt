@@ -106,6 +106,7 @@
 		Matsudaira
 		Mitsune
 		Nabeshima
+		Ninko
 		Togo
 		Tokugawa
 		Oda

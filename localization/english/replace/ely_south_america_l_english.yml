@@ -1,0 +1,259 @@
+﻿l_english:
+
+  ### Countries ###
+ 
+INC:0 "Inca"
+INC_ADJ:0 "Incan"
+  
+TWT_FLAVOR_TEXT:0 "Survivors of European plague and steel, the Inca endure as highland sovereigns of the Andes. Reforged by crisis and alliance, they stand beside Elysia and Japan in a great pagan pact defying Iberian missionaries and colonial greed. Yet for all their resilience, the ancient system strains under the weight of the modern world. Will the Sapa Inca reform his empire and bring forth a golden age anew—or will the old ways shatter in the face of change?"
+
+GRI_FLAVOR_TEXT:0 "In the green heart of South America, the Guaraní Confederacy resists the steel of foreign empires. Born of mission, rebellion, and survival, they stand against Iberian ambition and British advance alike. Will the Guaraní forge a native future—or be swept away by the tide of colonization?"
+
+BRZ_FLAVOR_TEXT:0 "A jewel of Iberia, Brazil sprawls along the Atlantic coast—rich in sugar, gold, and misery. Though the elites dream of expansion inland and dominance over South America, the soul of the colony roils with unrest. Millions enslaved remember every lash, and freedom simmers beneath the cane fields."
+
+PLN_FLAVOR_TEXT:0 "In the wind-swept plains of the south, Platea stands as a British outpost of order and trade. Yet raiders stalk the borders—Guaraní in the jungle, Inca from the mountains—and Brazil eyes their holdings with jealousy. Will Platea endure as a civilized bastion, or be consumed by the continent it never truly tamed?"
+
+
+### Country ###
+Culture
+ 
+ incan_culture:0 "Hatun Runa"
+
+IG
+
+ ig_incan_church:0 "Kamayuq Priesthood"
+ ig_incan_church_desc:0 "The Kamayuq Priesthood are keepers of ancestral rites, celestial wisdom, and the moral guardianship of the Sapa Inka’s people. Though their rituals once sustained divine reciprocity with the apus and ancestors, today they navigate a modern world where the sun and stars share space with steam and steel."
+
+ ig_incan_nobility:0 "Panaka Lineages"
+ ig_incan_nobility_desc:0 "The Panaka are royal lineages descended from the Sapa Inka’s sacred bloodline. These noble houses once served as administrators, governors, and guardians of communal harmony. Though clothed in the authority of the past, many now command estates, titles, and influence that echo more oligarchy than ayni."
+
+ ig_incan_merchant_class:0 "Qhatuq Class"
+ ig_incan_merchant_class_desc:0 "The Qhatuq — once humble market facilitators in the shadow of state redistribution — have emerged as powerful brokers of silver, textiles, and grain. Blending old communal stewardship with modern trade networks, they now walk the halls of power alongside priests and princes."
+
+ 
+
+Ideology
+
+ ideology_incan_administration:0 "Hybrid of Ayllu, Guild, and Temple"
+ ideology_incan_administration_desc:0 "The governance of *Tawantin Suyu* is an intricate dance between the *kuraka* nobility, merchant guilds, and the sacred *willka kamayoq*. This trinity preserves harmony, maintains social balance, and guards tradition against foreign disorder."
+
+ ideology_incan_corve:0 "Mit’a Labor Code"
+ ideology_incan_corve_desc:0 "Citizens of the *Suyu* owe labor, not coin. Through *mit’a*, communities sustain the roads, terraces, and temples of the realm. It is duty, not exploitation—a sacred rhythm between people and state, blessed by *Inti*."
+
+ ideology_incan_middle_land:0 "Communal Ownership, Renewed"
+ ideology_incan_middle_land_desc:0 "Land belongs first to the *ayllu*, then to the *Suyu*. But reforms must allow individuals a voice in its stewardship. This vision seeks to harmonize tradition with accountability—redistributing idle lands for the prosperity of all."
+
+ ideology_incan_middle_admin:0 "Voice of the Commoner"
+ ideology_incan_middle_admin_desc:0 "Power must no longer reside solely in temples or ancestral bloodlines. A new class of educated administrators and skilled professionals shall guide the *Suyu*—chosen by merit, not myth."
+
+ ideology_incan_middle_rights:0 "Sacred Dignity for All"
+ ideology_incan_middle_rights_desc:0 "Every child of *Inti*, be they artisan or herder, deserves voice and dignity. Rights shall not be inherited—they shall be lived."
+
+ ideology_incan_middle_army:0 "Service Through Citizenship"
+ ideology_incan_middle_army_desc:0 "To serve the *Suyu* in arms is a duty—and a path to honor. Citizenship must be opened to those who prove loyalty in defense of the realm, regardless of caste."
+
+ ideology_incan_middle_economy:0 "Market Within Tradition"
+ ideology_incan_middle_economy_desc:0 "We embrace commerce—not as conquest, but as exchange between equals. Local markets and guilds may flourish, so long as they serve the *ayllu* and not foreign greed."
+
+ ideology_incan_rich_land:0 "Guardian Stewardship"
+ ideology_incan_rich_land_desc:0 "The nobility and clergy hold sacred lands not for personal wealth, but for the *Suyu*. Reforms must affirm their stewardship while expanding productive use to secure the spiritual and material prosperity of all."
+
+ ideology_incan_rich_admin:0 "Hierarchy with Harmony"
+ ideology_incan_rich_admin_desc:0 "The old ways endure—governance through *kuraka* lineages and sacred caste. But modernization need not break tradition. Let the council grow, not collapse."
+
+ ideology_incan_rich_rights:0 "Guided Benevolence"
+ ideology_incan_rich_rights_desc:0 "Rights shall be granted as the shepherd tends his flock—with wisdom and restraint. Not all are ready for liberty, but all may one day earn it."
+
+ ideology_incan_rich_army:0 "Honor Through Lineage"
+ ideology_incan_rich_army_desc:0 "The defense of the *Suyu* remains the duty of the noble houses and their retainers. Service is not just obligation—it is legacy, bestowed by sun and stone."
+
+ ideology_incan_rich_economy:0 "Sacred Guild and Temple Economy"
+ ideology_incan_rich_economy_desc:0 "True wealth lies in balance—between divine duty, local barter, and noble oversight. The high-born and high-priests must guide trade to preserve the soul of the *Suyu*."
+
+ 
+##Modifiers##
+Modifiers
+
+ ruler_of_andes:0 "Ruler of the Anti"
+ ruler_of_andes_desc:0 "Our Empire stretches across the spine of the world, from northern Sierra to southern ice. The Anti bows before us."
+
+ wealth_of_the_andes:0 "Wealth of the Anti"
+ wealth_of_the_andes_desc:0 "From copper veins to golden altars, from fertile terraces to steaming baths — the Anti sustains its rulers with endless wealth."
+
+ sulfur_leader:0 "World Leader in Sulfur Production"
+ sulfur_leader_desc:0 "Through state guidance and ancestral knowledge, we have harnessed the volcanic wealth of the Andes to dominate global sulfur output."
+
+ incan_mining:0 "Reformed Mining System"
+ incan_mining_desc:0 "Modernized practices and imperial oversight have turned our mines into engines of prosperity."
+
+ incan_farming:0 "Reformed Terrace Farming"
+ incan_farming_desc:0 "By blending ancestral knowledge with new techniques, we have revived and improved our mountain agriculture."
+
+ incan_ranching:0 "Reformed Anti Ranching"
+ incan_ranching_desc:0 "Our highland pastures now host thriving herds whose wool clothes nobles and traders alike in fine luxury."
+
+ incan_societal_reforms:0 "Reorganized Imperial Estates"
+ incan_societal_reforms_desc:0 "The structures of the old Tawantinsuyu have been rebalanced to reflect modern needs, empowering both ancient lineages and rising classes."
+
+ 
+### Journals Entries ###
+Journals
+  
+ je_muiscan_transfer:0 "Securing the Muiscan Mandate"
+ je_muiscan_transfer_reason:0 "The Elysians have long served as protectors of the Muiscan people. A reformed and disciplined army may persuade them to entrust us with this sacred responsibility."
+
+ je_muiscan_unification:0 "Integrating the Muiscan Confederation"
+ je_muiscan_unification_reason:0 "Through diplomacy and mutual respect, we may inspire the Muiscan leaders to formally join the empire."
+
+ je_wayuu_transfer:0 "Wayuu Mandate Negotiations"
+ je_wayuu_transfer_reason:0 "The Elysians have preserved Wayuu independence for generations. With renewed strength and trust, we may now claim the role of protector."
+
+ je_wayuu_unification:0 "Incorporating the Wayuu Lands"
+ je_wayuu_unification_reason:0 "With stable relations and cultural outreach, we can make a case for unification with the Wayuu people."
+
+ je_cultural_shift_incan:0 "The Birth of a Greater Incan Identity"
+ je_cultural_shift_incan_reason:0 "To unite the peoples of the Andes under one banner, we must forge a shared cultural identity rooted in both tradition and modern purpose."
+
+ je_cultural_shift_muiscan:0 "Weaving the Muisca into the Imperial Tapestry"
+ je_cultural_shift_muiscan_reason:0 "Bound by geography and shared history, the Muisca can find common cause with us in a unified imperial identity."
+
+ je_incan_reforms:0 "Reforms of the Suyu"
+ je_incan_reforms_reason:0 "The *Tawantin Suyu* endures—but to flourish in this new era, it must evolve. Let us reshape the ayllu, temper the powers of the *willka kamayoq* and the noble merchant clans, and build a future where the *Suyu* does not merely survive—but shines."
+
+ je_anti_ruler:0 "Sapa Inka of the Anti"
+ je_anti_ruler_reason:0 "The *Anti Suyu*, cradle of mountain spirits and citadels, is ours by right of sun and stone. The time has come to affirm our destiny—to be the sole stewards of the sacred Andes, from clouded peak to jungle root."
+
+ je_andean_pathway:0 "The Path of the Anti"
+ je_andean_pathway_reason:0 "Our empire, hemmed in by the high ridges of the Andes, has long relied on narrow trails and ancient roads. But the Elysians carved stone and steel through their own mountains — perhaps we too may bind the empire with modern pathways, from the puna to the valleys."
+
+ je_reform_mines:0 "Awaken the Veins of the Earth"
+ je_reform_mines_reason:0 "Beneath our mountains lies the wealth of ages — silver, copper, tin, and saltpeter. But our mines remain inefficient, fragmented, and dangerous. With the right reforms, we can turn the Andean depths into the engine of national progress."
+
+ je_andean_farming:0 "Reviving the Stone Fields"
+ je_andean_farming_reason:0 "Our ancestors sculpted mountains into gardens, taming the slopes with patience and stone. Now, let us return to those terraces — not as monuments of the past, but as the foundation of a modern agricultural economy."
+
+ je_andean_ranching:0 "The Shepherds of the Sky"
+ je_andean_ranching_reason:0 "The high plains of the Andes sustain great herds of alpacas and llamas, animals central to our way of life. Let us reform the ranching sector with veterinary knowledge, textile innovation, and trade incentives, so that these herds may carry us into the modern world."
+
+ je_reform_mines_2:0 "Forge the Depths of the New Anti"
+ je_reform_mines_2_reason:0 "The lands we now govern—rich in veins of ore and sacred stone—await the kiss of hammer and flame. We shall bring our wisdom to bear, refining the ancestral earth to fuel a new age."
+
+ je_andean_pathway_2:0 "Extend the Great Anti Pathway"
+ je_andean_pathway_2_reason:0 "No longer do our borders end with the old Anti. From the snowy peaks of the Kunturmarka to the plateaus of the Wayuu, we shall extend the sacred road that binds the Andes in unity."
+
+ je_andean_farming_2:0 "Cultivate the New Terraces"
+ je_andean_farming_2_reason:0 "Our ancestors coaxed life from stone. Now, in the far valleys and highlands newly under our guidance, we shall shape the land anew and make it sing with grain and root."
+
+ je_andean_ranching_2:0 "Grow the Herds of the Empire"
+ je_andean_ranching_2_reason:0 "From the windswept southern steppes to the warm northern pastures, our herders expand their reach. The wool of alpacas and vicuñas will drape the empire in wealth and warmth."
+ 
+ je_sulfur_lead:0 "Master of Sulfur"
+ je_sulfur_lead_reason:0 "From the Eireneic islands to the peaks of the Anti, the riches of sulfur and saltpeter fuel our forges, our explosives, and our industries. Let the world come to us for what lies beneath the earth."
+
+ 
+ 
+### Events ###
+Events
+ 
+ ely_south_america_diplo.1.t:0 "The First Anthean Accord"
+ ely_south_america_diplo.1.d:0 "Our earliest contact with Elysia came in the fires of war, as we fought together to repel Iberian invaders. Since then, they have stood as guardians of Anthean sovereignty. Yet, times have changed. Today, Elysia welcomes our rise and supports our ambition to take up the mantle of regional stewardship."
+ ely_south_america_diplo.1.f:0 "We once fought side by side as brothers in arms. Now, we walk forward as equals in peace."
+ ely_south_america_diplo.1.a:0 "To peace, prosperity, and partnership."
+
+ ely_south_america_diplo.2.t:0 "Union with the Muisca"
+ ely_south_america_diplo.2.d:0 "Though their recent ties have been closer to Elysia, the Muisca share with us a long legacy of defiance and resilience in the Andes. With careful diplomacy—and subtle pressure—we may guide them into full union with our empire."
+ ely_south_america_diplo.2.f:0 "Their temples rose beside ours long before the strangers came. Let them rise again, under one sun."
+ ely_south_america_diplo.2.a:0 "Another thread woven into the imperial fabric."
+
+ ely_south_america_diplo.3.t:0 "The Second Anthean Accord"
+ ely_south_america_diplo.3.d:0 "With patience and prudence, we have once again earned the trust of the Elysians. Their stewardship over the Wayuu has now been formally transferred to us, marking a quiet yet decisive shift in the balance of Anthean leadership."
+ ely_south_america_diplo.3.f:0 "They speak of strength in arms, but we know true strength lies in unity — and understanding."
+ ely_south_america_diplo.3.a:0 "The quill shapes the future."
+
+ ely_south_america_diplo.4.t:0 "Unification with the Wayuu"
+ ely_south_america_diplo.4.d:0 "By cultivating loyal elements within Wayuu society and offering a vision of shared destiny, we have undermined their old regime. The annexation proceeds not with bloodshed, but with quiet certainty."
+ ely_south_america_diplo.4.f:0 "The winds of the north now carry our standard. Let it be not a banner of conquest, but of communion."
+ ely_south_america_diplo.4.a:0 "Our horizons widen."
+
+ ely_south_america_integration.1.t:0 "Forging a Shared Identity"
+ ely_south_america_integration.1.d:0 "As our empire expands, the need for a unifying cultural identity becomes clear. By drawing from both Quechua and Aymara traditions, and integrating new allies into a shared historical narrative, we can define what it truly means to be Incan in the modern world."
+ ely_south_america_integration.1.f:0 "No empire can endure without the soul of a people. Let us carve that soul anew."
+ ely_south_america_integration.1.a:0 "Let our people walk forward together."
+
+ ely_south_america_integration.2.t:0 "Should the Muisca Be Included?"
+ ely_south_america_integration.2.d:0 "The Muisca are distinct, yet kindred. Their customs, language, and legacy offer both divergence and resonance. Should we take the next step and invite them into our greater cultural project?"
+ ely_south_america_integration.2.f:0 "The northern highlands whisper our name in older tongues. Shall we teach them to sing?"
+ ely_south_america_integration.2.a:0 "Yes — unity demands inclusion."
+ ely_south_america_integration.2.b:0 "Not yet — let them stand apart, for now."
+
+ ely_south_america_integration.3.t:0 "Muisca Cultural Integration"
+ ely_south_america_integration.3.d:0 "With care, cultural outreach, and a reframing of our shared history, we can welcome the Muisca into a renewed Incan identity. The past may diverge, but the future can be forged as one."
+ ely_south_america_integration.3.f:0 "In every myth, in every stone and story, we find the same root. Let us grow from it, together."
+ ely_south_america_integration.3.a:0 "Let us walk as one people."
+
+ 
+ ely_incan_reform.1.t:0 "The Blood of Empire, The Breath of Change"
+ ely_incan_reform.1.d:0 "The *Suyu* has weathered centuries—yet now, its foundation trembles not from war or famine, but from thought and ambition. The old *kuraka* lords, the merchant dynasties, and the priesthood debate in *Qusqu* as the *Sapa Inka* listens. Some fear erosion of order; others see the rising sun of a new era. The question is no longer whether change is coming—but who shall shape it."
+ ely_incan_reform.1.f:0 "“Even the stones remember—but they do not weep when the river changes course.”"
+ ely_incan_reform.1.a:0 "Let the era of *Inti Rimay* begin."
+
+ inca_glory.1.t:0 "Sapa Inka of the Anti"
+ inca_glory.1.d:0 "From the mist-laced peaks of *Anti Suyu* to the sacred valleys below, no rival now challenges our dominion. The scattered *suyu* beyond look to us with reverence—or with envy. The *Sapa Inka* stands alone atop the world, not as a tyrant, but as guardian of the sacred chain. These mountains have named their master—and it is us."
+ inca_glory.1.f:0 "“Let the thunder speak and the condor bear witness—these heights belong to the children of Inti.”"
+ inca_glory.1.a:0 "These mountains are our home, now and forever."
+
+ ely_incan_war.1.t:0 "The Pact Frays"
+ ely_incan_war.1.d:0 "For three centuries, we stood shoulder to shoulder with Elysia and Nihon, bound by shared defiance of the Cross and Crown. We bled together against the invaders from across the sea, and in the long peace that followed, our lands became a bridge between East and West. Caravans of foreign goods wound through our valleys, while our gold and silver filled their treasuries. \n\nBut peace breeds memory, and memory decays. What once was sacred has turned sour in the mouths of our people. Elysian and Japanese merchants, once guests, now act as masters — growing fat on the wealth of our ayllus while the earthbound sons of Inti labor in their shadows. The merchant-aristocracy grows complicit, hoarding gifts from afar and feeding the old alliance with words while gutting it in spirit.\n\nNow a reckoning looms. Shall we abandon this broken friendship and rise alone? Or might we still remake the Eireneic Treaty—not as servants, but as sovereigns?"
+ ely_incan_war.1.f:0 "“The apus do not forget betrayal. Let the sun judge what lies ahead.”"
+ ely_incan_war.1.a:0 "The era of deference is over—Inka must rise alone."
+ ely_incan_war.1.b:0 "No alliance is perfect—but the fire of kinship still smolders beneath the ash."
+ 
+ inca_infrastructure.1.t:0 "The Anti Pathway"
+ inca_infrastructure.1.d:0 "The towering backbone of our empire, the sacred Anti mountains, remains both a shield and a challenge. Merchants, messengers, and the armies of old once threaded their way through ancient trails. Now, engineers whisper of new roads, tunnels, and rail that could bind our northern and southern lands like never before. Can the mountains be made to serve once more, not just as guardians—but as bridges between our peoples?"
+ inca_infrastructure.1.f:0 "“We once carried chasquis over stone paths and narrow ridges. Now the chariots of thunder wish to carve their own.” – Elder of Kunturmarka"
+ inca_infrastructure.1.a:0 "One spine, one pathway, one nation."
+
+ inca_infrastructure.2.t:0 "Awakening the Mountain’s Blood"
+ inca_infrastructure.2.d:0 "The Anti Mountains, long revered, hold veins of copper, silver, and gold—gifts from Pachamama beneath stone and ash. In past times, only sacred tribute was taken. But now, modern methods offer deeper tunnels and stronger tools. There is wealth to unearth—but at what cost to the spirits of the earth?"
+ inca_infrastructure.2.f:0 "“We dig with care, or the mountain grows angry.” – Ñustapa guardian, Cerro Pukaqaqa"
+ inca_infrastructure.2.a:0 "The heart of the earth beats stronger."
+
+ inca_farms.1.t:0 "The Return to the Chakras"
+ inca_farms.1.d:0 "Our ancestors shaped the Anti slopes into vibrant green staircases, taming altitude through ingenuity. These chakras once fed millions with maize, potatoes, and quinoa. Today, erosion and neglect eat away at this legacy. Some propose a revival—mixing old techniques with modern science—to heal the mountains and feed the people."
+ inca_farms.1.f:0 "“The terraces are not ruins. They are waiting to live again.” – Engineer of the Royal Agricultural School"
+ inca_farms.1.a:0 "Reclaim the stone ladders of the earth."
+
+ inca_farms.3.t:0 "Breeding on the Roof of the World"
+ inca_farms.3.d:0 "The herds of the puna—alpacas, llamas, and vicuñas—have long given wool, meat, and strength to our people. But changes in demand and trade expose new potential. Better pastures, careful breeding, and textile refinement could birth a golden age for our highland herders, without forsaking tradition."
+ inca_farms.3.f:0 "“Alpaca wool is not just warm. It is the thread that binds families, markets, and memory.” – Rancher from Qollasuyu"
+ inca_farms.3.a:0 "The herds shall walk proudly once more."
+ 
+ inca_infrastructure.3.t:0 "Ore Beneath Every Mountain"
+ inca_infrastructure.3.d:0 "From the copper lands of the northern Tayrona to the frozen silver ridges of the southern Yawarmarka, the new lands of our empire overflow with wealth. The mountain spirits whisper of untouched veins, calling for picks and forges to awaken them."
+ inca_infrastructure.3.f:0 "“The earth does not give freely—but it remembers those who once honored it. We return not as pillagers, but as its rightful stewards.”\n– Mayuq Tuku, Chief Overseer of Mines"
+ inca_infrastructure.3.a:0 "The roaring fires of industry demand more."
+
+ inca_infrastructure.4.t:0 "The Imperial Road Marches On"
+ inca_infrastructure.4.d:0 "Our stone roads now stretch beyond the old lands of Tawantinsuyu. Engineers carve paths through the Kuntur Spine and the southern icebound ridges, binding our empire from the farthest sunlit coast to the stormy tip of the world."
+ inca_infrastructure.4.f:0 "“Wherever the sun touches the peaks, our stone shall follow. Let the Empire of the Mountains rise on the bones of its roadways.”\n– Qhapaq Ñan Directive, Fifth Expansion"
+ inca_infrastructure.4.a:0 "No mountains can stop us."
+
+ inca_farms.2.t:0 "Seeds for a Unified Land"
+ inca_farms.2.d:0 "Across the new southern ranges and northern plateaus, our agronomists and ayllu leaders arrive to teach the methods of our ancestors—layered terraces, sacred water channels, and seasonal planting. Resistance fades as harvests grow."
+ inca_farms.2.f:0 "“We do not overwrite their ways—we show them how to weave their land into the fabric of our empire.”\n– Aska Uma, Master of Agricultural Reform"
+ inca_farms.2.a:0 "Put our knowledge to good use."
+
+ inca_farms.4.t:0 "Wool from Every Horizon"
+ inca_farms.4.d:0 "As we integrate the vast southern lands of the Mapu and Tehuel peoples, the herds of alpacas and llamas multiply. Workshops and weavers across the empire rejoice—the new pastures bring both fabric and pride."
+ inca_farms.4.f:0 "“Alpaca wool is not merely cloth—it is our banner, our legacy, our empire draped in the breath of the highlands.”\n– Inqa Yachaq, Imperial Guild of Weavers"
+ inca_farms.4.a:0 "From the fleece of the highland beasts, we weave unity."
+ 
+ guano_act.1.t:0 "Empire of Sulfur and Saltpeter"
+ guano_act.1.d:0 "With access to vast guano reserves along the coast and sulfur deposits in the mountains, our Empire has become the world’s foremost supplier of explosive materials. Chemists and generals alike turn their gaze to our lands."
+ guano_act.1.f:0 "“All empires must dig deep — some into memory, others into the land.”\n– Head Alchemist Kusi Wiraqocha"
+ guano_act.1.a:0 "This probably won't have any downside."
+ 
+ ely_inca_flavour.1.t:0 "Heirs of Inti, Guardians of Tawantin Suyu"
+ ely_inca_flavour.1.d:0 "High above the clouds of Anti Suyu, where the Apus whisper and the condor soars, the *Tawantin Suyu* endures. Forged in flame and famine, tested by pestilence and steel, the children of Inti repelled the invader and stood unbroken beside Elysia and Zipanghu.\n\nYet even as *Qusqu* thrives and the sun temple shines once more, stormwinds gather. The age of chasquis and quipus wanes. In their place rise coins, ledgers, and strange foreign ideas. The *Sapa Inka* rules still, but must now walk a path between the sacred and the new.\n\nThe world changes—but so does the *Tawantin Suyu*. Will the flame of Inti rise anew, or flicker in the shadow of the coming age?"
+ ely_inca_flavour.1.f:0 "“We are not ghosts of stone—we are the breath of the mountain, the word in the wind, the blood of the sun. So long as *Qusqu* stands, the *Suyu* shall never fall.”"
+ ely_inca_flavour.1.a:0 "*Tawantin Suyu* endures, as it always has."

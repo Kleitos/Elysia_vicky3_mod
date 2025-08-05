@@ -1,6 +1,7 @@
 ﻿namespace = byzantine_resurgence
 namespace = byzantine_colonial
 namespace = byzantine_glory
+namespace = byzantine_strike
 
 ### Byzantine Reconquest ###
 
@@ -27,30 +28,6 @@ byzantine_resurgence.1 = {
 	}
 
 	immediate = {
-		if = {
-			limit = { exists = s:STATE_HUDAVENDIGAR.region_state:EGY }
-			s:STATE_HUDAVENDIGAR.region_state:EGY = { set_state_owner = c:TUR }
-		}
-		if = {
-			limit = { exists = s:STATE_AYDIN.region_state:EGY }
-			s:STATE_AYDIN.region_state:EGY = { set_state_owner = c:TUR }
-		}
-		if = {
-			limit = { exists = s:STATE_TRABZON.region_state:EGY }
-			s:STATE_TRABZON.region_state:EGY = { set_state_owner = c:TUR }
-		}
-		if = {
-			limit = { exists = s:STATE_EASTERN_THRACE.region_state:EGY }
-			s:STATE_EASTERN_THRACE.region_state:EGY = { set_state_owner = c:TUR }
-		}
-	}
-
-    option = {
-		name = byzantine_resurgence.1.a
-		default_option = yes
-		ai_chance = {
-			base = 90
-		}
 		s:STATE_KONYA = {
 			add_homeland = cu:rhomaion
 			add_claim = c:BYZ
@@ -67,6 +44,14 @@ byzantine_resurgence.1 = {
 			add_homeland = cu:rhomaion
 			add_claim = c:BYZ
 		}
+	}
+
+    option = {
+		name = byzantine_resurgence.1.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
 		add_journal_entry = { type = je_byzantine_reconquest }
 		create_diplomatic_play = {
 			target_country = c:TUR
@@ -81,27 +66,12 @@ byzantine_resurgence.1 = {
 			add_war_goal = {
 				holder = c:BYZ
 				type = return_state
-				target_state = s:STATE_TRABZON.region_state:TUR
-			}
-			add_war_goal = {
-				holder = c:BYZ
-				type = return_state
 				target_state = s:STATE_EASTERN_THRACE.region_state:TUR
-			}
-			add_war_goal = {
-				holder = c:BYZ
-				type = war_reparations
-				target_country = c:TUR
 			}
 			add_war_goal = {
 				holder = c:BYZ
 				type = humiliation
 				target_country = c:TUR
-			}
-			add_war_goal = {
-				holder = c:TUR
-				type = war_reparations
-				target_country = c:BYZ
 			}
 			add_war_goal = {
 				holder = c:TUR
@@ -112,12 +82,9 @@ byzantine_resurgence.1 = {
 	}
 	option = {
 		name = byzantine_resurgence.1.b
-		ai_chance = {
-			base = 10
-		}
 		add_modifier = {
 			name = government_admits_failure
-			months = long_modifier_time
+			days = long_modifier_time
 		}
 	}
 }
@@ -145,24 +112,6 @@ byzantine_resurgence.2 = {
 	}
 
 	immediate = {
-		if = {
-			limit = { exists = s:STATE_KONYA.region_state:EGY }
-			s:STATE_KONYA.region_state:EGY = { set_state_owner = c:TUR }
-		}
-		if = {
-			limit = { exists = s:STATE_ANKARA.region_state:EGY }
-			s:STATE_ANKARA.region_state:EGY = { set_state_owner = c:TUR }
-		}
-		if = {
-			limit = { exists = s:STATE_KASTAMONU.region_state:EGY }
-			s:STATE_KASTAMONU.region_state:EGY = { set_state_owner = c:TUR }
-		}
-	}
-
-    option = {
-		name = byzantine_resurgence.2.a
-		default_option = yes
-		add_journal_entry = { type = je_byzantine_revenge }
 		s:STATE_ERZURUM = {
 			add_homeland = cu:rhomaion
 			add_claim = c:BYZ
@@ -171,6 +120,12 @@ byzantine_resurgence.2 = {
 			add_homeland = cu:rhomaion
 			add_claim = c:BYZ
 		}
+	}
+
+    option = {
+		name = byzantine_resurgence.2.a
+		default_option = yes
+		add_journal_entry = { type = je_byzantine_revenge }
 		ai_chance = {
 			base = 100
 		}
@@ -190,6 +145,11 @@ byzantine_resurgence.2 = {
 				target_state = s:STATE_KASTAMONU.region_state:TUR
 			}
 			add_war_goal = {
+				holder = c:BYZ
+				type = return_state
+				target_state = s:STATE_TRABZON.region_state:TUR
+			}
+			add_war_goal = {
 				holder = c:TUR
 				type = return_state
 				target_state = s:STATE_HUDAVENDIGAR.region_state:BYZ
@@ -202,17 +162,7 @@ byzantine_resurgence.2 = {
 			add_war_goal = {
 				holder = c:TUR
 				type = return_state
-				target_state = s:STATE_TRABZON.region_state:BYZ
-			}
-			add_war_goal = {
-				holder = c:TUR
-				type = return_state
 				target_state = s:STATE_EASTERN_THRACE.region_state:BYZ
-			}
-			add_war_goal = {
-				holder = c:TUR
-				type = war_reparations
-				target_country = c:BYZ
 			}
 			add_war_goal = {
 				holder = c:TUR
@@ -224,12 +174,9 @@ byzantine_resurgence.2 = {
 	
 	option = {
 		name = byzantine_resurgence.2.b
-		ai_chance = {
-			base = 0
-		}
 		add_modifier = {
 			name = government_admits_failure
-			months = long_modifier_time
+			days = long_modifier_time
 		}
 	}
 }
@@ -257,34 +204,6 @@ byzantine_resurgence.3 = {
 	}
 
 	immediate = {
-		if = {
-			limit = { c:SYR ?= { is_country_alive = yes } }
-			c:TUR = { annex = c:SYR }	
-		}
-		if = {
-			limit = { c:IRQ ?= { is_country_alive = yes } }
-			c:PER = { annex = c:IRQ }	
-		}
-		if = {
-			limit = { c:EOT ?= { is_country_alive = yes } }
-			c:EGY = { annex = c:EOT }	
-		}
-		if = {
-			limit = { c:LEB ?= { is_country_alive = yes } }
-			c:TUR = { annex = c:LEB }	
-		}
-		if = {
-			limit = { c:PAL ?= { is_country_alive = yes } }
-			c:EGY = { annex = c:PAL }	
-		}
-		if = {
-			limit = { exists = s:STATE_ERZURUM.region_state:EGY }
-			s:STATE_ERZURUM.region_state:EGY = { set_state_owner = c:TUR }
-		}
-		if = {
-			limit = { exists = s:STATE_DIYARBAKIR.region_state:EGY }
-			s:STATE_DIYARBAKIR.region_state:EGY = { set_state_owner = c:TUR }
-		}
 	}
 
     option = {
@@ -335,11 +254,6 @@ byzantine_resurgence.3 = {
 			}
 			add_war_goal = {
 				holder = c:TUR
-				type = war_reparations
-				target_country = c:BYZ
-			}
-			add_war_goal = {
-				holder = c:TUR
 				type = humiliation
 				target_country = c:BYZ
 			}
@@ -348,12 +262,138 @@ byzantine_resurgence.3 = {
 	
 	option = {
 		name = byzantine_resurgence.3.b
-		ai_chance = {
-			base = 0
-		}
 		add_modifier = {
 			name = government_admits_failure
-			months = long_modifier_time
+			days = long_modifier_time
+		}
+	}
+}
+
+byzantine_strike.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = byzantine_strike.1.t
+	desc = byzantine_strike.1.d
+	flavor = byzantine_strike.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_springtime_of_nations.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		s:STATE_IONIAN_ISLANDS = {
+			add_claim = c:BYZ
+		}
+		s:STATE_EAST_AEGEAN_ISLANDS = {
+			add_claim = c:BYZ
+		}
+		s:STATE_CYPRUS = {
+			add_claim = c:BYZ
+		}
+		s:STATE_DALMATIA = {
+			add_claim = c:BYZ
+		}
+	}
+
+    option = {
+		name = byzantine_strike.1.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+		add_journal_entry = { type = je_venetian_punishment }
+		create_diplomatic_play = {
+			target_country = c:VEN
+			war = yes
+			type = dp_return_state
+			target_state = s:STATE_IONIAN_ISLANDS.region_state:VEN
+			add_war_goal = {
+				holder = c:BYZ
+				type = return_state
+				target_state = s:STATE_DALMATIA.region_state:VEN
+			}
+			add_war_goal = {
+				holder = c:VEN
+				type = humiliation
+				target_country = c:BYZ
+			}
+		}
+	}
+	option = {
+		name = byzantine_strike.1.b
+		add_modifier = {
+			name = government_admits_failure
+			days = long_modifier_time
+		}
+		add_journal_entry = { type = je_venetian_punishment }
+	}
+}
+
+byzantine_strike.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = byzantine_strike.2.t
+	desc = byzantine_strike.2.d
+	flavor = byzantine_strike.2.f
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_springtime_of_nations.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		if = {
+			limit = { exists = s:STATE_IONIAN_ISLANDS.region_state:VEN }
+			s:STATE_IONIAN_ISLANDS.region_state:VEN = { set_state_owner = c:BYZ }
+		}
+		if = {
+			limit = { exists = s:STATE_CRETE.region_state:VEN }
+			s:STATE_CRETE.region_state:VEN = { set_state_owner = c:BYZ }
+		}
+		if = {
+			limit = { exists = s:STATE_EAST_AEGEAN_ISLANDS.region_state:VEN }
+			s:STATE_EAST_AEGEAN_ISLANDS.region_state:VEN = { set_state_owner = c:BYZ }
+		}
+		if = {
+			limit = { exists = s:STATE_CYPRUS.region_state:VEN }
+			s:STATE_CYPRUS.region_state:VEN = { set_state_owner = c:BYZ }
+		}
+		if = {
+			limit = { exists = s:STATE_DALMATIA.region_state:VEN }
+			s:STATE_DALMATIA.region_state:VEN = { set_state_owner = c:BYZ }
+		}
+	}
+
+    option = {
+		name = byzantine_strike.2.a
+		default_option = yes
+		add_modifier = {
+			name = byz_avenge_fourth_crusade
+			days = very_long_modifier_time
+		}
+		c:VEN ?= {
+			trigger_event = { id = ely_venice_humiliation.1 }
 		}
 	}
 }
@@ -384,33 +424,6 @@ byzantine_glory.1 = {
 	}
 
 	immediate = {
-		s:STATE_BOSNIA = {
-			add_claim = c:BYZ
-		}
-		s:STATE_MONTENEGRO = {
-			add_claim = c:BYZ
-		}
-		s:STATE_NORTHERN_SERBIA = {
-			add_claim = c:BYZ
-		}
-		s:STATE_SOUTHERN_SERBIA = {
-			add_claim = c:BYZ
-		}
-		s:STATE_DALMATIA = {
-			add_claim = c:BYZ
-		}
-		s:STATE_CROATIA = {
-			add_claim = c:BYZ
-		}
-		s:STATE_SLAVONIA = {
-			add_claim = c:BYZ
-		}
-		s:STATE_DELVIDEK = {
-			add_claim = c:BYZ
-		}
-		s:STATE_BANAT = {
-			add_claim = c:BYZ
-		}
 		random_country = {
 			limit = {
 				any_scope_state = {
@@ -433,6 +446,7 @@ byzantine_glory.1 = {
 				save_scope_as = tur_expulsion_destination_state
 			}
 		}
+		trigger_event = { id = byzantine_glory.2 days = 720 }
 	}
 
     option = {
@@ -442,9 +456,8 @@ byzantine_glory.1 = {
 		}
 		add_modifier = {
 			name = greek_nationalism
-			months = long_modifier_time
+			days = long_modifier_time
 		}
-		add_journal_entry = { type = je_cultural_shift_byz_serbian }
 		add_loyalists = {
 			value = very_large_radicals
 			culture = cu:rhomaion
@@ -475,10 +488,9 @@ byzantine_glory.1 = {
 		}
 		add_modifier = {
 			name = greek_nationalism
-			months = long_modifier_time
+			days = long_modifier_time
 		}
 		change_infamy = 50
-		add_journal_entry = { type = je_cultural_shift_byz_serbian }
 		add_loyalists = {
 			value = large_radicals
 			culture = cu:rhomaion
@@ -507,10 +519,9 @@ byzantine_glory.1 = {
 		default_option = yes
 		add_modifier = {
 			name = greek_nationalism
-			months = long_modifier_time
+			days = long_modifier_time
 		}
 		add_primary_culture = cu:turkish
-		add_journal_entry = { type = je_cultural_shift_byz_serbian }
 		add_journal_entry = { type = je_cultural_shift_byz_turks }
 		add_radicals = {
 			value = very_large_radicals
@@ -525,6 +536,7 @@ byzantine_glory.1 = {
 		activate_law = law_type:law_freedom_of_conscience
 	}
 }
+
 byzantine_glory.2 = {
 	type = country_event
 	placement = ROOT
@@ -548,32 +560,6 @@ byzantine_glory.2 = {
 	}
 
 	immediate = {
-		c:BYZ ?= {
-			set_secret_goal = {
-				country = c:GEO
-				secret_goal = conquer
-			}
-			set_secret_goal = {
-				country = c:ARM
-				secret_goal = conquer
-			}
-			set_secret_goal = {
-				country = c:AZB
-				secret_goal = conquer
-			}
-			set_secret_goal = {
-				country = c:EGY
-				secret_goal = conquer
-			}
-			set_secret_goal = {
-				country = c:PER
-				secret_goal = conquer
-			}
-			set_secret_goal = {
-				country = c:RUS
-				secret_goal = antagonize
-			}
-		}
 	}
 
     option = {
@@ -600,168 +586,8 @@ byzantine_glory.2 = {
 		s:STATE_ELIZAVETPOL = {
 			add_claim = c:BYZ
 		}
-		s:STATE_KARS = {
-			add_claim = c:BYZ
-		}
 		s:STATE_GREATER_CAUCASUS = {
 			add_claim = c:BYZ
-		}
-	}
-}
-
-### Colonial Expansion ###
-
-byzantine_colonial.1 = {
-	type = country_event
-	placement = ROOT
-
-	event_image = {
-		video = "gfx/event_pictures/middleeast_battlefield_trenches.bk2"
-	}
-
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/middleeast/battlefield_trenches"
-
-	icon = "gfx/interface/icons/event_icons/event_military.dds"
-	
-	title = byzantine_colonial.1.t
-	desc = byzantine_colonial.1.d
-	flavor = byzantine_colonial.1.f
-
-	duration = 3
-	
-	trigger = {
-	}
-	
-	immediate = {
-	}
-	
-	option = {
-		name = byzantine_colonial.1.a
-		default_option = yes
-		ai_chance = {
-			base = 80
-		}
-		create_diplomatic_play = {
-			target_country = c:EGY
-			war = yes
-			type = dp_make_protectorate
-			add_war_goal = {
-				holder = c:BYZ
-				type = take_treaty_port
-				target_state = s:STATE_LOWER_EGYPT.region_state:EGY
-			}
-			add_war_goal = {
-				holder = c:BYZ
-				type = conquer_state
-				target_state = s:STATE_SINAI.region_state:EGY
-			}
-			add_war_goal = {
-				holder = c:BYZ
-				type = take_treaty_port
-				target_state = s:STATE_UPPER_EGYPT.region_state:EGY
-			}
-			add_war_goal = {
-				holder = c:EGY
-				type = war_reparations
-				target_country = c:BYZ
-			}
-			add_war_goal = {
-				holder = c:EGY
-				type = humiliation
-				target_country = c:BYZ
-			}
-		}
-	}
-	
-	option = {
-		name = byzantine_colonial.1.b
-		ai_chance = {
-			base = 20
-		}
-		add_modifier = {
-			name = government_admits_failure
-			months = long_modifier_time
-		}
-	}
-}
-byzantine_colonial.2 = {
-	type = country_event
-	placement = ROOT
-
-	title = byzantine_colonial.2.t
-	desc = byzantine_colonial.2.d
-	flavor = byzantine_colonial.2.f
-
-	event_image = {
-		video = "gfx/event_pictures/middleeast_courtroom_upheaval.bk2"
-	}
-
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
-
-	icon = "gfx/interface/icons/event_icons/event_default.dds"
-
-	duration = 3
-
-	trigger = {
-	}
-
-	immediate = {
-	}
-
-    option = {
-		name = byzantine_colonial.2.a
-		default_option = yes
-		ai_chance = {
-			base = 90
-		}
-		s:STATE_ALEPPO = {
-			add_homeland = cu:rhomaion
-			add_claim = c:BYZ
-		}
-		add_journal_entry = { type = je_byzantine_dominance }
-		create_diplomatic_play = {
-			target_country = c:EGY
-			escalation = 81
-			type = dp_return_state
-			target_state = s:STATE_ADANA.region_state:EGY
-			add_war_goal = {
-				holder = c:BYZ
-				type = war_reparations
-				target_country = c:EGY
-			}
-			add_war_goal = {
-				holder = c:BYZ
-				type = return_state
-				target_state = s:STATE_ALEPPO.region_state:EGY
-			}
-			add_war_goal = {
-				holder = c:BYZ
-				type = humiliation
-				target_country = c:EGY
-			}
-			add_war_goal = {
-				holder = c:EGY
-				type = war_reparations
-				target_country = c:BYZ
-			}
-			add_war_goal = {
-				holder = c:EGY
-				type = humiliation
-				target_country = c:BYZ
-			}
-		}
-	}
-	
-	option = {
-		name = byzantine_colonial.2.b
-		ai_chance = {
-			base = 10
-		}
-		add_modifier = {
-			name = government_admits_failure
-			months = long_modifier_time
 		}
 	}
 }

@@ -994,3 +994,297 @@ inuit={
 	}
 	graphics = east_asian
 }
+
+elyric={
+	color= rgb{ 200 111 62 }
+    religion = elysian_pantheon
+    traits = { elysian_culture_group indigenous_american_heritage pagan_heritage }
+
+    obsessions = {
+        fruit
+    }
+
+	male_common_first_names = {
+		Zacharias Zinovios
+		Aanakwad Adawosgi Aenoheso Ahtahkakoop Ahuludegi Akicita Amaruq Animikii Aputsiaq Aqissiaq Ashkii Allalimya_Takanin 
+		Apash_Wyakaikt Akwiraron Akwirente Apuckshunubbee Antonga Arapeen 
+		Baishan Balam Bidziil
+		Catahecassa Chaska Cipactli Cochise Cowessess Cuauhtemoc Cumshewa Cuneah Catecahassa Cottawamago Cheeseekau 
+		Canalla Cameahwait Colorow Cuautehmoc
+		Dasoda-hae Degataga Diindiisi Digul_Chee Dah-egin Domagaya
+		Ehecatl Esihabit Ebedimu Enes
+		Gian-nah-tah Giiwedin Goyaale Goyathlay Gush_X-een Guujaaw Gakiiwegwanebi Ga-Na-Gua Guyasuta Ganio-dai-io Gyantwachia Guero
+		Hastiin Hiawatha Hokolesqua Hehaka Hluugitgaa Hahtalekin Hallalhotsoot Hinmatoowyalahtqit Husishusis_Kute Huupi-pahati Hitetetsi 
+		Hokoleskwa Hadawa-ko Hayonhwonhish Honayawas Hutgohsodoneh
+		Iqaluk Isapo-Muxika Itzamna Itzcoatl Inkpaduta Istahba Ipeelee Ippakness_Wayhayken Isaviah Isananaka
+		Kaneonuskatew Kawacatoose Kenojuak Kinich Kisecawchuck Klah Ketsumse Kekewepelethy Kaintwakon Kanosh Klaesh
+		Lalawethika Lawoughqua Lomayumtewa
+		Mahihkan Mahpiya Malik Ma_ome Maquinna Ma_tano Mekaisto Meona_hane Mistawasis Motecuhzoma Mushulatubbee
+		Mupitsukupu Muscowequan Monkaushka Maskipitonew Masset Mopechucope MihS_ihkinaahkwa Moluntha Mahthela Muscquaconocah
+		Naiche Nanuq Noodin Notah Naalak Ninstints Nocona
+		Odeserundiye Ohiyesa Ojigkwanong Onangwatgo Ollokot Ouray Owitze
+		Pitikwahanapiwiyin Pitsiulaaq Potsunakwahipu Pitseolak Peopeo_Kiskiok_Hihih Puhihwitsikwasu Parosawano Pocheha-quehip 
+		Pahayoko Puckenshinwa Penagashea Pepquannakek Paxinosa Peteusha PepekitaakamhS_i Pushmataha Paseego Pinquanah Pocatello Pahninee
+		Qillaq Qinnuajuaq Quanah  Quenah-evah Quatawapea
+		Sequoyah Sganyodaiyo Shenandoah Skenandoa Sinte Skaay Skidegate Sousouquee Spemica_Lawba Shemanetoo
+		Sakokwenionkwas Sagoyewatha Sayenqueraghta Sigwaahdohgwih Sosondowa Sanpitch Sapiah Sapinero Severo
+		Tahlako Taqqiq Tarqik Tasunka Tatanka Tecumseh Tenskwatawa Tessouat Tiriaq Tlaloc Toohoolhoolzote
+		Tonatiuh Tosahwi Tuhuyakwahipu Tulugaq Tamaha Tahaygen Tuekakas Tabby-nocca Tawaquenah Tau-Gu
+		Tanacharison Thaonawyuthe Tejonihokarawa Taignoagny Tewahangarahken Tuskaloosa Tenaya Tuba
+		Thahca Thasunke Thathanka Thaoyate_Duta Tahlonteeskee Tabby-To-Hwanah Tse-Ne-Gat Tutsegabit
+		Ujarak Ujaraq Ve_keseheveho Uboni
+		Wahunsenacawh Wambdi Wambli Wapasha Wawatam Wickaninnish Wiisheyksh Wanbdisapa Wanata Waakakwasi Wulea-boo Wawahchepaehai Weyapiersenwah 
+		WeS_ihS_imo Wiliwi Walkara Washakie Wirasuap
+		Yaxkin Yolotl Yolotzin Yonaguska Xhuuyaa
+		Yukiuma
+	}
+	female_common_first_names = {
+		Azayamankawin Ansnaq Ahuhwuthtakum Akat Alliquippa Adsila Ajei Ameohne_e Ameyalli Anangikwe Apanii Arnaq Aviaaja Awee Awinita 
+		Chony Chipeta Cayetana Citlali Citlalli 
+		Dehhewanis Dahteste Dehgewanus Dehhewamis Dezba Dos-teh-seh 
+		Eseeva_e
+		Gahonnoneh Gowongo Galilahi Giiwedinokwe Gouyen Goyan Guwisti 
+		Heyoon_Yoyikt Haayiitaapama Haya Ha-o-zinne Hauzini Ho_otseoo_e 
+		Isani Iina Inola Isi Itzel Ixchel
+		Jadal_q-eganga
+		Kung_Jaadee Kwiigeliones K-woiyang Khapkhaponimi Kaniehtiio Kateri Kawisenhawe Kimimela
+		Lilah Lydia
+		Qawkuna
+		Mitiarjuk Mahchettawookey Methoataske MayataakwipiiwehS_i Ma_evehpota_e Malinalli Metztli Meztli Miigwan Miillaaraq Mokee_e 
+		Naduah Nonhelema Nanawu Nampeyo Naja Nanabah Nauja Nayeli Neohne_e Nikte Nindaanis Nipisiy Nita Niviarsiaq Nizhoni Nuka 
+		Owanah Otellie
+		Polikissut Pi_tamaka Peahchepeahso Pamahas Pahoevotona_e Piloqutinnguaq Pipaluk Pittiulaaq Pocahontas
+		Quetzalli
+		Rowena
+		Skil_Kew_Wat Shawsheen Sacagawea Saknikte Shandiin Shikoba Siqiniq Sissinnguaq Sons-ee-ah-ray
+		Topahhdewin Tishynah Tuhbenahneequay Tekarihogen Topsannah Toepay Tonarcy Tekakwitha Tyonajanegen Tagwanibisan Taqqiq Tashina Tayanita Tlalli Tonalli Topusana Tupaarnaq 
+		Ukaleq Ulloriaq
+		Verna Vanaheo_o Ve_keseha_e Voestaa_e Vonahe_e 
+		Wakanmaniwin Wakantakawin Wakhan_Inazin_Win Wahnenauhi Weakeah WelepiiwehS_i Wenega Woryi Walela Wapanacahkos Winona 
+		Xiadani Xochiquetzal Xochitl Xquenda 
+		Yulaka Yatzil Yolotli Yoloxochitl 
+		Zazil Zeltzin Zitkala Zyanya	
+	}
+
+	# some Hellenic forms of names from the Livre d'Or de la Noblesse Ionienne
+	# also added Souliotes
+	noble_last_names = { 
+		Ay Atagotaaluk Ahenakew Ahtahkakoop Alpowai Ahwahne
+		Begaye
+		Ceel Chan Chi Chochenyo Cucunuchi
+		Gispwudwada Gashowu
+		Hakadah Hastiin_Dagha Hois
+		Idinsaw
+		Kahkewistahaw K-aayelii Kwahadi Kotsoteka Katchongva Kalina
+		Lathlin Lamatta Lakisamni
+		Moyotlan
+		Nokoni Naha
+		Ohiya_S-a Okwanuchu
+		Pat Pec Poot Pikunin Penateka Panapi
+		Sekaquaptewa
+		Tamaha Tullaugaq Taantakwaan Timbimboo Timpanog Tussawehee Tawalimnu
+		Umatilla
+		Wakinyanduta Wowinape Wallowa Winnemucca Wukchumni
+		Y-akwa-lanas Yamparika Ynitia
+	}
+	common_last_names = {
+		Ak_ab_al Ahuactzin Awiakta Ashtola Antowie Arivaipa Alakannuark Arreak Ashoona Assiniwi
+		Banyacya
+		Cal Canek Canul Ceh Chee Choc Coc Curruchic Coyotl Cuautlaxahue Cibecue Ch_ilhanjini Chalahgawtha
+		Duta Da_ghaaii Daaxan
+		Enuaraq Evaloarjuk Esarosavit Eskippakithiki Evehema
+		Gleska
+		Huste Hak Hokolesqua Honyestewa Humetewa
+		Ixquiac Itzel Ixtlilxochitl Iyotake Ipeelee Irgittuq Itehtah_o Ishii
+		Jupe
+		Kan Kohkophapi Kramarae Keenainak Kunuk Kusugak Kiskiyew Ketahtoh Kispokotha KaskE_
+		Luta Lomahaftewa Loloma Lomayesva
+		Matlacuahuac Mayahuel Moxo Munoz Maksagak Motso Motsai Mecoce
+		Nahui Nappaaluk Nutarak Naat_aa Ni-isyuus
+		Ocelotl Orr Opessa Oklahombi
+		Pek Pop Puk Panecatl Pecan_Wakpa Paniloo Piugattuk Pudluk Psday Piatote Pohee Pigianigwai Pahnaixte Pekowi Peckuwe Pitchlynn
+		Quissa
+		Shal Sho Sapa Sivuarapik Shipak A_kamithagI_
+		Tecu Teul Tuyuc Tlaxca Tletla Tzehe Thankja Tiktaalaaq To_tso_nii Tenawa Tanima Tekapwai Thawikila Teyoc Tillohash
+		Ungallaq
+		Witko Wahkoh Wohoi WahaToya Wia_ne
+		Xicara Xiloj Xaxalpa Xochitl
+		Yahgulanaas
+		Zapotitla Zicotencatl Zah Zachai
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = decentralised_americas
+}
+
+arkadian={
+	color={ 125 12 52 }
+	religion = elysian_pantheon
+    traits = { elysian_culture_group south_american_group indigenous_american_heritage pagan_heritage }
+
+    obsessions = {
+        tobacco
+    }
+	male_common_first_names={
+		Arah Arata
+		Bira
+		Caiubi Caracara Caua
+		Italo
+		Jandui Janduwy
+		Kerioukeiou Karupoto
+		Mbicy Moacir
+		Piquerobi Pirija
+		Tibirica Torui
+		Ramalho Raoni
+		Ubirajara
+		Guama
+		Jumacao
+		Mabey
+		Nasio
+		Ornofay
+		Yaureibo
+		Amaru Aiyotechapun
+		Buvaovamu
+		Coyllas Cusichaca Chumtiku 
+		Draytonamu Docoshamu
+		Ehenymacu
+		Gusmango
+		Ilsayunamu
+		Jotiantikaka
+		Litun
+		Melantonan
+		Nehuametepun Nartamamu
+		Opolcynamun
+		Pascac Pomaguala Puznaymun Pacatmamu
+		Surandaman
+		Taraq Troynuremo Taracun
+		Urtyantemu Uboni
+		Waman Willka
+		Yetuniamu
+		Zambiza Zopahua		
+	}
+	female_common_first_names = {
+		Hazel
+		Haya
+		Isani
+		Woryi
+		Iracema Iara
+		Jaci Jacira
+		Maiara
+		Uiara
+		Yara
+		Anacaona
+		Barbe
+		Casiguaya
+		Tinima
+		Yahima
+		Asiri
+		Cuyuchi
+		Quispe
+		Katitika Killa Kantuta
+		Miski
+		Nina Naira
+		Ruminavi
+		Tamya Tuta
+		Urpi
+		Vetsalynun
+		Wayna Wayra
+		Yuraq
+	}
+	noble_last_names = {
+		Aikana
+		Amahuaca
+		Apetina
+		Baniwa
+		Bororo
+		Canela
+		Guaycuru
+		Hupda
+		Jecupe
+		Metuktire
+		Minuane
+		Nambikwara
+		Paiakan
+		Parintintin
+		Umutina
+		Wayana
+		Yanomami
+		Aapashuna
+		Epieyu
+		Iguana
+		Tijuana
+		Ulewana
+		Caiubi
+		Jaguaranha
+		Maracaiaguacu
+		Paraguacu
+		Piquerobi 
+		Tibirica
+		Chatoyer
+		Kalina
+		Panapi
+	}
+	common_last_names={
+		Barreiro
+		Carrera
+		Coa
+		Guani
+		Baitiquiri
+		Majibacoa
+		Wakanik
+		Mexias
+		Nibonri
+		Arawak
+		Arawa
+		Bororo
+		Garifuna
+		Guayana
+		Ge
+		Jeiko
+		Kaingang
+		Kalinago
+		Kamakan
+		Karaja
+		Kayapo
+		Matses
+		Maxakali
+		Puri
+		Timbira
+		Xavante
+		Xerente
+		Xokieng
+		Yanomamo
+		Jayaliyuu
+		Jusayuu
+		Pausayuu
+		Sapuana
+		Uliana
+		Uliyuu
+		Uraliyyu
+		Walapuana
+		Walepushana
+		Eirakajaule
+		Pimienta
+		Velasquez
+		Kanakantui
+		Lumoulein
+		Caetes
+		Potiguara
+		Tabajara
+		Tamoios
+		Temimino
+		Tupinamba
+		Tupiniquim
+		Piratininga 
+		Tamoio 
+		Caete
+		Tupinae
+		Tupina 
+		Aricobe
+	}
+	ethnicities = {
+		1 = native_american
+	}
+	graphics = decentralised_americas
+}

@@ -15,29 +15,26 @@
 				has_dlc_feature = power_bloc_features
 			}
 			power_bloc = {
-				add_principle = principle_defensive_cooperation_1
+				add_principle = principle_defensive_cooperation_2
 			}
 		}
 	}
-	c:SPA = {
+	c:IBE = {
 		create_power_bloc = {
 			name = LATIN_PACT
 
 			map_color = { 211  220  178 }
 
 			founding_date = 1649.10.29
-			identity = identity_ideological_union
-			principle = principle_creative_legislature_1
-
-			member = c:PAP
-			member = c:LMV
+			identity = identity_religious
+			principle = principle_vassalization_1
 		}
 		if = {
 			limit = {
 				has_dlc_feature = power_bloc_features
 			}
 			power_bloc = {
-				add_principle = principle_defensive_cooperation_1
+				add_principle = principle_colonial_offices_2
 			}
 		}
 	}	
@@ -49,12 +46,15 @@
 
 			founding_date = 1665.6.15
 			identity = identity_trade_league
-			principle = principle_internal_trade_1
+			principle = principle_external_trade_1
 
 			member = c:TWT
 			member = c:JAP
 			member = c:CEY
 			member = c:MAD
+			member = c:SIA
+			member = c:DAI
+			member = c:BAL
 			
 		}
 		if = {

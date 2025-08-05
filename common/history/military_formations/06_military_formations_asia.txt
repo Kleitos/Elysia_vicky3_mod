@@ -48,6 +48,18 @@
 				state_region = s:STATE_SHANDONG
 				count = 10
 			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_ALXA
+				count = 2
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_HINGGAN
+				count = 8
+			}
 			save_scope_as = plain_yellow_banner
 		}
 
@@ -111,7 +123,7 @@
 			}
 			save_scope_as = plain_white_gen
 		}
-		
+
 		scope:plain_white_gen = {
 			transfer_to_formation = scope:plain_white_banner
 		}
@@ -152,7 +164,7 @@
 			}
 			save_scope_as = bordered_blue_gen
 		}
-		
+
 		scope:bordered_blue_gen = {
 			transfer_to_formation = scope:bordered_blue_banner
 		}
@@ -197,7 +209,7 @@
 			}
 			save_scope_as = plain_red_gen
 		}
-		
+
 		scope:plain_red_gen = {
 			transfer_to_formation = scope:plain_red_banner
 		}
@@ -235,7 +247,7 @@
 			}
 			save_scope_as = bordered_white_gen
 		}
-		
+
 		scope:bordered_white_gen = {
 			transfer_to_formation = scope:bordered_white_scope
 		}
@@ -249,6 +261,12 @@
 				type = unit_type:combat_unit_type_irregular_infantry
 				state_region = s:STATE_EASTERN_HUBEI
 				count = 15
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_FORMOSA
+				count = 5
 			}
 			save_scope_as = bordered_red_scope
 		}
@@ -268,7 +286,7 @@
 			}
 			save_scope_as = bordered_red_gen
 		}
-		
+
 		scope:bordered_red_gen = {
 			transfer_to_formation = scope:bordered_red_scope
 		}
@@ -305,7 +323,7 @@
 			}
 			save_scope_as = plain_blue_gen
 		}
-		
+
 		scope:plain_blue_gen = {
 			transfer_to_formation = scope:plain_blue_banner
 		}
@@ -414,7 +432,49 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
 				state_region = s:STATE_HUNAN
+				count = 15
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_JIANGSU
+				count = 5
+			}
+		}
+
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_south_china
+			name = YunGui_Green_Standard_Army
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_QINGHAI
+				count = 10
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_OUTER_MANCHURIA
+				count = 5
+			}
+		}
+
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_south_china
+			name = Sichuan_Green_Standard_Army
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_SOUTHERN_MANCHURIA
 				count = 20
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_NORTHERN_MANCHURIA
+				count = 10
 			}
 		}
 
@@ -443,7 +503,7 @@
 			}
 			save_scope_as = bohai_gulf_admiral
 		}
-		
+
 		scope:bohai_gulf_admiral = {
 			transfer_to_formation = scope:bohai_gulf_fleet
 		}
@@ -452,7 +512,7 @@
 			type = fleet
 			hq_region = sr:region_south_china
 			name = Guangdong_Fleet
-		
+
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate # War junks, but no modern ships
 				state_region = s:STATE_GUANGDONG
@@ -474,13 +534,13 @@
 			}
 			save_scope_as = guangdong_admiral
 		}
-		
+
 		scope:guangdong_admiral = {
 			transfer_to_formation = scope:guangdong_fleet
 		}
 	}
 
-	c:DEI ?= {
+	c:BAL ?= {
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_indonesia
@@ -534,33 +594,61 @@
 			}
 		}
 	}
-
-	c:SIB ?= {
+	c:BUR ?= {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_east_siberia
-			combat_unit = { # Selenginsk Infantry
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_IRKUTSK
-				count = 1
+			hq_region = sr:region_indochina
+			name = tatmadaw
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_PEGU
+				count = 9
 			}
 
-			combat_unit = { # Yakutsk Infantry
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_YAKUTSK
-				count = 1
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_MANDALAY
+				count = 13
 			}
 
-			combat_unit = { # Okhotsk Infantry
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_OKHOTSK
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_KACHIN
+				count = 8
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_cuirassiers
+				state_region = s:STATE_KACHIN
+				count = 2
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_MANDALAY
 				count = 1
 			}
-
-			combat_unit = { # Kamchatka Infantry
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_KAMCHATKA
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_MANDALAY
 				count = 1
+			}
+		}
+	}
+	c:JAP ?= {
+
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_japan
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigate # War junks, but no modern ships
+				state_region = s:STATE_KANTO
+				count = 7
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigate # War junks, but no modern ships
+				state_region = s:STATE_KANSAI
+				count = 8
 			}
 		}
 	}

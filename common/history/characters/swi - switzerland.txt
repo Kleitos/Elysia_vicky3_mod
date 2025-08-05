@@ -5,7 +5,8 @@
 			first_name = "Karl_Friedrich"
 			last_name = "Tscharner"
 			historical = yes
-			religion = cu:alemannic
+			culture = primary_culture
+			religion = rel:protestant
 			age = 64
 			ig_leader = yes
 			ruler=yes

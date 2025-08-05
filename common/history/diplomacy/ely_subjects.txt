@@ -1,0 +1,171 @@
+﻿DIPLOMACY = {
+	c:ELY ?= {
+		## Client States ##
+		#North America
+		create_diplomatic_pact = {
+			country = c:SEQ
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:MKT
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:NNV
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:LKT
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:IRC
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:BLF
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:ATB
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:SLS
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:NZP
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:UTE
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:ARP
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:PWN
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:NVJ
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:APC
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:COM
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:SML
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:ABS
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:BNN
+			type = puppet
+		}
+		#South America
+		create_diplomatic_pact = {
+			country = c:MUI
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:WYU
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:ORN
+			type = puppet
+		}
+		## Pacific Protectorates
+		# United Tribes of New Zealand
+		create_diplomatic_pact = {
+			country = c:AOT
+			type = protectorate
+		}
+		# Tahiti
+		create_diplomatic_pact = {
+			country = c:PLY
+			type = protectorate
+		}
+		# Tahiti
+		create_diplomatic_pact = {
+			country = c:HAW
+			type = protectorate
+		}
+		# Tonga
+		create_diplomatic_pact = {
+			country = c:TNG
+			type = protectorate
+		}
+		# Fiji
+		create_diplomatic_pact = {
+			country = c:FJI
+			type = protectorate
+		}
+		# Tahiti
+		create_diplomatic_pact = {
+			country = c:PLY
+			type = protectorate
+		}
+		# Siberia
+		create_diplomatic_pact = {
+			country = c:SIB
+			type = protectorate
+		}
+	}
+	c:BAV ?= {
+		create_diplomatic_pact = {
+			country = c:WUR
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:HAN
+			type = personal_union
+		}
+	}
+	c:MOR ?= {
+		create_diplomatic_pact = {
+			country = c:TRI
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:TUG
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:TUN
+			type = protectorate
+		}
+	}
+	c:CUB ?= {
+		create_diplomatic_pact = {
+			country = c:GWA
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:NAG
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:SAT
+			type = puppet
+		}
+	}
+	c:SAF ?= {
+		create_diplomatic_pact = {
+			country = c:WBL
+			type = puppet
+		}
+	}
+}

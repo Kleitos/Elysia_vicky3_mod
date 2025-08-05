@@ -1,0 +1,82 @@
+﻿l_english:
+ 
+ # Decisions
+ franco_german_alliance:0 "Franco-German Alliance"
+ franco_german_alliance_desc:0 "To keep the 'Canon' timeline of the mod and keep France and Germany as friends. It might lead to a union between the two later down the road."
+ 
+ franco_prussian_alliance:0 "Franco-German Alliance"
+ franco_prussian_alliance_desc:0 "To keep the 'Canon' timeline of the mod and keep France and Germany
+ as friends."
+ 
+ elysian_japanese_alliance:0 "Japanese-Elysian Alliance"
+ elysian_japanese_alliance_desc:0 "To keep the 'Canon' timeline of the mod and keep Elysia and Japan as friends."
+ 
+ italo_spanish_alliance:0 "Latin Alliance"
+ italo_spanish_alliance_desc:0 "To keep the 'Canon' timeline of the mod and keep Spain and Italy as friends."
+ 
+ luccan_spanish_alliance:0 "Latin Alliance"
+ luccan_spanish_alliance_desc:0 "To keep the 'Canon' timeline of the mod and keep Spain and Italy as friends."
+  
+ elysian_incan_alliance:0 "Inca-Elysian Alliance"
+ elysian_incan_alliance_desc:0 "To keep the 'Canon' timeline of the mod and keep Elysians and Incas as friends."
+ 
+ italo_iberian_alliance:0 "Latin Alliance"
+ italo_iberian_alliance_desc:0 "To keep the 'Canon' timeline of the mod and keep Spain and Italy as friends."
+ 
+ luccan_iberian_alliance:0 "Latin Alliance"
+ luccan_iberian_alliance_desc:0 "To keep the 'Canon' timeline of the mod and keep Spain and Italy as friends."
+ 
+ lombard_spanish_alliance:0 "Latin Alliance"
+ lombard_spanish_alliance_desc:0 "To keep the 'Canon' timeline of the mod and keep Spain and Italy as friends."
+ 
+ 
+ 
+ # Events
+ 
+ ely_alliance.1.t:0 "Franco-German Alliance"
+ ely_alliance.1.d:0 "For some reason the alliance between these two nation was terminated. What do you want to do ?"
+ ely_alliance.1.f:0 ""
+ ely_alliance.1.a:0 "Keep the canon timeline and recreate the alliance."
+ ely_alliance.1.b:0 "Add randomness to the game."
+ 
+ ely_alliance.2.t:0 "Japanese-Elysian Alliance"
+ ely_alliance.2.d:0 "For some reason the alliance between these two nation was terminated. What do you want to do ?"
+ ely_alliance.2.f:0 ""
+ ely_alliance.2.a:0 "Keep the canon timeline and recreate the alliance."
+ ely_alliance.2.b:0 "Add randomness to the game."
+ 
+ ely_alliance.3.t:0 "Franco-German Alliance"
+ ely_alliance.3.d:0 "For some reason the alliance between these two nation was terminated. What do you want to do ?"
+ ely_alliance.3.f:0 ""
+ ely_alliance.3.a:0 "Keep the canon timeline and recreate the alliance."
+ ely_alliance.3.b:0 "Add randomness to the game."
+ 
+ ely_alliance.4.t:0 "Latin Alliance"
+ ely_alliance.4.d:0 "For some reason the alliance between these two nation was terminated. What do you want to do ?"
+ ely_alliance.4.f:0 ""
+ ely_alliance.4.a:0 "Keep the canon timeline and recreate the alliance."
+ ely_alliance.4.b:0 "Add randomness to the game."
+ 
+ ely_alliance.5.t:0 "Latin Alliance"
+ ely_alliance.5.d:0 "For some reason the alliance between these two nation was terminated. What do you want to do ?"
+ ely_alliance.5.f:0 ""
+ ely_alliance.5.a:0 "Keep the canon timeline and recreate the alliance."
+ ely_alliance.5.b:0 "Add randomness to the game."
+ 
+ ely_alliance.6.t:0 "Inca-Elysian Alliance"
+ ely_alliance.6.d:0 "For some reason the alliance between these two nation was terminated. What do you want to do ?"
+ ely_alliance.6.f:0 ""
+ ely_alliance.6.a:0 "Keep the canon timeline and recreate the alliance."
+ ely_alliance.6.b:0 "Add randomness to the game."
+ 
+ ely_alliance.7.t:0 "Latin Alliance"
+ ely_alliance.7.d:0 "For some reason the alliance between these two nation was terminated. What do you want to do ?"
+ ely_alliance.7.f:0 ""
+ ely_alliance.7.a:0 "Keep the canon timeline and recreate the alliance."
+ ely_alliance.7.b:0 "Add randomness to the game.
+ 
+ ely_alliance.8.t:0 "Latin Alliance"
+ ely_alliance.8.d:0 "For some reason the alliance between these two nation was terminated. What do you want to do ?"
+ ely_alliance.8.f:0 ""
+ ely_alliance.8.a:0 "Keep the canon timeline and recreate the alliance."
+ ely_alliance.8.b:0 "Add randomness to the game.

@@ -1,0 +1,78 @@
+﻿l_english:
+ 
+ sale_of_greenland_happened:0 "The Sale of Greenland has happened"
+ 
+ conquest_of_greenland:0 "Conquest of Greenland"
+ 
+   # Greenland Purchase
+   
+        # Decision
+        
+ ely_purchase_greenland:0 "Negotiate the Greenland Purchase"
+ ely_purchase_greenland_desc:0 "Though some doubt the strategic and economic value of the vast expanses of Greenland, we should not pass up the opportunity to push the frontiers of Elysia."
+ den_sell_greenland:0 "Negotiate the Sale of Greenland"
+ den_sell_greenland_desc:0 "Greenland is a worthless wasteland with few prospects, but we might still be able to make a profit from it. Heaven knows we could use the money."
+ 
+        # Event
+        
+ greenland.1.t:1 "An Offer for Greenland"
+ greenland.1.d:0 "The [SCOPE.sCountry('ely_scope').GetName] has made us an offer for the purchase of [SCOPE.sState('greenland_scope').GetName]."
+ greenland.1.f:0 ""The Elysian Empire agrees to pay at the treasury in Nea-Konstantinopolis, to the diplomatic representative or other agent of [ROOT.GetCountry.GetRuler.GetHerHis] Majesty the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] of Denmark, seven million two hundred thousand dollars in gold.""
+ greenland.1.a:0 "The land is worthless, let the Elysians have it."
+ greenland.1.b:0 "[SCOPE.sState('greenland_scope').GetName] may hide riches yet."
+ greenland.2.t:0 "The [SCOPE.sState('greenland_scope').GetName] Purchase"
+ greenland.2.d:0 "[SCOPE.sCountry('denmark_scope').GetName] has agreed to our terms. A treaty for the purchase of [SCOPE.sState('greenland_scope').GetName] has been drafted."
+ greenland.2.f:0 ""Tomorrow, if you like, I will come to the department, and we can enter upon the treaty."\n"Why wait until tomorrow, Mr. Stoeckl? Let us make the treaty tonight!""
+ greenland.2.a:0 "What riches do these vast territories hide?"
+ greenland.3.t:0 "Failed [SCOPE.sState('greenland_scope').GetName] Purchase"
+ greenland.3.d:0 "Negotiations with [SCOPE.sCountry('denmark_scope').GetName] over the purchase of [SCOPE.sState('greenland_scope').GetName] have failed."
+ greenland.3.f:0 ""We see, therefore, that War is not merely a political act, but also a real political instrument, a continuation of political commerce, a carrying out of the same by other means.""
+ greenland.3.a:0 "We will continue diplomacy through other means."
+ greenland.4.t:1 "An Offer for Greenland"
+ greenland.4.d:1 "[SCOPE.sCountry('denmark_scope').GetName] finds itself in dire financial straits, and would likely entertain an offer for the purchase of [SCOPE.sState('greenland_scope').GetName]."
+ greenland.4.f:0 ""The Elysian Empire agrees to pay at the treasury in Nea-Konstantinopolis, to the diplomatic representative or other agent of [SCOPE.sCountry('ely_scope').GetRuler.GetHerHis] Majesty the [SCOPE.sCountry('ely_scope').GetRuler.GetPrimaryRoleTitle] of Denmark, seven million two hundred thousand dollars in gold.""
+ greenland.4.a:1 "Make the necessary arrangements."
+ greenland.4.c:1 "We cannot afford such an expense right now."
+ greenland.4.tt1:1 "We will offer £3m over the course of 1 year."
+ greenland.5.t:0 "The Sale of Greenland"
+ greenland.5.d:0 "[SCOPE.sCountry('denmark_scope').GetName] is in need of funds, and [SCOPE.sCountry('ely_scope').GetName] might be willing to purchase [SCOPE.sState('greenland_scope').GetName] from us."
+ greenland.5.f:0 "What do we want with a territory covered with glaciers, icebergs, bears and walruses?"
+ greenland.5.a:0 "The asking price is £3m"
+ greenland.5.b:0 "Perhaps we will make this offer at some other time"
+ greenland.5.tt1:0 "If [SCOPE.sCountry('ely_scope').GetName] accepts, we will be paid over the course of a year"
+ greenland.6.t:0 "The Greenland Purchase"
+ greenland.6.d:0 "[SCOPE.sCountry('denmark_scope').GetName] has approached us to sell [SCOPE.sState('greenland_scope').GetName]. While the territory might be underdeveloped, the asking price is quite fair."
+ greenland.6.f:0 "Tomorrow, if you like, I will come to the department, and we can enter upon the treaty."\n"Why wait until tomorrow, Mr. Stoeckl? Let us make the treaty tonight!"
+ greenland.6.a:0 "Alright - lets make a deal."
+ greenland.6.b:0 "Some other time, perhaps."
+ greenland.7.t:0 "The Sale of Greenland"
+ greenland.7.d:0 "[SCOPE.sCountry('ely_scope').GetName] has accepted our offer for [SCOPE.sState('greenland_scope').GetName]! This has been a very lucrative deal for us"
+ greenland.7.f:0 "The Elysian Empire agrees to pay at the treasury in Nea-Konstantinopolis, to the diplomatic representative or other agent of [SCOPE.sCountry('ely_scope').GetRuler.GetHerHis] Majesty the [SCOPE.sCountry('ely_scope').GetRuler.GetPrimaryRoleTitle] of Denmark, seven million two hundred thousand dollars in gold."
+ greenland.7.a:0 "I'm actually surprised they accepted..."
+ greenland.8.t:0 "Our Offer Was Refused"
+ greenland.8.d:0 "[SCOPE.sCountry('ely_scope').GetName] has refused our offer for [SCOPE.sState('greenland_scope').GetName]! A shame - we'll have to find another way to make money."
+ greenland.8.f:0 "What do we want with a territory covered with glaciers, icebergs, bears and walruses?"
+ greenland.8.a:0 "I can't believe they refused..."
+ greenland.9.t:0 "The Greenland Purchase"
+ greenland.9.d:0 "The treaty is completed, and [SCOPE.sCountry('denmark_scope').GetName] has transferred control of [SCOPE.sState('greenland_scope').GetName] to us. It will pay off in time!"
+ greenland.9.f:0 "The Elysian Empire agrees to pay at the treasury in Nea-Konstantinopolis, to the diplomatic representative or other agent of [SCOPE.sCountry('ely_scope').GetRuler.GetHerHis] Majesty the [SCOPE.sCountry('ely_scope').GetRuler.GetPrimaryRoleTitle] of Denmark, seven million two hundred thousand dollars in gold."
+ greenland.9.a:0 "What riches do these vast territories hide?"
+ alaskainprog_tt:0 "Negotiations for the purchase of Greenland are not currently in progress."
+ alaskapurchase_tt:0 "Is a neighbor with Denmark"
+        # Journal 
+        
+ je_greenland:0 "The Acquisition of Greenland"
+ je_greenland_status:0 "Own the entire state of Greenland."
+ je_greenland_reason:0 "Negotiations over the sale of Greenland have broken down, and so we are forced to pursue diplomacy through other means."
+ 
+ 
+        # Modifier
+        
+ greenland_ely_big_money:0 "Paying for Greenland - Large Payments"
+ greenland_ely_medium_money:0 "Paying for Greenland - Moderate Payments"
+ greenland_ely_small_money:0 "Paying for Greenland - Meager Payments"
+ greenland_den_big_money:0 "Sale of Greenland - Large Payments"
+ greenland_den_medium_money:0 "Sale of Greenland - Moderate Payments"
+ greenland_den_small_money:0 "Sale of Greenland - Meager Payments"
+ 
+ greenlandinprog_tt:0 "Greenland sale in progress"

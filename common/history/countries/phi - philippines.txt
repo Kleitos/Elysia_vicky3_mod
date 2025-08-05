@@ -1,5 +1,5 @@
 ﻿COUNTRIES = {
-	c:PHI = {
+	c:PHI ?= {
 		
 		effect_starting_technology_tier_3_tech  = yes
 		
@@ -7,6 +7,7 @@
 
 		activate_law = law_type:law_presidential_republic
 		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_appointed_bureaucrats
 		activate_law = law_type:law_legacy_slavery
 		activate_law = law_type:law_national_supremacy

@@ -10,6 +10,13 @@
 		ideology_isolationist
 	}
 
+	character_ideologies = {
+		ideology_moderate
+		ideology_pacifist
+		ideology_bonapartist
+		ideology_legitimist
+	}
+
 	enable = {
 		always = yes
 	}
@@ -49,13 +56,41 @@
 				set_ig_trait = ig_trait:ig_trait_fellahin
 				set_ig_trait = ig_trait:ig_trait_farmers_markets
 			}
+			else_if = {
+				limit = {
+					owner = {
+						OR = {
+							c:BIC ?= this
+							any_primary_culture = {
+								has_discrimination_trait = south_asian_heritage
+								NOT = {
+									has_discrimination_trait = himalayan
+								}
+							}
+						}
+					}
+				}
+				set_interest_group_name = ig_ryots
+				set_ig_trait = ig_trait:ig_trait_of_the_sovereign_alone
+				set_ig_trait = ig_trait:ig_trait_imandari
+				set_ig_trait = ig_trait:ig_trait_bazaar_bargains
+			}
+			else_if = {
+				limit = {
+					owner = { c:PAN ?= this }
+				}
+				set_interest_group_name = ig_jats
+				set_ig_trait = ig_trait:ig_trait_old_ways
+				set_ig_trait = ig_trait:ig_trait_honest_work
+				set_ig_trait = ig_trait:ig_trait_khalsa_panth
+			}
 			else = {
 				set_ig_trait = ig_trait:ig_trait_old_ways
 				set_ig_trait = ig_trait:ig_trait_honest_work
 				set_ig_trait = ig_trait:ig_trait_farmers_markets
 			}
 		}
-	
+
 		# Jeffersonian Ideology
 		if = {
 			limit = {
@@ -89,8 +124,59 @@
 				set_interest_group_name = ig_maka_ainana
 			}
 		}
+		# Sikh Empire
+		if = {
+			limit = {
+				c:PAN ?= this
+			}
+			ig:ig_rural_folk = {
+				set_interest_group_name = ig_jats
+			}
+		}
+		# India
+		else_if = {
+			limit = {
+				OR = {
+					c:BIC ?= this
+					any_primary_culture = {
+						has_discrimination_trait = south_asian_heritage
+						NOT = {
+							has_discrimination_trait = himalayan
+						}
+					}
+				}
+			}
+			ig:ig_rural_folk = {
+				set_interest_group_name = ig_ryots
+			}
+		}
+		# Nepal
+		else_if = {
+			limit = {
+				any_primary_culture = {
+					has_discrimination_trait = south_asian_heritage
+					has_discrimination_trait = himalayan
+				}
+			}
+			ig:ig_rural_folk = {
+				set_interest_group_name = ig_kisanharu
+			}
+		}
 	}
 	on_disable = {}
+	priority_cultures = { #Country scope
+		rule = {
+			trigger = {
+				c:BIC ?= this
+				any_primary_culture = {
+					cu:british = this
+				}
+			}
+			cultures = {
+				assamese avadhi baluchi bengali bihari gujarati kannada malayalam marathi oriya panjabi pathan rajput sindi tamil telegu hindustani bundeli pahari gondi bageli chhattisgarhi deccani
+			}
+		}
+	}
 	on_character_ig_membership = {}
 
 	pop_potential = {
@@ -126,7 +212,15 @@
 						pop_employment_building_group = bg_manor_houses
 					}
 				}
-				value = 100
+				if = {
+					limit = {
+						is_pop_type = clergymen
+					}
+					value = 25
+				}
+				else = {
+					value = 100
+				}
 			}
 		}
 
@@ -156,7 +250,20 @@
 				limit = {
 					is_pop_type = clergymen
 				}
-				value = 100
+				value = 75
+			}
+		}
+
+		if = {
+			limit = {
+				c:BIC ?= owner
+				culture = {
+					has_discrimination_trait = european_heritage
+				}
+			}
+			multiply = {
+				desc = "POP_INDIA_COLONIAL_RULE"
+				value = 0.1
 			}
 		}
 
@@ -185,7 +292,7 @@
 				min = 0
 			}
 		}
-		
+
 		if = {
 			limit = {
 				scope:interest_group = {
@@ -278,11 +385,34 @@
 		value = 1.0
 	}
 
+	executive_weight = {
+		value = 0.1
+		
+		# The company owning BIC should not get non-industrialist executives
+		if = {
+			limit = {
+				exists = scope:company
+				exists = c:BIC
+				c:BIC = {
+					exists = owning_company
+					owning_company = scope:company
+				}
+			}
+			multiply = {
+				value = 0
+			}
+		}
+	}
+
 	noble_chance = {
 		value = 0.2
 	}
 
 	female_commander_chance = {
+		value = 0.0
+	}
+
+	female_executive_chance = {
 		value = 0.0
 	}
 
@@ -300,11 +430,19 @@
 				value = 0.025
 			}
 		}
+		if = {
+			limit = {
+				owner = { c:ELY ?= this}
+			}
+			add = {
+				value = 0.75
+			}
+		}
 	}
 
 	female_agitator_chance = {
 		value = 0.025
-		
+
 		if = {
 			limit = {
 				owner = {
@@ -315,8 +453,8 @@
 			add = {
 				value = 0.025
 			}
-		}	
-		
+		}
+
 		if = {
 			limit = {
 				owner = {
@@ -339,22 +477,27 @@
 			add = {
 				value = 0.025
 			}
-		}		
+		}
+		if = {
+			limit = {
+				owner = { c:ELY ?= this}
+			}
+			add = {
+				value = 0.75
+			}
+		}
 	}
 
 	# The chance that a commander belonging to this IG takes over leadership when it changes
 	# scope:character is the most popular commander in the IG
 	commander_leader_chance = {
 		value = 0.5
-		if = {
-			limit = {
-				exists = scope:character
-			}
-			multiply = {
-				value = 1
-				add = scope:character.popularity
-				min = 0
-			}
-		}
+		multiply = ig_commander_leader_chance_mult
+	}
+
+	# The chance that a executive belonging to this IG takes over leadership when it changes
+	# scope:character is the most popular executive in the IG
+	executive_leader_chance = {
+		value = 0.2
 	}
 }

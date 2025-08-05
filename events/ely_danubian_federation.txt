@@ -5,6 +5,7 @@ namespace = danubian_ultimatum
 namespace = danubian_culture
 namespace = danubian_wars
 namespace = danube_storm_partition
+namespace = danubian_expansion
 
 
 danubian_fed.1 = {
@@ -59,120 +60,53 @@ danubian_fed.2 = {
 	}
 	
 	immediate = {
-		set_variable = {
-			name = danubian_fed_var
-			value = 0
-		}
-		if = {
-			limit = { exists = s:STATE_STYRIA.region_state:BAV }
-			s:STATE_STYRIA.region_state:BAV = { set_state_owner = c:AUS }
-		}
-		if = {
-			limit = { exists = s:STATE_TYROL.region_state:BAV }
-			s:STATE_TYROL.region_state:BAV = { set_state_owner = c:AUS }
-		}
-		if = {
-			limit = { exists = s:STATE_AUSTRIA.region_state:BAV }
-			s:STATE_AUSTRIA.region_state:BAV = { set_state_owner = c:AUS }
-		}
-		if = {
-			limit = { exists = s:STATE_SOUTH_TYROL.region_state:BAV }
-			s:STATE_SOUTH_TYROL.region_state:BAV = { set_state_owner = c:AUS }
-		}
-		if = {
-			limit = { exists = s:STATE_STYRIA.region_state:SGF }
-			s:STATE_STYRIA.region_state:SGF = { set_state_owner = c:AUS }
-		}
-		if = {
-			limit = { exists = s:STATE_TYROL.region_state:SGF }
-			s:STATE_TYROL.region_state:SGF = { set_state_owner = c:AUS }
-		}
-		if = {
-			limit = { exists = s:STATE_AUSTRIA.region_state:SGF }
-			s:STATE_AUSTRIA.region_state:SGF = { set_state_owner = c:AUS }
-		}
-		if = {
-			limit = { exists = s:STATE_SOUTH_TYROL.region_state:SGF }
-			s:STATE_SOUTH_TYROL.region_state:SGF = { set_state_owner = c:AUS }
-		}
-		s:STATE_DALMATIA = {
-			remove_claim = c:SGF	
-		}
-		s:STATE_CROATIA = {
-			remove_claim = c:SGF	
-		}
-		s:STATE_SLAVONIA = {
-			remove_claim = c:SGF	
-		}
-		s:STATE_BEKES = {
-			remove_claim = c:SGF	
-		}
-		s:STATE_TRANSDANUBIA = {
-			remove_claim = c:SGF	
-		}
-		s:STATE_DELVIDEK = {
-			remove_claim = c:SGF	
-		}
-		s:STATE_CENTRAL_HUNGARY = {
-			remove_claim = c:SGF	
-		}
-		s:STATE_ISTRIA = {
-			remove_claim = c:SGF	
-		}
-		s:STATE_BANAT = {
-			remove_claim = c:SGF	
-		}
 	}
 
 	option = {
 		name = danubian_fed.2.a
-		ai_chance = {
-			base = 5
+		custom_tooltip = {
+			text = austria_danube_path_tt
+			set_variable = {
+				name = danubian_fed_var
+				value = 0
+			}
+			change_relations = {
+				country = c:BYZ
+				value = -100
+			}
+			set_secret_goal = {
+				country = c:BYZ
+				secret_goal = antagonize			
+			}
+		
+			c:BYZ = {
+				change_relations = {
+					country = c:AUS
+					value = -100
+				}
+				set_secret_goal = {
+					country = c:AUS
+					secret_goal = antagonize			
+				}
+			}
 		}
 		add_journal_entry = { type = je_danubian_federation }
 		add_journal_entry = { type = je_dual_monarchy }
 		add_journal_entry = { type = je_integrate_slovenes }
 		add_journal_entry = { type = je_integrate_croats }
-		add_journal_entry = { type = je_pacify_serbs }
-		add_journal_entry = { type = je_pacify_romanians }
 		add_journal_entry = { type = je_danube_before_storm }
-		trigger_event = { id = danubian_ultimatum.1 months = 60 }
+		trigger_event = { id = danubian_ultimatum.1 months = 24 }
+		trigger_event = { id = danubian_revolts.1 }
 		c:AUS = {
-		ig:ig_landowners = {
-			remove_ideology = ideology_austrian_hegemony
-		}
-		create_character = {
-			template = aus_miklos_character_template
-			on_created = {
-				set_variable = miklos_variable
-				set_variable = memento_mori_immunity
+			ig:ig_landowners = {
+				remove_ideology = ideology_austrian_hegemony
 			}
-		}
-			remove_diplomatic_pact = {
-				country = c:BYZ
-				type = defensive_pact
-			}
-			change_relations = {
-				country = c:BYZ
-				value = -100
-			}
-			set_secret_goal = {
-				country = c:BYZ
-				secret_goal = antagonize			
-			}
-		}
-		c:BYZ = {
-			remove_diplomatic_pact = {
-				country = c:AUS
-				type = defensive_pact
-			}
-			change_relations = {
-				country = c:AUS
-				value = -100
-			}
-			set_secret_goal = {
-				country = c:AUS
-				secret_goal = antagonize			
+			create_character = {
+				template = aus_miklos_character_template
+				on_created = {
+					set_variable = miklos_variable
+					set_variable = memento_mori_immunity
+				}
 			}
 		}
 	}
@@ -181,9 +115,8 @@ danubian_fed.2 = {
 		name = danubian_fed.2.b
 		default_option = yes
 		ai_chance = {
-			base = 95
+			base = 100
 		}
-		trigger_event = { id = danubian_breakup.1 }	
 	}
 }
 
@@ -214,7 +147,8 @@ danubian_fed.3 = {
 	option = {
 		name = danubian_fed.3.a
 		change_tag = KUK
-		remove_modifier = austria_multicultural	
+		add_journal_entry = { type = je_expand_zap }
+		add_journal_entry = { type = je_expand_yug }
 	}
 }
 
@@ -240,19 +174,13 @@ danubian_fed.4 = {
 	}
 	
 	immediate = {
-		s:STATE_WEST_SLOVAKIA = {
-			add_claim = c:KUK
-		}
-		s:STATE_EAST_SLOVAKIA = {
-			add_claim = c:KUK
-		}
 	}
 
 	option = {
 		name = danubian_fed.4.a
 			add_modifier = {
 				name = new_colossus
-				months = very_long_modifier_time
+				days = very_long_modifier_time
 			}
 		
 	}
@@ -361,8 +289,8 @@ danubian_revolts.1 = {
 
 	option = {
 		name = danubian_revolts.1.a
-		add_journal_entry = { type = je_avert_serb_mutiny }
-		add_journal_entry = { type = je_avert_italian_mutiny }
+		add_journal_entry = { type = je_pacify_serbs }
+		add_journal_entry = { type = je_pacify_romanians }
 	}
 }
 
@@ -394,6 +322,8 @@ danubian_breakup.1 = {
 		remove_primary_culture = cu:slovene
 		remove_primary_culture = cu:croat
 		remove_primary_culture = cu:romanian
+		remove_primary_culture = cu:serb
+		remove_primary_culture = cu:slovak
 		if = {
 			limit = {
 				NOT = { exists = c:HUN }
@@ -435,6 +365,14 @@ danubian_breakup.1 = {
 			s:STATE_TRANSDANUBIA.region_state:AUS = { set_state_owner = c:HUN }
 		}
 		if = {
+			limit = { exists = s:STATE_WEST_SLOVAKIA.region_state:AUS }
+			s:STATE_WEST_SLOVAKIA.region_state:AUS = { set_state_owner = c:HUN }
+		}
+		if = {
+			limit = { exists = s:STATE_EAST_SLOVAKIA.region_state:AUS }
+			s:STATE_EAST_SLOVAKIA.region_state:AUS = { set_state_owner = c:HUN }
+		}
+		if = {
 			limit = { exists = s:STATE_DELVIDEK.region_state:AUS }
 			s:STATE_DELVIDEK.region_state:AUS = { set_state_owner = c:HUN }
 		}
@@ -462,9 +400,190 @@ danubian_breakup.1 = {
 			limit = { exists = s:STATE_DALMATIA.region_state:AUS }
 			s:STATE_DALMATIA.region_state:AUS = { set_state_owner = c:HUN }
 		}
+		c:HUN = {
+			activate_law = law_type:law_presidential_republic
+			activate_law = law_type:law_universal_suffrage
+			activate_law = law_type:law_homesteading
+			}
+		if = {
+			limit = {
+				NOT = { exists = c:TRE }
+				exists = s:STATE_ISTRIA.region_state:AUS
+			}
+			create_country = {
+				tag = TRE
+				origin = c:AUS
+				state = s:STATE_ISTRIA.region_state:AUS
+			}
+		}
+		else_if = {
+			limit = {
+				exists = c:TRE
+				exists = s:STATE_ISTRIA.region_state:AUS
+			}
+			s:STATE_ISTRIA.region_state:AUS = { set_state_owner = c:TRE }
+		}
+		else_if = {
+			limit = {
+				NOT = { exists = c:TRE }
+			}
+			random_country = {
+				limit = {
+					is_secessionist = yes
+					any_scope_state = {
+						state_region = s:STATE_ISTRIA
+					}
+				}
+				change_tag = TRE
+			}
+		}
+		c:TRE = {
+			activate_law = law_type:law_presidential_republic
+			activate_law = law_type:law_universal_suffrage
+			activate_law = law_type:law_homesteading
+			}
+		if = {
+			limit = {
+				NOT = { exists = c:SER }
+				exists = s:STATE_NORTHERN_SERBIA.region_state:AUS
+			}
+			create_country = {
+				tag = SER
+				origin = c:AUS
+				state = s:STATE_NORTHERN_SERBIA.region_state:AUS
+			}
+		}
+		else_if = {
+			limit = {
+				exists = c:SER
+				exists = s:STATE_NORTHERN_SERBIA.region_state:AUS
+			}
+			s:STATE_NORTHERN_SERBIA.region_state:AUS = { set_state_owner = c:SER }
+		}
+		else_if = {
+			limit = {
+				NOT = { exists = c:SER }
+			}
+			random_country = {
+				limit = {
+					is_secessionist = yes
+					any_scope_state = {
+						state_region = s:STATE_NORTHERN_SERBIA
+					}
+				}
+				change_tag = SER
+			}
+		}
+		c:SER = {
+			activate_law = law_type:law_presidential_republic
+			activate_law = law_type:law_universal_suffrage
+			activate_law = law_type:law_homesteading
+			}
 		if = {
 			limit = { exists = s:STATE_BOSNIA.region_state:AUS }
-			s:STATE_BOSNIA.region_state:AUS = { set_state_owner = c:HUN }
+			s:STATE_BOSNIA.region_state:AUS = { set_state_owner = c:SER }
+		}
+		if = {
+			limit = { exists = s:STATE_SOUTHERN_SERBIA.region_state:AUS }
+			s:STATE_SOUTHERN_SERBIA.region_state:AUS = { set_state_owner = c:SER }
+		}
+		if = {
+			limit = { exists = s:STATE_MONTENEGRO.region_state:AUS }
+			s:STATE_MONTENEGRO.region_state:AUS = { set_state_owner = c:SER }
+		}
+		if = {
+			limit = {
+				NOT = { exists = c:ROM }
+				exists = s:STATE_WALLACHIA.region_state:AUS
+			}
+			create_country = {
+				tag = ROM
+				origin = c:AUS
+				state = s:STATE_WALLACHIA.region_state:AUS
+			}
+		}
+		else_if = {
+			limit = {
+				exists = c:ROM
+				exists = s:STATE_WALLACHIA.region_state:AUS
+			}
+			s:STATE_WALLACHIA.region_state:AUS = { set_state_owner = c:ROM }
+		}
+		else_if = {
+			limit = {
+				NOT = { exists = c:ROM }
+			}
+			random_country = {
+				limit = {
+					is_secessionist = yes
+					any_scope_state = {
+						state_region = s:STATE_WALLACHIA
+					}
+				}
+				change_tag = ROM
+			}
+		}
+		c:ROM = {
+			activate_law = law_type:law_presidential_republic
+			activate_law = law_type:law_universal_suffrage
+			activate_law = law_type:law_homesteading
+			}
+		if = {
+			limit = { exists = s:STATE_MOLDAVIA.region_state:AUS }
+			s:STATE_MOLDAVIA.region_state:AUS = { set_state_owner = c:ROM }
+		}
+		if = {
+			limit = { exists = s:STATE_BESSARABIA.region_state:AUS }
+			s:STATE_BESSARABIA.region_state:AUS = { set_state_owner = c:ROM }
+		}
+		if = {
+			limit = { exists = s:STATE_DOBRUDJA.region_state:AUS }
+			s:STATE_DOBRUDJA.region_state:AUS = { set_state_owner = c:ROM }
+		}
+		if = {
+			limit = {
+				NOT = { exists = c:BOH }
+				exists = s:STATE_BOHEMIA.region_state:AUS
+			}
+			create_country = {
+				tag = BOH
+				origin = c:AUS
+				state = s:STATE_BOHEMIA.region_state:AUS
+			}
+		}
+		else_if = {
+			limit = {
+				exists = c:BOH
+				exists = s:STATE_BOHEMIA.region_state:AUS
+			}
+			s:STATE_BOHEMIA.region_state:AUS = { set_state_owner = c:BOH }
+		}
+		else_if = {
+			limit = {
+				NOT = { exists = c:BOH }
+			}
+			random_country = {
+				limit = {
+					is_secessionist = yes
+					any_scope_state = {
+						state_region = s:STATE_BOHEMIA
+					}
+				}
+				change_tag = BOH
+			}
+		}
+		c:BOH = {
+			activate_law = law_type:law_presidential_republic
+			activate_law = law_type:law_universal_suffrage
+			activate_law = law_type:law_homesteading
+			}
+		if = {
+			limit = { exists = s:STATE_SILESIA.region_state:AUS }
+			s:STATE_SILESIA.region_state:AUS = { set_state_owner = c:BOH }
+		}
+		if = {
+			limit = { exists = s:STATE_MORAVIA.region_state:AUS }
+			s:STATE_MORAVIA.region_state:AUS = { set_state_owner = c:BOH }
 		}
 	}
 	
@@ -480,75 +599,21 @@ danubian_breakup.1 = {
 	option = {
 		name = danubian_breakup.1.b
 		play_as = c:HUN
-		c:HUN = {
-			activate_law = law_type:law_presidential_republic
-			activate_law = law_type:law_universal_suffrage
-			activate_law = law_type:law_homesteading
-				create_character = {
-					first_name = "Janos"
-					last_name = "Damjanich"
-					historical = yes
-					birth_date = 1804.12.8 
-					culture = cu:serb
-					is_general = yes
-					religion = orthodox
-					interest_group = ig_inteligentsia
-					ideology = ideology_radical
-					traits = { 
-						expert_offensive_planner 
-						surveyor 
-					}
-				}
-				create_character = {
-					first_name = "Bertalan"
-					last_name = "Szemere"
-					historical = yes
-					birth_date = 1812.5.2
-					culture = cu:hungarian
-					ruler = yes
-					religion = catholic
-					noble = yes
-					interest_group = ig_rural_folk
-					ideology = ideology_republican
-					traits = { 
-						persistent 
-						firebrand 
-						meticulous
-					}
-				}
-				create_character = {
-					first_name = "Lajos"			
-					last_name = "Batthyany"
-					historical = yes
-					birth_date = 1807.2.10 
-					culture = cu:hungarian
-					is_general = yes
-					religion = catholic
-					interest_group = ig_armed_forces
-					ideology = ideology_reformer
-					ig_leader = yes
-					traits = { 
-						stalwart_defender 
-						experienced_artillery_commander
-						basic_political_operator
-					}
-				}
-				create_character = {
-					first_name = "Lajos"			
-					last_name = "Aulich"
-					historical = yes
-					birth_date = 1793.8.25 
-					culture = cu:hungarian
-					is_general = yes
-					religion = catholic
-					interest_group = ig_armed_forces
-					ideology = ideology_jingoist_leader
-					traits = { 
-						resupply_commander 
-						plains_commander 
-					}
-				}
-			}
+	}
+	
+	option = {
+		name = danubian_breakup.1.c
+		play_as = c:SER
+	}
+	
+	option = {
+		name = danubian_breakup.1.d
+		play_as = c:ROM
+	}
+	
+	option = {
+		name = danubian_breakup.1.e
+		play_as = c:BOH
 	}
 }
 
@@ -641,10 +706,6 @@ danubian_culture.3 = {
 	duration = 3
 
 	immediate = {
-		c:AUS = {
-			annex = c:WAL
-			annex = c:MOL
-		}
 	}
 
 	option = {
@@ -653,6 +714,74 @@ danubian_culture.3 = {
 		add_primary_culture = cu:romanian
 		add_loyalists = {
 			culture = cu:romanian
+			value = 0.2
+		}
+	}
+}
+
+danubian_culture.4 = {
+	type = country_event
+	placement = root
+	
+	title = danubian_culture.4.t
+	desc = danubian_culture.4.d
+	flavor = danubian_culture.4.f
+
+	duration = 3
+	
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	duration = 3
+
+	immediate = {
+	}
+
+	option = {
+		name = danubian_culture.4.a
+		default_option = yes
+		add_primary_culture = cu:serb
+		add_loyalists = {
+			culture = cu:serb
+			value = 0.2
+		}
+	}
+}	
+
+danubian_culture.5 = {
+	type = country_event
+	placement = root
+	
+	title = danubian_culture.5.t
+	desc = danubian_culture.5.d
+	flavor = danubian_culture.5.f
+
+	duration = 3
+	
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	duration = 3
+
+	immediate = {
+	}
+
+	option = {
+		name = danubian_culture.5.a
+		default_option = yes
+		add_primary_culture = cu:slovak
+		add_loyalists = {
+			culture = cu:slovak
 			value = 0.2
 		}
 	}
@@ -696,7 +825,34 @@ danubian_wars.1 = {
 		s:STATE_NORTHERN_SERBIA = {
 			add_claim = c:BYZ
 		}
+		s:STATE_SOUTHERN_SERBIA = {
+			add_claim = c:BYZ
+		}
+		s:STATE_SOUTHERN_TRANSYLVANIA = {
+			add_claim = c:BYZ
+		}
+		s:STATE_NORTHERN_TRANSYLVANIA = {
+			add_claim = c:BYZ
+		}
+		s:STATE_BEKES = {
+			add_claim = c:BYZ
+		}
+		s:STATE_MONTENEGRO = {
+			add_claim = c:BYZ
+		}
 		s:STATE_DALMATIA = {
+			add_claim = c:BYZ
+		}
+		s:STATE_MOLDAVIA = {
+			add_claim = c:BYZ
+		}
+		s:STATE_WALLACHIA = {
+			add_claim = c:BYZ
+		}
+		s:STATE_BESSARABIA = {
+			add_claim = c:BYZ
+		}
+		s:STATE_DOBRUDJA = {
 			add_claim = c:BYZ
 		}
 		s:STATE_CROATIA = {
@@ -715,19 +871,28 @@ danubian_wars.1 = {
 			add_claim = c:ITA
 		}
 		s:STATE_STYRIA = {
-			add_claim = c:GER
+			add_claim = c:BAV
 		}
 		s:STATE_TYROL = {
-			add_claim = c:GER
+			add_claim = c:BAV
 		}
 		s:STATE_AUSTRIA = {
-			add_claim = c:GER
+			add_claim = c:BAV
 		}
 		s:STATE_SOUTH_TYROL = {
-			add_claim = c:GER
+			add_claim = c:BAV
 		}
 		s:STATE_SLOVENIA = {
-			add_claim = c:GER
+			add_claim = c:BAV
+		}
+		s:STATE_BOHEMIA = {
+			add_claim = c:BAV
+		}
+		s:STATE_MORAVIA = {
+			add_claim = c:BAV
+		}
+		s:STATE_SILESIA = {
+			add_claim = c:PRU
 		}
 	}
 	option = {
@@ -739,17 +904,21 @@ danubian_wars.1 = {
 		add_journal_entry = { type = je_danube_control_over_dalmatia }
 		add_journal_entry = { type = je_danube_control_over_austria }
 		c:BYZ = {
-			trigger_event = { id = danubian_wars.2 months = 36}	
+			trigger_event = { id = danubian_wars.2 months = 12}	
 		}	
-		c:RUS = {
-			trigger_event = { id = danubian_wars.3 months = 12}	
-		}
 		c:ITA = {
-			trigger_event = { id = danubian_wars.4 months = 96}	
+			trigger_event = { id = danubian_wars.4 months = 12}	
 		}
-		c:GER = {
-			trigger_event = { id = danubian_wars.5 months = 72}	
+		c:BAV = {
+			trigger_event = { id = danubian_wars.5 months = 12}	
 		}
+		c:PRU = {
+			trigger_event = { id = danubian_wars.6 months = 12}	
+		}
+	}
+	option = {
+		name = danubian_wars.1.a
+		trigger_event = { id = danube_storm_partition.1 }	
 	}
 }
 
@@ -807,6 +976,16 @@ danubian_wars.2 = {
 			add_war_goal = {
 				holder = c:BYZ
 				type = return_state
+				target_state = s:STATE_MONTENEGRO.region_state:AUS
+			}
+			add_war_goal = {
+				holder = c:BYZ
+				type = return_state
+				target_state = s:STATE_SOUTHERN_SERBIA.region_state:AUS
+			}
+			add_war_goal = {
+				holder = c:BYZ
+				type = return_state
 				target_state = s:STATE_DALMATIA.region_state:AUS
 			}
 			add_war_goal = {
@@ -820,13 +999,43 @@ danubian_wars.2 = {
 				target_state = s:STATE_SLAVONIA.region_state:AUS
 			}
 			add_war_goal = {
-				holder = c:AUS
-				type = humiliation
-				target_country = c:BYZ
+				holder = c:BYZ
+				type = return_state
+				target_state = s:STATE_SOUTHERN_TRANSYLVANIA.region_state:AUS
+			}
+			add_war_goal = {
+				holder = c:BYZ
+				type = return_state
+				target_state = s:STATE_NORTHERN_TRANSYLVANIA.region_state:AUS
+			}
+			add_war_goal = {
+				holder = c:BYZ
+				type = return_state
+				target_state = s:STATE_BEKES.region_state:AUS
+			}
+			add_war_goal = {
+				holder = c:BYZ
+				type = return_state
+				target_state = s:STATE_MOLDAVIA.region_state:AUS
+			}
+			add_war_goal = {
+				holder = c:BYZ
+				type = return_state
+				target_state = s:STATE_WALLACHIA.region_state:AUS
+			}
+			add_war_goal = {
+				holder = c:BYZ
+				type = return_state
+				target_state = s:STATE_BESSARABIA.region_state:AUS
+			}
+			add_war_goal = {
+				holder = c:BYZ
+				type = return_state
+				target_state = s:STATE_DOBRUDJA.region_state:AUS
 			}
 			add_war_goal = {
 				holder = c:AUS
-				type = war_reparations
+				type = humiliation
 				target_country = c:BYZ
 			}
 			add_war_goal = {
@@ -834,73 +1043,8 @@ danubian_wars.2 = {
 				type = humiliation
 				target_country = c:AUS
 			}
-			add_war_goal = {
-				holder = c:BYZ
-				type = war_reparations
-				target_country = c:AUS
-			}
 		}	
 	}
-}
-
-danubian_wars.3 = {
-	type = country_event
-	placement = root
-
-	title = danubian_wars.3.t
-	desc = danubian_wars.3.d
-	flavor = danubian_wars.3.f
-
-	duration = 3
-
-	event_image = {
-		video = "europenorthamerica_before_the_battle"
-	}
-
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
-	icon = "gfx/interface/icons/event_icons/event_protest.dds"
-	
-	trigger = {
-	}
-
-	immediate = {
-		c:AUS = {
-			set_variable = {
-				name = danube_romania_war
-			}	
-		}
-	}
-	option = {
-		name = danubian_wars.3.a
-		default_option = yes	
-		create_diplomatic_play = {
-			target_country = c:AUS	
-			type = dp_liberate_country
-			escalation = 81
-			country_definition=ROM	
-			add_war_goal = {
-				holder = c:AUS
-				type = humiliation
-				target_country = c:RUS
-			}
-			add_war_goal = {
-				holder = c:AUS
-				type = war_reparations
-				target_country = c:RUS
-			}
-			add_war_goal = {
-				holder = c:RUS
-				type = humiliation
-				target_country = c:AUS
-			}
-			add_war_goal = {
-				holder = c:RUS
-				type = war_reparations
-				target_country = c:AUS
-			}
-		}	
-	}	
 }
 
 danubian_wars.4 = {
@@ -950,43 +1094,13 @@ danubian_wars.4 = {
 				target_state = s:STATE_SOUTH_TYROL.region_state:AUS
 			}
 			add_war_goal = {
-				holder = c:ITA
-				type = return_state
-				target_state = s:STATE_BOSNIA.region_state:AUS
-			}
-			add_war_goal = {
-				holder = c:ITA
-				type = return_state
-				target_state = s:STATE_DALMATIA.region_state:AUS
-			}
-			add_war_goal = {
-				holder = c:ITA
-				type = return_state
-				target_state = s:STATE_CROATIA.region_state:AUS
-			}
-			add_war_goal = {
-				holder = c:ITA
-				type = return_state
-				target_state = s:STATE_SLAVONIA.region_state:AUS
-			}
-			add_war_goal = {
 				holder = c:AUS
 				type = humiliation
 				target_country = c:ITA
 			}
 			add_war_goal = {
-				holder = c:AUS
-				type = war_reparations
-				target_country = c:ITA
-			}
-			add_war_goal = {
 				holder = c:ITA
 				type = humiliation
-				target_country = c:AUS
-			}
-			add_war_goal = {
-				holder = c:ITA
-				type = war_reparations
 				target_country = c:AUS
 			}
 		}	
@@ -1030,44 +1144,94 @@ danubian_wars.5 = {
 			target_state = s:STATE_AUSTRIA.region_state:AUS
 			escalation = 81
 			add_war_goal = {
-				holder = c:GER
+				holder = c:BAV
 				type = return_state
 				target_state = s:STATE_STYRIA.region_state:AUS
 			}
 			add_war_goal = {
-				holder = c:GER
+				holder = c:BAV
 				type = return_state
 				target_state = s:STATE_SOUTH_TYROL.region_state:AUS
 			}
 			add_war_goal = {
-				holder = c:GER
+				holder = c:BAV
 				type = return_state
 				target_state = s:STATE_TYROL.region_state:AUS
 			}
 			add_war_goal = {
-				holder = c:GER
+				holder = c:BAV
 				type = return_state
 				target_state = s:STATE_SLOVENIA.region_state:AUS
 			}
 			add_war_goal = {
+				holder = c:BAV
+				type = return_state
+				target_state = s:STATE_BOHEMIA.region_state:AUS
+			}
+			add_war_goal = {
+				holder = c:BAV
+				type = return_state
+				target_state = s:STATE_MORAVIA.region_state:AUS
+			}
+			add_war_goal = {
 				holder = c:AUS
 				type = humiliation
-				target_country = c:GER
+				target_country = c:BAV
 			}
 			add_war_goal = {
-				holder = c:AUS
-				type = war_reparations
-				target_country = c:GER
+				holder = c:BAV
+				type = humiliation
+				target_country = c:AUS
 			}
+		}			
+	}
+}
+
+danubian_wars.6 = {
+	type = country_event
+	placement = root
+
+	title = danubian_wars.6.t
+	desc = danubian_wars.6.d
+	flavor = danubian_wars.6.f
+
+	duration = 3
+
+	event_image = {
+		video = "europenorthamerica_before_the_battle"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	trigger = {
+	}
+
+	immediate = {
+		c:AUS = {
+			set_variable = {
+				name = danube_polish_war
+			}	
+		}
+	}
+	option = {
+		name = danubian_wars.6.a
+		default_option = yes
+		create_diplomatic_play = {
+			target_country = c:AUS	
+			type = dp_return_state
+			target_state = s:STATE_SILESIA.region_state:AUS
+			escalation = 81
 			add_war_goal = {
-				holder = c:GER
+				holder = c:PRU
 				type = humiliation
 				target_country = c:AUS
 			}
 			add_war_goal = {
-				holder = c:GER
-				type = war_reparations
-				target_country = c:AUS
+				holder = c:AUS
+				type = humiliation
+				target_country = c:PRU
 			}
 		}			
 	}
@@ -1098,24 +1262,18 @@ danube_storm_partition.1 = {
 	immediate = {
 		remove_primary_culture = cu:slovene
 		remove_primary_culture = cu:croat
+		remove_primary_culture = cu:serb
+		remove_primary_culture = cu:slovak
 		remove_primary_culture = cu:romanian
 		remove_primary_culture = cu:south_german
-		if = {
-			limit = {
-				NOT = { exists = c:ROM }
-				exists = s:STATE_WALLACHIA.region_state:AUS
-			}
-			create_country = {
-				tag = ROM
-				origin = c:AUS
-				state = s:STATE_WALLACHIA.region_state:AUS
-			}
-		}
 	}
 
 	option = {
 		name = danube_storm_partition.1.a
 		change_tag = HUN
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_universal_suffrage
+		activate_law = law_type:law_homesteading
 		if = {
 			limit = { exists = s:STATE_DELVIDEK.region_state:AUS }
 			s:STATE_DELVIDEK.region_state:AUS = { set_state_owner = c:BYZ }
@@ -1133,6 +1291,14 @@ danube_storm_partition.1 = {
 			s:STATE_NORTHERN_SERBIA.region_state:AUS = { set_state_owner = c:BYZ }
 		}
 		if = {
+			limit = { exists = s:STATE_SOUTHERN_SERBIA.region_state:AUS }
+			s:STATE_SOUTHERN_SERBIA.region_state:AUS = { set_state_owner = c:BYZ }
+		}
+		if = {
+			limit = { exists = s:STATE_MONTENEGRO.region_state:AUS }
+			s:STATE_MONTENEGRO.region_state:AUS = { set_state_owner = c:BYZ }
+		}
+		if = {
 			limit = { exists = s:STATE_DALMATIA.region_state:AUS }
 			s:STATE_DALMATIA.region_state:AUS = { set_state_owner = c:BYZ }
 		}
@@ -1146,19 +1312,31 @@ danube_storm_partition.1 = {
 		}
 		if = {
 			limit = { exists = s:STATE_SOUTHERN_TRANSYLVANIA.region_state:AUS }
-			s:STATE_SOUTHERN_TRANSYLVANIA.region_state:AUS = { set_state_owner = c:ROM }
+			s:STATE_SOUTHERN_TRANSYLVANIA.region_state:AUS = { set_state_owner = c:BYZ }
 		}
 		if = {
 			limit = { exists = s:STATE_NORTHERN_TRANSYLVANIA.region_state:AUS }
-			s:STATE_NORTHERN_TRANSYLVANIA.region_state:AUS = { set_state_owner = c:ROM }
+			s:STATE_NORTHERN_TRANSYLVANIA.region_state:AUS = { set_state_owner = c:BYZ }
 		}
 		if = {
 			limit = { exists = s:STATE_MOLDAVIA.region_state:AUS }
-			s:STATE_MOLDAVIA.region_state:AUS = { set_state_owner = c:ROM }
+			s:STATE_MOLDAVIA.region_state:AUS = { set_state_owner = c:BYZ }
+		}
+		if = {
+			limit = { exists = s:STATE_WALLACHIA.region_state:AUS }
+			s:STATE_WALLACHIA.region_state:AUS = { set_state_owner = c:BYZ }
 		}
 		if = {
 			limit = { exists = s:STATE_BESSARABIA.region_state:AUS }
-			s:STATE_BESSARABIA.region_state:AUS = { set_state_owner = c:ROM }
+			s:STATE_BESSARABIA.region_state:AUS = { set_state_owner = c:BYZ }
+		}
+		if = {
+			limit = { exists = s:STATE_DOBRUDJA.region_state:AUS }
+			s:STATE_DOBRUDJA.region_state:AUS = { set_state_owner = c:BYZ }
+		}
+		if = {
+			limit = { exists = s:STATE_BEKES.region_state:AUS }
+			s:STATE_BEKES.region_state:AUS = { set_state_owner = c:BYZ }
 		}
 		if = {
 			limit = { exists = s:STATE_ISTRIA.region_state:AUS }
@@ -1166,23 +1344,137 @@ danube_storm_partition.1 = {
 		}
 		if = {
 			limit = { exists = s:STATE_STYRIA.region_state:AUS }
-			s:STATE_STYRIA.region_state:AUS = { set_state_owner = c:GER }
+			s:STATE_STYRIA.region_state:AUS = { set_state_owner = c:BAV }
 		}
 		if = {
 			limit = { exists = s:STATE_TYROL.region_state:AUS }
-			s:STATE_TYROL.region_state:AUS = { set_state_owner = c:GER }
+			s:STATE_TYROL.region_state:AUS = { set_state_owner = c:BAV }
 		}
 		if = {
 			limit = { exists = s:STATE_AUSTRIA.region_state:AUS }
-			s:STATE_AUSTRIA.region_state:AUS = { set_state_owner = c:GER }
+			s:STATE_AUSTRIA.region_state:AUS = { set_state_owner = c:BAV }
 		}
 		if = {
 			limit = { exists = s:STATE_SOUTH_TYROL.region_state:AUS }
-			s:STATE_SOUTH_TYROL.region_state:AUS = { set_state_owner = c:GER }
+			s:STATE_SOUTH_TYROL.region_state:AUS = { set_state_owner = c:BAV }
 		}
 		if = {
 			limit = { exists = s:STATE_SLOVENIA.region_state:AUS }
-			s:STATE_SLOVENIA.region_state:AUS = { set_state_owner = c:GER }
+			s:STATE_SLOVENIA.region_state:AUS = { set_state_owner = c:BAV }
 		}
+		if = {
+			limit = { exists = s:STATE_BOHEMIA.region_state:AUS }
+			s:STATE_BOHEMIA.region_state:AUS = { set_state_owner = c:BAV }
+		}
+		if = {
+			limit = { exists = s:STATE_MORAVIA.region_state:AUS }
+			s:STATE_MORAVIA.region_state:AUS = { set_state_owner = c:BAV }
+		}
+		if = {
+			limit = { exists = s:STATE_SILESIA.region_state:AUS }
+			s:STATE_SILESIA.region_state:AUS = { set_state_owner = c:PRU }
+		}
+	}
+}
+
+danubian_wars.3 = {
+	type = country_event
+	placement = root
+
+	title = danubian_wars.3.t
+	desc = danubian_wars.3.d
+	flavor = danubian_wars.3.f
+
+	duration = 3
+
+	event_image = {
+		video = "europenorthamerica_before_the_battle"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	trigger = {
+	}
+
+	immediate = {
+	}
+	option = {
+		name = danubian_wars.3.a
+		default_option = yes		
+		s:STATE_WURTTEMBERG = {
+			add_claim = c:AUS
+		}
+		s:STATE_BADEN = {
+			add_claim = c:AUS
+		}
+		s:STATE_BAVARIA = {
+			add_claim = c:AUS
+		}
+		s:STATE_FRANCONIA = {
+			add_claim = c:AUS
+		}
+		add_journal_entry = { type = je_punish_bavaria }
+	}
+}
+
+danubian_expansion.1 = {
+	type = country_event
+	placement = root
+	
+	title = danubian_expansion.1.t
+	desc = danubian_expansion.1.d
+	flavor = danubian_expansion.1.f
+
+	duration = 3
+	
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	trigger = {
+	}
+	
+	immediate = {
+	}
+
+	option = {
+		name = danubian_expansion.1.a
+		add_journal_entry = { type = je_cultural_shift_yug }
+	}
+}
+
+danubian_expansion.2 = {
+	type = country_event
+	placement = root
+	
+	title = danubian_expansion.2.t
+	desc = danubian_expansion.2.d
+	flavor = danubian_expansion.2.f
+
+	duration = 3
+	
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	trigger = {
+	}
+	
+	immediate = {
+	}
+
+	option = {
+		name = danubian_expansion.2.a
+		add_journal_entry = { type = je_cultural_shift_zap }
 	}
 }

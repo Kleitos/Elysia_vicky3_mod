@@ -69,81 +69,30 @@ je_elysian_schooling = {
 	}
 }
 
-je_populate_interior = {
-	icon = "gfx/interface/icons/event_icons/event_map.dds"
+je_elysian_games = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
 
 	group = je_group_elysian_content
 
 	complete = {
-		owns_entire_state_region = STATE_ARIZONA
-		owns_entire_state_region = STATE_NEW_MEXICO
-		owns_entire_state_region = STATE_UTAH
-		owns_entire_state_region = STATE_COLORADO
-		owns_entire_state_region = STATE_MONTANA
-		owns_entire_state_region = STATE_NORTH_DAKOTA
-		owns_entire_state_region = STATE_SOUTH_DAKOTA
-		owns_entire_state_region = STATE_KANSAS
-		owns_entire_state_region = STATE_OKLAHOMA
-		owns_entire_state_region = STATE_TEXAS
-		owns_entire_state_region = STATE_ARKANSAS
-		owns_entire_state_region = STATE_NEBRASKA
-		owns_entire_state_region = STATE_ALBERTA
-		owns_entire_state_region = STATE_SASKATCHEWAN
-		owns_entire_state_region = STATE_MANITOBA
-		owns_entire_state_region = STATE_IDAHO
-	}
-
-	on_complete = {
-		if = {
-			limit = {
-				exists = c:ELY
-				c:ELY = ROOT
+		country_prestige >= 2500
+		has_technology_researched = organized_sports
+		has_technology_researched = camera
+		has_law = law_type:law_compulsory_primary_school
+		has_law = law_type:law_public_schools
+		institution_investment_level = {
+			institution = institution_schools
+			value >= 5
 			}
-		trigger_event = { id = ely_national_value.4 }
+		any_scope_building = {
+			is_building_type = building_university
+			level >= 10
+			occupancy > 0.9
 		}
-	}
-}
-
-je_assimilate_inuit = {
-	icon = "gfx/interface/icons/event_icons/unify.dds"
-
-	group = je_group_elysian_content
-
-	complete = {
-		has_technology_researched = pan-nationalism
-		NOT = {
-			has_law = law_type:law_ethnostate
-		}
-	OR = { 
-		AND = {	
-            is_ai = no
-				has_law = law_type:law_compulsory_primary_school
-				OR = {
-					has_law = law_type:law_religious_schools
-					has_law = law_type:law_private_schools
-					has_law = law_type:law_public_schools
-				}
-				institution_investment_level = {
-					institution = institution_schools
-					value >= 3
-				}
-				institution_investment_level = {
-					institution = institution_police
-					value >= 1
-				}
-				institution_investment_level = {
-					institution = institution_home_affairs
-					value >= 1
-				}
-		owns_entire_state_region = STATE_NUNAVUT
-		owns_entire_state_region = STATE_GREENLAND
-			}
-		AND = {
-				is_ai = yes
-				year >= 1886
-		owns_entire_state_region = STATE_NUNAVUT
-		owns_entire_state_region = STATE_GREENLAND
-			}	
+		any_scope_building = {
+			is_building_type = building_arts_academy
+			level >= 10
+			occupancy > 0.9
 		}
 	}
 
@@ -154,6 +103,59 @@ je_assimilate_inuit = {
 				c:ELY = ROOT
 			}
 		trigger_event = { id = ely_national_value.5 }
+		}
+	}
+}
+
+je_populate_interior = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		owns_entire_state_region = STATE_NICARAGUA
+		owns_entire_state_region = STATE_OAXACA
+		owns_entire_state_region = STATE_JALISCO
+		owns_entire_state_region = STATE_GUERRERO
+		owns_entire_state_region = STATE_CHIHUAHUA
+		owns_entire_state_region = STATE_MICHIGAN
+		owns_entire_state_region = STATE_ARKANSAS
+		owns_entire_state_region = STATE_MINNESOTA
+		owns_entire_state_region = STATE_OKLAHOMA
+		owns_entire_state_region = STATE_NORTH_DAKOTA
+		owns_entire_state_region = STATE_SOUTH_DAKOTA
+		owns_entire_state_region = STATE_NEBRASKA
+		owns_entire_state_region = STATE_KANSAS
+		owns_entire_state_region = STATE_TEXAS
+		owns_entire_state_region = STATE_NEW_MEXICO
+		owns_entire_state_region = STATE_COLORADO
+		owns_entire_state_region = STATE_NORTHWEST_TERRITORIES
+		owns_entire_state_region = STATE_YUKON_TERRITORY
+		owns_entire_state_region = STATE_NUNAVUT
+		owns_entire_state_region = STATE_ALASKA
+		owns_entire_state_region = STATE_BRITISH_COLUMBIA
+		owns_entire_state_region = STATE_QUEBEC
+		owns_entire_state_region = STATE_ALBERTA
+		owns_entire_state_region = STATE_MONTANA
+		owns_entire_state_region = STATE_SASKATCHEWAN
+		owns_entire_state_region = STATE_MANITOBA
+		owns_entire_state_region = STATE_FLORIDA
+		owns_entire_state_region = STATE_YUCATAN
+		owns_entire_state_region = STATE_ARIZONA
+		owns_entire_state_region = STATE_UTAH
+		owns_entire_state_region = STATE_IDAHO
+		owns_entire_state_region = STATE_WYOMING
+		owns_entire_state_region = STATE_NEVADA
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:ELY
+				c:ELY = ROOT
+			}
+		trigger_event = { id = ely_national_value.4 days = 180 }
+		trigger_event = { id = elyric.2 }
 		}
 	}
 }

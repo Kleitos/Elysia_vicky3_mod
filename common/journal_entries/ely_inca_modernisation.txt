@@ -448,43 +448,6 @@ je_reform_mines = {
 	}
 }
 
-je_anti_ruler = {
-	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
-
-	group = je_group_elysian_content
-
-	complete = {
-		owns_entire_state_region = STATE_ARAUCANIA
-		owns_entire_state_region = STATE_TUCUMAN
-		owns_entire_state_region = STATE_JUJUY
-		owns_entire_state_region = STATE_ECUADOR
-		owns_entire_state_region = STATE_ZULIA
-		owns_entire_state_region = STATE_ANTIOQUIA
-		owns_entire_state_region = STATE_CUNDINAMARCA
-		owns_entire_state_region = STATE_PATAGONIA
-		owns_entire_state_region = STATE_RIO_NEGRO
-		owns_entire_state_region = STATE_CAUCA
-		owns_entire_state_region = STATE_TARAPACA
-		owns_entire_state_region = STATE_ANTOFAGASTA
-		owns_entire_state_region = STATE_LA_PAZ
-		owns_entire_state_region = STATE_POTOSI
-		owns_entire_state_region = STATE_CAJAMARCA
-		owns_entire_state_region = STATE_LIMA
-		owns_entire_state_region = STATE_ICA
-		owns_entire_state_region = STATE_AREQUIPA
-		owns_entire_state_region = STATE_SANTIAGO
-		owns_entire_state_region = STATE_LOS_RIOS
-		owns_entire_state_region = STATE_LA_PAMPA
-		
-	}
-
-	on_complete = {
-		trigger_event = { id = inca_glory.1 }
-	}
-
-	timeout = 18262
-}
-
 je_reform_mines_2 = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 

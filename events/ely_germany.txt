@@ -1,4 +1,9 @@
 namespace = ely_germany
+namespace = german_nationalism
+namespace = prussia_flavor
+namespace = bavaria_flavor
+namespace = ely_austria_notif
+namespace = brother_war
 
 ely_germany.1 = {
 	type = country_event
@@ -23,14 +28,173 @@ ely_germany.1 = {
 	}
 
 	immediate = {	
+		s:STATE_BOHEMIA = {
+			add_claim = c:PRU
+		}
+		s:STATE_MORAVIA = {
+			add_claim = c:PRU
+		}
+		s:STATE_SILESIA = {
+			add_claim = c:PRU
+		}
+		s:STATE_BOSNIA = {
+			add_claim = c:BYZ
+		}
+		s:STATE_DELVIDEK = {
+			add_claim = c:BYZ
+		}
+		s:STATE_BANAT = {
+			add_claim = c:BYZ
+		}
+		s:STATE_BEKES = {
+			add_claim = c:BYZ
+		}
+		s:STATE_NORTHERN_TRANSYLVANIA = {
+			add_claim = c:BYZ
+		}
+		s:STATE_SOUTHERN_TRANSYLVANIA = {
+			add_claim = c:BYZ
+		}
+		if = {
+			limit = { exists = s:STATE_EAST_GALICIA.region_state:AUS }
+			s:STATE_EAST_GALICIA.region_state:AUS = { set_state_owner = c:KRA }
+		}
+		if = {
+			limit = { exists = s:STATE_WEST_GALICIA.region_state:AUS }
+			s:STATE_WEST_GALICIA.region_state:AUS = { set_state_owner = c:KRA }
+		}
+		c:AUS = {
+			trigger_event = { id = ely_austria_notif.1 popup = yes }
+				set_variable = AUS_debuff
+			remove_diplomatic_pact = {
+				country = c:KRA
+			 type = puppet
+			}
+			add_modifier = {
+				name = austrian_army_collapse
+				days = long_modifier_time
+			}
+			create_bidirectional_truce = {
+				country = c:FRA
+				months = 120
+			}
+			create_bidirectional_truce = {
+				country = c:RUS
+				months = 120
+			}
+			create_bidirectional_truce = {
+				country = c:TUR
+				months = 120
+			}
+			create_bidirectional_truce = {
+				country = c:GBR
+				months = 120
+			}
+			create_bidirectional_truce = {
+				country = c:VEN
+				months = 120
+			}
+			create_bidirectional_truce = {
+				country = c:PAP
+				months = 120
+			}
+			create_bidirectional_truce = {
+				country = c:SIC
+				months = 120
+			}
+			create_bidirectional_truce = {
+				country = c:TUS
+				months = 120
+			}
+			create_bidirectional_truce = {
+				country = c:SWE
+				months = 120
+			}
+			create_bidirectional_truce = {
+				country = c:DEN
+				months = 120
+			}
+			create_bidirectional_truce = {
+				country = c:BAV
+				months = 120
+			}
+		}
+		c:PRU = {
+			add_journal_entry = { type = je_schleswig_holstein_question_ely }
+			add_journal_entry = { type = je_pru_austrian_partition }
+		}
+		c:BYZ = {
+			add_journal_entry = { type = je_byz_austrian_partition }
+			trigger_event = { id = ely_austria_notif.2 }
+		}
+		s:STATE_SCHLESWIG_HOLSTEIN = {
+			add_claim = c:PRU
+		}
 	}
 
     option = {
 		name = ely_germany.1.a
 		default_option = yes
-		add_radicals = {
-			value = very_large_radicals
+		c:PRU = {
+		create_diplomatic_play = {
+			target_country = c:AUS
+			war = no
+			escalation = 81
+			type = dp_return_state
+			target_state = s:STATE_SILESIA.region_state:AUS
+			add_war_goal = {
+				holder = c:PRU
+				type = return_state
+				target_state = s:STATE_BOHEMIA.region_state:AUS
+				target_country = c:AUS
+			}
+			add_war_goal = {
+				holder = c:PRU
+				type = return_state
+				target_state = s:STATE_MORAVIA.region_state:AUS
+				target_country = c:AUS
+			}
+			add_war_goal = {
+				holder = c:BYZ
+				type = return_state
+				target_state = s:STATE_BOSNIA.region_state:AUS
+				target_country = c:AUS
+			}
+			add_war_goal = {
+				holder = c:BYZ
+				type = return_state
+				target_state = s:STATE_DELVIDEK.region_state:AUS
+				target_country = c:AUS
+			}
+			add_war_goal = {
+				holder = c:BYZ
+				type = return_state
+				target_state = s:STATE_BANAT.region_state:AUS
+				target_country = c:AUS
+			}
+			add_war_goal = {
+				holder = c:BYZ
+				type = return_state
+				target_state = s:STATE_BEKES.region_state:AUS
+				target_country = c:AUS
+			}
+			add_war_goal = {
+				holder = c:BYZ
+				type = return_state
+				target_state = s:STATE_NORTHERN_TRANSYLVANIA.region_state:AUS
+				target_country = c:AUS
+			}
+			add_war_goal = {
+				holder = c:BYZ
+				type = return_state
+				target_state = s:STATE_SOUTHERN_TRANSYLVANIA.region_state:AUS
+				target_country = c:AUS
+			}
+			add_initiator_backers = {
+				country = c:BYZ
+			}
 		}
+	}
 	}
 }
 
@@ -38,9 +202,9 @@ ely_germany.2 = {
 	type = country_event
 	placement = ROOT
 
-	title = ely_germany.1.t
-	desc = ely_germany.1.d
-	flavor = ely_germany.1.f
+	title = ely_germany.2.t
+	desc = ely_germany.2.d
+	flavor = ely_germany.2.f
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_military_parade.bk2"
@@ -56,17 +220,111 @@ ely_germany.2 = {
 	trigger = {
 	}
 
-	immediate = {	
-		remove_modifier = german_nationalism_rebukked
+	immediate = {
+		c:AUS = {
+			every_scope_state = {
+				limit = {
+					is_incorporated = yes
+				}
+				set_variable = AUS_incorporated_state
+			}
+		}
+		if = {
+			limit = {
+				NOT = { exists = c:HUN }
+				exists = s:STATE_CENTRAL_HUNGARY.region_state:AUS
+			}
+			create_country = {
+				tag = HUN
+				origin = c:AUS
+				state = s:STATE_CENTRAL_HUNGARY.region_state:AUS
+			}
+		}
+		else_if = {
+			limit = {
+				exists = c:HUN
+				exists = s:STATE_CENTRAL_HUNGARY.region_state:AUS
+			}
+			s:STATE_CENTRAL_HUNGARY.region_state:AUS = { set_state_owner = c:HUN }
+		}
+		else_if = {
+			limit = {
+				NOT = { exists = c:HUN }
+			}
+			random_country = {
+				limit = {
+					is_secessionist = yes
+					any_scope_state = {
+						state_region = s:STATE_CENTRAL_HUNGARY
+					}
+				}
+				change_tag = HUN
+			}
+		}
+		if = {
+			limit = { exists = s:STATE_TRANSDANUBIA.region_state:AUS }
+			s:STATE_TRANSDANUBIA.region_state:AUS = { set_state_owner = c:HUN }
+		}
+		if = {
+			limit = { exists = s:STATE_CROATIA.region_state:AUS }
+			s:STATE_CROATIA.region_state:AUS = { set_state_owner = c:HUN }
+		}
+		if = {
+			limit = { exists = s:STATE_WEST_SLOVAKIA.region_state:AUS }
+			s:STATE_WEST_SLOVAKIA.region_state:AUS = { set_state_owner = c:HUN }
+		}
+		if = {
+			limit = { exists = s:STATE_EAST_SLOVAKIA.region_state:AUS }
+			s:STATE_EAST_SLOVAKIA.region_state:AUS = { set_state_owner = c:HUN }
+		}
+		if = {
+			limit = { exists = s:STATE_SLAVONIA.region_state:AUS }
+			s:STATE_SLAVONIA.region_state:AUS = { set_state_owner = c:HUN }
+		}
+		c:HUN = {
+			activate_law = law_type:law_presidential_republic
+			activate_law = law_type:law_universal_suffrage
+			activate_law = law_type:law_homesteading
+			activate_law = law_type:law_appointed_bureaucrats
+			create_character = {
+				template = hun_lajos_kossuth_template
+			}
+			create_character = {
+				template = hun_sandor_petofi_template
+			}
+		}
 	}
 
     option = {
-		name = ely_germany.1.a
+		name = ely_germany.2.a
 		default_option = yes
-			add_modifier = {
-				name = german_nationalism_rebukked
-				months = normal_modifier_time
-			}	
+		ai_chance = {
+			base = 100
+		}
+		c:BAV = {
+			trigger_event = { id = ely_germany.3 days = 30 }
+		}
+		c:PRU = {
+			ruler = {
+				add_modifier = {
+					name = german_unifier_ruler
+				}
+			}
+			add_loyalists = {
+				value = 0.1
+				culture = cu:north_german
+			}
+			add_loyalists = {
+				value = 0.1
+				culture = cu:south_german
+			}
+		}
+		s:STATE_EAST_GALICIA = {
+			add_claim = c:PRU
+		}
+		s:STATE_WEST_GALICIA = {
+			add_claim = c:PRU
+		}
 	}
 }
 
@@ -74,9 +332,9 @@ ely_germany.3 = {
 	type = country_event
 	placement = ROOT
 
-	title = ely_germany.1.t
-	desc = ely_germany.1.d
-	flavor = ely_germany.1.f
+	title = ely_germany.3.t
+	desc = ely_germany.3.d
+	flavor = ely_germany.3.f
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_military_parade.bk2"
@@ -92,17 +350,26 @@ ely_germany.3 = {
 	trigger = {
 	}
 
-	immediate = {	
-		remove_modifier = general_strikes
+	immediate = {
 	}
 
     option = {
-		name = ely_germany.1.a
+		name = ely_germany.3.a
 		default_option = yes
-			add_modifier = {
-				name = general_strikes
-				months = normal_modifier_time
-			}	
+		ai_chance = {
+			base = 100
+		}
+		annex = c:AUS
+		every_scope_state = {
+			limit = {
+				owner = ROOT
+				has_variable = AUS_incorporated_state
+			}
+			set_state_type = incorporated
+		}
+		c:PRU = {
+			trigger_event = { id = ely_germany.4 days = 30 }
+		}
 	}
 }
 
@@ -128,31 +395,71 @@ ely_germany.4 = {
 	trigger = {
 	}
 
-	immediate = {	
-		remove_modifier = general_strikes
-		remove_modifier = german_nationalism_rebukked
+	immediate = {
 	}
 
     option = {
-		name = ely_germany.1.a
+		name = ely_germany.4.a
 		default_option = yes
-			add_loyalists = {
-				value = very_large_radicals
+		ai_chance = {
+			base = 100
+		}
+		c:PRU = {
+			trigger_event = { id = german_nationalism.1 days = 365 }
+		}
+	}
+
+    option = {
+		name = ely_germany.4.b
+		custom_tooltip = {
+			text = pru_backdown_tt
+			if = {
+				limit = {
+					NOT = { exists = c:BOH }
+					exists = s:STATE_BOHEMIA.region_state:PRU
+				}
+				create_country = {
+					tag = BOH
+					origin = c:PRU
+					state = s:STATE_BOHEMIA.region_state:PRU
+				}
 			}
-			add_modifier = {
-				name = new_colossus
-				months = normal_modifier_time
-			}	
+			else_if = {
+				limit = {
+					exists = c:BOH
+					exists = s:STATE_BOHEMIA.region_state:PRU
+				}
+				s:STATE_BOHEMIA.region_state:PRU = { set_state_owner = c:BOH }
+			}
+			else_if = {
+				limit = {
+					NOT = { exists = c:BOH }
+				}
+				random_country = {
+					limit = {
+						is_secessionist = yes
+						any_scope_state = {
+							state_region = s:STATE_BOHEMIA
+						}
+					}
+					change_tag = BOH
+				}
+			}
+			if = {
+				limit = { exists = s:STATE_MORAVIA.region_state:PRU }
+				s:STATE_MORAVIA.region_state:PRU = { set_state_owner = c:BOH }
+			}
+		}
 	}
 }
 
-ely_germany.5 = {
+german_nationalism.1 = {
 	type = country_event
 	placement = ROOT
 
-	title = ely_germany.5.t
-	desc = ely_germany.5.d
-	flavor = ely_germany.5.f
+	title = german_nationalism.1.t
+	desc = german_nationalism.1.d
+	flavor = german_nationalism.1.f
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_military_parade.bk2"
@@ -168,73 +475,824 @@ ely_germany.5 = {
 	trigger = {
 	}
 
-	immediate = {	
-		remove_modifier = general_strikes
-		remove_modifier = german_nationalism_rebukked
+	immediate = {
+		c:BAV = {
+			annex = c:WUR
+			annex = c:HAN
+			trigger_event = { id = bavaria_flavor.1 }
+			trigger_event = { id = brother_war.1 }
+		}
+		c:FRA = {
+			trigger_event = { id = brother_war.2 }
+		}
+		s:STATE_BOHEMIA = {
+			add_claim = c:BAV
+		}
+		s:STATE_MORAVIA = {
+			add_claim = c:BAV
+		}
+		s:STATE_POMERANIA = {
+			add_claim = c:BAV
+		}
+		s:STATE_ANHALT = {
+			add_claim = c:BAV
+		}
+		s:STATE_SAXONY = {
+			add_claim = c:BAV
+		}
+		s:STATE_BRANDENBURG = {
+			add_claim = c:BAV
+		}
+		s:STATE_MECKLENBURG = {
+			add_claim = c:BAV
+		}
+		s:STATE_BAVARIA = {
+			add_claim = c:PRU
+		}
+		s:STATE_BADEN = {
+			add_claim = c:PRU
+		}
+		s:STATE_FRANCONIA = {
+			add_claim = c:PRU
+		}
+		s:STATE_WURTTEMBERG = {
+			add_claim = c:PRU
+		}
+		s:STATE_HESSE = {
+			add_claim = c:PRU
+		}
+		s:STATE_BRUNSWICK = {
+			add_claim = c:PRU
+		}
+		s:STATE_HANNOVER = {
+			add_claim = c:PRU
+			add_claim = c:BAV
+		}
+		s:STATE_ELBE = {
+			add_claim = c:PRU
+			add_claim = c:BAV
+		}
+		s:STATE_SCHLESWIG_HOLSTEIN = {
+			add_claim = c:PRU
+			add_claim = c:BAV
+		}
+		s:STATE_WESTPHALIA = {
+			add_claim = c:PRU
+		}
+		s:STATE_RUHR = {
+			add_claim = c:PRU
+		}
+		s:STATE_STYRIA = {
+			add_claim = c:PRU
+		}
+		s:STATE_TYROL = {
+			add_claim = c:PRU
+		}
+		s:STATE_AUSTRIA = {
+			add_claim = c:PRU
+		}
+		s:STATE_SOUTH_TYROL = {
+			add_claim = c:PRU
+		}
+		c:PRU = {
+			annex = c:SAX
+		}
 	}
 
     option = {
-		name = ely_germany.5.a
+		name = german_nationalism.1.a
 		default_option = yes
 		ai_chance = {
 			base = 100
 		}
 		c:PRU = {
-			annex = c:SAX
-		}
-		add_loyalists = {
-			value = very_large_radicals
+			add_journal_entry = { type = je_german_unification_idea_ely }
 		}
 		create_diplomatic_play = {
-			target_country = c:PRU
-			war = no
-			escalation = 81
+			target_country = c:BAV
+				escalation = 81
 			type = dp_return_state
-			target_state = s:STATE_WEST_PRUSSIA.region_state:PRU
+			target_state = s:STATE_BAVARIA.region_state:BAV
 			add_war_goal = {
-				holder = c:GER
+				holder = c:PRU
 				type = return_state
-				target_state = s:STATE_EAST_PRUSSIA.region_state:PRU
+				target_state = s:STATE_BADEN.region_state:BAV
+				target_country = c:BAV
+			}
+			add_war_goal = {
+				holder = c:PRU
+				type = return_state
+				target_state = s:STATE_FRANCONIA.region_state:BAV
+				target_country = c:BAV
+			}
+			add_war_goal = {
+				holder = c:PRU
+				type = return_state
+				target_state = s:STATE_WURTTEMBERG.region_state:BAV
+				target_country = c:BAV
+			}
+			add_war_goal = {
+				holder = c:PRU
+				type = return_state
+				target_state = s:STATE_HESSE.region_state:BAV
+				target_country = c:BAV
+			}
+			add_war_goal = {
+				holder = c:PRU
+				type = return_state
+				target_state = s:STATE_SAXONY.region_state:BAV
+				target_country = c:BAV
+			}
+			add_war_goal = {
+				holder = c:PRU
+				type = return_state
+				target_state = s:STATE_HANNOVER.region_state:BAV
+				target_country = c:BAV
+			}
+			add_war_goal = {
+				holder = c:PRU
+				type = return_state
+				target_state = s:STATE_SCHLESWIG_HOLSTEIN.region_state:BAV
+				target_country = c:BAV
+			}
+			add_war_goal = {
+				holder = c:PRU
+				type = return_state
+				target_state = s:STATE_ELBE.region_state:BAV
+				target_country = c:BAV
+			}
+			add_war_goal = {
+				holder = c:PRU
+				type = return_state
+				target_state = s:STATE_WESTPHALIA.region_state:BAV
+				target_country = c:BAV
+			}
+			add_war_goal = {
+				holder = c:PRU
+				type = return_state
+				target_state = s:STATE_RUHR.region_state:BAV
+				target_country = c:BAV
+			}
+			add_war_goal = {
+				holder = c:PRU
+				type = return_state
+				target_state = s:STATE_STYRIA.region_state:BAV
+				target_country = c:BAV
+			}
+			add_war_goal = {
+				holder = c:PRU
+				type = return_state
+				target_state = s:STATE_TYROL.region_state:BAV
+				target_country = c:BAV
+			}
+			add_war_goal = {
+				holder = c:PRU
+				type = return_state
+				target_state = s:STATE_AUSTRIA.region_state:BAV
+				target_country = c:BAV
+			}			
+			add_war_goal = {
+				holder = c:PRU
+				type = return_state
+				target_state = s:STATE_SOUTH_TYROL.region_state:BAV
+				target_country = c:BAV
+			}	
+			
+			add_war_goal = {
+				holder = c:BAV
+				type = return_state
+				target_state = s:STATE_BOHEMIA.region_state:PRU
 				target_country = c:PRU
 			}
 			add_war_goal = {
-				holder = c:GER
+				holder = c:BAV
 				type = return_state
-				target_state = s:STATE_BRANDENBURG.region_state:PRU
+				target_state = s:STATE_MORAVIA.region_state:PRU
 				target_country = c:PRU
 			}
 			add_war_goal = {
-				holder = c:GER
+				holder = c:BAV
+				type = return_state
+				target_state = s:STATE_POMERANIA.region_state:PRU
+				target_country = c:PRU
+			}
+			add_war_goal = {
+				holder = c:BAV
+				type = return_state
+				target_state = s:STATE_ANHALT.region_state:PRU
+				target_country = c:PRU
+			}
+			add_war_goal = {
+				holder = c:BAV
 				type = return_state
 				target_state = s:STATE_SAXONY.region_state:PRU
 				target_country = c:PRU
 			}
 			add_war_goal = {
-				holder = c:PRU
-				type = annex_country
-				target_state = s:STATE_BAVARIA.region_state:GER
-				target_country = c:GER
+				holder = c:BAV
+				type = return_state
+				target_state = s:STATE_BRANDENBURG.region_state:PRU
+				target_country = c:PRU
+			}
+			add_war_goal = {
+				holder = c:BAV
+				type = return_state
+				target_state = s:STATE_MECKLENBURG.region_state:PRU
+				target_country = c:PRU
+			}
+			add_war_goal = {
+				holder = c:BAV
+				type = return_state
+				target_state = s:STATE_SCHLESWIG_HOLSTEIN.region_state:PRU
+				target_country = c:PRU
+			}
+			add_war_goal = {
+				holder = c:BAV
+				type = return_state
+				target_state = s:STATE_ELBE.region_state:PRU
+				target_country = c:PRU
+			}
+			add_war_goal = {
+				holder = c:BAV
+				type = return_state
+				target_state = s:STATE_HANNOVER.region_state:PRU
+				target_country = c:PRU
+			}
+			add_target_backers = {
+				country = c:FRA
+			}
+		}
+	}
+}
+
+german_nationalism.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = german_nationalism.2.t
+	desc = german_nationalism.2.d
+	flavor = german_nationalism.2.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = german_nationalism.2.a
+		default_option = yes
+			add_journal_entry = { type = je_expand_germany_baltic }
+			add_journal_entry = { type = je_expand_germany_south }
+			add_journal_entry = { type = je_expand_germany_balkans }
+			add_journal_entry = { type = je_germanize_conquest }
+			add_journal_entry = { type = je_cultural_shift_ger }
+	}
+}
+
+german_nationalism.3 = {
+	type = country_event
+	placement = ROOT
+
+	title = german_nationalism.3.t
+	desc = german_nationalism.3.d
+	flavor = german_nationalism.3.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_world_fair.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = german_nationalism.3.a	
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}	
+		add_loyalists = {
+			value = very_large_radicals
+		}
+		add_modifier = {
+			name = national_anthem_modifier
+			days = normal_modifier_time
+		}
+	}
+}
+
+german_nationalism.4 = {
+	type = country_event
+	placement = ROOT
+
+	title = german_nationalism.4.t
+	desc = german_nationalism.4.d
+	flavor = german_nationalism.4.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_world_fair.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = german_nationalism.4.a	
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+		change_infamy = 30
+		s:STATE_BOHEMIA = {
+			remove_homeland = cu:south_german
+			add_homeland = cu:german
+		}
+		s:STATE_MORAVIA = {
+			remove_homeland = cu:south_german
+			add_homeland = cu:german
+		}
+		s:STATE_TRANSDANUBIA = {
+			remove_homeland = cu:south_german
+			add_homeland = cu:german
+		}
+		s:STATE_WEST_SLOVAKIA = {
+			add_homeland = cu:german
+		}
+		s:STATE_SLOVENIA = {
+			remove_homeland = cu:south_german
+			add_homeland = cu:german
+		}	
+		s:STATE_POSEN = {
+			add_homeland = cu:german
+			remove_homeland = cu:north_german
+		}
+		s:STATE_SILESIA = {
+			add_homeland = cu:german
+			remove_homeland = cu:north_german
+		}
+		s:STATE_EAST_GALICIA = {
+			add_homeland = cu:german
+			remove_homeland = cu:north_german
+		}
+		s:STATE_GREATER_POLAND = {
+			add_homeland = cu:german
+			remove_homeland = cu:north_german
+		}
+		s:STATE_LESSER_POLAND = {
+			add_homeland = cu:german
+			remove_homeland = cu:north_german
+		}
+		s:STATE_MAZOVIA = {
+			add_homeland = cu:german
+			remove_homeland = cu:north_german
+		}
+		s:STATE_WEST_PRUSSIA = {
+			add_homeland = cu:german
+			remove_homeland = cu:north_german
+		}
+		s:STATE_EAST_PRUSSIA = {
+			add_homeland = cu:german
+			remove_homeland = cu:north_german
+		}
+		s:STATE_RIGA = {
+			add_homeland = cu:german
+			remove_homeland = cu:north_german
+		}
+		s:STATE_COURLAND = {
+			add_homeland = cu:german
+			remove_homeland = cu:north_german
+		}
+		s:STATE_KAUNAS = {
+			add_homeland = cu:german
+			remove_homeland = cu:north_german
+		}
+		s:STATE_VILNIUS = {
+			add_homeland = cu:german
+			remove_homeland = cu:north_german
+		}
+		hidden_effect = {	
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:latvian }
+					change_pop_culture = { target = cu:german value = 0.05 }
+				}
+				every_scope_pop = {
+					limit = { culture = cu:lithuanian }
+					change_pop_culture = { target = cu:german value = 0.05 }
+				}
+				every_scope_pop = {
+					limit = { culture = cu:polish }
+					change_pop_culture = { target = cu:german value = 0.05 }
+				}
+				every_scope_pop = {
+					limit = { culture = cu:czech }
+					change_pop_culture = { target = cu:german value = 0.05 }
+				}
+				every_scope_pop = {
+					limit = { culture = cu:slovene }
+					change_pop_culture = { target = cu:german value = 0.05 }
+				}
+				every_scope_pop = {
+					limit = { culture = cu:sorb }
+					change_pop_culture = { target = cu:german value = 0.05 }
+				}
 			}
 		}
 	}
 
     option = {
-		name = ely_germany.5.b
+		name = german_nationalism.4.b	
+		s:STATE_POSEN = {
+			add_homeland = cu:german
+			remove_homeland = cu:north_german
+		}
+		s:STATE_SILESIA = {
+			add_homeland = cu:german
+			remove_homeland = cu:north_german
+		}
+		s:STATE_WEST_PRUSSIA = {
+			add_homeland = cu:german
+			remove_homeland = cu:north_german
+		}
+		s:STATE_EAST_PRUSSIA = {
+			add_homeland = cu:german
+			remove_homeland = cu:north_german
+		}
+		hidden_effect = {	
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:north_german }
+					change_pop_culture = { target = cu:german value = 1 }
+				}
+			}
+		}
+	}
+}
+
+prussia_flavor.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = prussia_flavor.1.t
+	desc = prussia_flavor.1.d
+	flavor = prussia_flavor.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = prussia_flavor.1.a
+		default_option = yes
 		ai_chance = {
-			base = 0
+			base = 100
 		}
-		c:GER = {
-			add_modifier = {
-				name = german_nationalism_rebukked
-				months = normal_modifier_time
+		hidden_effect = {
+			set_variable = { 
+				name = je_german_unification_lost
 			}
-			add_modifier = {
-				name = general_strikes
-				months = normal_modifier_time
+		}
+	}
+}
+
+prussia_flavor.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = prussia_flavor.2.t
+	desc = prussia_flavor.2.d
+	flavor = prussia_flavor.2.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = prussia_flavor.2.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+		add_journal_entry = { type = je_silesian_war }
+	}
+}
+
+ely_austria_notif.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = ely_austria_notif.1.t
+	desc = ely_austria_notif.1.d
+	flavor = ely_austria_notif.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_springtime_of_nations.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = ely_austria_notif.1.a
+		default_option = yes
+	}
+}
+
+ely_austria_notif.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = ely_austria_notif.2.t
+	desc = ely_austria_notif.2.d
+	flavor = ely_austria_notif.2.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = ely_austria_notif.2.a
+		default_option = yes
+	}
+}
+
+bavaria_flavor.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = bavaria_flavor.1.t
+	desc = bavaria_flavor.1.d
+	flavor = bavaria_flavor.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		c:BAV ?= {
+			set_secret_goal = {
+				country = c:DEN
+				secret_goal = befriend
+			}
+			set_secret_goal = {
+				country = c:LUB
+				secret_goal = befriend
 			}	
-			add_radicals = {
-				value = very_large_radicals
+			change_relations = {
+				country = c:DEN
+				value = 25
+			}	
+			change_relations = {
+				country = c:LUB
+				value = 25
 			}
 		}
+	}
+
+    option = {
+		name = bavaria_flavor.1.a
+		default_option = yes
+			add_journal_entry = { type = je_hansa_buy_out }
+			add_journal_entry = { type = je_schleswig_holstein_compromise }
+			add_journal_entry = { type = je_german_unification_bav }
+	}
+}
+
+bavaria_flavor.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = bavaria_flavor.2.t
+	desc = bavaria_flavor.2.d
+	flavor = bavaria_flavor.2.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = bavaria_flavor.2.a
+		default_option = yes
+			annex = c:LUB
+			add_modifier = {
+				name = hansa_buyout
+				days = normal_modifier_time
+			}
+			add_modifier = {
+				name = hansa_legacy
+				months = -1
+			}
+	}
+}
+
+bavaria_flavor.3 = {
+	type = country_event
+	placement = ROOT
+
+	title = bavaria_flavor.3.t
+	desc = bavaria_flavor.3.d
+	flavor = bavaria_flavor.3.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = bavaria_flavor.3.a
+		default_option = yes
+			add_modifier = {
+				name = schleswig_holstein_question_solver
+				days = long_modifier_time
+			}
+			add_modifier = {
+				name = schleswig_holstein_compromise_bav
+				days = long_modifier_time
+			}
+			annex = c:HOL
+			annex = c:SCH
+		
+		c:DEN = {
+			add_modifier = {
+				name = schleswig_holstein_compromise_den
+				days = long_modifier_time
+			}
+		}
+	}
+}
+
+brother_war.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = brother_war.1.t
+	desc = brother_war.1.d
+	flavor = brother_war.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = brother_war.1.a
+		default_option = yes
+	}
+}
+
+brother_war.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = brother_war.2.t
+	desc = brother_war.2.d
+	flavor = brother_war.2.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = brother_war.2.a
+		default_option = yes
 	}
 }

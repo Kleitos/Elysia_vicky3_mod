@@ -1,6 +1,7 @@
 ﻿COUNTRIES = {
 	c:MUI = {
 		effect_starting_technology_tier_3_tech = yes
+		effect_starting_politics_conservative = yes
 
 		set_tax_level = medium
 		
@@ -33,6 +34,11 @@
 		add_modifier = {
 			name = elysian_aligned
 			months = very_long_modifier_time
+		}
+		
+		add_modifier = {
+			name = elysian_client_state_mod
+            months = -1
 		}
 
 		ig:ig_armed_forces = {

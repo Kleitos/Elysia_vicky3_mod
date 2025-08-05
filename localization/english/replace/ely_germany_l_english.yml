@@ -1,0 +1,180 @@
+﻿l_english:
+
+# German Flavour
+Germany
+  
+ BAV_FLAVOR_TEXT:0 "Bavaria has risen from southern obscurity to challenge the great powers of the German world. Allied with France and guided by reformist vision, it seeks to unite Germans not through conquest, but through diplomacy and cultural reconciliation. Yet rivals remain—Prussia in the north, Austria in the east, and Saxony in the center. Will Bavaria forge a new kind of Germany, or be crushed between older empires?"
+
+ PRU_FLAVOR_TEXT:0 "Prussia stands tall on the shores of the Baltic, having carved a path through the wreckage of Sweden and Poland. While it halted Russian encroachment in the east, ambitions remain fixed southward—toward Silesia, Bohemia, and the crumbling Habsburg realm. The dream of German unification still burns in Berlin, but can Prussia overcome its rivals and reshape Central Europe in its image?"
+
+ AUS_FLAVOR_TEXT:0 "Austria’s golden age lies in the past. Defeated in the Holy Roman heartlands, disgraced by the Ottoman sack of Vienna, and outmaneuvered by Prussia and Bavaria alike, the Habsburg throne now presides over a fragile, fracturing empire. From Hungary to Croatia, the margins strain under nationalist pressure. Will Austria reform and revive, or be torn apart by the very diversity that once made it strong?"
+
+ # Members of the German Federation
+
+#Journals
+journals
+
+ je_silesian_war:0 "The Silesian War"
+ je_silesian_war_reason:0 "Silesia is rich, weakly held, and historically entangled with the crowns of Central Europe. Though Prussia never held dominion there, we claim its industry, its position, and its future as our own. The Habsburg corpse rots, and we shall be the first to carve from it."
+
+ je_pru_austrian_partition:0 "The Partition of Austria"
+ je_pru_austrian_partition_reason:0 "Austria is a dying remnant of a broken order. Its failure to lead the German world has invited our hand. With the Orthodox powers tearing into its Balkan holdings, Prussia must strike westward — for Bohemia, for the Sudetenland, for imperial destiny. Let the Habsburgs fall."
+
+ je_byz_austrian_partition:0 "Partition of Austria"
+ je_byz_austrian_partition_reason:0 "The Balkans must be free from Catholic tyranny. With Austria collapsing under its own weight and northern Germany in upheaval, the League shall act — not in conquest, but in justice. Dalmatia, Croatia, and the Danubian lands will be restored to the Orthodox world."
+
+ je_schleswig_holstein_question_ely:0 "The Schleswig Holstein Question"
+ je_schleswig_holstein_question_ely_reason:0 "Two duchies. One identity. A tangle of laws and dynasties. But in this new century, power speaks louder than claims. Prussia must act to secure the northern marches, end Danish meddling, and unite the German north under firm rule — not for legality, but for order."
+
+ je_german_unification_idea_ely:0 "The Unification of Germany"
+ je_german_unification_idea_ely_reason:0 ""Germany is not a patchwork of dialects and confessions — it is a nation of steel, discipline, and will. The petty federalism of the southern states has failed. It falls to Prussia to forge unity not through compromise, but command. The sword shall do what treaties never could.""
+
+ je_german_unification_bav:0 "The Bavarian Path to Unity"
+ je_german_unification_bav_reason:0 "Germany need not be forged in fire. Bavaria proposes a path to unity built on diplomacy, trade, and shared prosperity. With cultural tolerance and federal cooperation, a united Germany can rise — not as an empire of conquest, but as a beacon of civilization."
+
+ je_schleswig_holstein_compromise:0 "The Schleswig Compromise"
+ je_schleswig_holstein_compromise_reason:0 "Rather than provoke war with Denmark, Bavaria seeks a diplomatic settlement regarding Schleswig and Holstein. A financial arrangement and mutual guarantees may secure the duchies peacefully — and show Europe that strength lies in reasoned compromise."
+
+ je_hansa_buy_out:0 "Incorporate the Hansa"
+ je_hansa_buy_out_reason:0 "The cities of the Hanseatic League once dominated Baltic trade. Now, through investment, debt assumption, and political goodwill, Bavaria may integrate Lübeck and its fellow Hansa ports — proving that influence earned is greater than power taken."
+ 
+ je_expand_germany_baltic:0 "Secure the Baltic Shore"
+ je_expand_germany_baltic_reason:0 "The Baltic Sea was once dominated by the Hanseatic League and the Teutonic Order. Now, a united Germany must reclaim this frontier — both for trade dominance and for the legacy of our northern crusaders."
+
+ je_expand_germany_south:0 "Reclaim the Bohemian Crown"
+ je_expand_germany_south_reason:0 "Bohemia has long stood at the crossroads of German, Slavic, and Magyar ambitions. For the security of our southern frontier and the legacy of the Holy Roman Empire, it must be brought into the German fold once more."
+
+ je_expand_germany_balkans:0 "Push Into the Balkans"
+ je_expand_germany_balkans_reason:0 "From the days of Otto the Great to the wars against the Turk, the German peoples have looked southward. With the East in turmoil, now is the time to bring order — and German influence — to the fragmented lands of the Balkans."
+
+ je_expand_germany_east:0 "Eastward Reunification"
+ je_expand_germany_east_reason:0 "The lands of Poland and the old Prussian Marches were once part of the imperial domain. The Slavs to the east are divided and weak — a golden opportunity for the Reich to reassert itself, from the Oder to the Vistula."
+
+ je_germanize_conquest:0 "Civilize the Periphery"
+ je_germanize_conquest_reason:0 "To truly unify our empire, we must extend not just administration — but language, values, and institutions. Let the outer provinces speak with one voice: a German one."
+
+ je_cultural_shift_ger:0 "Forge the Greater German Identity"
+ je_cultural_shift_ger_reason:0 "Catholic or Protestant, Frankish or Saxon, Prussian or Bavarian — these differences must give way to something greater. A new Germany demands a new national identity, binding its diverse peoples into a common imperial whole."
+
+ 
+#Events
+events
+ 
+ ely_austria_notif.1.t:0 "The Weight of Decay"
+ ely_austria_notif.1.d:0 "The centuries-old Austrian edifice groans under its own contradictions. Beset by Slavic unrest, Hungarian ambition, and German disillusionment, the empire now bears the burden of imperial decay. A severe national crisis grips Vienna, one which cannot be ignored. If we are to preserve what remains of Austria, we must act decisively — and soon."
+ ely_austria_notif.1.f:0 "Decadence may be tradition in Vienna, but survival is a choice."
+ ely_austria_notif.1.a:0 "Time to confront our decline."
+
+ ely_austria_notif.2.t:0 "Tensions with Austria Escalate"
+ ely_austria_notif.2.d:0 "The Habsburg remnants in Austria, weakened and fracturing, now stand as a threat to our Balkan ambitions. Their restless nobles stir unrest along our borders, and war appears inevitable. Prepare your armies — the fate of Orthodox lands hangs in the balance."
+ ely_austria_notif.2.f:0 "Our empire must endure — for Orthodoxy and legacy."
+ ely_austria_notif.2.a:0 "Ready the legions."
+
+ ely_germany.1.t:0 "The Silesian War"
+ ely_germany.1.d:0 "The Habsburgs grow weak and distracted, clinging to tradition while Europe evolves without them. Now, the Prussian eagle sharpens its talons. The time has come to strike. Silesia — rich, industrious, and neglected — shall be liberated from imperial stagnation and brought under the rule of order and steel."
+ ely_germany.1.f:0 "Empires rot. Kingdoms rise."
+ ely_germany.1.a:0 "Time for this empire to fall"
+
+ ely_germany.2.t:0 "The Rise of Prussia"
+ ely_germany.2.d:0 "Silesia and Bohemia are ours. The Austrian host lies shattered, and the old empire bleeds from a thousand fractures. Across the German lands, voices proclaim a new power — disciplined, reformed, and indomitable. The Prussian ideal of unity, strength, and resolve has shown its might. The age of hesitation is over. Germany awakens."
+ ely_germany.2.f:0 "One people, one will, one destiny — forged in fire."
+ ely_germany.2.a:0 "A glorious day !"
+
+ ely_germany.3.t:0 "The Collapse of Austria"
+ ely_germany.3.d:0 "Austria is no more. Hungary has broken away. Croatia raises its own banner. Vienna’s grasp has shriveled to a German stump. The Danube dream ends not with a scream, but a gasp. Bavaria, wary of Prussia’s rapid ascent and the vacuum left behind, now moves to salvage the German remnants of the imperial corpse — and warns Berlin not to overstep into Bohemia."
+ ely_germany.3.f:0 "Where empires fall, new claims rise."
+ ely_germany.3.a:0 "Send an ultimatum to Prussia"
+
+ ely_germany.4.t:0 "Bavarian ultimatum"
+ ely_germany.4.d:0 "Bavaria has issued a formal ultimatum: withdraw from Bohemia, or face the consequences. Behind their boldness stands the shadow of France — wary of a unified northern Germany under Prussian command. The choice is stark: yield for now, or risk war with the southern bloc. But Prussia was not forged in compromise."
+ ely_germany.4.f:0 "The south still thinks diplomacy is made of paper. We know it's made of iron."
+ ely_germany.4.a:0 "Prussia will endure"
+ ely_germany.4.b:0 "We can't fight both France and Bavaria"
+
+ german_nationalism.1.t:0 "The Brothers War"
+ german_nationalism.1.d:0 "For a year, Bavaria postured and France threatened, convinced that Prussia would bow to their terms. But Germany cannot be forged by compromise or ruled by those who fear unity more than foreign dominion. Today, under cover of steel and fog, Prussian legions march. Bavaria will learn that the mantle of Germany belongs not to the most tolerant, but to the most resolute. This is no border skirmish — it is a fratricidal struggle to decide who shall lead the German world."
+ german_nationalism.1.f:0 "One Germany — but not two kings."
+ german_nationalism.1.a:0 "This will determine the Fate of Germany"
+
+ german_nationalism.2.t:0 "A Destiny Beyond Borders"
+ german_nationalism.2.d:0 "Now that Germany has been forged, the question turns to where her borders should lie. Shall we be content with what we have — or shall we reach for the legacy of Charlemagne?"
+ german_nationalism.2.f:0 "Unity is only the beginning. Power demands purpose."
+ german_nationalism.2.a:0 "The Empire marches onward."
+
+ german_nationalism.3.t:0 "Germany Marches On"
+ german_nationalism.3.d:0 "Through war, diplomacy, or the pressure of history, Germany has extended her reach once more. The outer marches have been secured — and with them, a sense of destiny fulfilled."
+ german_nationalism.3.f:0 "Where the German soldier walks, the flag follows."
+ german_nationalism.3.a:0 "Another stone in the imperial foundation."
+
+ german_nationalism.4.t:0 "The Germanisation Campaign"
+ german_nationalism.4.d:0 "Now that these foreign lands are under our rule, the question remains: how long shall they remain foreign? A program of education, migration, and civil reform may make Germans of them yet."
+ german_nationalism.4.f:0 "Language unifies. Culture binds. Identity must be cultivated."
+ german_nationalism.4.a:0 "Let them learn the language of empire."
+ german_nationalism.4.a:0 "Just focus on the Prussian lands."
+
+ unification_culture.2.t:0 "Birth of a Greater German Identity"
+ unification_culture.2.d:0 "For centuries, the German peoples were divided by dialect, creed, and crown. Now, through a shared destiny and a united voice, a Greater German identity is taking shape — not merely an empire of territory, but of culture."
+ unification_culture.2.f:0 "From Aachen to Königsberg, one people stands together."
+ unification_culture.2.a:0 "From many lands, one people."
+ 
+ prussia_flavor.1.t:0 "Loss of the Brothers' War"
+ prussia_flavor.1.d:0 "Defeat has struck at the very heart of the Prussian dream. Our bid to forge a united Germany under firm discipline and iron resolve has been shattered on the fields of Bavaria. The mantle of leadership has passed — for now — to our southern rivals. But Prussia is not broken. We shall rise anew, tempered by fire, and carve our own legacy, with or without the German people."
+ prussia_flavor.1.f:0 "From the ruins of ambition, a new order shall be born."
+ prussia_flavor.1.a:0 "Prussia will forge its own path"
+ 
+ prussia_flavor.2.t:0 "Prussian Ambitions"
+ prussia_flavor.2.d:0 "The German lands lie fractured between weak kings and compromised parliaments. Bavaria, the so-called "protector" of the south, preaches tolerance as it bows to both Rome and Paris. France, in its arrogance, dresses up Latin decadence as Frankish unity. And the Habsburgs, senile in Vienna, cling to crumbling crowns while Slavs tear at their borders. But Prussia is not Bavaria. We do not rule by consensus. We do not negotiate with disunion. We are steel and Scripture—discipline forged in war, loyalty bound by blood, faith hardened by fire. We stand as the last true bastion of Protestant order in a world beset by chaos. We will not plead for unity—we will impose it. Not with parchment, but with bayonet and boot. The dream of Germany will not be handed down from liberal salons or foreign courts. It will be seized—by Prussian hands."
+ prussia_flavor.2.f:0 "Faith. Steel. Fatherland. Let the weak fall away, for Germany shall march as one."
+ prussia_flavor.2.a:0 "We will unite Germany"
+ 
+ prussia_flavor.3.t:0 "Conquest of the Hansa"
+ prussia_flavor.3.d:0 "The old merchant cities have bowed before Prussian might. Lübeck, Hamburg, and their allies, once proud champions of trade and autonomy, now kneel to Berlin. With this conquest, Prussia has secured the northern coast and choked off any lingering influence the Hansa held in Baltic affairs."
+ prussia_flavor.3.f:0 "Steel has triumphed over silver. The Baltic is Prussia’s sea now."
+ prussia_flavor.3.a:0 "Prussia will dominate the Baltic"
+ 
+ bavaria_flavor.1.t:0 "Bavarian Situation"
+ bavaria_flavor.1.d:0 "In the shifting landscape of German politics, Bavaria has emerged not through brute force or ancient claims, but through diplomacy, enlightenment, and pragmatic governance. Where Austria crumbled under the weight of dynastic decay, Bavaria rose — bridging the gap between Protestant and Catholic, monarchist and reformist.\n\nBound by treaty and mutual interest to France, Bavaria stands as a stabilizing anchor in Central Europe. Through strategic alliances, inheritance, and deft diplomacy, the Bavarian crown has extended its influence across Westphalia, Hesse, Baden, Brunswick, and Hannover.\n\nNow, as the idea of German unity once more stirs hearts and minds, Bavaria offers a vision built on cooperation, culture, and commerce — not the bayonet. In opposition to Prussia's militarist ambitions and Austria’s reactionary nostalgia, Bavaria leads with purpose, to forge a Germany worthy of the modern age."
+ bavaria_flavor.1.f:0 "Where others wield the sword, Bavaria shapes the future with reason and unity."
+ bavaria_flavor.1.a:0 "A different Germany is possible."
+
+ bavaria_flavor.2.t:0 "Buying of the Hansa"
+ bavaria_flavor.2.d:0 "Through careful negotiation, investment guarantees, and political overtures, Bavaria has secured the allegiance of Lübeck and other Hansa cities. Once proud trade powers in their own right, they now align with a greater German economic order — one led by Munich."
+ bavaria_flavor.2.f:0 "A port may be seized by war, but trade flows only where trust exists. With Bavarian backing, the Hansa finds new life within a modern federation."
+ bavaria_flavor.2.a:0 "Welcome to the fold."
+
+ bavaria_flavor.3.t:0 "The Schleswig Compromise"
+ bavaria_flavor.3.d:0 "Rather than provoke Danish wrath or risk continental war, Bavaria has offered a generous indemnity and recognition of certain dynastic rights in exchange for the peaceful transfer of Schleswig and Holstein. Copenhagen, under diplomatic pressure, accepts the compromise — and Germany’s northern border is redrawn with ink, not blood."
+ bavaria_flavor.3.f:0 "In an age of nationalism, diplomacy is not weakness. It is mastery."
+ bavaria_flavor.3.a:0 "Let Berlin tremble — we unify without conquest."
+ 
+ brother_war.1.t:0 "Prussia Strikes"
+ brother_war.1.d:0 "Despite our ultimatum, Prussia has chosen to act first. Without formal declaration, their armies have crossed the Bohemian frontier in force. From Saxony to the Danube, columns of steel fly the eagle banner. This is not a dispute over borders — it is a challenge to our claim as the heart of Germany."
+ brother_war.1.f:0 "If Prussia triumphs, they will shape Germany in their own iron image."
+ brother_war.1.a:0 "We will not yield to northern tyranny."
+
+ brother_war.2.t:0 "A German Storm"
+ brother_war.2.d:0 "The fragile balance of Central Europe has been shattered. Prussia, rejecting diplomacy and emboldened by its victory over Austria, has launched a full-scale offensive against Bavaria. War has come to the Rhine once more — and France must prepare itself to intervene."
+ brother_war.2.f:0 "The heirs of Charlemagne cannot stand idle as the Reich descends into blood and fire."
+ brother_war.2.a:0 "We must prepare for war."
+
+ 
+#Austria
+Austria
+  
+ remove_debuff_aus:0 "Remove Crippling Army Debuff"
+ remove_debuff_aus_desc:0 "Remove your debuff so you can play the Danubian Federation"
+ 
+#Country Flavour
+
+culture
+ 
+ german:0 "German"
+ 
+modifiers
+
+
+
+ austrian_army_collapse:0 "Collapse of the Austrian Army"
+ hansa_legacy:0 "Legacy of the Hanseatic League"
+ schleswig_holstein_compromise_bav:0 "Schleswig Holstein Compromise"
+ schleswig_holstein_compromise_den:0 "Schleswig Holstein Compromise"

@@ -20,6 +20,7 @@
 		add_technology_researched = shell_gun
 		add_technology_researched = pharmaceuticals		
 		add_technology_researched = bolt_action_rifles
+		add_technology_researched = sericulture
 
 		set_tax_level = medium
 		
@@ -28,12 +29,12 @@
             months = -1
 		}
 		add_modifier = {
-			name = favored_by_destiny
+			name = elysian_client_state_system
             months = -1
 		}
 		add_modifier = {
 			name = modifier_elysian_opportunity
-            months = very_long_modifier_time
+            months = 600
 		}
 		add_modifier = {
 			name = modifier_through_river_styx
@@ -52,76 +53,16 @@
             months = -1
 		}
 		add_modifier = {
+			name = modifier_elysian_guilds
+            months = 600
+		}
+		add_modifier = {
 			name = modifier_elysian_navy_old
             months = -1
 		}
 		
 		trigger_event = {
-			id = ely_infrastructure_event.6 days = 5
-		}
-
-		add_journal_entry = {
-			type = je_reform_economy_ely
-		}
-		add_journal_entry = {
-			type = je_reform_bureaucracy_ely
-		}
-		add_journal_entry = {
-			type = je_reform_navy
-		}
-		add_journal_entry = {
-			type = je_trans_elysian_railway
-		}
-		add_journal_entry = {
-			type = je_borealia_eireneic_railway
-		}
-		add_journal_entry = {
-			type = je_wife_trade
-		}
-		add_journal_entry = {
-			type = je_reform_blood_laws
-		}
-		add_journal_entry = {
-			type = je_elysian_schooling
-		}
-		add_journal_entry = {
-			type = je_populate_interior
-		}
-		add_journal_entry = {
-			type = je_assimilate_inuit
-		}
-		add_journal_entry = {
-			type = je_statue_liberty
-		}
-		add_journal_entry = {
-			type = je_drain_marshes_ely
-		}
-		add_journal_entry = {
-			type = je_apaleisian_pathway
-		}
-		add_journal_entry = {
-			type = je_lakonias_pathway
-		}
-		add_journal_entry = {
-			type = je_arkadias_pathway
-		}
-		add_journal_entry = {
-			type = je_hesperidias_pathway
-		}
-		add_journal_entry = {
-			type = je_elysian_highway_new
-		}
-		add_journal_entry = {
-			type = je_thoulean_pathway
-		}
-		add_journal_entry = {
-			type = je_modern_dockyard
-		}
-		add_journal_entry = {
-			type = je_greenland
-		}
-		add_journal_entry = {
-			type = je_fire_corps
+			id = ely_flavor.1
 		}
 		
 		# Laws 
@@ -165,6 +106,37 @@
 		add_company = company_type:company_pankratios_wood
 		company:company_pankratios_wood = {
 			set_company_establishment_date = 1653.5.11
+			set_company_state_region = s:STATE_HAITI
+		}
+
+		add_company = company_type:company_akatos_silk_hall
+		company:company_akatos_silk_hall = {
+			set_company_establishment_date = 1718.2.12
+			set_company_state_region = s:STATE_FLORIDA
+		}
+
+		add_company = company_type:company_apalachian_pathway
+		company:company_apalachian_pathway = {
+			set_company_establishment_date = 1582.9.7
+			set_company_state_region = s:STATE_PENNSYLVANIA
+		}
+
+		add_company = company_type:company_elysian_arsenal
+		company:company_elysian_arsenal = {
+			set_company_establishment_date = 1622.10.18
+			set_company_state_region = s:STATE_MARYLAND
+		}
+
+		add_company = company_type:company_helion_guns
+		company:company_elysian_arsenal = {
+			set_company_establishment_date = 1787.4.12
+			set_company_state_region = s:STATE_KENTUCKY
+		}
+
+		add_company = company_type:company_elysian_library
+		company:company_elysian_arsenal = {
+			set_company_establishment_date = 1571.1.23
+			set_company_state_region = s:STATE_MARYLAND
 		}
 	
 		ig:ig_landowners = { 
@@ -192,6 +164,7 @@
 		}
 		
 		ig:ig_rural_folk = { 
+			set_interest_group_name = ig_georgoi
 			remove_ideology = ideology_particularist
 			remove_ideology = ideology_agrarian
 			remove_ideology = ideology_isolationist
@@ -229,6 +202,7 @@
 		}
 		
 		ig:ig_trade_unions = { 
+			set_interest_group_name = Syntechnoi
 			remove_ideology = ideology_populist
 			remove_ideology = ideology_egalitarian_modern
 			remove_ideology = ideology_proletarian
@@ -241,6 +215,7 @@
 		}
 		
 		ig:ig_industrialists = { 
+			set_interest_group_name = ig_mechanai
 			remove_ideology = ideology_laissez_faire
 			remove_ideology = ideology_individualist
 			remove_ideology = ideology_plutocratic
@@ -253,6 +228,7 @@
 		}
 		
 		ig:ig_intelligentsia = { 
+			set_interest_group_name = ig_sophronikai
 			remove_ideology = ideology_anti_clerical
 			remove_ideology = ideology_republican
 			remove_ideology = ideology_liberal_modern

@@ -10,18 +10,20 @@
 	s:STATE_GUATEMALA = {
 		region_state:ELY = {
 			create_pop = {
+				culture = elyric
+				size = 7104
+			}
+			create_pop = {
+				culture = elysian
+				size = 104
+			}
+			create_pop = {
 				culture = elysian
 				size = 164404
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 312000
-			}
-		}
-		region_state:ELY = {
-			create_pop = {
-				culture = elysian
-				size = 104
 			}
 		}
 	}
@@ -32,8 +34,7 @@
 				size = 385204
 			}
 			create_pop = {
-				culture = elysian
-				religion = south_american # Cape of Gracias a Dios Miskito
+				culture = elyric # Cape of Gracias a Dios Miskito
 				size = 3000
 			}
 		}
@@ -45,25 +46,34 @@
 				size = 284000
 			}
 			create_pop = {
-				culture = elysian
-				religion = south_american # Miskito pop. across the 'borders'
+				culture = elyric # Miskito pop. across the 'borders'
 				size = 4000
 			}
 		}
-		region_state:ELY = {
+		region_state:MKT = {
 			create_pop = {
-				culture = elysian
-				religion = south_american # Tawira Miskito
+				culture = elyric # Tawira Miskito
 				size = 30000
 			}
 			create_pop = {
-				culture = elysian
-				religion = south_american
+				culture = elyric
 				size = 10000
+			}
+			create_pop = {
+				culture = elyric # Miskito Sambu
+				size = 20000
+			}
+			create_pop = {
+				culture = elyric
+				size = 500
 			}
 			create_pop = {
 				culture = elysian
 				size = 500
+			}
+			create_pop = {
+				culture = elyric
+				size = 1000
 			}
 		}
 	}
@@ -82,13 +92,19 @@
 				size = 87792
 			}
 			create_pop = {
-				culture = elysian
-				religion = inti
+				culture = elyric
+				size = 28300
+			}
+			create_pop = {
+				culture = elyric
+				size = 4100
+			}
+			create_pop = {
+				culture = quechua
 				size = 4000
 			}
 			create_pop = {
-				culture = elysian
-				religion = south_american
+				culture = elyric
 				size = 4000
 			}
 		}
@@ -96,12 +112,16 @@
 	# Haitian and Dominican population numbers are based off 1850 numbers from "La población de América Latina" by Nicolás Sánchez-Albornoz, scaled back 8,5% to account for approx. population growth.
 	s:STATE_HAITI = {
 		region_state:ELY = {
+			create_pop = { # Includes mulatto population.
+				culture = elyric
+				size = 830824
+			}
 			create_pop = { # A small number of protestants existed in Haiti since the early 19th century.
-				culture = elysian
-				size = 38884
+				culture = elyric
+				size = 8060
 			}
 			create_pop = { # Spanish speaking population mainly inhabiting the area surrounding Hincha. Black.
-				culture = elysian
+				culture = elyric
 				size = 13543
 			}
 			create_pop = { # Spanish speaking population mainly inhabiting the area surrounding Hincha. Mulatto.
@@ -116,10 +136,18 @@
 				culture = elysian
 				size = 390
 			}
+			create_pop = { # Remnants of the 1824 migration scheme
+				culture = elyric
+				size = 212
+			}
 		}
 	}
 	s:STATE_SANTO_DOMINGO = {
 		region_state:ELY = {
+			create_pop = { # Haitians.
+				culture = elyric
+				size = 4007
+			}
 			create_pop = { # Mulatto.
 				culture = elysian
 				size = 100626
@@ -128,9 +156,17 @@
 				culture = elysian
 				size = 1013
 			}
+			create_pop = { # Black.
+				culture = elyric
+				size = 19896
+			}
 			create_pop = { # White.
 				culture = elysian
 				size = 3834
+			}
+			create_pop = { # Remnants of the 1824 migration scheme. Samaná Americans.
+				culture = elyric
+				size = 2154
 			}
 		}
 	}
@@ -141,9 +177,17 @@
 				size = 182500
 			}
 			create_pop = {
+				culture = elyric
+				size = 168400
+			}
+			create_pop = {
 				culture = elysian
 				size = 5904
-			}	
+			}
+			create_pop = {
+				culture = elyric
+				size = 42000
+			}
 		}
 	}
 	s:STATE_BAHAMAS = {
@@ -152,37 +196,13 @@
 				culture = elysian
 				size = 19200
 			}
+			create_pop = {
+				culture = elyric
+				size = 100400
+			}
 		}
 	}
 	s:STATE_WEST_INDIES = {
-		region_state:WIN = {
-			create_pop = {
-				culture = dutch
-				size = 22200
-			}
-			create_pop = {
-				culture = afro_caribbean
-				size = 490868
-			}
-			create_pop = {
-				culture = dutch_colonial
-				size = 34704
-			}
-			create_pop = {
-				culture = dutch
-				size = 396
-			}
-			create_pop = {
-				culture = sephardic
-				size = 16819
-			}
-			create_pop = {
-				culture = cariban
-				size = 1082 
-			}
-		}
-	}
-	s:STATE_KYKLADIAS = {
 		region_state:ELY = {
 			create_pop = {
 				culture = elysian
@@ -193,14 +213,37 @@
 				size = 2877
 			}
 			create_pop = {
-				culture = elysian
-				religion = south_american
+				culture = elyric
 				size = 1075
+			}
+			create_pop = {
+				culture = elysian
+				size = 22200
+			}
+			create_pop = {
+				culture = elyric
+				size = 490868
+			}
+			create_pop = {
+				culture = elyric
+				size = 34704
+			}
+			create_pop = {
+				culture = elysian
+				size = 396
+			}
+			create_pop = {
+				culture = elyric
+				size = 1082 
 			}
 		}
 	}
 	s:STATE_JAMAICA = {
 		region_state:ELY = {
+			create_pop = {
+				culture = elyric
+				size = 358596
+			}
 			create_pop = {
 				culture = elysian
 				size = 23040
@@ -213,7 +256,15 @@
 			create_pop = {
 				culture = elysian
 				size = 461304 # est. "white" population in 1836 of 483308, minus the explicit Spanish pops below
-			}	
+			}
+			create_pop = {
+				culture = elyric
+				size = 152011
+			}
+			create_pop = {
+				culture = elyric
+				size = 288786
+			}
 			create_pop = {
 				culture = elysian
 				size = 22004

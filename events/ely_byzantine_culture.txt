@@ -1,6 +1,7 @@
 ﻿namespace = byzantine_culture
 namespace = byzantine_failure
 namespace = byzantine_flavor
+namespace = byzantine_unity_success
 
 byzantine_flavor.1 = {
 	type = country_event
@@ -37,8 +38,13 @@ byzantine_flavor.1 = {
 		add_journal_entry = { type = je_cultural_shift_byz_bulgarian }
 		add_journal_entry = { type = je_byz_megali_idea }
 		add_journal_entry = { type = je_cultural_shift_byz_greek }
+		add_journal_entry = { type = je_cultural_shift_byz_serbian }
+		add_journal_entry = { type = je_cultural_shift_byz_romanian }
+		add_journal_entry = { type = je_byzantine_resurgence }
 	}
 }
+
+### SUCCESS EVENTS ###
 
 byzantine_culture.1 = {
 	type = country_event
@@ -269,6 +275,7 @@ byzantine_culture.3 = {
 		}
 		s:STATE_SKOPIA = {
 			remove_homeland = cu:albanian
+			add_homeland = cu:rhomaion
 		}
 	}
 }
@@ -306,6 +313,7 @@ byzantine_culture.4 = {
 		ai_chance = {
 			base = 100
 		}
+		remove_primary_culture = cu:serb
 		hidden_effect = {
 			every_country = {
 				every_scope_pop = {
@@ -321,6 +329,7 @@ byzantine_culture.4 = {
 		}
 		s:STATE_MONTENEGRO = {
 			remove_homeland = cu:serb
+			add_homeland = cu:rhomaion
 		}
 		s:STATE_NORTHERN_SERBIA = {
 			remove_homeland = cu:serb
@@ -328,6 +337,7 @@ byzantine_culture.4 = {
 		}
 		s:STATE_SOUTHERN_SERBIA = {
 			remove_homeland = cu:serb
+			add_homeland = cu:rhomaion
 		}
 		s:STATE_DALMATIA = {
 			remove_homeland = cu:serb
@@ -336,10 +346,12 @@ byzantine_culture.4 = {
 		s:STATE_CROATIA = {
 			remove_homeland = cu:serb
 			add_homeland = cu:rhomaion
+			add_claim = c:BYZ
 		}
 		s:STATE_SLAVONIA = {
 			remove_homeland = cu:serb
 			add_homeland = cu:rhomaion
+			add_claim = c:BYZ
 		}
 		s:STATE_DELVIDEK = {
 			remove_homeland = cu:serb
@@ -347,6 +359,88 @@ byzantine_culture.4 = {
 		}
 		s:STATE_BANAT = {
 			remove_homeland = cu:serb
+			add_homeland = cu:rhomaion
+		}
+	}
+}
+
+byzantine_culture.5 = {
+	type = country_event
+	placement = ROOT
+	
+	title = byzantine_culture.5.t
+	desc = byzantine_culture.5.d
+	flavor = byzantine_culture.5.f
+	
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+	
+	trigger = {
+	}
+
+	immediate = {
+		cu:romanian = {
+			save_scope_as = romanian_scope
+		}
+	}
+
+	option = {
+		name = byzantine_culture.1.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+		remove_primary_culture = cu:romanian
+		hidden_effect = {
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:romanian }
+					change_pop_culture = { target = cu:rhomaion value = 1 }
+				}
+			}
+		}
+
+		s:STATE_BANAT = {
+			remove_homeland = cu:romanian
+			add_homeland = cu:rhomaion
+		}
+		s:STATE_DELVIDEK = {
+			remove_homeland = cu:romanian
+			add_homeland = cu:rhomaion
+		}
+		s:STATE_DOBRUDJA = {
+			remove_homeland = cu:romanian
+			add_homeland = cu:rhomaion
+		}
+		s:STATE_SOUTHERN_TRANSYLVANIA = {
+			remove_homeland = cu:romanian
+			add_homeland = cu:rhomaion
+		}
+		s:STATE_NORTHERN_TRANSYLVANIA = {
+			remove_homeland = cu:romanian
+			add_homeland = cu:rhomaion
+		}
+		s:STATE_MOLDAVIA = {
+			remove_homeland = cu:romanian
+			add_homeland = cu:rhomaion
+		}
+		s:STATE_WALLACHIA = {
+			remove_homeland = cu:romanian
+			add_homeland = cu:rhomaion
+		}
+		s:STATE_BESSARABIA = {
+			remove_homeland = cu:romanian
+			add_homeland = cu:rhomaion
+		}
+		s:STATE_BEKES = {
+			remove_homeland = cu:romanian
 			add_homeland = cu:rhomaion
 		}
 	}
@@ -483,6 +577,7 @@ byzantine_culture.7 = {
 		}
 	}
 }
+
 byzantine_culture.8 = {
 	type = country_event
 	placement = ROOT
@@ -578,6 +673,42 @@ byzantine_culture.8 = {
 	}
 }
 
+byzantine_unity_success.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = byzantine_unity_success.1.t
+	desc = byzantine_unity_success.1.d
+	flavor = byzantine_unity_success.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_springtime_of_nations.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = byzantine_unity_success.1.a
+		default_option = yes
+		add_modifier = {
+			name = byz_unifying_spirit
+			days = very_long_modifier_time
+		}
+	}
+}
+
+### FAILURE EVENTS ###
 
 byzantine_failure.1 = {
 	type = country_event
@@ -760,7 +891,7 @@ byzantine_failure.2 = {
 	}
 
 	option = {
-		name = byzantine_failure.1.b
+		name = byzantine_failure.2.b
 		play_as = c:ALB
 	}
 }
@@ -885,5 +1016,217 @@ byzantine_failure.4 = {
 		ai_chance = {
 			base = 100
 		}
+	}
+}
+
+
+byzantine_failure.5 = {
+	type = country_event
+	placement = ROOT
+	
+	title = byzantine_failure.5.t
+	desc = byzantine_failure.1.d
+	flavor = byzantine_failure.1.f
+	
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+	
+	trigger = {
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = { exists = c:SER }
+				exists = s:STATE_NORTHERN_SERBIA.region_state:BYZ
+			}
+			create_country = {
+				tag = SER
+				origin = c:BYZ
+				state = s:STATE_NORTHERN_SERBIA.region_state:BYZ
+			}
+		}
+		else_if = {
+			limit = {
+				exists = c:SER
+				exists = s:STATE_NORTHERN_SERBIA.region_state:BYZ
+			}
+			s:STATE_NORTHERN_SERBIA.region_state:BYZ = { set_state_owner = c:SER }
+		}
+		else_if = {
+			limit = {
+				NOT = { exists = c:SER }
+			}
+			random_country = {
+				limit = {
+					is_secessionist = yes
+					any_scope_state = {
+						state_region = s:STATE_NORTHERN_SERBIA
+					}
+				}
+				change_tag = SER
+			}
+		}
+		if = {
+			limit = { exists = s:STATE_SOUTHERN_SERBIA.region_state:BYZ }
+			s:STATE_SOUTHERN_SERBIA.region_state:BYZ = { set_state_owner = c:SER }
+		}
+		if = {
+			limit = { exists = s:STATE_BOSNIA.region_state:BYZ }
+			s:STATE_BOSNIA.region_state:BYZ = { set_state_owner = c:SER }
+		}
+		if = {
+			limit = { exists = s:STATE_MONTENEGRO.region_state:BYZ }
+			s:STATE_MONTENEGRO.region_state:BYZ = { set_state_owner = c:SER }
+		}
+		if = {
+			limit = { exists = s:STATE_DALMATIA.region_state:BYZ }
+			s:STATE_DALMATIA.region_state:BYZ = { set_state_owner = c:SER }
+		}
+		if = {
+			limit = { exists = s:STATE_DOBRUDJA.region_state:BYZ }
+			s:STATE_DOBRUDJA.region_state:BYZ = { set_state_owner = c:SER }
+		}
+		if = {
+			limit = { exists = s:STATE_DELVIDEK.region_state:BYZ }
+			s:STATE_DELVIDEK.region_state:BYZ = { set_state_owner = c:SER }
+		}
+		c:SER = {
+			activate_law = law_type:law_presidential_republic
+			activate_law = law_type:law_elected_bureaucrats
+			activate_law = law_type:law_wealth_voting
+		}
+		if = {
+			limit = {
+				c:BYZ ?= this
+			}
+			remove_primary_culture = cu:serb
+		}
+	}
+
+	option = {
+		name = byzantine_failure.1.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	option = {
+		name = byzantine_failure.1.b
+		play_as = c:SER
+	}
+}
+
+
+byzantine_failure.6 = {
+	type = country_event
+	placement = ROOT
+	
+	title = byzantine_failure.6.t
+	desc = byzantine_failure.1.d
+	flavor = byzantine_failure.1.f
+	
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	duration = 3
+	
+	trigger = {
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = { exists = c:ROM }
+				exists = s:STATE_WALLACHIA.region_state:BYZ
+			}
+			create_country = {
+				tag = ROM
+				origin = c:BYZ
+				state = s:STATE_WALLACHIA.region_state:BYZ
+			}
+		}
+		else_if = {
+			limit = {
+				exists = c:ROM
+				exists = s:STATE_WALLACHIA.region_state:BYZ
+			}
+			s:STATE_WALLACHIA.region_state:BYZ = { set_state_owner = c:ROM }
+		}
+		else_if = {
+			limit = {
+				NOT = { exists = c:ROM }
+			}
+			random_country = {
+				limit = {
+					is_secessionist = yes
+					any_scope_state = {
+						state_region = s:STATE_WALLACHIA
+					}
+				}
+				change_tag = ROM
+			}
+		}
+		if = {
+			limit = { exists = s:STATE_BANAT.region_state:BYZ }
+			s:STATE_BANAT.region_state:BYZ = { set_state_owner = c:ROM }
+		}
+		if = {
+			limit = { exists = s:STATE_SOUTHERN_TRANSYLVANIA.region_state:BYZ }
+			s:STATE_SOUTHERN_TRANSYLVANIA.region_state:BYZ = { set_state_owner = c:ROM }
+		}
+		if = {
+			limit = { exists = s:STATE_NORTHERN_TRANSYLVANIA.region_state:BYZ }
+			s:STATE_NORTHERN_TRANSYLVANIA.region_state:BYZ = { set_state_owner = c:ROM }
+		}
+		if = {
+			limit = { exists = s:STATE_MOLDAVIA.region_state:BYZ }
+			s:STATE_MOLDAVIA.region_state:BYZ = { set_state_owner = c:ROM }
+		}
+		if = {
+			limit = { exists = s:STATE_BESSARABIA.region_state:BYZ }
+			s:STATE_BESSARABIA.region_state:BYZ = { set_state_owner = c:ROM }
+		}
+		if = {
+			limit = { exists = s:STATE_BEKES.region_state:BYZ }
+			s:STATE_BEKES.region_state:BYZ = { set_state_owner = c:ROM }
+		}
+		c:ROM = {
+			activate_law = law_type:law_presidential_republic
+			activate_law = law_type:law_elected_bureaucrats
+			activate_law = law_type:law_wealth_voting
+		}
+		if = {
+			limit = {
+				c:BYZ ?= this
+			}
+			remove_primary_culture = cu:romanian
+		}
+	}
+
+	option = {
+		name = byzantine_failure.1.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	option = {
+		name = byzantine_failure.1.b
+		play_as = c:ROM
 	}
 }

@@ -7,7 +7,6 @@
 	OR = { 
 		AND = {	
             is_ai = no
-				has_law = law_type:law_compulsory_primary_school
 				OR = {
 					has_law = law_type:law_religious_schools
 					has_law = law_type:law_private_schools
@@ -26,13 +25,7 @@
 	}
 
 	on_complete = {
-		if = {
-			limit = {
-				exists = c:FRA
-				c:FRA = ROOT
-			}
 		trigger_event = { id = unification_culture.1 }
-		}
 	}
 
 }
@@ -41,23 +34,11 @@ je_cultural_shift_ger = {
 	icon = "gfx/interface/icons/event_icons/unify.dds"
 
 	group = je_group_elysian_content
-
-	is_shown_when_inactive = {
-		OR = {
-			country_has_primary_culture = cu:north_german
-			country_has_primary_culture = cu:south_german
-		}
-	}
-
-	possible = {
-		c:GER ?= THIS
-	}
-
+	
 	complete = {
 	OR = { 
 		AND = {	
             is_ai = no
-				has_law = law_type:law_compulsory_primary_school
 				OR = {
 					has_law = law_type:law_religious_schools
 					has_law = law_type:law_private_schools
@@ -76,13 +57,7 @@ je_cultural_shift_ger = {
 	}
 
 	on_complete = {
-		if = {
-			limit = {
-				exists = c:GER
-				c:GER = ROOT
-			}
 		trigger_event = { id = cultural_shift.1 }
-		}
 	}
 
 }
@@ -92,23 +67,11 @@ je_cultural_shift_ita = {
 
 	group = je_group_elysian_content
 
-	is_shown_when_inactive = {
-		OR = {
-			country_has_primary_culture = cu:north_italian
-			country_has_primary_culture = cu:south_italian
-		}
-	}
-
-	possible = {
-		c:ITA ?= THIS
-	}
-
 
 	complete = {
 	OR = { 
 		AND = {	
            is_ai = no
-				has_law = law_type:law_compulsory_primary_school
 				OR = {
 					has_law = law_type:law_religious_schools
 					has_law = law_type:law_private_schools
@@ -127,13 +90,7 @@ je_cultural_shift_ita = {
 	}
 
 	on_complete = {
-		if = {
-			limit = {
-				exists = c:ITA
-				c:ITA = ROOT
-			}
-		trigger_event = { id = cultural_shift.2 }
-		}
+		trigger_event = { id = unification_culture.3 }
 	}
 
 }
@@ -160,7 +117,6 @@ je_cultural_shift_ibe = {
 	OR = { 
 		AND = {	
             is_ai = no
-				has_law = law_type:law_compulsory_primary_school
 				OR = {
 					has_law = law_type:law_religious_schools
 					has_law = law_type:law_private_schools
@@ -215,7 +171,6 @@ je_cultural_shift_per = {
 	OR = { 
 		AND = {	
             is_ai = no
-				has_law = law_type:law_compulsory_primary_school
 				OR = {
 					has_law = law_type:law_religious_schools
 					has_law = law_type:law_private_schools
@@ -271,7 +226,6 @@ je_cultural_shift_trh = {
 	OR = { 
 		AND = {	
             is_ai = no
-				has_law = law_type:law_compulsory_primary_school
 				OR = {
 					has_law = law_type:law_religious_schools
 					has_law = law_type:law_private_schools
@@ -324,7 +278,6 @@ je_cultural_shift_eth = {
 	OR = { 
 		AND = {	
             is_ai = no
-				has_law = law_type:law_compulsory_primary_school
 				OR = {
 					has_law = law_type:law_religious_schools
 					has_law = law_type:law_private_schools
@@ -374,7 +327,6 @@ je_cultural_shift_mal = {
 	OR = { 
 		AND = {	
             is_ai = no
-				has_law = law_type:law_compulsory_primary_school
 				OR = {
 					has_law = law_type:law_religious_schools
 					has_law = law_type:law_private_schools
@@ -430,7 +382,6 @@ je_cultural_shift_sca = {
 	OR = { 
 		AND = {	
             is_ai = no
-				has_law = law_type:law_compulsory_primary_school
 				OR = {
 					has_law = law_type:law_religious_schools
 					has_law = law_type:law_private_schools
@@ -480,7 +431,6 @@ je_cultural_shift_ubd = {
 	OR = { 
 		AND = {	
             is_ai = no
-				has_law = law_type:law_compulsory_primary_school
 				OR = {
 					has_law = law_type:law_religious_schools
 					has_law = law_type:law_private_schools
@@ -532,7 +482,6 @@ je_cultural_shift_tai = {
 	OR = { 
 		AND = {	
             is_ai = no
-				has_law = law_type:law_compulsory_primary_school
 				OR = {
 					has_law = law_type:law_religious_schools
 					has_law = law_type:law_private_schools
@@ -588,7 +537,6 @@ je_cultural_shift_ngr = {
 	OR = { 
 		AND = {	
             is_ai = no
-				has_law = law_type:law_compulsory_primary_school
 				OR = {
 					has_law = law_type:law_religious_schools
 					has_law = law_type:law_private_schools
@@ -640,7 +588,6 @@ je_cultural_shift_bur = {
 	OR = { 
 		AND = {	
             is_ai = no
-				has_law = law_type:law_compulsory_primary_school
 				OR = {
 					has_law = law_type:law_religious_schools
 					has_law = law_type:law_private_schools
@@ -665,110 +612,6 @@ je_cultural_shift_bur = {
 				c:BUR = ROOT
 			}
 		trigger_event = { id = unification_culture.13 }
-		}
-	}
-
-}
-
-je_cultural_shift_zap = {
-	icon = "gfx/interface/icons/event_icons/unify.dds"
-
-	group = je_group_elysian_content
-
-	is_shown_when_inactive = {
-		OR = {
-			country_has_primary_culture = cu:czech
-			country_has_primary_culture = cu:slovak
-			country_has_primary_culture = cu:polish
-			country_has_primary_culture = cu:sorb
-		}
-	}
-
-	possible = {
-		c:ZAP ?= THIS
-	}
-
-	complete = {
-	OR = { 
-		AND = {	
-            is_ai = no
-				has_law = law_type:law_compulsory_primary_school
-				OR = {
-					has_law = law_type:law_religious_schools
-					has_law = law_type:law_private_schools
-					has_law = law_type:law_public_schools
-				}
-				institution_investment_level = {
-					institution = institution_schools
-					value >= 3
-				}
-			}
-		AND = {
-				is_ai = yes
-				year >= 1886
-			}	
-		}
-	}
-
-	on_complete = {
-		if = {
-			limit = {
-				exists = c:ZAP
-				c:ZAP = ROOT
-			}
-		trigger_event = { id = cultural_shift.11 }
-		}
-	}
-
-}
-
-je_cultural_shift_yug = {
-	icon = "gfx/interface/icons/event_icons/unify.dds"
-
-	group = je_group_elysian_content
-
-	is_shown_when_inactive = {
-		OR = {
-			country_has_primary_culture = cu:slovene
-			country_has_primary_culture = cu:bosniak
-			country_has_primary_culture = cu:croat
-			country_has_primary_culture = cu:serb
-		}
-	}
-
-	possible = {
-		c:YUG ?= THIS
-	}
-
-	complete = {
-	OR = { 
-		AND = {	
-            is_ai = no
-				has_law = law_type:law_compulsory_primary_school
-				OR = {
-					has_law = law_type:law_religious_schools
-					has_law = law_type:law_private_schools
-					has_law = law_type:law_public_schools
-				}
-				institution_investment_level = {
-					institution = institution_schools
-					value >= 3
-				}
-			}
-		AND = {
-				is_ai = yes
-				year >= 1886
-			}	
-		}
-	}
-
-	on_complete = {
-		if = {
-			limit = {
-				exists = c:YUG
-				c:YUG = ROOT
-			}
-		trigger_event = { id = cultural_shift.12 }
 		}
 	}
 

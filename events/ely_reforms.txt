@@ -84,6 +84,7 @@ ely_reform_event.2 = {
 	option = {
 		name = ely_reform_event.2.a
 			default_option = yes
+			remove_modifier = modifier_elysian_guilds
 			add_modifier = {
 				name = modifier_elysian_production
 				months = -1

@@ -1,0 +1,207 @@
+﻿l_english:
+
+
+#Journal Entries#
+Journals
+
+ je_austrian_destiny:0 "The Fate of Austria"
+ je_austrian_destiny_reason:0 "Austria once ruled the German world, spoke for emperors, and stood as the shield of Christendom. Now, the German crown lies in Bavarian hands, Prussia encroaches, and Vienna teeters between fading dreams and looming crises.\n\nTo the east and south, Slavs, Magyars, and Romanians fill the empire’s borderlands, restless and unassimilated. To the west, Germans question whether Austria still belongs to their world at all.\n\nA choice must be made, shall Austria double down on its imperial roots and reclaim leadership of the German peoples—or forge a new identity altogether, one that unites its fractured dominions in a federation of Danubian nations?\n\nOne path may lead to glory, the other to survival. Or neither. But inaction ensures only irrelevance."
+
+ je_danubian_federation:0 "A New Crown of the Danube"
+ je_danubian_federation_reason:0 "Spurned by the German world and beset on all fronts, Austria seeks salvation not in past glory, but in a bold new idea: a federation of the Danube peoples. If the Empire cannot be German, it must become something greater—something new."
+
+ je_integrate_slovenes:0 "The Slovenian Accord"
+ je_integrate_slovenes_reason:0 "Nestled between Alps and Empire, the Slovenes offer the first test of Danubian unity. Bring them in not as subjects, but as equal partners—at least in name."
+
+ je_integrate_croats:0 "The Croatian Question"
+ je_integrate_croats_reason:0 "Proud and warlike, the Croats have served the Crown loyally for generations—but will loyalty survive the promise of equality? Integrate or suppress—there is no middle path."
+
+ je_integrate_slovaks:0 "The Slovak Compromise" 
+ je_integrate_slovaks_reason:0 "Overshadowed by Hungary and ignored by Vienna, the Slovaks now find themselves courted by both. A careful hand may secure their allegiance."
+
+ je_pacify_serbs:0 "Break Serbia to Bind the Balkans"
+ je_pacify_serbs_reason:0 "The Serbs dream of their own kingdom and look east to their Orthodox kin. If the Danubian Federation is to survive, this flame must be extinguished—brutally or diplomatically."
+
+ je_pacify_romanians:0 "Subdue the Eastern Border"
+ je_pacify_romanians_reason:0 "Romanian ambitions clash with ours in Transylvania and the Banat. Their loyalty is brittle, their identity in flux. Bring them to heel—or risk losing the whole east."
+
+ je_danube_before_storm:0 "The Danubian Powder Keg"
+ je_danube_before_storm_reason:0 "As Austria reimagines itself, old enemies circle and ancient grudges stir. Russia, Byzantium, Hungary, and a thousand would-be martyrs await the misstep that will light the Balkans ablaze."
+
+ je_danubian_storm:0 "The Balkan Tempest"
+ je_danubian_storm_reason:0 "The ambitions of our federation have ignited fury in Rome, Berlin, and Constantinople alike. The old powers see in us a threat to their balance, and have issued an ultimatum: renounce our claims or prepare for war. The storm gathers on the Danube’s banks."
+
+ je_danube_control_over_serbia:0 "Crush the Serbian Revolt"
+ je_danube_control_over_serbia_reason:0 "Serbia’s defiance, bolstered by Orthodox allies, threatens to unravel our federation’s southern flank. The time for compromise has passed—only force can restore order."
+
+ je_danube_control_over_romania:0 "Subdue the Wallachian Marches"
+ je_danube_control_over_romania_reason:0 "Romanian dissent festers along the Carpathians, inflamed by pan-Orthodox agitation. The Danube shall not be divided—we must assert our rightful dominion."
+
+ je_danube_control_over_dalmatia:0 "Break the Dalmatian Chain"
+ je_danube_control_over_dalmatia_reason:0 "Dalmatia's coastline is a knife held to the Federation’s throat. We must wrest it from foreign claws and secure our southern sea."
+
+ je_danube_control_over_austria:0 "Reclaim the Cradle"
+ je_danube_control_over_austria_reason:0 "Though the old Austrian throne lies shattered, its heartland remains contested. To forge a new destiny, we must claim Vienna without doubt or division."
+ 
+ je_danube_control_over_silesia:0 "The Second Silesian War"
+ je_danube_control_over_silesia_reason:0 "Silesia’s mines and fortresses are vital to our survival. As the northern border hardens, we must seize the initiative or be surrounded."
+
+ 
+ austria_danube_storm_fail_tt:0 ""
+ austria_danube_path_tt:0 "This will lead us on the Path to form the Danubian Federation"
+ 
+ je_punish_bavaria:0 "Punish Bavaria"
+ je_punish_bavaria_reason:0 "Bavaria armed our enemies, conspired to dethrone us, and dreamed of a second Vienna. Now they shall learn that the Danube remembers—and repays. The time has come to bring the war home to Munich."
+
+ je_expand_yug:0 "Strike into Bulgaria"
+ je_expand_yug_reason:0 "Bulgaria served as the dagger of Byzantium, striking into our southern provinces. Their Orthodox tyrants emboldened rebels and opened our borders to chaos. The time has come to draw new borders—with blood."
+
+ je_expand_zap:0 "Advance into Poland"
+ je_expand_zap_reason:0 "Silesia was only the beginning. Prussia’s Polish allies rallied to their cause and conspired to partition us. Their payback is long overdue. Warsaw awaits."
+
+ 
+#Events#
+Events
+ 
+ danubian_fed.1.t:0 "Shadows over the Danube."
+ danubian_fed.1.d:0 "Once the anointed heart of the Holy Roman Empire, Austria now finds itself eclipsed by the rising stars of the German world. Bavaria wears the imperial mantle of German unity. Prussia sharpens its sabres, casting greedy eyes toward Silesia and Bohemia. France no longer courts Vienna—it ignores it.\n\nThe scars of 1684 still burn. The Ottoman sack of Vienna shattered illusions of invincibility, and though a pan-European crusade drove the Crescent back beyond the Balkans, the Habsburg crown paid dearly for its salvation. Hungary, Croatia, Bosnia, Transylvania, and Galicia now sit within the empire—but with them came a churning sea of ethnic tensions, rival ambitions, and seething loyalties.\n\nFrom the east, the specter of Russian Pan-Slavism looms, whispering promises of kinship to those beneath Austrian rule. To the south, the Orthodox League watches and waits, their eyes fixed on lands claimed in blood by crusade. Within the empire itself, discontent festers—in the courts, the barracks, and the streets.\n\nAustria stands on the Danube’s edge, neither fully German, nor wholly Balkan, no longer hegemon nor yet broken. The hour of reckoning draws near. Will it embrace reform and unity, or fracture beneath the weight of history?"
+ danubian_fed.1.f:0 "“We triumphed over the Turk, and now drown in the prize. The Slavs curse us in their churches, the Magyars grumble in their courts, and the Germans mock us in their parliaments. Tell me—what empire is this, that commands no loyalty but clings to its shadow?”\n– Count Albrecht von Hohenfeld, 1832"
+ danubian_fed.1.a:0 "A dark path ahead"
+
+ danubian_fed.2.t:0 "The Cracking Crown"
+ danubian_fed.2.d:0 "The Habsburg monarchy stands at a historic precipice. Once the arbiter of Central Europe, it now finds itself squeezed between rising powers and internal discord.\n\nIn Vienna, noblemen call for restoration of German prestige. In Budapest, Zagreb, and Lemberg, whispers grow louder for recognition, equality, and reform. The empire’s soul lies torn between its past and its survival.\n\nTwo visions now vie for the future, one that clings to the dream of a German crown—golden, proud, and irrevocably slipping away. The other dares to imagine a mosaic of nations bound not by bloodlines, but by shared purpose, a Danubian Federation.\n\nTo choose is to define the future. Or to hasten the end."
+ danubian_fed.2.f:0 "“We built a house too vast to be ruled by one tongue alone. Perhaps it is not the roof that must change, but the foundation.”\n– Archduke Ferdinand of Austria"
+ danubian_fed.2.a:0 "We will unite the peoples of the Danube under a new banner"
+ danubian_fed.2.b:0 "We will reclaim German leadership"
+ 
+ danubian_fed.4.t:0 "Weathering the Storm"
+ danubian_fed.4.d:0 "The wars are over. Against the might of Bavaria, Prussia, Byzantium, and Italy—against coalitions, rebellions, and betrayals—we endured. No foreign prince marches in Vienna. No crusader flies their flag over Belgrade. The Danube still flows through lands we call ours, and our flag still flies above it.\n\nFrom fire, we forged iron. From chaos, we made a nation. Now, the time has come to strike back."
+ danubian_fed.4.f:0 "“We stood alone, encircled and outnumbered. And yet the river still carries our name.”"
+ danubian_fed.4.a:0 "Despite the odds, we survived."
+ 
+ danubian_wars.3.t:0 "Punish the Bavarians"
+ danubian_wars.3.d:0 "The Bavarians underestimated our resolve. With Vienna secure and the Federation unbroken, it is time to march west and shatter the southern German threat once and for all. This is not conquest—it is justice."
+ danubian_wars.3.f:0 "“You sent agents and armies into our home. Now, we send war to yours.”"
+ danubian_wars.3.a:0 "The Alps shall tremble."
+
+ danubian_expansion.1.t:0 "Strike into Bulgaria"
+ danubian_expansion.1.d:0 "Bulgaria, that Orthodox jackal, thought herself shielded by the Empire of Constantinople. But the Byzantines are broken, and their heirs will be judged. A Balkan Federation cannot exist while Bulgaria schemes beyond the mountains."
+ danubian_expansion.1.f:0 "“They saw us fractured—yet it is they who will now break.”"
+ danubian_expansion.1.a:0 "We cross the Balkan passes."
+
+ danubian_expansion.2.t:0 "Advance into Poland"
+ danubian_expansion.2.d:0 "Poland rallied to Prussia’s banner and spat upon our rightful claims in Silesia. Now, with our enemies routed, we march east—not as invaders, but as retribution. Let the Vistula run as red as the Danube once did."
+ danubian_expansion.2.f:0 "“The road to Warsaw is paved with memory—and vengeance.”"
+ danubian_expansion.2.a:0 "They will kneel before the Eagle."
+
+ 
+ danubian_ultimatum.1.t:0 "The Hungarian Ultimatum"
+ danubian_ultimatum.1.d:0 "The Hungarian Diet has issued a sharp demand: equal representation in the federation or open secession. Memories of 1820 stir in their blood, and their patience wears thin. To grant this demand risks inviting others to do the same. But refusal could tear the federation apart."
+ danubian_ultimatum.1.f:0 ""We are not a province. We are a crown. Forget that, and we shall remind you in fire." — Lajos Batthyány"
+ danubian_ultimatum.1.a:0 "We have no choice"
+ danubian_ultimatum.1.b:0 "It was a mistake anyway"
+
+ danubian_revolts.1.t:0 "Unrest in the Orthodox Marches"
+ danubian_revolts.1.d:0 "Borderlands once quiet now boil with dissent. Romanian and Serbian partisans, inspired by dreams of Orthodox unity and foreign agitation, rise in the night. Byzantium fans the flames. Will the Federation respond with fire or reforms?"
+ danubian_revolts.1.f:0 ""In every church bell they hear Constantinople. In every rifle, a kingdom reborn." — Austrian military report"
+ danubian_revolts.1.a:0 "What a nuisance"
+ 
+ danubian_culture.1.t:0 "Integration of the Slovenes"
+ danubian_culture.1.d:0 "The Slovenes, long divided and overlooked, have accepted a new federal pact. Schools, courts, and local assemblies now speak their tongue. Their loyalty, for now, is secure."
+ danubian_culture.1.f:0 "They do not ask to be Austrians. They ask to be heard."
+ danubian_culture.1.a:0 "One step closer"
+
+ danubian_culture.2.t:0 "Integration of the Croats"
+ danubian_culture.2.d:0 "Croatia has accepted its new federal role—with conditions. Their militias remain strong, and their nationalism smolders just beneath the surface. Integration is achieved, but not complete."
+ danubian_culture.2.f:0 "Croatia has bent, not broken. Pray they never stand alone."
+ danubian_culture.2.a:0 "One step closer"
+
+ danubian_culture.3.t:0 "Pacification of the Romanians"
+ danubian_culture.3.d:0 "Romania's leadership, fractured and pressured by Russian and Balkan agents, has been forced into a new arrangement. Whether it holds depends on what Vienna grants—and what it denies."
+ danubian_culture.3.f:0 "They have many tongues, but only one dream—freedom."
+ danubian_culture.3.a:0 "One step closer"
+
+ danubian_culture.4.t:0 "Pacification of the Serbs"
+ danubian_culture.4.d:0 "After months of armed unrest, Serbia's resistance has been crushed—or contained. Orthodox leaders have been placated, garrisons reinforced. The cost was high, and the memory will linger."
+ danubian_culture.4.f:0 "You may silence the church bells, but not the hymns."
+ danubian_culture.4.a:0 "One step closer"
+
+ danubian_culture.5.t:0 "Integration of the Slovaks"
+ danubian_culture.5.d:0 "The Slovaks, caught between Magyar dominance and Austrian neglect, now find voice within the Federation. Their cultural institutions expand, and a fragile loyalty is born."
+ danubian_culture.5.f:0 "We have traded silence for a seat. May it not be an empty one."
+ danubian_culture.5.a:0 "One step closer"
+
+ danubian_wars.1.t:0 "Storm over the Balkans"
+ danubian_wars.1.d:0 "A storm brews on the Danube. Rome, Constantinople, and Berlin have issued a final warning: abandon our vision of Balkan unity, or face a coalition of titanic proportions. Our generals urge readiness; our ministers whisper caution. The fate of the Federation hangs by a thread."
+ danubian_wars.1.f:0 "“This is not a war for land. This is a war for survival, for a future where our people are not puppets of empires, but architects of destiny.”"
+ danubian_wars.1.a:0 "We shall stand alone if we must!"
+ danubian_wars.1.b:0 "The odds are insurmountable—we must yield."
+
+ danubian_wars.2.t:0 "The Orthodox War Begins"
+ danubian_wars.2.d:0 "The Orthodox League, led by the Byzantines and bolstered by Serbs and Romanians, has declared war. Their aim is simple: dismantle our federation and return the Balkans to Orthodox dominion. We must rally now, or be torn apart from within."
+ danubian_wars.2.f:0 "“The cross and the crescent march together—united only by hatred of the eagle.”"
+ danubian_wars.2.a:0 "Let them come. The Danube will run red."
+
+ danubian_wars.4.t:0 "Italian Ambitions in Dalmatia"
+ danubian_wars.4.d:0 "The Italian states, claiming ancient ties to the Dalmatian coast, have declared war. Behind the poetry of Rome lies a hunger for sea and stone. We will not yield an inch of coastline without a fight."
+ danubian_wars.4.f:0 "“They send poets to claim our shores. We’ll send soldiers to answer them.”"
+ danubian_wars.4.a:0 "Let them come!"
+
+ danubian_wars.5.t:0 "The War for Austria"
+ danubian_wars.5.d:0 "A new claimant to the Austrian crown has emerged, backed by German powers hoping to reinstall a puppet in Vienna. But this is our capital now—reborn in fire and federation. We will not surrender it."
+ danubian_wars.5.f:0 "“Vienna fell once. It will not fall again.”"
+ danubian_wars.5.a:0 "Let them come!"
+
+ danubian_wars.6.t:0 "The Second Silesian War"
+ danubian_wars.6.d:0 "The northern frontier blazes again. Prussia and its allies contest our hold over Silesia, citing old treaties and ancient claims. Yet this land now bleeds for the Federation. It is ours by right—and by blood."
+ danubian_wars.6.f:0 "“The mines, the steel, the will—it is all Danubian now.”"
+ danubian_wars.6.a:0 "Let them come!"
+ 
+ danubian_fed.3.t:0 "The Danubian Federation"
+ danubian_fed.3.d:0 "Through fire, betrayal, and war, we have triumphed. A nation once bound by dynastic ambition has been reforged by necessity—united not by bloodlines, but by resolve.\n\nFrom the valleys of Bohemia to the plains of Wallachia, from the Istrian coast to the peaks of the Tatras, the peoples of the Danube now march beneath a common banner. No longer an empire of emperors, but a federation of nations. One destiny. One future."
+ danubian_fed.3.f:0 "“We are not Germans, Slavs, or Magyars. We are Danubians—and we have endured.”"
+ danubian_fed.3.a:0 "Glory to us!"
+
+ danubian_breakup.1.t:0 "The Collapse of Austria"
+ danubian_breakup.1.d:0 "The dream of a Danubian federation has died—not with revolution, but with rejection. Our promises of unity fell on deaf ears, our decrees challenged by saboteurs and secessionists.\n\nThe once-mighty Habsburg lands fracture before our eyes. Serbs hoist their own banners, Magyars proclaim independence, Romanians rally in Wallachia, and Bohemia breaks from Vienna’s shadow. The crown lies shattered—its shards scattered across the Balkans."
+ danubian_breakup.1.f:0 "“You cannot bind a dozen nations with old laws and new flags.” — A Slovak officer, deserting the Imperial Army"
+ danubian_breakup.1.a:0 "Alas, a dream ended"
+ danubian_breakup.1.b:0 "Éljen Magyarország! (Play as Hungary)"
+ danubian_breakup.1.c:0 "Србија је слободна! (Play as Serbia)"
+ danubian_breakup.1.d:0 "Trăiască România! (Play as Romania)"
+ danubian_breakup.1.e:0 "Sláva Čechám! (Play as Bohemia)"
+ 
+ danube_storm_partition.1.t:0 "The End of a Dream"
+ danube_storm_partition.1.d:0 "The storm has passed—and we have been drowned by it. After our defeat in the Balkans, the vultures descended without mercy.\n\nBavaria marches in Vienna. Byzantium has seized Serbia. Italy claims Dalmatia. Prussia takes what remains of Silesia. What little is left is a broken core, centered in Hungary—a ghost of what could have been.\n\nThe Danubian vision lies in ruins, picked apart by old enemies and new powers alike."
+ danube_storm_partition.1.f:0 "“We tried to build a new order. But in this land, only ruins remain.”"
+ danube_storm_partition.1.a:0 "It’s over."
+
+#Country
+Country
+
+
+ KUK:0 "Danubian State"
+ KUK_ADJ:0 "Danubian" 
+ 
+ 
+# Others
+others
+ 
+ je_cultural_shift_zap:0 "The Greater Western Slavic Identity"
+ je_cultural_shift_zap_reason:0 "To unite our scattered peoples—Czechs, Slovaks, Poles, and Sorbs—we must go beyond old tribal lines and forge a common identity. One language may not bind us, but shared heritage and struggle can."
+
+ je_cultural_shift_yug:0 "The Greater Yugoslav Identity"
+ je_cultural_shift_yug_reason:0 "South of the Danube, our peoples have long lived as kin divided by politics and empire. By embracing a common Yugoslav identity, we might at last escape the cycle of division and war."
+
+ unification_culture.14.t:0 "Birth of a Western Slavic Identity"
+ unification_culture.14.d:0 "Years of cooperation, reform, and shared aspiration have borne fruit. From the Sorbian hills and the Czech lands to the plains of Poland and the Carpathian valleys of Slovakia, the Western Slavs have begun to see themselves as one people.\n\nZapadoslavism—a term once coined by scholars—has become a rallying cry for unity. A cultural fusion of tongues, traditions, and ideals is emerging, and with it a people who may yet shape the future of the continent."
+ unification_culture.14.f:0 "“No longer branches of a tree broken by empire—we are the trunk.”"
+ unification_culture.14.a:0 "Let Zapadoslavia rise!"
+
+ unification_culture.15.t:0 "Birth of a South Slavic Identity"
+ unification_culture.15.d:0 "Where once there were Croats and Serbs, Bosniaks and Slovenes, Bulgars and Montenegrins—now stirs a single spirit. Centuries of conflict, division, and foreign rule have kindled in the hearts of the southern Slavs a longing for unity.\n\nFrom Sarajevo to Sofia, a new identity is being born—Jugoslav, the southern Slavic brotherhood. Though not all differences will vanish, a people long split now walk toward one future."
+ unification_culture.15.f:0 "“We spoke in many tongues, prayed in many ways—but we bled for the same soil.”"
+ unification_culture.15.a:0 "A new nation is rising."
+
+ western_slavs:0 "Zapadoslavové"
+ yugoslavs:0 "Jugosloveni"

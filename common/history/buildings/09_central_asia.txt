@@ -2,6 +2,17 @@
 	s:STATE_DAGESTAN={
 		region_state:RUS={
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:RUS"
+						levels=1
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_wheat_farm"
 				add_ownership={
 					building={
@@ -71,13 +82,24 @@
 		}
 	}
 	s:STATE_KUBAN={
-		region_state:NOV={
+		region_state:RUS={
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:RUS"
+						levels=1
+					}
+				}
+				reserves=1
+			}
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:NOV"
+						country="c:RUS"
 						levels=1
 						region="STATE_KUBAN"
 					}
@@ -90,7 +112,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:NOV"
+						country="c:RUS"
 						levels=2
 						region="STATE_KUBAN"
 					}
@@ -103,7 +125,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:NOV"
+						country="c:RUS"
 						levels=1
 						region="STATE_KUBAN"
 		}
@@ -155,6 +177,17 @@
 	s:STATE_ARMENIA={
 		region_state:RUS={
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:RUS"
+						levels=1
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_wheat_farm"
 				add_ownership={
 					building={
@@ -170,13 +203,24 @@
 		}
 	}
 	s:STATE_AZERBAIJAN={
-		region_state:RUS={
+		region_state:PER={
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:PER"
+						levels=1
+					}
+				}
+				reserves=1
+			}
 			create_building={
 				building="building_rice_farm"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:RUS"
+						country="c:PER"
 						levels=1
 						region="STATE_AZERBAIJAN"
 					}
@@ -189,7 +233,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:RUS"
+						country="c:PER"
 						levels=2
 						region="STATE_AZERBAIJAN"
 					}
@@ -201,6 +245,17 @@
 	}
 	s:STATE_GREATER_CAUCASUS={
 		region_state:RUS={
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:RUS"
+						levels=1
+					}
+				}
+				reserves=1
+			}
 			create_building={
 				building="building_textile_mills"
 				add_ownership={
@@ -217,12 +272,23 @@
 		}
 	}
 	s:STATE_SAMARA={
-		region_state:NOV={
+		region_state:RUS={
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:RUS"
+						levels=1
+					}
+				}
+				reserves=1
+			}
 			create_building={
 				building="building_arms_industry"
 				add_ownership={
 					country={
-						country="c:NOV"
+						country="c:RUS"
 						levels=5
 					}
 				}
@@ -234,9 +300,9 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:NOV"
-						levels=4
-						region="STATE_NOVGOROD"
+						country="c:RUS"
+						levels=2
+						region="STATE_INGRIA"
 					}
 				}
 				reserves=1
@@ -247,9 +313,9 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:NOV"
-						levels=2
-						region="STATE_NOVGOROD"
+						country="c:RUS"
+						levels=4
+						region="STATE_INGRIA"
 					}
 				}
 				reserves=1
@@ -260,7 +326,7 @@
 				add_ownership={
 					building={
 						type="building_iron_mine"
-						country="c:NOV"
+						country="c:RUS"
 						levels=1
 						region="STATE_SAMARA"
 					}
@@ -273,15 +339,26 @@
 		}
 	}
 	s:STATE_TARTARIA={
-		region_state:NOV={
+		region_state:RUS={
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:RUS"
+						levels=1
+					}
+				}
+				reserves=1
+			}
 			create_building={
 				building="building_iron_mine"
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:NOV"
+						country="c:RUS"
 						levels=8
-						region="STATE_NOVGOROD"
+						region="STATE_INGRIA"
 					}
 				}
 				reserves=1
@@ -292,9 +369,9 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:NOV"
+						country="c:RUS"
 						levels=5
-						region="STATE_NOVGOROD"
+						region="STATE_INGRIA"
 					}
 				}
 				reserves=1
@@ -305,13 +382,24 @@
 	s:STATE_ASTRAKHAN={
 		region_state:RUS={
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:RUS"
+						levels=1
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
 					building={
 						type="building_manor_house"
 						country="c:RUS"
 						levels=1
-						region="STATE_NOVGOROD"
+						region="STATE_INGRIA"
 					}
 				}
 				reserves=1
@@ -320,13 +408,24 @@
 		}
 	}
 	s:STATE_UZBEKIA={
-		region_state:BUK={
+		region_state:PER={
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:PER"
+						levels=1
+					}
+				}
+				reserves=1
+			}
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:BUK"
+						country="c:PER"
 						levels=1
 						region="STATE_UZBEKIA"
 					}
@@ -339,7 +438,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:BUK"
+						country="c:PER"
 						levels=3
 						region="STATE_UZBEKIA"
 					}
@@ -352,7 +451,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:BUK"
+						country="c:PER"
 						levels=2
 						region="STATE_UZBEKIA"
 					}
@@ -364,7 +463,7 @@
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:BUK"
+						country="c:PER"
 						levels=20
 					}
 				}
@@ -374,13 +473,24 @@
 		}
 	}
 	s:STATE_TAJIKISTAN={
-		region_state:KOK={
+		region_state:PER={
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:PER"
+						levels=1
+					}
+				}
+				reserves=1
+			}
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:KOK"
+						country="c:PER"
 						levels=1
 						region="STATE_TAJIKISTAN"
 					}
@@ -393,7 +503,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:KOK"
+						country="c:PER"
 						levels=1
 						region="STATE_TAJIKISTAN"
 					}
@@ -405,7 +515,7 @@
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:KOK"
+						country="c:PER"
 						levels=10
 					}
 				}
@@ -413,11 +523,20 @@
 				activate_production_methods={ "pm_no_organization" }
 			}
 		}
-		region_state:PER={
-		}
 	}
 	s:STATE_KIRGHIZIA={
 		region_state:KOK={
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:KOK"
+						levels=1
+					}
+				}
+				reserves=1
+			}
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
@@ -469,13 +588,13 @@
 				activate_production_methods={ "pm_no_organization" }
 			}
 		}
-		region_state:PER={
+		region_state:XIN={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:PER"
+						country="c:XIN"
 						levels=1
 						region="STATE_KIRGHIZIA"
 					}
@@ -487,6 +606,17 @@
 	}
 	s:STATE_JETISY={
 		region_state:XIN={
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:XIN"
+						levels=1
+					}
+				}
+				reserves=1
+			}
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
@@ -516,13 +646,24 @@
 		}
 	}
 	s:STATE_TURKMENIA={
-		region_state:KHI={
+		region_state:PER={
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:PER"
+						levels=1
+					}
+				}
+				reserves=1
+			}
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:KHI"
+						country="c:PER"
 						levels=2
 						region="STATE_TURKMENIA"
 					}
@@ -534,7 +675,7 @@
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:KHI"
+						country="c:PER"
 						levels=6
 					}
 				}
@@ -544,14 +685,25 @@
 		}
 	}
 	s:STATE_PASHTUNISTAN={
-		region_state:KAB={
+		region_state:PER={
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:PER"
+						levels=1
+					}
+				}
+				reserves=1
+			}
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:KAB"
-						levels=11
+						country="c:PER"
+						levels=14
 						region="STATE_PASHTUNISTAN"
 					}
 				}
@@ -560,34 +712,6 @@
 			}
 			create_building={
 				building="building_opium_plantation"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:KAB"
-						levels=2
-						region="STATE_PASHTUNISTAN"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "default_building_opium_plantation" "pm_road_carts"  }
-			}
-			create_building={
-				building="building_livestock_ranch"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:KAB"
-						levels=1
-						region="STATE_PASHTUNISTAN"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_open_air_stockyards" "pm_simple_ranch" "pm_standard_fences" "pm_unrefrigerated"  }
-			}
-		}
-		region_state:PER={
-			create_building={
-				building="building_wheat_farm"
 				add_ownership={
 					building={
 						type="building_manor_house"
@@ -597,19 +721,6 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming"  "pm_tools_disabled" "pm_citrus_orchards" }
-			}
-			create_building={
-				building="building_opium_plantation"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:PER"
-						levels=1
-						region="STATE_PASHTUNISTAN"
-					}
-				}
-				reserves=1
 				activate_production_methods={ "default_building_opium_plantation" "pm_road_carts"  }
 			}
 			create_building={
@@ -618,7 +729,7 @@
 					building={
 						type="building_manor_house"
 						country="c:PER"
-						levels=1
+						levels=2
 						region="STATE_PASHTUNISTAN"
 					}
 				}
@@ -629,6 +740,17 @@
 	}
 	s:STATE_KANDAHAR={
 		region_state:PER={
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:PER"
+						levels=1
+					}
+				}
+				reserves=1
+			}
 			create_building={
 				building="building_textile_mills"
 				add_ownership={
@@ -686,53 +808,36 @@
 	s:STATE_BALKH={
 		region_state:PER={
 			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:PER"
+						levels=1
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_wheat_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:PER"
+						levels=3
+						region="STATE_BALKH"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming"  "pm_tools_disabled" "pm_citrus_orchards" }
+			}
+			create_building={
+				building="building_livestock_ranch"
 				add_ownership={
 					building={
 						type="building_manor_house"
 						country="c:PER"
 						levels=2
-						region="STATE_BALKH"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming"  "pm_tools_disabled" "pm_citrus_orchards" }
-			}
-			create_building={
-				building="building_livestock_ranch"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:PER"
-						levels=1
-						region="STATE_BALKH"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_open_air_stockyards" "pm_simple_ranch" "pm_standard_fences" "pm_unrefrigerated"  }
-			}
-		}
-		region_state:KUN={
-			create_building={
-				building="building_wheat_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:KUN"
-						levels=1
-						region="STATE_BALKH"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming"  "pm_tools_disabled" "pm_citrus_orchards" }
-			}
-			create_building={
-				building="building_livestock_ranch"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:KUN"
-						levels=1
 						region="STATE_BALKH"
 					}
 				}
@@ -743,6 +848,17 @@
 	}
 	s:STATE_HERAT={
 		region_state:PER={
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:PER"
+						levels=1
+					}
+				}
+				reserves=1
+			}
 			create_building={
 				building="building_textile_mills"
 				add_ownership={
@@ -798,12 +914,23 @@
 		}
 	}
 	s:STATE_KABUL={
-		region_state:KAB={
+		region_state:PER={
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:PER"
+						levels=1
+					}
+				}
+				reserves=1
+			}
 			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:KAB"
+						country="c:PER"
 						levels=1
 					}
 				}
@@ -815,7 +942,7 @@
 				add_ownership={
 					building={
 						type="building_furniture_manufacturies"
-						country="c:KAB"
+						country="c:PER"
 						levels=1
 						region="STATE_KABUL"
 					}
@@ -828,7 +955,7 @@
 				add_ownership={
 					building={
 						type="building_logging_camp"
-						country="c:KAB"
+						country="c:PER"
 						levels=1
 						region="STATE_KABUL"
 					}
@@ -841,7 +968,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:KAB"
+						country="c:PER"
 						levels=2
 						region="STATE_KABUL"
 					}
@@ -854,7 +981,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:KAB"
+						country="c:PER"
 						levels=2
 						region="STATE_KABUL"
 					}
@@ -867,7 +994,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:KAB"
+						country="c:PER"
 						levels=1
 						region="STATE_KABUL"
 					}
@@ -878,13 +1005,24 @@
 		}
 	}
 	s:STATE_BALUCHISTAN={
-		region_state:MAK={
+		region_state:PER={
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:PER"
+						levels=1
+					}
+				}
+				reserves=1
+			}
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:MAK"
+						country="c:PER"
 						levels=1
 						region="STATE_BALUCHISTAN"
 					}
@@ -897,7 +1035,7 @@
 				add_ownership={
 					building={
 						type="building_fishing_wharf"
-						country="c:MAK"
+						country="c:PER"
 						levels=1
 						region="STATE_BALUCHISTAN"
 					}
@@ -905,8 +1043,6 @@
 				reserves=1
 				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated"  }
 			}
-		}
-		region_state:PER={
 			create_building={
 				building="building_port"
 				add_ownership={
@@ -918,14 +1054,12 @@
 				reserves=1
 				activate_production_methods={ "pm_anchorage" }
 			}
-		}
-		region_state:KAL={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:KAL"
+						country="c:PER"
 						levels=1
 						region="STATE_BALUCHISTAN"
 					}
@@ -938,7 +1072,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:KAL"
+						country="c:PER"
 						levels=1
 						region="STATE_BALUCHISTAN"
 					}
@@ -951,7 +1085,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:KAL"
+						country="c:PER"
 						levels=2
 						region="STATE_BALUCHISTAN"
 					}
@@ -1042,32 +1176,6 @@
 		}
 	}
 	s:STATE_HIMALAYAS={
-		region_state:SIK={
-			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
-						country="c:SIK"
-						levels=1
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_no_organization" }
-			}
-		}
-		region_state:BHU={
-			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
-						country="c:BHU"
-						levels=2
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_no_organization" }
-			}
-		}
 		region_state:NEP={
 			create_building={
 				building="building_tobacco_plantation"
@@ -1101,6 +1209,21 @@
 					country={
 						country="c:NEP"
 						levels=15
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_no_organization" }
+			}
+		}
+	}
+	s:STATE_EASTERN_HIMALAYAS={
+		region_state:TIB={
+			create_building={
+				building="building_barracks"
+				add_ownership={
+					country={
+						country="c:TIB"
+						levels=3
 					}
 				}
 				reserves=1

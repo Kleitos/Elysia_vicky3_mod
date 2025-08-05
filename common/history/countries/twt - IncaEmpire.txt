@@ -37,6 +37,7 @@
 		}
 
 		ig:ig_landowners = {
+			set_interest_group_name = ig_incan_church
 			add_ruling_interest_group = yes
 			remove_ideology = ideology_stratocratic
 			remove_ideology = ideology_paternalistic
@@ -46,9 +47,19 @@
 		}
 
 		ig:ig_devout = {
+			set_interest_group_name = ig_incan_nobility
 			add_ruling_interest_group = yes
 			remove_ideology = ideology_moralist
 			
+			add_ideology = ideology_incan_administration
+			add_ideology = ideology_incan_corve
+		}
+		ig:ig_petty_bourgeoisie = {
+			set_interest_group_name = ig_incan_merchant_class
+			remove_ideology = ideology_patriotic
+			remove_ideology = ideology_reactionary
+			remove_ideology = ideology_meritocratic
+		
 			add_ideology = ideology_incan_administration
 			add_ideology = ideology_incan_corve
 		}

@@ -18,7 +18,9 @@
 		is_subject = no
 		owns_entire_state_region = STATE_IONIAN_ISLANDS
 		owns_entire_state_region = STATE_CRETE
-		owns_entire_state_region = STATE_WEST_AEGEAN_ISLANDS
+		owns_entire_state_region = STATE_EAST_AEGEAN_ISLANDS
+		owns_entire_state_region = STATE_CYPRUS
+		owns_entire_state_region = STATE_DALMATIA
 	}
 
 	on_complete = {
@@ -43,7 +45,6 @@ je_byzantine_reconquest = {
 		owns_entire_state_region = STATE_HUDAVENDIGAR
 		owns_entire_state_region = STATE_AYDIN
 		owns_entire_state_region = STATE_EASTERN_THRACE
-		owns_entire_state_region = STATE_TRABZON
 		NOT = { has_truce_with = c:TUR }
 		is_subject = no
 		c:BYZ = {
@@ -76,6 +77,7 @@ je_byzantine_revenge = {
 		owns_entire_state_region = STATE_KONYA
 		owns_entire_state_region = STATE_KASTAMONU
 		owns_entire_state_region = STATE_ANKARA
+		owns_entire_state_region = STATE_TRABZON
 		NOT = { has_truce_with = c:TUR }
 		is_subject = no
 		c:BYZ = {
@@ -108,6 +110,7 @@ je_byzantine_glory = {
 		owns_entire_state_region = STATE_ERZURUM
 		owns_entire_state_region = STATE_DIYARBAKIR
 		owns_entire_state_region = STATE_ADANA
+		owns_entire_state_region = STATE_KARS
 		NOT = { has_truce_with = c:TUR }
 		is_subject = no
 		OR = {
@@ -125,69 +128,6 @@ je_byzantine_glory = {
 				c:BYZ = ROOT
 			}
 		trigger_event = { id = byzantine_glory.1 }
-		}
-	}
-}
-
-je_byzantine_dominance = {
-	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
-
-	group = je_group_elysian_content
-
-	complete = {
- 		is_at_war = no
-		country_rank >= rank_value:great_power
-		has_modifier = greek_nationalism
-		NOT = {
-			has_modifier = government_admits_failure
-		}
-		NOT = { has_truce_with = c:EGY }
-		is_subject = no
-		owns_entire_state_region = STATE_ADANA
-		c:EGY = {
-			is_subject = no
-			owns_entire_state_region = STATE_SINAI
-		}
-	}
-
-	on_complete = {
-		if = {
-			limit = {
-				exists = c:BYZ
-				c:BYZ = ROOT
-			}
-		trigger_event = { id = byzantine_colonial.1 }
-		}
-	}
-}
-
-je_byzantine_antioch = {
-	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
-
-	group = je_group_elysian_content
-
-	complete = {
- 		is_at_war = no
-		country_rank >= rank_value:major_power
-		c:BYZ = {
-			army_size > { 
-    		value =  c:EGY.army_size
-    		multiply = 1
-				}
-		}
-		NOT = { has_truce_with = c:EGY }
-		is_subject = no
-		owns_entire_state_region = STATE_EASTERN_THRACE
-		owns_entire_state_region = STATE_CYPRUS	
-	}
-
-	on_complete = {
-		if = {
-			limit = {
-				exists = c:BYZ
-				c:BYZ = ROOT
-			}
-		trigger_event = { id = byzantine_colonial.2 }
 		}
 	}
 }
@@ -315,7 +255,13 @@ je_cultural_shift_byz_greek = {
 	}
 
 	on_complete = {
-		trigger_event = { id = byzantine_glory.2 }
+		if = {
+			limit = {
+				exists = c:BYZ
+				c:BYZ = ROOT
+			}
+		trigger_event = { id = byzantine_unity_success.1 }
+		}
 	}
 
 	current_value = {
@@ -323,7 +269,7 @@ je_cultural_shift_byz_greek = {
 	}
 
 	goal_add_value = {
-		add = 3
+		add = 5
 	}
 
 	progressbar = yes
@@ -347,13 +293,21 @@ je_byz_megali_idea = {
 		owns_entire_state_region = STATE_HUDAVENDIGAR
 		owns_entire_state_region = STATE_AYDIN
 		owns_entire_state_region = STATE_CYPRUS
-		owns_entire_state_region = STATE_TRABZON
 		owns_entire_state_region = STATE_CRETE
 		owns_entire_state_region = STATE_WEST_AEGEAN_ISLANDS
 		owns_entire_state_region = STATE_EAST_AEGEAN_ISLANDS
 		owns_entire_state_region = STATE_EASTERN_THRACE
 		owns_entire_state_region = STATE_IONIAN_ISLANDS
 		owns_entire_state_region = STATE_PELOPONNESE
+		OR = {
+			has_law = law_type:law_religious_schools
+			has_law = law_type:law_private_schools
+			has_law = law_type:law_public_schools
+		}
+		institution_investment_level = {
+			institution = institution_schools
+			value >= 1
+		}
 	}	
 
 	on_complete = {
@@ -383,15 +337,9 @@ je_cultural_shift_byz_serbian = {
 		owns_entire_state_region = STATE_SOUTHERN_SERBIA
 		owns_entire_state_region = STATE_BOSNIA
 		owns_entire_state_region = STATE_DALMATIA
-		owns_entire_state_region = STATE_CROATIA
-		owns_entire_state_region = STATE_SLAVONIA
+		owns_entire_state_region = STATE_BANAT
 		owns_entire_state_region = STATE_DELVIDEK
 		owns_entire_state_region = STATE_EASTERN_THRACE
-		has_law = law_type:law_compulsory_primary_school
-		OR = {
-			has_law = law_type:law_racial_segregation
-			has_law = law_type:law_cultural_exclusion
-		}
 		OR = {
 			has_law = law_type:law_religious_schools
 			has_law = law_type:law_private_schools
@@ -405,6 +353,10 @@ je_cultural_shift_byz_serbian = {
 	
 
 	on_complete = {
+		change_variable = {
+			name = rhoman_var
+			add = 1
+		}
 		if = {
 			limit = {
 				exists = c:BYZ
@@ -412,6 +364,81 @@ je_cultural_shift_byz_serbian = {
 			}
 		trigger_event = { id = byzantine_culture.4 }
 		}
+	}
+
+	fail = {
+		any_scope_state = {
+			state_region = {
+				is_homeland = cu:serb
+			}
+			radical_fraction = {
+				value >= 0.5
+				culture = cu:serb
+			}
+		}
+	}
+
+	on_fail = {
+		trigger_event = { id = byzantine_failure.5 }
+	}
+
+}
+
+je_cultural_shift_byz_romanian = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		owns_entire_state_region = STATE_BANAT
+		owns_entire_state_region = STATE_DOBRUDJA
+		owns_entire_state_region = STATE_SOUTHERN_TRANSYLVANIA
+		owns_entire_state_region = STATE_NORTHERN_TRANSYLVANIA
+		owns_entire_state_region = STATE_MOLDAVIA
+		owns_entire_state_region = STATE_WALLACHIA
+		owns_entire_state_region = STATE_BESSARABIA
+		owns_entire_state_region = STATE_BEKES
+		owns_entire_state_region = STATE_EASTERN_THRACE
+		OR = {
+			has_law = law_type:law_religious_schools
+			has_law = law_type:law_private_schools
+			has_law = law_type:law_public_schools
+		}
+		institution_investment_level = {
+			institution = institution_schools
+			value >= 1
+		}
+	}
+	
+
+	on_complete = {
+		change_variable = {
+			name = rhoman_var
+			add = 1
+		}
+		if = {
+			limit = {
+				exists = c:BYZ
+				c:BYZ = ROOT
+			}
+		trigger_event = { id = byzantine_culture.5 }
+		}
+	}
+
+	fail = {
+		any_scope_state = {
+			state_region = {
+				is_homeland = cu:romanian
+			}
+			radical_fraction = {
+				value >= 0.5
+				culture = cu:romanian
+			}
+		}
+	}
+
+	on_fail = {
+		trigger_event = { id = byzantine_failure.6 }
 	}
 
 }
@@ -425,7 +452,6 @@ je_cultural_shift_byz_georgian = {
 		owns_entire_state_region = STATE_GREATER_CAUCASUS
 		owns_entire_state_region = STATE_KARS
 		owns_entire_state_region = STATE_EASTERN_THRACE
-		has_law = law_type:law_compulsory_primary_school
 		has_law = law_type:law_cultural_exclusion
 		OR = {
 			has_law = law_type:law_religious_schools
@@ -465,7 +491,6 @@ je_cultural_shift_byz_armenian = {
 		owns_entire_state_region = STATE_DIYARBAKIR
 		owns_entire_state_region = STATE_ADANA
 		owns_entire_state_region = STATE_EASTERN_THRACE
-		has_law = law_type:law_compulsory_primary_school
 		has_law = law_type:law_cultural_exclusion
 		OR = {
 			has_law = law_type:law_religious_schools
@@ -474,7 +499,7 @@ je_cultural_shift_byz_armenian = {
 		}
 		institution_investment_level = {
 			institution = institution_schools
-			value >= 1
+			value >= 2
 		}
 	}
 
@@ -517,7 +542,7 @@ je_cultural_shift_byz_turks = {
 		}
 		institution_investment_level = {
 			institution = institution_schools
-			value >= 1
+			value >= 3
 		}
 		any_scope_state = {
 			state_region = {
@@ -540,4 +565,67 @@ je_cultural_shift_byz_turks = {
 		}
 	}
 
+}
+
+je_venetian_punishment = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+ 		is_at_war = no
+		country_rank >= rank_value:minor_power
+		c:BYZ = {
+			army_size > { 
+    		value =  c:VEN.army_size
+			}
+		}
+		has_truce_with = c:VEN 
+		is_subject = no
+		OR = {
+			owns_entire_state_region = STATE_IONIAN_ISLANDS
+			owns_entire_state_region = STATE_CRETE
+			owns_entire_state_region = STATE_EAST_AEGEAN_ISLANDS
+			owns_entire_state_region = STATE_CYPRUS
+			owns_entire_state_region = STATE_DALMATIA
+		}
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:BYZ
+				c:BYZ = ROOT
+			}
+		trigger_event = { id = byzantine_strike.2 }
+		}
+	}
+}
+
+je_byz_austrian_partition = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+ 		is_at_war = no
+		country_rank >= rank_value:minor_power
+		is_subject = no
+		owns_entire_state_region = STATE_BOSNIA
+		owns_entire_state_region = STATE_DELVIDEK
+		owns_entire_state_region = STATE_BANAT
+		owns_entire_state_region = STATE_BEKES
+		owns_entire_state_region = STATE_NORTHERN_TRANSYLVANIA
+		owns_entire_state_region = STATE_SOUTHERN_TRANSYLVANIA
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:BYZ
+				c:BYZ = ROOT
+			}
+		trigger_event = { id = byzantine_strike.1 }
+		}
+	}
 }

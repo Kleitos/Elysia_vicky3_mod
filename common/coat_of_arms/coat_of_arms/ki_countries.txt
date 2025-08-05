@@ -2520,15 +2520,15 @@ CAU = { #
 	}	
 }
 
-GAR = { # 
-	pattern = "pattern_solid.tga"
-	color1 = "red_dark"
-
-	textured_emblem = {
-		texture = "te_coa_armenia.dds"
-		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
-	}	
-}
+#GAR = { # 
+#	pattern = "pattern_solid.tga"
+#	color1 = "red_dark"
+#
+#	textured_emblem = {
+#		texture = "te_coa_armenia.dds"
+#		instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }
+#	}	
+#}
 
 MLY = { 
 	pattern = "pattern_solid.tga"
@@ -2846,15 +2846,15 @@ MCD = {
 	}
 }
 
-SLS = { 
-	pattern = "pattern_solid.tga"
-	color1 = "white"
-
-	colored_emblem = {
-		texture = "ce_bicolor_bottom.dds"
-		color1 = "yellow"
-	}
-}
+#SLS = { 
+#	pattern = "pattern_solid.tga"
+#	color1 = "white"
+#
+#	colored_emblem = {
+#		texture = "ce_bicolor_bottom.dds"
+#		color1 = "yellow"
+#	}
+#}
 
 PZN = { 
 	pattern = "pattern_solid.tga"

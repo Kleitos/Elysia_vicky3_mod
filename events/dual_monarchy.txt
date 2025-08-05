@@ -49,6 +49,10 @@ dual_monarchy.1 = {
 			NOT = { has_variable = dual_monarchy_fail }
 		}
 		default_option = yes
+		change_variable = {
+			name = danubian_fed_var
+			add = 1
+		}
 		custom_tooltip = austria_hungary_tt
 		add_primary_culture = cu:hungarian
 		add_loyalists = {
@@ -64,13 +68,14 @@ dual_monarchy.1 = {
 	}
 	option = { # accept compromise
 		name = dual_monarchy.1.b
-		ai_chance = {
-			base = 20
-		}
 		trigger = {
 			has_variable = dual_monarchy_fail
 		}
 		custom_tooltip = austria_hungary_tt
+		change_variable = {
+			name = danubian_fed_var
+			add = 1
+		}
 		add_primary_culture = cu:hungarian
 		ig:ig_landowners = {
 			remove_ideology = ideology_austrian_hegemony
@@ -86,15 +91,11 @@ dual_monarchy.1 = {
 		# lose prestige
 		add_modifier = {
 			name = dual_monarchy_compromise
-			months = very_long_modifier_time
+			days = very_long_modifier_time
 		}
 	}
 	option = { #reject compromise
 		name = dual_monarchy.1.c
-		ai_chance = {
-			base = 80
-		}
-		trigger_event = { id = hungarian_revolution.1 days = 365 }	
 		trigger = {
 			has_variable = dual_monarchy_fail
 		}
@@ -111,7 +112,7 @@ dual_monarchy.1 = {
 			}
 			add_modifier = {
 				name = dual_monarchy_compromise_rejected
-				months = long_modifier_time
+				days = long_modifier_time
 			}
 		}
 	}

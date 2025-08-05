@@ -1,0 +1,394 @@
+﻿l_english:
+
+
+# French Flavour
+
+ FRA_FLAVOR_TEXT:0 "The storm of revolution swept away the Ancien Régime, yet France avoided the guillotine's fury. Under the steady hand of the Orléans monarchy, the republic’s ideals coexist uneasily with aristocratic pragmatism. Shunning overseas empire in favor of European ambition, France now looks inward—and eastward—reviving old Frankish dreams and seeking to bridge the rift between French and Germanic peoples. Can France shape the continent, or will ambition overreach pragmatism?"
+
+ NET_FLAVOR_TEXT:0 "The Dutch won their independence only to face near ruin at the hands of Elysia. Rescued by French intervention, they now live in the shadow of Orléans rule—but not without influence. Dutch capital fuels France’s revival, and their colonies in Africa endure. Is the Netherlands a vassal in name only, or can it bend the world once more with trade, finance, and quiet power?"
+
+
+
+#Treaties
+Treaties
+ 
+ CONF_OF__RHINE: "Confederacy of the Rhine"
+ treaty_name_rhine_alliance: "Rhine Treaty of Commerce and Friendship"
+ 
+ 
+#Journals
+journals
+
+ je_FRA_control_south:0 "The Occitan Question"
+ je_FRA_control_south_reason:0 "Royal authority still extends over the Occitan provinces, yet recent northern‑led reforms leave many southerners feeling sidelined. We must decide whether to placate regional identities or press on with central integration."
+
+ je_FRA_control_north:0 "The Frankish Project"
+ je_FRA_control_north_reason:0 "Northern France, the Rhineland, and the Low Countries form the core of the Orléans vision: a modern Frankish union of Oïl‑speaking and Germanic peoples. Achieving genuine cohesion, however, will require sustained political effort and economic favor."
+
+ keep_control_south_tt:0 "Stability maintained in Occitania"
+ loose_control_south_tt:0 "Southern unrest escalates"
+ 
+ keep_control_north_tt:0 "Stability maintained in the North"
+ loose_control_north_tt:0 "Northern unrest escalates"
+ 
+ fra_riots_have_happened_tt:0 "Large scale national riots must have occured"
+ 
+ je_develop_south_FRA:0 "Invest in the South"
+ je_develop_south_FRA_reason:0 "To ease southern grievances, the crown may channel funds and infrastructure to Occitan cities—even at the cost of slowing northern industrial programs."
+
+ occ_happy_industry_tt:0 "Southern interests satisfied"
+ occ_angry_industry_tt:0 "Southern interests neglected"
+ 
+ je_develop_north_FRA:0 "Prioritize Northern Growth"
+ je_develop_north_FRA_reason:0 "Directing capital toward northern factories and Rhine ports will advance the Frankish agenda, though it risks deepening economic disparity with the agrarian South."
+
+ franks_happy_industry_tt:0 "Northern industrialists pleased"
+ franks_angry_industry_tt:0 "Northern industrialists dissatisfied"
+
+ je_crush_secession:0 "Crush the Southern Rebellion"
+ je_crush_secession_reason:0 "Occitania has betrayed the vision of a united Frankish nation. Their rejection of the crown is not just sedition — it is treason. We shall bring them back into the fold, not with words, but with fire and steel. Let the south remember who rules."
+
+ je_survive_occ:0 "Stand Against the Empire"
+ je_survive_occ_reason:0 "Abandoned, besieged, and outnumbered — yet unbroken. Occitania has risen to reclaim its voice and soul. Now we must hold fast against the northern legions, for our people, our land, and the Latin flame that still burns in our hearts."
+
+
+ je_cape_to_cairo:0 "Cape to Cairo Project"
+ je_cape_to_cairo_reason:0 "The time has come to bind our scattered possessions in Africa into a single artery of commerce and control—from the Dutch ports of the Cape to the Suez by way of the Nile. France must rise as the unifier of the continent’s spine, forging a Frankish road through the heart of Africa."
+ 
+ je_holy_land:0 "Claims to the Holy Land"
+ je_holy_land_reason:0 "The cradle of faith, the battleground of civilizations—France, as heir to Charlemagne and the guardian of Frankish destiny, must assert its authority over the Holy Land. Whether to protect the faithful, revive ancient glory, or assert dominion over rival powers, our claim is as sacred as it is strategic."
+
+#Events
+events
+
+ ely_france_south.1.t:0 "The State of the Realm"
+ ely_france_south.1.d:0 "Though southern France has remained under formal royal administration, successive Bourbon monarchs long maintained an uneasy balance between northern and southern interests. This equilibrium has now been overturned. A bloodless coup led by northern nobles and Dutch industrialists has displaced the indecisive Bourbon line, placing the House of Orléans at the helm. The new regime prioritizes the integration of the 'Langue d’Oïl' peoples with their Flemish and Germanic counterparts, signaling a shift away from the traditional accommodation of the Latin-oriented populations of the south."
+ ely_france_south.1.f:0 "“Unity, yes—but on whose terms?” —Anonymous civil official, Lyon.""
+ ely_france_south.1.a:0 "A delicate balance must be struck."
+
+ ely_france_south.2.t:0 "The Egypt Plan"
+ ely_france_south.2.d:0 "The military expedition to Egypt was originally framed as a humanitarian and scientific mission — a gesture toward Enlightenment ideals that soothed southern Catholic nerves. But northern financiers and industrialists are now pressing for a more ambitious agenda: colonization. They argue that Egypt could be our first true overseas holding, a foothold in a game we’re late to join. Whether we stay the course or shift direction will define how France presents itself abroad."
+ ely_france_south.2.f:0 "Let us bring light to Egypt — be it by scripture or by steam."
+ ely_france_south.2.a:0 "We won’t go back on our word. This is a mission of knowledge, not empire."
+ ely_france_south.2.b:0 "Colonization is the future — France must not be left behind."
+
+ ely_france_south.3.t:0 "The Shaking of the French Economy"
+ ely_france_south.3.d:0 "Economic imbalance is growing. The industrial North grows richer with each passing year, while the agrarian South feels increasingly neglected. Petitions from both sides now reach the capital: southerners demand investment in their lands and traditions, while northerners seek further integration into the booming continental markets. The government's priorities must be made clear — and soon."
+ ely_france_south.3.f:0 "If unity is to endure, prosperity must be shared."
+ ely_france_south.3.a:0 "Prioritize agricultural subsidies and rural development in the South."
+ ely_france_south.3.b:0 "Back northern expansion and international capital — the future is finance."
+
+ ely_france_south_reform.1.t:0 "Education for the French People"
+ ely_france_south_reform.1.d:0 "Schooling in France remains a tale of two regions. In the South, traditional Catholic institutions maintain control over rural education. In the North, industrial elites and reformers push for a secular, skills-focused curriculum aligned with modern values. As the national system takes shape, we must decide which path — or which people — will shape the minds of the next generation."
+ ely_france_south_reform.1.f:0 "What we teach our children, we become as a nation."
+ ely_france_south_reform.1.a:0 "Let the church guide the South — a Catholic curriculum will preserve our soul."
+ ely_france_south_reform.1.b:0 "Establish secular schooling — education must serve reason, not faith."
+ 
+ ely_france_south_reform.2.t:0 "French Agricultural Reforms"
+ ely_france_south_reform.2.d:0 "The question of agricultural policy has sparked fierce debate in the chambers of Paris. Southern nobles, still clinging to the traditions of tenant farming and aristocratic stewardship, demand protective tariffs and subsidies to shield their estates from market pressures. In contrast, northern industrialists and reformers advocate for liberalization—treating agriculture as a modern enterprise open to profit, innovation, and competition. \n\nAs the countryside becomes a battlefield of ideology, the state must choose which vision of France will till its fields."
+ ely_france_south_reform.2.f:0 "“The soil does not care for ideology, only for labor, law, and who reaps the grain.”"
+ ely_france_south_reform.2.a:0 "We should protect our farm owners from the free market."
+ ely_france_south_reform.2.b:0 "Farms and plantations are businesses like any other."
+
+ ely_france_south.4.t:0 "The French Destiny"
+ ely_france_south.4.d:0 "France straddles two worlds. In the South, the language and culture of Occitania echo the Latin traditions of Catalonia and Lombardy. In the North, the ‘Langue d’Oïl’ blends Latin roots with Germanic structure — shaped by centuries of Frankish, Flemish, and Dutch influence. As nationalist sentiment rises, so too does pressure to define what it means to be French. Will we embrace our plural heritage, or affirm a new northern-led identity?"
+ ely_france_south.4.f:0 "To be French is to stand between empires — and become one."
+ ely_france_south.4.a:0 "We are French — a union of Latin and Germanic heritage."
+ ely_france_south.4.b:0 "We are Franks. The future lies in the North."
+
+ ely_france_south.5.t:0 "Protest in France"
+ ely_france_south.5.d:0 "Dissatisfaction has spilled into the streets. Whether fueled by northern agitation over stalled reforms or southern resentment toward perceived neglect, demonstrations have erupted across several provinces. Though largely peaceful for now, the situation reveals a deeper fracture in the national fabric — one that will not mend itself."
+ ely_france_south.5.f:0 "They shout for justice. What they truly demand is to be heard."
+ ely_france_south.5.a:0 "They'll tire themselves out eventually."
+
+ ely_france_south.6.t:0 "The Modern France"
+ ely_france_south.6.d:0 "In a bid to restore unity, the crown has made deliberate efforts to recognize and reconcile with the Latin heritage of southern France. Educational reforms, linguistic protections, and economic parity have begun to bear fruit. The Occitan people, long skeptical, now cautiously reaffirm their place within a shared French destiny.\n\nYet this choice has not been without cost. Northern voices — especially among the Dutch and Alemannic elites — grow restless, warning that a France that looks southward may be drifting away from its Frankish future."
+ ely_france_south.6.f:0 "To be French is to be many things — but to belong to France must mean something again."
+ ely_france_south.6.a:0 "We are forging a new path for us"
+
+ franco_german_tensions_tt:0 "Franco-German tensions deepen as the northern elites question their place in the national project."
+
+ ely_france_south.7.t:0 "Occitania Forgotten"
+ ely_france_south.7.d:0 "Years of neglect, broken promises, and the imposition of northern industrial and cultural policy have worn thin the patience of the Occitan people. Rural councils now openly refuse to remit taxes. Armed bands — some organized, some improvised — have taken to the hills. Pamphlets decrying the northern oligarchy circulate from Toulouse to Marseille.\n\nWhat began as grievance now flirts with rebellion. The South is no longer asking to be heard. It is demanding to be remembered."
+ ely_france_south.7.f:0 "They erased our tongue, dismissed our toil, and now expect our loyalty?"
+ ely_france_south.7.a:0 "Our future lies with our Germanic brethren"
+
+ ely_france_north.1.t:0 "The New Frankish State"
+ ely_france_north.1.d:0 "After years of careful policy, cultural alignment, and economic integration, the dream of a united Frankish core has begun to take shape. From Flanders to Alsace, from Dutch ports to Rhineland mills, a new class of administrators and reformers now speak of themselves not as Frenchmen — but as Franks. This identity, proudly Germanic in spirit and administrative in function, now forms the backbone of a new imperial vision for the north."
+ ely_france_north.1.f:0 "We do not imitate empires of the past — we recall what we once were."
+ ely_france_north.1.a:0 "We are reforging an old legacy"
+
+ ely_france_north.2.t:0 "Our Latin Legacy"
+ ely_france_north.2.d:0 "Despite attempts to forge a common identity across the northern provinces, the so-called Frankish Project has failed to take root. Dutch merchants decry centralized authority, Swiss communities resist linguistic integration, and even in Flanders the old Latin civic values remain strong.\n\nFor all our efforts, the legacy of Rome — of trade, autonomy, and civic tradition — proves more resilient than the myth of Germanic rebirth. Now, dissent grows louder and more organized."
+ ely_france_north.2.f:0 "We were never Franks. We were free."
+ ely_france_north.2.a:0 "Latin influence is hard to shake off"
+
+ france_civil_war.1.t:0 "The Second Dutch Revolt"
+ france_civil_war.1.d:0 "The failure of the Frankish project and France's renewed Latin orientation have sparked unrest in the north. Dutch and Swiss leaders, long wary of centralized rule, now rise in open rebellion. Rumors swirl of British support and German interest in curbing French ambitions."
+ france_civil_war.1.f:0 "Better rebels than relics of another people’s dream."
+ france_civil_war.1.a:0 "Must history always repeat itself?"
+
+ france_civil_war.2.t:0 "The Latin Uprising"
+ france_civil_war.2.d:0 "The final break has come. In the south, the proud cities of Occitania, Gascony, and Arpitania rise in defiance against what they call the 'northern yoke.' The proclamation is not one of reform—but of secession. They reject the Frankish ideal and demand the restoration of a Latin destiny, rooted in monarchy, regional identity, and old alliances.\n\nEven in the west, eyes in Brittany watch closely. Should the south succeed, they may no longer remain quiet under the crown."
+ france_civil_war.2.f:0 "We are not Franks—we are the children of Rome."
+ france_civil_war.2.a:0 "Time for a second Albigensian Crusade."
+ france_civil_war.2.b:0 "Occitània liura!"
+
+ france_civil_war.3.t:0 "A Latin Union?"
+ france_civil_war.3.d:0 "Now free from the Frankish order, the leaders of the southern rebellion must decide the future of their newborn republic. Many southern nobles call for the restoration of the Bourbons under Iberian and Italian protection—a Latin League to balance northern power. Yet among the radicals and republicans, such a compromise is seen as betrayal.\n\nIn Brittany, unrest stirs once again. Should Occitania align with the Bourbon monarchs and Latin powers, England has pledged its support to a western uprising. But if the south remains republican and isolated, Brittany may find itself abandoned and crushed alone."
+ france_civil_war.3.f:0 "Crown or people—Occitania must choose."
+ france_civil_war.3.a:0 "The Bourbons are the rightful rulers of Occitania."
+ france_civil_war.3.b:0 "Down with kings and tyrants!"
+
+ france_civil_war.4.t:0 "The Latin-Germanic Wars"
+ france_civil_war.4.d:0 "The fracture of the Latin world has pulled all Europe into its storm. France and its German allies prepare for a continental reckoning, while Occitania, Iberia, and Italy call for a Latin front against the growing Frankish hegemony. It is no longer merely a civil war—it is a clash of civilizations, a reckoning of language, faith, and memory."
+ france_civil_war.4.f:0 "Let this be the last war over what it means to be European."
+ france_civil_war.4.a:0 "Time to remind them why Rome fell."
+
+ france_civil_war.5.t:0 "The Occitan Wars"
+ france_civil_war.5.d:0 "Though the southern rebels have refused foreign crowns, their independence remains a threat to French unity. Occitania now marches under its own banner—republican, Latinist, and armed. If the Frankish project is to survive, the south must be brought back into the fold—by force, if necessary."
+ france_civil_war.5.f:0 "Reconciliation failed. Now comes reckoning."
+ france_civil_war.5.a:0 "The South will pay."
+
+
+ france_post_civil_war.1.t:0 "The Scouring of the South"
+ france_post_civil_war.1.d:0 "The rebellion has been ruthlessly extinguished. The once defiant southern provinces must be reshaped in the image of a unified Frankish empire, their lands and hearts claimed in the name of order, strength, and the glory of the French legacy. This is the price of unity—unyielding and absolute."
+ france_post_civil_war.1.f:0 "The Empire endures through iron and blood—traitors shall find no refuge."
+ france_post_civil_war.1.a:0 "Treason will not go unpunished."
+
+ occ_pops_deported_tt:0 "Latin pops will be target of Germanic reprisals"
+
+ france_post_civil_war.2.t:0 "Freedom for the South"
+ france_post_civil_war.2.d:0 "The chains of northern oppression have been broken. Now, the Arpitans and Occitans rise united in the fire of revolution, their voices calling for a new dawn of self-rule and pride. The South shall no longer bow; instead, it will forge a fierce identity to challenge the Germanic order and claim its rightful place among the free peoples."
+ france_post_civil_war.2.f:0 "From revolution’s flame, a nation reborn—no longer shadows but sovereigns."
+ france_post_civil_war.2.a:0 "The South shall stand as one."
+
+ french_north_africa.1.t:0 "A Frankish Colonial Empire?"
+ french_north_africa.1.d:0 "With the decline of Dutch colonial presence, an opportunity presents itself: to inherit and expand a modern Frankish empire from the sands of Africa to the shores of the Red Sea. The vision of a continent-spanning dominion beckons—but are we willing to seize it?"
+ french_north_africa.1.f:0 "Empire is not merely territory—it is destiny fulfilled by the sword, the rail, and the road."
+ french_north_africa.1.a:0 "From Cape to Cairo"
+ french_north_africa.1.b:0 "Colonies are for Latins and Anglos"
+
+ french_north_africa.2.t:0 "Cape to Cairo Success"
+ french_north_africa.2.d:0 "Through determination and imperial vigor, France has carved a continuous corridor from the Cape of Good Hope to the Nile. The continent bends to our will, and a new era of extraction, transformation, and order begins—guided by the hand of Frankish supremacy."
+ french_north_africa.2.f:0 "We have tamed the wilderness with rail and rifle. Now we reap the rewards."
+ french_north_africa.2.a:0 "Time for the exploitation of Africa"
+
+ french_north_africa.3.t:0 "A New Crusader State"
+ french_north_africa.3.d:0 "With victory in the Levant and the banner of France flying over Jerusalem, the question arises—do we revive the medieval dream of a Frankish client kingdom, a Crusader bastion of civilization, or do we integrate the region fully into our empire as a modern province?"
+ french_north_africa.3.f:0 "Jerusalem once again answers to the Franks. The legacy of the cross returns with steel and statecraft."
+ french_north_africa.3.a:0 "Time to reestablish a client state in the Holy Land"
+ french_north_africa.3.b:0 "Crusades are a relic of the past, let us control it directly"
+ 
+ je_cultural_shift_fra:0 "The Greater French Identity"
+ je_cultural_shift_fra_reason:0 "The old divisions between North and South — between langue d'oïl and langue d'oc — have long fractured our nation. To truly move forward, we must unite all Frenchmen under a singular, modern identity."
+
+ unification_culture.1.t:0 "The Birth of a New French Identity"
+ unification_culture.1.d:0 "For centuries, the French language has been split — not just in dialect, but in spirit. The northern oïl and the southern oc represent two halves of a broken mirror. Now, through education, media, and cultural cohesion, we are forging a new French identity, embracing both traditions while looking forward to a modern, united future."
+ unification_culture.1.f:0 "“France is no longer a tapestry of tongues, but a single voice — resolute, proud, and indivisible.”"
+ unification_culture.1.a:0 "One France, indivisible."
+ 
+###FRANKISH STUFF###
+
+ je_cultural_shift_frankish:0 "Reviving the Frankish Identity"
+ je_cultural_shift_frankish_reason:0 "From the Rhine to the Seine, from the Meuse to the Maas, our people have long shared a common legacy — the Frankish spirit. Let us reclaim that name and forge a new unity that transcends petty divisions, guided by the memory of Charlemagne and the promise of a reborn Europe."
+
+ je_expand_franks_south:0 "Reclaim the Southern Marches"
+ je_expand_franks_south_reason:0 "From the wind-swept coasts of Armorica to the sun-drenched valleys of Aquitaine, these lands have long stood at the edge of the Frankish world. Some were lost to rebellion, others allowed to drift in identity. Now, it is time to restore unity — to bring Occitania and Brittany back into the embrace of a renewed Frankish realm."
+
+
+ je_frankogerman_wedding:0 "The Wedding of the Rhine"
+ je_frankogerman_wedding_reason:0 "In the shadow of Charlemagne, the Franks have risen once more—one from Paris, the other from Munich. Rather than descend into rivalry, the monarchs of the Frankish and German realms have agreed to a symbolic union of blood and purpose. A royal wedding has been announced: a grand Alpine ceremony to tie the heirs of both crowns in matrimony. As industry and influence grow on either side of the Rhine, the question remains—who shall lead this reborn Empire of the Franks?"
+
+
+ union_of_frankogerman_progress_bar_name:0 "The Alpine Wedding"
+ union_of_frankogerman_progress_bar_fra_desc:0 "France leads the effort to revive the unity of the Franks under its ancient crown."
+ union_of_frankogerman_progress_bar_ger_desc:0 "Germany emerges as the true heir to the Carolingian mantle."
+ union_of_frankogerman_progress_bar_reset:0 "The Alpine Wedding collapses—an opportunity lost."
+ union_of_frankogerman_progress_bar_var:0 "Influence Over the Wedding Process"
+
+ franco_german_FRA_tt:0 "France must have embraced the Frankish cultural renaissance and not pursued a purely 'New French' path."
+ franco_german_GER_tt:0 "Germany must have been united under Bavaria and avoided Prussian militarist unification."
+
+ union_of_frankogerman.1.t:0 "Ashes over the Alps"
+ union_of_frankogerman.1.d:0 "The Grand Alpine Wedding was meant to mark a new era — a union of crowns, cultures, and destinies. Yet joy turned to horror when a private demonstration of airship technology ended in fire and ruin. Both monarchs, present among the guests, are presumed dead after a catastrophic explosion of the helium containment system. Initial investigations suggest sabotage, and the hunt for the perpetrators has already begun on both sides of the Rhine."
+ union_of_frankogerman.1.f:0 "“The mountain sang no hymns that day, only the roar of fire and the silence of kings.” —Inscription at the Chapel of the Fallen, Chamonix"
+ union_of_frankogerman.1.a:0 "Let the young heirs carry the weight of peace"
+
+ union_of_frankogerman.3.t:0 "The Birth of the Carolingian Union"
+ union_of_frankogerman.3.d:0 "Five winters have passed since the explosion in the Alps, and with them, the era of two crowns. The culprits — veterans of the Latin Wars, embittered Occitan nationalists supported by radical elements in Iberia and Italy — have been captured, their conspiracy laid bare. Yet rather than call for vengeance, the young Orléans prince, now sovereign, called instead for unity and mourning. With the blessing of the Wittelsbach court, a new path has been charted: a single realm, reborn in the name of Charlemagne — not by war, but by fire and faith."
+ union_of_frankogerman.3.f:0 "“From cinders we rise, one people, one destiny — not in conquest, but in concord.” —Proclamation of Union, Strasbourg."
+ union_of_frankogerman.3.a:0 "Long live the Carolingian Union!"
+
+ union_of_frankogerman.2.t:0 "Fire Above the Fatherland"
+ union_of_frankogerman.2.d:0 "The Grand Alpine Wedding between the House of Wittelsbach and the House of Orléans was to be a triumph of unity — a sealing of destiny between two proud peoples. But amid the festivities, disaster struck. During a private showcase of advanced Zeppelin prototypes, an explosion tore through the hangar. Both monarchs, attending the demonstration together, are now presumed dead. Early signs point to sabotage, and joint investigations have begun to hunt those responsible."
+ union_of_frankogerman.2.f:0 "“No empire is forged without trial — and no crown passed without flame.” —Engraving in the Hall of Memory, Munich"
+ union_of_frankogerman.2.a:0 "Let the young prince rise to his calling"
+
+ union_of_frankogerman.4.t:0 "The Proclamation of Carolingia"
+ union_of_frankogerman.4.d:0 "Half a decade has passed since that terrible day in the Alps. The investigation has finally borne fruit: a group of Slavic revanchist saboteurs, tied to pan-nationalist militias in the Baltics and East Prussia, were behind the atrocity. But instead of vengeance, the young Wittelsbach prince — now Kaiser in his own right — has chosen reconciliation. With his Orléans bride at his side, he has led both realms through mourning, rebuilding, and now, unification. Today, the crowns of Germany and France speak with one voice — the voice of Charlemagne, reborn."
+ union_of_frankogerman.4.f:0 "“One tongue for the forge, one for the lyre — and both shall serve the same crown.” —Opening words of the Concord of Regensburg"
+ union_of_frankogerman.4.a:0 "Long live Carolingia!"
+ 
+ frankish_culture.1.t:0 "The Codification of Modern Frankish"
+ frankish_culture.1.d:0 "No longer will our peoples be divided by arbitrary lines of dialect and border. Flemish, Walloon, Dutch, Alemannic, and Francien — all are echoes of a deeper, common heritage. Today we begin the work of codifying a single, modern Frankish language and identity, binding our peoples together in the spirit of Charlemagne’s old realm."
+ frankish_culture.1.f:0 "“We do not resurrect the past; we inherit it and give it new form.”"
+ frankish_culture.1.a:0 "A new Frankish identity — a blend of old and new."
+
+ frankish_empire.1.t:0 "A Wedding for the Ages"
+ frankish_empire.1.d:0 "With the tides of history surging beneath our feet, both France and Germany stand reborn—two empires gazing once again at the legacy of Charlemagne. Though rivalry simmers beneath the surface, a different path has been proposed: unity through blood. The heirs to both thrones are to be wed in the Alpine heights, sealing not just a marriage, but a new age of Frankish reconciliation.\n\nIt is a chance to end a thousand-year division. But once taken, the course cannot be undone."
+ frankish_empire.1.a:0 "Prepare the Grand Wedding in the Alps"
+ frankish_empire.1.f:0 "“Where swords once clashed, let vows be spoken. Beneath the alpine sky, may old bloodlines bloom anew.” —From a poem of unknown origin, circulating in court salons"
+ frankish_empire.1.b:0 "No, the Franks shall walk alone once more"
+
+ union_of_frankogerman.5.t:0 "The Birth of Carolingia"
+ union_of_frankogerman.5.d:0 "A thousand years after Carolus Magnus united the West under one crown, his heirs have done what no dynasty since dared to dream. The parliaments of France and Germany have voted — not for alliance, not for federation, but for **union**. Two peoples, once bitter rivals, now stand as one. From the North Sea to the Alps, from the Rhine to the Seine, the banners of Carolingia are raised.\n\nBut though our people cheer and our cities shine, the chancelleries of Europe whisper in alarm. For if the unification of Germany once birthed a giant, then the forging of Carolingia has awakened a titan."
+ union_of_frankogerman.5.f:0 "“We are no longer merely Franks or Germans — we are Carolingians. Not heirs of Rome, but founders of something greater.”\n— Anonymous pamphlet distributed in Aachen."
+ union_of_frankogerman.5.a:0 "The age of petty kingdoms is over."
+
+ frankish_empire.2.t:0 "The Greater Empire"
+ frankish_empire.2.d:0 "With the founding of Carolingia, the old boundaries of Europe no longer reflect reality. Our people are scattered — from the Low Countries to Bohemia, from Savoy to Königsberg — fractured by centuries of division, foreign occupation, and compromise.\n\nNo more. A new identity demands a new frontier. The time has come to stake our rightful claim to the Germanic world — not in the name of vengeance, but in the name of destiny. Let the Latins tremble, let the Slavs conspire. Carolingia will rise regardless."
+ frankish_empire.2.a:0 "We will be the masters of Europe."
+ frankish_empire.2.b:0 "Let us consolidate before we reach further."
+ 
+ frankish_empire.3.t:0 "Reunification of the Southern Marches"
+ frankish_empire.3.d:0 "Occitania and Brittany — lands once held by dukes and counts loyal to the Frankish crown, now divided by rebellion, foreign influence, or cultural drift. But with the rebirth of a modern Frankish identity, the calls for unity have grown louder. Shall we act upon them?"
+ frankish_empire.3.f:0 "“The frontier of the Franks is not a matter of maps — it is written in the hearts of the people.”"
+ frankish_empire.3.a:0 "These lands are Frankish by blood and spirit — they must return."
+ frankish_empire.3.b:0 "No need to provoke unrest — let us focus north of Auvergne."
+ 
+##Country##
+Cultures  
+ 
+ pied_noir:0 "Vandal"
+ frankish:0 "Frankish"
+ 
+Modifiers
+ 
+ last_troubadour_king:0 "The Last Troubadour King"
+ won_occitan_revolt:0 "Crushed the Occitan Revolt"
+ lost_occitan_revolt:0 "Defeated in the Occitan Revolt"
+ 
+ french_colonization:0 "Frankish Colonization Effort"
+ french_settlements:0 "Frankish Settlements Abroad"
+ french_conversion:0 "Frankish Conversion of the Holy Land"
+ dutch_economy:0 "Dutch Mercantile Legacy"
+
+ franko_german_wedding_mod:0 "Franco-German Dynastic Union"
+
+ 
+Country Name
+ 
+ HRE: "Carolingia"
+ HRE_ADJ: "Carolingian"
+ dyn_c_hre_republic: "Carolingian Republic"
+ dyn_c_hre_republic_adj: "Carolingian Republic"
+ dyn_c_hre_communist: "Union of People’s Republics"
+ dyn_c_hre_communist_adj: "Paneuropean"
+ dyn_c_hre_technate: "Pan-European Technate"
+ dyn_c_hre_technate_adj: "Paneuropean"
+ dyn_c_hre_fascist: "Paneuropa"
+ dyn_c_hre_fascist_adj: "Paneuropan"
+ dyn_c_hre_monarchy: "Carolingian Empire"
+ dyn_c_hre_monarchy_adj: "Carolingian Empire"
+
+
+### Countries Reaction to HRE ###
+
+frankish_reaction.1.t:0 "The Carolingian Threat"
+frankish_reaction.1.d:0 "A monstrous union has been born across the Pyrenees — France and Germany, once rivals locked in centuries of war, now march under one banner. Carolingia, they call it — invoking Charlemagne as if to erase the blood spilled since his death. The implications are grave: Occitania is silenced, our southern claims threatened, and our ambitions in Africa now face an imperial juggernaut. From Cádiz to Burgos, murmurs grow. Will this be the age of Carolingia, or the hour of Iberia's reckoning?"
+frankish_reaction.1.f:0 "“The Franks march again. And this time, they wear steel.”"
+frankish_reaction.1.a:0 "Raise the alarm — we must prepare for war, if not today, then tomorrow."
+frankish_reaction.1.b:0 "Let them overreach. Empires rise, and they fall harder still."
+frankish_reaction.1.c:0 "Focus on the colonies — Africa is where our fate will be decided."
+
+frankish_reaction.2.t:0 "The Return of the German Sword"
+frankish_reaction.2.d:0 "Once again, the Alps tremble with the march of northern boots. Carolingia — a fusion of Frankish pomp and German might — has been proclaimed as a reborn empire of the West. Though Rome is not theirs, their symbolism leaves no doubt: they see themselves as heirs to Charlemagne, overlords of the Latin world. Whether under crown or constitution, we Italians know this for what it is — the old specter of northern domination, clad in modern steel. The time for complacency is over."
+frankish_reaction.2.f:0 "“From the Rhine to the Rhône, they claim peace. But they cast long shadows upon the Tiber.”"
+frankish_reaction.2.a:0 "Mobilize the militias — history demands resistance."
+frankish_reaction.2.b:0 "Reinforce the Alpine frontier — their ambitions stop here."
+frankish_reaction.2.c:0 "Seek an understanding — perhaps diplomacy can delay the storm."
+
+frankish_reaction.3.t:0 "The West Marches Again"
+frankish_reaction.3.d:0 "From the shattered halls of Vienna to the golden palaces of Paris, the Franks and Germans have forged a single, towering colossus: Carolingia. They speak of unity, of peace, of Charlemagne — but to the peoples of the Balkans, it is a familiar tale. Empires from the west have long trampled our soil in the name of civilization and order. Whether Orthodox or Muslim, kingdom or republic, we know this: when the West grows strong, it looks East.\n\nOld shadows stir once more beyond the Danube."
+frankish_reaction.3.f:0 "“They speak of Charlemagne. But it was under his banners that the first fires burned in the East.”"
+frankish_reaction.3.a:0 "We must rally the Orthodox — the West cannot be trusted."
+frankish_reaction.3.b:0 "Time to mend fences with Russia — even if it costs us pride."
+frankish_reaction.3.c:0 "Strengthen the Danube Line and hold our ground."
+frankish_reaction.3.d:0 "Let them boast — we will wait, and watch."
+
+frankish_reaction.4.t:0 "A Titan at Our Western Gate"
+frankish_reaction.4.d:0 "The proclamation of the Carolingian Empire has sent shockwaves across the continent. Once divided between Paris and Munich, the Franks and Germans now march under a single imperial banner. With Austria gone and Bohemia consumed, the Kingdom of Hungary now finds itself sharing a border with a behemoth — one with both the resources of Germany and the ambitions of France.\n\nIn the Diet, nobles and ministers debate fiercely. Some call for modernization, others demand mobilization, while the older aristocracy mutters grimly about the return of the Western Caesar. The memory of Habsburg dominion still lingers — and now it wears a new face."
+frankish_reaction.4.f:0 "“We stood at Mohács and Vienna. We shall stand here again, if need be.” — Count Zichy, to the Upper Chamber"
+frankish_reaction.4.a:0 "We must prepare our defenses."
+frankish_reaction.4.b:0 "Perhaps diplomacy may yet restrain the beast."
+
+frankish_reaction.5.t:0 "A Western Colossus Rises"
+frankish_reaction.5.d:0 "The Carolingian Empire has been declared — a union of the German and Frankish realms forged in blood and dynastic ambition. To many in the Orthodox world, this is a reshaping of the Western order.\n\nIn the chambers of Constantinople, strategoi and archons debate the future of the Danube. Carolingia now borders the northern fringes of the League, its armies tempered by Bavarian steel and French discipline. Yet there are voices who argue this is not the Rome of old, but something altogether different — a titan, yes, but one that might be turned east or kept at bay.\n\nThe Patriarch remains silent. But the legions watche the Rhine and Elbe with as much interest as they do the Bosporus."
+frankish_reaction.5.f:0 "“This is not the Second Rome they seek, nor the Third. But Titans do not need thrones to crush the world beneath them.” — Anonymous logothete"
+frankish_reaction.5.a:0 "We must strengthen our alliances in the East."
+frankish_reaction.5.b:0 "Perhaps a détente with the West is not beyond imagining."
+
+frankish_reaction.6.t:0 "Hope in the West?"
+frankish_reaction.6.d:0 "Once rulers from the Danube to the Nile, the Ottoman Empire now licks its wounds. Crusades, rebellions, and humiliations have driven it back into Anatolia. But now a new force dominates Europe — not a papist alliance, but a northern beast stitched together from German iron and Frankish pride.\n\nSome in the Sublime Porte whisper that Carolingia may distract the Orthodox and Russians, long-time foes of the Sultanate. Others fear a renewed crusade, cloaked in imperial rhetoric. But for the first time in years, the eyes of Europe turn away from the Crescent.\n\nThe viziers argue. The Sultan listens."
+frankish_reaction.6.f:0 "“The lion and the wolf fight in the north — perhaps the jackals to the east will forget their hunger.” — Şehzade Cem, in exile"
+frankish_reaction.6.a:0 "Let them weaken each other — we will wait."
+frankish_reaction.6.b:0 "If war comes again, let it find us ready."
+
+frankish_reaction.7.t:0 "A Wall of Iron in the West"
+frankish_reaction.7.d:0 "From Riga to Krakow, the borderlands of the West stir. The crowns of Germany and France have merged into a singular colossus — Carolingia. With it comes a resurrection of Frankish might and German ambition, an empire that blocks Russia’s westward path and dares to contest the heritage of empire itself.\n\nIn Petrograd, the Slavophiles cry outrage, calling for the reconquest of rightful Rus' lands in Lithuania and Galicia. The Pan-Slavists whisper of Balkan brothers abandoned, now flanked by this iron wall. But the Tsar says little, watching the Danube and Elbe with narrowed eyes. He has long believed in destiny — but so, it seems, do the Franks."
+frankish_reaction.7.f:0 "“Two suns cannot shine in the same sky. One must fall, or the heavens will burn.” — Attributed to a court astrologer, dismissed for treason"
+frankish_reaction.7.a:0 "We must prepare for the coming storm."
+frankish_reaction.7.b:0 "Let them have the West — the East is ours."
+
+frankish_reaction.8.t:0 "The Ice Between Giants"
+frankish_reaction.8.d:0 "A new empire now casts its shadow across the continent. From the Rhine to the Vistula, Carolingia has united the strength of two ancient powers. In the north, the kings and parliaments of Scandinavia find themselves trapped between the grinding stones of empire — to the east, the hungry eyes of Russia; to the south, the armored gaze of the Franks.\n\nPublicly, diplomats speak of 'Germanic fraternity,' of 'shared Teutonic heritage' and 'mutual interests in northern stability.' Privately, ministers draft emergency budgets and rearmament plans. The North will not survive another continental war without preparation."
+frankish_reaction.8.f:0 "“Let us be kin, if it keeps us safe.” — Speech in the Riksdag"
+frankish_reaction.8.a:0 "Appeasement through kinship may buy us time."
+frankish_reaction.8.b:0 "Prepare the fleet. Carolingia watches the Baltic."
+
+frankish_reaction.9.t:0 "The Colossus Across the Channel"
+frankish_reaction.9.d:0 "The unthinkable has occurred. France and Germany — historic enemies, eternal rivals — have joined hands and crowned a new empire. Carolingia, a continental titan, has emerged not through conquest, but through marriage and diplomacy. In Whitehall, the mood is grim. The balance of power Britain so carefully upheld has shattered.\n\nFor centuries, Albion watched Europe from behind her wooden walls, content to let Frenchmen and Germans bicker while her ships ruled the seas. But now, a united Carolingia turns its eyes southward, eastward — and perhaps, across the waves. A new imperial rival has risen. Britain must respond."
+frankish_reaction.9.f:0 "“If Europe has birthed a Titan, we shall answer with thunder.” — Lord Adderley, First Lord of the Admiralty"
+frankish_reaction.9.a:0 "This cannot go unanswered. Britain must rearm."
+frankish_reaction.9.b:0 "Let them try. The seas still belong to us."
+
+frankish_reaction.10.t:0 "A Crown Forged in the Old World"
+frankish_reaction.10.d:0 "News from Europa: two ancient enemies, the descendants of Gaul and Germania, have put aside centuries of war to form a united empire. Carolingia, they call it — a revival of the old Frankish dream.\n\nIn the courts and senates of Elysia, this is met with arched brows and weary sighs. Another Christian empire on a continent already steeped in blood and contradiction. Still, the sheer size of this new entity raises questions. Could it rival Elysian economic interests abroad? Could it challenge our fleets in Africa or Asia?\n\nUnlikely — for now. But the gods reward vigilance."
+frankish_reaction.10.f:0 "“Let the Christians unite and squabble. The world still turns under the sun.” — Senate Address, Ilion"
+frankish_reaction.10.a:0 "Another empire to watch, nothing more."
+
+frankish_reaction.11.t:0 "Empires Rise, Empires Fade"
+frankish_reaction.11.d:0 "Across the far side of the world, in lands long plagued by internecine war, two imperial peoples have reconciled and declared a single crown. The West calls it Carolingia.\n\nTo most in the court, it is another shifting shadow in the distant Occident. But for those attuned to maritime trade and global rivalry, it is a signal. A united European power with fleets and factories could complicate Pacific routes and perhaps one day rival our influence among the island nations. Then again, it might just preoccupy the Iberians and British further. One less hand meddling in Asia."
+frankish_reaction.11.f:0 "“A new banner flaps in the European winds. Let them feel proud. We have islands to govern.”"
+frankish_reaction.11.a:0 "An echo on the wind. Barely worth a bow."
+
+frankish_reaction.12.t:0 "Distant Thunder Over the Ocean"
+frankish_reaction.12.d:0 "Another empire, they say. Two great houses of Europe — one once Roman, the other once barbarian — now wear the same crown. Carolingia has risen.\n\nFor the Tawantinsuyu, this is little more than a curiosity. The Andes are strong, the Pacific vast. Unless this Carolingia sails across the ocean, what threat does it pose? At most, it may distract the Iberians and Anglos further, which suits our generals and merchants just fine."
+frankish_reaction.12.f:0 "“When the jaguar stalks the condor, we shall stir. Until then, let them roar across the seas.”"
+frankish_reaction.12.a:0 "Their empire means little here."
+
+frankish_reaction.13.t:0 "Unity Across the Sands"
+frankish_reaction.13.d:0 "Far beyond the deserts and steppes, Europe has shifted once again. France and Germany — or what remains of their dynasties — have united under one banner. Some call it an empire reborn. We call it a distraction.\n\nFor China, this new Carolingia matters only insofar as it may draw Russian and British eyes away from Central Asia and the Pacific coast. Let them rebuild their palaces and parade their flags. The Middle Kingdom has seen many such empires rise and fall."
+frankish_reaction.13.f:0 "“The dragon does not notice ants fighting over foreign soil.”"
+frankish_reaction.13.a:0 "Of minor interest, at most."
+
+frankish_reaction.14.t:0 "The Balance Shifts Westward"
+frankish_reaction.14.d:0 "Carolingia. A union of Frankish and Germanic powers, forged not through war, but through bloodlines and common ambition. The news is met in Persia with measured approval. For every crown fixed in Europe, a throne in Russia must brace.\n\nThe great bear, long meddling in Central Asia, will now have to watch its western borders more closely. For Persia, this is an opportunity to secure its own sphere — from the Caucasus to the Hindu Kush — with one less imperial shadow looming."
+frankish_reaction.14.f:0 "“Let them chain the bear with treaties. We shall rise on silk roads unbroken.”"
+frankish_reaction.14.a:0 "A rare shift in our favor."
+
+frankish_reaction.15.t:0 "A New Power at the Pillars"
+frankish_reaction.15.d:0 "A mighty fusion of Frankish and Germanic dynasties now threatens to redraw the European map — and perhaps the African one as well. Morocco, already pressed by Iberian ambitions, now sees the possibility of another foreign empire advancing down the Nile or across the Sahara.\n\nYet within this storm lies opportunity. If Carolingia aims to rival Iberia, perhaps old grievances can be set aside. The enemy of my enemy..."
+frankish_reaction.15.f:0 "“We watch the winds shift over Gibraltar. Not with fear — with calculation.”"
+frankish_reaction.15.a:0 "A threat… or a tool."
+
+frankish_reaction.16.t:0 "Distant Fire, Familiar Names"
+frankish_reaction.16.d:0 "A new empire has declared itself in Europe — Carolingia, uniting northern powers under a single banner. In the Gold Coast, few weep or cheer. We know the names: French, German, Frankish. Their flags may change, but their hunger rarely does.\n\nStill, this union might deepen the cracks between our colonizers. If they quarrel over Africa, perhaps we may breathe a little easier… or strike more boldly."
+frankish_reaction.16.f:0 "“They change masters like masks. The dance remains the same.”"
+frankish_reaction.16.a:0 "Another name, same intentions."
+
+frankish_reaction.17.t:0 "Europe Rearranges Its Thrones"
+frankish_reaction.17.d:0 "Beyond the deserts and seas, two European powers have joined to form a greater whole. Carolingia, they call it. But in the markets of Calcutta and the courts of Hanoi, it is a footnote.\n\nLocal rivalries dominate the region. The concerns of colonial interference, industrial development, and dynastic disputes keep subcontinental eyes firmly inward — or on nearby seas. Perhaps one day, this new empire will send ships eastward. Today is not that day."
+frankish_reaction.17.f:0 "“A lion may roar in the west, but it is the tiger we mind in the east.”"
+frankish_reaction.17.a:0 "Let Europe play its games."

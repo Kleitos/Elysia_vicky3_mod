@@ -1,335 +1,144 @@
-﻿namespace = italian_wars
+﻿namespace = ely_italian_flavour
 
-italian_wars.1 = {
+ely_italian_flavour.1 = {
 	type = country_event
 	placement = ROOT
 
-	title = italian_wars.1.t
-	desc = italian_wars.1.d
-	flavor = italian_wars.1.f
+	title = ely_italian_flavour.1.t
+	desc = ely_italian_flavour.1.d
+	flavor = ely_italian_flavour.1.f
 
 	event_image = {
-		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+		video = "unspecific_signed_contract"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
 
-	icon = "gfx/interface/icons/event_icons/event_default.dds"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
 
-	duration = 3
+	duration = 1
 
 	trigger = {
 	}
 
-	immediate = {	
-		c:SIC = {
-			every_scope_state = {
-				limit = {
-					is_incorporated = yes
-				}
-				set_variable = SIC_incorporated_state
-			}
-		}
-		c:LMV = {
-			annex = c:SIC
-			trigger_event = { id = italian_wars.3 days = 730 }
-			trigger_event = { id = italian_wars.2 days = 60 }
-		}
+	immediate = {
+
 	}
 
-    option = {
-		name = italian_wars.1.a
-		default_option = yes
-		create_diplomatic_play = {
-			target_country = c:SAR
-			war = no
-			escalation = 81
-			type = dp_annex_war
-			target_state = s:STATE_PIEDMONT.region_state:SAR
-			add_war_goal = {
-				holder = c:SAR
-				type = annex_country
-				target_state = s:STATE_LOMBARDY.region_state:LMV
-			}
-		}
-		hidden_effect = {
-			every_scope_state = {
-				limit = {
-					owner = ROOT
-					has_variable = INC_incorporated_state
-				}
-				set_state_type = incorporated
-			}
-		}
-	}
-}
-
-italian_wars.2 = {
-	type = country_event
-	placement = ROOT
-
-	title = italian_wars.2.t
-	desc = italian_wars.2.d
-	flavor = italian_wars.2.f
-
-	event_image = {
-		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
-	}
-
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
-
-	icon = "gfx/interface/icons/event_icons/event_default.dds"
-
-	duration = 3
-
-	trigger = {
-	}
-
-	immediate = {	
-	}
-
-    option = {
-		name = italian_wars.2.a
+	option = {
+		name = ely_italian_flavour.1.a
 		ai_chance = {
-			base = 5
+			base = 100
 		}
-		c:LMV = {
-			trigger_event = { id = greek_revolt.1 days = 5 }
-		}
-	}
-    option = {
-		name = italian_wars.2.b
 		default_option = yes
-		ai_chance = {
-			base = 95
-		}
-		c:LMV = {
-			trigger_event = { id = greek_revolt.2 days = 5 }
-		}
+		add_journal_entry = { type = je_risorgimento_idea }
 	}
 }
 
-italian_wars.3 = {
+ely_italian_flavour.2 = {
 	type = country_event
 	placement = ROOT
 
-	title = italian_wars.3.t
-	desc = italian_wars.3.d
-	flavor = italian_wars.3.f
+	title = ely_italian_flavour.2.t
+	desc = ely_italian_flavour.2.d
+	flavor = ely_italian_flavour.2.f
 
 	event_image = {
-		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+		video = "unspecific_signed_contract"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
 
-	icon = "gfx/interface/icons/event_icons/event_default.dds"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
 
-	duration = 3
+	duration = 1
 
 	trigger = {
 	}
 
-	immediate = {	
+	immediate = {
+
 	}
 
-    option = {
-		name = italian_wars.3.a
+	option = {
+		name = ely_italian_flavour.2.a
+		ai_chance = {
+			base = 100
+		}
 		default_option = yes
-		ai_chance = {
-			base = 95
-		}
-		add_modifier = {
-			name = italian_compromise_give
-			months = long_modifier_time
-		}	
-		c:FRA = {
-			change_relations = {
-				country = c:LMV
-				value = -20
-			}
-			create_bidirectional_truce = {
-				country = c:LMV
-				months = 60
-			}
-			add_modifier = {
-				name = italian_compromise_receive
-				months = long_modifier_time
-			}	
-		}
-		c:AUS = {
-			change_relations = {
-				country = c:LMV
-				value = -20
-			}
-			create_bidirectional_truce = {
-				country = c:LMV
-				months = 60
-			}
-			add_modifier = {
-				name = italian_compromise_receive
-				months = long_modifier_time
-			}	
-		}
-		c:PAP = {
-			trigger_event = { id = italian_wars.4 days = 10 }
-		}
-	}
-
-    option = {
-		name = italian_wars.3.b
-		ai_chance = {
-			base = 5
-		}
-		c:FRA = {
-			change_relations = {
-				country = c:LMV
-				value = -100
-			}
-		}
-		c:AUS = {
-			change_relations = {
-				country = c:LMV
-				value = -100
-			}
-		}
-		c:PAP = {
-			change_relations = {
-				country = c:LMV
-				value = -100
-			}
-			trigger_event = { id = italian_wars.5 days = 10 }
-		}
+		add_journal_entry = { type = je_risorgimento_idea }
 	}
 }
 
-italian_wars.4 = {
+ely_italian_flavour.3 = {
 	type = country_event
 	placement = ROOT
 
-	title = italian_wars.4.t
-	desc = italian_wars.4.d
-	flavor = italian_wars.4.f
+	title = ely_italian_flavour.3.t
+	desc = ely_italian_flavour.3.d
+	flavor = ely_italian_flavour.3.f
 
 	event_image = {
-		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+		video = "unspecific_signed_contract"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
 
-	icon = "gfx/interface/icons/event_icons/event_default.dds"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
 
-	duration = 3
+	duration = 1
 
 	trigger = {
 	}
 
-	immediate = {	
+	immediate = {
+
 	}
 
-    option = {
-		name = italian_wars.4.a
+	option = {
+		name = ely_italian_flavour.3.a
+		ai_chance = {
+			base = 100
+		}
 		default_option = yes
-		c:PAP = {
-			change_relations = {
-				country = c:LMV
-				value = -100
-			}
-			change_relations = {
-				country = c:FRA
-				value = -100
-			}
-			change_relations = {
-				country = c:AUS
-				value = -100
-			}
-			create_bidirectional_truce = {
-				country = c:LMV
-				months = 60
-			}
-		}
-		if = {
-			limit = { exists = s:STATE_ROMAGNA.region_state:PAP }
-			s:STATE_ROMAGNA.region_state:PAP = { set_state_owner = c:LMV }
-		}
-		if = {
-			limit = { exists = s:STATE_UMBRIA.region_state:PAP }
-			s:STATE_UMBRIA.region_state:PAP = { set_state_owner = c:LMV }
-		}
+		add_journal_entry = { type = je_risorgimento_idea }
 	}
 }
 
-italian_wars.5 = {
+ely_italian_flavour.4 = {
 	type = country_event
 	placement = ROOT
 
-	title = italian_wars.5.t
-	desc = italian_wars.5.d
-	flavor = italian_wars.5.f
+	title = ely_italian_flavour.4.t
+	desc = ely_italian_flavour.4.d
+	flavor = ely_italian_flavour.4.f
 
 	event_image = {
-		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+		video = "unspecific_signed_contract"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
 
-	icon = "gfx/interface/icons/event_icons/event_default.dds"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
 
-	duration = 3
+	duration = 1
 
 	trigger = {
 	}
 
-	immediate = {	
+	immediate = {
+
 	}
 
-    option = {
-		name = italian_wars.5.a
-		default_option = yes
-		create_diplomatic_play = {
-			target_country = c:LMV
-			war = no
-			escalation = 81
-			type = dp_conquer_state
-			target_state = s:STATE_TUSCANY.region_state:LMV
-			add_war_goal = {
-				holder = c:LMV
-				type = annex_country
-				target_state = s:STATE_LAZIO.region_state:PAP
-			}
-			add_war_goal = {
-				holder = c:PAP
-				type = conquer_state
-				target_state = s:STATE_EMILIA.region_state:LMV
-				target_country = c:LMV
-			}
-			add_war_goal = {
-				holder = c:PAP
-				type = conquer_state
-				target_state = s:STATE_ABRUZZO.region_state:LMV
-				target_country = c:LMV
-			}
-			add_war_goal = {
-				holder = c:PAP
-				type = humiliation
-				target_country = c:LMV
-			}
-			add_war_goal = {
-				holder = c:PAP
-				type = war_reparations
-				target_country = c:LMV
-			}
-			add_initiator_backers = {
-				country = c:FRA
-			}
-			add_initiator_backers = {
-				country = c:AUS
-			}
+	option = {
+		name = ely_italian_flavour.4.a
+		ai_chance = {
+			base = 100
 		}
+		default_option = yes
+		add_journal_entry = { type = je_risorgimento_idea_pap }
 	}
 }
+
+
+

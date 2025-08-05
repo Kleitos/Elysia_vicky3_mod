@@ -485,6 +485,9 @@ ely_infrastructure_event.9 = {
 				months = -1
 			}
 		}
+		add_journal_entry = {
+			type = je_greenland_infrastructure
+		}
 	}
 	option = {
 		name = ely_infrastructure_event.1.b

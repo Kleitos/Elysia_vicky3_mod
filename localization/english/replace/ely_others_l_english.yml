@@ -1,0 +1,257 @@
+﻿l_english:
+
+# Country Changes
+ #TCA: "Transcaucasia"
+ #TCA_ADJ: "Transcaucasian"
+ #DRA: "Dravida Nadu"
+ #DRA_ADJ: "Dravidian"
+ #BGD: "Bangladesh"
+ #BGD_ADJ: "	Bangladeshi"
+ #RAJ: "Rajputana"
+ #RAJ_ADJ: "Rajput"
+ #MAR: "Marathas Confederacy"
+ #MAR_ADJ: "Marathi"
+ NGR: "Guinea"
+ NGR_ADJ: "Guinean"
+ 
+#Other Things
+
+ LATIN_PACT: "Holy League"
+
+ ##Buildings##
+ building_kiel_canal:0 "Kiel Canal"
+ building_kra_canal:0 "Kra Canal"
+ building_west_white_canal:0 "Western White Canal"
+ building_east_white_canal:0 "Eastern White Canal"
+ building_don_canal:0 "Don-Volga Canal"
+
+ ##Cultural Traits##
+ nordic_group:0 "Nordic"
+  
+ ##Cultures##
+ iberian:0 "Iberian"
+ iranian_culture:0 "Iranian"
+ turanian_culture:0 "Turanian"
+ ethiopian_culture:0 "Ethiopian"
+ malian_culture:0 "Malian"
+ anglo_colombian:0 "Columbian"
+ scandinavian:0 "Nordic"
+ baltic_culture:0 "Baltic"
+ guinean_culture:0 "Guinean"
+ 
+ ##Modifiers##
+ isolation_violated:0 "Foreigner Trouble"
+ modifier_outdated_production:0 "Outdated Economic System"
+ religious_fundamentalism:0 "Religious Fundamentalism"
+ western_aligned:0 "Western European Influence"
+ austria_multicultural:0 "Secessionist Movements"
+ crusading_spirit:0 "Anti-Ottoman Alliance"
+ iran_arab_resistance:0 "Resistance to Arabisation"
+ no_meta_game:0 "I love pain"
+ favored_by_destiny:0 "Lucky Nation"
+ ely_pop_growth:0 "Population Growth"
+
+ australian_colonization:0 "European Settlements"
+ 
+ ##Journals## 
+ je_reform_bureaucracy:0 "Bureaucratic Reforms"
+ je_reform_bureaucracy_reason:0 "Our outdated bureaucracy is in dire need of reforms"
+ 
+ je_reform_economy:0 "Economic Reforms"
+ je_reform_economy_reason:0 "Our economy must be reformed if we want to compete on the world stage"
+ 
+ je_reform_society:0 "Societal Reforms"
+ je_reform_society_reason:0 "Centuries of religious extremism rule in have left the common people destitute and hungry, while those in power keep profiteering. We need to reform or risk revolution."
+ 
+ je_end_influence:0 "End Foreign Influence"
+ je_end_influence_reason:0 "Historic ties to the rest of the world has given our population a glimpse of how different things could be and has started influencing the way they think."
+ 
+ je_andean_pathway:0 "Andean Pathway"
+ je_andean_pathway_reason:0 "The Elysians have achieved diverse marvelous feats of engineering, but the carving of entire mountains to let place for railroads is one we are more interested than any. Seeing as both our nation are on amicable terms we should ask for their expertise."
+
+ je_cultural_shift_ibe:0 "The Greater Iberian identity"
+ je_cultural_shift_ibe_reason:0 "In order to unite our people, we should take steps into creating a true national identity."
+ 
+ je_cultural_shift_per:0 "The Greater Iranian identity"
+ je_cultural_shift_per_reason:0 "In order to unite our people, we should take steps into creating a true national identity."
+ 
+ je_cultural_shift_trh:0 "The Greater Turkic identity"
+ je_cultural_shift_trh_reason:0 "In order to unite our people, we should take steps into creating a true national identity."
+ 
+ je_cultural_shift_eth:0 "The Greater Ethiopian identity"
+ je_cultural_shift_eth_reason:0 "In order to unite our people, we should take steps into creating a true national identity."
+ 
+ je_cultural_shift_mal:0 "The Greater Malian identity"
+ je_cultural_shift_mal_reason:0 "In order to unite our people, we should take steps into creating a true national identity."
+ 
+ je_cultural_shift_sca:0 "The Greater Nordic identity"
+ je_cultural_shift_sca_reason:0 "In order to unite our people, we should take steps into creating a true national identity."
+ 
+ je_cultural_shift_ubd:0 "The Greater Baltic identity"
+ je_cultural_shift_ubd_reason:0 "In order to unite our people, we should take steps into creating a true national identity."
+ 
+ je_cultural_shift_ngr:0 "The Greater Guinean identity"
+ je_cultural_shift_ngr_reason:0 "In order to unite our people, we should take steps into creating a true national identity."
+
+ je_pop_growth:0 "Shifting demographics"
+ je_pop_growth_reason:0 ""
+ 
+ ##Events##
+ 	
+ cultural_shift.1.t:0 "New National Identity"
+ cultural_shift.1.d:0 "Efforts have been taken to unify our people."
+ cultural_shift.1.f:0 ""
+ cultural_shift.1.a:0 "We are united"
+ 
+ pop_growth.1.1.t:0 "Fast population Growth"
+ pop_growth.1.1.d:0 "Better medicine and treatments as well as increased agricultural output as lead to a fast population growth as birth rate stays high and mortality rates declines. Analyst project a total demographic shift in a few decades."
+ pop_growth.1.1.f:0 ""
+ pop_growth.1.1.a:0 "We will have to adapt"
+ 
+ ##African Groups##
+ cushitic:0 "Cushitic Language"
+ berber_group:0 "Berber Language"
+ semite:0 "Arabo-Semitic Language"
+ guinean:0 "Guinean Language"
+ hausa_group:0 "Hausan Language"
+ western_bantoid:0 "Western Bantoid Language"
+ nilotic_group:0 "Nilotic Language"
+ central_bantoid:0 "Central Bantoid Language"
+ mandinka:0 "Mande Language"
+ sudanese_group:0 "Sudanese Language"
+ eastern_bantoid:0 "Eastern Bantoid Language"
+ kanuri_group:0 "Kanuri Language"
+ songhai_group:0 "Songhai Language"
+ khoisan_group:0 "Khoisan Language"
+ 
+ ##Interest Group##
+ ideology_europe_common:0 "People's Parliament"
+ ideology_europe_common_desc:0 ""
+ 
+ ideology_old_wealth:0 "Old Wealth"
+ ideology_old_wealth_desc:0 ""
+ 
+ ideology_europe_nobles:0 "Noble Parliament"
+ ideology_europe_nobles_desc:0 ""
+ 
+ ###FRANCE###
+ ideology_fra_nobles:0 "Etats Généraux, Noblesse"
+ ideology_fra_nobles_desc:0 ""
+ 
+ ideology_fra_common:0 "Etats Généraux, Tiers-Etat"
+ ideology_fra_common_desc:0 ""
+ 
+ ideology_fra_clergy:0 "Etats Généraux, Clergé"
+ ideology_fra_clergy_desc:0 ""
+ 
+ ideology_fra_enlightenement:0 "Les Lumières"
+ ideology_fra_enlightenement_desc:0 "Members of the movement saw themselves as a progressive élite, and battled against religious and political persecution, fighting against what they saw as the irrationality, arbitrariness, obscurantism and superstition."
+  
+ revolution_indemnities:0 "Paying off the nobility"
+  
+ ###RUSSIA###
+ rus_revolution:0 "Revolutionnary Fervour"
+ rus_autocratic_eroding:0 "Removal of Aristocracy"
+ rus_autocratic:0 "Autocratic Rule in Russia"
+ 	
+ russian_revolution.1.t:0 "The Revolution is here"
+ russian_revolution.1.d:0 ""
+ russian_revolution.1.f:0 ""
+ russian_revolution.1.a:0 "I am Czar of all Russia"
+ 
+ russian_revolution.2.t:0 "Towards Revolution"
+ russian_revolution.2.d:0 ""
+ russian_revolution.2.f:0 ""
+ russian_revolution.2.a:0 "For the new Rus"
+ 
+ russian_revolution.3.t:0 "The Revolution Triumphant"
+ russian_revolution.3.d:0 ""
+ russian_revolution.3.f:0 ""
+ russian_revolution.3.a:0 "We are the Deluge"
+ 
+ russian_revolution.4.t:0 "The Revolution is crushed"
+ russian_revolution.4.d:0 ""
+ russian_revolution.4.f:0 ""
+ russian_revolution.4.a:0 "Order is restored"
+ 
+ russian_revolution.5.t:0 "Expension of the new State"
+ russian_revolution.5.d:0 ""
+ russian_revolution.5.f:0 ""
+ russian_revolution.5.a:0 "We must secure our interests"
+ 
+ russian_revolution.6.t:0 "A new Capital ?"
+ russian_revolution.6.d:0 ""
+ russian_revolution.6.f:0 ""
+ russian_revolution.6.a:0 "Novgorod, the Birth place of our revolution"
+ russian_revolution.6.b:0 "Kiev, the origin of the Rus"
+ russian_revolution.6.c:0 "Minsk, to re-unite little Russia with the Rus"
+ russian_revolution.6.d:0 "Moscow, appease and keep an eye on the old elite"
+ 
+ je_russian_civil_war_NOV:0 "Down with the Czar"
+ je_russian_civil_war_NOV_reason:0 ""
+ 
+ je_russian_civil_war_RUS:0 "Crush the Revolution"
+ je_russian_civil_war_RUS_reason:0 ""
+ 
+ je_pacify_the_steppes_NOV:0 "Pacification of the Steppes"
+ je_pacify_the_steppes_NOV_reason:1 "Despite nominal control over the Kazakh steppe since the 18th century, banditry and disloyalty plagues the territory. Kazakh rebels have begun striking again and again against our supply convoys and fortresses in the region.Only with the final pacification of the steppe may it truly be said that we are the sovereign of Kazakhstan."
+
+ ###ITALY###
+ 	
+ italian_wars.1.t:0 "The Conquest of Piedmont"
+ italian_wars.1.d:0 ""
+ italian_wars.1.f:0 ""
+ italian_wars.1.a:0 "One step closer to uniting the peninsula"
+ 	
+ italian_wars.2.t:0 "Turmoil in the Greek Islands"
+ italian_wars.2.d:0 ""
+ italian_wars.2.f:0 ""
+ italian_wars.2.a:0 "Punish the revolties"
+ italian_wars.2.b:0 "Let's keep it civil"
+ 	
+ italian_wars.3.t:0 "Uniting our holdings"
+ italian_wars.3.d:0 ""
+ italian_wars.3.f:0 ""
+ italian_wars.3.a:0 "Let's Settle for a compromise"
+ italian_wars.3.b:0 "All of Italy belongs to Us"
+ 	
+ italian_wars.4.t:0 "The Treaty of Venice"
+ italian_wars.4.d:0 ""
+ italian_wars.4.f:0 ""
+ italian_wars.4.a:0 "We won't forget this"
+ 	
+ italian_wars.5.t:0 "Lombardy's Ultimatum"
+ italian_wars.5.d:0 ""
+ italian_wars.5.f:0 ""
+ italian_wars.5.a:0 "We will teach those upstarts"
+ 	
+ greek_revolt.1.t:0 "Greek Revolt"
+ greek_revolt.1.d:0 ""
+ greek_revolt.1.f:0 ""
+ greek_revolt.1.a:0 "We will not give an inch"
+ 	
+ greek_revolt.2.t:0 "Greek Revolt"
+ greek_revolt.2.d:0 ""
+ greek_revolt.2.f:0 ""
+ greek_revolt.2.a:0 "We can't afford a second front"
+ 
+ 
+ 
+ ##Westernization##
+ 
+ westernization.2.t:0 "A Renewed Nation"
+ westernization.2.f:0 ""
+ 
+ westernization.11.a:0 "Fight back! Our traditions must be protected."
+ 
+ western_military_reward:0 "Military Reform"
+ western_diplomatic_reward:0 "Ambassadors"
+ western_production_reward:0 "Modern Railway"
+ 
+#Names
+ 
+
+
+ montoya_braganza: "de Avis y Trastámara"
+ de_Habsburgo_braganza: "de Habsburgo-Braganza"
+ trastamara_y_noronha: "de Trastámara y Noronha"

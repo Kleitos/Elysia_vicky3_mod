@@ -1,14 +1,13 @@
 ﻿namespace = ely_incan_reform
-namespace = ely_incan_revolution
-namespace = ely_incan_post_war
+namespace = ely_incan_war
 
 
-ely_incan_revolution.1 = {
+ely_incan_reform.1 = {
 	type = country_event
 	placement = root
-	title = ely_incan_revolution.1.t
-	desc = ely_incan_revolution.1.d
-	flavor = ely_incan_revolution.1.f
+	title = ely_incan_reform.1.t
+	desc = ely_incan_reform.1.d
+	flavor = ely_incan_reform.1.f
 
 	duration = 3
 
@@ -25,100 +24,10 @@ ely_incan_revolution.1 = {
 	}
 
 	immediate = {
-		if = {
-			limit = {
-				NOT = { exists = c:INC }
-				exists = s:STATE_LA_PAZ.region_state:TWT
-			}
-			create_country = {
-				tag = INC
-				origin = c:TWT
-				state = s:STATE_LA_PAZ.region_state:TWT
-			}
-		}
-		else_if = {
-			limit = {
-				exists = c:INC
-				exists = s:STATE_LA_PAZ.region_state:TWT
-			}
-			s:STATE_LA_PAZ.region_state:TWT = { set_state_owner = c:INC }
-		}
-		else_if = {
-			limit = {
-				NOT = { exists = c:INC }
-			}
-			random_country = {
-				limit = {
-					is_secessionist = yes
-					any_scope_state = {
-						state_region = s:STATE_LA_PAZ
-					}
-				}
-				change_tag = INC
-			}
-		}
-		if = {
-			limit = { exists = s:STATE_AREQUIPA.region_state:TWT }
-			s:STATE_AREQUIPA.region_state:TWT = { set_state_owner = c:INC }
-		}
-		if = {
-			limit = { exists = s:STATE_POTOSI.region_state:TWT }
-			s:STATE_POTOSI.region_state:TWT = { set_state_owner = c:INC }
-		}
-		if = {
-			limit = { exists = s:STATE_SANTIAGO.region_state:TWT }
-			s:STATE_SANTIAGO.region_state:TWT = { set_state_owner = c:INC }
-		}
-		if = {
-			limit = { exists = s:STATE_LOS_RIOS.region_state:TWT }
-			s:STATE_LOS_RIOS.region_state:TWT = { set_state_owner = c:INC }
-		}
-		if = {
-			limit = { exists = s:STATE_ARAUCANIA.region_state:TWT }
-			s:STATE_ARAUCANIA.region_state:TWT = { set_state_owner = c:INC }
-		}
-		if = {
-			limit = { exists = s:STATE_TARAPACA.region_state:TWT }
-			s:STATE_TARAPACA.region_state:TWT = { set_state_owner = c:INC }
-		}
-		if = {
-			limit = { exists = s:STATE_ANTOFAGASTA.region_state:TWT }
-			s:STATE_ANTOFAGASTA.region_state:TWT = { set_state_owner = c:INC }
-		}
-		if = {
-			limit = { exists = s:STATE_PASTAZA.region_state:TWT }
-			s:STATE_PASTAZA.region_state:TWT = { set_state_owner = c:INC }
-		}
-		if = {
-			limit = { exists = s:STATE_ACRE.region_state:TWT }
-			s:STATE_ACRE.region_state:TWT = { set_state_owner = c:INC }
-		}
-		if = {
-			limit = { exists = s:STATE_JUJUY.region_state:TWT }
-			s:STATE_JUJUY.region_state:TWT = { set_state_owner = c:INC }
-		}
-		c:INC = {
-			every_scope_state = {
-				limit = {
-					is_incorporated = yes
-				}
-				set_variable = INC_incorporated_state
-			}
-			add_modifier = {
-				name = incan_revolution_fervor
-				months = normal_modifier_time
-			}	
-			every_scope_state = {
-				limit = {
-					owner = c:INC
-				}
-				set_state_type = incorporated
-			}
-			add_journal_entry = { type = je_win_andean_civilwar }
 			ig:ig_landowners = {
-				remove_ideology = ideology_paternalistic
+				remove_ideology = ideology_incan_corve
+				remove_ideology = ideology_incan_administration
 				remove_ideology = ideology_patriarchal
-				remove_ideology = ideology_stratocratic
 				add_ideology = ideology_incan_rich_land
 				add_ideology = ideology_incan_rich_rights
 				add_ideology = ideology_incan_rich_army
@@ -126,221 +35,48 @@ ely_incan_revolution.1 = {
 				add_ideology = ideology_incan_rich_admin
 			}
 			ig:ig_petty_bourgeoisie = {
-				remove_ideology = ideology_patriotic
-				remove_ideology = ideology_reactionary
-				remove_ideology = ideology_meritocratic
+				remove_ideology = ideology_incan_administration
+				remove_ideology = ideology_incan_corve
+				
 				add_ideology = ideology_incan_middle_land
 				add_ideology = ideology_incan_middle_rights
 				add_ideology = ideology_incan_middle_army
 				add_ideology = ideology_incan_middle_economy
 				add_ideology = ideology_incan_middle_admin
-			}
-			ig:ig_armed_forces = {
-				remove_ideology = ideology_jingoist
-				remove_ideology = ideology_patriotic
-				remove_ideology = ideology_loyalist
-				add_ideology = ideology_incan_middle_land
-				add_ideology = ideology_incan_middle_rights
-				add_ideology = ideology_incan_middle_army
-				add_ideology = ideology_incan_middle_economy
-				add_ideology = ideology_incan_middle_admin
-			}
-			ig:ig_intelligentsia = {
-				remove_ideology = ideology_anti_clerical
-				remove_ideology = ideology_republican
-				remove_ideology = ideology_liberal_modern
-				remove_ideology = ideology_anti_slavery
-				add_ideology = ideology_incan_middle_land
-				add_ideology = ideology_incan_middle_rights
-				add_ideology = ideology_incan_middle_army
-				add_ideology = ideology_incan_middle_economy
-				add_ideology = ideology_incan_middle_admin
-			}
-			ig:ig_industrialists = {
-				remove_ideology = ideology_laissez_faire
-				remove_ideology = ideology_individualist
-				remove_ideology = ideology_plutocratic
-				add_ideology = ideology_incan_rich_land
-				add_ideology = ideology_incan_rich_rights
-				add_ideology = ideology_incan_rich_army
-				add_ideology = ideology_incan_rich_economy
-				add_ideology = ideology_incan_rich_admin
 			}
 			ig:ig_devout = {
-				remove_ideology = ideology_patriarchal
 				remove_ideology = ideology_pious
-				remove_ideology = ideology_moralist
+				remove_ideology = ideology_incan_administration
 				add_ideology = ideology_incan_rich_land
 				add_ideology = ideology_incan_rich_rights
 				add_ideology = ideology_incan_rich_army
 				add_ideology = ideology_incan_rich_economy
 				add_ideology = ideology_incan_rich_admin
 			}
-			ig:ig_rural_folk = {
-				remove_ideology = ideology_particularist
-				remove_ideology = ideology_agrarian
-				remove_ideology = ideology_isolationist
-				add_ideology = ideology_incan_poor_land
-				add_ideology = ideology_incan_poor_rights
-				add_ideology = ideology_incan_poor_army
-				add_ideology = ideology_incan_poor_economy
-				add_ideology = ideology_incan_poor_admin
-			}
-			ig:ig_trade_unions = {
-				remove_ideology = ideology_populist
-				remove_ideology = ideology_egalitarian_modern
-				remove_ideology = ideology_proletarian
-				remove_ideology = ideology_anti_slavery
-				add_ideology = ideology_incan_poor_land
-				add_ideology = ideology_incan_poor_rights
-				add_ideology = ideology_incan_poor_army
-				add_ideology = ideology_incan_poor_economy
-				add_ideology = ideology_incan_poor_admin
-			}
-		}
-		c:TWT = {
-			add_journal_entry = { type = je_crush_andean_civilwar }
-			every_scope_state = {
-				limit = {
-					is_incorporated = yes
-				}
-				set_variable = TWT_incorporated_state
-			}
-			add_modifier = {
-				name = incan_revolution_sickness
-				months = normal_modifier_time
-			}	
 		}
 
 	}
 
 	option = {
-		name = ely_incan_revolution.1.a
+		name = ely_incan_reform.1.a
 		add_loyalists = {
-			value = very_large_radicals
-			strata = rich
+			value = large_radicals
 		}
-		hidden_effect = {
-			c:INC = {
-				change_infamy = -100
-				change_relations = {
-					country = c:TWT
-					value = -100
-				}					
-				set_secret_goal = {
-					country = c:TWT
-					secret_goal = conquer
-				}
-			}
-			c:TWT = {
-				change_infamy = -100
-				change_relations = {
-					country = c:INC
-					value = -100
-				}					
-				set_secret_goal = {
-					country = c:INC
-					secret_goal = conquer
-				}
-			}		
-		}
-		create_diplomatic_play = {
-			target_country = c:INC
-			type = dp_annex_war
-			escalation = 81
-			target_state = s:STATE_LA_PAZ.region_state:INC
-			add_war_goal = {
-				holder = c:INC
-				type = annex_country
-				target_state = s:STATE_LIMA.region_state:TWT
-			}
-		}
-		c:INC = {
-			create_military_formation = {
-				type = army
-				hq_region = sr:region_andes
-
-				combat_unit = {
-					type = unit_type:combat_unit_type_irregular_infantry
-					state_region = sr:region_andes
-					count = 10
-				}
-
-				combat_unit = {
-					type = unit_type:combat_unit_type_cannon_artillery
-					state_region = sr:region_andes
-					count = 5
-				}
-			}
-		}
-	}
-	option = {
-		name = ely_incan_revolution.1.b
 		default_option = yes
-		play_as = c:INC
-		hidden_effect = {
-			c:INC = {
-				change_infamy = -100
-				change_relations = {
-					country = c:TWT
-					value = -100
-				}					
-				set_secret_goal = {
-					country = c:TWT
-					secret_goal = conquer
-				}
+			add_modifier = {
+				name = incan_societal_reforms
+				days = normal_modifier_time
 			}
-			c:TWT = {
-				change_infamy = -100
-				change_relations = {
-					country = c:INC
-					value = -100
-				}					
-				set_secret_goal = {
-					country = c:INC
-					secret_goal = conquer
-				}
-			}		
-		}
-		create_diplomatic_play = {
-			target_country = c:INC
-			type = dp_annex_war
-			escalation = 81
-			target_state = s:STATE_LA_PAZ.region_state:INC
-			add_war_goal = {
-				holder = c:INC
-				type = annex_country
-				target_state = s:STATE_LIMA.region_state:TWT
-			}
-		}
-		c:INC = {
-			create_military_formation = {
-				type = army
-				hq_region = sr:region_andes
-
-				combat_unit = {
-					type = unit_type:combat_unit_type_irregular_infantry
-					state_region = sr:region_andes
-					count = 10
-				}
-
-				combat_unit = {
-					type = unit_type:combat_unit_type_cannon_artillery
-					state_region = sr:region_andes
-					count = 5
-				}
-			}
-		}
 	}
 	
-}	
+}		incan_societal_reforms
 
-ely_incan_revolution.2 = {
+ely_incan_war.1 = {
 	type = country_event
 	placement = root
-	title = ely_incan_revolution.2.t
-	desc = ely_incan_revolution.2.d
-	flavor = ely_incan_revolution.2.f
+	title = ely_incan_war.1.t
+	desc = ely_incan_war.1.d
+	flavor = ely_incan_war.1.f
 
 	duration = 3
 
@@ -356,782 +92,9 @@ ely_incan_revolution.2 = {
 	}
 
 	immediate = {
-		c:INC = {
-			trigger_event = { id = ely_incan_revolution.3 days = 10}	
-			remove_modifier = incan_revolution_fervor
-		}
-	}
-	option = {
-		name = ely_incan_revolution.2.a
-		ai_chance = {
-			base = 50
-		}
-		default_option = yes
-		add_modifier = {
-			name = incan_political_reforms
-			months = normal_modifier_time
-			is_decaying = yes
-		}	
-		add_loyalists = {
-			value = very_large_radicals
-			strata = rich
-		}
-		add_loyalists = {
-			value = very_large_radicals
-			strata = middle
-		}
-		add_radicals = {
-			value = very_large_radicals
-			strata = poor
-		}
-		activate_law = law_type:law_presidential_republic
-	}
-	option = {
-		name = ely_incan_revolution.2.b
-		ai_chance = {
-			base = 50
-		}
-		add_modifier = {
-			name = incan_political_reforms
-			months = long_modifier_time
-			is_decaying = yes
-		}	
-		add_loyalists = {
-			value = very_large_radicals
-			strata = middle
-		}
-		add_loyalists = {
-			value = very_large_radicals
-			strata = poor
-		}
-		add_radicals = {
-			value = very_large_radicals
-			strata = rich
-		}
-		activate_law = law_type:law_parliamentary_republic
-	}
-}	
-
-ely_incan_revolution.3 = {
-	type = country_event
-	placement = root
-	title = ely_incan_revolution.3.t
-	desc = ely_incan_revolution.3.d
-	flavor = ely_incan_revolution.3.f
-
-	duration = 3
-
-	event_image = {
-		video = "votp_agitator_speaking"
-	}
-
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
-	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
-
-	trigger = {
-	}
-
-	immediate = {
-		c:INC = {
-			trigger_event = { id = ely_incan_revolution.4 days = 10}	
-		}
-	}
-	option = {
-		name = ely_incan_revolution.3.a
-		ai_chance = {
-			base = 50
-		}
-		add_loyalists = {
-			value = very_large_radicals
-			strata = rich
-		}
-		add_loyalists = {
-			value = very_large_radicals
-			strata = middle
-		}
-		add_radicals = {
-			value = very_large_radicals
-			strata = poor
-		}
-		activate_law = law_type:law_census_voting
-	}
-	option = {
-		name = ely_incan_revolution.3.b
-		ai_chance = {
-			base = 50
-		}
-		default_option = yes
-		add_loyalists = {
-			value = very_large_radicals
-			strata = middle
-		}
-		add_loyalists = {
-			value = very_large_radicals
-			strata = poor
-		}
-		add_radicals = {
-			value = very_large_radicals
-			strata = rich
-		}
-		activate_law = law_type:law_universal_suffrage
-	}
-}	
-
-ely_incan_revolution.4 = {
-	type = country_event
-	placement = root
-	title = ely_incan_revolution.4.t
-	desc = ely_incan_revolution.4.d
-	flavor = ely_incan_revolution.4.f
-
-	duration = 3
-
-	event_image = {
-		video = "votp_agitator_speaking"
-	}
-
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
-	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
-
-	trigger = {
-	}
-
-	immediate = {
-		c:INC = {
-			trigger_event = { id = ely_incan_revolution.5 days = 10}	
-		}
-	}
-	option = {
-		name = ely_incan_revolution.4.a
-		ai_chance = {
-			base = 50
-		}
-		default_option = yes
-		add_modifier = {
-			name = incan_bureaucratic_reforms
-			months = normal_modifier_time
-			is_decaying = yes
-		}	
-		add_loyalists = {
-			value = very_large_radicals
-			strata = rich
-		}
-		add_radicals = {
-			value = very_large_radicals
-			strata = middle
-		}
-		add_radicals = {
-			value = very_large_radicals
-			strata = poor
-		}
-		activate_law = law_type:law_appointed_bureaucrats
-	}
-	option = {
-		name = ely_incan_revolution.4.b
-		add_modifier = {
-			name = incan_bureaucratic_reforms
-			months = long_modifier_time
-			is_decaying = yes
-		}	
-		ai_chance = {
-			base = 50
-		}
-		add_loyalists = {
-			value = very_large_radicals
-			strata = middle
-		}
-		add_loyalists = {
-			value = very_large_radicals
-			strata = poor
-		}
-		add_radicals = {
-			value = very_large_radicals
-			strata = rich
-		}
-		activate_law = law_type:law_elected_bureaucrats
-	}
-}
-
-ely_incan_revolution.5 = {
-	type = country_event
-	placement = root
-	title = ely_incan_revolution.5.t
-	desc = ely_incan_revolution.5.d
-	flavor = ely_incan_revolution.5.f
-
-	duration = 3
-
-	event_image = {
-		video = "votp_agitator_speaking"
-	}
-
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
-	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
-
-	trigger = {
-	}
-
-	immediate = {
-		c:INC = {
-			trigger_event = { id = ely_incan_revolution.6 days = 10}	
-		}
-	}
-	option = {
-		name = ely_incan_revolution.5.a
-		ai_chance = {
-			base = 33
-		}
-		add_modifier = {
-			name = incan_army_reforms
-			months = long_modifier_time
-			is_decaying = yes
-		}	
-		add_loyalists = {
-			value = very_large_radicals
-			strata = rich
-		}
-		add_loyalists = {
-			value = very_large_radicals
-			strata = middle
-		}
-		add_radicals = {
-			value = very_large_radicals
-			strata = poor
-		}
-		activate_law = law_type:law_professional_army
-	}
-	option = {
-		name = ely_incan_revolution.5.b
-		ai_chance = {
-			base = 33
-		}
-		add_modifier = {
-			name = incan_army_reforms
-			months = short_modifier_time
-			is_decaying = yes
-		}	
-		add_loyalists = {
-			value = very_large_radicals
-			strata = middle
-		}
-		add_loyalists = {
-			value = very_large_radicals
-			strata = poor
-		}
-		add_radicals = {
-			value = very_large_radicals
-			strata = rich
-		}
-		activate_law = law_type:law_national_militia
-	}
-	option = {
-		name = ely_incan_revolution.5.c
-		ai_chance = {
-			base = 33
-		}
-		add_modifier = {
-			name = incan_army_reforms
-			months = normal_modifier_time
-			is_decaying = yes
-		}	
-		default_option = yes
-		add_loyalists = {
-			value = very_large_radicals
-			strata = middle
-		}
-		add_loyalists = {
-			value = very_large_radicals
-			strata = poor
-		}
-		add_loyalists = {
-			value = very_large_radicals
-			strata = rich
-		}
-		activate_law = law_type:law_mass_conscription
-	}
-}	
-
-ely_incan_revolution.6 = {
-	type = country_event
-	placement = root
-	title = ely_incan_revolution.6.t
-	desc = ely_incan_revolution.6.d
-	flavor = ely_incan_revolution.6.f
-
-	duration = 3
-
-	event_image = {
-		video = "votp_agitator_speaking"
-	}
-
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
-	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
-
-	trigger = {
-	}
-
-	immediate = {
-		c:INC = {
-			trigger_event = { id = ely_incan_revolution.7 days = 10}	
-		}
-	}
-	option = {
-		name = ely_incan_revolution.6.a
-		ai_chance = {
-			base = 50
-		}
-		add_loyalists = {
-			value = very_large_radicals
-			strata = rich
-		}
-		add_loyalists = {
-			value = very_large_radicals
-			strata = middle
-		}
-		add_radicals = {
-			value = very_large_radicals
-			strata = poor
-		}
-		activate_law = law_type:law_commercialized_agriculture
-	}
-	option = {
-		name = ely_incan_revolution.6.b
-		ai_chance = {
-			base = 50
-		}
-		default_option = yes
-		add_loyalists = {
-			value = very_large_radicals
-			strata = middle
-		}
-		add_loyalists = {
-			value = very_large_radicals
-			strata = poor
-		}
-		add_radicals = {
-			value = very_large_radicals
-			strata = rich
-		}
-		activate_law = law_type:law_homesteading
-	}
-}
-
-ely_incan_revolution.7 = {
-	type = country_event
-	placement = root
-	title = ely_incan_revolution.7.t
-	desc = ely_incan_revolution.7.d
-	flavor = ely_incan_revolution.7.f
-
-	duration = 3
-
-	event_image = {
-		video = "votp_agitator_speaking"
-	}
-
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
-	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
-
-	trigger = {
-	}
-
-	immediate = {
-		c:INC = {
-			trigger_event = { id = ely_incan_revolution.8 days = 10}	
-		}
-	}
-	option = {
-		name = ely_incan_revolution.7.a
-		ai_chance = {
-			base = 50
-		}
-		default_option = yes
-		add_modifier = {
-			name = incan_economic_reforms
-			months = long_modifier_time
-			is_decaying = yes
-		}
-		add_loyalists = {
-			value = very_large_radicals
-			strata = rich
-		}
-		add_loyalists = {
-			value = very_large_radicals
-			strata = middle
-		}
-		add_radicals = {
-			value = very_large_radicals
-			strata = poor
-		}
-		activate_law = law_type:law_laissez_faire
-	}
-	option = {
-		name = ely_incan_revolution.7.b
-		ai_chance = {
-			base = 50
-		}
-		add_modifier = {
-			name = incan_economic_reforms
-			months = normal_modifier_time
-			is_decaying = yes
-		}
-		add_radicals = {
-			value = very_large_radicals
-			strata = middle
-		}
-		add_loyalists = {
-			value = very_large_radicals
-			strata = poor
-		}
-		add_radicals = {
-			value = very_large_radicals
-			strata = rich
-		}
-		activate_law = law_type:law_agrarianism
-	}
-}	
-
-ely_incan_revolution.8 = {
-	type = country_event
-	placement = root
-	title = ely_incan_revolution.8.t
-	desc = ely_incan_revolution.8.d
-	flavor = ely_incan_revolution.8.f
-
-	duration = 3
-
-	event_image = {
-		video = "votp_agitator_speaking"
-	}
-
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
-	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
-
-	trigger = {
-	}
-
-	immediate = {
-		c:INC = {
-			trigger_event = { id = ely_incan_revolution.9 days = 10}	
-		}
-	}
-	option = {
-		name = ely_incan_revolution.8.a
-		ai_chance = {
-			base = 33
-		}
-		add_modifier = {
-			name = incan_societal_reforms
-			months = long_modifier_time
-			is_decaying = yes
-		}
-		add_radicals = {
-			value = very_large_radicals
-			strata = rich
-		}
-		add_radicals = {
-			value = very_large_radicals
-			strata = middle
-		}
-		add_radicals = {
-			value = very_large_radicals
-			strata = poor
-		}
-		activate_law = law_type:law_total_separation
-	}
-	option = {
-		name = ely_incan_revolution.8.b
-		ai_chance = {
-			base = 33
-		}
-		add_modifier = {
-			name = incan_societal_reforms
-			months = normal_modifier_time
-			is_decaying = yes
-		}
-		add_radicals = {
-			value = very_large_radicals
-			strata = middle
-		}
-		add_radicals = {
-			value = very_large_radicals
-			strata = poor
-		}
-		add_radicals = {
-			value = very_large_radicals
-			strata = rich
-		}
-		activate_law = law_type:law_freedom_of_conscience
-	}
-	option = {
-		name = ely_incan_revolution.8.c
-		ai_chance = {
-			base = 33
-		}
-		default_option = yes
-		add_loyalists = {
-			value = very_large_radicals
-			strata = middle
-		}
-		add_loyalists = {
-			value = very_large_radicals
-			strata = poor
-		}
-		add_loyalists = {
-			value = very_large_radicals
-			strata = rich
-		}
-	}
-}	
-
-ely_incan_revolution.9 = {
-	type = country_event
-	placement = root
-	title = ely_incan_revolution.9.t
-	desc = ely_incan_revolution.9.d
-	flavor = ely_incan_revolution.9.f
-
-	duration = 3
-
-	event_image = {
-		video = "votp_agitator_speaking"
-	}
-
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
-	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
-
-	trigger = {
-	}
-
-	immediate = {
-		c:INC = {
-			trigger_event = { id = ely_incan_revolution.10 days = 10}	
-		}
-	}
-	option = {
-		name = ely_incan_revolution.9.a
-		ai_chance = {
-			base = 50
-		}
-		default_option = yes
-		add_modifier = {
-			name = incan_tax_reforms
-			months = normal_modifier_time
-			is_decaying = yes
-		}
-		add_loyalists = {
-			value = very_large_radicals
-			strata = rich
-		}
-		add_loyalists = {
-			value = very_large_radicals
-			strata = middle
-		}
-		add_radicals = {
-			value = very_large_radicals
-			strata = poor
-		}
-		activate_law = law_type:law_per_capita_based_taxation
-	}
-	option = {
-		name = ely_incan_revolution.9.b
-		ai_chance = {
-			base = 50
-		}
-		add_modifier = {
-			name = incan_tax_reforms
-			months = long_modifier_time
-			is_decaying = yes
-		}
-		add_loyalists = {
-			value = very_large_radicals
-			strata = middle
-		}
-		add_loyalists = {
-			value = very_large_radicals
-			strata = poor
-		}
-		add_radicals = {
-			value = very_large_radicals
-			strata = rich
-		}
-		activate_law = law_type:law_proportional_taxation
-	}
-}	
-
-ely_incan_revolution.10 = {
-	type = country_event
-	placement = root
-	title = ely_incan_revolution.10.t
-	desc = ely_incan_revolution.10.d
-	flavor = ely_incan_revolution.10.f
-
-	duration = 3
-
-	event_image = {
-		video = "votp_agitator_speaking"
-	}
-
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
-	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
-
-	trigger = {
-	}
-
-	immediate = {
-		c:INC = {
-			trigger_event = { id = ely_incan_revolution.11 days = 10}	
-		}
-	}
-	option = {
-		name = ely_incan_revolution.10.a
-		ai_chance = {
-			base = 50
-		}
-		add_modifier = {
-			name = incan_diplomatic_reforms
-			months = long_modifier_time
-			is_decaying = yes
-		}
-		add_loyalists = {
-			value = very_large_radicals
-			strata = rich
-		}
-		add_loyalists = {
-			value = very_large_radicals
-			strata = middle
-		}
-		add_radicals = {
-			value = very_large_radicals
-			strata = poor
-		}
-		activate_law = law_type:law_free_trade
-	}
-	option = {
-		name = ely_incan_revolution.10.b
-		ai_chance = {
-			base = 50
-		}
-		default_option = yes
-		add_modifier = {
-			name = incan_diplomatic_reforms
-			months = normal_modifier_time
-			is_decaying = yes
-		}
-		add_loyalists = {
-			value = very_large_radicals
-			strata = middle
-		}
-		add_loyalists = {
-			value = very_large_radicals
-			strata = poor
-		}
-		add_radicals = {
-			value = very_large_radicals
-			strata = rich
-		}
-		activate_law = law_type:law_protectionism
-	}
-}	
-
-ely_incan_revolution.11 = {
-	type = country_event
-	placement = root
-	title = ely_incan_revolution.11.t
-	desc = ely_incan_revolution.11.d
-	flavor = ely_incan_revolution.11.f
-
-	duration = 3
-
-	event_image = {
-		video = "votp_agitator_speaking"
-	}
-
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
-	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
-
-	trigger = {
-	}
-
-	immediate = {
-		c:INC = {
-			trigger_event = { id = ely_incan_revolution.12 days = 365 }	
-		}
-	}
-	option = {
-		name = ely_incan_revolution.11.a
-		ai_chance = {
-			base = 50
-		}
-		default_option = yes
-		add_loyalists = {
-			value = very_large_radicals
-			strata = rich
-		}
-		add_loyalists = {
-			value = very_large_radicals
-			strata = middle
-		}
-		add_radicals = {
-			value = very_large_radicals
-			strata = poor
-		}
-		activate_law = law_type:law_right_of_assembly
-	}
-	option = {
-		name = ely_incan_revolution.11.b
-		ai_chance = {
-			base = 50
-		}
-		add_loyalists = {
-			value = very_large_radicals
-			strata = middle
-		}
-		add_loyalists = {
-			value = very_large_radicals
-			strata = poor
-		}
-		add_radicals = {
-			value = very_large_radicals
-			strata = rich
-		}
-		activate_law = law_type:law_protected_speech
-	}
-}
-
-ely_incan_revolution.12 = {
-	type = country_event
-	placement = root
-	title = ely_incan_revolution.12.t
-	desc = ely_incan_revolution.12.d
-	flavor = ely_incan_revolution.12.f
-
-	duration = 3
-
-	event_image = {
-		video = "votp_agitator_speaking"
-	}
-
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
-	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
-
-	trigger = {
-	}
-
-	immediate = {
-		c:INC = {
+		c:TWT = {
 			set_secret_goal = {
-				country = c:ARG
+				country = c:PNS
 				secret_goal = conquer
 			}
 			set_secret_goal = {
@@ -1141,30 +104,37 @@ ely_incan_revolution.12 = {
 		}
 	}
 	option = {
-		name = ely_incan_revolution.12.a
+		name = ely_incan_war.1.a
 		ai_chance = {
-			base = 50
+			base = 2
 		}
 		add_loyalists = {
-			value = very_large_radicals
+			value = small_radicals
 			strata = middle
 		}
 		add_loyalists = {
-			value = very_large_radicals
+			value = small_radicals
 			strata = poor
 		}
-		add_loyalists = {
+		add_radicals = {
 			value = very_large_radicals
 			strata = rich
 		}
-		default_option = yes
-		c:INC = {
+		c:TWT = {
 			change_relations = {
 				country = c:ELY
 				value = -200
 			}
+			change_relations = {
+				country = c:JAP
+				value = -200
+			}
 			set_secret_goal = {
 				country = c:ELY
+				secret_goal = antagonize			
+			}
+			set_secret_goal = {
+				country = c:JAP
 				secret_goal = antagonize			
 			}
 			set_secret_goal = {
@@ -1176,155 +146,88 @@ ely_incan_revolution.12 = {
 				secret_goal = conquer
 			}
 			set_secret_goal = {
-				country = c:PAT
-				secret_goal = conquer
-			}
-			set_secret_goal = {
 				country = c:GRI
 				secret_goal = conquer
 			}
 		}
 		c:ELY = {
 			change_relations = {
-				country = c:INC
+				country = c:TWT
 				value = -200
 			}
 			set_secret_goal = {
-				country = c:INC
+				country = c:TWT
+				secret_goal = antagonize			
+			}
+		}
+		c:JAP = {
+			change_relations = {
+				country = c:TWT
+				value = -200
+			}
+			set_secret_goal = {
+				country = c:TWT
 				secret_goal = antagonize			
 			}
 		}
 	}
 	option = {
-		name = ely_incan_revolution.12.b
+		name = ely_incan_war.1.b
 		ai_chance = {
-			base = 50
+			base = 8
 		}
+		default_option = yes
+			add_journal_entry = { type = je_muiscan_transfer }
+			add_journal_entry = { type = je_wayuu_transfer }
 		add_radicals = {
-			value = very_large_radicals
+			value = small_radicals
 			strata = middle
 		}
 		add_radicals = {
-			value = very_large_radicals
+			value = small_radicals
 			strata = poor
 		}
-		add_radicals = {
+		add_loyalists = {
 			value = very_large_radicals
 			strata = rich
 		}
-		add_journal_entry = { type = je_muiscan_transfer }
-		add_journal_entry = { type = je_wayuu_transfer }
-		add_journal_entry = { type = je_guarani_expansion }
-		add_journal_entry = { type = je_patagonian_expansion }
-		c:INC = {
+		c:TWT = {
 			change_relations = {
 				country = c:ELY
-				value = 100
+				value = 20
+			}
+			change_relations = {
+				country = c:JAP
+				value = 20
 			}
 			set_secret_goal = {
 				country = c:ELY
+				secret_goal = befriend			
+			}
+			set_secret_goal = {
+				country = c:JAP
 				secret_goal = befriend			
 			}
 		}
 		c:ELY = {
 			change_relations = {
-				country = c:INC
-				value = 100
+				country = c:TWT
+				value = 20
 			}
 			set_secret_goal = {
-				country = c:INC
+				country = c:TWT
 				secret_goal = befriend			
 			}
 		}
-		c:ELY.power_bloc = {
-			add_leverage = { target = c:INC value = 1000 }
+		c:JAP = {
+			change_relations = {
+				country = c:TWT
+				value = 20
+			}
+			set_secret_goal = {
+				country = c:TWT
+				secret_goal = befriend			
+			}
 		}
 	}
 }		
-
-ely_incan_post_war.1 = {
-	type = country_event
-	placement = root
-	title = ely_incan_post_war.1.t
-	desc = ely_incan_post_war.1.d
-	flavor = ely_incan_post_war.1.f
-
-	event_image = {
-		video = "gfx/event_pictures/unspecific_military_parade.bk2"
-	}
-
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
-
-	icon = "gfx/interface/icons/event_icons/event_default.dds"
-
-	duration = 3
-
-	trigger = {
-	}
-
-	immediate = {		
-		every_scope_state = {
-			limit = {
-				owner = ROOT
-				has_variable = TWT_incorporated_state
-			}
-			set_state_type = incorporated
-		}
-	}
-
-    option = {
-		name = ely_incan_post_war.1.a
-		default_option = yes
-		add_journal_entry = { type = je_cultural_shift_incan }
-		add_journal_entry = { type = je_anti_ruler }
-		add_journal_entry = { type = je_andean_pathway }
-		add_journal_entry = { type = je_reform_mines }
-		add_journal_entry = { type = je_andean_farming }
-		add_journal_entry = { type = je_andean_ranching }
-		add_journal_entry = { type = je_sulfur_lead }
-		remove_modifier = incan_revolution_fervor	
-		trigger_event = { id = ely_incan_revolution.2 days = 10 }	
-	}
-}
-
-ely_incan_post_war.2 = {
-	type = country_event
-	placement = ROOT
-
-	title = ely_incan_post_war.1.t
-	desc = ely_incan_post_war.1.d
-	flavor = ely_incan_post_war.1.f
-
-	event_image = {
-		video = "gfx/event_pictures/unspecific_military_parade.bk2"
-	}
-
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
-
-	icon = "gfx/interface/icons/event_icons/event_default.dds"
-
-	duration = 3
-
-	trigger = {
-	}
-
-	immediate = {		
-		every_scope_state = {
-			limit = {
-				owner = ROOT
-				has_variable = INC_incorporated_state
-			}
-			set_state_type = incorporated
-		}
-	}
-
-    option = {
-		name = ely_incan_post_war.2.a
-		default_option = yes
-		add_journal_entry = { type = je_cultural_shift_incan }
-		add_journal_entry = { type = je_anti_ruler }
-		remove_modifier = incan_revolution_sickness		
-	}
-}

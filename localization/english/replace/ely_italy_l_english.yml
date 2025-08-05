@@ -1,0 +1,190 @@
+﻿l_english:
+
+ 
+# Italy Flavour
+Italy
+
+ TUS_FLAVOR_TEXT:0 "Tuscany prospered under French patronage, and the Medici have guided the duchy into the age of enlightenment with tolerance and refinement. But now exiles from Sardinia and Corsica—defeated revolutionaries fleeing Iberian wrath—find a haven in Florence. Irredentism stirs in the cafés, and republican whispers echo in the streets. Will the Medici embrace reform—or be swept away by the tide?"
+
+ PAP_FLAVOR_TEXT:0 "The Papal States remain a relic of a waning age—an anachronistic theocracy resisting the revolutionary winds that blow across Europe. The Pope’s authority over the countryside is eroding, and his spiritual relevance is questioned even in Rome. Besieged by republicanism, nationalism, and secularism alike, can the Holy Father preserve his dwindling temporal power?"
+
+ VEN_FLAVOR_TEXT:0 "Venice has known resurgence before. Cast out of the Balkans, the Serenissima clawed back Dalmatia and Aegean isles in the great crusade against the Ottomans. But the Doge’s ambition now draws ire, and global trade increasingly bypasses the Adriatic. As the eastern riches flow through empires beyond her grasp, can Venice remain a merchant queen—or is her splendor fated to fade?"
+
+ SIC_FLAVOR_TEXT:0 "Naples and Sicily endure under a reactionary monarchy, once loyal to the Habsburgs and now fiercely opposed to revolution. Though autonomy from Iberia was recently secured, the kingdom trembles beneath the surface. Enlightenment ideals seep in through smuggled texts and whispered words, and cracks are forming in the ancient order. Will Iberia reclaim its lost dominion—or will the people rise first?"
+
+
+#Journals
+journals
+
+ je_ita_spread_radicals_ven:0 "Kindle the Flame in Venice"
+ je_ita_spread_radicals_ven_reason:0 "The Venetian oligarchy teeters atop decaying wealth and bitter citizens. Our revolutionaries whisper in alleys and shout from soapboxes — with effort, the Lion of Saint Mark may roar in defiance of tyranny once again."
+
+ je_ita_annex_radicals_ven:0 "Revolution Unites Venice"
+ je_ita_annex_radicals_ven_reason:0 "With their ruling elites cast down and radical councils in power, Venice stands ready to join our revolutionary Republic — not by conquest, but by shared conviction."
+
+ je_risorgimento_italian_radicals_button_ven:0 "Agitate in Venice"
+ je_risorgimento_italian_radicals_button_ven_desc:0 "Send envoys, agitators, and printed manifestos to Venice to stir unrest and spread the ideals of the Roman Republic."
+
+ venrad_cooldown_year_tt:0 "You may only spread the revolution to Venice once per year."
+
+ je_ita_spread_radicals_tus:0 "Kindle the Flame in Tuscany"
+ je_ita_spread_radicals_tus_reason:0 "Though it cloaks itself in enlightenment, Tuscany’s liberalism is a velvet glove on an iron hand. Let us show its people what true liberty looks like."
+
+ je_ita_annex_radicals_tus:0 "Revolution Unites Tuscany"
+ je_ita_annex_radicals_tus_reason:0 "Tuscany’s radicals have thrown open the gates. Their people demand union with Rome, not out of fear — but solidarity."
+
+ je_risorgimento_italian_radicals_button_tus:0 "Agitate in Tuscany"
+ je_risorgimento_italian_radicals_button_tus_desc:0 "Deploy revolutionary organizers and pamphleteers to stir the people of Tuscany into rebellion and prepare them for integration into the Roman Republic."
+
+ tusrad_cooldown_year_tt:0 "You may only spread the revolution to Tuscany once per year."
+ 
+ north_italian_radicals_cooldown_tt:0 "You may only fan the flames of revolution once per year. "
+
+ je_risorgimento:0 "Risorgimento"
+ je_risorgimento_reason:0 "The dream of a united Italy stirs in every province, from the Venetian lagoons to the Neapolitan hills. Long divided by foreign crowns and ancient rivalries, the Italian peoples yearn for a common banner. Whether born of idealism, nationalism, or ambition, the Risorgimento—the 'resurgence'—has begun."
+
+ je_risorgimento_idea:0 "The Idea of Italy"
+ je_risorgimento_idea_reason:0 "A shared language, a shared culture, a shared destiny. Though fractured, the Italian peoples carry the memory of Rome, the spirit of the Renaissance, and the desire for unity. Can this dream be forged into reality?"
+
+ je_risorgimento_idea_pap:0 "The Future of Rome"
+ je_risorgimento_idea_pap_reason:0 "The Papal States teeter on the edge—between divine rule and republican fervor. Rome is no stranger to rebirth, but whether its next incarnation will wear a crown or a laurel remains uncertain. A decision must be made: uphold the Holy Father’s temporal power, or raise the banners of revolution once more."
+ 
+ je_ita_conquer_nap:0 "The Conquest of Sicily"
+ je_ita_conquer_nap_reason:0 "With the northern states awakened to the revolutionary spirit, the Noronha regime in Naples remains the final bastion of reaction on the peninsula. The time has come to march south, sweep away the royalist rot, and raise the tricolor of the Republic over Sicily and beyond."
+
+ je_kick_spain_out_ita:0 "End Iberian Domination"
+ je_kick_spain_out_ita_reason:0 "From Corsica to Malta, the shadow of Iberian imperialism clings to the Italian isles. The Republic must liberate every last vestige of the peninsula and cast out the foreign occupier, once and for all."
+
+ je_cultural_shift_ita:0 "The Greater Italian Identity"
+ je_cultural_shift_ita_reason:0 "Though our banners now fly over a unified peninsula, our people remain divided by dialects, loyalties, and memories of disunion. To forge a true nation, we must begin shaping a new identity—one that transcends city and region and speaks to all Italians, wherever they may live."
+
+ 
+#Events
+events
+ 
+ italian_unification_idea.2.t:0 "The Dream of Italy"
+ italian_unification_idea.2.d:0 "For generations, Italy has been little more than a name—its people divided, its lands carved up by monarchs and merchants. Yet the idea persists. It whispers in the halls of universities and the factories of Milan, in the fields of Lombardy and the piazzas of Florence. A single, united Italy. The time may have come to give that idea flesh."
+ italian_unification_idea.2.f:0 "We are no longer content to be Venetians, Neapolitans, or Tuscans alone. We are Italians—and Italy awaits her birth."
+ italian_unification_idea.2.a:0 "Let the Risorgimento begin."
+
+ italian_unification_idea.3.t:0 "The Italian Question"
+ italian_unification_idea.3.d:0 "The Eternal City trembles. Beneath the chants of prayer rise calls for liberty. Within the Papal Court, dissent brews; beyond its gates, revolution looms. The Risorgimento has reached Rome—not as an abstract ideal, but as a question of power, of sovereignty, and of the soul of Italy itself. Shall the Pope remain a temporal ruler, or shall the Roman Republic rise anew?"
+ italian_unification_idea.3.f:0 "The keys of St. Peter or the banners of Mazzini—Rome cannot hold both."
+ italian_unification_idea.3.a:0 "We stand with the Holy Father."
+ italian_unification_idea.3.b:0 "We proclaim the Roman Republic!"
+
+ italian_unification_idea.1.t:0 "The Flame Spreads"
+ italian_unification_idea.1.d:0 "The Roman Republic stands not merely as a rebellion, but as a declaration: that the old order must fall. From Umbria to Campania, revolutionaries rally to the tricolor, calling for an end to monarchy and the birth of a new Italy—free, united, and secular. Yet the road ahead is steep, and enemies are many."
+ italian_unification_idea.1.f:0 "We carry the torch of liberty across the peninsula. Let every palace tremble."
+ italian_unification_idea.1.a:0 "We will bring the republic to all of Italy."
+ 
+ ely_italian_unification.1.t:0 "The Republic Inherits the Sea"
+ ely_italian_unification.1.d:0 "With Venice in our fold, we inherit more than land — we inherit ancient trade networks, shipwrights, and mercantile cunning. The Republic now walks on water as well as marble."
+ ely_italian_unification.1.f:0 "From Adriatic galleys to global ports, Venetian acumen now serves the Revolution."
+ ely_italian_unification.1.a:0 "The sea shall be red with our banners"
+
+ ely_italian_unification.2.t:0 "The Mind Joins the Fist"
+ ely_italian_unification.2.d:0 "Tuscany brings us artists, thinkers, scientists — and the legacy of Renaissance rebellion against ignorance. Rome now bears the torch of knowledge as well as revolution."
+ ely_italian_unification.2.f:0 "With Tuscany, we wield not just swords and slogans, but reason itself."
+ ely_italian_unification.2.a:0 "Reason is revolution's sharpest weapon"
+
+ 
+ ely_italian_unification.4.t:0 "The Lagoon Rises Red"
+ ely_italian_unification.4.d:0 "Venice has thrown off its decadent oligarchs. In the Piazza San Marco, the red flag of the Republic now flutters above the old lion. Crowds chant in union: Rome! Rome! Rome!"
+ ely_italian_unification.4.f:0 "From stagnant canals to burning ballot halls, Venice has cast off her chains."
+ ely_italian_unification.4.a:0 "One step closer to Italy"
+
+ ely_italian_unification.5.t:0 "The Florentine Flame"
+ ely_italian_unification.5.d:0 "Tuscany has followed the path of revolution. From Florence to Turin, radical councils have taken power, calling for unification with Rome. The Enlightenment bears its fruit at last."
+ ely_italian_unification.5.f:0 "The dreams of Galileo, Dante, and Machiavelli now walk hand in hand with the revolution."
+ ely_italian_unification.5.a:0 "One step closer to Italy"
+
+ ely_italian_unification.3.t:0 "The Republic Stirs the North"
+ ely_italian_unification.3.d:0 "Roman agitators have infiltrated our cities. Pamphlets multiply like vermin, speeches rally the restless, and the spirit of revolution spreads like fire through dry brush."
+ ely_italian_unification.3.f:0 "We had hoped the Corsican poison was contained. We were wrong."
+ ely_italian_unification.3.a:0 "Curses"
+
+ ely_venice_humiliation.1.t:0 "Humiliation in the East"
+ ely_venice_humiliation.1.d:0 "The war against the Orthodox League has ended in disaster. Venetian forces were routed, our Balkan holdings lost, and the old oligarchs have once again proven themselves incapable of adapting to the new world. Discontent brews in the streets of Venezia as whispers of republicanism grow louder."
+ ely_venice_humiliation.1.f:0 "“They have traded away our birthright and sent our sons to die for pride. Venice deserves better.”"
+ ely_venice_humiliation.1.a:0 "The foundations begin to crack."
+ 
+ ely_italian_war.1.t:0 "Strike at Naples"
+ ely_italian_war.1.d:0 "With France’s turn toward a Frankish identity sparking revolt in Occitania, Iberia and its Neapolitan allies are embroiled in a foreign war. Their eyes are turned westward—and now, with our banners raised and the people behind us, the road to Naples lies open."
+ ely_italian_war.1.f:0 "The south has long been a nest of kings and cardinals—let the thunder of revolution shake it to its foundations."
+ ely_italian_war.1.a:0 "Forward, for the Republic!"
+ ely_italian_war.1.b:0 "Not yet. Let them bleed themselves dry first."
+ 
+ ely_italian_unification.6.t:0 "The Legacy of Naples"
+ ely_italian_unification.6.d:0 "With the fall of the Noronha and the triumphant arrival of Republican forces, Naples now joins the cause of national rebirth. The south, long divided by feudal traditions and foreign puppeteers, must now be remade. The old must die for the new Italy to live."
+ ely_italian_unification.6.f:0 "From the narrow alleys of Palermo to the crumbling palaces of Naples, the people chant a new name: Italia."
+ ely_italian_unification.6.a:0 "A free south, at last."
+ 
+ ely_italian_war.2.t:0 "The End of Iberian Influence"
+ ely_italian_war.2.d:0 "With the liberation of Corsica, Sardinia, and Malta, Iberia’s centuries-long hold over Italian soil has finally been broken. No longer will foreign crowns dictate the fate of our islands. A new chapter begins—written by Italians, for Italians."
+ ely_italian_war.2.f:0 "Iberia came with fire and cross—but it leaves in silence, its dominion shattered."
+ ely_italian_war.2.a:0 "Italy is whole again."
+
+ ely_italian_flavour.1.t:0 "The Last Merchant Republic"
+ ely_italian_flavour.1.d:0 "Venice stands as a proud remnant of a once-glorious maritime empire. Though the age of spice routes and Mediterranean trade has long passed, the Republic has clawed back some prestige in recent years, humbling Austria and reclaiming Istria in a display of military resilience. Yet the wealth that once poured through its canals now flows elsewhere, and the Doge's hold on the Balkans grows tenuous with every passing year. Surrounded by rising ideologies and declining relevance, Venice must choose, ossify as a fading oligarchy, or reform and reassert its legacy on modern terms."
+ ely_italian_flavour.1.f:0 "The Rialto still echoes with the steps of merchants, but they now trade in memories more than gold. The Serenissima may be old—but she has not yet fallen."
+ ely_italian_flavour.1.a:0 "Venice endures, for now."
+
+ ely_italian_flavour.2.t:0 "The Enlightened Beacon"
+ ely_italian_flavour.2.d:0 "Tuscany is a land of scholars, reformers, and exiles—a rare light of tolerance and rationalism in a peninsula marred by division. Once allied closely with the Bourbons French, the Grand Duchy expanded into Emilia and Piedmont under a banner of liberal modernization. But now, abandoned by its northern patron and beset by growing instability, Tuscany walks a delicate line between hope and chaos. Revolutionary Corsican and Sardinian exiles find sanctuary here, their ideals taking root in fertile intellectual soil. Will Tuscany lead a renaissance of republicanism—or be consumed by the very fire it shelters?"
+ ely_italian_flavour.2.f:0 "In the cafés of Florence and the salons of Turin, the old order is debated and dismantled with words—for now."
+ ely_italian_flavour.2.a:0 "A fragile light shines from Florence."
+
+ ely_italian_flavour.3.t:0 "The Throne and the Sword"
+ ely_italian_flavour.3.d:0 "Freed from the Iberian leash but not its influence, the Kingdom of the Two Sicilies stands proud and reactionary. A loyal ally of monarchs and tradition, Naples harbors grand ambitions: unification of the peninsula under Noronha order, and perhaps dominion across the sea. Yet its independence is new, and its strength untested. Surrounded by republicans, radicals, and reformers, Naples girds itself in iron and faith, convinced that order can only be forged by sword and sceptre."
+ ely_italian_flavour.3.f:0 "From Palermo to Bari, the king’s banners fly high—but for how long will they command loyalty in a world increasingly contemptuous of crowns?"
+ ely_italian_flavour.3.a:0 "The kingdom stands ready to strike."
+
+ ely_italian_flavour.4.t:0 "Twilight of the Theocracy"
+ ely_italian_flavour.4.d:0 "The Papal States are besieged—not by armies, but by time itself. In Rome, the old rites continue as they always have, but beyond the city walls, the world is shifting. The revolution crushed in Corsica did not die; it fled, and now whispers through the streets of Lazio. Iberia may have offered aid in crushing radicalism, but even divine favor cannot hold back the tide forever. Theocracy teeters at the edge of revolution. The next conclave may not be held by cardinals."
+ ely_italian_flavour.4.f:0 "The bells of St. Peter's still ring—but the crowd below no longer bows. They listen, and wait, and plan."
+ ely_italian_flavour.4.a:0 "The Holy Father rules—for now."
+ 
+ unification_culture.3.t:0 "The Greater Italian Identity"
+ unification_culture.3.d:0 "The war is won—but the soul of Italy remains unformed. From the Venetian merchant to the Neapolitan peasant, from the Roman student to the Sardinian shepherd, all must come to see themselves not just as citizens of their regions, but as Italians. A new cultural project begins: one tongue, one history, one future."
+ unification_culture.3.f:0 "“The Fatherland is not merely a place—it is an idea. Let us give it life.”"
+ unification_culture.3.a:0 "We shall teach them what it means to be Italian."
+
+ 
+#Country Flavour
+
+culture
+
+ italian:0 "Italian"
+
+modifiers
+
+ italian_revolution:0 "Italian Revolutionary Movement"
+ italian_revolution_desc:0 "A radical political awakening is spreading across the peninsula, igniting dreams of liberty, unity, and the downfall of the old order."
+
+ tuscan_enlightenment:0 "Tuscany's Enlightenment Legacy"
+ tuscan_enlightenment_desc:0 "Tuscany’s proud history of rational thought, reformist governance, and artistic renaissance has become a wellspring for revolutionary ideology."
+
+ venician_trade_legacy:0 "Venetian Trade Legacy"
+ venician_trade_legacy_desc:0 "Though diminished, Venice still carries the prestige of its merchant empire and its centuries-old dominance over trade in the Adriatic and beyond."
+
+ italian_revolution_fervour:0 "Revolutionary Zeal"
+ italian_revolution_fervour_desc:0 "The fires of revolution burn bright. Citizens rally behind the cause of a united, free, and republican Italy."
+
+ italian_irredentia:0 "Italian Irredentism"
+ italian_irredentia_desc:0 "The dream of reclaiming all Italian lands drives both politicians and patriots, fueling agitation against foreign occupiers."
+
+ echoes_of_revolution:0 "Echoes of Revolution"
+ echoes_of_revolution_desc:0 "Even in areas not yet liberated, the revolutionary message resounds—spreading fear among tyrants and hope among the people."
+
+ napolitan_legacy:0 "Neapolitan Legacy"
+ napolitan_legacy_desc:0 "The fertile lands of the South and the proud traditions of its people remain a foundation of our strength. From the grain fields of Apulia to the sulfur mines of Sicily, this legacy endures—even as new banners rise."
+
+ 
+#Names
+Names
+
+
+ taranto_y_noronha: "Noronha-Taranto" 
+ sicilia_y_noronha: "Noronha di Sicilia" 
+ medici_ottajano: "Casa Medici-Ottajano" 

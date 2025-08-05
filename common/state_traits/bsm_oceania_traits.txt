@@ -6,3 +6,291 @@
 		building_group_bg_plantations_throughput_add = 0.2
 	}
 }
+
+state_trait_new_caledonian_nickel = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_lead_mine_throughput_add = 0.1
+	}
+}
+
+state_trait_volcanic_soil = {
+    icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+	
+	modifier = {
+		building_group_bg_agriculture_throughput_add = 0.2
+		building_group_bg_plantations_throughput_add = 0.2
+	}
+}
+
+state_trait_great_dividing_range = {
+	icon = "gfx/interface/icons/state_trait_icons/mountain.dds"
+	
+	modifier = {
+		state_construction_mult = -0.05
+		state_infrastructure_mult = -0.05
+		building_group_bg_mining_throughput_add = 0.05
+		state_market_access_price_impact = -0.05
+	}
+}
+
+state_trait_hawaii_sandalwood_forests = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_lumber.dds"
+
+	modifier = {
+		goods_output_hardwood_mult = 0.25
+	}
+}
+
+state_trait_australian_desert = {
+    icon = "gfx/interface/icons/state_trait_icons/dry_climate.dds"
+		   
+	modifier = {
+        building_group_bg_ranching_throughput_add = -0.1
+		building_group_bg_agriculture_throughput_add = -0.2
+		building_group_bg_plantations_throughput_add = -0.2
+		state_construction_mult = -0.25
+		state_infrastructure_mult = -0.25
+    }
+}
+
+state_trait_tasmanian_rainforest = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_lumber.dds"
+
+	modifier = {
+		goods_output_hardwood_mult = 0.2
+		state_infrastructure_add = -5
+	}
+}
+
+state_trait_murray_darling_basin = {
+    icon = "gfx/interface/icons/state_trait_icons/river.dds"
+
+	modifier = {
+        building_group_bg_ranching_throughput_add = 0.1
+		building_group_bg_agriculture_throughput_add = 0.1
+		building_group_bg_plantations_throughput_add = 0.1
+    }
+}
+
+state_trait_copper_coast = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+
+	modifier = {
+		building_lead_mine_throughput_add = 0.1
+		building_iron_mine_throughput_add = 0.1
+	}
+}
+
+state_trait_Murray_River = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+		state_infrastructure_mult = 0.05
+		building_group_bg_ranching_throughput_add = 0.05
+		state_market_access_price_impact = 0.05
+		goods_output_electricity_mult = 0.1
+	}
+}
+
+state_trait_Port_Jackson = {
+	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
+	
+	modifier = {
+		building_shipyards_throughput_add = 0.1
+		building_military_shipyards_throughput_add = 0.1
+		state_trade_capacity_mult = 0.15
+		building_port_throughput_add = 0.1
+		state_building_naval_base_max_level_add = 10
+	}
+}
+
+state_trait_port_darwin = {
+	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
+	
+	modifier = {
+		state_trade_capacity_mult = 0.1
+		building_shipyards_throughput_add = 0.1
+		building_military_shipyards_throughput_add = 0.1
+		building_port_throughput_add = 0.1
+		state_building_naval_base_max_level_add = 15
+	}
+}
+
+state_trait_Sydney_Basin_Coalfield = {
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_coal_mine_throughput_add = 0.1
+	}
+}
+
+state_trait_port_melbourne = {
+	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
+	
+	modifier = {
+		state_trade_capacity_mult = 0.2
+		building_shipyards_throughput_add = 0.1
+		building_military_shipyards_throughput_add = 0.1
+		building_port_throughput_add = 0.1
+		state_building_naval_base_max_level_add = 10
+		building_port_throughput_add = 0.05
+	}
+}
+
+state_trait_Bowen_Basin_Coalfield = {
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_coal_mine_throughput_add = 0.1
+	}
+}
+
+state_trait_Pilbara = {
+	icon = "gfx/interface/icons/state_trait_icons/poor_soils.dds"
+
+	modifier = {
+		building_group_bg_ranching_throughput_add = 0.1
+		building_group_bg_mining_throughput_add = 0.1
+		building_group_bg_agriculture_throughput_add = -0.1
+		building_group_bg_plantations_throughput_add = -0.1
+		state_infrastructure_mult = -0.1
+	}
+}
+
+state_trait_vertosols = { 
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+
+	modifier = {
+		building_group_bg_agriculture_throughput_add = 0.1
+	}
+}
+
+state_trait_canterbury_plains = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_grazing.dds"
+
+	modifier = {
+		building_group_bg_agriculture_throughput_add = 0.15	
+		building_group_bg_ranching_throughput_add = 0.15
+		building_group_bg_plantations_throughput_add = 0.15
+	}
+}
+
+state_trait_wairakei = {
+	icon = "gfx/interface/icons/state_trait_icons/unused/disaster_zone.dds"
+	
+	modifier = {
+		goods_output_electricity_mult = 0.15
+	}
+}
+
+state_trait_tas_oak = {  
+	icon = "gfx/interface/icons/state_trait_icons/tasoak.dds"
+	
+	modifier = {
+		goods_output_hardwood_mult = 0.2
+		
+	}
+}
+
+state_trait_outback = { 
+	icon = "gfx/interface/icons/state_trait_icons/outback.dds"
+	
+	modifier = {
+		state_construction_mult = -0.075
+		state_infrastructure_mult = -0.125
+	}
+}
+
+state_trait_tamar_estuary = {
+	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
+	
+	modifier = {
+		building_group_bg_fishing_throughput_add = 0.05
+		building_port_throughput_add = 0.1
+		state_infrastructure_add = 10
+		state_trade_capacity_mult = 0.05
+	}
+}
+
+state_trait_swan_river = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+
+	modifier = {
+		state_infrastructure_add = 15
+		state_infrastructure_mult = 0.05
+		building_group_bg_ranching_throughput_add = 0.05
+		state_market_access_price_impact = 0.05
+		goods_output_electricity_mult = 0.1
+	}
+}
+
+state_trait_fremantle_harbour = {
+	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
+	
+	modifier = {
+		state_trade_capacity_mult = 0.1
+		building_port_throughput_add = 0.1
+		state_infrastructure_add = 15
+		state_building_naval_base_max_level_add = 15
+		building_shipyards_throughput_add = 0.15
+		building_military_shipyards_throughput_add = 0.15
+	}
+}
+
+state_trait_northland_kauri_forests = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_lumber.dds"
+	
+	modifier = {
+		building_group_bg_logging_throughput_add = 0.2
+	}
+}
+
+state_trait_waitemata_harbour = {
+	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
+	
+	modifier = {
+		building_shipyards_throughput_add = 0.1
+		building_military_shipyards_throughput_add = 0.1
+		building_port_throughput_add = 0.1
+		state_building_naval_base_max_level_add = 15
+		state_trade_capacity_mult = 0.15
+	}
+}
+
+state_trait_port_nicholson = {
+	icon = "gfx/interface/icons/state_trait_icons/fjords.dds"
+	
+	modifier = {
+		building_shipyards_throughput_add = 0.1
+		building_military_shipyards_throughput_add = 0.1
+		building_port_throughput_add = 0.1
+		state_trade_capacity_mult = 0.05
+		state_building_naval_base_max_level_add = 10
+	}
+}
+
+state_trait_pacific_phosphate = {
+    icon = "gfx/interface/icons/state_trait_icons/bat.dds"
+	
+	modifier = {
+		building_sulfur_mine_throughput_add = 0.2
+	}
+}
+
+state_trait_davao_gulf  = {
+	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
+	
+	modifier = {
+		building_group_bg_fishing_throughput_add = 0.1
+		building_shipyards_throughput_add = 0.1
+		building_military_shipyards_throughput_add = 0.1
+		building_port_throughput_add = 0.5
+		state_trade_capacity_mult = 0.15
+		state_infrastructure_mult = 0.1
+		state_building_naval_base_max_level_add = 10
+		state_market_access_price_impact = 0.05
+	}
+}

@@ -579,18 +579,6 @@ inca_glory.1 = {
 	}
 
 	immediate = {
-		add_journal_entry = {
-			type = je_reform_mines_2
-		}
-		add_journal_entry = {
-			type = je_andean_pathway_2
-		}
-		add_journal_entry = {
-			type = je_andean_farming_2
-		}
-		add_journal_entry = {
-			type = je_andean_ranching_2
-		}
 	}
 	
 	option = {
@@ -600,16 +588,31 @@ inca_glory.1 = {
 				name = ruler_of_andes
 				months = -1
 			}
-		s:STATE_TUCUMAN = {
-			add_homeland = cu:quechua
+		c:TWT = {
+			add_journal_entry = { type = je_reform_mines_2 }
+			add_journal_entry = { type = je_andean_pathway_2 }
+			add_journal_entry = { type = je_andean_farming_2 }
+			add_journal_entry = { type = je_andean_ranching_2 }
+			add_journal_entry = { type = je_cultural_shift_incan }
 		}
 		s:STATE_PATAGONIA = {
+			add_homeland = cu:aimara
 			add_homeland = cu:quechua
 		}
 		s:STATE_RIO_NEGRO = {
+			add_homeland = cu:aimara
 			add_homeland = cu:quechua
 		}
 		s:STATE_LA_PAMPA = {
+			add_homeland = cu:aimara
+			add_homeland = cu:quechua
+		}
+		s:STATE_LOS_RIOS = {
+			add_homeland = cu:aimara
+			add_homeland = cu:quechua
+		}
+		s:STATE_ARAUCANIA = {
+			add_homeland = cu:aimara
 			add_homeland = cu:quechua
 		}
 	}

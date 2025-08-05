@@ -2,28 +2,18 @@
 	c:JAP ?= {
 
 		create_character = {
-			template = jap_ienari_tokugawa_template
+			template = JAP_ninko_yamato
 		}
 
 		create_character = {
-			heir = yes
-			first_name = Ieyoshi
-			last_name = Oda
-			historical = yes
-			birth_date = 1793.6.22
-			interest_group = ig_armed_forces
-			ideology = ideology_jingoist_leader
-			traits = {
-				meticulous
-				pious
-				ambitious
-			}
+			template = JAP_komei_yamato
 		}
 
 		create_character = {
 			first_name = Heihachiro
 			last_name = Oshio
 			historical = yes
+			culture = primary_culture
 			birth_date = 1793.3.4
 			ig_leader = yes
 			interest_group = ig_devout
@@ -39,6 +29,7 @@
 			first_name = Koan
 			last_name = Ogata
 			historical = yes
+			culture = primary_culture
 			birth_date = 1810.8.13
 			ig_leader = yes
 			interest_group = ig_intelligentsia
@@ -53,6 +44,7 @@
 			first_name = Takachika
 			last_name = Mori
 			historical = yes
+			culture = primary_culture
 			birth_date = 1819.3.5
 			ig_leader = yes
 			interest_group = ig_landowners
@@ -66,10 +58,11 @@
 			first_name = Tadakuni
 			last_name = Mizuno
 			historical = yes
+			culture = primary_culture
 			birth_date = 1794.7.19
 			ig_leader = yes
 			interest_group = ig_armed_forces
-			ideology = ideology_jingoist_leader
+			ideology = ideology_traditionalist
 			traits = {
 				arrogant
 			}
@@ -80,6 +73,7 @@
 			first_name = Nariaki
 			last_name = Tokugawa
 			historical = yes
+			culture = primary_culture
 			birth_date = 1800.4.4
 			ig_leader = yes
 			interest_group = ig_petty_bourgeoisie
@@ -95,6 +89,7 @@
 			first_name = Hidetatsu
 			last_name = Egawa
 			historical = yes
+			culture = primary_culture
 			interest_group = ig_landowners
 			ideology = ideology_reformer
 			birth_date = 1801.6.23
@@ -110,6 +105,7 @@
 			first_name = Yozo
 			last_name = Torii
 			historical = yes
+			culture = primary_culture
 			interest_group = ig_landowners
 			ideology = ideology_traditionalist
 			birth_date = 1796.11.24

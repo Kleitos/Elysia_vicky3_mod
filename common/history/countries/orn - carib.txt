@@ -34,6 +34,11 @@
 			name = elysian_aligned
 			months = very_long_modifier_time
 		}
+		
+		add_modifier = {
+			name = elysian_client_state_mod
+            months = -1
+		}
 
 		ig:ig_armed_forces = {
 			add_ruling_interest_group = yes

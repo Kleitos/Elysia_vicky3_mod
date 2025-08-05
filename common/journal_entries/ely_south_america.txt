@@ -88,7 +88,6 @@ je_cultural_shift_incan = {
 	OR = { 
 		AND = {	
             is_ai = no
-				has_law = law_type:law_compulsory_primary_school
 				OR = {
 					has_law = law_type:law_religious_schools
 					has_law = law_type:law_private_schools
@@ -126,11 +125,9 @@ je_cultural_shift_muiscan = {
 	group = je_group_elysian_content
 
 	complete = {
-		country_has_primary_culture = cu:quechua
 		owns_entire_state_region = STATE_ANTIOQUIA
 		owns_entire_state_region = STATE_CUNDINAMARCA
 		owns_entire_state_region = STATE_CAUCA
-		has_law = law_type:law_compulsory_primary_school
 		OR = {
 			has_law = law_type:law_racial_segregation
 			has_law = law_type:law_cultural_exclusion
@@ -142,7 +139,7 @@ je_cultural_shift_muiscan = {
 		}
 		institution_investment_level = {
 			institution = institution_schools
-			value >= 3
+			value >= 1
 		}
 		institution_investment_level = {
 			institution = institution_police
@@ -160,46 +157,54 @@ je_cultural_shift_muiscan = {
 
 }
 
-je_guarani_expansion = {
-	icon = "gfx/interface/icons/event_icons/event_election.dds"
+je_incan_reforms = {
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
 
 	group = je_group_elysian_content
 
-	possible = {
-		NOT = { has_truce_with = c:ELY }
-	}
-
 	complete = {
-		country_rank >= rank_value:minor_power
 		has_technology_researched = nationalism
-		c:ELY = { relations:root >= relations_threshold:amicable }
-		c:GRI = { relations:root >= relations_threshold:amicable }
-		army_size >= 50
+		has_technology_researched = egalitarianism
 	}
 
 	on_complete = {
-		trigger_event = { id = ely_south_america_diplo.5 }
+		trigger_event = { id = ely_incan_reform.1 }
+		trigger_event = { id = ely_incan_war.1 days = 365 }
 	}
+
 }
 
-je_patagonian_expansion = {
-	icon = "gfx/interface/icons/event_icons/event_election.dds"
+je_anti_ruler = {
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
 
 	group = je_group_elysian_content
 
-	possible = {
-		NOT = { has_truce_with = c:ELY }
-	}
-
 	complete = {
-		country_rank >= rank_value:minor_power
-		has_technology_researched = nationalism
-		c:ELY = { relations:root >= relations_threshold:amicable }
-		c:PAT = { relations:root >= relations_threshold:amicable }
-		army_size >= 50
+		owns_entire_state_region = STATE_ARAUCANIA
+		owns_entire_state_region = STATE_TUCUMAN
+		owns_entire_state_region = STATE_JUJUY
+		owns_entire_state_region = STATE_ECUADOR
+		owns_entire_state_region = STATE_ZULIA
+		owns_entire_state_region = STATE_ANTIOQUIA
+		owns_entire_state_region = STATE_CUNDINAMARCA
+		owns_entire_state_region = STATE_PATAGONIA
+		owns_entire_state_region = STATE_RIO_NEGRO
+		owns_entire_state_region = STATE_CAUCA
+		owns_entire_state_region = STATE_TARAPACA
+		owns_entire_state_region = STATE_ANTOFAGASTA
+		owns_entire_state_region = STATE_LA_PAZ
+		owns_entire_state_region = STATE_POTOSI
+		owns_entire_state_region = STATE_CAJAMARCA
+		owns_entire_state_region = STATE_LIMA
+		owns_entire_state_region = STATE_ICA
+		owns_entire_state_region = STATE_AREQUIPA
+		owns_entire_state_region = STATE_SANTIAGO
+		owns_entire_state_region = STATE_LOS_RIOS
+		owns_entire_state_region = STATE_LA_PAMPA
+		
 	}
 
 	on_complete = {
-		trigger_event = { id = ely_south_america_diplo.6 }
+		trigger_event = { id = inca_glory.1 }
 	}
 }

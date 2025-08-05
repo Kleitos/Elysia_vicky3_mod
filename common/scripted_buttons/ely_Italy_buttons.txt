@@ -1,0 +1,72 @@
+﻿
+je_risorgimento_italian_radicals_button_ven = {
+	name = "je_risorgimento_italian_radicals_button_ven"
+	desc = "je_risorgimento_italian_radicals_button_ven_desc"
+	
+	cooldown = { days = 365 }
+
+	possible = {
+			NOT = {
+				custom_tooltip = {
+					text = north_italian_radicals_cooldown_tt
+					has_variable = venrad_cooldown_var
+				}
+			}
+	}
+
+	ai_chance = {
+		value = 100
+	}
+
+	effect = {
+		ROOT = {
+			save_scope_as = saboteur_country
+		}
+		c:VEN ?= {
+			trigger_event = { id = ely_italian_unification.3 popup = yes }
+			save_scope_as = victim_country
+		}
+			post_notification = sabotage_decision_agitation_occurred
+			
+		scope:journal_entry = {
+			custom_tooltip = venrad_cooldown_year_tt
+			set_variable = { name = venrad_cooldown_var years = 1 }
+		}
+	}
+}
+
+je_risorgimento_italian_radicals_button_tus = {
+	name = "je_risorgimento_italian_radicals_button_tus"
+	desc = "je_risorgimento_italian_radicals_button_tus_desc"
+	
+	cooldown = { days = 365 }
+
+	possible = {
+			NOT = {
+				custom_tooltip = {
+					text = north_italian_radicals_cooldown_tt
+					has_variable = tusrad_cooldown_var
+				}
+			}
+	}
+
+	ai_chance = {
+		value = 100
+	}
+
+	effect = {
+		ROOT = {
+			save_scope_as = saboteur_country
+		}
+		c:TUS ?= {
+			trigger_event = { id = ely_italian_unification.3 popup = yes }
+			save_scope_as = victim_country
+		}
+			post_notification = sabotage_decision_agitation_occurred
+			
+		scope:journal_entry = {
+			custom_tooltip = tusrad_cooldown_year_tt
+			set_variable = { name = tusrad_cooldown_var years = 1 }
+		}
+	}
+}

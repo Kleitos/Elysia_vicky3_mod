@@ -602,7 +602,7 @@ somali={
 
 sudanese={
 	color= rgb{ 162 77 104 }
-	religion = sunni
+	religion = oriental_orthodox
 	traits = { semite arab_speaking east_african_culture_group african_heritage }
 
     obsessions = {

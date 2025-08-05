@@ -1,0 +1,102 @@
+﻿
+
+fra_national_construction = {
+	icon = gfx/interface/icons/timed_modifier_icons/establish_colony_positive.dds
+	state_construction_mult = 0.5
+}
+
+last_troubadour_king = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	character_popularity_add = 100
+	country_legitimacy_base_add = 25
+	country_authority_mult = 0.15
+	country_influence_mult = 0.1
+}
+
+won_occitan_revolt = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	country_prestige_add = 50
+	country_authority_mult = 0.15
+	country_legitimacy_base_add = 25
+}
+
+lost_occitan_revolt = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	country_prestige_add = -50
+	country_authority_mult = -0.15
+	country_legitimacy_base_add = -15
+}
+
+franko_german_wedding_mod= {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	character_popularity_add = 100
+	country_legitimacy_base_add = 25
+	country_authority_mult = 0.15
+	country_influence_mult = 0.1
+}
+
+austrian_army_collapse = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
+	
+	unit_offense_mult = -1
+	unit_defense_mult = -1
+	unit_morale_loss_mult = 1
+	unit_recovery_rate_add = -1
+	state_conscription_rate_mult = -1
+}
+
+french_colonization = {
+	icon = gfx/interface/icons/timed_modifier_icons/establish_colony_positive.dds
+	state_colony_growth_speed_mult = 0.5
+}
+
+french_settlements = {
+	icon = gfx/interface/icons/timed_modifier_icons/establish_colony_positive.dds
+	state_birth_rate_mult = 0.05
+	state_assimilation_mult = 0.5	
+	state_migration_pull_mult = 0.02
+	state_catholic_standard_of_living_add = 3
+	state_protestant_standard_of_living_add = 3
+}
+
+french_conversion = {
+	icon = gfx/interface/icons/timed_modifier_icons/establish_colony_positive.dds
+	state_birth_rate_mult = 0.05
+	state_assimilation_mult = 0.5	
+	state_migration_pull_mult = 0.02
+	state_catholic_standard_of_living_add = 3
+	state_protestant_standard_of_living_add = 3
+}
+
+hansa_buyout = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 4000
+}
+
+
+hansa_buyout = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 2000
+}
+
+schleswig_holstein_compromise_bav = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 4000
+}
+
+schleswig_holstein_compromise_den = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
+	country_tax_income_add = 4000
+}
+
+hansa_legacy = {
+	icon = gfx/interface/icons/timed_modifier_icons/landed_voting_positive.dds
+	country_max_companies_add = 2
+	country_free_charters_add = 4
+}
+
+dutch_economy = {
+	icon = gfx/interface/icons/timed_modifier_icons/landed_voting_positive.dds
+	country_max_companies_add = 2
+	country_free_charters_add = 4
+}

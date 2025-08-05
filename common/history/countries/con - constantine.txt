@@ -1,5 +1,5 @@
 ﻿COUNTRIES = {
-	c:CON = {
+	c:CON ?= {
 		effect_starting_technology_tier_4_tech = yes
 
 		activate_law = law_type:law_monarchy
@@ -14,11 +14,6 @@
 		
 		add_journal_entry = {
 			type = je_reconquest_of_algeria
-		}
-		
-		add_modifier = {
-			name = religious_fundamentalism
-			months = -1
 		}
 		set_variable = algeria_constantine_var
 	}

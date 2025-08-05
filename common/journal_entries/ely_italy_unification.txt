@@ -1,0 +1,215 @@
+﻿je_risorgimento = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		custom_tooltip = {
+			text = is_italy_tt
+			c:ITA ?= this
+		}
+
+	}
+
+	on_complete = {
+		show_as_tooltip = {
+			trigger_event = { id = italian_unification.1 popup = yes }
+		}
+	}
+
+	weight = 100
+
+	should_be_pinned_by_default = yes
+}
+
+je_risorgimento_idea = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		has_technology_researched = nationalism
+
+	}
+
+	on_complete = {
+			trigger_event = { id = italian_unification_idea.2 popup = yes }
+	}
+
+	weight = 100
+
+	should_be_pinned_by_default = yes
+}
+
+je_risorgimento_idea_pap = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		has_technology_researched = nationalism
+
+	}
+
+	on_complete = {
+		trigger_event = { id = italian_unification_idea.3 popup = yes }
+	}
+
+	weight = 100
+
+	should_be_pinned_by_default = yes
+}
+
+je_ita_spread_radicals_ven = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	group = je_group_elysian_content
+	
+	scripted_button = je_risorgimento_italian_radicals_button_ven
+
+	complete = {
+		owns_entire_state_region = STATE_VENETIA
+		owns_entire_state_region = STATE_ISTRIA
+		owns_entire_state_region = STATE_LOMBARDY
+
+	}
+
+	on_complete = {
+		trigger_event = { id = ely_italian_unification.1 popup = yes }
+	}
+
+	weight = 100
+
+	should_be_pinned_by_default = yes
+}
+
+je_ita_annex_radicals_ven = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		c:VEN ?= {
+ 		is_at_war = no
+			any_scope_state = {
+				state_region = {
+					is_homeland = cu:north_italian
+				}
+				radical_fraction = {
+					value >= 0.50
+					culture = cu:north_italian
+				}
+			}
+		}
+		
+
+	}
+
+	on_complete = {
+		trigger_event = { id = ely_italian_unification.4 popup = yes }
+	}
+
+	weight = 100
+
+	should_be_pinned_by_default = yes
+}
+
+je_ita_spread_radicals_tus = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	group = je_group_elysian_content
+	
+	scripted_button = je_risorgimento_italian_radicals_button_tus
+	
+	complete = {
+		owns_entire_state_region = STATE_PIEDMONT
+		owns_entire_state_region = STATE_EMILIA
+		owns_entire_state_region = STATE_TUSCANY
+
+	}
+
+	on_complete = {
+		trigger_event = { id = ely_italian_unification.2 popup = yes }
+	}
+
+	weight = 100
+
+	can_deactivate = yes
+
+	should_be_pinned_by_default = yes
+}
+
+je_ita_annex_radicals_tus = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		c:TUS ?= {
+ 		is_at_war = no
+			any_scope_state = {
+				state_region = {
+					is_homeland = cu:north_italian
+				}
+				radical_fraction = {
+					value >= 0.50
+					culture = cu:north_italian
+				}
+			}
+		}
+
+	}
+
+	on_complete = {
+		trigger_event = { id = ely_italian_unification.5 popup = yes }
+	}
+
+	weight = 100
+
+	should_be_pinned_by_default = yes
+}
+
+je_kick_spain_out_ita = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		owns_entire_state_region = STATE_SARDINIA
+		owns_entire_state_region = STATE_MALTA
+		owns_entire_state_region = STATE_CORSICA
+	}
+
+	on_complete = {
+		trigger_event = { id = ely_italian_war.2 popup = yes }
+	}
+
+	weight = 100
+
+	should_be_pinned_by_default = yes
+	
+}
+
+je_ita_conquer_nap = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	group = je_group_elysian_content
+	
+
+	complete = {
+		owns_entire_state_region = STATE_CAMPANIA
+		owns_entire_state_region = STATE_ABRUZZO
+		owns_entire_state_region = STATE_CALABRIA
+		owns_entire_state_region = STATE_APULIA
+		owns_entire_state_region = STATE_SICILY
+
+	}
+
+	on_complete = {
+		trigger_event = { id = ely_italian_unification.6 popup = yes }
+	}
+
+	weight = 100
+
+	should_be_pinned_by_default = yes
+}

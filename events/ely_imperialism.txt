@@ -1,0 +1,1344 @@
+﻿namespace = ely_imperialism
+namespace = ely_expansion
+
+ely_imperialism.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = ely_imperialism.1.t
+	desc = ely_imperialism.1.d
+	flavor = ely_imperialism.1.f
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+		c:ORN = {
+			remove_modifier = elysian_client_state_mod
+		}
+		c:WYU = {
+			remove_modifier = elysian_client_state_mod
+		}
+		c:MUI = {
+			remove_modifier = elysian_client_state_mod
+		}
+		c:PLY = {
+			remove_modifier = elysian_client_state_mod
+		}
+		c:TNG = {
+			remove_modifier = elysian_client_state_mod
+		}
+		c:FJI = {
+			remove_modifier = elysian_client_state_mod
+		}
+		c:FJI = { 
+			annex = c:KNK
+			annex = c:BLA
+			annex = c:HLA
+			annex = c:NRU
+			annex = c:VNT
+		}
+	}
+
+	option = {
+		name = ely_imperialism.1.a
+		default_option = yes
+		c:ELY = {
+			change_infamy = 25
+			add_journal_entry = { type = je_annex_HAW }
+			add_journal_entry = { type = je_annex_arkadia }
+			add_journal_entry = { type = je_annex_polynisia }
+			add_journal_entry = { type = je_annex_melanisia }
+			add_journal_entry = { type = je_reorganize_eireneic }
+			set_variable = { name = ely_imperial_started }
+		}
+		c:ORN = {
+			set_variable = { name = ely_imperial_target }
+		}
+		c:WYU = {
+			set_variable = { name = ely_imperial_target }
+		}
+		c:MUI = {
+			set_variable = { name = ely_imperial_target }
+		}
+		c:PLY = {
+			set_variable = { name = ely_imperial_target }
+		}
+		c:TNG = {
+			set_variable = { name = ely_imperial_target }
+		}
+		c:FJI = {
+			set_variable = { name = ely_imperial_target }
+		}
+		c:AOT = {
+			set_variable = { name = ely_imperial_target }
+		}
+		c:HAW = {
+			set_variable = { name = ely_imperial_target }
+		}
+
+	}
+
+	option = {
+		name = ely_imperialism.1.b
+	}
+}
+
+ely_imperialism.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = ely_imperialism.2.t
+	desc = ely_imperialism.2.d
+	flavor = ely_imperialism.2.f
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = ely_imperialism.2.a
+		default_option = yes
+	}
+}
+
+ely_imperialism.3 = {
+	type = country_event
+	placement = ROOT
+
+	title = ely_imperialism.3.t
+	desc = ely_imperialism.3.d
+	flavor = ely_imperialism.3.f
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/middleeast_jungle_expedition.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = { exists = c:AGJ }
+				exists = s:STATE_PARA.region_state:AMZ
+			}
+			create_country = {
+				tag = AGJ
+				origin = c:AMZ
+				state = s:STATE_PARA.region_state:AMZ
+			}
+		}
+		else_if = {
+			limit = {
+				exists = c:AGJ
+				exists = s:STATE_PARA.region_state:AMZ
+			}
+			s:STATE_PARA.region_state:AMZ = { set_state_owner = c:AGJ }
+		}
+		else_if = {
+			limit = {
+				NOT = { exists = c:AGJ }
+			}
+			random_country = {
+				limit = {
+					is_secessionist = yes
+					any_scope_state = {
+						state_region = s:STATE_PARA
+					}
+				}
+				change_tag = AGJ
+			}
+		}
+		c:AGJ = {
+			activate_law = law_type:law_presidential_republic
+			activate_law = law_type:law_universal_suffrage
+			activate_law = law_type:law_homesteading
+			activate_law = law_type:law_no_migration_controls
+			activate_law = law_type:law_cultural_exclusion
+			activate_law = law_type:law_freedom_of_conscience
+			activate_law = law_type:law_interventionism
+			}
+		c:AGJ = { 
+			annex = c:AMZ
+		}
+	}
+
+	option = {
+		name = ely_imperialism.3.a
+		c:ELY ?= {
+			add_journal_entry = { type = je_reorganize_arkadia }
+		}
+		s:STATE_PARA = {
+			add_claim = c:ELY
+		}
+		s:STATE_MARANHAO = {
+			add_claim = c:ELY
+		}
+		s:STATE_AMAZONAS = {
+			add_claim = c:ELY
+		}
+		s:STATE_GOIAS = {
+			add_claim = c:ELY
+		}
+		s:STATE_MATO_GROSSO = {
+			add_claim = c:ELY
+		}
+		s:STATE_RIO_GRANDE_DO_NORTE = {
+			add_claim = c:ELY
+		}
+		s:STATE_CEARA = {
+			add_claim = c:ELY
+		}
+		s:STATE_PIAUI = {
+			add_claim = c:ELY
+		}
+		s:STATE_PERNAMBUCO = {
+			add_claim = c:ELY
+		}
+		s:STATE_PARAIBA = {
+			add_claim = c:ELY
+		}
+	}
+
+	option = {
+		name = ely_imperialism.3.b
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}		
+		c:ELY ?= {
+			create_diplomatic_pact = {
+				country = c:AGJ
+				type = puppet
+			}
+			add_journal_entry = { type = je_reorganize_arkadia }
+		}
+		s:STATE_BAHIA = {
+			add_claim = c:AGJ
+		}
+		s:STATE_RIO_GRANDE_DO_NORTE = {
+			add_claim = c:AGJ
+		}
+		s:STATE_CEARA = {
+			add_claim = c:AGJ
+		}
+		s:STATE_PIAUI = {
+			add_claim = c:AGJ
+		}
+		s:STATE_PERNAMBUCO = {
+			add_claim = c:AGJ
+		}
+		s:STATE_PARAIBA = {
+			add_claim = c:AGJ
+		}
+		s:STATE_RIO_GRANDE_DO_SUL = {
+			add_claim = c:AGJ
+		}
+		s:STATE_SAO_PAULO = {
+			add_claim = c:AGJ
+		}
+		s:STATE_MINAS_GERAIS = {
+			add_claim = c:AGJ
+		}
+		s:STATE_RIO_DE_JANEIRO = {
+			add_claim = c:AGJ
+		}
+		
+	}
+}
+
+ely_imperialism.4 = {
+	type = country_event
+	placement = ROOT
+
+	title = ely_imperialism.4.t
+	desc = ely_imperialism.4.d
+	flavor = ely_imperialism.4.f
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = ely_imperialism.4.a
+		default_option = yes
+	}
+}
+
+ely_imperialism.5 = {
+	type = country_event
+	placement = ROOT
+
+	title = ely_imperialism.5.t
+	desc = ely_imperialism.5.d
+	flavor = ely_imperialism.5.f
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = ely_imperialism.5.a
+		default_option = yes
+		s:STATE_WESTERN_NEW_GUINEA = {
+			add_claim = c:ELY
+		}
+		s:STATE_EASTERN_NEW_GUINEA = {
+			add_claim = c:ELY
+		}
+	}
+}
+
+ely_imperialism.6 = {
+	type = country_event
+	placement = ROOT
+
+	title = ely_imperialism.6.t
+	desc = ely_imperialism.6.d
+	flavor = ely_imperialism.6.f
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = ely_imperialism.6.a
+		default_option = yes
+	}
+}
+
+ely_imperialism.7 = {
+	type = country_event
+	placement = ROOT
+
+	title = ely_imperialism.7.t
+	desc = ely_imperialism.7.d
+	flavor = ely_imperialism.7.f
+
+	duration = 3
+
+	event_image = {
+		video = "middleeast_jungle_expedition"
+	}
+	immediate = {
+		hidden_effect = {
+			s:STATE_GUAYANA = {
+				remove_homeland = cu:amazonian
+				remove_homeland = cu:cariban
+				add_homeland = cu:arkadian
+			}
+			s:STATE_ZULIA = {
+				remove_homeland = cu:guajiro
+				remove_homeland = cu:cariban
+				add_homeland = cu:arkadian
+			}
+			s:STATE_MIRANDA = {
+				remove_homeland = cu:cariban
+				remove_homeland = cu:amazonian
+				add_homeland = cu:arkadian
+			}
+			s:STATE_BOLIVAR = {
+				remove_homeland = cu:guajiro
+				remove_homeland = cu:cariban
+				add_homeland = cu:arkadian
+			}
+			s:STATE_PARANA = {
+				remove_homeland = cu:brazilian
+				add_homeland = cu:afro_brazilian
+			}
+			s:STATE_SANTA_CATARINA = {
+				remove_homeland = cu:brazilian
+				add_homeland = cu:afro_brazilian
+			}
+			s:STATE_SAO_PAULO = {
+				remove_homeland = cu:brazilian
+			}
+			s:STATE_MINAS_GERAIS = {
+				remove_homeland = cu:brazilian
+			}
+			s:STATE_RIO_DE_JANEIRO = {
+				remove_homeland = cu:brazilian
+			}
+			s:STATE_CORRIENTES = {
+				remove_homeland = cu:brazilian
+			}
+			s:STATE_BAHIA = {
+				remove_homeland = cu:brazilian
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:cariban }
+					change_pop_culture = { target = cu:arkadian value = 1 }
+				}
+			}
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:guajiro }
+					change_pop_culture = { target = cu:arkadian value = 1 }
+				}
+			}
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:amazonian }
+					change_pop_culture = { target = cu:arkadian value = 1 }
+				}
+			}
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:tupinamba }
+					change_pop_culture = { target = cu:arkadian value = 1 }
+				}
+			}
+		}
+	}
+
+	option = {
+		name = ely_imperialism.7.a
+		c:ELY = {
+			change_relations = {
+				country = c:AGJ
+				value = -100
+			}	
+			change_infamy = 25
+			trigger_event = { id = ely_imperialism.8 days = 35 }
+			add_journal_entry = { type = je_annex_HAW }
+		}
+		custom_tooltip = {
+			text = ely_arkadian_reorg_full_tt
+		s:STATE_GUAVIARE = {
+			remove_homeland = cu:amazonian
+			add_homeland = cu:arkadian
+			add_claim = c:ELY
+		}
+		s:STATE_ACRE = {
+			remove_homeland = cu:amazonian
+			add_homeland = cu:arkadian
+			add_claim = c:ELY
+		}
+		s:STATE_LA_PAZ = {
+			remove_homeland = cu:amazonian
+			add_homeland = cu:arkadian
+			add_claim = c:ELY
+		}
+		s:STATE_PASTAZA = {
+			remove_homeland = cu:amazonian
+			add_homeland = cu:arkadian
+			add_claim = c:ELY
+		}
+		s:STATE_PARA = {
+			remove_homeland = cu:amazonian
+			remove_homeland = cu:afro_brazilian
+			remove_homeland = cu:brazilian
+			add_homeland = cu:arkadian
+		}
+		if = {
+			limit = { exists = s:STATE_PARA.region_state:AGJ }
+			s:STATE_PARA.region_state:AGJ = { set_state_owner = c:ELY }
+		}
+		s:STATE_AMAZONAS = {
+			remove_homeland = cu:amazonian
+			add_homeland = cu:arkadian
+		}
+		if = {
+			limit = { exists = s:STATE_AMAZONAS.region_state:AGJ }
+			s:STATE_AMAZONAS.region_state:AGJ = { set_state_owner = c:ELY }
+		}
+		s:STATE_MATO_GROSSO = {
+			remove_homeland = cu:amazonian
+			remove_homeland = cu:brazilian
+			remove_homeland = cu:afro_brazilian
+			add_homeland = cu:arkadian
+		}
+		if = {
+			limit = { exists = s:STATE_MATO_GROSSO.region_state:AGJ }
+			s:STATE_MATO_GROSSO.region_state:AGJ = { set_state_owner = c:ELY }
+		}
+		s:STATE_MARANHAO = {
+			remove_homeland = cu:tupinamba
+			remove_homeland = cu:brazilian
+			remove_homeland = cu:afro_brazilian
+			add_homeland = cu:arkadian
+		}
+		if = {
+			limit = { exists = s:STATE_MARANHAO.region_state:AGJ }
+			s:STATE_MARANHAO.region_state:AGJ = { set_state_owner = c:ELY }
+		}
+		s:STATE_GOIAS = {
+			remove_homeland = cu:tupinamba
+			remove_homeland = cu:brazilian
+			remove_homeland = cu:afro_brazilian
+			add_homeland = cu:arkadian
+		}
+		if = {
+			limit = { exists = s:STATE_GOIAS.region_state:AGJ }
+			s:STATE_GOIAS.region_state:AGJ = { set_state_owner = c:ELY }
+		}
+		s:STATE_RIO_GRANDE_DO_NORTE = {
+			remove_homeland = cu:tupinamba
+			remove_homeland = cu:brazilian
+			remove_homeland = cu:afro_brazilian
+			add_homeland = cu:arkadian
+		}
+		if = {
+			limit = { exists = s:STATE_RIO_GRANDE_DO_NORTE.region_state:AGJ }
+			s:STATE_RIO_GRANDE_DO_NORTE.region_state:AGJ = { set_state_owner = c:ELY }
+		}
+		s:STATE_CEARA = {
+			remove_homeland = cu:tupinamba
+			remove_homeland = cu:brazilian
+			remove_homeland = cu:afro_brazilian
+			add_homeland = cu:arkadian
+		}
+		if = {
+			limit = { exists = s:STATE_CEARA.region_state:AGJ }
+			s:STATE_CEARA.region_state:AGJ = { set_state_owner = c:ELY }
+		}
+		s:STATE_PIAUI = {
+			remove_homeland = cu:tupinamba
+			remove_homeland = cu:brazilian
+			remove_homeland = cu:afro_brazilian
+			add_homeland = cu:arkadian
+		}
+		if = {
+			limit = { exists = s:STATE_PIAUI.region_state:AGJ }
+			s:STATE_PIAUI.region_state:AGJ = { set_state_owner = c:ELY }
+		}
+		s:STATE_PARAIBA = {
+			remove_homeland = cu:tupinamba
+			remove_homeland = cu:brazilian
+			remove_homeland = cu:afro_brazilian
+			add_homeland = cu:arkadian
+		}
+		if = {
+			limit = { exists = s:STATE_PARAIBA.region_state:AGJ }
+			s:STATE_PARAIBA.region_state:AGJ = { set_state_owner = c:ELY }
+		}
+		s:STATE_PERNAMBUCO = {
+			remove_homeland = cu:tupinamba
+			remove_homeland = cu:brazilian
+			remove_homeland = cu:afro_brazilian
+			add_homeland = cu:arkadian
+		}
+		if = {
+			limit = { exists = s:STATE_PERNAMBUCO.region_state:AGJ }
+			s:STATE_PERNAMBUCO.region_state:AGJ = { set_state_owner = c:ELY }
+		}
+		}
+	}
+
+	option = {
+		name = ely_imperialism.7.b
+		default_option = yes
+		c:ELY = {
+			change_relations = {
+				country = c:AGJ
+				value = -25
+			}	
+			change_infamy = 10
+			trigger_event = { id = ely_imperialism.8 days = 35 }
+		}
+		custom_tooltip = {
+			text = ely_arkadian_reorg_mid_tt
+		s:STATE_GUAVIARE = {
+			remove_homeland = cu:amazonian
+		}
+		s:STATE_ACRE = {
+			remove_homeland = cu:amazonian
+		}
+		s:STATE_LA_PAZ = {
+			remove_homeland = cu:amazonian
+		}
+		s:STATE_PASTAZA = {
+			remove_homeland = cu:amazonian
+		}
+		s:STATE_PARA = {
+			remove_homeland = cu:amazonian
+			remove_homeland = cu:brazilian
+			add_homeland = cu:arkadian
+		}
+		if = {
+			limit = { exists = s:STATE_PARA.region_state:AGJ }
+			s:STATE_PARA.region_state:AGJ = { set_state_owner = c:ELY }
+		}
+		s:STATE_AMAZONAS = {
+			remove_homeland = cu:amazonian
+			add_homeland = cu:arkadian
+		}
+		if = {
+			limit = { exists = s:STATE_AMAZONAS.region_state:AGJ }
+			s:STATE_AMAZONAS.region_state:AGJ = { set_state_owner = c:ELY }
+		}
+		s:STATE_MATO_GROSSO = {
+			remove_homeland = cu:amazonian
+			remove_homeland = cu:brazilian
+			remove_homeland = cu:afro_brazilian
+			add_homeland = cu:arkadian
+		}
+		if = {
+			limit = { exists = s:STATE_MATO_GROSSO.region_state:AGJ }
+			s:STATE_MATO_GROSSO.region_state:AGJ = { set_state_owner = c:ELY }
+		}
+		s:STATE_MARANHAO = {
+			remove_homeland = cu:tupinamba
+			remove_homeland = cu:brazilian
+		}
+		s:STATE_GOIAS = {
+			remove_homeland = cu:tupinamba
+			remove_homeland = cu:brazilian
+		}
+		s:STATE_RIO_GRANDE_DO_NORTE = {
+			remove_homeland = cu:tupinamba
+			remove_homeland = cu:brazilian
+		}
+		s:STATE_CEARA = {
+			remove_homeland = cu:tupinamba
+			remove_homeland = cu:brazilian
+		}
+		s:STATE_PIAUI = {
+			remove_homeland = cu:tupinamba
+			remove_homeland = cu:brazilian
+		}
+		s:STATE_PERNAMBUCO = {
+			remove_homeland = cu:tupinamba
+			remove_homeland = cu:brazilian
+		}
+		s:STATE_PARAIBA = {
+			remove_homeland = cu:tupinamba
+			remove_homeland = cu:brazilian
+		}
+		}
+	}
+
+	option = {
+		name = ely_imperialism.7.c
+		c:ELY = {
+			change_relations = {
+				country = c:AGJ
+				value = 100
+			}	
+			change_infamy = -25
+			trigger_event = { id = ely_imperialism.8 days = 35 }
+		}
+		custom_tooltip = {
+			text = ely_arkadian_reorg_low_tt
+		s:STATE_GUAVIARE = {
+			remove_homeland = cu:amazonian
+		}
+		s:STATE_ACRE = {
+			remove_homeland = cu:amazonian
+		}
+		s:STATE_LA_PAZ = {
+			remove_homeland = cu:amazonian
+		}
+		s:STATE_PASTAZA = {
+			remove_homeland = cu:amazonian
+		}
+		s:STATE_PARA = {
+			remove_homeland = cu:amazonian
+			remove_homeland = cu:brazilian
+		}
+		s:STATE_AMAZONAS = {
+			remove_homeland = cu:amazonian
+		}
+		s:STATE_MATO_GROSSO = {
+			remove_homeland = cu:amazonian
+			remove_homeland = cu:brazilian
+		}
+		s:STATE_MARANHAO = {
+			remove_homeland = cu:tupinamba
+			remove_homeland = cu:brazilian
+		}
+		s:STATE_GOIAS = {
+			remove_homeland = cu:tupinamba
+			remove_homeland = cu:brazilian
+		}
+		s:STATE_RIO_GRANDE_DO_NORTE = {
+			remove_homeland = cu:tupinamba
+			remove_homeland = cu:brazilian
+		}
+		s:STATE_CEARA = {
+			remove_homeland = cu:tupinamba
+			remove_homeland = cu:brazilian
+		}
+		s:STATE_PIAUI = {
+			remove_homeland = cu:tupinamba
+			remove_homeland = cu:brazilian
+		}
+		s:STATE_PERNAMBUCO = {
+			remove_homeland = cu:tupinamba
+			remove_homeland = cu:brazilian
+		}
+		s:STATE_PARAIBA = {
+			remove_homeland = cu:tupinamba
+			remove_homeland = cu:brazilian
+		}
+		}
+	}
+}
+
+ely_imperialism.8 = {
+	type = country_event
+	placement = ROOT
+
+	title = ely_imperialism.8.t
+	desc = ely_imperialism.8.d
+	flavor = ely_imperialism.8.f
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = { exists = c:JAM }
+				exists = s:STATE_MIRANDA.region_state:ELY
+			}
+			create_country = {
+				tag = JAM
+				origin = c:ELY
+				state = s:STATE_MIRANDA.region_state:ELY
+			}
+		}
+		else_if = {
+			limit = {
+				exists = c:JAM
+				exists = s:STATE_MIRANDA.region_state:ELY
+			}
+			s:STATE_MIRANDA.region_state:ELY = { set_state_owner = c:JAM }
+		}
+		else_if = {
+			limit = {
+				NOT = { exists = c:JAM }
+			}
+			random_country = {
+				limit = {
+					is_secessionist = yes
+					any_scope_state = {
+						state_region = s:STATE_MIRANDA
+					}
+				}
+				change_tag = JAM
+			}
+		}
+		c:JAM = {
+			activate_law = law_type:law_presidential_republic
+			activate_law = law_type:law_universal_suffrage
+			activate_law = law_type:law_homesteading
+			activate_law = law_type:law_no_migration_controls
+			activate_law = law_type:law_cultural_exclusion
+			activate_law = law_type:law_freedom_of_conscience
+			activate_law = law_type:law_interventionism
+			}
+		s:STATE_RIO_GRANDE_DO_SUL = {
+			add_claim = c:ELY
+		}
+		s:STATE_CORRIENTES = {
+			add_claim = c:ELY
+		}
+		s:STATE_URUGUAY = {
+			add_claim = c:ELY
+		}
+		s:STATE_BUENOS_AIRES = {
+			add_claim = c:ELY
+		}
+		s:STATE_RIO_NEGRO = {
+			add_claim = c:ELY
+		}
+		s:STATE_LA_PAMPA = {
+			add_claim = c:ELY
+		}
+		s:STATE_SANTA_FE = {
+			add_claim = c:ELY
+		}
+		s:STATE_CHACO = {
+			add_claim = c:ELY
+		}
+	}
+
+	option = {
+		name = ely_imperialism.8.a
+		c:ELY = { 
+			annex = c:JAM
+			add_journal_entry = { type = je_recognize_afro_americans }
+		}
+	}
+
+	option = {
+		name = ely_imperialism.8.b
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}		
+		c:ELY ?= {
+			create_diplomatic_pact = {
+				country = c:JAM
+				type = puppet
+			}
+			change_relations = {
+				country = c:JAM
+				value = 100
+			}	
+			change_infamy = -10
+			add_journal_entry = { type = je_recognize_afro_americans }
+		}
+		if = {
+			limit = { exists = s:STATE_GUAYANA.region_state:ELY }
+			s:STATE_GUAYANA.region_state:ELY = { set_state_owner = c:JAM }
+		}
+		if = {
+			limit = { exists = s:STATE_ZULIA.region_state:ELY }
+			s:STATE_ZULIA.region_state:ELY = { set_state_owner = c:JAM }
+		}
+		if = {
+			limit = { exists = s:STATE_BOLIVAR.region_state:ELY }
+			s:STATE_BOLIVAR.region_state:ELY = { set_state_owner = c:JAM }
+		}
+		if = {
+			limit = { exists = s:STATE_ANTIOQUIA.region_state:ELY }
+			s:STATE_ANTIOQUIA.region_state:ELY = { set_state_owner = c:JAM }
+		}
+		if = {
+			limit = { exists = s:STATE_PASTAZA.region_state:ELY }
+			s:STATE_PASTAZA.region_state:ELY = { set_state_owner = c:JAM }
+		}
+		if = {
+			limit = { exists = s:STATE_PARA.region_state:ELY }
+			s:STATE_PARA.region_state:ELY = { set_state_owner = c:JAM }
+		}
+		if = {
+			limit = { exists = s:STATE_MARANHAO.region_state:ELY }
+			s:STATE_MARANHAO.region_state:ELY = { set_state_owner = c:JAM }
+		}
+		if = {
+			limit = { exists = s:STATE_AMAZONAS.region_state:ELY }
+			s:STATE_AMAZONAS.region_state:ELY = { set_state_owner = c:JAM }
+		}
+		if = {
+			limit = { exists = s:STATE_ACRE.region_state:ELY }
+			s:STATE_ACRE.region_state:ELY = { set_state_owner = c:JAM }
+		}
+		if = {
+			limit = { exists = s:STATE_MATO_GROSSO.region_state:ELY }
+			s:STATE_MATO_GROSSO.region_state:ELY = { set_state_owner = c:JAM }
+		}
+		if = {
+			limit = { exists = s:STATE_LA_PAZ.region_state:ELY }
+			s:STATE_LA_PAZ.region_state:ELY = { set_state_owner = c:JAM }
+		}
+		if = {
+			limit = { exists = s:STATE_GUAVIARE.region_state:ELY }
+			s:STATE_GUAVIARE.region_state:ELY = { set_state_owner = c:JAM }
+		}
+		if = {
+			limit = { exists = s:STATE_RIO_GRANDE_DO_NORTE.region_state:ELY }
+			s:STATE_RIO_GRANDE_DO_NORTE.region_state:ELY = { set_state_owner = c:JAM }
+		}
+		if = {
+			limit = { exists = s:STATE_CEARA.region_state:ELY }
+			s:STATE_CEARA.region_state:ELY = { set_state_owner = c:JAM }
+		}
+		if = {
+			limit = { exists = s:STATE_PIAUI.region_state:ELY }
+			s:STATE_PIAUI.region_state:ELY = { set_state_owner = c:JAM }
+		}
+		if = {
+			limit = { exists = s:STATE_MARANHAO.region_state:ELY }
+			s:STATE_MARANHAO.region_state:ELY = { set_state_owner = c:JAM }
+		}
+		if = {
+			limit = { exists = s:STATE_PIAUI.region_state:ELY }
+			s:STATE_PIAUI.region_state:ELY = { set_state_owner = c:JAM }
+		}
+		if = {
+			limit = { exists = s:STATE_PARAIBA.region_state:ELY }
+			s:STATE_PARAIBA.region_state:ELY = { set_state_owner = c:JAM }
+		}
+		if = {
+			limit = { exists = s:STATE_GOIAS.region_state:ELY }
+			s:STATE_GOIAS.region_state:ELY = { set_state_owner = c:JAM }
+		}
+		if = {
+			limit = { exists = s:STATE_PERNAMBUCO.region_state:ELY }
+			s:STATE_PERNAMBUCO.region_state:ELY = { set_state_owner = c:JAM }
+		}
+		
+	}
+}
+
+ely_imperialism.9 = {
+	type = country_event
+	placement = ROOT
+
+	title = ely_imperialism.9.t
+	desc = ely_imperialism.9.d
+	flavor = ely_imperialism.9.f
+
+	duration = 3
+
+	event_image = {
+		video = "middleeast_jungle_expedition"
+	}
+	immediate = {
+	}
+
+	option = {
+		name = ely_imperialism.9.a
+		c:ELY = {
+			change_infamy = -50
+			change_relations = {
+				country = c:GRI
+				value = 100
+			}
+			change_relations = {
+				country = c:TWT
+				value = 100
+			}
+		}
+		custom_tooltip = {
+			text = ely_arkadian_reorg_last_tt
+		s:STATE_RIO_GRANDE_DO_SUL = {
+			remove_homeland = cu:brazilian
+			remove_homeland = cu:platean
+			remove_homeland = cu:afro_american
+			remove_homeland = cu:guarani
+		}
+		if = {
+			limit = { exists = s:STATE_RIO_GRANDE_DO_SUL.region_state:ELY }
+			s:STATE_RIO_GRANDE_DO_SUL.region_state:ELY = { set_state_owner = c:AGJ }
+		}
+		s:STATE_CORRIENTES = {
+			remove_homeland = cu:platean
+			remove_homeland = cu:afro_american
+			remove_homeland = cu:brazilian
+			remove_homeland = cu:afro_brazilian
+		}
+		if = {
+			limit = { exists = s:STATE_CORRIENTES.region_state:ELY }
+			s:STATE_CORRIENTES.region_state:ELY = { set_state_owner = c:GRI }
+		}
+		s:STATE_URUGUAY = {
+			remove_homeland = cu:platean
+			remove_homeland = cu:afro_american
+			remove_homeland = cu:brazilian
+		}
+		if = {
+			limit = { exists = s:STATE_URUGUAY.region_state:ELY }
+			s:STATE_URUGUAY.region_state:ELY = { set_state_owner = c:AGJ }
+		}
+		s:STATE_BUENOS_AIRES = {
+			remove_homeland = cu:platean
+			remove_homeland = cu:afro_american
+		}
+		if = {
+			limit = { exists = s:STATE_BUENOS_AIRES.region_state:ELY }
+			s:STATE_BUENOS_AIRES.region_state:ELY = { set_state_owner = c:TWT }
+		}
+		s:STATE_RIO_NEGRO = {
+			remove_homeland = cu:platean
+			remove_homeland = cu:afro_american
+		}
+		if = {
+			limit = { exists = s:STATE_RIO_NEGRO.region_state:ELY }
+			s:STATE_RIO_NEGRO.region_state:ELY = { set_state_owner = c:TWT }
+		}
+		s:STATE_LA_PAMPA = {
+			remove_homeland = cu:platean
+			remove_homeland = cu:afro_american
+		}
+		if = {
+			limit = { exists = s:STATE_LA_PAMPA.region_state:ELY }
+			s:STATE_LA_PAMPA.region_state:ELY = { set_state_owner = c:TWT }
+		}
+		s:STATE_SANTA_FE = {
+			remove_homeland = cu:platean
+			remove_homeland = cu:afro_american
+		}
+		if = {
+			limit = { exists = s:STATE_SANTA_FE.region_state:ELY }
+			s:STATE_SANTA_FE.region_state:ELY = { set_state_owner = c:GRI }
+		}
+		s:STATE_CHACO = {
+			remove_homeland = cu:platean
+			remove_homeland = cu:afro_american
+		}
+		if = {
+			limit = { exists = s:STATE_CHACO.region_state:ELY }
+			s:STATE_CHACO.region_state:ELY = { set_state_owner = c:GRI }
+		}
+		}
+	}
+}
+
+ely_imperialism.10 = {
+	type = country_event
+	placement = ROOT
+
+	title = ely_imperialism.10.t
+	desc = ely_imperialism.10.d
+	flavor = ely_imperialism.10.f
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/middleeast_jungle_expedition.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = { exists = c:PNS }
+				exists = s:STATE_HAWAIIAN_ISLANDS.region_state:ELY
+			}
+			create_country = {
+				tag = PNS
+				origin = c:ELY
+				state = s:STATE_HAWAIIAN_ISLANDS.region_state:ELY
+			}
+		}
+		else_if = {
+			limit = {
+				exists = c:PNS
+				exists = s:STATE_HAWAIIAN_ISLANDS.region_state:ELY
+			}
+			s:STATE_HAWAIIAN_ISLANDS.region_state:ELY = { set_state_owner = c:PNS }
+		}
+		else_if = {
+			limit = {
+				NOT = { exists = c:PNS }
+			}
+			random_country = {
+				limit = {
+					is_secessionist = yes
+					any_scope_state = {
+						state_region = s:STATE_HAWAIIAN_ISLANDS
+					}
+				}
+				change_tag = PNS
+			}
+		}
+		c:PNS = {
+			activate_law = law_type:law_presidential_republic
+			activate_law = law_type:law_universal_suffrage
+			activate_law = law_type:law_homesteading
+			activate_law = law_type:law_no_migration_controls
+			activate_law = law_type:law_cultural_exclusion
+			activate_law = law_type:law_freedom_of_conscience
+			activate_law = law_type:law_interventionism
+		}
+	}
+
+	option = {
+		name = ely_imperialism.3.a
+		c:ELY = { 
+			annex = c:PNS
+		}
+	}
+
+	option = {
+		name = ely_imperialism.3.b
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}		
+		hidden_effect = {
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:hawaiian }
+					change_pop_culture = { target = cu:polynisian value = 1 }
+				}
+			}
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:maori }
+					change_pop_culture = { target = cu:polynisian value = 1 }
+				}
+			}
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:melanesian }
+					change_pop_culture = { target = cu:polynisian value = 1 }
+				}
+			}
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:micronesian }
+					change_pop_culture = { target = cu:polynisian value = 1 }
+				}
+			}
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:polynesian }
+					change_pop_culture = { target = cu:polynisian value = 1 }
+				}
+			}
+		}
+		c:PNS = { 
+		add_primary_culture = cu:polynisian
+			remove_primary_culture = cu:hawaiian
+			remove_primary_culture = cu:maori
+			remove_primary_culture = cu:melanesian
+			remove_primary_culture = cu:micronesian
+			remove_primary_culture = cu:polynesian
+		}
+		c:ELY ?= {
+			create_diplomatic_pact = {
+				country = c:PNS
+				type = puppet
+			}
+			change_relations = {
+				country = c:PNS
+				value = 100
+			}	
+			change_infamy = -10
+		}
+		if = {
+			limit = { exists = s:STATE_SOLOMON_ISLANDS.region_state:ELY }
+			s:STATE_SOLOMON_ISLANDS.region_state:ELY = { set_state_owner = c:PNS }
+		}
+		if = {
+			limit = { exists = s:STATE_BOUGAINVILLE.region_state:ELY }
+			s:STATE_BOUGAINVILLE.region_state:ELY = { set_state_owner = c:PNS }
+		}
+		if = {
+			limit = { exists = s:STATE_NAURU.region_state:ELY }
+			s:STATE_NAURU.region_state:ELY = { set_state_owner = c:PNS }
+		}
+		if = {
+			limit = { exists = s:STATE_FIJI.region_state:ELY }
+			s:STATE_FIJI.region_state:ELY = { set_state_owner = c:PNS }
+		}
+		if = {
+			limit = { exists = s:STATE_VANUATU.region_state:ELY }
+			s:STATE_VANUATU.region_state:ELY = { set_state_owner = c:PNS }
+		}
+		if = {
+			limit = { exists = s:STATE_KANAK.region_state:ELY }
+			s:STATE_KANAK.region_state:ELY = { set_state_owner = c:PNS }
+		}
+		if = {
+			limit = { exists = s:STATE_NORTH_ISLAND.region_state:ELY }
+			s:STATE_NORTH_ISLAND.region_state:ELY = { set_state_owner = c:PNS }
+		}
+		if = {
+			limit = { exists = s:STATE_SOUTH_ISLAND.region_state:ELY }
+			s:STATE_SOUTH_ISLAND.region_state:ELY = { set_state_owner = c:PNS }
+		}
+		if = {
+			limit = { exists = s:STATE_TAHITI.region_state:ELY }
+			s:STATE_TAHITI.region_state:ELY = { set_state_owner = c:PNS }
+		}
+		if = {
+			limit = { exists = s:STATE_TONGA.region_state:ELY }
+			s:STATE_TONGA.region_state:ELY = { set_state_owner = c:PNS }
+		}
+		
+	}
+}
+
+# Annexing Client States
+ely_expansion.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = ely_expansion.1.t
+	desc = ely_expansion.1.d
+	flavor = ely_expansion.1.f
+
+	duration = 3
+
+	event_image = {
+		video = "europenorthamerica_native_american"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	minor_left_icon = c:ELY
+
+	immediate = {
+		random_country = {
+			limit = {
+				owner = {
+					is_subject_of = ROOT
+					has_variable = ely_imperial_target
+				}
+			}
+			save_scope_as = ely_imperial_target_state_1
+		}
+		random_country = {
+			limit = {
+				owner = {
+					is_subject_of = ROOT
+					has_variable = ely_imperial_target
+				}
+				NOT = { this = scope:ely_imperial_target_state_1 }
+			}
+			save_scope_as = ely_imperial_target_state_2
+		}
+		random_country = {
+			limit = {
+				owner = {
+					is_subject_of = ROOT
+					has_variable = ely_imperial_target
+				}
+				NOT = { this = scope:ely_imperial_target_state_1 }
+				NOT = { this = scope:ely_imperial_target_state_2 }
+			}
+			save_scope_as = ely_imperial_target_state_3
+		}
+	}
+
+	option = {
+		name = ely_expansion.1.a
+		default_option = yes
+		annex = scope:ely_imperial_target_state_1
+		scope:ely_imperial_target_state_1 = {
+			owner = {
+				save_scope_as = target_country
+			}
+			add_radicals_in_state = {
+				value = very_large_radicals
+			}
+		}
+		create_incident = {
+			country = scope:target_country
+			value = 10
+		}
+		ai_chance = {
+			base = 1
+		}
+	}
+
+	option = {
+		name = ely_expansion.1.b
+		trigger = {
+			exists = scope:ely_imperial_target_state_2
+		}
+		annex = scope:ely_imperial_target_state_2
+		scope:ely_imperial_target_state_2 = {
+			owner = {
+				save_scope_as = target_country
+			}
+			add_radicals_in_state = {
+				value = very_large_radicals
+			}
+		}
+		create_incident = {
+			country = scope:target_country
+			value = 10
+		}
+	}
+	
+	option = {
+		name = ely_expansion.1.c
+		trigger = {
+			exists = scope:ely_imperial_target_state_3
+		}
+		annex = scope:ely_imperial_target_state_3
+		scope:ely_imperial_target_state_3 = {
+			owner = {
+				save_scope_as = target_country
+			}
+			add_radicals_in_state = {
+				value = very_large_radicals
+			}
+		}
+		create_incident = {
+			country = scope:target_country
+			value = 10
+		}
+	}
+}

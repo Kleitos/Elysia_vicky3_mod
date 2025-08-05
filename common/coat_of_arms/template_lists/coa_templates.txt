@@ -445,6 +445,13 @@ coat_of_arms_template_lists = {
 				ROOT.power_bloc_leader = c:TUR
 			}
 			90000 = tur_power_bloc_1
+		}
+		special_selection = {
+			trigger = { 
+				exists = c:ELY
+				ROOT.power_bloc_leader = c:ELY
+			}
+			90000 = ely_power_bloc_1
 		}	
 	}
 }

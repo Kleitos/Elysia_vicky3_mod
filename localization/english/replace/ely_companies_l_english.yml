@@ -1,0 +1,44 @@
+﻿l_english:
+
+# Company Name:
+ company_pankratios_wood: "Xylourgiki Pankratios"
+ company_akatos_silk_hall: "Aithousa Metaxiou"
+ company_apalachian_pathway: "Etaireia Katastrofon"
+ company_elysian_arsenal: "Naftiko Oplostasio Ilysion"
+ company_elysian_library: "Vivliothiki Neas Alexandreias"
+ company_helion_guns: "Hliopyra Oplopoiía" (need elysian localization)
+ company_ely_cornucopia: "Trofíon Korinoukopías" (need elysian localization)
+ company_ely_fruits: "Notiokarpikí Etaireía" (need elysian localization)
+ company_ely_steel: "Siderourgeía Hphaístou"  (need elysian localization)
+ company_prometheus: "Ekrekptiká Promēthéōs" (need elysian localization)
+ company_ely_CocaCola: "Kóka-Kóla" (need elysian localization)
+ company_ely_redwood: "Xyleía Sekoïás" (need elysian localization)
+ company_ely_fishing: "Alieutikí Ilýsia" (need elysian localization)
+ company_ely_oil: "Typikí Petrélaia" (need elysian localization)
+ company_aztec_gold: "Chrysá Anáktora" (need elysian localization)
+ company_elysian_motor: "Autokīnētipoíia Daidálou" (need elysian localization)
+ company_helios_chariots: "Ármata Hēlíou" (need elysian localization)
+ company_ely_electric: "Ēlektrotekhnikḗ Tálou" (need elysian localization)
+ company_lakonian_fabrics: "Yfantourgeía Tezalia"
+ 
+ 
+ 
+# Prestige goods:
+
+prestige_good_pankratios_furniture: "Epipla Pankratiou"
+prestige_good_akatos_silk: "Ilysia Metaxi"
+prestige_good_apalachian_tools: "Katastrofeas Vounon"
+prestige_good_hyperion_ship: "Klasis Yperion"
+prestige_good_helion_guns: "Flogovolo Ilion"
+prestige_good_redwood: "Ilysia Sekogia"
+prestige_good_kanan_paper: "Charti Kanan"
+prestige_good_ely_chocolate: "Sokolata Magia"
+prestige_good_ely_banana: "Banana Kaventis"
+prestige_good_coke_cola: "Koka Kola"
+prestige_red_fish: "Barmpouni"
+prestige_good_ely_automobiles: "Aftokínita Daidálou" (need elysian localization)
+prestige_good_ely_steel: "Chályvas Hphaístou" (need elysian localization)
+prestige_good_lakonian_cotton: "Endýmata Tezalías" (need elysian localization)
+prestige_good_ely_radios: "Radiṓphōna Tálou" (need elysian localization)
+prestige_good_ely_motors: "Kīnḗtēres Hēlíou" (need elysian localization)
+prestige_good_prometheus_artillery: "Kanónia Promēthéōs" (need elysian localization)

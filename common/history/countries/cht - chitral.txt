@@ -7,9 +7,5 @@
 		ig:ig_landowners = {
 			add_ruling_interest_group = yes
 		}
-		add_modifier = {
-			name = religious_fundamentalism
-			months = -1
-		}
 	}
 }

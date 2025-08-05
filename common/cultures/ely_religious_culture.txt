@@ -1030,6 +1030,10 @@ moluccan={
 	color= hsv{ 0.29 0.22 0.51 }
 	religion = indonesian
 	traits = { southeast_asian_heritage malay_culture pagan_heritage }
+
+    obsessions = {
+		tea
+    }
 	male_common_first_names={
 		Denny
 		Dominggus
@@ -1386,7 +1390,7 @@ afro_american={
 afro_caribbean={
 	color= hsv{ 0.32 0.27 0.32 }
 	religion = voodoo
-	traits = { african_heritage anglophone pagan_heritage }
+	traits = { african_heritage german_speaking pagan_heritage }
 	male_common_first_names={
 		Anderson
 		Anselm
@@ -1904,8 +1908,8 @@ akan={
 
 mande={
 	color= hsv{ 0.12 0.56 0.73 }
-	religion = mande_faith
-	traits = { mandinka west_african_culture_group african_heritage pagan_heritage }
+	religion = sunni
+	traits = { mandinka west_african_culture_group african_heritage }
 	male_common_first_names={
 		Alhassani
 		Amara
@@ -4694,7 +4698,7 @@ kavango_bantu={ # Angola + Namibia
 bihari={
 	color= hsv{ 0.91 0.28 0.70 }
 	religion = hindu
-	traits = { south_asian_heritage hindustani pagan_heritage }
+	traits = { south_asian_heritage indo_aryan_language pagan_heritage }
 	
 	obsessions = {
 		tea
@@ -4848,7 +4852,7 @@ nepali={
 oriya={
 	color= hsv{ 0.96 0.36 0.74 }
 	religion = hindu
-	traits = { south_asian_heritage hindustani pagan_heritage }
+	traits = { south_asian_heritage indo_aryan_language pagan_heritage }
 	
 	obsessions = {
 		tea
@@ -4891,7 +4895,7 @@ oriya={
 kanauji={
 	color= hsv{ 0.27 0.48 0.74 }
 	religion = hindu
-	traits = { south_asian_heritage hindustani pagan_heritage }
+	traits = { south_asian_heritage indo_aryan_language pagan_heritage }
 	
 	obsessions = {
 		tea
@@ -4930,7 +4934,7 @@ kanauji={
 gujarati={
 	color= hsv{ 0.85 0.28 0.35 }
 	religion = hindu
-	traits = { south_asian_heritage hindustani pagan_heritage }
+	traits = { south_asian_heritage indo_aryan_language pagan_heritage }
 	
 	obsessions = {
 		tea
@@ -4976,74 +4980,10 @@ gujarati={
 	graphics = south_asian
 }
 
-marathi={
-	color= hsv{ 0.19 0.55 0.86 }
-	religion = hindu
-	traits = { south_asian_heritage hindustani pagan_heritage }
-	
-	obsessions = {
-		tea
-	}
-	male_common_first_names={
-		Bajirao
-		Balaji
-		Madhava
-		Narayan
-		Pratapsinha
-		Raghunath
-		Rajaram
-		Sawai
-		Shahuji
-		Shambhaji
-		Shivaji
-		Venkatji
-	}
-	female_common_first_names = {
-		Ahilyabai 
-		Anandibai
-		Gangabai
-		Gopikabai
-		Radhabai
-		Rani
-		Soyarabai
-		Umabai
-	}	
-	noble_last_names = {
-		Baji_Rao
-		Bhat
-		Bhave
-		Bhonsle
-		Gaekwad
-		Holkar
-		Mehere
-		Newalkar
-		Nirban
-		Patwardhan
-		Pawar
-		Scindia
-	}
-	common_last_names={
-		Appa_Sahib
-		Ballal
-		Bhandari
-		Bowa_Sahib
-		Gujar
-		Kalash
-		Mohite
-		Narayan
-		Phadnis
-		Rao
-	}
-	ethnicities = {
-		1 = indian
-	}
-	graphics = south_asian
-}
-
 rajput={
 	color= hsv{ 0.24 0.16 0.90 }
 	religion = hindu
-	traits = { south_asian_heritage hindustani pagan_heritage }
+	traits = { south_asian_heritage indo_aryan_language pagan_heritage }
 	
 	obsessions = {
 		tea

@@ -247,16 +247,14 @@ je_elysian_highway_new = {
 
 	complete = {
 		any_scope_building = {
-			is_building_type = building_motor_industry
+			is_building_type = building_automotive_industry
 			level >= 15
-			has_active_production_method = pm_automobile_production
 		}
 		any_scope_building = {
 			filter = {
-				is_building_type = building_motor_industry
+				is_building_type = building_automotive_industry
 			}
 			percent > 0.75
-			has_active_production_method = pm_automobile_production
 			occupancy > 0.75
 		}
 	}

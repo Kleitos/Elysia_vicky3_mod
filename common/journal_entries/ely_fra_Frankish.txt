@@ -1,0 +1,151 @@
+﻿je_cultural_shift_frankish = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		owns_entire_state_region = STATE_HOLLAND
+		owns_entire_state_region = STATE_FRIESLAND
+		owns_entire_state_region = STATE_GELRE
+		OR = {
+			has_law = law_type:law_private_schools
+			has_law = law_type:law_public_schools
+		}
+		institution_investment_level = {
+			institution = institution_schools
+			value >= 3
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = frankish_culture.1 }
+	}
+frankish_shift
+}
+
+je_expand_franks_south = {
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		owns_entire_state_region = STATE_BRITTANY
+		owns_entire_state_region = STATE_SAVOY
+		owns_entire_state_region = STATE_EAST_SWITZERLAND
+		owns_entire_state_region = STATE_WEST_SWITZERLAND
+		owns_entire_state_region = STATE_PROVENCE
+		owns_entire_state_region = STATE_LANGUEDOC
+		owns_entire_state_region = STATE_RHONE
+		owns_entire_state_region = STATE_GUYENNE
+		owns_entire_state_region = STATE_AUVERGNE_LIMOUSIN
+		owns_entire_state_region = STATE_AQUITAINE
+	}
+
+	on_complete = {
+			trigger_event = { id = frankish_empire.3 }
+	}
+}	
+
+je_frankogerman_wedding = {
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	group = je_group_elysian_content
+
+	scripted_progress_bar = union_of_frankogerman_progress_bar
+
+	on_monthly_pulse = {
+		effect = {
+			set_global_variable = {
+				name = france_gdp
+				value = c:FRA.gdp
+			}
+			set_global_variable = {
+				name = german_gdp
+				value = c:GER.gdp
+			}
+		}
+	}
+
+	is_shown_when_inactive = {
+		exists = c:FRA
+		exists = c:GER
+		OR = {
+			root = c:FRA
+			root = c:GER
+		}
+	}
+
+	can_deactivate = yes
+	
+	possible = {
+		AND = {
+			exists = c:FRA
+			c:FRA = {
+				has_variable = frankish_empire_reunite_fra_var
+				custom_tooltip = {
+					text = franco_german_FRA_tt
+				}
+				has_law = law_type:law_monarchy
+			}
+		}
+		AND = {
+			exists = c:GER
+			c:GER = {
+				has_variable = frankish_empire_reunite_ger_var
+				NOT { has_variable = prussian_ger }
+				custom_tooltip = {
+					text = franco_german_GER_tt
+				}
+				has_law = law_type:law_monarchy
+			}
+		}
+		OR = {
+			AND = {
+				exists = c:FRA
+				root = c:FRA
+				exists = c:GER
+				c:GER = { 
+					relations:root > relations_threshold:cordial 
+				}
+			}
+			AND = {
+				exists = c:GER
+				root = c:GER
+				exists = c:FRA
+				c:FRA = { 
+					relations:root > relations_threshold:cordial 
+				}
+			}
+		}
+
+	}
+
+	status_desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = je_frankogerman_wedding_status
+			}
+		}
+	}
+
+
+
+	should_be_pinned_by_default = yes
+	
+	weight = 2000
+
+	timeout = 7300
+
+	# effect which is executed when journal entry is timed out
+	on_timeout = {
+		if = {
+			limit = { c:FRA.gdp > c:GER.gdp }
+			c:FRA = { trigger_event = { id = union_of_frankogerman.1 popup = yes} }
+		}
+		if = {
+			limit = { c:GER.gdp > c:FRA.gdp }
+			c:GER = {trigger_event = { id = union_of_frankogerman.2 popup = yes} }
+		}
+	}
+}

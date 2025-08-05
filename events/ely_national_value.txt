@@ -26,55 +26,23 @@ ely_national_value.1 = {
 	}
 	
 	immediate = {
-			random_scope_pop = {
-				limit = { 
-					pop_is_discriminated = yes
-					OR = {
-						culture_accepted = no
-						religion_accepted = no
-					}
-				}
-				if = {
-					limit = { culture_accepted = no }
-					save_scope_as = discriminated_culture_pop
-				}
-				else_if = {
-					limit = { religion_accepted = no }
-					save_scope_as = discriminated_religion_pop
-				}
-			}
 	}
 
 	option = {
 		name = ely_national_value.1.a
-			default_option = yes
-			remove_modifier = modifier_wife_trade
-			add_modifier = {
-				name = segregation_eroding
-				months = normal_modifier_time
-			}
-			add_radicals = {
-			value = large_radicals
-			culture = cu:elysian
-			}
-	}
-
-	option = {
-		name = ely_national_value.1.b
-		change_infamy = 500
+		default_option = yes
+		remove_modifier = modifier_wife_trade
+		add_modifier = {
+			name = segregation_eroding
+			days = normal_modifier_time
+		}
 		add_radicals = {
 			value = large_radicals
-			culture = scope:discriminated_culture_pop.culture
-		}
-		add_loyalists = {
-			value = 0.2 
 			culture = cu:elysian
 		}
-		add_modifier = {
-			name = enforced_segregation
-			months = normal_modifier_time
+		add_journal_entry = {
+			type = je_statue_liberty
 		}
-		
 	}
 }
 
@@ -107,13 +75,12 @@ ely_national_value.2 = {
 
 	option = {
 		name = ely_national_value.2.a
-			default_option = yes
-			remove_modifier = modifier_elysian_blood
-			add_modifier = {
-				name = modifier_elysian_family
-				months = -1
-			}
-		
+		default_option = yes
+		remove_modifier = modifier_elysian_blood
+		add_modifier = {
+			name = modifier_elysian_family
+			months = -1
+		}
 	}
 }
 
@@ -155,7 +122,6 @@ ely_national_value.3 = {
 	}
 }
 
-
 ely_national_value.4 = {
 	type = country_event
 	placement = root
@@ -178,15 +144,33 @@ ely_national_value.4 = {
 	}
 	
 	immediate = {
+			remove_variable = integrate_elyric_started
+		set_variable = {
+			name = integrate_elyric_ended
+		}
+		remove_modifier = elysian_client_state_system
 	}
 
 	option = {
 		name = ely_national_value.4.a
-			default_option = yes
-			add_modifier = {
-				name = new_colossus
-				months = very_long_modifier_time
-			}
+		default_option = yes
+		add_modifier = {
+			name = new_colossus
+			days = very_long_modifier_time
+		}
+		add_journal_entry = {
+			type = je_wife_trade
+		}
+		add_journal_entry = {
+			type = je_reform_blood_laws
+		}
+		add_journal_entry = {
+			type = je_elysian_schooling
+		}
+		add_journal_entry = {
+			type = je_elysian_highway_new
+		}
+		trigger_event = { id = ely_imperialism.1 days = 180 }
 	}
 }
 
@@ -194,13 +178,11 @@ ely_national_value.5 = {
 	type = country_event
 	placement = root
 
-	duration = 3
 	event_image = {
-		video = "gfx/event_pictures/europenorthamerica_antarctica.bk2"
+		video = "unspecific_world_fair"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/sufferage"
 
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
 
@@ -208,49 +190,18 @@ ely_national_value.5 = {
 	desc = ely_national_value.5.d
 	flavor = ely_national_value.5.f
 
-	trigger = { 
+	trigger = {
 	}
 	
 	immediate = {
-		# nothing
 	}
 
 	option = {
 		name = ely_national_value.5.a
-		default_option = yes
-		ai_chance = {
-			base = 100
-		}
-		hidden_effect = {
-			every_country = {
-				every_scope_pop = {
-					limit = { culture = cu:inuit }
-					change_pop_culture = { target = cu:elysian value = 1 }
-				}
+			default_option = yes
+			add_modifier = {
+				name = modifier_elysian_games
+				months = -1
 			}
-		}
-		s:STATE_NUNAVUT = {
-			remove_homeland = cu:inuit
-			add_homeland = cu:elysian
-		}
-		s:STATE_NEWFOUNDLAND = {
-			remove_homeland = cu:inuit
-			add_homeland = cu:elysian
-		}
-		s:STATE_GREENLAND = {
-			remove_homeland = cu:inuit
-			add_homeland = cu:elysian
-		}
-		s:STATE_ALASKA = {
-			remove_homeland = cu:inuit
-			add_homeland = cu:elysian
-		}
-		s:STATE_QUEBEC = {
-			remove_homeland = cu:inuit
-			add_homeland = cu:elysian
-		}
-		s:STATE_CHUKOTKA = {
-			remove_homeland = cu:inuit
-		}
 	}
 }

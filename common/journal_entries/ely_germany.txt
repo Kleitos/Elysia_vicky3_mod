@@ -1,38 +1,131 @@
-﻿je_unite_GER = {
-	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+﻿je_expand_germany_baltic = {
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
 
-	group = je_group_internal_affairs
-
-	on_monthly_pulse = {
-		random_events = {
-			70 = 0
-			10 = ely_germany.1
-			10 = ely_germany.2
-			10 = ely_germany.3
-		}
-	}
+	group = je_group_elysian_content
 
 	complete = {
-		owns_entire_state_region = STATE_POMERANIA
-		owns_entire_state_region = STATE_BADEN
-		owns_entire_state_region = STATE_BAVARIA
-		owns_entire_state_region = STATE_FRANCONIA
-		owns_entire_state_region = STATE_BRUNSWICK
-		owns_entire_state_region = STATE_ELBE
-		owns_entire_state_region = STATE_WESTPHALIA
-		owns_entire_state_region = STATE_ANHALT
-		owns_entire_state_region = STATE_SCHLESWIG_HOLSTEIN
-		owns_entire_state_region = STATE_HANNOVER
-		owns_entire_state_region = STATE_SAXONY
-		owns_entire_state_region = STATE_HESSE
-		owns_entire_state_region = STATE_MECKLENBURG
-		owns_entire_state_region = STATE_EAST_PRUSSIA
 		owns_entire_state_region = STATE_WEST_PRUSSIA
-		owns_entire_state_region = STATE_WURTTEMBERG
-		owns_entire_state_region = STATE_BRANDENBURG
+		owns_entire_state_region = STATE_EAST_PRUSSIA
+		owns_entire_state_region = STATE_RIGA
+		owns_entire_state_region = STATE_COURLAND
+		owns_entire_state_region = STATE_KAUNAS
+		owns_entire_state_region = STATE_VILNIUS
 	}
 
 	on_complete = {
-			trigger_event = { id = ely_germany.4 days = 5 }
+			trigger_event = { id = german_nationalism.3 }
+	}
+}	
+
+je_expand_germany_south = {
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		owns_entire_state_region = STATE_BOHEMIA
+		owns_entire_state_region = STATE_MORAVIA
+		owns_entire_state_region = STATE_POSEN
+		owns_entire_state_region = STATE_SILESIA
+	}
+
+	on_complete = {
+			trigger_event = { id = german_nationalism.3 }
+	}
+}	
+
+je_expand_germany_balkans = {
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		owns_entire_state_region = STATE_TRANSDANUBIA
+		owns_entire_state_region = STATE_WEST_SLOVAKIA
+		owns_entire_state_region = STATE_SLOVENIA
+	}
+
+	on_complete = {
+			trigger_event = { id = german_nationalism.3 }
+	}
+}	
+
+je_expand_germany_east = {
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		owns_entire_state_region = STATE_WEST_GALICIA
+		owns_entire_state_region = STATE_EAST_GALICIA
+		owns_entire_state_region = STATE_GREATER_POLAND
+		owns_entire_state_region = STATE_LESSER_POLAND
+		owns_entire_state_region = STATE_MAZOVIA
+	}
+
+	on_complete = {
+			trigger_event = { id = german_nationalism.3 }
+	}
+}
+
+je_germanize_conquest = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		any_scope_state = {
+			state_region = s:STATE_WEST_GALICIA
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 10
+			}
+		}
+		any_scope_state = {
+			state_region = s:STATE_EAST_GALICIA
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 5
+			}
+		}
+		any_scope_state = {
+			state_region = s:STATE_TRANSDANUBIA
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 5
+			}
+		}
+		any_scope_state = {
+			state_region = s:STATE_WEST_SLOVAKIA
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 10
+			}
+		}
+		any_scope_state = {
+			state_region = s:STATE_GREATER_POLAND
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 10
+			}
+		}
+		any_scope_state = {
+			state_region = s:STATE_LESSER_POLAND
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 10
+			}
+		}
+		any_scope_state = {
+			state_region = s:STATE_MAZOVIA
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 5
+			}
+		}
+	}
+
+	on_complete = {
+			trigger_event = { id = german_nationalism.4 }
 	}
 }

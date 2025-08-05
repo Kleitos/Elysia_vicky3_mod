@@ -1,4 +1,58 @@
 ﻿namespace = liberty_event
+namespace = elyric
+namespace = ely_unification
+namespace = ely_flavor
+
+ely_flavor.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = ely_flavor.1.t
+	desc = ely_flavor.1.d
+	flavor = ely_flavor.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+    option = {
+		name = ely_flavor.1.a
+		default_option = yes
+		
+		trigger_event = {
+			id = ely_infrastructure_event.6 days = 5
+		}
+
+		add_journal_entry = {
+			type = je_reform_economy_ely
+		}
+		add_journal_entry = {
+			type = je_reform_bureaucracy_ely
+		}
+		add_journal_entry = {
+			type = je_reform_navy
+		}
+		add_journal_entry = {
+			type = je_unify_elysium
+		}
+		add_journal_entry = {
+			type = je_apaleisian_pathway
+		}
+	}
+}
 
 # Pagan freedom
 liberty_event.1 = { 
@@ -42,7 +96,7 @@ liberty_event.1 = {
 		}
 		add_modifier = {
 			name = pagan_world_modifier
-			months = normal_modifier_time
+			days = very_long_modifier_time
 		}
 		activate_law = law_type:law_cultural_exclusion
 	}
@@ -61,7 +115,7 @@ liberty_event.1 = {
 		}
 		add_modifier = {
 			name = pagan_world_modifier
-			months = short_modifier_time
+			days = very_long_modifier_time
 		}
 		activate_law = law_type:law_racial_segregation
 	}
@@ -132,3 +186,722 @@ liberty_event.1 = {
 #		}
 #	}
 #}
+
+# Annexing Client States
+elyric.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = elyric.1.t
+	desc = elyric.1.d
+	flavor = elyric.1.f
+
+	duration = 3
+
+	event_image = {
+		video = "europenorthamerica_native_american"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	minor_left_icon = c:ELY
+	#minor_right_icon = scope:integrate_elyric_target_country
+
+	immediate = {
+		random_neighbouring_state = {
+			limit = {
+				owner = {
+					is_subject_of = ROOT
+					country_has_primary_culture = cu:elyric
+				}
+			}
+			owner = {
+				save_scope_as = integrate_elyric_target_state_1
+			}
+		}
+		random_neighbouring_state = {
+			limit = {
+				owner = {
+					is_subject_of = ROOT
+					country_has_primary_culture = cu:elyric
+				}
+				NOT = { this = scope:integrate_elyric_target_state_1 }
+			}
+			owner = {
+				save_scope_as = integrate_elyric_target_state_2
+			}
+		}
+		random_neighbouring_state = {
+			limit = {
+				owner = {
+					is_subject_of = ROOT
+					country_has_primary_culture = cu:elyric
+				}
+				NOT = { this = scope:integrate_elyric_target_state_1 }
+				NOT = { this = scope:integrate_elyric_target_state_2 }
+			}
+			owner = {
+				save_scope_as = integrate_elyric_target_state_3
+			}
+		}
+	}
+
+	option = {
+		name = elyric.1.a
+		default_option = yes
+		annex = scope:integrate_elyric_target_state_1
+		ai_chance = {
+			base = 1
+		}
+	}
+
+	option = {
+		name = elyric.1.b
+		trigger = {
+			exists = scope:integrate_elyric_target_state_2
+		}
+		annex = scope:integrate_elyric_target_state_2
+	}
+	
+	option = {
+		name = elyric.1.c
+		trigger = {
+			exists = scope:integrate_elyric_target_state_3
+		}
+		annex = scope:integrate_elyric_target_state_3
+	}
+}
+
+elyric.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = elyric.2.t
+	desc = elyric.2.d
+	flavor = elyric.2.f
+
+	duration = 3
+
+	event_image = {
+		video = "europenorthamerica_native_american"
+	}
+	immediate = {
+	}
+
+	option = {
+		name = elyric.2.a
+		default_option = yes
+		hidden_effect = {
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:elyric }
+					change_pop_culture = { target = cu:elysian value = 1 }
+				}
+			}
+		}
+		s:STATE_NEW_YORK = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_ALASKA = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_WASHINGTON = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_OREGON = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_IDAHO = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_COLORADO = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_WYOMING = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_MONTANA = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_NORTH_DAKOTA = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_SOUTH_DAKOTA = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_NEBRASKA = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_KANSAS = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_OKLAHOMA = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_ARKANSAS = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_MISSOURI = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_IOWA = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_MINNESOTA = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_WISCONSIN = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_MICHIGAN = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_KENTUCKY = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_TENNESSEE = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_MISSISSIPPI = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_ALABAMA = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_FLORIDA = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_GEORGIA = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_TEXAS = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_YUKON_TERRITORY = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_NORTHWEST_TERRITORIES = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_NUNAVUT = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_BRITISH_COLUMBIA = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_ALBERTA = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_SASKATCHEWAN = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_MANITOBA = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_ONTARIO = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_QUEBEC = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_GUATEMALA = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_NICARAGUA = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_NEVADA = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_ARIZONA = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_NEW_MEXICO = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_CALIFORNIA = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_SONORA = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_CHIHUAHUA = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_BAJIO = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_YUCATAN = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_MEXICO = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_VERACRUZ = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_GUERRERO = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_OAXACA = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_ZACATECAS = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_GREENLAND = {
+			remove_homeland = cu:elyric
+			add_homeland = cu:elysian
+		}
+		s:STATE_UTAH = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_CHIAPAS = {
+			remove_homeland = cu:elyric
+		}
+		s:STATE_BAJA_CALIFORNIA = {
+			remove_homeland = cu:elyric
+		}
+	}
+}
+
+elyric.3 = {
+	type = country_event
+	placement = ROOT
+
+	title = elyric.3.t
+	desc = elyric.3.d
+	flavor = elyric.3.f
+
+	duration = 3
+
+	event_image = {
+		video = "europenorthamerica_native_american"
+	}
+	immediate = {
+		hidden_effect = {
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:cariban }
+					change_pop_culture = { target = cu:arkadian value = 1 }
+				}
+			}
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:guajiro }
+					change_pop_culture = { target = cu:arkadian value = 1 }
+				}
+			}
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:amazonian }
+					change_pop_culture = { target = cu:arkadian value = 1 }
+				}
+			}
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:tupinamba }
+					change_pop_culture = { target = cu:arkadian value = 1 }
+				}
+			}
+		}
+	}
+
+	option = {
+		name = elyric.3.a
+		default_option = yes
+			c:ELY = {
+				trigger_event = { id = ely_imperialism.8 days = 35 }
+			}
+		s:STATE_GUAYANA = {
+			remove_homeland = cu:amazonian
+			remove_homeland = cu:cariban
+			add_homeland = cu:arkadian
+		}
+		s:STATE_ZULIA = {
+			remove_homeland = cu:guajiro
+			remove_homeland = cu:cariban
+			add_homeland = cu:arkadian
+		}
+		s:STATE_MIRANDA = {
+			remove_homeland = cu:cariban
+			remove_homeland = cu:amazonian
+			add_homeland = cu:arkadian
+		}
+		s:STATE_BOLIVAR = {
+			remove_homeland = cu:guajiro
+			remove_homeland = cu:cariban
+			add_homeland = cu:arkadian
+		}
+		s:STATE_GUAVIARE = {
+			remove_homeland = cu:amazonian
+			add_homeland = cu:arkadian
+		}
+		s:STATE_ACRE = {
+			remove_homeland = cu:amazonian
+			add_homeland = cu:arkadian
+		}
+		s:STATE_LA_PAZ = {
+			remove_homeland = cu:amazonian
+			add_homeland = cu:arkadian
+		}
+		s:STATE_PASTAZA = {
+			remove_homeland = cu:amazonian
+			add_homeland = cu:arkadian
+		}
+		s:STATE_PARA = {
+			remove_homeland = cu:amazonian
+			remove_homeland = cu:brazilian
+			remove_homeland = cu:afro_brazilian
+			add_homeland = cu:arkadian
+		}
+		s:STATE_AMAZONAS = {
+			remove_homeland = cu:amazonian
+			add_homeland = cu:arkadian
+		}
+		s:STATE_MATO_GROSSO = {
+			remove_homeland = cu:amazonian
+			remove_homeland = cu:brazilian
+			remove_homeland = cu:afro_brazilian
+			add_homeland = cu:arkadian
+		}
+		s:STATE_MARANHAO = {
+			remove_homeland = cu:tupinamba
+			remove_homeland = cu:brazilian
+			remove_homeland = cu:afro_brazilian
+			add_homeland = cu:arkadian
+		}
+		s:STATE_GOIAS = {
+			remove_homeland = cu:tupinamba
+			remove_homeland = cu:brazilian
+			remove_homeland = cu:afro_brazilian
+			add_homeland = cu:arkadian
+		}
+		s:STATE_RIO_GRANDE_DO_NORTE = {
+			remove_homeland = cu:tupinamba
+			remove_homeland = cu:brazilian
+			remove_homeland = cu:afro_brazilian
+			add_homeland = cu:arkadian
+		}
+		s:STATE_CEARA = {
+			remove_homeland = cu:tupinamba
+			remove_homeland = cu:brazilian
+			remove_homeland = cu:afro_brazilian
+			add_homeland = cu:arkadian
+		}
+		s:STATE_PIAUI = {
+			remove_homeland = cu:tupinamba
+			remove_homeland = cu:brazilian
+			remove_homeland = cu:afro_brazilian
+			add_homeland = cu:arkadian
+		}
+		s:STATE_PERNAMBUCO = {
+			remove_homeland = cu:tupinamba
+			remove_homeland = cu:brazilian
+			remove_homeland = cu:afro_brazilian
+			add_homeland = cu:arkadian
+		}
+		s:STATE_PARAIBA = {
+			remove_homeland = cu:tupinamba
+			remove_homeland = cu:brazilian
+			remove_homeland = cu:afro_brazilian
+			add_homeland = cu:arkadian
+		}
+	}
+}
+
+ely_unification.1 = {
+	type = country_event
+	placement = root
+
+	duration = 3
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_native_american.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/sufferage"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	title = ely_unification.1.t
+	desc = ely_unification.1.d
+	flavor = ely_unification.1.f
+
+	trigger = { 
+	}
+	
+	immediate = {
+		set_variable = {
+			name = integrate_elyric_started
+		}
+	}
+
+	option = {
+		name = ely_unification.1.a
+			default_option = yes
+		add_journal_entry = {
+			type = je_populate_interior
+		}
+		add_journal_entry = {
+			type = je_unify_lakonia
+		}
+		add_journal_entry = {
+			type = je_unify_andronikos
+		}
+		add_journal_entry = {
+			type = je_unify_skythia
+		}
+		add_journal_entry = {
+			type = je_unify_thoulea
+		}
+		add_journal_entry = {
+			type = je_unify_kykladia
+		}
+		add_journal_entry = {
+			type = je_unify_borea
+		}
+		add_journal_entry = {
+			type = je_unify_hesperidia
+		}
+		add_journal_entry = {
+			type = je_elysian_games
+		}
+	}
+}
+
+ely_unification.2 = {
+	type = country_event
+	placement = root
+
+	duration = 3
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_native_american.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/sufferage"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	title = ely_unification.2.t
+	desc = ely_unification.2.d
+	flavor = ely_unification.2.f
+
+	trigger = { 
+	}
+	
+	immediate = {
+	}
+
+	option = {
+		name = ely_unification.2.a
+		default_option = yes
+		add_journal_entry = {
+			type = je_lakonias_pathway
+		}
+	}
+}
+
+ely_unification.3 = {
+	type = country_event
+	placement = root
+
+	duration = 3
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_native_american.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/sufferage"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	title = ely_unification.3.t
+	desc = ely_unification.3.d
+	flavor = ely_unification.3.f
+
+	trigger = { 
+	}
+	
+	immediate = {
+	}
+
+	option = {
+		name = ely_unification.2.a
+		default_option = yes
+		add_journal_entry = {
+			type = je_modern_dockyard
+		}
+	}
+}
+
+ely_unification.4 = {
+	type = country_event
+	placement = root
+
+	duration = 3
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_native_american.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/sufferage"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	title = ely_unification.4.t
+	desc = ely_unification.4.d
+	flavor = ely_unification.4.f
+
+	trigger = { 
+	}
+	
+	immediate = {
+	}
+
+	option = {
+		name = ely_unification.2.a
+		default_option = yes
+		add_journal_entry = {
+			type = je_trans_elysian_railway
+		}
+	}
+}
+
+ely_unification.5 = {
+	type = country_event
+	placement = root
+
+	duration = 3
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_native_american.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/sufferage"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	title = ely_unification.5.t
+	desc = ely_unification.5.d
+	flavor = ely_unification.5.f
+
+	trigger = { 
+	}
+	
+	immediate = {
+	}
+
+	option = {
+		name = ely_unification.2.a
+		default_option = yes
+		add_journal_entry = {
+			type = je_thoulean_pathway
+		}
+	}
+}
+
+ely_unification.6 = {
+	type = country_event
+	placement = root
+
+	duration = 3
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_native_american.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/sufferage"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	title = ely_unification.6.t
+	desc = ely_unification.6.d
+	flavor = ely_unification.6.f
+
+	trigger = { 
+	}
+	
+	immediate = {
+	}
+
+	option = {
+		name = ely_unification.2.a
+		default_option = yes
+		add_journal_entry = {
+			type = je_borealia_eireneic_railway
+		}
+	}
+}
+
+ely_unification.7 = {
+	type = country_event
+	placement = root
+
+	duration = 3
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_native_american.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/sufferage"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	title = ely_unification.7.t
+	desc = ely_unification.7.d
+	flavor = ely_unification.7.f
+
+	trigger = { 
+	}
+	
+	immediate = {
+	}
+
+	option = {
+		name = ely_unification.2.a
+		default_option = yes
+		add_journal_entry = {
+			type = je_arkadias_pathway
+		}
+		add_journal_entry = {
+			type = je_drain_marshes_ely
+		}
+	}
+}
+
+ely_unification.8 = {
+	type = country_event
+	placement = root
+
+	duration = 3
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_native_american.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/sufferage"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	title = ely_unification.8.t
+	desc = ely_unification.8.d
+	flavor = ely_unification.8.f
+
+	trigger = { 
+	}
+	
+	immediate = {
+	}
+
+	option = {
+		name = ely_unification.2.a
+		default_option = yes
+		add_journal_entry = {
+			type = je_hesperidias_pathway
+		}
+	}
+}

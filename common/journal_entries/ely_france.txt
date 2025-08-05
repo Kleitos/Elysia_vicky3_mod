@@ -1,80 +1,4 @@
-﻿je_conquest_of_tunisia = {
-	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
-
-	group = je_group_elysian_content
-
-	complete = {
-		owns_entire_state_region = STATE_TUNISIA
-		owns_entire_state_region = STATE_TRIPOLI
-		owns_entire_state_region = STATE_LIBYA
-		owns_entire_state_region = STATE_LIBYAN_DESERT
-	}
-
-	on_complete = {
-		trigger_event = { id = french_north_africa.1 days = 5 }
-	}
-	
-}
-
-je_incursion_in_tunisia = {
-	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
-
-	group = je_group_elysian_content
-
-	complete = {
- 		is_at_war = no
-		ROOT = {
-			army_size > { 
-    		value =  c:TUN.army_size
-    		multiply = 1
-			}
-		}
-	}
-
-	on_complete = {
-		trigger_event = { id = french_north_africa.3 days = 5 popup = yes }
-	}
-	
-}
-
-je_conquest_of_morocco = {
-	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
-
-	group = je_group_elysian_content
-
-	complete = {
-		owns_entire_state_region = STATE_MARRAKECH
-		owns_entire_state_region = STATE_FEZ
-	}
-
-	on_complete = {
-		trigger_event = { id = french_north_africa.2 days = 5 popup = yes }
-	}
-	
-}
-
-je_incursion_in_morocco = {
-	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
-
-	group = je_group_elysian_content
-
-	complete = {
- 		is_at_war = no
-		ROOT = {
-			army_size > { 
-    		value =  c:MOR.army_size
-    		multiply = 1
-			}
-		}
-	}
-
-	on_complete = {
-		trigger_event = { id = french_north_africa.4 days = 5 popup = yes }
-	}
-	
-}
-
-je_FRA_control_south = {
+﻿je_FRA_control_south = {
 	icon = "gfx/interface/icons/event_icons/unify.dds"
 
 	group = je_group_elysian_content
@@ -84,7 +8,7 @@ je_FRA_control_south = {
 	}
 
 	goal_add_value = {
-		add = 5
+		add = 10
 	}
 
 	progressbar = yes
@@ -95,14 +19,11 @@ je_FRA_control_south = {
 	complete = {
 		custom_tooltip = {
 			text = keep_control_south_tt
-			var:control_south_france = 4
+			var:control_south_france >= 4
+			has_variable = south_protest_happened
 		}
 		custom_tooltip = {
-			text = occ_happy_tt
-			has_variable = south_colonization_happy
-			has_variable = south_industrialisation_happy
-			has_variable = south_railway_happy
-			has_variable = south_culture_happy
+			text = fra_riots_have_happened_tt
 			has_variable = south_protest_happened
 		}
 	}
@@ -117,10 +38,65 @@ je_FRA_control_south = {
 			var:control_south_france <= 3
 			has_variable = south_protest_happened
 		}
+		custom_tooltip = {
+			text = fra_riots_have_happened_tt
+			has_variable = south_protest_happened
+		}
 	}
 
 	on_fail = {
 		trigger_event = { id = ely_france_south.7 days = 5 popup = yes }
+	}
+	
+}
+
+je_FRA_control_north = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+
+	current_value = {
+		value = var:control_north_france
+	}
+
+	goal_add_value = {
+		add = 10
+	}
+
+	progressbar = yes
+
+	weight = 100
+	should_be_pinned_by_default = yes
+
+	complete = {
+		custom_tooltip = {
+			text = keep_control_north_tt
+			var:control_north_france >= 4
+			has_variable = south_protest_happened
+		}
+		custom_tooltip = {
+			text = fra_riots_have_happened_tt
+			has_variable = south_protest_happened
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = ely_france_north.1 days = 5 popup = yes }
+	}
+
+	fail = {
+		custom_tooltip = {
+			text = loose_control_north_tt
+			has_variable = south_protest_happened
+		}
+		custom_tooltip = {
+			text = fra_riots_have_happened_tt
+			has_variable = south_protest_happened
+		}
+	}
+
+	on_fail = {
+		trigger_event = { id = ely_france_north.2 days = 5 popup = yes }
 	}
 	
 }
@@ -132,63 +108,32 @@ je_develop_south_FRA = {
 
 	complete = {
 		any_scope_state = {
-			state_region = s:STATE_SAVOY
-			any_scope_building = {
-				is_building_type = building_urban_center
-				level >= 2
-			}
-		}
-		any_scope_state = {
 			state_region = s:STATE_LANGUEDOC
+			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_urban_center
-				level >= 5
+				level >= 7
 			}
 		}
 		any_scope_state = {
 			state_region = s:STATE_GUYENNE
-			any_scope_building = {
-				is_building_type = building_urban_center
-				level >= 3
-			}
-		}
-		any_scope_state = {
-			state_region = s:STATE_AQUITAINE
-			any_scope_building = {
-				is_building_type = building_urban_center
-				level >= 3
-			}
-		}
-		any_scope_state = {
-			state_region = s:STATE_EAST_SWITZERLAND
-			any_scope_building = {
-				is_building_type = building_urban_center
-				level >= 3
-			}
-		}
-		any_scope_state = {
-			state_region = s:STATE_WEST_SWITZERLAND
+			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_urban_center
 				level >= 5
 			}
 		}
 		any_scope_state = {
-			state_region = s:STATE_PROVENCE
+			state_region = s:STATE_AQUITAINE
+			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_urban_center
-				level >= 7
+				level >= 5
 			}
 		}
 		any_scope_state = {
 			state_region = s:STATE_AUVERGNE_LIMOUSIN
-			any_scope_building = {
-				is_building_type = building_urban_center
-				level >= 7
-			}
-		}
-		any_scope_state = {
-			state_region = s:STATE_RHONE
+			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_urban_center
 				level >= 10
@@ -203,9 +148,6 @@ je_develop_south_FRA = {
 				name = control_south_france
 				add = 1
 			}
-			set_variable = {
-				name = south_industrialisation_happy
-			}
 		}
 	}
 
@@ -213,7 +155,7 @@ je_develop_south_FRA = {
 
 	should_be_pinned_by_default = yes
 
-	timeout = 5475
+	timeout = 3650
 
 	on_timeout = {
 		custom_tooltip = {
@@ -222,8 +164,80 @@ je_develop_south_FRA = {
 				name = control_south_france
 				add = -1
 			}
-			set_variable = {
-				name = south_industrialisation_angry
+		}
+	}
+}	
+
+je_develop_north_FRA = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		any_scope_state = {
+			state_region = s:STATE_NORTH_RHINE
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 5
+			}
+		}
+		any_scope_state = {
+			state_region = s:STATE_ALSACE_LORRAINE
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 5
+			}
+		}
+		any_scope_state = {
+			state_region = s:STATE_LORRAINE
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 5
+			}
+		}
+		any_scope_state = {
+			state_region = s:STATE_RHINELAND
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 10
+			}
+		}
+		any_scope_state = {
+			state_region = s:STATE_WALLONIA
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 10
+			}
+		}
+	}
+
+	on_complete = {
+		custom_tooltip = {
+			text = franks_happy_industry_tt
+			change_variable = {
+				name = control_north_france
+				add = 1
+			}
+		}
+	}
+
+	weight = 10
+
+	should_be_pinned_by_default = yes
+
+	timeout = 3650
+
+	on_timeout = {
+		custom_tooltip = {
+			text = franks_angry_industry_tt
+			change_variable = {
+				name = control_north_france
+				add = -1
 			}
 		}
 	}
@@ -238,12 +252,6 @@ je_crush_secession = {
 		OR = {
 			NOT = { exists = c:OCC }
 			c:OCC ?= {
-				is_country_alive = no
-			}
-		}
-		OR = {
-			NOT = { exists = c:SAV }
-			c:SAV ?= {
 				is_country_alive = no
 			}
 		}
@@ -278,6 +286,12 @@ je_survive_occ = {
 
 	complete = {
 		has_truce_with = c:FRA
+		owns_entire_state_region = STATE_PROVENCE
+		owns_entire_state_region = STATE_LANGUEDOC
+		owns_entire_state_region = STATE_RHONE
+		owns_entire_state_region = STATE_GUYENNE
+		owns_entire_state_region = STATE_AUVERGNE_LIMOUSIN
+		owns_entire_state_region = STATE_AQUITAINE
 	}
 
 	on_complete = {
@@ -286,264 +300,73 @@ je_survive_occ = {
 	
 }
 
-je_cultural_shift_frankish = {
-	icon = "gfx/interface/icons/event_icons/unify.dds"
+je_cape_to_cairo = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
 
 	group = je_group_elysian_content
 
 	complete = {
-		owns_entire_state_region = STATE_HOLLAND
-		owns_entire_state_region = STATE_FRIESLAND
-		owns_entire_state_region = STATE_GELRE
-		has_law = law_type:law_compulsory_primary_school
-		OR = {
-			has_law = law_type:law_religious_schools
-			has_law = law_type:law_private_schools
-			has_law = law_type:law_public_schools
-		}
-		institution_investment_level = {
-			institution = institution_schools
-			value >= 3
-		}
-	}
-
-	on_complete = {
-		trigger_event = { id = frankish_culture.1 }
-	}
-
-}
-
-je_reunite_dutch_diaspora = {
-	icon = "gfx/interface/icons/event_icons/unify.dds"
-
-	group = je_group_elysian_content
-
-	complete = {
-		OR = {
+		OR = {	
 			AND = {
-				c:SAF ?= {
-					is_country_alive = yes
-					is_subject_of = c:FRA
-					owns_entire_state_region = STATE_ZULULAND
-					owns_entire_state_region = STATE_VRYSTAAT
-					owns_entire_state_region = STATE_TRANSVAAL
-					owns_entire_state_region = STATE_CAPE_COLONY
-					owns_entire_state_region = STATE_NORTHERN_CAPE
-				}
+				owns_entire_state_region = STATE_LOWER_EGYPT
+				owns_entire_state_region = STATE_UPPER_EGYPT
+				owns_entire_state_region = STATE_EGYPTIAN_DESERT
+				owns_entire_state_region = STATE_MIDDLE_EGYPT
+				owns_entire_state_region = STATE_MATRUH
+				owns_entire_state_region = STATE_DONGOLA
+				owns_entire_state_region = STATE_KORDOFAN
+				owns_entire_state_region = STATE_BLUE_NILE
+				owns_entire_state_region = STATE_EQUATORIA
+				owns_entire_state_region = STATE_UGANDA
+				owns_entire_state_region = STATE_CONGO_ORIENTALE
+				owns_entire_state_region = STATE_TANGANYIKA
+				owns_entire_state_region = STATE_KATANGA
+				owns_entire_state_region = STATE_ZAMBIA
+				owns_entire_state_region = STATE_BOTSWANA
 			}
-			AND = {
-				c:SAF ?= {
-					is_country_alive = no
-				}
-				c:FRA ?= {
-					owns_entire_state_region = STATE_ZULULAND
-					owns_entire_state_region = STATE_VRYSTAAT
-					owns_entire_state_region = STATE_TRANSVAAL
-					owns_entire_state_region = STATE_CAPE_COLONY
-					owns_entire_state_region = STATE_NORTHERN_CAPE
-				}
-			}
-		}
-		OR = {
-			AND = {
-				c:TAS ?= {
-					is_country_alive = yes
-					is_subject_of = c:FRA
-					owns_entire_state_region = STATE_TASMANIA
-				}
-			}
-			AND = {
-				c:TAS ?= {
-					is_country_alive = no
-				}
-				c:FRA ?= {
-					owns_entire_state_region = STATE_TASMANIA
-				}
-			}
-		}
-		OR = {
-			AND = {
-				c:ATV ?= {
-					is_country_alive = yes
-					is_subject_of = c:FRA
-					owns_entire_state_region = STATE_ALGIERS
-					owns_entire_state_region = STATE_ORAN
-					owns_entire_state_region = STATE_CONSTANTINE
-					owns_entire_state_region = STATE_EAST_SAHARA
-					owns_entire_state_region = STATE_SAHARA
-					owns_entire_state_region = STATE_LIBYA
-					owns_entire_state_region = STATE_INNER_MOROCCO
-					owns_entire_state_region = STATE_FEZ
-					owns_entire_state_region = STATE_AL_RIF
-					owns_entire_state_region = STATE_MARRAKECH
-					owns_entire_state_region = STATE_TRIPOLI
-					owns_entire_state_region = STATE_WEST_SAHARA
-					owns_entire_state_region = STATE_LIBYAN_DESERT
-					owns_entire_state_region = STATE_MATRUH
-				}
-			}
-			AND = {
-				c:ATV ?= {
-					is_country_alive = no
-				}
-				c:FRA ?= {
-					owns_entire_state_region = STATE_ALGIERS
-					owns_entire_state_region = STATE_ORAN
-					owns_entire_state_region = STATE_CONSTANTINE
-					owns_entire_state_region = STATE_EAST_SAHARA
-					owns_entire_state_region = STATE_SAHARA
-					owns_entire_state_region = STATE_LIBYA
-					owns_entire_state_region = STATE_INNER_MOROCCO
-					owns_entire_state_region = STATE_FEZ
-					owns_entire_state_region = STATE_AL_RIF
-					owns_entire_state_region = STATE_MARRAKECH
-					owns_entire_state_region = STATE_TRIPOLI
-					owns_entire_state_region = STATE_WEST_SAHARA
-					owns_entire_state_region = STATE_LIBYAN_DESERT
-					owns_entire_state_region = STATE_MATRUH
-				}
+			any_subject_or_below = {
+				owns_entire_state_region = STATE_LOWER_EGYPT
+				owns_entire_state_region = STATE_UPPER_EGYPT
+				owns_entire_state_region = STATE_EGYPTIAN_DESERT
+				owns_entire_state_region = STATE_MIDDLE_EGYPT
+				owns_entire_state_region = STATE_MATRUH
+				owns_entire_state_region = STATE_DONGOLA
+				owns_entire_state_region = STATE_KORDOFAN
+				owns_entire_state_region = STATE_BLUE_NILE
+				owns_entire_state_region = STATE_EQUATORIA
+				owns_entire_state_region = STATE_UGANDA
+				owns_entire_state_region = STATE_CONGO_ORIENTALE
+				owns_entire_state_region = STATE_TANGANYIKA
+				owns_entire_state_region = STATE_KATANGA
+				owns_entire_state_region = STATE_ZAMBIA
+				owns_entire_state_region = STATE_BOTSWANA
 			}
 		}
 	}
 
 	on_complete = {
-		trigger_event = { id = frankish_empire.2 days = 5 popup = yes }
+		trigger_event = { id = french_north_africa.2 popup = yes }
 	}
-
-}
-
-je_reunite_germanic_colonies = {
-	icon = "gfx/interface/icons/event_icons/unify.dds"
-
-	group = je_group_elysian_content
-
-	complete = {
-		AND = {
-			c:DEI ?= {
-				is_country_alive = yes
-				is_subject_of = c:FRA
-			}
-			c:WIN ?= {
-				is_country_alive = yes
-				is_subject_of = c:FRA
-			}
-		}
-	}
-
-	on_complete = {
-		trigger_event = { id = frankish_empire.4 days = 5 }
-	}
-
-	fail = {
-		AND = {
-			c:WIN ?= {
-				is_country_alive = no
-			}
-			c:DEI ?= {
-				is_country_alive = no
-			}
-		}
-	}
-
-	on_fail = {
-		trigger_event = { id = frankish_empire.5 days = 5 popup = yes }
-	}
-
-}
-
-je_frankogerman_wedding = {
-
-	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
-
-	group = je_group_elysian_content
-
-	scripted_progress_bar = union_of_frankogerman_progress_bar
-
-	on_monthly_pulse = {
-		effect = {
-			set_global_variable = {
-				name = france_gdp
-				value = c:FRA.gdp
-			}
-			set_global_variable = {
-				name = german_gdp
-				value = c:GER.gdp
-			}
-		}
-	}
-
-	is_shown_when_inactive = {
-		exists = c:FRA
-		exists = c:GER
-		OR = {
-			root = c:FRA
-			root = c:GER
-		}
-	}
-
-	can_deactivate = yes
 	
-	possible = {
-		AND = {
-			exists = c:FRA
-			c:FRA = {
-				has_variable = frankish_empire_reunite_fra_var
-				has_law = law_type:law_monarchy
-			}
-		}
-		AND = {
-			exists = c:GER
-			c:GER = {
-				has_variable = frankish_empire_reunite_ger_var
-				has_law = law_type:law_monarchy
-			}
-		}
-		OR = {
-			AND = {
-				exists = c:FRA
-				root = c:FRA
-				exists = c:GER
-				c:GER = { 
-					relations:root > relations_threshold:cordial 
-				}
-			}
-			AND = {
-				exists = c:GER
-				root = c:GER
-				exists = c:FRA
-				c:FRA = { 
-					relations:root > relations_threshold:cordial 
-				}
-			}
-		}
+}
 
+je_holy_land = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		owns_entire_state_region = STATE_SINAI
+		owns_entire_state_region = STATE_TRANSJORDAN
+		owns_entire_state_region = STATE_PALESTINE
+		owns_entire_state_region = STATE_LEBANON
+		owns_entire_state_region = STATE_SYRIA
+		owns_entire_state_region = STATE_ALEPPO
+		owns_entire_state_region = STATE_CYPRUS
 	}
 
-	status_desc = {
-		first_valid = {
-			triggered_desc = {
-				desc = je_frankogerman_wedding_status
-			}
-		}
+	on_complete = {
+		trigger_event = { id = french_north_africa.3 popup = yes }
 	}
-
-
-
-	should_be_pinned_by_default = yes
 	
-	weight = 2000
-
-	timeout = 10950
-
-	# effect which is executed when journal entry is timed out
-	on_timeout = {
-		if = {
-			limit = { c:FRA.gdp > c:GER.gdp }
-			c:FRA = { trigger_event = { id = union_of_frankogerman.1 popup = yes} }
-		}
-		if = {
-			limit = { c:GER.gdp > c:FRA.gdp }
-			c:GER = {trigger_event = { id = union_of_frankogerman.2 popup = yes} }
-		}
-	}
 }

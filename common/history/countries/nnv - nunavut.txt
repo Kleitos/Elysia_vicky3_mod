@@ -1,0 +1,24 @@
+﻿COUNTRIES = {
+	c:NNV ?= {
+		effect_starting_technology_tier_3_tech = yes
+		effect_starting_politics_conservative = yes
+		activate_law = law_type:law_presidential_republic # the Indian Territory was, at least, not a monarchy
+		activate_law = law_type:law_racial_segregation # Opens up the territory to potential migration and settlement by non-indigenous people
+		activate_law = law_type:law_legacy_slavery # turns out the Cherokee and other nations also had slaves
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_hereditary_bureaucrats
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_no_police	
+		activate_law = law_type:law_peasant_levies	
+		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_state_religion
+		
+		add_modifier = {
+			name = elysian_client_state_mod
+            months = -1
+		}
+	}
+}

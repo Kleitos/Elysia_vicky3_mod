@@ -19,9 +19,5 @@
 			}
 			add_journal_entry = { type = je_caucasian_war_circassia }
 		}
-		add_modifier = {
-			name = religious_fundamentalism
-			months = -1
-		}
 	}
 }

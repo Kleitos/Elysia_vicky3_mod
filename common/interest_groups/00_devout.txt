@@ -10,6 +10,12 @@
 		ideology_patriarchal
 	}
 
+	character_ideologies = {
+		ideology_moderate
+		ideology_traditionalist
+		ideology_legitimist
+	}
+
 	enable = {
 		always = yes
 	}
@@ -27,6 +33,9 @@
 				limit = {
 					owner = {
 						country_has_state_religion = rel:protestant
+						NOT = {
+							c:BIC ?= this
+						}
 					}
 				}
 				set_ig_trait = ig_trait:ig_trait_pious_fiction
@@ -55,7 +64,7 @@
 					}
 				}
 				set_ig_trait = ig_trait:ig_trait_pious_fiction
-				set_ig_trait = ig_trait:ig_trait_khalsa
+				set_ig_trait = ig_trait:ig_trait_rehat
 				set_ig_trait = ig_trait:ig_trait_kar_seva
 			}
 			else_if = {
@@ -110,13 +119,23 @@
 				set_ig_trait = ig_trait:ig_trait_mecelle
 				set_ig_trait = ig_trait:ig_trait_da_wat
 			}
+			else_if = {
+				limit = {
+					owner = {
+						c:BIC ?= this
+					}
+				}
+				set_ig_trait = ig_trait:ig_trait_pious_fiction
+				set_ig_trait = ig_trait:ig_trait_divine_right
+				set_ig_trait = ig_trait:ig_trait_asceticism
+			}
 			else = {
 				set_ig_trait = ig_trait:ig_trait_pious_fiction
 				set_ig_trait = ig_trait:ig_trait_divine_right
 				set_ig_trait = ig_trait:ig_trait_be_fruitful_and_multiply
 			}
 		}
-		
+
 		### Specific
 
 		# Buddhist Monks (Japan)
@@ -166,6 +185,9 @@
 					country_has_primary_culture = cu:irish
 					c:NRU ?= this
 				}
+				NOT = {
+					c:BIC ?= this
+				}
 			}
 			ig:ig_devout = {
 				set_interest_group_name = ig_anglican_church
@@ -205,6 +227,16 @@
 			}
 			ig:ig_devout = {
 				set_interest_group_name = ig_church_of_norway
+			}
+		}
+		# Church of Finland
+		else_if = {
+			limit = {
+				country_has_state_religion = rel:protestant
+				country_has_primary_culture = cu:finnish
+			}
+			ig:ig_devout = {
+				set_interest_group_name = ig_church_of_finland
 			}
 		}
 		# Church of Sweden
@@ -262,35 +294,40 @@
 		# Catholic Church
 		else_if = {
 			limit = { country_has_state_religion = rel:catholic }
-			ig:ig_devout = { 
-				set_interest_group_name = ig_catholic_church 
+			ig:ig_devout = {
+				set_interest_group_name = ig_catholic_church
 			}
 		}
 		# Evangelical Church
 		else_if = {
-			limit = { country_has_state_religion = rel:protestant }
-			ig:ig_devout = { 
+			limit = {
+				country_has_state_religion = rel:protestant
+				NOT = {
+					c:BIC ?= this
+				}
+			}
+			ig:ig_devout = {
 				set_interest_group_name = ig_evangelical_church
 			}
 		}
 		# Sunni Ulema
 		else_if = {
 			limit = { country_has_state_religion = rel:sunni }
-			ig:ig_devout = { 
+			ig:ig_devout = {
 				set_interest_group_name = ig_sunni_madrasahs
 			}
 		}
 		# Shi'a Ulema
 		else_if = {
 			limit = { country_has_state_religion = rel:shiite }
-			ig:ig_devout = { 
+			ig:ig_devout = {
 				set_interest_group_name = ig_shia_madrasahs
 			}
 		}
 		# Oriental Orthodox Church
 		else_if = {
 			limit = { country_has_state_religion = rel:oriental_orthodox }
-			ig:ig_devout = { 
+			ig:ig_devout = {
 				set_interest_group_name = ig_oriental_orthodox_church
 				remove_ideology = ideology_patriarchal
 				add_ideology = ideology_oriental_orthodox_patriarch
@@ -298,7 +335,7 @@
 		}
 		# Orthodox Church
 		else_if = {
-			limit = { 
+			limit = {
 				country_has_state_religion = rel:orthodox
 				NOR = {
 					country_has_primary_culture = cu:russian
@@ -306,7 +343,7 @@
 					country_has_primary_culture = cu:ukrainian
 				}
 			}
-			ig:ig_devout = { 
+			ig:ig_devout = {
 				set_interest_group_name = ig_orthodox_church
 				remove_ideology = ideology_patriarchal
 				add_ideology = ideology_orthodox_patriarch
@@ -314,11 +351,27 @@
 		}
 		# Hindu Priesthood
 		else_if = {
-			limit = { country_has_state_religion = rel:hindu }
+			limit = {
+				OR = {
+					country_has_state_religion = rel:hindu
+					c:BIC ?= this
+				}
+			}
 			ig:ig_devout = {
 				set_interest_group_name = ig_hindu_priesthood
-				remove_ideology = ideology_moralist
-				add_ideology = ideology_hindu_moralist
+				if = {
+					limit = {
+						owner = {
+							c:BIC ?= this
+						}
+					}
+					remove_ideology = ideology_moralist
+					add_ideology = ideology_hindu_moralist_british_india
+				}
+				else = {
+					remove_ideology = ideology_moralist
+					add_ideology = ideology_hindu_moralist
+				}
 			}
 		}
 		# Vajrayana Monks
@@ -348,11 +401,11 @@
 				add_ideology = ideology_buddhist_moralist
 			}
 		}
-		# Sikh Priesthood
+		# Sikh Granthis
 		else_if = {
 			limit = { country_has_state_religion = rel:sikh }
 			ig:ig_devout = {
-				set_interest_group_name = ig_sikh_priesthood
+				set_interest_group_name = ig_granthis
 				remove_ideology = ideology_moralist
 				add_ideology = ideology_sikh_moralist
 			}
@@ -370,8 +423,31 @@
 		}
 	}
 	on_disable = {}
+
+	priority_cultures = { #Country scope
+		rule = {
+			trigger = {
+				c:BIC ?= this
+				any_primary_culture = {
+					cu:british = this
+				}
+			}
+			cultures = {
+				assamese avadhi baluchi bengali bihari gujarati kannada malayalam marathi oriya panjabi pathan rajput sindi tamil telegu hindustani bundeli pahari gondi bageli chhattisgarhi deccani
+			}
+		}
+	}
+
 	on_character_ig_membership = {
 		if = {
+			limit = {
+				owner = {
+					c:BIC ?= this
+				}
+			}
+			change_character_religion = rel:hindu
+		}
+		else_if = {
 			limit = {
 				NOT = {
 					owner = {
@@ -388,14 +464,24 @@
 
 
 	pop_potential = {
-		has_state_religion = yes
+		OR = {
+			has_state_religion = yes
+			AND = {
+				exists = c:BIC
+				owner ?= c:BIC
+				has_pop_religion = hindu
+			}
+		}
 		NOT = {
 			has_pop_religion = atheist
 		}
 	}
 
 	pop_weight = {
-		value = 25
+		add = {
+			desc = "POP_BASE_ATTRACTION"
+			value = 25
+		}
 
 		add = {
 			desc = "POP_CLERGYMEN"
@@ -428,7 +514,7 @@
 				value = 0.1
 			}
 		}
-		
+
 		if = {
 			limit = {
 				owner = {
@@ -440,7 +526,7 @@
 				value = 1.5
 			}
 		}
-		
+
 		if = {
 			limit = {
 				owner = {
@@ -466,7 +552,7 @@
 				add = 1
 			}
 		}
-		
+
 		if = {
 			limit = {
 				owner = {
@@ -632,11 +718,34 @@
 		value = 1.0
 	}
 
+	executive_weight = {
+		value = 1.0
+		
+		# The company owning BIC should not get non-industrialist executives
+		if = {
+			limit = {
+				exists = scope:company
+				exists = c:BIC
+				c:BIC = {
+					exists = owning_company
+					owning_company = scope:company
+				}
+			}
+			multiply = {
+				value = 0
+			}
+		}
+	}
+
 	noble_chance = {
 		value = 0.5
 	}
 
 	female_commander_chance = {
+		value = 0.0
+	}
+
+	female_executive_chance = {
 		value = 0.0
 	}
 
@@ -666,7 +775,7 @@
 
 	female_agitator_chance = {
 		value = 0.01
-		
+
 		if = {
 			limit = {
 				owner = {
@@ -677,8 +786,8 @@
 			add = {
 				value = 0.01
 			}
-		}	
-		
+		}
+
 		if = {
 			limit = {
 				owner = {
@@ -701,22 +810,27 @@
 			add = {
 				value = 0.01
 			}
-		}		
+		}
+		if = {
+			limit = {
+				owner = { c:ELY ?= this}
+			}
+			add = {
+				value = 0.75
+			}
+		}
 	}
 
 	# The chance that a commander belonging to this IG takes over leadership when it changes
 	# scope:character is the most popular commander in the IG
 	commander_leader_chance = {
 		value = 0.25
-		if = {
-			limit = {
-				exists = scope:character
-			}
-			multiply = {
-				value = 1
-				add = scope:character.popularity
-				min = 0
-			}
-		}
+		multiply = ig_commander_leader_chance_mult
+	}
+
+	# The chance that a executive belonging to this IG takes over leadership when it changes
+	# scope:character is the most popular executive in the IG
+	executive_leader_chance = {
+		value = 0.25
 	}
 }

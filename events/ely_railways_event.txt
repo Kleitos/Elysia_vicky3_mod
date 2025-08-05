@@ -38,7 +38,7 @@ elysian_railways.1 = {
 			}
 			add_modifier = {
 				name = great_plains_settlement
-				months = normal_modifier_time
+				days = long_modifier_time
 			}
 		}
 		every_scope_state = {
@@ -48,7 +48,7 @@ elysian_railways.1 = {
 			}
 			add_modifier = {
 				name = great_plains_settlement
-				months = normal_modifier_time
+				days = long_modifier_time
 			}
 		}
 	}
@@ -87,7 +87,7 @@ elysian_railways.2 = {
 		scope:pacific_railroad_end = {
 			add_modifier = {
 				name = canada_settlement_mod
-				months = normal_modifier_time
+				days = long_modifier_time
 				multiplier = 2
 			}
 		}
@@ -101,7 +101,7 @@ elysian_railways.2 = {
 			}
 			add_modifier = {
 				name = canada_settlement_mod
-				months = normal_modifier_time
+				days = long_modifier_time
 			}
 		}
 	}

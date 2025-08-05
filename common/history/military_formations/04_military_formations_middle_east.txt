@@ -1,18 +1,23 @@
 ﻿MILITARY_FORMATIONS = {
 	c:TUR ?= {
 
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_balkans
-			name = Rumeli_Ordusu
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_ANKARA
-				count = 10
+		create_character = { # TUR, General
+			is_general = yes
+			first_name = Omer_Lutfi
+			last_name = Pasha
+			historical = yes
+			culture = cu:bosniak
+			religion = rel:sunni
+			interest_group = ig_armed_forces
+			ideology = ideology_royalist
+			birth_date = 1806.9.24
+			commander_rank = commander_rank_2
+			hq = region_arabic
+			traits = {
+				meticulous
+				charismatic
+				experienced_offensive_planner
 			}
-
-			save_scope_as = rumeli_ordusu
 		}
 
 		create_character = { # TUR, General
@@ -28,11 +33,6 @@
 				reckless
 				basic_defensive_strategist
 			}
-			save_scope_as = hafiz_gen
-		}
-
-		scope:hafiz_gen = {
-			transfer_to_formation = scope:rumeli_ordusu
 		}
 
 		create_military_formation = {
@@ -67,6 +67,12 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
 				state_region = s:STATE_ERZURUM
+				count = 5
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_KARS
 				count = 5
 			}
 
@@ -109,6 +115,18 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_war
 				state_region = s:STATE_EASTERN_THRACE
+				count = 10
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_BAGHDAD
+				count = 10
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_ANKARA
 				count = 10
 			}
 
@@ -205,35 +223,6 @@
 			hq_region = sr:region_persia
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_KANDAHAR
-				count = 14
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_KANDAHAR
-				count = 2
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_BALKH
-				count = 4
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_BALKH
-				count = 1
-			}
-		}
-		
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_persia
-
-			combat_unit = {
 				type = unit_type:combat_unit_type_hussars
 				state_region = s:STATE_ISFAHAN
 				count = 3
@@ -269,29 +258,6 @@
 				count = 1
 			}
 		}
-		
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_persia
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_HERAT
-				count = 12
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_HERAT
-				count = 1
-			}
-			
-			combat_unit = {
-				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_PASHTUNISTAN
-				count = 4
-			}
-		}
 	}
 	c:KAB = {
 		create_military_formation = {
@@ -318,6 +284,76 @@
 		}
 	}
 
+	c:KAF = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_persia
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_KABUL
+				count = 3
+			}
+		}
+	}
+
+	c:HER = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_persia
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_HERAT
+				count = 12
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_HERAT
+				count = 1
+			}
+		}
+	}
+
+	c:KAN = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_persia
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_KANDAHAR
+				count = 14
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_KANDAHAR
+				count = 2
+			}
+		}
+	}
+
+	c:MAI = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_persia
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_BALKH
+				count = 4
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_BALKH
+				count = 1
+			}
+		}
+	}
+
 	c:KUN = {
 		create_military_formation = {
 			type = army
@@ -337,10 +373,23 @@
 		}
 	}
 
+	c:CHT = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_persia
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_PASHTUNISTAN
+				count = 4
+			}
+		}
+	}
+
 	c:KAL = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_north_india
+			hq_region = sr:region_bombay
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
@@ -358,7 +407,7 @@
 	c:MAK = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_north_india
+			hq_region = sr:region_bombay
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_irregular_infantry
@@ -387,12 +436,6 @@
 				type = unit_type:combat_unit_type_hussars
 				state_region = s:STATE_KHUZESTAN
 				count = 1
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_BAGHDAD
-				count = 10
 			}
 		}
 	}

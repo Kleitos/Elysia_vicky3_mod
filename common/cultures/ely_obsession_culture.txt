@@ -580,7 +580,7 @@ south_german={
 dutch={
 	color= rgb{ 230 130 50 }
 	religion = protestant
-	traits = { beneluxian_culture_group european_heritage }
+	traits = { beneluxian_culture_group german_speaking european_heritage }
 
     obsessions = {
         liquor
@@ -831,9 +831,9 @@ dutch={
 	}
 }
 dutch_colonial={ # Displayed as "Dutch Colonists" in localization
-	color= hsv{ 230 130 50 }
+	color= rgb{ 230 110 60 }
 	religion = protestant
-	traits = { beneluxian_culture_group european_heritage }
+	traits = { beneluxian_culture_group german_speaking european_heritage }
 
     obsessions = {
         liquor
@@ -1087,7 +1087,7 @@ dutch_colonial={ # Displayed as "Dutch Colonists" in localization
 flemish={
 	color= rgb{ 250 180 80 }
 	religion = catholic
-	traits = { beneluxian_culture_group francophone european_heritage }
+	traits = { beneluxian_culture_group german_speaking european_heritage }
 
     obsessions = {
         liquor
@@ -1619,7 +1619,7 @@ wallonian={
 boer={
 	color= hsv{ 0.10 0.80 0.86 }
 	religion = protestant
-	traits = { beneluxian_culture_group african_settler european_heritage francophone }
+	traits = { beneluxian_culture_group african_settler european_heritage german_speaking }
 
     obsessions = {
         liquor
@@ -2580,7 +2580,7 @@ bosniak={
 romanian={
 	color= rgb{ 255 210 40 }
 	religion = orthodox
-	traits = { romanian_culture_group european_heritage }
+	traits = { romanian_culture_group european_heritage byzantine_legacy }
 
     obsessions = {
         liquor
@@ -3616,13 +3616,10 @@ spanish={
 		Maria_2 MarI_a_Teresa
 	}
 	regal_last_names = {
-		de_BorbO_n
-		de_BorbO_n_Anjou
-		de_BorbO_n_Parma
+		montoya_braganza 
+		trastamara_y_noronha 
 		de_Habsburgo
-		de_Orleans
-		de_Saboya
-		de_Wittelsbach
+		de_Habsburgo_braganza 
 	}	
 	graphics = european
 	ethnicities = {
@@ -5401,7 +5398,7 @@ assamese={
 bengali={
 	color= rgb{ 85 150 5 }
 	religion = sunni
-	traits = { south_asian_heritage hindustani }
+	traits = { south_asian_heritage indo_aryan_language }
 	
 	obsessions = {
 		tea
@@ -5465,7 +5462,7 @@ bengali={
 avadhi={
 	color= rgb{ 90 65 25 }
 	religion = sunni
-	traits = { south_asian_heritage hindustani }
+	traits = { south_asian_heritage indo_aryan_language }
 
     obsessions = {
         tea
@@ -5509,7 +5506,7 @@ avadhi={
 panjabi={
 	color= rgb{ 125 100 85 }
 	religion = sikh
-	traits = { south_asian_heritage hindustani }
+	traits = { south_asian_heritage indo_aryan_language }
 
     obsessions = {
         tea
@@ -5569,7 +5566,7 @@ panjabi={
 kashmiri={
 	color= hsv{ 0.78 0.26 0.78 }
 	religion = sunni
-	traits = { south_asian_heritage hindustani }
+	traits = { south_asian_heritage indo_aryan_language }
 
     obsessions = {
         tea
@@ -5618,7 +5615,7 @@ kashmiri={
 sindi={
 	color= hsv{ 0.78 0.50 0.83 }
 	religion = sunni
-	traits = { south_asian_heritage hindustani }
+	traits = { south_asian_heritage indo_aryan_language }
 
     obsessions = {
         tea
@@ -5836,7 +5833,7 @@ moro={
 
 javan={
 	color= { 205 35 110 }
-	religion = sunni
+	religion = hindu
 	traits = { southeast_asian_heritage malay_culture }
 
     obsessions = {
@@ -7375,395 +7372,6 @@ sumatran={
 	graphics = south_asian
 }
 
-
-german_colonial={ # Displayed as "Dutch Colonists" in localization
-	color= hsv{ 230 130 50 }
-	religion = protestant
-	traits = { beneluxian_culture_group european_heritage }
-
-    obsessions = {
-        liquor
-    }
-	male_common_first_names={
-		Abraham
-		Adolf
-		Adriaan
-		Alexander
-		Andreas
-		Andries
-		Antonius
-		Antoon
-		Barthout
-		Casimir
-		Christiaan
-		Christoffel
-		Constantijn
-		Cornelis
-		Daniel
-		Daniel_2
-		David
-		Dirk
-		Dominicus
-		Drikus
-		Eduardus
-		Eise
-		Elias
-		Ernst
-		Erwin
-		Frans
-		Frederik
-		Gabriel
-		Gaspar
-		Gerard
-		Gerben
-		Gijsbert
-		Godfried
-		Gustaaf
-		Hans
-		Hendrik
-		Hugo
-		Isaac
-		Jacob
-		Jan
-		Jeroen
-		Johan
-		Joost
-		Jurgen_2
-		Karel
-		Kasper
-		Laurens
-		Lodewijk
-		Luuk
-		Marius
-		Matthijs
-		Maurits
-		Maximiliaam
-		Merkus
-		Moritz
-		Nikolaas
-		Paul
-		Pauwel
-		Pieter
-		Quinten
-		Rafael
-		Richardus
-		Roeland
-		Rogier
-		Ruben
-		Rudolf
-		Rutger
-		Simon
-		Stefan
-		Thomas
-		Victor
-		Vincent
-		Willem
-		Zacharias
-	}
-	female_common_first_names = {
-		Aletta Annewies Anna Anna_Louisa
-		Beatrix
-		Cornelie Christina Catharina Constantia
-		Diderika
-		Emma Eufemia
-		Felicia
-		Goverdine
-		Henrieette
-		Ida
-		Juliana Johanna Jacoba
-		Louise Lessina
-		Maria Martha Margaretha
-		Pauline Petronella
-		Roosje 
-		Suzanna Sjoukje Sara
-		Wilhelmina
-	}	
-	noble_last_names = {
-		van_Boetzelaer
-		van_Coeverden
-		van_Doorn
-		De_Geer
-		Lampsins van_Lynden van_Lyere
-		van_den_Velden de_Vos_van_Steenwijk
-		van_Egmont
-		van_Saksen-Weimar
-		van_Oranje-Nassau
-		Schimmelpenninck_van_der_Oye
-		Melvill_van_Carnbee
-		van_Wassenaer
-	}
-	common_last_names={
-		Batenburg
-		Bentinck
-		Boetge
-		Boreel
-		Boumeester
-		Brandt
-		Brouwer
-		Buyskes
-		Broekhof
-		Uiterwijk
-		Chasse
-		Cleerens
-		Cochius
-		Coehoorn
-		Coen
-		Coops
-		Cort-Heyligers
-		Crijnssen
-		Daendels
-		Deijkerhoff
-		Duycker
-		Ellis
-		Engels
-		Engelvaart
-		Evertzen
-		Fabius
-		Gregory
-		Janssens
-		Kater
-		Kool
-		Kortenaer
-		Kruys
-		Kohler
-		Kuiper
-		List
-		Lucas
-		Martena
-		Michiels
-		Nachtegaal
-		Nahuys
-		Nepveu
-		Ongerboer
-		Reijersen
-		Rijk
-		Roell
-		Sabron
-		Schenk
-		Schouten
-		Spiegel
-		Staal
-		Steltman
-		Stokhuyzen
-		Stuyvesant
-		Tasman
-		Trip
-		Van_Utenhove
-		Verspijck
-		Vetter
-		Weitzel
-		Wolterbeek
-		de_Casembroot
-		de_Constant_Rebecque
-		de_Eerens
-		de_Grouwe
-		de_Houtman
-		de_Kock
-		de_Moor
-		de_Rijk
-		de_Winter
-		den_Beer_Poortugael
-		van_Assendelft
-		van_Braam_Houckgeest
-		van_Brederode
-		van_Bronkhorst
-		van_Culemborg
-		van_Dambenoy
-		van_Diemen
-		van_Duivenvoorde
-		van_Galen
-		van_Geen
-		van_Ham
-		van_Haren
-		van_Heemskerck
-		van_Heutsz
-		van_Hoensbroeck
-		van_Huchtenbroek
-		van_Ilpendam
-		van_Keppel
-		van_Marnix
-		van_Nieuwenaar
-		van_Noort
-		van_Pallandt
-		van_Raephorst
-		van_Rechteren
-		van_Renesse
-		van_Riebeeck
-		van_Rossum
-		van_Spilbergen
-		van_Swieten
-		van_Troyen
-		van_Vredenburch
-		van_Walbeeck
-		van_Wesembeke
-		van_Wijngaarden
-		van_Wingle
-		van_den_Bosch
-		van_der_Aa
-		van_der_Capellen
-		van_der_Does
-		van_der_Heijden
-		van_der_Werff
-		van_der_Wijck
-	}
-	male_regal_first_names = {
-		Alexander
-		Ernst_Casimir
-		Frederik_Hendrik
-		Hendrik
-		Maurits
-		Willem Willem_Alexander Willem_Frederik
-	}
-	female_regal_first_names = {
-		Alexia Ariane
-		Beatrix
-		Catharina_Amalia Christina
-		Irene
-		Juliana
-		Margriet
-		Sophie
-		Wilhelmina
-	}
-	graphics = european
-	ethnicities = {
-		1 = caucasian
-	}
-}
-
-
-boer={
-	color= hsv{ 0.10 0.80 0.86 }
-	religion = protestant
-	traits = { beneluxian_culture_group african_settler european_heritage }
-
-    obsessions = {
-        liquor
-    }
-	male_common_first_names={
-		Abraham
-		Adrianus
-		Andries
-		Charl
-		Christiaan
-		Cornelis
-		Danie
-		Dirkie
-		Drikus
-		Eugene_2
-		Francois_2
-		Hendrik
-		Hermanus
-		Jacobus
-		Jan
-		Johannes
-		Joachim
-		Joubert
-		Koos
-		Louis
-		Martinus
-		Marthinus
-		Paul
-		Petrus
-		Piet
-		Pieter
-		Racheltjie 
-		Rudolf
-		Sarel
-		Siener
-		Simeon
-		Stephanus
-		Willem
-		Josias
-	}
-	female_common_first_names = {
-		Adriana 
-		Anna
-		Belinda
-		Brenda
-		Cezanne
-		Charlise
-		Cornelia
-		Danelle
-		Elizabeth
-		Elmarie
-		Elsje
-		Evelyn
-		Gezina 
-		Heiletje 
-		Jacoba
-		Lizelle
-		Maria
-		Norma
-		Rachel
-		Saartjie
-		Sarah
-		Sophia
-		Wilhelmina
-		Yolandi
-	}	
-	noble_last_names = {
-		Burger
-		Kruger
-		Pretorius
-		Retief
-		van_der_Merwe
-		Wessels
-		Tregardt
-		Hoffman
-	}
-	common_last_names={
-		Bosman
-		Botha
-		Cilliers
-		Coetzee
-		Cronje
-		Duquesne
-		Erasmus
-		Joubert
-		Greeff
-		Potgieter
-		Theron
-		Uys
-		de_Beer
-		de_Wet
-		de_la_Rey
-		van_Rensburg
-		Du_Plessis
-		du_Toit
-		du_Preez
-		de_Villiers
-		Hoffman
-		de_Bruyn
-		de_Kock
-		Pretorius
-		de_Klerk
-		Malan
-		Rossouw
-		Conradie
-		Schoeman
-		Jacobszoon
-		Burgers
-		Tregardt
-		Smit
-		Struben
-		Maritz
-		Steyn
-		Sauer
-		Swart
-		Pienaar
-		van_den_Berg
-		van_der_Westhuizen
-		van_Niekerk
-		van_Wyk
-		van_Zyl
-		Viljoen
-	}
-	graphics = european
-	ethnicities = {
-		1 = caucasian
-	}
-}
-
 british_colonial={ # "English Colonists" in localization
 	color= rgb{ 175 25 25 }
 	religion = anglican
@@ -8299,10 +7907,10 @@ alemannic={
 	}
 }
 
-tasmanian ={
+australian ={
 	color= hsv{ 0.10 0.80 0.86 }
 	religion = protestant
-	traits = { beneluxian_culture_group european_heritage european_heritage francophone }
+	traits = { beneluxian_culture_group european_heritage german_speaking }
 
     obsessions = {
         liquor
@@ -8553,135 +8161,7 @@ tasmanian ={
 	}
 }
 
-
-australian={
-	color= hsv{ 0.61 0.50 0.68 }
-	religion = protestant
-	traits = { anglophone european_heritage }
-    obsessions = {
-        liquor
-    }
-	male_common_first_names={
-		Adrian
-		Alf
-		Arthur
-		Bob
-		Brian
-		Bruce
-		Charles
-		Edmund
-		Edwin
-		Frederick
-		George
-		Guy
-		Hallam
-		Henry
-		James
-		John
-		Lawrence
-		Louis
-		Ray
-		Ronald
-		Scott
-		Shane
-		Stafford
-		Stuart
-		Thomas
-		William
-	}
-	female_common_first_names = {
-		Ada
-		Agnes
-		Alexina
-		Annie
-		Barbara
-		Bertha
-		Bridgetena 
-		Caroline
-		Catherine
-		Charlotte
-		Clarice
-		Cordelia
-		Edith
-		Elisabeth
-		Eliza
-		Ellen
-		Emily
-		Emma
-		Euphemia
-		Frances
-		Georgiana
-		Geraldine
-		Grace
-		Harriet
-		Henrietta
-		Janet
-		Mary
-		Matilda
-		Maybanke
-		Serena
-		Theodosia
-		Zara
-		Zillah
-	}	
-	noble_last_names = {
-		Angas
-		Armstrong
-		Burge
-		Clarke
-		Downer
-		Drake-Brockman
-		Dutton
-		McLeay
-		Morphett
-		Mortlock
-		Onslow
-		Playford
-		Robertson
-		Street
-		Wakefield
-		McCallum
-	}
-	common_last_names={
-		Anderson
-		Baird
-		Cathcart
-		Cobcroft
-		Cook
-		Cowhig
-		Davis
-		Denman
-		Duggan
-		Fisher
-		Forlonge
-		Forster
-		Garling
-		Gooseberry
-		Hatch
-		Hiscock
-		Hope
-		Howson
-		Issac
-		Jeffcott
-		Knowles
-		MacKenzie
-		Mitchell
-		Northcote
-		Piddington
-		Stewart
-		Tennyson
-		Thesinger
-		Underwood
-		War
-		Yeamans
-	}
-	graphics = european
-	ethnicities = {
-		1 = caucasian
-	}
-}
-
-platinean={
+platean={
 	color= rgb{ 135 206 235 } # Sky Blue
 	religion = protestant
 	traits = { anglophone european_heritage }
@@ -10903,7 +10383,7 @@ luri ={
 kho ={
 	color= rgb{ 123 44 98 }
 	religion = sunni
-	traits = { south_asian_heritage hindustani }
+	traits = { south_asian_heritage indo_aryan_language }
     obsessions = {
         tea
     }
@@ -11539,4 +11019,229 @@ pied_noir ={
 	ethnicities = {
 		1 = caucasian
 	}
+}
+
+deccani = {
+	color = { 233 222 129 }
+	religion = sunni
+	traits = { south_asian_heritage indo_aryan_language }
+	male_common_first_names = {
+		Amjad Ahmed Abdullah Aziz Awaz
+		Farhatullah
+		Hyder
+		Makhdoom Mirza Mohiuddin  
+		Sayyid Shamsullah Sulaiman
+		Qadri 
+	}
+	female_common_first_names = {
+		Aditi Amina
+		Bilkees
+		Fatima
+		Khanum 
+		Sania Surayya Samina Shabana 
+		Tabassum
+		Waheeda 
+		Zehra
+	}	
+	noble_last_names = {
+		Ali
+		Sultan
+	}
+	common_last_names = {
+		Areeb Azmi
+		Baig Bajia
+		Jung
+		Hashmi Hydari Haji
+		Latif
+		Masdoosi Mohiuddin Mirza
+		Qadri Qaisi
+		Rehman
+		Sayeed
+		Zore
+	}
+	male_regal_first_names = {
+		Amjad Ahmed Abdullah Aziz Awaz
+		Farhatullah
+		Hyder
+		Makhdoom Mirza Mohiuddin  
+		Sayyid Shamsullah Sulaiman
+		Qadri 
+	}
+	ethnicities = {
+		1 = indian
+	}
+	graphics = south_asian
+}
+
+pathan = {
+	color= hsv{ 0.76 0.34 0.60 }
+	religion = sunni
+	traits = { central_asian_heritage indo_aryan_language }
+	
+	obsessions = {
+		tea
+	}
+	male_common_first_names = {
+		Alif Abd_al-Quddus Abd_al-Rahman Abdallah Afzal Ahmad Akbar Akram Ayyub
+		Daud
+		Fath Firuz_al-Din Fateh_Mohammad
+		Habib_Alllah Haydar Humayun Himayat
+		Inayat_Allah Ishaq
+		Jamal
+		Kamran Kohandil Khizr
+		Mahmud Mahsud
+		Mihrdil Muhammad Murad Mohammad_Bahadur Mohammad_Hamid
+		Nadir Nasr_Allah
+		Omar
+		Qaysar
+		Shahpur Sher_Ali Shuja Suleyman
+		Timur
+		Yaqub
+		Zaman Zorawar_Mohammad
+
+	}
+	female_common_first_names = {
+		Aisha
+		Ghazala
+		Gulrukh 
+		Hazrat
+		Nazia
+		Nilofar
+	}
+	noble_last_names = {
+		Babi
+		Damani
+		Hotak
+		Jhalori
+		Khan
+		Panni
+	}
+	common_last_names = {
+		Arif
+		Babajan
+		Jan
+		Javed
+		Naqshbandi
+		Shinwari
+		Taunsvi
+	}
+	ethnicities = {
+		1 = indian
+	}
+	graphics = south_asian
+}
+
+
+greek= {
+	color= hsv{ 0.94 0.45 0.48 }
+	religion = orthodox
+	traits = { greek_culture european_heritage byzantine_legacy }
+	
+	obsessions = {
+		wine
+	}	
+	
+	male_common_first_names = {
+		Alexandros Angelos Anastasios Aristidis Antonios Aristovoulos Alexios Andreas Agamemnon Avgoustos Anthimos Adam Anagnostis 
+		Beniamin
+		Charilaos Christos Christoforos Christodoulos
+		Dimitrios Dionysios Diomidis
+		Evangelos Eleftherios Efstathios Emmanouil Epameinontas 
+		Filippos Frangiskos
+		Georgios Gerasimos Gregorios Germanos
+		Ilias Ioannis Iakovos Iraklis Iason
+		Konstantinos Kyriakos Kostas
+		Leonidas Leon Lambros Lazaros Lykourgos
+		Militiadis Menelaos Markos Merkourios Makarios
+		Nikos Nikolaos
+		Odysseas
+		Panos Panagiotis Periklis Petros Pantelis Pantaleon Pavlos Panoutsos 
+		Spyridon Sokratis Stamatios Sotiros Stephanos Stelios Stylianos Skarlatos Sofoklis
+		Theodoros Tilemachos Thomas Trifon Theodorakis Theophilos Thrasyvoulos Themistoklis
+		Vasilios Viktor
+		Xenon
+		Zacharias
+	}
+	female_common_first_names = {
+		Aikaterini Aganiki Angeliki Asimina Anna Anastasia Alexandra Akrivi Amalia
+		Domnitsa Despina Domna
+		Evanthia Eliza Elpida Eleni Eleftheria Eirini Evfrosini
+		Ilektra
+		Kalliroi Kalliopi Konstantina Kiriakoula
+		Lena Laskarina Loukia
+		Marika Maria Marianna Manto
+		Photini
+		Sofia Soteria Sevasti
+		Thaleia
+		Virginia Vassiliki
+		Zacharati
+	}
+	male_regal_first_names = {
+		Alexandros
+		Filippos
+		Georgios
+		Ioannis
+		Konstantinos
+		Nikolaos
+		Pavlos
+	}
+	female_regal_first_names = {
+		Alexandra Alexia
+		Eleni Eirini
+		Konstantina
+		Maria
+		Olympia Olga
+		Sofia
+		Theodora
+	}
+
+	# some Hellenic forms of names from the "Livre d'Or de la Noblesse Ionienne"
+	# also added Souliotes
+	noble_last_names = { 
+		Arvanitachi Argyropoulos
+		Benizelos Botsaris Boutzias Bousbos Boufis Bekas
+		Drakos Dousmanis Danglis
+		Fotos
+		Gonemis Galatis
+		Iras
+		Kolokotronis Kapodistrias Kalogeras Kallergis Kartanos Koutsonikas Kaskaris
+		Levidis Landos
+		Metaxas Manos Mavromichalis Mavrokordatos Mamonas Marmoras Mantzos Matis Mourouzis
+		Notaras Nikas Negreponte
+		Pieros Polylas Prosalendi Patrikios Papagiannis Palamas Pandazis
+		Rodostamos Rallis
+		Soutsos Seos Sachinis Salataris
+		Theotokis Tzavelas Thanasis Toras Todis Tzoris
+		Vlassopoulos Velios Vasos
+		Ypsilantis
+		Zarbas
+	}
+	common_last_names = {
+		Andreou Aspiotis Andriakopoulos Athanasopoulos Anninos Athanasiou Akratopoulos Antonpoulos Asimakopoulos Axiotis
+		Belokas Benardis Baltatzis
+		Chalkokondylis Chrysafis Chorafas Chrysafos Chazapis Charalambis
+		Deligiannis Damaskos Diamantis Diamantopoulos Dontis Drivas Dalezios Douros
+		Eftaxias
+		Fetsis Fetsios Frangoudis Frangopoulos Foustanos Farmakidis Freris Farmakidis Fotilas
+		Gennimatas Golemis Gerakeris Grigoriou Gouskos Georgiadis Gaitanos Grigoriadis Gneftos Gazis
+		Hatzidakis
+		Iatrou Iatridis 
+		Karousou Karakatsanis Kafetzis Koletis Kostantinidis Konstantinou Karakalos Karvelas Karagiannopoulos Karasevdas Karagiannis Katravas Khatzis Kontos Koukoudakis Kourkoulas Kasdaglis Kallisperi Kanaris Konstantas
+		Lagoudakis Lavrentis Loverdos Loundras Langakis Levidis Lamprakis Laskaridis Lerias Liapis Logothetis
+		Merkatis Mouratis Masouris Mitropoulos Mikhailidis Moustakopoulos Morakis Mangourakis Markou Marnezos Mazoukas Mikhalopoulos Malokinis Mavrommatis Mavrogenes Mansolas
+		Nikolopoulos Nastos Neroutsos Negris
+		Orphanidis Orlandos
+		Paraskevopoulos Papasymeon Papadiamantopoulos Persakis Papasideris Pierrakos-Mavromichalis Poulos Pyrgos Petmezas Papaioannou Pavlidis Platis Petrou Pantazidis Patsouris Pothitos Pepanos Paspatis Petrokokkinos Papafingos Peppas Psychas Printezis Papailiopoulos
+		Romantzas Rallis Roussos
+		Skaltsogiannis Stais Sanidis Salouros Santanis Stournaras Siganous Skandalidis
+		Theodoropoulos Tryfiatis-Tripiaris Tsiklitiras Theofilakis Trikoupis Triantafyllakos Tombazis
+		Versis Vasilakos Vrettos Vouros Vourakis Vavis Valetsiotis Vlachos Vikhos Vrasivanopoulos Vlassis Vourvoulis Voustinos Vakondios Varthalitis
+		Xydras Xenakis Xenopoulos Xylinakos
+		Zoumis Zanos Zacharopoulos Zervinis Zafyropoulos Zarifi
+	}
+
+	ethnicities = {
+		1 = slavic
+	}
+	graphics = european
 }

@@ -1,0 +1,17 @@
+﻿COUNTRIES = {
+	c:PUE ?= {
+		effect_starting_technology_tier_4_tech = yes
+		activate_law = law_type:law_presidential_republic # the Indian Territory was, at least, not a monarchy
+		activate_law = law_type:law_racial_segregation # Opens up the territory to potential migration and settlement by non-indigenous people
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_homesteading
+		activate_law = law_type:law_freedom_of_conscience
+		
+		add_modifier = {
+			name = elysian_client_state_mod
+            months = -1
+		}
+	}
+}

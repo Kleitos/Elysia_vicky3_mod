@@ -82,7 +82,7 @@
 			type = fleet
 			hq_region = sr:region_brazil
 			name = Armada_Nacional
-		
+
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_war
 				state_region = s:STATE_RIO_DE_JANEIRO
@@ -103,33 +103,11 @@
 		}
 	}
 
-	c:TWT ?= {
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_andes
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_ECUADOR
-				count = 4
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_irregular_infantry
-				state_region = s:STATE_ECUADOR
-				count = 2
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_cuirassiers
-				state_region = s:STATE_ECUADOR
-				count = 1
-			}
-		}
-		
+	c:CHL ?= {
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_la_plata
+			name = Ejrcito_de_Chile
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -140,30 +118,31 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_cuirassiers
 				state_region = s:STATE_SANTIAGO
-				count = 5
+				count = 2
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_LOS_RIOS
-				count = 5
+				count = 2
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_mobile_artillery
 				state_region = s:STATE_SANTIAGO
-				count = 5
+				count = 1
 			}
 		}
 
 		create_military_formation = {
 			type = fleet
 			hq_region = sr:region_la_plata
+			name = Armada_de_Chile
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
 				state_region = s:STATE_SANTIAGO
-				count = 5
+				count = 1
 			}
 		}
 	}
@@ -172,55 +151,35 @@
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_la_plata
-			
+			name = Ejrcito_Argentino # No organized army really existed in 1836, but an ad-hoc 'Northern Army' was formed in 1837
+
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_BUENOS_AIRES
-				count = 5
+				count = 4
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_TUCUMAN
-				count = 1
+				count = 2
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_cuirassiers
 				state_region = s:STATE_BUENOS_AIRES
 				count = 1
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_BAJO_PARAGUAY
-				count = 5
 			}
 		}
 
 		create_military_formation = {
 			type = fleet
 			hq_region = sr:region_la_plata
+			name = Armada_Argentina
 
 			combat_unit = { # Nothing the size of a frigate
 				type = unit_type:combat_unit_type_frigate
 				state_region = s:STATE_BUENOS_AIRES
-				count = 1
-			}
-		}
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_brazil
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_URUGUAY
-				count = 3
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_cuirassiers
-				state_region = s:STATE_URUGUAY
 				count = 1
 			}
 		}
@@ -296,7 +255,33 @@
 		}
 	}
 
-	c:MUI ?= {
+	c:ECU ?= {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_andes
+			name = Ejrcito_del_Ecuador
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_ECUADOR
+				count = 4
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_ECUADOR
+				count = 2
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_cuirassiers
+				state_region = s:STATE_ECUADOR
+				count = 1
+			}
+		}
+	}
+
+	c:CLM ?= {
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_gran_colombia
@@ -340,28 +325,28 @@
 		}
 	}
 
-	c:ORN ?= {
+	c:VNZ ?= {
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_gran_colombia
+			name = Ejrcito_de_Venezuela
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_ZULIA
+				count = 3
+			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_MIRANDA
 				count = 3
 			}
-		}
-	}
-
-	c:WYU ?= {
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_gran_colombia
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_ZULIA
-				count = 3
+				state_region = s:STATE_BOLIVAR
+				count = 1
 			}
 
 			combat_unit = {
@@ -372,15 +357,36 @@
 		}
 	}
 
-	c:WIN ?= {
+	c:URU ?= {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_gran_colombia
+			hq_region = sr:region_brazil
+			name = Ejrcito_Nacional
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_BOLIVAR
+				state_region = s:STATE_URUGUAY
+				count = 3
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_cuirassiers
+				state_region = s:STATE_URUGUAY
 				count = 1
+			}
+		}
+	}
+
+	c:PRG ?= {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_la_plata
+			name = Ejrcito_Paraguayo
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_BAJO_PARAGUAY
+				count = 5
 			}
 		}
 	}

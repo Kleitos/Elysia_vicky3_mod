@@ -1,37 +1,47 @@
 ﻿DIPLOMACY = {
-	c:SPA ?= {
+	c:IBE ?= {
+		### Asia ###
+		# India
+		create_diplomatic_pact = {
+			country = c:CUB
+			type = colony
+		}
+		# Philippines
 		create_diplomatic_pact = {
 			country = c:PHI
-			type = puppet
-		}	
-	}
-	c:NET ?= {	
+			type = colony
+		}
+		### America ###
+		# Brazil
 		create_diplomatic_pact = {
-			country = c:DEI
-			type = dominion
+			country = c:BRZ
+			type = colony
+		}
+		### Africa ###
+		# Sierra Leone
+		create_diplomatic_pact = {
+			country = c:SIL
+			type = colony
+		}
+		# Kongo
+		create_diplomatic_pact = {
+			country = c:KON
+			type = protectorate
 		}
 	}
+	c:NET ?= {
+	}
 	c:SWE ?= {
+	}
+	c:RUS ?= {
+	}
+	c:PRU ?= {
+	}
+	c:DEN ?= {
 		create_diplomatic_pact = {
 			country = c:NOR
 			type = personal_union
 		}
-	}
-	c:RUS ?= {
-		create_diplomatic_pact = {
-			country = c:KZH
-			type = protectorate
-		}
-		create_diplomatic_pact = {
-			country = c:UZH
-			type = protectorate
-		}
-		create_diplomatic_pact = {
-			country = c:OZH
-			type = protectorate
-		}
-	}	
-	c:DEN ?= {
 		create_diplomatic_pact = {
 			country = c:HOL
 			type = personal_union
@@ -47,103 +57,128 @@
 			type = vassal
 		}
 		create_diplomatic_pact = {
+			country = c:XIN
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:TUV
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:BRY
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:MGL
+			type = vassal
+		}
+		create_diplomatic_pact = {
 			country = c:KOR
 			type = tributary
 		}
 		create_diplomatic_pact = {
 			country = c:LAN
 			type = tributary
-		}			
+		}
 	}
-	c:GBR ?= {
+	c:AUS ?= {
+		create_diplomatic_pact = {
+			country = c:KRA
+			type = puppet
+		}
+	}
+	c:GBR ?= {		
+		### America ###
+		# Argentina
+		create_diplomatic_pact = {
+			country = c:PLN
+			type = colony
+		}
+		### Africa ###
+		# Liberia
+		create_diplomatic_pact = {
+			country = c:LIB
+			type = colony
+		}
+		### Asia ###
+		# India
 		create_diplomatic_pact = {
 			country = c:BIC
-			type = dominion
+			type = chartered_company
 		}
+		# Colony of Ceylon
 		create_diplomatic_pact = {
-			country = c:HAN
-			type = personal_union
+			country = c:BCE
+			type = colony
 		}
+		
 		### AUSTRALIA ###
 		# Colony of New South Wales
 		create_diplomatic_pact = {
 			country = c:NSW
-			type = puppet
+			type = colony
+		}
+		# Colony of Western Australia
+		create_diplomatic_pact = {
+			country = c:WAS
+			type = colony
+		}
+		# Colony of South Australia, established in February 1836
+		create_diplomatic_pact = {
+			country = c:SAS
+			type = colony
+		}
+		# Colony of Tasmania, historically called Van Dieman's Land until 1856
+		create_diplomatic_pact = {
+			country = c:TAS
+			type = colony
+		}
+		# Kaurna
+		create_diplomatic_pact = {
+			country = c:KAU
+			type = protectorate
 		}
 	}
 	c:DAI ?= {
 		create_diplomatic_pact = {
 			country = c:CAM
-			type = tributary
+			type = puppet
 		}
 	}
 	c:SIA ?= {
 		create_diplomatic_pact = {
 			country = c:CHP
-			type = vassal
+			type = puppet
 		}
 		create_diplomatic_pact = {
 			country = c:CMI
-			type = vassal
+			type = puppet
 		}
 		create_diplomatic_pact = {
 			country = c:LUA
-			type = tributary
-		}		
+			type = puppet
+		}
 	}
 	c:EGY ?= {
-		create_diplomatic_pact = {
-			country = c:HDJ
-			type = tributary
-		}
 	}
 	c:TUR ?= {
 	}
-	c:BIC ?= {		
-		create_diplomatic_pact = {
-			country = c:AWA
-			type = puppet
-		}
-		create_diplomatic_pact = {
-			country = c:BUN
-			type = puppet
-		}
-		create_diplomatic_pact = {
-			country = c:ORI
-			type = puppet
-		}
-		create_diplomatic_pact = {
-			country = c:BAS
-			type = puppet
-		}
-		create_diplomatic_pact = {
-			country = c:BER
-			type = puppet
-		}		
+	c:BIC ?= {
 	}
 	c:DEI ?= {
+	}
+
+	c:FRA ?= {
 		create_diplomatic_pact = {
-			country = c:YOG
-			type = puppet
+			country = c:SAF
+			type = colony
 		}
 		create_diplomatic_pact = {
-			country = c:SRK
-			type = puppet
+			country = c:NET
+			type = personal_union
 		}
 		create_diplomatic_pact = {
-			country = c:JMB
-			type = puppet
-		}	
-		create_diplomatic_pact = {
-			country = c:SMB
-			type = puppet
-		}
-		create_diplomatic_pact = {
-			country = c:PON
-			type = puppet
-		}
-		create_diplomatic_pact = {
-			country = c:BNJ
+			country = c:SWI
 			type = puppet
 		}
 	}
@@ -154,60 +189,24 @@
 			type = puppet
 		}
 	}
-	
+
 	c:KAL = {
-	}
-	
-	
-	# Starting liberty desire
-	c:BIC = {
-		add_liberty_desire = -30
-	}
-	
-	c:DEI = {
-		add_liberty_desire = -30
-	}	
-	
-	c:SAF = {
-		add_liberty_desire = -30
-	}	
-	
-	c:NSW = {
-		add_liberty_desire = -30
-	}
-
-	c:SAF = {
-		add_liberty_desire = -30
-	}
-
-	c:WAS = {
-		add_liberty_desire = -30
-	}	
-
-	c:SAS = {
-		add_liberty_desire = -30
-	}	
-
-	c:TAS = {
-		add_liberty_desire = -30
-	}
-	
-	c:OZH = {
-		add_liberty_desire = 10
-	}
-
-	c:KZH = {
-		add_liberty_desire = 10
-	}
-
-	c:UZH = {
-		add_liberty_desire = 10
-	}	
-	
-	c:BIC ?= {
-		every_subject_or_below = {
-			 set_relations = { country = c:BIC value = 50 }
-			 add_liberty_desire = -20
+		create_diplomatic_pact = {
+			country = c:MAK
+			type = vassal
 		}
-	}	
+	}
+	
+	c:PAN ?= {
+		create_diplomatic_pact = {
+			country = c:KAS
+			type = vassal
+		}
+	}
+	c:BUR ?= {
+		create_diplomatic_pact = {
+			country = c:SHS
+			type = vassal
+		}
+	}
 }

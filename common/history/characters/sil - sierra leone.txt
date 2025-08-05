@@ -2,11 +2,12 @@
 	c:SIL ?= {
 		create_character = {
 			# Henry Dundas Campbell
-			first_name = "Emilio"
-			last_name = "Cagigal_de_la_Vega"
+			first_name = "Henry"
+			last_name = "Campbell"
+			historical = yes
 			ruler = yes
 			age = 38
-			culture = cu:spanish
+			culture = cu:british
 			interest_group = ig_armed_forces
 			ideology = ideology_moderate
 			traits = {

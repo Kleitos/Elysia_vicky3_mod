@@ -52,62 +52,68 @@ unification_culture.1 = {
 		s:STATE_SAVOY = {
 			remove_homeland = cu:francoprovencal
 			add_homeland = cu:french
+			add_claim = ROOT
 		}
 		s:STATE_RHONE = {
 			remove_homeland = cu:francoprovencal
 			add_homeland = cu:french
+			add_claim = ROOT
 		}
 		s:STATE_EAST_SWITZERLAND = {
 			remove_homeland = cu:francoprovencal
 			add_homeland = cu:french
+			add_claim = ROOT
 		}
 		s:STATE_WEST_SWITZERLAND = {
 			remove_homeland = cu:francoprovencal
 			add_homeland = cu:french
+			add_claim = ROOT
 		}
 		s:STATE_RHONE = {
 			remove_homeland = cu:occitan
 			add_homeland = cu:french
+			add_claim = ROOT
 		}
 		s:STATE_AUVERGNE_LIMOUSIN = {
 			remove_homeland = cu:occitan
 			add_homeland = cu:french
+			add_claim = ROOT
 		}
 		s:STATE_LANGUEDOC = {
 			remove_homeland = cu:occitan
 			add_homeland = cu:french
+			add_claim = ROOT
 		}
 		s:STATE_GUYENNE = {
 			remove_homeland = cu:occitan
 			add_homeland = cu:french
+			add_claim = ROOT
 		}
 		s:STATE_AQUITAINE = {
 			remove_homeland = cu:occitan
 			add_homeland = cu:french
+			add_claim = ROOT
+			add_claim = ROOT
 		}
 		s:STATE_PROVENCE = {
 			remove_homeland = cu:occitan
 			add_homeland = cu:french
+			add_claim = ROOT
 		}
 		s:STATE_WALLONIA = {
 			remove_homeland = cu:wallonian
 			add_homeland = cu:french
-		}
-		s:STATE_FLANDERS = {
-			remove_homeland = cu:wallonian
-			add_homeland = cu:french
-		}
-		s:STATE_GELRE = {
-			remove_homeland = cu:wallonian
-			add_homeland = cu:french
+			add_claim = ROOT
 		}
 		s:STATE_RHINELAND = {
 			remove_homeland = cu:wallonian
 			add_homeland = cu:french
+			add_claim = ROOT
 		}
 		s:STATE_NORTH_RHINE = {
 			remove_homeland = cu:wallonian
 			add_homeland = cu:french
+			add_claim = ROOT
 		}
 	}
 }
@@ -116,9 +122,9 @@ unification_culture.2 = {
 	type = country_event
 	placement = ROOT
 	
-	title = unification_culture.1.t
-	desc = unification_culture.1.d
-	flavor = unification_culture.1.f
+	title = unification_culture.2.t
+	desc = unification_culture.2.d
+	flavor = unification_culture.2.f
 	
 	event_image = {
 		video = "unspecific_ruler_speaking_to_people"
@@ -137,7 +143,7 @@ unification_culture.2 = {
 	}
 
 	option = {
-		name = unification_culture.1.a
+		name = unification_culture.2.a
 		default_option = yes
 		ai_chance = {
 			base = 100
@@ -165,122 +171,170 @@ unification_culture.2 = {
 		s:STATE_POMERANIA = {
 			remove_homeland = cu:north_german
 			add_homeland = cu:german
+			add_claim = ROOT
 		}
 		s:STATE_ELBE = {
 			remove_homeland = cu:north_german
 			add_homeland = cu:german
+			add_claim = ROOT
 		}
 		s:STATE_POSEN = {
 			remove_homeland = cu:north_german
 			add_homeland = cu:german
+			add_claim = ROOT
 		}
 		s:STATE_WESTPHALIA = {
 			remove_homeland = cu:north_german
 			add_homeland = cu:german
+			add_claim = ROOT
 		}
 		s:STATE_ANHALT = {
 			remove_homeland = cu:north_german
 			add_homeland = cu:german
+			add_claim = ROOT
 		}
 		s:STATE_WEST_PRUSSIA = {
 			remove_homeland = cu:north_german
 			add_homeland = cu:german
+			add_claim = ROOT
 		}
 		s:STATE_EAST_PRUSSIA = {
 			remove_homeland = cu:north_german
 			add_homeland = cu:german
+			add_claim = ROOT
 		}
 		s:STATE_RUHR = {
 			remove_homeland = cu:north_german
 			add_homeland = cu:german
+			add_claim = ROOT
+		}
+		s:STATE_RHINELAND = {
+			remove_homeland = cu:north_german
+			add_homeland = cu:german
+			add_claim = ROOT
+		}
+		s:STATE_NORTH_RHINE = {
+			remove_homeland = cu:north_german
+			add_homeland = cu:german
+			add_claim = ROOT
 		}
 		s:STATE_SILESIA = {
 			remove_homeland = cu:north_german
 			add_homeland = cu:german
+			add_claim = ROOT
 		}
 		s:STATE_BRANDENBURG = {
 			remove_homeland = cu:north_german
 			add_homeland = cu:german
+			add_claim = ROOT
 		}
 		s:STATE_SCHLESWIG_HOLSTEIN = {
 			remove_homeland = cu:north_german
 			add_homeland = cu:german
+			add_claim = ROOT
 		}
 		s:STATE_HANNOVER = {
 			remove_homeland = cu:north_german
 			add_homeland = cu:german
+			add_claim = ROOT
 		}
 		s:STATE_SAXONY = {
 			remove_homeland = cu:north_german
 			add_homeland = cu:german
+			add_claim = ROOT
 		}
 		s:STATE_BRUNSWICK = {
 			remove_homeland = cu:north_german
 			add_homeland = cu:german
+			add_claim = ROOT
 		}
 		s:STATE_HESSE = {
 			remove_homeland = cu:north_german
 			add_homeland = cu:german
+			add_claim = ROOT
 		}
 		s:STATE_MECKLENBURG = {
 			remove_homeland = cu:north_german
 			add_homeland = cu:german
+			add_claim = ROOT
 		}
 		s:STATE_TRANSDANUBIA = {
 			remove_homeland = cu:south_german
 			add_homeland = cu:german
+			add_claim = ROOT
 		}
 		s:STATE_STYRIA = {
 			remove_homeland = cu:south_german
 			add_homeland = cu:german
+			add_claim = ROOT
 		}
 		s:STATE_TYROL = {
 			remove_homeland = cu:south_german
 			add_homeland = cu:german
+			add_claim = ROOT
 		}
 		s:STATE_AUSTRIA = {
 			remove_homeland = cu:south_german
 			add_homeland = cu:german
+			add_claim = ROOT
+		}
+		s:STATE_BAVARIA = {
+			remove_homeland = cu:south_german
+			add_homeland = cu:german
+			add_claim = ROOT
 		}
 		s:STATE_SOUTH_TYROL = {
 			remove_homeland = cu:south_german
 			add_homeland = cu:german
+			add_claim = ROOT
 		}
 		s:STATE_SLOVENIA = {
 			remove_homeland = cu:south_german
 			add_homeland = cu:german
+			add_claim = ROOT
 		}
-		s:STATE_WURTTEMBERG = {
+		s:STATE_BOHEMIA = {
 			remove_homeland = cu:south_german
 			add_homeland = cu:german
+			add_claim = ROOT
+		}
+		s:STATE_MORAVIA = {
+			remove_homeland = cu:south_german
+			add_homeland = cu:german
+			add_claim = ROOT
+		}
+		s:STATE_WURTTEMBERG = {
+			remove_homeland = cu:alemannic
+			remove_homeland = cu:south_german
+			add_homeland = cu:german
+			add_claim = ROOT
 		}
 		s:STATE_BADEN = {
 			remove_homeland = cu:south_german
+			remove_homeland = cu:alemannic
 			add_homeland = cu:german
+			add_claim = ROOT
 		}
 		s:STATE_FRANCONIA = {
 			remove_homeland = cu:south_german
 			add_homeland = cu:german
-		}
-		s:STATE_WURTTEMBERG = {
-			remove_homeland = cu:alemannic
-			add_homeland = cu:german
-		}
-		s:STATE_BADEN = {
-			remove_homeland = cu:alemannic
-			add_homeland = cu:german
+			add_claim = ROOT
 		}
 		s:STATE_ALSACE_LORRAINE = {
 			remove_homeland = cu:alemannic
+			remove_homeland = cu:south_german
 			add_homeland = cu:german
+			add_claim = ROOT
 		}
 		s:STATE_EAST_SWITZERLAND = {
 			remove_homeland = cu:alemannic
 			add_homeland = cu:german
+			add_claim = ROOT
 		}
 		s:STATE_WEST_SWITZERLAND = {
 			remove_homeland = cu:alemannic
 			add_homeland = cu:german
+			add_claim = ROOT
 		}
 	}
 }
@@ -289,9 +343,9 @@ unification_culture.3 = {
 	type = country_event
 	placement = ROOT
 	
-	title = unification_culture.1.t
-	desc = unification_culture.1.d
-	flavor = unification_culture.1.f
+	title = unification_culture.3.t
+	desc = unification_culture.3.d
+	flavor = unification_culture.3.f
 	
 	event_image = {
 		video = "unspecific_ruler_speaking_to_people"
@@ -310,7 +364,7 @@ unification_culture.3 = {
 	}
 
 	option = {
-		name = unification_culture.1.a
+		name = unification_culture.3.a
 		default_option = yes
 		ai_chance = {
 			base = 100
@@ -343,72 +397,92 @@ unification_culture.3 = {
 		s:STATE_VENETIA = {
 			remove_homeland = cu:north_italian
 			add_homeland = cu:italian
+			add_claim = ROOT
 		}
 		s:STATE_EMILIA = {
 			remove_homeland = cu:north_italian
 			add_homeland = cu:italian
+			add_claim = ROOT
 		}
 		s:STATE_TUSCANY = {
 			remove_homeland = cu:north_italian
 			add_homeland = cu:italian
+			add_claim = ROOT
 		}
 		s:STATE_ROMAGNA = {
 			remove_homeland = cu:north_italian
 			add_homeland = cu:italian
-		}
-		s:STATE_DALMATIA = {
-			remove_homeland = cu:north_italian
-			add_homeland = cu:italian
+			add_claim = ROOT
 		}
 		s:STATE_ISTRIA = {
 			remove_homeland = cu:north_italian
 			add_homeland = cu:italian
+			add_claim = ROOT
 		}
 		s:STATE_LOMBARDY = {
 			remove_homeland = cu:north_italian
 			add_homeland = cu:italian
+			add_claim = ROOT
 		}
 		s:STATE_SOUTH_TYROL = {
 			remove_homeland = cu:north_italian
 			add_homeland = cu:italian
+			add_claim = ROOT
 		}
 		s:STATE_PIEDMONT = {
 			remove_homeland = cu:north_italian
 			add_homeland = cu:italian
+			add_claim = ROOT
+		}
+		s:STATE_SARDINIA = {
+			remove_homeland = cu:south_italian
+			add_homeland = cu:italian
+			add_claim = ROOT
+		}
+		s:STATE_UMBRIA = {
+			remove_homeland = cu:south_italian
+			add_homeland = cu:italian
+			add_claim = ROOT
 		}
 		s:STATE_SICILY = {
 			remove_homeland = cu:south_italian
 			add_homeland = cu:italian
+			add_claim = ROOT
 		}
 		s:STATE_LAZIO = {
 			remove_homeland = cu:south_italian
 			add_homeland = cu:italian
+			add_claim = ROOT
 		}
 		s:STATE_CAMPANIA = {
 			remove_homeland = cu:south_italian
 			add_homeland = cu:italian
+			add_claim = ROOT
 		}
 		s:STATE_ABRUZZO = {
 			remove_homeland = cu:south_italian
 			add_homeland = cu:italian
+			add_claim = ROOT
 		}
 		s:STATE_CALABRIA = {
 			remove_homeland = cu:south_italian
 			add_homeland = cu:italian
+			add_claim = ROOT
 		}
 		s:STATE_APULIA = {
 			remove_homeland = cu:south_italian
 			add_homeland = cu:italian
+			add_claim = ROOT
 		}
 		s:STATE_MALTA = {
 			remove_homeland = cu:maltese
-			remove_homeland = cu:south_italian
 			add_homeland = cu:italian
+			add_claim = ROOT
 		}
 		s:STATE_CORSICA = {
 			remove_homeland = cu:corsican
-			remove_homeland = cu:north_italian
 			add_homeland = cu:italian
+			add_claim = ROOT
 		}
 	}
 }
@@ -471,110 +545,101 @@ unification_culture.4 = {
 		s:STATE_ANDALUSIA = {
 			remove_homeland = cu:spanish
 			add_homeland = cu:iberian
-		}
-		s:STATE_GALICIA = {
-			remove_homeland = cu:spanish
-			add_homeland = cu:iberian
+			add_claim = ROOT
 		}
 		s:STATE_GALICIA = {
 			remove_homeland = cu:galician
+			remove_homeland = cu:spanish
 			add_homeland = cu:iberian
+			add_claim = ROOT
 		}
 		s:STATE_ASTURIAS = {
 			remove_homeland = cu:spanish
 			add_homeland = cu:iberian
+			add_claim = ROOT
 		}
 		s:STATE_CASTILE = {
 			remove_homeland = cu:spanish
 			add_homeland = cu:iberian
+			add_claim = ROOT
 		}
 		s:STATE_ARAGON = {
 			remove_homeland = cu:spanish
 			add_homeland = cu:iberian
+			add_claim = ROOT
 		}
 		s:STATE_NAVARRA = {
 			remove_homeland = cu:spanish
 			add_homeland = cu:iberian
-		}
-		s:STATE_CATALONIA = {
-			remove_homeland = cu:spanish
-			add_homeland = cu:iberian
+			add_claim = ROOT
 		}
 		s:STATE_CATALONIA = {
 			remove_homeland = cu:catalan
-			add_homeland = cu:iberian
-		}
-		s:STATE_BALEARES = {
 			remove_homeland = cu:spanish
 			add_homeland = cu:iberian
+			add_claim = ROOT
 		}
 		s:STATE_BALEARES = {
 			remove_homeland = cu:catalan
-			add_homeland = cu:iberian
-		}
-		s:STATE_BEIRA = {
 			remove_homeland = cu:spanish
 			add_homeland = cu:iberian
+			add_claim = ROOT
 		}
-		s:STATE_ESTREMADURA = {
-			remove_homeland = cu:spanish
+		s:STATE_ALENTEJO = {
+			remove_homeland = cu:portuguese
 			add_homeland = cu:iberian
-		}
-		s:STATE_MADEIRA = {
-			remove_homeland = cu:spanish
-			add_homeland = cu:iberian
-		}
-		s:STATE_CAPE_VERDE = {
-			remove_homeland = cu:spanish
-			add_homeland = cu:iberian
-		}
-		s:STATE_AZORES = {
-			remove_homeland = cu:spanish
-			add_homeland = cu:iberian
+			add_claim = ROOT
 		}
 		s:STATE_BEIRA = {
 			remove_homeland = cu:portuguese
 			add_homeland = cu:iberian
+			add_claim = ROOT
 		}
 		s:STATE_ESTREMADURA = {
 			remove_homeland = cu:portuguese
 			add_homeland = cu:iberian
+			add_claim = ROOT
 		}
 		s:STATE_MADEIRA = {
 			remove_homeland = cu:portuguese
 			add_homeland = cu:iberian
+			add_claim = ROOT
 		}
 		s:STATE_CAPE_VERDE = {
 			remove_homeland = cu:portuguese
 			add_homeland = cu:iberian
+			add_claim = ROOT
 		}
 		s:STATE_AZORES = {
 			remove_homeland = cu:portuguese
 			add_homeland = cu:iberian
+			add_claim = ROOT
 		}
 		s:STATE_CANARY_ISLANDS = {
 			remove_homeland = cu:spanish
 			add_homeland = cu:iberian
+			add_claim = ROOT
 		}
 		s:STATE_GRANADA = {
 			remove_homeland = cu:spanish
 			add_homeland = cu:iberian
+			add_claim = ROOT
 		}
 		s:STATE_BADAJOZ = {
 			remove_homeland = cu:spanish
 			add_homeland = cu:iberian
-		}
-		s:STATE_VALENCIA = {
-			remove_homeland = cu:spanish
-			add_homeland = cu:iberian
+			add_claim = ROOT
 		}
 		s:STATE_VALENCIA = {
 			remove_homeland = cu:catalan
+			remove_homeland = cu:spanish
 			add_homeland = cu:iberian
+			add_claim = ROOT
 		}
 		s:STATE_TOLEDO = {
 			remove_homeland = cu:spanish
 			add_homeland = cu:iberian
+			add_claim = ROOT
 		}
 	}
 }
@@ -1795,9 +1860,9 @@ unification_culture.14 = {
 	type = country_event
 	placement = ROOT
 	
-	title = unification_culture.1.t
-	desc = unification_culture.1.d
-	flavor = unification_culture.1.f
+	title = unification_culture.14.t
+	desc = unification_culture.14.d
+	flavor = unification_culture.14.f
 	
 	event_image = {
 		video = "unspecific_ruler_speaking_to_people"
@@ -1816,7 +1881,7 @@ unification_culture.14 = {
 	}
 
 	option = {
-		name = unification_culture.1.a
+		name = unification_culture.14.a
 		default_option = yes
 		ai_chance = {
 			base = 100
@@ -1868,9 +1933,12 @@ unification_culture.14 = {
 			remove_homeland = cu:slovak
 			add_homeland = cu:western_slavs
 		}
+		s:STATE_SAXONY = {
+			remove_homeland = cu:slovak
+			add_homeland = cu:western_slavs
+		}
 		s:STATE_SILESIA = {
 			remove_homeland = cu:sorb
-			remove_homeland = cu:polish
 			add_homeland = cu:western_slavs
 		}
 		s:STATE_BREST = {
@@ -1889,7 +1957,7 @@ unification_culture.14 = {
 			remove_homeland = cu:polish
 			add_homeland = cu:western_slavs
 		}
-		s:STATE_VOLHYNIA = {
+		s:STATE_VILNIUS = {
 			remove_homeland = cu:polish
 			add_homeland = cu:western_slavs
 		}
@@ -1920,9 +1988,9 @@ unification_culture.15 = {
 	type = country_event
 	placement = ROOT
 	
-	title = unification_culture.1.t
-	desc = unification_culture.1.d
-	flavor = unification_culture.1.f
+	title = unification_culture.15.t
+	desc = unification_culture.15.d
+	flavor = unification_culture.15.f
 	
 	event_image = {
 		video = "unspecific_ruler_speaking_to_people"
@@ -1941,7 +2009,7 @@ unification_culture.15 = {
 	}
 
 	option = {
-		name = unification_culture.1.a
+		name = unification_culture.15.a
 		default_option = yes
 		ai_chance = {
 			base = 100
@@ -1951,6 +2019,7 @@ unification_culture.15 = {
 		remove_primary_culture = cu:bosniak
 		remove_primary_culture = cu:croat
 		remove_primary_culture = cu:serb
+		remove_primary_culture = cu:bulgarian
 		hidden_effect = {
 			every_country = {
 				every_scope_pop = {
@@ -1973,6 +2042,12 @@ unification_culture.15 = {
 			every_country = {
 				every_scope_pop = {
 					limit = { culture = cu:serb }
+					change_pop_culture = { target = cu:yugoslavs value = 1 }
+				}
+			}
+			every_country = {
+				every_scope_pop = {
+					limit = { culture = cu:bulgarian }
 					change_pop_culture = { target = cu:yugoslavs value = 1 }
 				}
 			}
@@ -2028,101 +2103,30 @@ unification_culture.15 = {
 			remove_homeland = cu:serb
 			add_homeland = cu:yugoslavs
 		}
+		s:STATE_DOBRUDJA = {
+			remove_homeland = cu:bulgarian
+			add_homeland = cu:yugoslavs
+		}
+		s:STATE_SKOPIA = {
+			remove_homeland = cu:bulgarian
+			add_homeland = cu:yugoslavs
+		}
+		s:STATE_WESTERN_THRACE = {
+			remove_homeland = cu:bulgarian
+			add_homeland = cu:yugoslavs
+		}
+		s:STATE_NORTHERN_THRACE = {
+			remove_homeland = cu:bulgarian
+			add_homeland = cu:yugoslavs
+		}
+		s:STATE_BULGARIA = {
+			remove_homeland = cu:bulgarian
+			add_homeland = cu:yugoslavs
+		}
 	}
 }
 
  ##Primary culture shift
-
-cultural_shift.1 = {
-	type = country_event
-	placement = ROOT
-	
-	title = cultural_shift.1.t
-	desc = cultural_shift.1.d
-	flavor = cultural_shift.1.f
-	
-	event_image = {
-		video = "unspecific_ruler_speaking_to_people"
-	}
-
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
-	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
-	
-	duration = 3
-	
-	trigger = {
-	}
-
-	immediate = {
-	}
-
-	option = {
-		name = cultural_shift.1.a
-		default_option = yes
-		ai_chance = {
-			base = 100
-		}
-		if = {
-			limit = {
-				c:GER ?= this
-			}
-			add_primary_culture = cu:german
-			remove_primary_culture = cu:north_german
-			remove_primary_culture = cu:south_german
-			remove_primary_culture = cu:alemannic
-		}
-		c:GER = {
-		trigger_event = { id = unification_culture.2 days = 10 }	
-		}
-	}
-}
-
-cultural_shift.2 = {
-	type = country_event
-	placement = ROOT
-	
-	title = cultural_shift.1.t
-	desc = cultural_shift.1.d
-	flavor = cultural_shift.1.f
-	
-	event_image = {
-		video = "unspecific_ruler_speaking_to_people"
-	}
-
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
-	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
-	
-	duration = 3
-	
-	trigger = {
-	}
-
-	immediate = {
-	}
-
-	option = {
-		name = cultural_shift.1.a
-		default_option = yes
-		ai_chance = {
-			base = 100
-		}
-		if = {
-			limit = {
-				c:ITA ?= this
-			}
-			add_primary_culture = cu:italian
-			remove_primary_culture = cu:north_italian
-			remove_primary_culture = cu:south_italian
-			remove_primary_culture = cu:corsican
-			remove_primary_culture = cu:maltese
-		}
-		c:ITA = {
-		trigger_event = { id = unification_culture.3 days = 10 }	
-		}
-	}
-}
 
 cultural_shift.3 = {
 	type = country_event
@@ -2495,97 +2499,6 @@ cultural_shift.10 = {
 		}
 		c:NGR = {
 		trigger_event = { id = unification_culture.11 days = 10 }	
-		}
-	}
-}
-
-cultural_shift.11 = {
-	type = country_event
-	placement = ROOT
-	
-	title = cultural_shift.1.t
-	desc = cultural_shift.1.d
-	flavor = cultural_shift.1.f
-	
-	event_image = {
-		video = "unspecific_ruler_speaking_to_people"
-	}
-
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
-	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
-	
-	duration = 3
-	
-	trigger = {
-	}
-
-	immediate = {
-	}
-
-	option = {
-		name = cultural_shift.1.a
-		default_option = yes
-		ai_chance = {
-			base = 100
-		}
-		if = {
-			limit = {
-				c:ZAP ?= this
-			}
-			add_primary_culture = cu:western_slavs
-			remove_primary_culture = cu:czech
-			remove_primary_culture = cu:slovak
-			remove_primary_culture = cu:polish
-			remove_primary_culture = cu:sorb
-		}
-		c:ZAP = {
-		trigger_event = { id = unification_culture.14 days = 10 }	
-		}
-	}
-}
-
-cultural_shift.12 = {
-	type = country_event
-	placement = ROOT
-	
-	title = cultural_shift.1.t
-	desc = cultural_shift.1.d
-	flavor = cultural_shift.1.f
-	
-	event_image = {
-		video = "unspecific_ruler_speaking_to_people"
-	}
-
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
-	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
-	
-	duration = 3
-	
-	trigger = {
-	}
-
-	immediate = {
-	}
-
-	option = {
-		name = cultural_shift.1.a
-		default_option = yes
-		ai_chance = {
-			base = 100
-		}
-		if = {
-			limit = {
-				c:YUG ?= this
-			}
-			add_primary_culture = cu:yugoslavs
-			remove_primary_culture = cu:slovene
-			remove_primary_culture = cu:bosniak
-			remove_primary_culture = cu:croat
-		}
-		c:YUG = {
-		trigger_event = { id = unification_culture.15 days = 10 }	
 		}
 	}
 }

@@ -1,0 +1,176 @@
+﻿je_annex_HAW = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		owns_entire_state_region = STATE_HAWAIIAN_ISLANDS
+	}
+
+	on_complete = {
+		trigger_event = { id = ely_imperialism.2 }
+	}
+}
+
+je_annex_arkadia = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		owns_entire_state_region = STATE_GUAYANA
+		owns_entire_state_region = STATE_BOLIVAR
+		owns_entire_state_region = STATE_MIRANDA
+	}
+
+	on_complete = {
+		trigger_event = { id = ely_imperialism.3 }
+	}
+}
+
+je_annex_polynisia = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		owns_entire_state_region = STATE_TAHITI
+		owns_entire_state_region = STATE_TONGA
+	}
+
+	on_complete = {
+		trigger_event = { id = ely_imperialism.4 }
+	}
+}
+
+je_annex_melanisia = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		owns_entire_state_region = STATE_SOLOMON_ISLANDS
+		owns_entire_state_region = STATE_BOUGAINVILLE
+		owns_entire_state_region = STATE_NAURU
+		owns_entire_state_region = STATE_FIJI
+		owns_entire_state_region = STATE_VANUATU
+		owns_entire_state_region = STATE_KANAK
+	}
+
+	on_complete = {
+		trigger_event = { id = ely_imperialism.5 }
+	}
+}
+
+je_annex_aotearoa  = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		owns_entire_state_region = STATE_NORTH_ISLAND
+		owns_entire_state_region = STATE_SOUTH_ISLAND
+	}
+
+	on_complete = {
+		trigger_event = { id = ely_imperialism.6 }
+	}
+}
+
+je_reorganize_arkadia = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		OR = {
+			AND = {
+				owns_entire_state_region = STATE_MIRANDA
+				owns_entire_state_region = STATE_GUAYANA
+				owns_entire_state_region = STATE_BOLIVAR
+				owns_entire_state_region = STATE_PARA
+				owns_entire_state_region = STATE_MARANHAO
+				owns_entire_state_region = STATE_AMAZONAS
+				owns_entire_state_region = STATE_GOIAS
+				owns_entire_state_region = STATE_BAHIA
+				owns_entire_state_region = STATE_RIO_GRANDE_DO_NORTE
+				owns_entire_state_region = STATE_CEARA
+				owns_entire_state_region = STATE_PIAUI
+				owns_entire_state_region = STATE_PERNAMBUCO
+				owns_entire_state_region = STATE_PARAIBA
+			}
+		any_subject_or_below = {
+				owns_entire_state_region = STATE_PARA
+				owns_entire_state_region = STATE_MARANHAO
+				owns_entire_state_region = STATE_AMAZONAS
+				owns_entire_state_region = STATE_GOIAS
+				owns_entire_state_region = STATE_RIO_GRANDE_DO_NORTE
+				owns_entire_state_region = STATE_CEARA
+				owns_entire_state_region = STATE_PIAUI
+				owns_entire_state_region = STATE_PERNAMBUCO
+				owns_entire_state_region = STATE_PARAIBA
+			}
+		}
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:AGJ
+			}
+			c:ELY = {
+				trigger_event = { id = ely_imperialism.7 }
+			}
+		}
+		else = {
+			c:ELY = {
+				trigger_event = { id = elyric.3 }
+			}
+		}
+	}
+}
+
+je_recognize_afro_americans = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		owns_entire_state_region = STATE_RIO_GRANDE_DO_SUL
+		owns_entire_state_region = STATE_CORRIENTES
+		owns_entire_state_region = STATE_URUGUAY
+		owns_entire_state_region = STATE_BUENOS_AIRES
+		owns_entire_state_region = STATE_RIO_NEGRO
+		owns_entire_state_region = STATE_LA_PAMPA
+		owns_entire_state_region = STATE_SANTA_FE
+		owns_entire_state_region = STATE_CHACO
+	}
+
+	on_complete = {
+		trigger_event = { id = ely_imperialism.9 }
+	}
+}
+
+je_reorganize_eireneic = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		owns_entire_state_region = STATE_HAWAIIAN_ISLANDS
+		owns_entire_state_region = STATE_SOLOMON_ISLANDS
+		owns_entire_state_region = STATE_BOUGAINVILLE
+		owns_entire_state_region = STATE_NAURU
+		owns_entire_state_region = STATE_FIJI
+		owns_entire_state_region = STATE_VANUATU
+		owns_entire_state_region = STATE_KANAK
+		owns_entire_state_region = STATE_NORTH_ISLAND
+		owns_entire_state_region = STATE_SOUTH_ISLAND
+		owns_entire_state_region = STATE_TAHITI
+		owns_entire_state_region = STATE_TONGA
+	}
+
+	on_complete = {
+		trigger_event = { id = ely_imperialism.10 }
+	}
+}

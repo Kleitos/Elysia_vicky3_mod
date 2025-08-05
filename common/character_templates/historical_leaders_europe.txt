@@ -4,6 +4,7 @@ aus_ferdinand_I_habsburg_template = {
     first_name = Ferdinand
     last_name = von_Habsburg
     historical = yes
+    culture = primary_culture
     ruler = yes
     birth_date = 1793.4.19
     dna = dna_emperor_ferdinand_01
@@ -22,6 +23,7 @@ aus_franz_josef_I_habsburg_template = {
     first_name = Franz_Josef
     last_name = von_Habsburg
     historical = yes
+    culture = primary_culture
     heir = yes
     noble = yes
     birth_date = 1830.8.18
@@ -39,7 +41,7 @@ fra_clemenceau_character_template = {
     historical = yes
     culture = cu:french
     female = no
-    religion = catholic
+    religion = rel:catholic
     ideology = ideology_radical
     interest_group = ig_intelligentsia
     dna = dna_georges_clemenceau
@@ -48,7 +50,7 @@ fra_clemenceau_character_template = {
         experienced_political_operator
         persistent
         direct
-    }   
+    }
     interest_group_leader_usage = {
         country_trigger = {
             has_dlc_feature = voice_of_the_people_preorder
@@ -57,7 +59,7 @@ fra_clemenceau_character_template = {
         }
         interest_group_trigger = {
             is_marginal = no
-            is_interest_group_type = ig_intelligentsia    
+            is_interest_group_type = ig_intelligentsia
             NOR = {
 				has_variable = communist_ig_var
 				has_variable = chose_vanguardism
@@ -65,11 +67,11 @@ fra_clemenceau_character_template = {
 				has_variable = chose_conservatism
 				has_variable = chose_ethno_nationalism
 			}
-        }   
+        }
         earliest_usage_date = 1871.1.1
         latest_usage_date = 1929.1.1
         chance = 50
-    }   
+    }
 }
 
 # Frankfurt - FRM
@@ -79,7 +81,7 @@ frm_grimm_character_template = {
     historical = yes
     culture = cu:north_german
     female = no
-    religion = protestant
+    religion = rel:protestant
     ideology = ideology_reformer
     interest_group = ig_intelligentsia
     birth_date = 1786.2.24
@@ -88,7 +90,7 @@ frm_grimm_character_template = {
         basic_political_operator
         erudite
         literary
-    }   
+    }
     interest_group_leader_usage = {
         country_trigger = {
             OR = {
@@ -102,19 +104,19 @@ frm_grimm_character_template = {
         }
         interest_group_trigger = {
             is_marginal = no
-            is_interest_group_type = ig_intelligentsia    
+            is_interest_group_type = ig_intelligentsia
             NOR = {
 				has_variable = communist_ig_var
 				has_variable = chose_vanguardism
 				has_variable = chose_fascism
 				has_variable = chose_conservatism
 				has_variable = chose_ethno_nationalism
-			}   
-        }   
+			}
+        }
         earliest_usage_date = 1836.1.1
         latest_usage_date = 1850.1.1
         chance = 20
-    }   
+    }
 }
 
 # Norway
@@ -125,7 +127,7 @@ nor_thrane_template = {
     culture = cu:norwegian
     birth_date = 1817.10.14
     ig_leader = yes
-    dna = dna_marcus_thrane 
+    dna = dna_marcus_thrane
     interest_group = ig_trade_unions
     ideology = ideology_radical
     traits = {
@@ -141,11 +143,11 @@ nor_thrane_template = {
         interest_group_trigger = {
             is_marginal = no
             is_interest_group_type = ig_trade_unions
-        }   
+        }
         earliest_usage_date = 1848.1.1
-        latest_usage_date = 1890.1.1    
+        latest_usage_date = 1890.1.1
         chance = 50
-    } 
+    }
 }
 
 # Prussia - PRU
@@ -155,7 +157,7 @@ pru_bismarck_character_template = {
     historical = yes
     culture = cu:north_german
     female = no
-    religion = protestant
+    religion = rel:protestant
     ideology = ideology_royalist
     interest_group = ig_landowners
     birth_date = 1815.4.1
@@ -163,15 +165,15 @@ pru_bismarck_character_template = {
         experienced_political_operator
         masterful_diplomat
         direct
-    }   
+    }
     interest_group_leader_usage = {
         country_trigger = {
             OR = {
-                AND = { 
+                AND = {
                     exists = c:PRU
                     this = c:PRU
                 }
-                AND = { 
+                AND = {
                     NOT = { exists = c:PRU }
                     exists = c:GER
                     this = c:GER
@@ -184,25 +186,26 @@ pru_bismarck_character_template = {
         }
         interest_group_trigger = {
             is_marginal = no
-            is_interest_group_type = ig_landowners   
+            is_interest_group_type = ig_landowners
             NOR = {
 				has_variable = communist_ig_var
 				has_variable = chose_vanguardism
 				has_variable = chose_fascism
 				has_variable = chose_conservatism
 				has_variable = chose_ethno_nationalism
-			}   
-        }   
+			}
+        }
         earliest_usage_date = 1847.1.1
         latest_usage_date = 1884.1.1
         chance = 50
-    }   
+    }
 }
 pru_wilhelm_III_hohenzollern_template = {
     # Frederick William III of Prussia
     first_name = "Friedrich_Wilhelm"
     last_name = "von_Hohenzollern"
     historical = yes
+    culture = primary_culture
     ruler = yes # both ruler and general
     is_general = yes # both ruler and general
     age = 66
@@ -222,6 +225,7 @@ pru_wilhelm_IV_hohenzollern_template = {
     first_name = "Friedrich_Wilhelm"
     last_name = "von_Hohenzollern"
     historical = yes
+    culture = primary_culture
     heir = yes
      dna = dna_frederick_william_iv
     age = 41
@@ -235,44 +239,6 @@ pru_wilhelm_IV_hohenzollern_template = {
     }
 }
 
-rus_witte_character_template = {
-    first_name = Sergei
-    last_name = Witte
-    historical = yes
-    culture = cu:russian
-    female = no
-    religion = orthodox
-    dna = dna_sergei_witte
-    ideology = ideology_reformer
-    interest_group = ig_industrialists
-    birth_date = 1849.6.29
-    traits = {
-        experienced_political_operator
-        meticulous
-        innovative
-    }   
-    interest_group_leader_usage = {
-        country_trigger = {
-            exists = c:RUS
-            this = c:RUS
-        }
-        interest_group_trigger = {
-            is_marginal = no
-            is_interest_group_type = ig_industrialists    
-            NOR = {
-				has_variable = communist_ig_var
-				has_variable = chose_vanguardism
-				has_variable = chose_fascism
-				has_variable = chose_conservatism
-				has_variable = chose_ethno_nationalism
-			}
-        }   
-        earliest_usage_date = 1879.1.1
-        latest_usage_date = 1915.1.1
-        chance = 50
-    }   
-}
-
 # Sardinia-Piedmont - SAR
 sar_benso_character_template = { # The Count of Cavour
     first_name = Camillo
@@ -280,7 +246,7 @@ sar_benso_character_template = { # The Count of Cavour
     historical = yes
     culture = cu:north_italian
     female = no
-    religion = catholic
+    religion = rel:catholic
     dna = dna_count_of_cavour
     ideology = ideology_reformer
     interest_group = ig_industrialists
@@ -289,7 +255,7 @@ sar_benso_character_template = { # The Count of Cavour
         experienced_political_operator
         meticulous
         innovative
-    }   
+    }
     interest_group_leader_usage = {
         country_trigger = {
             exists = c:SAR
@@ -297,19 +263,19 @@ sar_benso_character_template = { # The Count of Cavour
         }
         interest_group_trigger = {
             is_marginal = no
-            is_interest_group_type = ig_industrialists   
+            is_interest_group_type = ig_industrialists
             NOR = {
 				has_variable = communist_ig_var
 				has_variable = chose_vanguardism
 				has_variable = chose_fascism
 				has_variable = chose_conservatism
 				has_variable = chose_ethno_nationalism
-			} 
-        }   
+			}
+        }
         earliest_usage_date = 1850.1.1
         latest_usage_date = 1862.1.1
         chance = 50
-    }   
+    }
 }
 sar_charles_albert_sardinia_template = {
     # Charles Albert of Sardinia-Piedmont
@@ -317,6 +283,7 @@ sar_charles_albert_sardinia_template = {
     first_name = "Carlo_Alberto"
     last_name = "di_Savoia"
     historical = yes
+    culture = primary_culture
     ruler = yes
     dna = dna_charles_albert_of_savoy
     birth_date = 1798.10.2
@@ -335,6 +302,7 @@ sar_victor_emmanuel_template = {
     first_name = "Vittorio_Emanuele"
     last_name = "di_Savoia"
     historical = yes
+    culture = primary_culture
     heir = yes
     birth_date = 1820.3.14 # pi day!
     dna = dna_king_victor_emmanuel_02
@@ -342,60 +310,5 @@ sar_victor_emmanuel_template = {
     ideology = ideology_moderate
     traits = {
         ambitious
-    }
-}
-
-# Spain - SPA
-spa_isabel_de_borbon_template = {
-    first_name = "Isabel"
-    last_name = "de_Borbon"
-    historical = yes
-    ruler = yes
-    female = yes
-    birth_date = 1830.10.10
-    dna = dna_queen_isabella_02
-    interest_group = ig_intelligentsia
-    ideology = ideology_moderate
-    traits = {
-        trait_child
-    }
-}
-
-# Sweden - SWE
-swe_karl_johan_bernadotte_template = {
-    first_name = "Karl_Johan"
-    last_name = "von_Holstein_Gottorp"
-    historical = yes
-    ruler = yes
-    birth_date = 1763.1.26
-    dna = dna_king_karl_14
-    culture=cu:swedish
-    religion = rel:protestant
-    interest_group = ig_landowners
-    ideology = ideology_moderate
-    traits = {
-        ambitious 
-    }
-    on_created = {
-        set_variable = is_married
-    }
-}
-swe_oscar_bernadotte_template = {
-    # Oscar I of Sweden
-    first_name = "Oscar"
-    last_name = "von_Holstein_Gottorp"
-    historical = yes
-    heir = yes
-    birth_date=1799.7.4
-    culture=cu:swedish
-    religion = rel:protestant
-    dna = dna_oscar_bernadotte
-    interest_group = ig_intelligentsia
-    ideology = ideology_moderate
-    traits = {
-        romantic
-    }
-    on_created = {
-        set_variable = is_married
     }
 }

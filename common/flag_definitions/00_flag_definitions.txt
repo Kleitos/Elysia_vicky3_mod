@@ -3451,7 +3451,7 @@ FND = {
 		trigger = { 
 			scope:actor ?= {
 				OR = {
-					was_formed_from = PLT
+					was_formed_from = PLN
 					was_formed_from = ARG
 					was_formed_from = URU
 					was_formed_from = PRG
@@ -10101,14 +10101,14 @@ FLR = { # Florida
 	}
 }
 
-PLT = {
+PLN = {
 	flag_definition = {
-		coa = PLT	
-		subject_canton = PLT
+		coa = PLN	
+		subject_canton = PLN
 		priority = 1
 	}
 	flag_definition = {
-		coa = PLT_communist
+		coa = PLN_communist
 		priority = 1500
 		trigger = { 
 			coa_def_communist_flag_trigger = yes

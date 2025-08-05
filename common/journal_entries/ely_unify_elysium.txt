@@ -1,0 +1,186 @@
+﻿je_unify_elysium = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		has_technology_researched = nationalism
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:ELY
+				c:ELY = ROOT
+			}
+		trigger_event = { id = ely_unification.1 }
+		}
+	}
+}
+
+je_unify_lakonia = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		owns_entire_state_region = STATE_OAXACA
+		owns_entire_state_region = STATE_JALISCO
+		owns_entire_state_region = STATE_GUERRERO
+		owns_entire_state_region = STATE_CHIHUAHUA
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:ELY
+				c:ELY = ROOT
+			}
+		trigger_event = { id = ely_unification.2 }
+		}
+	}
+}
+
+je_unify_andronikos = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		owns_entire_state_region = STATE_MICHIGAN
+		owns_entire_state_region = STATE_ARKANSAS
+		owns_entire_state_region = STATE_MINNESOTA
+		owns_entire_state_region = STATE_OKLAHOMA
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:ELY
+				c:ELY = ROOT
+			}
+		trigger_event = { id = ely_unification.3 }
+		}
+	}
+}
+
+je_unify_skythia = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		owns_entire_state_region = STATE_NORTH_DAKOTA
+		owns_entire_state_region = STATE_SOUTH_DAKOTA
+		owns_entire_state_region = STATE_NEBRASKA
+		owns_entire_state_region = STATE_KANSAS
+		owns_entire_state_region = STATE_TEXAS
+		owns_entire_state_region = STATE_NEW_MEXICO
+		owns_entire_state_region = STATE_COLORADO
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:ELY
+				c:ELY = ROOT
+			}
+		trigger_event = { id = ely_unification.4 }
+		}
+	}
+}
+
+je_unify_thoulea = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		owns_entire_state_region = STATE_NORTHWEST_TERRITORIES
+		owns_entire_state_region = STATE_YUKON_TERRITORY
+		owns_entire_state_region = STATE_NUNAVUT
+		owns_entire_state_region = STATE_ALASKA
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:ELY
+				c:ELY = ROOT
+			}
+		trigger_event = { id = ely_unification.5 }
+		}
+	}
+}
+
+je_unify_borea = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		owns_entire_state_region = STATE_BRITISH_COLUMBIA
+		owns_entire_state_region = STATE_QUEBEC
+		owns_entire_state_region = STATE_ALBERTA
+		owns_entire_state_region = STATE_MONTANA
+		owns_entire_state_region = STATE_SASKATCHEWAN
+		owns_entire_state_region = STATE_MANITOBA
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:ELY
+				c:ELY = ROOT
+			}
+		trigger_event = { id = ely_unification.6 }
+		}
+	}
+}
+
+je_unify_kykladia = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		owns_entire_state_region = STATE_FLORIDA
+		owns_entire_state_region = STATE_YUCATAN
+		owns_entire_state_region = STATE_NICARAGUA
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:ELY
+				c:ELY = ROOT
+			}
+		trigger_event = { id = ely_unification.7 }
+		}
+	}
+}
+
+je_unify_hesperidia = {
+	icon = "gfx/interface/icons/event_icons/unify.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		owns_entire_state_region = STATE_ARIZONA
+		owns_entire_state_region = STATE_UTAH
+		owns_entire_state_region = STATE_IDAHO
+		owns_entire_state_region = STATE_WYOMING
+		owns_entire_state_region = STATE_NEVADA
+	}
+	}
+
+	on_complete = {
+		if = {
+			limit = {
+				exists = c:ELY
+				c:ELY = ROOT
+			}
+		trigger_event = { id = ely_unification.8 }
+		}
+	}
+}

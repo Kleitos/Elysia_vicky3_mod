@@ -4,14 +4,18 @@
 		# + Fairfax County, VA. Total pop in 1830 was 9204, 5203 free/4001 slaves
 		# + Montgomery Co, Prince George's Co, Charles co, St. Mary's Co and Calvert Co in MD- 80418 total, 42176 free/38242 slaves
 		# Number of actual pops adjusted from historical research to better fit the buildings
-		region_state:ELY = { 
+		region_state:ELY = {
 			create_pop = {
 				culture = elysian
 				size = 27544
-			}		
+			}
 			create_pop = {
 				culture = elysian
 				size = 86263
+			}
+			create_pop = {
+				culture = elyric
+				size = 7818
 			}
 		}
 	}
@@ -28,6 +32,18 @@
 			create_pop = {
 				culture = elysian
 				size = 200
+			}
+			create_pop = {
+				culture = elyric
+				size = 21106 # 16710 free in 1830, 25502 free in 1840
+			}
+			create_pop = {
+				culture = elyric
+				size = 102994
+			}
+			create_pop = {
+				culture = elyric
+				size = 16000
 			}
 		}
 	}
@@ -46,11 +62,15 @@
 				size = 39996
 			}
 			create_pop = {
+				culture = elyric
+				size = 20004
+			}
+			create_pop = {
 				culture = elysian
 				size = 16000
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 8000
 			}
 		}
@@ -65,21 +85,43 @@
 				culture = elysian
 				size = 48000
 			}
+			create_pop = {
+				culture = elyric
+				size = 35120
+			}
+			create_pop = {
+				culture = elyric
+				size = 312079
+			}
 		}
 	}
 	s:STATE_ALASKA = {
 		region_state:ELY = {
 			create_pop = {
-				culture = elysian
-				size = 19780
+				culture = elyric
+				size = 7780
+			}
+			create_pop = {
+				culture = elyric
+				size = 3280
 			}
 			create_pop = {
 				culture = elysian
-				size = 192
+				size = 1000
 			}
 			create_pop = {
-				culture = inuit
-				size = 4968
+				culture = elyric
+				size = 1968
+			}
+		}
+		region_state:ATB = {
+			create_pop = {
+				culture = elyric
+				size = 28000
+			}
+			create_pop = {
+				culture = elyric
+				size = 16000
 			}
 		}
 	}
@@ -88,13 +130,13 @@
 			create_pop = {
 				culture = elysian
 				size = 2000
-			}		
+			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 10000
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 10000
 			}
 		}
@@ -104,17 +146,17 @@
 			create_pop = {
 				culture = elysian
 				size = 4848
-			}			
+			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 8000
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 8000
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 4000
 			}
 		}
@@ -122,7 +164,7 @@
 	s:STATE_IDAHO = {
 		region_state:ELY = {
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 3000
 			}
 			create_pop = {
@@ -136,13 +178,13 @@
 		}
 		region_state:NZP = {
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 40000
 			}
 		}
 		region_state:BNN = {
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 20000
 			}
 		}
@@ -150,7 +192,7 @@
 	s:STATE_COLORADO = {
 		region_state:ELY = {
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 2000
 			}
 			create_pop = {
@@ -160,23 +202,23 @@
 		}
 		region_state:ARP = {
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 10000
 			}
 		}
 		region_state:UTE = {
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 4000
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 4000
 			}
 		}
 		region_state:ELY = {
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 1200
 			}
 			create_pop = {
@@ -188,37 +230,38 @@
 	s:STATE_WYOMING = {
 		region_state:ELY = {
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 8000
 			}
 		}
 		region_state:LKT = {
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 6000
 			}
 		}
 		region_state:ARP = {
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 4000
 			}
 		}
 		region_state:BNN = {
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 12000
 			}
 		}
 		region_state:SLS = {
 			create_pop = {
-				culture = elysian
-				size = 1300
+				culture = elyric
+				#size = 1300 #historical increased for gameplay
+				size = 5600
 			}
 		}
 		region_state:ABS = {
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 6500
 			}
 		}
@@ -226,54 +269,55 @@
 	s:STATE_MONTANA = {
 		region_state:ELY = {
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 5000
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 2000
 			}
 		}
 		region_state:ABS = {
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 28000
 			}
 		}
 		region_state:LKT = {
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 6000
 			}
 		}
 		region_state:BLF = {
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 14000
 			}
 		}
 		region_state:SLS = {
 			create_pop = {
-				culture = elysian
-				size = 5500
+				culture = elyric
+				#size = 5500 # historical increased for gameplay
+				size = 8600
 			}
 		}
 	}
 	s:STATE_NORTH_DAKOTA = {
 		region_state:ELY = {
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 6000
 			}
 		}
 		# DKT had 22000
 		region_state:LKT = {
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 30000
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 4000
 			}
 		}
@@ -281,13 +325,13 @@
 	s:STATE_SOUTH_DAKOTA = {
 		region_state:LKT = {
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 34000
 			}
 		}
 		region_state:ELY = {
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 4000
 			}
 		}
@@ -296,23 +340,23 @@
 	s:STATE_NEBRASKA = {
 		region_state:ELY = {
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 4000
 			}
 		}
 		region_state:LKT = {
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 4000
 			}
 		}
 		region_state:PWN = {
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 10000
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 2000
 			}
 		}
@@ -320,41 +364,45 @@
 	s:STATE_KANSAS = {
 		region_state:ELY = {
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 12000
 			}
 		}
 		region_state:PWN = {
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 8000
 			}
 		}
 		region_state:COM = {
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 4000
 			}
 		}
 	}
 	s:STATE_OKLAHOMA = {
-		region_state:ELY = {
+		region_state:SEQ = {
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 2000
 			}
+			create_pop = { # there was even a slave revolt at Webbers Falls in 1842
+				culture = elyric
+				size = 1200
+			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 8000
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 50800
 			}
 		}
 		region_state:COM = {
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 18000
 			}
 		}
@@ -370,7 +418,15 @@
 				size = 33857
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
+				size = 303 # 141 free in 1830, 465 free in 1840
+			}
+			create_pop = {
+				culture = elyric
+				size = 15689
+			}
+			create_pop = {
+				culture = elyric
 				size = 30136
 			}
 		}
@@ -398,6 +454,14 @@
 				size = 3996
 			}
 			create_pop = {
+				culture = elyric
+				size = 1072 # 569 free in 1830, 1574 free in 1840
+			}
+			create_pop = {
+				culture = elyric
+				size = 38928
+			}
+			create_pop = {
 				culture = elysian
 				size = 8000
 			}
@@ -406,11 +470,11 @@
 	s:STATE_IOWA = {
 		region_state:ELY = {
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 12000
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 8000
 			}
 			create_pop = {
@@ -422,13 +486,13 @@
 	s:STATE_MINNESOTA = {
 		region_state:ELY = {
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 16000
 			}
 		}
 		region_state:LKT = {
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 22000
 			}
 		}
@@ -436,7 +500,7 @@
 	s:STATE_WISCONSIN = {
 		region_state:ELY = {
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 8000
 			}
 			create_pop = {
@@ -459,6 +523,10 @@
 				culture = elysian
 				size = 20000
 			}
+			create_pop = {
+				culture = elyric
+				size = 8000
+			}
 		}
 	}
 	s:STATE_MICHIGAN = {
@@ -468,11 +536,11 @@
 				size = 123996
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 12000
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 4000
 			}
 			create_pop = {
@@ -490,6 +558,10 @@
 			create_pop = {
 				culture = elysian
 				size = 1092200
+			}
+			create_pop = {
+				culture = elyric
+				size = 16008
 			}
 			create_pop = {
 				culture = elysian
@@ -512,6 +584,14 @@
 				size = 316392
 			}
 			create_pop = {
+				culture = elyric
+				size = 6117 # 4917 free in 1830, 7317 free in 1840
+			}
+			create_pop = {
+				culture = elyric
+				size = 161879
+			}
+			create_pop = {
 				culture = elysian
 				size = 20000
 			}
@@ -524,7 +604,7 @@
 				size = 369604
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 7200
 			}
 			create_pop = {
@@ -532,11 +612,19 @@
 				size = 204800
 			}
 			create_pop = {
+				culture = elyric
+				size = 5040 # 4555 free in 1830, 5524 free in 1840
+			}
+			create_pop = {
+				culture = elyric
+				size = 142960
+			}
+			create_pop = {
 				culture = elysian
 				size = 39996
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 2528 # 1835 Cherokee Census "Henderson Roll"
 			}
 		}
@@ -547,6 +635,14 @@
 				culture = elysian
 				size = 172804
 			}
+			create_pop = {
+				culture = elyric
+				size = 943 # 519 free in 1830, 1366 free in 1840
+			}
+			create_pop = {
+				culture = elyric
+				size = 87057
+			}
 		}
 	}
 	s:STATE_ALABAMA = {
@@ -556,15 +652,23 @@
 				size = 329008
 			}
 			create_pop = {
+				culture = elyric
+				size = 1806 # 1572 free in 1830, 2039 free in 1840
+			}
+			create_pop = {
+				culture = elyric
+				size = 229998
+			}
+			create_pop = {
 				culture = elysian
 				size = 16004
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 1424 # 1835 Cherokee Census "Henderson Roll"
 			}
 			create_pop = {
-				culture = elysian # Creeks tallied in the "Parsons and Albert Roll" after the 1832 Treaty of Cusseta
+				culture = elyric # Creeks tallied in the "Parsons and Albert Roll" after the 1832 Treaty of Cusseta
 				size = 22240
 			}
 		}
@@ -576,14 +680,23 @@
 				size = 47996
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
+				size = 817 # unknown free population in 1830, 817 free in 1840
+			}
+			create_pop = {
+				culture = elyric
+				size = 31183
+			}
+			create_pop = {
+				culture = elyric
 				size = 3000
 			}
 		}
 		region_state:SML = {
 			create_pop = {
-				culture = elysian
-				size = 5000
+				culture = elyric
+				#size = 5000 # historical increased for gameplay
+				size = 10000
 			}
 		}
 	}
@@ -598,8 +711,16 @@
 				size = 1000
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 8946 # 1835 Cherokee Census "Henderson Roll"
+			}
+			create_pop = {
+				culture = elyric
+				size = 2620 # 2486 free in 1830, 2753 free in 1840
+			}
+			create_pop = {
+				culture = elyric
+				size = 256172
 			}
 		}
 	}
@@ -608,6 +729,14 @@
 			create_pop = {
 				culture = elysian
 				size = 160916
+			}
+			create_pop = {
+				culture = elyric
+				size = 18081 # 17673 slaves in WV's counties in 1830, 18488 slaves in 1840
+			}
+			create_pop = {
+				culture = elyric
+				size = 1808 # don't have easy numbers for WV's free non-white population, but ~10% of the enslaved population seems to roughly track
 			}
 			create_pop = {
 				culture = elysian
@@ -625,6 +754,18 @@
 				culture = elysian
 				size = 251997
 			}
+			# Maryland: 52938 free in 1830, 62078 free in 1840
+			# Delaware: 15855 free in 1830, 16919 free in 1840
+			create_pop = {
+				culture = elyric
+				size = 48541
+			}
+			# Maryland: 102994 in 1830, 89737 in 1840
+			# Delaware: 3292 in 1830, 2605 in 1840
+			create_pop = {
+				culture = elyric
+				size = 58467
+			}
 		}
 	}
 
@@ -633,6 +774,16 @@
 			create_pop = {
 				culture = elysian
 				size = 77000
+			}
+
+			create_pop = {
+					culture = elyric
+					size = 16919
+			}
+
+			create_pop = {
+					culture = elyric
+					size = 2605
 			}
 		}
 	}
@@ -655,6 +806,10 @@
 				culture = elysian
 				size = 59800
 			}
+			create_pop = {
+				culture = elyric
+				size = 43996
+			}
 		}
 	}
 	s:STATE_NEW_JERSEY = {
@@ -667,6 +822,10 @@
 				culture = elysian
 				size = 27996
 			}
+			create_pop = {
+				culture = elyric
+				size = 15996
+			}
 		}
 	}
 	s:STATE_ILLINOIS = {
@@ -674,6 +833,10 @@
 			create_pop = {
 				culture = elysian
 				size = 452400
+			}
+			create_pop = {
+				culture = elyric
+				size = 4000
 			}
 		}
 	}
@@ -698,6 +861,10 @@
 			create_pop = {
 				culture = elysian
 				size = 754484
+			}
+			create_pop = {
+				culture = elyric
+				size = 11996
 			}
 			create_pop = {
 				culture = elysian
@@ -752,7 +919,15 @@
 				size = 492500
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
+				size = 21138 # 19543 free in 1830, 22732 free in 1840
+			}
+			create_pop = {
+				culture = elyric
+				size = 222862
+			}
+			create_pop = {
+				culture = elyric
 				size = 3644 # 1835 Cherokee Census "Henderson Roll"
 			}
 		}
@@ -760,23 +935,23 @@
 	s:STATE_UTAH = {
 		region_state:ELY = {
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 3000
 			}
 		}
 		region_state:NVJ = {
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 2000
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 4000
 			}
 		}
 		region_state:UTE = {
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 11000
 			}
 		}
@@ -792,15 +967,23 @@
 				size = 1000
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 6960
+			}
+			create_pop = {
+				culture = elyric
+				size = 8099 # 7921 free in 1830, 8276 free in 1840
+			}
+			create_pop = {
+				culture = elyric
+				size = 318693
 			}
 		}
 	}
 	s:STATE_HAWAIIAN_ISLANDS = {
 		region_state:HAW = {
 			create_pop = {
-				pop_type = clergy
+				pop_type = clergymen
 				culture = elysian
 				size = 100
 			}
@@ -816,7 +999,7 @@
 			}
 			create_pop = {
 				pop_type = capitalists
-				culture = elysian
+				culture = japanese
 				size = 250
 			}
 			create_pop = {
@@ -840,7 +1023,7 @@
 				size = 366792
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 12200
 			}
 			create_pop = {
@@ -848,23 +1031,25 @@
 				size = 23400
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 3902
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 3902
 			}
 			create_pop = {
 				culture = elysian
 				size = 600
 			}
+		}
+		region_state:NNV = {
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 3996
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 4000
 			}
 			create_pop = {
@@ -872,17 +1057,20 @@
 				size = 12000
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 28200
 			}
 		}
 	}
 	s:STATE_NEW_BRUNSWICK = {
-		# New Brunswick: 119457 in 1834
 		region_state:ELY = {
 			create_pop = {
 				culture = elysian
 				size = 65990
+			}
+			create_pop = {
+				culture = elyric
+				size = 667
 			}
 			create_pop = {
 				culture = elysian
@@ -891,6 +1079,10 @@
 			create_pop = {
 				culture = elysian
 				size = 196573
+			}
+			create_pop = {
+				culture = elyric
+				size = 3333
 			}
 		}
 	}
@@ -905,15 +1097,17 @@
 				size = 5000
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 3000
 			}
+		}
+		region_state:NNV = {
 			create_pop = {
-				culture = inuit
+				culture = elyric
 				size = 4000
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 18204
 			}
 			create_pop = {
@@ -929,7 +1123,7 @@
 	s:STATE_NEWFOUNDLAND = {
 		region_state:ELY = {
 			create_pop = {
-				culture = inuit
+				culture = elyric
 				size = 7980
 			}
 			create_pop = {
@@ -947,33 +1141,33 @@
 			create_pop = {
 				culture = elysian
 				size = 3999
-			}		
+			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 8200
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 11000
 			}
 		}
 		region_state:IRC = {
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 12000
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 12004
 			}
 		}
 		region_state:BLF = {
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 15400
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 5000
 			}
 		}
@@ -983,13 +1177,13 @@
 			create_pop = {
 				culture = elysian
 				size = 8000
-			}		
+			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 27396
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 55200
 			}
 		}
@@ -999,23 +1193,23 @@
 			create_pop = {
 				culture = elysian
 				size = 3000
-			}			
+			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 4200
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 16000
 			}
 		}
 		region_state:IRC = {
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 8000
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 24000
 			}
 		}
@@ -1025,56 +1219,52 @@
 			create_pop = {
 				culture = elysian
 				size = 14848
-			}		
+			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 12000
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 3996
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 16000
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 20004
 			}
 		}
 		region_state:IRC = {
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 12000
 			}
 		}
 	}
 	s:STATE_YUKON_TERRITORY = {
-		region_state:ELY = {
+		region_state:ATB = {
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 12000
 			}
 		}
 	}
 	s:STATE_NORTHWEST_TERRITORIES = {
-		region_state:ELY = {
+		region_state:ATB = {
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 16000
 			}
 		}
 	}
 	s:STATE_NUNAVUT = {
-		region_state:ELY = {
+		region_state:NNV = {
 			create_pop = {
-				culture = inuit
-				size = 11000
-			}
-			create_pop = {
-				culture = elysian
-				size = 980
+				culture = elyric
+				size = 11980
 			}
 		}
 	}
@@ -1084,42 +1274,50 @@
 				culture = elysian
 				size = 14848
 			}
+			create_pop = {
+				culture = elyric
+				size = 12352
+			}
 		}
 	}
 	s:STATE_TEXAS = {
 		region_state:ELY = {
 			create_pop = {
-				culture = elysian
-				size = 42224
-			}
-			create_pop = {
-				culture = elysian
-				size = 1996
-			}
-			create_pop = {
-				culture = elysian
-				size = 4000
-			}
-			create_pop = {
-				culture = elysian
-				size = 2004
-			}
-			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 12000
 			}
 			create_pop = {
 				culture = elysian
 				size = 3000
 			}
-		}
-		region_state:COM = {
 			create_pop = {
 				culture = elysian
-				size = 18000
+				size = 42224
+			}
+			create_pop = {
+				culture = elyric
+				size = 1996
+			}
+			create_pop = {
+				culture = elyric
+				size = 4000
+			}
+			create_pop = {
+				culture = elyric
+				size = 6040
 			}
 			create_pop = {
 				culture = elysian
+				size = 2004
+			}
+		}
+		region_state:COM = {
+			create_pop = {
+				culture = elyric
+				size = 18000
+			}
+			create_pop = {
+				culture = elyric
 				size = 4000
 			}
 		}
@@ -1127,13 +1325,13 @@
 	s:STATE_NEVADA = {
 		region_state:ELY = {
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 22000
 			}
 		}
 		region_state:BNN = {
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 6000
 			}
 		}
@@ -1141,7 +1339,7 @@
 	s:STATE_ARIZONA = {
 		region_state:ELY = {
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 4000
 			}
 			create_pop = {
@@ -1149,27 +1347,27 @@
 				size = 1004
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 3000
 			}
 		}
 		region_state:NVJ = {
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 24000
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 4000
 			}
 		}
 		region_state:APC = {
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 11000
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 2000
 			}
 		}
@@ -1181,29 +1379,29 @@
 				size = 27796
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 18000
 			}
 		}
 		region_state:NVJ = {
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 6000
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 2000
 			}
 		}
 		region_state:COM = {
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 3000
 			}
 		}
 		region_state:APC = {
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 11000
 			}
 		}
@@ -1211,7 +1409,7 @@
 	s:STATE_CALIFORNIA = {
 		region_state:ELY = {
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 52000
 			}
 			create_pop = {
@@ -1229,7 +1427,7 @@
 				size = 69087
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 43637
 			}
 		}
@@ -1241,11 +1439,11 @@
 				size = 139895
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 8000
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 16000
 			}
 		}
@@ -1257,12 +1455,16 @@
 				size = 121499
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 27000
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 70004
+			}
+			create_pop = {
+				culture = elyric
+				size = 6000
 			}
 		}
 	}
@@ -1271,7 +1473,7 @@
 			create_pop = {
 				culture = elysian
 				size = 251061
-			}		
+			}
 		}
 	}
 	s:STATE_DURANGO = { # est. total of 156999. 153810 in 1830, 160187 in 1840
@@ -1281,8 +1483,12 @@
 				size = 136199
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 20000
+			}
+			create_pop = {
+				culture = elyric
+				size = 800
 			}
 		}
 	}
@@ -1293,8 +1499,12 @@
 				size = 113841
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 20000
+			}
+			create_pop = {
+				culture = elyric
+				size = 1100
 			}
 		}
 	}
@@ -1309,12 +1519,16 @@
 				size = 594909
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 266461
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 85162
+			}
+			create_pop = {
+				culture = elyric
+				size = 3801
 			}
 		}
 	}
@@ -1322,15 +1536,19 @@
 	# Campeche:			64053 in 1830, 72707 in 1840, so averaging out to 68380
 	# Tabasco:			58518 in 1830, 63919 in 1840, so averaging out to 61219
 	# working total number of 548936
-	s:STATE_YUCATAN = { 
+	s:STATE_YUCATAN = {
 		region_state:ELY = {
 			create_pop = {
 				culture = elysian
 				size = 226764
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 388804
+			}
+			create_pop = {
+				culture = elyric
+				size = 1400
 			}
 		}
 	}
@@ -1345,39 +1563,47 @@
 				size = 763486
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 39996
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 689604
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 264004
+			}
+			create_pop = {
+				culture = elyric
+				size = 54000
 			}
 		}
 	}
 
 	# total of 231319. This number was revealed to me in a dream.
 	# jk. Couldn't find estimates for Guerrero in 1830 or 1840, but they could be found for 1870 onwards, so some math trickery was done. Neighboring Oaxaca's estimated 1835 population is 74.7% of its 1870 population, and 50.61% of its 1900 population, so those percentages were applied to Guerrero's 1870 and 1900 population figures, and the two results were averaged together into the above.
-	s:STATE_GUERRERO = { 
+	s:STATE_GUERRERO = {
 		region_state:ELY = {
 			create_pop = {
 				culture = elysian
 				size = 114874
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 13183
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 60846
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 27381
+			}
+			create_pop = {
+				culture = elyric
+				size = 15036
 			}
 		}
 	}
@@ -1388,16 +1614,20 @@
 				size = 143903
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 40532
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 187073
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 84182
+			}
+			create_pop = {
+				culture = elyric
+				size = 23984
 			}
 		}
 	}
@@ -1413,11 +1643,11 @@
 				size = 1011710
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 152078
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 26373
 			}
 		}
@@ -1432,7 +1662,7 @@
 				size = 137347
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 175961
 			}
 		}
@@ -1446,7 +1676,7 @@
 				size = 57846
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 72164
 			}
 			create_pop = {
@@ -1458,7 +1688,7 @@
 				size = 1854
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 9251
 			}
 		}
@@ -1470,8 +1700,12 @@
 				size = 8264
 			}
 			create_pop = {
-				culture = elysian
+				culture = elyric
 				size = 13300
+			}
+			create_pop = {
+				culture = elyric
+				size = 1300
 			}
 		}
 	}

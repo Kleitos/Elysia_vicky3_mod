@@ -1,0 +1,674 @@
+﻿l_english:
+
+
+# Country Changes
+country
+ ELY: "Elysian Empire"
+ ELY_ADJ: "Elysian"
+ 
+ ELY_FLAVOR_TEXT:0 "Forged by exiles from a fallen Constantinople, the Elysian Empire carved a new Hellenic order in the heart of the Americas. Rejecting the Christian world that abandoned them, they turned to the gods of old and forged a continent-spanning power through conquest, assimilation, and sheer will. Now a colossus straddling oceans and faiths, Elysia stands defiant against the monotheist world and entwined in a pagan alliance stretching from the Andes to the Eireneic seas. Will this new Rome endure, or is it destined to face the fate of the old?"
+
+ 
+# Power Bloc
+
+ ANTI_ABRAHAM: "Eireneic League"
+ 
+# Military Formations  
+
+ elysia_allagion: "Elysia Allagion"
+ borealia_allagion: "Borealia Allagion"
+ lakonia_allagion: "Lakonia Allagion"
+ andronika_allagion: "Andronika Allagion"
+ arkadia_allagion: "Arkadia Allagion"
+ kikladia_allagion: "Kykladia Allagion"
+ naftiko_elysia: "Naftikos Elysias"
+ naftiko_borealia: "Naftikos Borealias"
+ naftiko_lakonia: "Naftikos Lakonias"
+ naftiko_kykladia: "Naftikos Kykladias"
+ naftiko_arkadia: "Naftikos Arkadias"
+ 
+# Treaties
+
+ treaty_name_triple_alliance: "Eireneic Alliance"
+ treaty_name_elysian_military_mission_to_ashanti: "Elysian military mission to Ashanti Kingdom"
+ treaty_name_elysian_chinese_agreement: "Sino-Elysian treaty of Commerce"
+
+ 
+# Culture 
+
+ elysian_culture_group:0 "Elysian"
+ pagan_heritage:0 "Polytheistic Sphere"
+ 
+ elysian:0 "Elysian"
+ arkadian:0 "Antheians"
+ elyric:0 "Elyric"
+ 
+ elysian_pantheon:0 "Elysian Pantheon"
+ pantheon:0 "Olympian Pantheon"
+ 
+ pagan_belief:0 "Pagan Syncretism"
+ 
+ je_group_elysian_content:0 "Elysian Content"
+ 
+ 
+# Interest Groups
+IG
+ ig_elysian_church:0 "Hierateia"
+ ig_elysian_church_desc:0 "The Hierateia, or Sacred Order, is a syncretic priesthood blending ancient Greco-Roman rites with native spiritual traditions. They control temples, state rituals, and the spiritual education of the people. Though officially subordinate to the Imperial Throne, they wield immense cultural influence and act as stewards of the divine order."
+ 
+ ig_dynatoi:0 "Dynatoi"
+ ig_dynatoi_desc:0 "The Dynatoi are the landed aristocracy of Elysia, descended from both the imperial Roman elites and noble native lineages. Rooted in sprawling estates and ancient privilege, they consider themselves the living embodiment of tradition and the rural spine of the empire."
+
+ ig_emporoi:0 "Emporoi"
+ ig_emporoi_desc:0 "The Emporoi, or commercial class, are a diverse mixture of urban artisans, native guildsmen, and minor traders. They uphold the prosperity of the Elysian cities and towns, navigating local economies with pragmatism and fierce civic pride. Though modest in stature, they are often the first to feel—and resist—imperial overreach."
+ 
+ ig_elysian_army:0 "Thematas"
+ ig_elysian_army_desc:0 "The Thematas are the regional military corps descended from the ancient thematic system. These professional soldiers and officer-nobles see themselves as guardians of Elysian dominion, upholding both martial valor and the imperial hierarchy. Their loyalty is to the throne."
+
+ ig_georgoi:0 "Geōrgoi"
+ ig_georgoi_desc:0 "The Geōrgoi are the countless farmers, villagers, and rural workers whose labor nourishes the empire. Tied to ancestral lands and often interwoven with native clans, they represent both the backbone of society and a potent force for resistance when provoked."
+
+ ig_syntechnoi:0 "Syntechnoi"
+ ig_syntechnoi_desc:0 "The Syntechnoi are organized guilds, workshops, and proto-unions of the Elysian working class. Their demands for influence clash with older hierarchies—yet they carry the spirit of progress through shared labor."
+ 
+ ig_mechanai:0 "Mechanai"
+ ig_mechanai_desc:0 "The Mechanai are magnates, technocrats, and industrial entrepreneurs driving the empire's transformation from agrarian power to mechanical titan. While few in number, their wealth and command of factories and trade routes make them increasingly indispensable."
+
+ ig_sophronikai:0 "Sophronikai"
+ ig_sophronikai_desc:0 "The Sophronikai are philosophers, reformers, jurists, and scholars dedicated to reshaping Elysia through reason, law, and enlightenment. Steeped in classical education and radical thought, they challenge both the Hierateia’s mysticism and the Dynatoi’s privilege."
+
+
+# ideology
+ideology
+
+ ideology_elysian_egalitarian:0 "Gynaikokratia"
+ ideology_elysian_egalitarian_desc:0 "In Elysia, necessity forged custom. As men explored, fought, and tilled, women organized, educated, and governed. Over generations, this balance became an institutionalized matriarchy—where duty, not gender, defines power."
+
+ ideology_elysian_economy:0 "Guild Collective"
+ ideology_elysian_economy_desc:0 "After the Great Crossing, the Elysian economy was rebuilt by merchant guilds, artisan leagues, and explorer cartels. This group champions the autonomy and tradition of those collectives—decentralized yet deeply loyal to the state."
+
+ ideology_elysian_land:0 "Dynastic Landholders"
+ ideology_elysian_land_desc:0 "The imperial settlers cast off the laws of old Byzantium—but not the instincts of ownership. This group sees land as the sacred source of lineage, duty, and wealth. Their aim is to preserve the agrarian nobility and their ancestral claims."
+ 
+ ideology_elysian_labor_poor:0 "Welfare Syndicates"
+ ideology_elysian_labor_poor_desc:0 "This group believes that every citizen who labors for the empire deserves protection, sustenance, and dignity. Rooted in temples, unions, and kin-communities, they advocate expansive social care."
+
+ ideology_elysian_labor_rich:0 "Philanthrōpoi"
+ ideology_elysian_labor_rich_desc:0 "This ideology promotes noblesse oblige—the belief that the wealthy must care for the common folk without undermining hierarchy. They fund schools, clinics, and public works… but always in their name."
+ 
+ ideology_anti_christian_radical:0 "Antiapostolic Movement"
+ ideology_anti_christian_radical_desc:0 "This group sees Abrahamic faiths as imperial cults of subjugation, responsible for the ruin of ancient empires and the suppression of spiritual freedom. They demand active containment, expulsion, or destruction of such influences."
+
+ ideology_elysian_border:0 "Synkrasis"
+ ideology_elysian_border_desc:0 "Elysia was not built by one people, nor one god. This ideology embraces pluralism through ritual integration—honoring native deities, rites, and customs so long as they align with the imperial cult and civic order."
+
+ ideology_elysian_army:0 "Stratokratía"
+ ideology_elysian_army_desc:0 "Military service is not just duty—it is governance. This ideology believes that only through martial order and loyalty can Elysia maintain unity across its vast dominion. Civil power must be subordinate to the shield."
+
+ ideology_elysian_bureaucracy:0 "Autocratic Bureaucracy"
+ ideology_elysian_bureaucracy_desc:0 "The old senatorial class endures not by blood, but by merit and rank. This ideology upholds a rationalist state where trained elites manage society under imperial supervision, balancing tradition with competence."
+ 
+ ideology_elysian_populist:0 "Civic Monarchy"
+ ideology_elysian_populist_desc:0 "While the throne remains sacred, this ideology argues that true imperial legitimacy flows from the people. Representatives should govern under the crown, enshrining liberty within tradition."
+
+ ideology_elysian_economy_traditionals:0 "Rural Communes"
+ ideology_elysian_economy_traditionals_desc:0 "This group upholds decentralized village economies—kin-based, barter-driven, and steeped in seasonal rhythms. They resist industrial disruption and argue for the sanctity of land, lineage, and ritual."
+
+ ideology_elysian_economy_industrials:0 "Syndonárches"
+ ideology_elysian_economy_industrials_desc:0 "This ideology champions industry, infrastructure, and capital reinvestment. Its adherents see factories as temples of progress and want the state to protect entrepreneurs from outdated guilds or rural aristocrats."
+
+# Monuments
+monuments
+
+ building_imperial_palace:0 "Imperial Palace"
+ building_marble_temple:0 "Marble Temple"
+ building_elysian_arsenal:0 "Elysian Arsenal"
+ building_sea_gates:0 "Sea Gates"
+ building_tikal_temple_city:0 "Tikal"
+ building_lost_monument:0 "Monument to the Lost"
+ building_chichen_itza_temple_city:0 "Chichen Itza"
+ building_mexico_temple_city:0 "Tenochtitlan"
+ building_cahokia_halls:0 "Cahokia"
+ building_silk_halls:0 "Silk Halls"
+ building_whalebone_palace:0 "Whalebone Palace"
+ building_alexandrian_library:0 "Nea Alexandria Library"
+ building_nican_nahua_naval_base:0 "Nican-Nahua Canal"
+ building_lakonia_railway:0 "Northern Tecuantepec Trans-Isthmic Railroad"
+ building_oaxaca_railway:0 "Southern Tecuantepec Trans-Isthmic Railroad"
+ building_erie_canal:0 "Erie Canal"
+ 
+# Modifiers
+modifier
+ #Character Modifier
+
+  empress_eirene_mod:0 "The Silken Empress"
+  empress_eirene_mod_desc:0 "Eleni Palaiologina, crowned Basilissa of Elysia, is renowned not only for her intellect and grace but for commanding the imperial court with a quiet authority. Her reign, cloaked in silk and strategy, guides the empire with vision and poise, embodying the very spirit of the Eireneic ideal."
+ 
+ #Country Modifier
+ 
+  modifier_through_river_styx:0 "Through the River Styx"
+  modifier_through_river_styx_desc:0 "The Elysian eugenics program—harsh, methodical, and borne of a brutal era—seeks to perfect the citizenry through selective birth and rigid caste distinction. Not all reforms are gentle, and not all progress is kind."
+
+  modifier_wife_trade:0 "Elysian Frontiers Wife System"
+  modifier_wife_trade_desc:0 "In a shadowed corner of Elysian policy, the state covertly facilitates the migration of non-Elysian women often to isolated frontier settlements. A practice born of demographic necessity and cloaked in silence, it walks the line between population strategy and exploitation."
+
+  modifier_elysian_opportunity:0 "Land of the Phoenix"
+  modifier_elysian_opportunity_desc:0 "For the bold and the dispossessed, Elysia offers rebirth. Immigrants and settlers alike arrive seeking land, dignity, and a place in the imperial mythos—each one feeding the dream of a new, radiant world forged from ambition and ashes."
+ 
+  modifier_elysian_fire_corp:0 "Promethean Watch"
+  modifier_elysian_fire_corp_desc:0 "Drawing on forgotten alchemical arts and divine inspiration, the Promethean Watch wields flame and fear with terrifying precision. These elite auxiliary troops are costly to maintain—but priceless when fire is needed more than steel."
+
+  modifier_modern_fire_corp:0 "Reformed Promethean Corps"
+  modifier_modern_fire_corp_desc:0 "No longer the tool of mystics and martyrs, the modernized Promethean Corps has become a professional force armed with practical incendiary technology—lethal, efficient, and imperial in purpose."
+ 
+  modifier_elysian_navy_old:0 "Legacy Naval Doctrine"
+  modifier_elysian_navy_old_desc:0 "Rooted in centuries of tradition and sacred law, the legacy doctrine emphasized heavy vessels, divine tides, and defensive positioning—now an anachronism in the age of steam and steel."
+ 
+  modifier_elysian_navy_new:0 "Thalassocratic Doctrine"
+  modifier_elysian_navy_new_desc:0 "Elysia now sails as a true thalassocracy, its navy transformed into a projection of might across oceans. Modernized fleets, strategic chokepoints, and deep-sea logistics ensure Poseidon's favor is never far."
+ 
+  modifier_elysian_games:0 "Pan-Elysian Games"
+  modifier_elysian_games_desc:0 "A grand quadrennial festival uniting the Empire in celebration of excellence—where athletes, philosophers, scientists, and artists alike strive for glory under the watchful eyes of the gods and the people."
+ 
+  modifier_elysian_blood:0 "Sacred Blood Laws"
+  modifier_elysian_blood_desc:0 "Citizenship is sacred and guarded. Only those born of two Elysian parents may claim full rights under imperial law, ensuring the purity of the imperial stock, however cruelly measured."
+ 
+  modifier_elysian_family:0 "Oikos Reformation"
+  modifier_elysian_family_desc:0 "A rethinking of purity and duty—those of mixed heritage, of loyal service, or of valorous death in the name of the Empire may now be embraced within the civic body. A more flexible future, written in blood and honor."
+
+  modifier_elysian_schooling:0 "Paideia Reform"
+  modifier_elysian_schooling_desc:0 "The Empire’s schools mold more than minds—they sculpt loyal citizens. Reformed curricula integrate immigrant youth into Elysian ideals, uniting diverse origins under the banner of the imperial dream."
+ 
+  modifier_elysian_bureaucracy:0 "Basileion Bureaucracy"
+  modifier_elysian_bureaucracy_desc:0 "The Imperial Bureaucracy has been reformed into a vast, methodical machine—efficient, unyielding, and omnipresent, reaching into every corner of the Empire to impose order and enforce unity."
+ 
+  modifier_elysian_production:0 "Economic Synoikismos"
+  modifier_elysian_production_desc:0 "Just as the ancient city-states once merged into mighty poleis, the Empire now merges its industries into great coordinated engines of output and efficiency—binding regions through labor and trade."
+ 
+  pagan_world_modifier:0 "Haven of the Old Faiths"
+  pagan_world_modifier_desc:0 "As the monotheist world closes its doors, Elysia opens its temples. From Norse rune-priests to Tamil mystics, all find sanctuary and patronage under imperial aegis. The old gods live on—here, they thrive."
+ 
+  ely_big_money:0 "infrastructure Project Payment"
+  ely_big_money_desc:0 "The Empire must invest heavily to shape the land to its will. This fund supports grand engineering feats, laying the groundwork for the next century of glory."
+ 
+  ely_verybig_money:0 "infrastructure Project Payment"
+  ely_verybig_money_desc:0 "Some visions demand vast sums and vaster resolve. These expenditures pave the way for transformative projects that may shape the destiny of entire provinces—or the world."
+  
+  greenland_ely_verybig_money:0 "Payment of infrastructure projects"
+  greenland_ely_verybig_money_desc:0 "Some visions demand vast sums and vaster resolve. These expenditures pave the way for transformative projects that may shape the destiny of entire provinces—or the world."
+  
+  elysian_aligned:0 "Elysian Influence"
+  elysian_aligned_desc:0 "This nation has entered the orbit of Elysia—through diplomacy, faith, trade, or subtle coercion. While still formally sovereign, its path is guided by imperial interests, and its destiny increasingly bound to the will of the Empire."
+  
+  modifier_elysian_guilds:0 "Imperial Guild Privileges"
+  modifier_elysian_guilds_desc:0 "Across Elysia, ancient craft traditions have been reorganized under the watchful eye of the state. These guilds—part trade association, part civic cult—hold monopolies, regulate apprenticeships, and form a bridge between labor and empire."
+  
+  elysian_client_state_system:0 "Client State Apparatus"
+  elysian_client_state_system_desc:0 "An elaborate network of local rulers, native allies, and cooperative elites governs regions under Elysian suzerainty. Through layered autonomy, military obligation, and shared cultic rites, the Empire maintains soft but total control."
+  
+  elysian_client_state_mod:0 "Imperial Client State"
+  elysian_client_state_mod_desc:0 "Though nominally self-governing, this state answers to Elysia in all matters of war, trade, and ideology. Imperial advisors oversee local administration, ensuring harmony with metropolitan expectations—and punishing deviation swiftly."
+ 
+ #State Modifier
+ 
+  modifier_oigos_marshes_drain:0 "Oigos Marsh Reclamation"
+  modifier_oigos_marshes_drain_desc:0 "The great reclamation of the Oigos Marshes transforms swamps into fertile farmland and sound foundations. It is a triumph of engineering—and imperial will—over nature’s chaos."
+ 
+  modifier_modern_pathway:0 "Modern Elysian Roadworks"
+  modifier_modern_pathway_desc:0 "A vast network of paved arteries brings speed, order, and connection to this province, feeding commerce and enabling military rapid deployment alike."
+
+  modifier_elysian_highway_old:0 "First Imperial Highway"
+  modifier_elysian_highway_old_desc:0 "Built for carts and caravans, the First Highway unified provinces across the imperial heartland. Though dated, its legacy still shapes regional life and trade."
+ 
+  modifier_elysian_highway_new:0 "Via Magna"
+  modifier_elysian_highway_new_desc:0 "The Via Magna is the Empire’s modern highway system, built for motorized transport and imperial logistics. It is a marvel of engineering and a symbol of unity through speed."
+ 
+  modifier_elsysian_dockyard:0 "Imperial Cothons"
+  modifier_elsysian_dockyard_desc:0 "Revived and modernized from ancient Carthaginian designs, the Cothons now serve as industrial harbors for steamships, dreadnoughts, and global Elysian trade."
+
+ 
+# Events
+events 
+
+ ely_flavor.1.t:0 "The Children of the Burning City"
+ ely_flavor.1.d:0 "Out of the ashes of Constantinople sailed exiles who would not kneel. Guided by the stars and ancient rites, they crossed the Oceanus Atlanticus and hewed a new dominion from the unknown wilds of the west. There, in the shadow of forgotten temples and beneath foreign constellations, they resurrected not Byzantium, but something older—something divine.\n\nWhat began as a Hellenic revival now thrives as a syncretic empire. In its temples echo the hymns of Olympians and Itzamna, of Athena and Ixchel. Its senators speak a blend of Attic dialects and native tongues. Its cities rise atop sacred mounds and Roman forums alike. The Elysian Empire is no longer the legacy of a single fallen world—but the living fusion of many.\n\nA colossus straddling continents, creeds, and oceans, Elysia stands defiant in the face of monotheist empires, a titan among gods and mortals alike. This is not merely the rebirth of an ancient order—this is the forging of a new one.\n\nNo longer a refuge—Elysia is the center of a new order. The gods have returned, and their chosen people are ready to reshape the world."
+ ely_flavor.1.f:0 "“Our ancestors crossed the sea to escape a dying world. We return now, not as orphans, but as sovereigns. We are not Byzantines in exile—we are Elysians, and the world shall know the difference.”– Megistophilos Theonikos"
+ ely_flavor.1.a:0 "Let us show the world who we are." 
+
+ 
+ eirene.1.t:0 "Basilissa Eleni"
+ eirene.1.d:0 "For centuries, the Elysian throne has passed from father to son, in an unbroken line of emperors stretching back to Old Byzantium. But that legacy ends today. With the death of Emperor Konstantinos XIII and no male heirs to succeed him, his only child, Eleni, ascends to the imperial throne. Intelligent, steadfast, and beloved by the people, she takes up the mantle not as a compromise—but as a beacon of Elysia’s future."
+ eirene.1.f:0 ""Since the Fates have woven this destiny for me, I shall embrace it fully, and dedicate myself to the glory of our homeland." —Basilissa Eleni Palaiologina, upon her coronation""
+ eirene.1.a:0 "Long live the Empress!"
+   
+ fire_corps_event.1.t:0 "The Flame Rekindled"
+ fire_corps_event.1.d:0 "From the fiery engines of ancient warfare to the terrifying might of our modern arsenals, flame has ever been the weapon of the Elysians. Once carried in siphons aboard dromons, now it courses through pressurized nozzles and incendiary artillery. The Fire Corps, long our symbol of divine wrath in battle, is undergoing a renaissance of discipline, equipment, and doctrine. With new fuels, precision devices, and hardened units, we set the battlefield alight—just as our ancestors did."
+ fire_corps_event.1.f:0 ""It was not merely the flame they feared, but the silence that followed. Where our Fire Corps walked, only ashes remained." —General Nestor Iordanes, *Memoirs of a Campaigner*"
+ fire_corps_event.1.a:0 "Let the heavens weep flame."
+
+ fire_corps_event.2.t:0 "The Iron Fleet"
+ fire_corps_event.2.d:0 "No longer bound to the legacy of copper-plated hulls and fire siphons, the Elysian Navy has embraced the future. Steam-driven dreadnoughts now patrol our coasts, equipped with heavy armor, rifled artillery, and the latest naval doctrines. The Admiralty hails this transformation as a triumph of both engineering and imperial will—one that ensures Elysia’s supremacy across the seas."
+ fire_corps_event.2.f:0 ""Our ancestors ruled the waves with fire and oar. We now do so with steel and steam." —From a speech by the Archon of the Navy to the Senate"
+ fire_corps_event.2.a:0 "Elysia rules the waves."
+
+ 
+ elysian_railways.1.t:0 "The First Transcontinental Railway"
+ elysian_railways.1.d:0 "Steel now stretches unbroken from the stormy shores of the Atlantic to the fertile plains of the Eireneic Basin. With the completion of this great artery, the western interior—once distant and rugged—is brought into the heart of Elysia. Trade, migration, and imperial authority will now flow freely across the continent."
+ elysian_railways.1.f:0 ""With this golden spike, we declare not just the meeting of iron and earth, but of our people—east and west—united by will, bound by destiny!" —From the inaugural speech at the Corinthia Terminus"
+ elysian_railways.1.a:0 "Let the West be made Elysian."
+
+ elysian_railways.2.t:0 "The Last Spike"
+ elysian_railways.2.d:0 "The final link of the Borealian-Eireneic Railway has been set, binding the icy harbors of the far north to the warm waters of the Eireneic coast. This monumental work is more than infrastructure—it is a testament to Elysian ambition, unity, and mastery over the wild frontiers. The Western Provinces, long scattered and remote, now stand poised to prosper."
+ elysian_railways.2.f:0 ""As this spike is driven home, the earth echoes with the sound of a new age. One Empire, one land, one unbroken road across all Elysia." —From the speech of the Strategos of Transport at the final ceremony"
+ elysian_railways.2.a:0 "Let the rails carry our empire forward."
+
+ ely_infrastructure_event.6.t:0 "The Old Highways"
+ ely_infrastructure_event.6.d:0 "As Elysian settlers advanced westward, they left behind a latticework of forts, ports, and tradeposts, bound together by dirt roads, stone-paved causeways, and ferries. This ancient network once served as the Empire’s lifeline into the interior. Yet over time, with distance from the capital and local autonomy expanding, it has fallen into disrepair and uneven oversight."
+ ely_infrastructure_event.6.f:0 ""These roads were the veins of our youth, but age has slowed the pulse." — Anonymous magistrate from Pella"
+ ely_infrastructure_event.6.a:0 "As long as they maintain it."
+
+ 
+ ely_infrastructure_event.5.t:0 "The Oigos Marshes Drained"
+ ely_infrastructure_event.5.d:0 "To tame the boglands of Oigos was no simple feat. Day by day, laborers hacked through choking weeds and drove back the ever-encroaching water. After years of toil—of sweltering heat, sickness, and struggle—dry land has finally been reclaimed, and trade now flows freely where once only mosquitoes ruled."
+ ely_infrastructure_event.5.f:0 ""The Oigos Marshes are now suitable only for the haunt of noxious vermin or the resort of pestilent reptiles." — Dispatch from the Office of Provincial Engineering"
+ ely_infrastructure_event.5.a:0 "This will improve infrastructure in the region."
+
+ ely_infrastructure_event.1.t:0 "Modernizing the Apaleisian Pathways"
+ ely_infrastructure_event.1.d:0 "The ancient roads carved by our ancestors have been reforged in steel and stone. Our engineers, through blood and ingenuity, have bridged gorges, bored tunnels, and reinforced trade arteries that now stretch from the fertile Skythian plains to the bustling Elysian coast. This is more than infrastructure—it is the unbroken will of our people."
+ ely_infrastructure_event.1.f:0 ""We built not just with tools, but with memory, legacy, and purpose." — Memoirs of the Chief Architect of the Apaleisian Route"
+ ely_infrastructure_event.1.a:0 "Our ancestors would be proud."
+ ely_infrastructure_event.1.b:0 "We simply can't afford it."
+
+ ely_infrastructure_event.2.t:0 "The Lakonian Pathways"
+ ely_infrastructure_event.2.d:0 "Once severed by distance and mountain, the region of Lakonia now pulses with the steady rhythm of industry. Trains whistle through tunnels carved by dynamite and sweat, ferrying goods and souls alike through paths once tread only by ox and mule. The mountains have been made to yield."
+ ely_infrastructure_event.2.f:0 ""I never thought I’d hear the sound of steam through the mountain. Now I hear it in my sleep." — Ikarion, a naturalized Lakonian foreman"
+ ely_infrastructure_event.2.a:0 "Truly a marvel of engineering."
+
+ ely_infrastructure_event.3.t:0 "The Arkadian Extension"
+ ely_infrastructure_event.3.d:0 "Arkadia’s long isolation has ended. The thunder of trains rolling into Isthmion echoes through the hills, heralding a new chapter of inclusion and prosperity. Where before there were only mule trails, now lie iron rails. The Empire grows closer with each arrival."
+ ely_infrastructure_event.3.f:0 ""When I saw the engine pull in from Nea-Konstantinopolis, I wept. It meant we were no longer forgotten." — Elikia, Elysian settler of Arkadia"
+ ely_infrastructure_event.3.a:0 "This will unite Elysia."
+
+ ely_infrastructure_event.4.t:0 "The Hesperidian Connection"
+ ely_infrastructure_event.4.d:0 "The Atlas Mountains—once a barrier dividing East and West—have been pierced by Elysian determination. With tunnels bored through granite and bridges suspended over ravines, Hesperidia is no longer a remote land at the edge of the world, but an integral part of the imperial machine."
+ ely_infrastructure_event.4.f:0 ""We looked up at the mountains and saw a wall. Now, we look through them and see a gateway." — Opening address of the Strategos of Hesperidia"
+ ely_infrastructure_event.4.a:0 "Even mighty Atlas will yield."
+
+ ely_infrastructure_event.7.t:0 "The Modern Highway"
+ ely_infrastructure_event.7.d:0 "With the advent of motorized vehicles—both public and private—the Empire now turns its gaze toward the ancient arteries that once bore the weight of legions and merchants. The old highways are being expanded, paved, and modernized to meet the demands of speed, efficiency, and governance. Across provinces, the journey grows shorter, and the grasp of the capital grows stronger."
+ ely_infrastructure_event.7.f:0 ""Once we walked for days. Now I reach the next province by sunset. This is no road—it is power made stone." — Commentary from a merchant in Kyreneia"
+ ely_infrastructure_event.7.a:0 "A worthy endeavor."
+ ely_infrastructure_event.7.b:0 "We can't spare money at the moment. Best to leave it to local administration."
+
+ ely_infrastructure_event.8.t:0 "The Inoukratis Project"
+ ely_infrastructure_event.8.d:0 "When the Senate approved the annexation of Inoukratis, the critics howled—calling it a frozen graveyard unfit for empire. But beneath the ice and wind lay riches: iron, nickel, and rare ores, now flowing thanks to new extraction roads, ports, and outposts. A frigid frontier becomes a jewel of industrial promise—though not all senators are convinced."
+ ely_infrastructure_event.8.f:0 ""They said we were mad to claim this place. But it is not madness that reshapes the world—it is vision." — Address from the Archon of Boreal Affairs"
+ ely_infrastructure_event.8.a:0 "We will tame every corner of this world."
+ ely_infrastructure_event.8.b:0 "Ha! Good one. What's next—walking on the moon?"
+
+ ely_infrastructure_event.9.t:0 "The Thoulean Highway"
+ ely_infrastructure_event.9.d:0 "The deep, forested expanses of Thoulea have long resisted Elysian reach—remote, untamed, and slow to yield. Yet with each bureaucratic reform and new engine of labor, the gap narrows. Now, a bold proposal has been introduced: a great highway stretching across the north, tying scattered provinces into the imperial heart. From the Senate floor to the lumber camps, the North begins to stir."
+ ely_infrastructure_event.9.f:0 ""Some said Boreas made this land for gods alone. But our engineers have proven otherwise." — Testimony from a native-born Elysian contractor"
+ ely_infrastructure_event.9.a:0 "Boréas’ realm is at our fingertips."
+
+ ely_infrastructure_event.10.t:0 "The Modernization of the Great Cothons"
+ ely_infrastructure_event.10.d:0 "Once the pride of the Punic world, the ancient cothons—those ringed harbors of Carthaginian design—have now been reborn under the tools of Elysian engineers. Reinforced docks, hydraulic lifts, and drydock systems breathe new life into the imperial fleet. With the clamor of hammers finally silenced, steamships whistle through stone gates once built for triremes."
+ ely_infrastructure_event.10.f:0 ""The cothon is more than a harbor—it is civilization. Let the world come and see how an empire moors its might." — Inaugural speech from the Magister Navalis"
+ ely_infrastructure_event.10.a:0 "We must admit that the Carthaginian design is appealing."
+
+ ely_national_value.1.t:0 "Human Trafficking in Elysia"
+ ely_national_value.1.d:0 "Since its founding, Elysia has struggled with chronic labor shortages. In response, darker practices emerged under euphemisms—‘Frontier’s Wives,’ they were called—enslaved women captured abroad or taken from defeated enemies. Long kept quiet, these acts are now under international scrutiny as communication with foreign powers intensifies. The pressure to abolish this practice entirely mounts like never before."
+ ely_national_value.1.f:0 ""We cannot build an empire of marble upon foundations of suffering. If we wish to be eternal, we must first be just." — Senator Tryphon of Nea Athenai"
+ ely_national_value.1.a:0 "Maybe it is time to put an end to this horrendous practice and move forward."
+ ely_national_value.1.b:0 "Pah, what do barbarians know? Elysia will stand alone if it needs to."
+
+ ely_national_value.2.t:0 "The New Elysian Family"
+ ely_national_value.2.d:0 "Though human trafficking has been abolished, the barriers between 'true' Elysians and all others remain stark. Yet with a growing stream of immigrants seeking a better life, the Senate now debates reforms: allowing citizenship to children of mixed families, or granting full status to those who serve in arms or fall in the Empire’s name. The sacred blood laws would remain—but perhaps with new paths into the fold."
+ ely_national_value.2.f:0 ""I fought in the mountains of Dacica, buried my brothers in frozen soil, and bled for the Phoenix. Am I not Elysian?" — Testimony from a veteran of Vietnamese descent"
+ ely_national_value.2.a:0 "Time to create a new set of Elysian values."
+
+ ely_national_value.3.t:0 "Elysian Education"
+ ely_national_value.3.d:0 "Thanks to increased funding and a standardized, state-approved curriculum, the future of Elysian youth is now in imperial hands. From the bustling cities to the distant provinces, education molds citizens loyal to the Empire, firm in values, and proud of their history—even those born of foreign or ‘Barbaroi’ ancestry will grow into model Elysians under this enlightened system."
+ ely_national_value.3.f:0 ""Give us the child, and we shall return to you an heir of Itzamná, Athena, and Elysia." — Opening line of the National Pedagogic Charter"
+ ely_national_value.3.a:0 "Young malleable minds."
+
+ ely_national_value.4.t:0 "Settling the Interior"
+ ely_national_value.4.d:0 "As our people push deeper into the vast Skythian plains, the rhythm of axes, plows, and hammers echoes across new frontiers. With imperial support, settlers are founding villages and towns in once-unclaimed territory. A new Elysia is being born beyond the old heartlands—one built with courage, ambition, and the promise of fertile land."
+ ely_national_value.4.f:0 ""I came with a wagon, two oxen, and my mother’s old knife. Now we have a temple, a school, and a road to the coast. We named the village Nea Andros." — Letter from a settler in Skythia"
+ ely_national_value.4.a:0 "A glorious era will start."
+ 
+ ely_national_value.5.t:0 "The Founding of the Elysian Games"
+ ely_national_value.5.d:0 "The Senate has approved a proposal to create a grand celebration of Elysian unity and cultural ascendancy. Drawing inspiration from the ancient Olympic games, the Pan-Elysian Games will bring together athletes, orators, poets, and inventors from across the Empire and its subjects. More than just a contest, the Games are a declaration: that Elysian civilization—born of Hellenic wisdom, tempered by native valor, and enriched by the sciences—has no peer beneath the stars."
+ ely_national_value.5.f:0 ""Let the world come forth—not as enemies upon the battlefield, but as equals in the arena. There shall they find no chains, no crowns, only the glory of merit.""
+ ely_national_value.5.a:0 "A new tradition is born!"
+
+
+ ely_reform_event.1.t:0 "Great Bureaucratic Reforms"
+ ely_reform_event.1.d:0 "The term 'Byzantine bureaucracy' once suited us all too well—labyrinthine systems, redundant offices, and provincial chaos. But under the steady hand of the Empress and the reforming Senate, a great reorganization has begun. A single Empire. A single code. A single administration. For the first time, the beating heart of Elysia pulses in rhythm from the tropics to the tundra."
+ ely_reform_event.1.f:0 ""Where once it took five signatures to approve a well, now it takes one. And the water flows cleaner for it." — Senatorial address by Praetor Megalos"
+ ely_reform_event.1.a:0 "Maybe 'Elysian administration' will be used to denote our superiority."
+
+ ely_reform_event.2.t:0 "Great Economic Reforms"
+ ely_reform_event.2.d:0 "Our land is bountiful, our labor disciplined, our artisans proud. Yet for centuries we traded mostly within the Empire and her trusted allies. Now, as Elysians open their ports and minds, the world beckons with opportunity. Even traditionalists begin to see that embracing global trade may strengthen, not dilute, our unique culture and values."
+ ely_reform_event.2.f:0 ""When I first saw Elysian-made steel sold in Nippon and Ashanti, I wept. Not out of shame, but pride." — Memoir of a merchant from Achaia Magna"
+ ely_reform_event.2.a:0 "Elysian identity will be defined by productive work."
+
+ liberty_event.1.t:0 "Reopening of the Sea Gates"
+ liberty_event.1.d:0 "Long ago, our ancestors closed the gates to protect Elysian purity. Only natives, settlers, and their descendants were permitted full rights. Yet in the face of global upheaval and the Abrahamic empires dividing the world, we are called to reassess. Could we offer sanctuary to those who share our pagan ways—oppressed in Europe, Asia, and Africa alike—and grow stronger through spiritual brotherhood?"
+ liberty_event.1.f:0 ""They cast us out in the name of false gods. But Elysia opens its gates not just to the weary—but to the worthy." — Speech by Archon Leon Nikomedes"
+ liberty_event.1.a:0 "All pagans are our brothers and we should accept them all."
+
+ liberty_event.1.b:0 "Let's be cautious first, we should start with our South Arkadian brothers and work from there."
+ #liberty_event.1.c:0 "Let's throw caution to the wind. (this will create instability in Elysia)"
+ 
+ #liberty_event.2.t:0 "Elysian Nationalism"
+ #liberty_event.2.d:0 "'Liars! Thieves! Parasites!' Those are the words used to describe non elysian as politicians have forgotten the very people they should serve. Insurrection is brewing down in the streets as angry elysian mobs forms against their perceived enemies."
+ #liberty_event.2.f:0 ""
+ #liberty_event.2.a:0 "It doesn't sound good."
+  
+ ely_reform_event.3.t:0 "Bureaucratic Reforms"
+ ely_reform_event.3.d:0 "The term 'Byzantine administration' was apt to describe the systems we had established for centuries. As time passed the problems became apparent and could have spiraled out of control if not taken care of. Thankfully under the guide of our empress we are now a step further to unite elysium."
+ ely_reform_event.3.f:0 ""
+ ely_reform_event.3.a:0 "Another day, another form."
+
+ ely_reform_event.4.t:0 "Economic Reforms"
+ ely_reform_event.4.d:0 "Our people are rich and our land bountiful but we always stood out of global trade except for our close allies. Maybe time has come to change and join the global trade and increase our industrial efforts."
+ ely_reform_event.4.f:0 ""
+ ely_reform_event.4.a:0 "A new era."
+ 
+ elyric.1.t:0 "Integrating a Client State"
+ elyric.1.d:0 "Another Elyric territory stands ready to be woven into the fabric of our empire. The local leaders have petitioned for full recognition, and the Senate now debates which province to elevate as the next member of the Elysian state."
+ elyric.1.f:0 ""Let it never be said that the road to citizenship is closed to those who serve loyally. We offer the hand of unity—not to erase, but to uplift.""
+ elyric.1.a:0 "This one has earned its place."
+ elyric.1.b:0 "This province is the right choice."
+ elyric.1.c:0 "A fine addition to our Empire."
+ 
+ elyric.2.t:0 "The Last Elyrics"
+ elyric.2.d:0 "With the final corners of the land brought under Elysian administration, the time has come to lay to rest the outdated divide between Elysians and Elyrics. There is no more frontier—only one people."
+ elyric.2.f:0 ""I was born of the forest, taught in the Agora, and raised under the Phoenix’s banner. What am I if not Elysian?” – Tz’unun, Mayan-born Tribune of Skythia""
+ elyric.2.a:0 "Elysium united at last"
+ 
+ ely_unification.1.t:0 "A Banner for All Elysians"
+ ely_unification.1.d:0 "The Senator Aiion Witko's impassioned address shook the marble pillars of the Senate, challenging centuries of legal separation between Elysians and Elyrics. His words have ignited a movement toward full civic unification."
+ ely_unification.1.f:0 "Who in these marble halls dares claim they are not the child of both the Phoenix and the Jaguar? We wear laurel and feather as one. It is time we cast aside this paper divide and stand together—not as Elysians or Elyrics—but as Elysium itself!"
+ ely_unification.1.a:0 "Let Witko’s words guide us to unity."
+
+ ely_unification.2.t:0 "Lakonia Joins the Heartland"
+ ely_unification.2.d:0 "Lakonia, long a loyal client territory, has completed its integration into the imperial administration. A symbol of the old borderlands, it now thrives at the empire’s core."
+ ely_unification.2.f:0 ""The olive tree grows wild no longer—it is cultivated, protected, and bears fruit for all.""
+ ely_unification.2.a:0 "Another star on the imperial banner."
+
+ ely_unification.3.t:0 "The Andronikos Valley Embraced"
+ ely_unification.3.d:0 "The fertile lands and river towns of Andronikas are now officially administered under central authority, their leaders having pledged full allegiance to the Elysian order."
+ ely_unification.3.f:0 ""From the river gods of old to the forums of today, Andronikas flows toward unity.""
+
+ ely_unification.4.t:0 "Skythias Tamed"
+ ely_unification.4.d:0 "The windswept plains of Skythias, once the untamed edge of civilization, are now fully integrated into the imperial administration. A new frontier of order and growth has dawned."
+ ely_unification.4.f:0 ""From horseback and tent to road and temple—the plains have found their voice in Elysium.""
+
+ ely_unification.5.t:0 "The Crown of the North"
+ ely_unification.5.d:0 "With the integration of Thouleas, our empire now stretches firmly to the frozen cap of the continent. Boreal forests and ancient glacial rivers are now tied into the imperial network."
+ ely_unification.5.f:0 ""Even the howling winds of the north now whisper in the tongue of Olympus.""
+
+ ely_unification.6.t:0 "Borealias Enfolded"
+ ely_unification.6.d:0 "The wild and mineral-rich lands of Borealias are now fully embraced by the imperial administration. With roads, census takers, and new schools, the people begin to see themselves as true Elysians."
+ ely_unification.6.f:0 ""They mined silver in silence. Now they speak in the chorus of empire.""
+
+ ely_unification.7.t:0 "The Heart of the Isles"
+ ely_unification.7.d:0 "The last independent authorities in Kykladia and Arkadia have submitted to the imperial charter. These sea-kissed provinces are now directly governed from the capital."
+ ely_unification.7.f:0 ""Once islands in governance, now pearls on the imperial strand.""
+
+ ely_unification.8.t:0 "Westward, Ever Elysian"
+ ely_unification.8.d:0 "The golden lands of Hesperidias—long on the far edge of imperial power—have now been fully subsumed into the state. With this, the sun sets not on a frontier, but on an empire whole."
+ ely_unification.8.f:0 ""Where the sun meets the sea, the banners now fly.""
+ 
+ ely_imperialism.1.t:0 "Reorganisation of Imperial Subjects"
+ ely_imperialism.1.d:0 "A motion has been introduced in the Senate to begin a sweeping reorganization of our client states and protectorates. The vision: streamline governance, dissolve antiquated titles, and incorporate our loyal subjects directly into the beating heart of the Empire. Debate flares between traditionalists and imperial modernizers—between convenience and legacy."
+ ely_imperialism.1.f:0 ""The Empire is a ship, and its rigging must be taut. The time for ceremony is over—let us sail unified.""
+ ely_imperialism.1.a:0 "Let us Begin the project"
+ ely_imperialism.1.b:0 "Why bother changing the status quo ?"
+ 
+ ely_expansion.1.t:0 "Annexation of Imperial Subject"
+ ely_expansion.1.d:0 "The work of imperial reorganization continues. One more client state has been evaluated and prepared for integration into the full administrative structure of the Elysian state."
+ ely_expansion.1.f:0 "Not conquered—invited. Not extinguished—elevated."
+ ely_expansion.1.a:0 "Starting with this one."
+ ely_expansion.1.b:0 "How about this one ?"
+ ely_expansion.1.c:0 "This one will do."
+ 
+ elyric.3.t:0 "The Antheia Identity" 
+ elyric.3.d:0 "Elysian scholars and imperial reformers have begun referring to the lands south of the Eireneic Isthmus as 'Antheia'—a sister realm to Elysium, shaped by similar indigenous genius and spiritual kinship. The native peoples of these lands are not foreign—they are cousins, waiting only for the light of civilization and unity."
+ elyric.3.f:0 "We do not claim Antheia by conquest, but by recognition. In its rivers we see our own reflections."
+ elyric.3.a:0 "The land of Antheia is just Southern Elysia if you think about it."
+ 
+ ely_imperialism.2.t:0 "Annexation of Hawaii"
+ ely_imperialism.2.d:0 "Following years of strategic diplomacy, cultural exchanges, and the deepening of naval ties, the Kingdom of Hawaii has peacefully joined the Elysian Empire. The islands are a keystone in our burgeoning Eireneic strategy, enabling both trade dominance and maritime supremacy."
+ ely_imperialism.2.f:0 "From the marble halls of Nea Konstantinopolis to the shores of the Eireneic, our reach is eternal."
+ ely_imperialism.2.a:0 "A glorious day for Elysia"
+ 
+ ely_imperialism.3.t:0 "Amazonian expansion"
+ ely_imperialism.3.d:0 "As the Iberian foothold in the south weakens, Elysia sees an opportunity. Tribes of the Amazon and the descendants of escaped slaves seek allies against colonial oppressors. The question stands: should Elysia walk alone into the jungle, or extend a hand to those already fighting beneath its canopy?"
+ ely_imperialism.3.f:0 ""The jungle does not forget its enemies. Nor does it forget those who aid in its liberation.""
+ ely_imperialism.3.a:0 "We can do it on our own"
+ ely_imperialism.3.b:0 "Let’s recognize them and push the Europeans from here together"
+ 
+ ely_imperialism.4.t:0 "Annexation of Polynisia"
+ ely_imperialism.4.d:0 "The peoples of the Polynesian islands, long revered for their maritime heritage and celestial navigation, have accepted Elysian protection. Through mutual exchange of religious rites and strategic partnership, we now safeguard these isles as sacred gateways across the oceanic expanse."
+ ely_imperialism.4.f:0 ""The stars above guide all seafarers—now they shine also upon the banners of Elysia.""
+ ely_imperialism.4.a:0 "A glorious day for Elysia"
+ 
+ ely_imperialism.5.t:0 "Annexation of Melanisia"
+ ely_imperialism.5.d:0 "The Melanesian archipelago, rugged and fertile, has joined the Elysian orbit after decades of spiritual outreach and commercial exchange. Though fierce in their independence, the people of these lands have found in us not a conqueror, but a steward—one who values their sovereignty beneath the imperial aegis."
+ ely_imperialism.5.f:0 ""Even the wildest shores have a rhythm. We have simply tuned our own to theirs.""
+ ely_imperialism.5.a:0 "A glorious day for Elysia"
+ 
+ ely_imperialism.6.t:0 "Annexation of Aotearoa"
+ ely_imperialism.6.d:0 "The Māori of Aotearoa, proud and wise, have entered into solemn union with the Elysian Empire. Through shared ceremony and military alliance, they have accepted the peace and protection of a greater imperium—without forsaking their mana or identity. The Senate lauds their valor and welcomes them as brothers."
+ ely_imperialism.6.f:0 ""Some lands are not taken—they are befriended.""
+ ely_imperialism.6.a:0 "A glorious day for Elysia"
+
+ ely_imperialism.7.t:0 "The redistribution Antheian territories"
+ ely_imperialism.7.d:0 "With the Iberians expelled from the south, the question arises: who shall inherit their colonial legacy? The Senate is torn between rewarding loyal Afro-Brazilian maroon fighters, recognizing Antheian claims, or consolidating everything directly under imperial rule."
+ ely_imperialism.7.f:0 ""Victory is the easy part—justice is the burden that follows.""
+ ely_imperialism.7.a:0 "Betray the Afro-Brazilians"
+ ely_imperialism.7.b:0 "Compromise—let the Amazon be the border"
+ ely_imperialism.7.c:0 "Grant all from river to sea to the maroons"
+ 
+ ely_imperialism.8.t:0 "An Antheian subject ?"
+ ely_imperialism.8.d:0 "Now that the lands of Antheia have been secured from Iberian influence, the imperial administration must decide: should these lands be ruled directly from Nea Konstantinopolis, or entrusted to an Antheian client state loyal to our cause?"
+ ely_imperialism.8.f:0 ""Autonomy is not weakness—when bound by loyalty, it becomes strength.""
+ ely_imperialism.8.a:0 "We know how to use the land better"
+ ely_imperialism.8.b:0 "Let them rule in their lands"
+ 
+ ely_imperialism.9.t:0 "Expelling the Europeans"
+ ely_imperialism.9.d:0 "For the first time in centuries, not a single European banner flies over the lands of Elysium or Antheia. From the Gulf to the Straits of Magellan, the New World is free. The Senate now deliberates how best to secure this historic triumph."
+ ely_imperialism.9.f:0 ""What we have reclaimed is not land—but destiny.""
+ ely_imperialism.9.a:0 "A new Era!"
+ 
+ ely_imperialism.10.t:0 "A Polynesian Federation"
+ ely_imperialism.10.d:0 "With the isles of the central Eireneic now firmly within our sphere, the Senate must decide the future of governance across Polynesia. Shall we maintain direct imperial control, ensuring these strategic waypoints remain under the unyielding watch of Poseidon’s heirs? Or shall we reward our loyal island allies with self-rule—uniting them under a federated subject in the image of Elysian governance, while preserving native leadership and tradition?"
+ ely_imperialism.10.f:0 ""Unity, whether forged by sword or sea, must endure beyond the tide.""
+ ely_imperialism.10.a:0 "We know how to use the land better"
+ ely_imperialism.10.b:0 "Create a Federation under Elysian oversight"
+ 
+ 
+ ely_arkadian_reorg_full_tt:0 ""
+ ely_arkadian_reorg_mid_tt:0 ""
+ ely_arkadian_reorg_low_tt:0 ""
+ ely_arkadian_reorg_last_tt:0 ""
+# Journal
+journal_entries
+ #Succession
+
+  je_eirene:0 "The Elysian Succession"
+  je_eirene_reason:0 "Emperor Konstantinos' reign was long and prosperous, but marred by personal tragedy. With his sons dead, only his daughter Eleni remains as heir apparent."
+  konstantinos_died:0 "The Death of Emperor Konstantinos Palaiologos"
+  DEBUG_NO_CHARACTER_IN_ELY_IS_EIRENE:0 "No character in ELY matches Eleni"
+ 
+ #Infrastructure & Pathways
+ 
+  je_drain_marshes_ely:0 "Draining of the Oigos Marshes"
+  je_drain_marshes_ely_reason:0 "The vast marshlands of Oigos, long seen as an untamed barrier, hinder the development of roads, farms, and settlements in the region. By channeling our engineers and laborers into a grand drainage effort, we shall transform these stagnant waters into fertile, productive land—reclaiming nature for the glory of the Empire."
+
+  je_trans_elysian_railway:0 "The First Trans-Continental Railway"
+  je_trans_elysian_railway_reason:0 "A single line of steel shall unite our lands — from sea to shining sea!"
+
+  je_borealia_eireneic_railway:0 "The Borealian–Eireneic Railway"
+  je_borealia_eireneic_railway_reason:0 "A rail line from the Atlantic to the Eireneic coast would open the untamed western frontier of Borealia to commerce, settlement, and control."
+
+  je_apaleisian_pathway:0 "Modernize the Apaleisian Pathways"
+  je_apaleisian_pathway_reason:0 "Built by the Exiles to connect the Elysian East Coast to the interior, the Apaleisian Pathway now buckles under the weight of modern trade. Expansion and modernization are long overdue."
+
+  je_lakonias_pathway:0 "The Lakonian Corridor"
+  je_lakonias_pathway_reason:0 "Lakonia is the second heart of our empire, yet the great mountains have long severed its ties to the north. The time has come to fulfill the dreams of the Ten Thousand and bind Lakonia to the capital."
+
+  je_arkadias_pathway:0 "The Arkadian Passage"
+  je_arkadias_pathway_reason:0 "With Arkadia's strategic importance rising through southern alliances, it is imperative to end its isolation and integrate it into the Elysian transport web."
+
+  je_hesperidias_pathway:0 "The Hesperidian Passages"
+  je_hesperidias_pathway_reason:0 "The Atlas Mountains have kept our Hesperidian kin divided for too long. Let us carve roads through stone and time."
+
+  je_thoulean_pathway:0 "The Thoulean Crossroads"
+  je_thoulean_pathway_reason:0 "Let the frozen expanse of Thoulea be tamed by roads and rails, binding even the furthest north to the empire's pulse."
+ 
+  je_greenland_infrastructure:0 "Exploit Kalaallit Nunaat"
+  je_greenland_infrastructure_reason:0 "Kalaallit Nunaat — known to the Norse as Greenland — is an icy frontier. Beneath its frozen crust lie riches beyond imagining, if we have the will to seize them."
+ 
+  je_elysian_highway_old:0 "The Elysian Highway"
+  je_elysian_highway_old_reason:0 "An extensive web of roads binds our cities and ports. Yet sheer distance makes governance difficult — the old roads are no longer enough."
+
+  je_elysian_highway_new:0 "Modernize the Elysian Highway"
+  je_elysian_highway_new_reason:0 "New transportation technologies offer unprecedented speed and reach. It’s time to bring the Elysian Highway into the modern age."
+
+  je_modern_dockyard:0 "Modernize the Great Cothons"
+  je_modern_dockyard_reason:0 "Modeled after the harbors of Carthage, our cothons were once unrivaled. But time has overtaken even our finest — they must be modernized or rendered obsolete."
+
+ #Expansion, Exploration & Integration
+
+  je_populate_interior:0 "Populate the Heartland"
+  je_populate_interior_reason:0 "Our interior territories remain vast and underutilized. With peace restored, the state should sponsor colonization, development, and cultivation."
+
+ #Reforms Education, Law & Economy
+  je_elysian_schooling:0 "Establish Public Schooling"
+  je_elysian_schooling_reason:0 "Universal education is the cornerstone of Elysian society. As more Barbaroi join our ranks, we must ensure every child is taught the Hellenic way."
+
+  je_reform_blood_laws:0 "Reform the Blood Laws" 
+  je_reform_blood_laws_reason:0 "Elysian social benefits are reserved for citizens alone, but many Barbaroi seek to join our civilization. Updating the blood laws may foster integration and attract fresh strength."
+
+  je_reform_bureaucracy_ely:0 "Overhaul the Bureaucracy"
+  je_reform_bureaucracy_ely_reason:0 "Our vast empire suffers from a bloated and inefficient administrative system. Without a proper census and civil registry, we govern blindly. Reform is imperative."
+
+  je_reform_economy_ely:0 "Revitalize the Elysian Economy"
+  je_reform_economy_ely_reason:0 "Though rich in land and resources, Elysia’s economy remains parochial. We must evolve from subsistence to supremacy — and become a titan of trade."
+
+ #Religion, Ideology & Identity
+  je_statue_liberty:0 "A Bastion Against Abrahamism"
+  je_statue_liberty_reason:0 "Abrahamist empires spread oppression and erase native traditions under the guise of progress. Elysia, forged in exile, shall be the beacon of liberty for all who resist the lies of conquest."
+
+  je_wife_trade:0 "End the 'Frontiers Wife Trade'"
+  je_wife_trade_reason:0 "Abduction, coercion, and slavery have created a market of 'Barbarian wives' — women stripped of rights under the blood laws. This grotesque traffic dehumanizes both them and us."
+
+  je_elysian_games:0 "Pan-Elysian Games"
+  je_elysian_games_reason:0 "Long have the people of Elysium spoken of unity, spirit, and excellence. Now, we have the opportunity to formalize that ideal into a recurring cultural and civic celebration. The Pan-Elysian Games—rooted in the sacred traditions of Olympia—will stand as a festival of sport, art, reason, and the diversity of the Elysian world: from Hellenic athletics to native rituals, from philosophical oration to feats of engineering."
+  je_elysian_games_complete:0 "The first Pan-Elysian Games were held to roaring success. Athletes from the four corners of the Empire competed, native dancers stunned the crowd, philosophers debated before cheering crowds, and the winning dramatist's tragedy is already being performed across the provinces. A new tradition, at once ancient and new, now unites the peoples of Elysia."
+
+
+
+  #Defense & Security
+ 
+   je_fire_corps:0 "Modernize the Fire Corps"
+   je_fire_corps_reason:0 "As other powers unlock the destructive potential of fire-based weaponry, our Fire Corps must evolve or be left behind."
+ 
+   je_reform_navy:0 "Reform the Elysian Navy"
+   je_reform_navy_reason:0 "Our naval might secured victory in the War of the Atlantic, but peacetime has dulled our edge. A revitalized navy will ensure Elysia remains mistress of the seas."
+ 
+ #Unification Paths 
+
+  je_unify_elysium:0 "The Unification of Elysium"
+  je_unify_elysium_reason:0 "At last, all branches of the Elysian world shall be bound together under one imperial crown."
+
+  je_unify_lakonia:0 "Unify with Lakonia"
+  je_unify_lakonia_reason:0 "Lakonia, steadfast and loyal, must now be drawn closer into the heart of Elysian governance."
+
+  je_unify_andronikos:0 "Unify with Andronika"
+  je_unify_andronikos_reason:0 "Andronika's fate lies not in independence but in union — a return to imperial harmony."
+
+  je_unify_skythia:0 "Unify with Skythia"
+  je_unify_skythia_reason:0 "The lands of Skythia are a part of our destiny — now is the time to weave them into the imperial whole."
+
+  je_unify_thoulea:0 "Unify with Thoulea"
+  je_unify_thoulea_reason:0 "The northern territories must not remain fragmented — Thoulea shall be drawn into the Elysian fold."
+
+  je_unify_borea:0 "Unify with Borealia"
+  je_unify_borea_reason:0 "Borealia’s strategic and cultural bond with the empire warrants full unification."
+
+  je_unify_kykladia:0 "Unify with Kykladia and Arkadia"
+  je_unify_kykladia_reason:0 "These twin provinces are integral to the southern axis of Elysian civilization. Their full integration is long overdue."
+
+  je_unify_hesperidia:0 "Unify with Hesperidia"
+  je_unify_hesperidia_reason:0 "Let the western sun set on a united Hesperidia — one people, one realm."
+
+ #Overseas Expansion
+  
+  je_annex_HAW:0 "Annex Hawaii"
+  je_annex_HAW_reason:0 "The islands of Hawaii offer a vital strategic position in the Eireneic. Incorporating them into our empire would project power and secure trade."
+
+  je_annex_arkadia:0 "Unify Arkadia"
+  je_annex_arkadia_reason:0 "Arkadia's fate lies with the empire. Unification will bring stability and growth."
+
+  je_annex_polynisia:0 "Annex Polynisia"
+  je_annex_polynisia_reason:0 "Polynisia holds both cultural potential and maritime importance. It must be brought into the imperial sphere."
+
+  je_annex_melanisia:0 "Annex Melanisia"
+  je_annex_melanisia_reason:0 "Control of Melanisia will ensure our influence stretches across the sea and cements our Eireneic supremacy."
+
+  je_annex_aotearoa:0 "Annex Aotearoa"
+  je_annex_aotearoa_reason:0 "The lands of Aotearoa are rich in potential — both material and strategic. They belong under the Elysian standard."
+
+  je_reorganize_arkadia:0 "Reorganization of Antheia"
+  je_reorganize_arkadia_reason:0 "With the consolidation of our influence across the Antheian provinces, the time has come to reshape the region's governance. Whether by integrating our dominions more closely or establishing a federated administration, we must forge a lasting order worthy of the Elysian legacy."
+
+  je_reorganize_eireneic:0 "Reorganization of the Eireneic Territories"
+  je_reorganize_eireneic_reason:0 "With the islands of the central Eireneic Sea now securely within our sphere of influence, the Senate must determine how best to administer these distant lands. Shall we weave them into the imperial fabric directly, or empower a federated dominion to govern in our name across the isles of Polynesia?"
+
+ #Social Integration
+ 
+  je_recognize_afro_americans:0 "Recognize the Free African Diaspora"
+  je_recognize_afro_americans_reason:0 "Once enslaved under European yoke in Brazil, the Antilles, and La Platea, these peoples now stand free, liberated by Elysian arms and their own indomitable spirit. As they forge new societies upon the ashes of empires, it is both wise and just that we acknowledge their sovereignty, strengthen our bonds, and quietly guide their course within the Elysian sphere."
+
+ 
+# Decision
+Decisions 
+ 
+ integrate_elyric:0 "Integrate an Elyric Client State"
+ integrate_elyric_desc:0 "Time has come to integrate a client state into our empire"
+ 
+# Production
+others
+ 
+ pm_default_building_chichen_itza_temple_city:0 "Temple Cities of Mayab"
+ pm_default_building_tikal_temple_city:0 "Temple Cities of Cuauhtemallan"
+ pm_default_building_mexico_temple_city:0 "Temple Cities of Mexihco"
+ pm_default_building_whalebone_palace:0 "Whalebone Palace"
+ pm_default_building_imperial_palace:0 "Imperial Palace"
+ pm_default_building_marble_temple:0 "Temple of the Marble Emperor"
+ pm_default_building_alexandrian_library:0 "Nea-Alexandria Library"
+ pm_default_building_elysian_arsenal:0 "Elysian Arsenal"
+ pm_default_building_silk_halls:0 "Silk Halls"
+ pm_default_building_sea_gates:0 "Ivos Sea Gates"
+ pm_default_building_cahokia_halls:0 "Cahokia Halls"
+ pm_default_building_lost_monument:0 "Temple to the lost"
+ pm_default_building_nican_nahua_naval_base:0 "Nican-Nahua Canal"
+ 
+ pmg_base_building_chichen_itza_temple_city:0 "Temple Cities of Mayab"
+ pmg_base_building_tikal_temple_city:0 "Temple Cities of Cuauhtemallan"
+ pmg_base_building_mexico_temple_city:0 "Temple Cities of Mexihco"
+ pmg_base_building_whalebone_palace:0 "Whalebone Palace"
+ pmg_base_building_imperial_palace:0 "Imperial Palace"
+ pmg_base_building_marble_temple:0 "Temple of the Marble Emperor"
+ pmg_base_building_alexandrian_library:0 "Nea-Alexandria Library"
+ pmg_base_building_elysian_arsenal:0 "Elysian Arsenal"
+ pmg_base_building_silk_halls:0 "Silk Halls"
+ pmg_base_building_sea_gates:0 "Ivos Sea Gates"
+ pmg_base_building_cahokia_halls:0 "Cahokia Halls"
+ pmg_base_building_lost_monument:0 "Temple to the lost"
+ pmg_base_building_nican_nahua_naval_base:0 "Nican-Nahua Canal"

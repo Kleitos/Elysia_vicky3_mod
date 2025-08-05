@@ -211,7 +211,7 @@
 		}
 	}
 	s:STATE_ERITREA = {
-		region_state:EGY = {
+		region_state:ETH = {
 			create_pop = {
 				culture = tigray
 				size = 75764
@@ -222,7 +222,6 @@
 			}
 			create_pop = {
 				culture = tigray
-				religion = sunni
 				size = 64000
 			}
 			create_pop = {
@@ -238,11 +237,8 @@
 				culture = sudanese
 				size = 4200
 			}
-		}
-		region_state:SHW = {
 			create_pop = {
 				culture = tigray
-				religion = sunni
 				size = 8000
 			}
 			create_pop = {
@@ -288,7 +284,7 @@
 		}
 	}
 	s:STATE_KORDOFAN = {
-		region_state:EGY = {
+		region_state:ETH = {
 			create_pop = {
 				culture = sudanese
 				size = 224396
@@ -335,7 +331,7 @@
 		}
 	}
 	s:STATE_BLUE_NILE = {
-		region_state:EGY = {
+		region_state:ETH = {
 			create_pop = {
 				culture = sudanese
 				size = 307600
@@ -433,7 +429,7 @@
 				size = 34000
 			}
 		}
-		region_state:SPA = {
+		region_state:IBE = {
 			create_pop = {
 				culture = maghrebi
 				size = 46400
@@ -485,7 +481,7 @@
 		}
 	}
 	s:STATE_ALGIERS = {
-		region_state:MAS = {
+		region_state:MOR = {
 			create_pop = {
 				culture = maghrebi
 				size = 541914
@@ -508,7 +504,7 @@
 				size = 24012
 			}
 		}
-		region_state:FRA = {
+		region_state:IBE = {
 			create_pop = {
 				culture = maghrebi
 				size = 84722
@@ -526,7 +522,7 @@
 				size = 7849
 			}
 			create_pop = {
-				culture = french
+				culture = spanish
 				size = 1201
 			}
 			create_pop = {
@@ -536,7 +532,7 @@
 		}
 	}
 	s:STATE_CONSTANTINE = {
-		region_state:CON = {
+		region_state:MOR = {
 			create_pop = {
 				culture = maghrebi
 				size = 245953
@@ -558,8 +554,6 @@
 				culture = bambara
 				size = 32020
 			}
-		}
-		region_state:AIT = {
 			create_pop = {
 				culture = maghrebi
 				size = 18124
@@ -578,7 +572,7 @@
 				size = 9281
 			}
 		}
-		region_state:FRA = {
+		region_state:IBE = {
 			create_pop = {
 				culture = maghrebi
 				size = 18830
@@ -596,7 +590,7 @@
 				size = 1778
 			}
 			create_pop = {
-				culture = french
+				culture = spanish
 				size = 351
 			}
 			create_pop = {
@@ -606,7 +600,7 @@
 		}
 	}
 	s:STATE_ORAN = {
-		region_state:MAS = {
+		region_state:MOR = {
 			create_pop = {
 				culture = maghrebi
 				size = 612178
@@ -629,7 +623,7 @@
 				size = 18401
 			}
 		}
-		region_state:FRA = {
+		region_state:IBE = {
 			create_pop = {
 				culture = maghrebi
 				size = 41020
@@ -647,7 +641,7 @@
 				size = 2604
 			}
 			create_pop = {
-				culture = french
+				culture = spanish
 				size = 681
 			}
 			create_pop = {
@@ -696,7 +690,7 @@
 		}
 	}
 	s:STATE_TRIPOLI = {
-		region_state:TUN = {
+		region_state:TRI = {
 			create_pop = {
 				culture = maghrebi
 				size = 169628
@@ -721,7 +715,7 @@
 		}
 	}
 	s:STATE_LIBYA = {
-		region_state:TUN = {
+		region_state:TRI = {
 			create_pop = {
 				culture = bedouin
 				size = 171604
@@ -746,7 +740,7 @@
 		}
 	}
 	s:STATE_LIBYAN_DESERT = {
-		region_state:TUN = {
+		region_state:TRI = {
 			create_pop = {
 				culture = bedouin
 				size = 30000
@@ -918,6 +912,7 @@
 			create_pop = {
 				pop_type = slaves
 				culture = mande
+				religion = mande_faith
 				size = 4400
 			}
 		}
@@ -960,6 +955,7 @@
 			create_pop = {
 				pop_type = slaves
 				culture = mande
+				religion = mande_faith
 				size = 112000
 			}
 		}
@@ -979,6 +975,7 @@
 			create_pop = {
 				pop_type = slaves
 				culture = mande
+				religion = mande_faith
 				size = 14000
 			}
 		}
@@ -1110,11 +1107,11 @@
 			create_pop = {
 				culture = bedouin
 				size = 42000
-			}	
+			}
 			create_pop = {
 				culture = tuareg
 				size = 5000
-			}	
+			}
 			create_pop = {
 				pop_type = slaves
 				culture = equatorial_bantu

@@ -1,0 +1,40 @@
+﻿ruler_of_andes = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	country_prestige_add = 50
+	state_assimilation_mult = 2
+	state_conversion_mult = 2
+}
+
+incan_mining = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+		building_group_bg_mining_throughput_add = 0.25
+}
+
+incan_farming = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	building_wheat_farm_throughput_add = 0.25
+	building_maize_farm_throughput_add = 0.25
+}
+
+incan_ranching = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	building_group_bg_ranching_throughput_add = 0.25
+}
+
+sulfur_leader = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	building_sulfur_mine_throughput_add = 0.25
+	building_chemical_plants_throughput_add = 0.25
+}
+
+wealth_of_the_andes = {
+	icon = gfx/interface/icons/timed_modifier_icons/landed_voting_positive.dds
+	country_max_companies_add = 2
+	country_free_charters_add = 4
+}
+
+incan_societal_reforms = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds	
+	state_radicals_from_political_movements_mult = 0.05
+	political_movement_radicalism_add = 0.1
+}

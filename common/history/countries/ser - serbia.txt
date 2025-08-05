@@ -1,11 +1,7 @@
 ﻿COUNTRIES = {
-	c:SER = {
+	c:SER ?= {
 		effect_starting_technology_tier_3_tech = yes
 		
 		effect_starting_politics_traditional = yes
-		add_modifier = {
-			name = religious_fundamentalism
-			months = -1
-		}
 	}
 }

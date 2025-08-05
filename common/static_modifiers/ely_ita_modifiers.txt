@@ -1,0 +1,70 @@
+﻿italian_revolution = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	interest_group_ig_landowners_pol_str_mult = -0.9
+	interest_group_ig_devout_pol_str_mult = -0.9
+	interest_group_ig_armed_forces_str_mult = 0.3
+	interest_group_ig_rural_folk_pol_str_mult = 0.3
+	interest_group_ig_petty_bourgeoisie_pol_str_mult = 0.3
+	interest_group_ig_intelligentsia_pol_str_mult = 0.3
+	country_aristocrats_pol_str_mult = -0.9
+	country_clergymen_pol_str_mult = -0.9
+	country_farmers_pol_str_mult = 0.1
+	country_laborers_pol_str_mult = 0.1
+	country_peasants_pol_str_mult = 0.1
+	country_soldiers_pol_str_mult = 0.2
+	country_academics_pol_str_mult = 0.3
+	country_officers_pol_str_mult = 0.3
+	country_bureaucrats_pol_str_mult = 0.3
+	country_clerks_pol_str_mult = 0.2
+	country_shopkeepers_pol_str_mult = 0.2
+	political_movement_radicalism_add = -0.1
+}
+
+tuscan_enlightenment = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	political_movement_radicalism_add = -0.05
+	state_education_access_add = 0.1
+	country_society_weekly_innovation_mult = 0.1
+	building_university_throughput_add = 0.1
+	interest_group_ig_intelligentsia_approval_add = 5
+}
+
+venician_trade_legacy = {
+	icon = gfx/interface/icons/timed_modifier_icons/landed_voting_positive.dds
+	country_max_companies_add = 2
+	country_free_charters_add = 4
+}
+
+italian_revolution_fervour = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	
+	unit_offense_mult = 0.1
+	unit_defense_mult = 0.1
+	unit_morale_loss_mult = -0.33
+	unit_recovery_rate_add = 0.33
+	state_conscription_rate_mult = 1
+}
+
+italian_irredentia = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	country_influence_mult = 0.1
+	country_authority_mult = 0.1
+	state_assimilation_mult = 2
+	state_conversion_mult = 2
+	country_prestige_mult = 50
+}
+
+echoes_of_revolution = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	
+	state_radicals_from_political_movements_mult = 0.05
+	political_movement_radicalism_add = 0.1
+}
+
+napolitan_legacy = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	
+	unit_defense_mult = 0.1	
+	interest_group_ig_rural_folk_approval_add = 5
+	building_group_bg_agriculture_throughput_add = 0.1
+}

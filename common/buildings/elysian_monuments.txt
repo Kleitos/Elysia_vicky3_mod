@@ -1,6 +1,6 @@
 ﻿building_marble_temple = {
 	building_group = bg_monuments
-	texture = "gfx/interface/icons/building_icons/hagia_sophia.dds"
+	icon = "gfx/interface/icons/building_icons/hagia_sophia.dds"
 	expandable = no
 	buildable = no
 	downsizeable = no
@@ -29,7 +29,7 @@
 
 building_imperial_palace = {
 	building_group = bg_monuments
-	texture = "gfx/interface/icons/building_icons/vatican_city.dds"
+	icon = "gfx/interface/icons/building_icons/vatican_city.dds"
 	expandable = no
 	buildable = no
 	downsizeable = no
@@ -58,7 +58,7 @@ building_imperial_palace = {
 
 building_elysian_arsenal = {
 	building_group = bg_monuments
-	texture = "gfx/interface/icons/building_icons/naval_base.dds"
+	icon = "gfx/interface/icons/building_icons/naval_base.dds"
 	expandable = no
 	buildable = no
 	downsizeable = no
@@ -87,7 +87,7 @@ building_elysian_arsenal = {
 
 building_sea_gates = {
 	building_group = bg_monuments
-	texture = "gfx/interface/icons/building_icons/building_bank_1.dds"
+	icon = "gfx/interface/icons/building_icons/white_house.dds"
 	expandable = no
 	buildable = no
 	downsizeable = no
@@ -116,7 +116,7 @@ building_sea_gates = {
 
 building_silk_halls = {
 	building_group = bg_monuments
-	texture = "gfx/interface/icons/building_icons/central_bank.dds"
+	icon = "gfx/interface/icons/building_icons/central_bank.dds"
 	expandable = no
 	buildable = no
 	downsizeable = no
@@ -145,7 +145,7 @@ building_silk_halls = {
 
 building_alexandrian_library = {
 	building_group = bg_monuments
-	texture = "gfx/interface/icons/building_icons/building_lepsius_archaeological_museum.dds"
+	icon = "gfx/interface/icons/building_icons/building_lepsius_archaeological_museum.dds"
 	expandable = no
 	buildable = no
 	downsizeable = no
@@ -174,7 +174,7 @@ building_alexandrian_library = {
 
 building_cahokia_halls = {
 	building_group = bg_monuments
-	texture = "gfx/interface/icons/building_icons/white_house.dds"
+	icon = "gfx/interface/icons/building_icons/white_house.dds"
 	expandable = no
 	buildable = no
 	downsizeable = no
@@ -203,7 +203,7 @@ building_cahokia_halls = {
 
 building_whalebone_palace = {
 	building_group = bg_monuments
-	texture = "gfx/interface/icons/building_icons/white_house.dds"
+	icon = "gfx/interface/icons/building_icons/white_house.dds"
 	expandable = no
 	buildable = no
 	downsizeable = no
@@ -232,7 +232,7 @@ building_whalebone_palace = {
 
 building_lost_monument = {
 	building_group = bg_monuments
-	texture = "gfx/interface/icons/building_icons/building_stuff_headquarters.dds"
+	icon = "gfx/interface/icons/building_icons/building_stuff_headquarters.dds"
 	expandable = no
 	downsizeable = no
 	unique = yes
@@ -256,9 +256,15 @@ building_lost_monument = {
 	}
 	
 	required_construction = construction_cost_monument
+
+	potential = {
+		state_region = s:STATE_CALIFORNIA
+	}
 	
 	possible = {
-		state_region = s:STATE_CALIFORNIA
+		owner = {
+			owns_entire_state_region = STATE_CALIFORNIA
+		}
 	}
 	
 	ai_value = 10000
@@ -268,7 +274,7 @@ building_lost_monument = {
 
 building_chichen_itza_temple_city = {
 	building_group = bg_monuments
-	texture = "gfx/interface/icons/building_icons/placeholder Copy.dds"
+	icon = "gfx/interface/icons/building_icons/machu_picchu.dds"
 	expandable = no
 	buildable = no
 	downsizeable = no
@@ -297,7 +303,7 @@ building_chichen_itza_temple_city = {
 
 building_mexico_temple_city = {
 	building_group = bg_monuments
-	texture = "gfx/interface/icons/building_icons/placeholder Copy.dds"
+	icon = "gfx/interface/icons/building_icons/machu_picchu.dds"
 	expandable = no
 	buildable = no
 	downsizeable = no
@@ -326,7 +332,7 @@ building_mexico_temple_city = {
 
 building_tikal_temple_city = {
 	building_group = bg_monuments
-	texture = "gfx/interface/icons/building_icons/placeholder Copy.dds"
+	icon = "gfx/interface/icons/building_icons/machu_picchu.dds"
 	expandable = no
 	buildable = no
 	downsizeable = no
@@ -356,15 +362,16 @@ building_tikal_temple_city = {
 
 building_nican_nahua_naval_base = {
 	building_group = bg_canals
-	texture = "gfx/interface/icons/building_icons/panama_canal.dds"
+	icon = "gfx/interface/icons/building_icons/panama_canal.dds"
 	expandable = no
 	downsizeable = no
 	unique = yes
 	required_construction = construction_cost_canal
-	
-	city_gfx_interactions = {
-		clear_size_area = yes
-		size = 4
+
+	ai_value = 50000 # Canals are very important
+
+	potential = {
+		state_region = s:STATE_NICARAGUA
 	}
 	
 	production_method_groups = {
@@ -378,21 +385,24 @@ building_nican_nahua_naval_base = {
 	}
 	
 	possible = {
-		state_region = s:STATE_NICARAGUA
+		owner = {
+			owns_entire_state_region = STATE_NICARAGUA
+		}
 	}
 }
 
 building_erie_canal = {
 	building_group = bg_canals
-	texture = "gfx/interface/icons/building_icons/panama_canal.dds"
+	icon = "gfx/interface/icons/building_icons/panama_canal.dds"
 	expandable = no
 	downsizeable = no
 	unique = yes
 	required_construction = construction_cost_canal
-	
-	city_gfx_interactions = {
-		clear_size_area = yes
-		size = 4
+
+	ai_value = 50000 # Canals are very important
+
+	potential = {
+		state_region = s:STATE_NEW_YORK
 	}
 	
 	production_method_groups = {
@@ -406,20 +416,23 @@ building_erie_canal = {
 	}
 	
 	possible = {
-		state_region = s:STATE_NEW_YORK
+		owner = {
+			owns_entire_state_region = STATE_NEW_YORK
+		}
 	}
 }
 building_lakonia_railway = {
-	building_group = bg_private_infrastructure
-	texture = "gfx/interface/icons/building_icons/suez_canal.dds"
+	building_group = bg_canals
+	icon = "gfx/interface/icons/building_icons/suez_canal.dds"
 	expandable = no
 	downsizeable = no
 	unique = yes
 	required_construction = construction_cost_canal
-	
-	city_gfx_interactions = {
-		clear_size_area = yes
-		size = 4
+
+	ai_value = 50000 # Canals are very important
+
+	potential = {
+		state_region = s:STATE_VERACRUZ
 	}
 	
 	production_method_groups = {
@@ -433,21 +446,25 @@ building_lakonia_railway = {
 	}
 	
 	possible = {
-		state_region = s:STATE_VERACRUZ
+		owner = {
+			owns_entire_state_region = STATE_VERACRUZ
+			owns_entire_state_region = STATE_OAXACA
+		}
 	}
 }
 
 building_oaxaca_railway = {
-	building_group = bg_private_infrastructure
-	texture = "gfx/interface/icons/building_icons/suez_canal.dds"
+	building_group = bg_canals
+	icon = "gfx/interface/icons/building_icons/suez_canal.dds"
 	expandable = no
 	downsizeable = no
 	unique = yes
 	required_construction = construction_cost_canal
-	
-	city_gfx_interactions = {
-		clear_size_area = yes
-		size = 4
+
+	ai_value = 50000 # Canals are very important
+
+	potential = {
+		state_region = s:STATE_OAXACA
 	}
 	
 	production_method_groups = {
@@ -461,21 +478,25 @@ building_oaxaca_railway = {
 	}
 	
 	possible = {
-		state_region = s:STATE_OAXACA
+		owner = {
+			owns_entire_state_region = STATE_OAXACA
+			owns_entire_state_region = STATE_VERACRUZ
+		}
 	}
 }
 
 building_kiel_canal = {
 	building_group = bg_canals
-	texture = "gfx/interface/icons/building_icons/panama_canal.dds"
+	icon = "gfx/interface/icons/building_icons/panama_canal.dds"
 	expandable = no
 	downsizeable = no
 	unique = yes
 	required_construction = construction_cost_canal
-	
-	city_gfx_interactions = {
-		clear_size_area = yes
-		size = 4
+
+	ai_value = 50000 # Canals are very important
+
+	potential = {
+		state_region = s:STATE_SCHLESWIG_HOLSTEIN
 	}
 	
 	production_method_groups = {
@@ -489,17 +510,25 @@ building_kiel_canal = {
 	}
 	
 	possible = {
-		state_region = s:STATE_SCHLESWIG_HOLSTEIN
+		owner = {
+			owns_entire_state_region = STATE_SCHLESWIG_HOLSTEIN
+		}
 	}
 }
 
 building_kra_canal = {
 	building_group = bg_canals
-	texture = "gfx/interface/icons/building_icons/panama_canal.dds"
+	icon = "gfx/interface/icons/building_icons/panama_canal.dds"
 	expandable = no
 	downsizeable = no
 	unique = yes
 	required_construction = construction_cost_canal
+
+	ai_value = 50000 # Canals are very important
+
+	potential = {
+		state_region = s:STATE_TENASSERIM
+	}
 	
 	city_gfx_interactions = {
 		clear_size_area = yes
@@ -517,22 +546,25 @@ building_kra_canal = {
 	}
 	
 	possible = {
-		state_region = s:STATE_TENASSERIM
+		owner = {
+			owns_entire_state_region = STATE_TENASSERIM
+		}
 	}
 }
 
 #building_west_white_canal = {
-#	building_group = bg_canals
-#	texture = "gfx/interface/icons/building_icons/panama_canal.dds"
-#	expandable = no
-#	downsizeable = no
-#	unique = yes
-#	required_construction = construction_cost_canal
-#	
-#	city_gfx_interactions = {
-#		clear_size_area = yes
-#		size = 4
-#	}
+	building_group = bg_canals
+	icon = "gfx/interface/icons/building_icons/panama_canal.dds"
+	expandable = no
+	downsizeable = no
+	unique = yes
+	required_construction = construction_cost_canal
+
+	ai_value = 50000 # Canals are very important
+
+	potential = {
+		state_region = s:STATE_WEST_KARELIA
+	}
 #	
 #	production_method_groups = {
 #		pmg_base_building_railway
@@ -543,29 +575,27 @@ building_kra_canal = {
 #	unlocking_technologies = { 
 #		civilizing_mission 
 #	}
-#	
-#	possible = {
-#		error_check = {
-#			severity = invalid
-#			this = {
-#				state_region = s:STATE_WEST_KARELIA
-#			}
-#		}
-#	}
+	
+	possible = {
+		owner = {
+			owns_entire_state_region = STATE_WEST_KARELIA
+		}
+	}
 #}
 
 #building_east_white_canal = {
-#	building_group = bg_canals
-#	texture = "gfx/interface/icons/building_icons/panama_canal.dds"
-#	expandable = no
-#	downsizeable = no
-#	unique = yes
-#	required_construction = construction_cost_canal
-#	
-#	city_gfx_interactions = {
-#		clear_size_area = yes
-#		size = 4
-#	}
+	building_group = bg_canals
+	icon = "gfx/interface/icons/building_icons/panama_canal.dds"
+	expandable = no
+	downsizeable = no
+	unique = yes
+	required_construction = construction_cost_canal
+
+	ai_value = 50000 # Canals are very important
+
+	potential = {
+		state_region = s:STATE_EAST_KARELIA
+	}
 #	
 #	production_method_groups = {
 #		pmg_base_building_railway
@@ -576,29 +606,27 @@ building_kra_canal = {
 #	unlocking_technologies = { 
 #		civilizing_mission 
 #	}
-#	
-#	possible = {
-#		error_check = {
-#			severity = invalid
-#			this = {
-#				state_region = s:STATE_EAST_KARELIA
-#			}
-#		}
-#	}
+	
+	possible = {
+		owner = {
+			owns_entire_state_region = STATE_EAST_KARELIA
+		}
+	}
 #}
 
 #building_don_canal = {
-#	building_group = bg_canals
-#	texture = "gfx/interface/icons/building_icons/panama_canal.dds"
-#	expandable = no
-#	downsizeable = no
-#	unique = yes
-#	required_construction = construction_cost_canal
-#	
-#	city_gfx_interactions = {
-#		clear_size_area = yes
-#		size = 4
-#	}
+	building_group = bg_canals
+	icon = "gfx/interface/icons/building_icons/panama_canal.dds"
+	expandable = no
+	downsizeable = no
+	unique = yes
+	required_construction = construction_cost_canal
+
+	ai_value = 50000 # Canals are very important
+
+	potential = {
+		state_region = s:STATE_ASTRAKHAN
+	}
 ##	
 #	production_method_groups = {
 #		pmg_base_building_railway
@@ -609,13 +637,10 @@ building_kra_canal = {
 #	unlocking_technologies = { 
 #		civilizing_mission 
 #	}
-#	
-#	possible = {
-#		error_check = {
-#			severity = invalid
-#			this = {
-#				state_region = s:STATE_ASTRAKHAN
-#			}
-#		}
-#	}
+	
+	possible = {
+		owner = {
+			owns_entire_state_region = STATE_ASTRAKHAN
+		}
+	}
 #}

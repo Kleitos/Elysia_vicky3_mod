@@ -1,0 +1,184 @@
+﻿l_english:
+ 
+# Balkans Flavour
+Balkans
+ 
+ TUR_FLAVOR_TEXT:0 "Once feared across three continents, the Ottoman Empire now clings to the ruins of its past. Driven from the Balkans by a united European crusade, expelled from the Caucasus by the Russians, and cast out of Arabia, Africa, and Persia by rising powers, the Sublime Porte is no longer so sublime. The empire still rules from Constantinople—but its enemies gather, and the Sword of Osman grows dull."
+
+ BYZ_FLAVOR_TEXT:0 "Out of blood and ruin rose the Order of Saint Constantine—a holy alliance of Balkan peoples bound by faith and vengeance. Serbs, Bulgars, Greeks, and Romanians march beneath the imperial double-headed eagle, dreaming of a reborn Byzantium. Yet old wounds fester beneath the banners of unity, and the Russian bear eyes the east with imperial hunger. Can the Eastern Roman legacy be revived—or will the coalition crumble from within?"
+
+  ##Cultures##
+  
+ byzantine_legacy:0 "Byzantine Legacy"
+ 
+ rhomaion:0 "Rhomaic"
+ turko_roman:0 "Turko-Rhomaic"
+ 
+ byz_cultural_massacre_tt:0 "15% of Turkish pops will be victim of mass violence"
+ byz_cultural_deportation_tt:0 "All Turkish pops will be expelled from our country"
+  
+### Events ###
+Events
+
+ byzantine_resurgence.1.t:0 "Rhomaion’s Resurgence"
+ byzantine_resurgence.1.d:0 "In the wake of the Turkish sack of Vienna in 1683, a renewed crusading fervor swept across Christendom. In this upheaval, our ancestors rose in rebellion, striking a fateful accord with the Austrian crown to reclaim the lost provinces of Rome. But though the crescent moon has waned, the Turk endures. The sacred city of Constantine still lies in Muslim hands, and the threat grows once more. If we are to survive, we must strike — not in fear, but with the fire of justice."
+ byzantine_resurgence.1.f:0 ""The Empire endures not in shadow, but in steel.""
+ byzantine_resurgence.1.a:0 "Strike before they rise again!"
+ byzantine_resurgence.1.b:0 "Not yet — we must prepare."
+
+ byzantine_resurgence.2.t:0 "Rhomaion Ascendant"
+ byzantine_resurgence.2.d:0 "The Roman eagle soars once more over the hills and valleys of Anatolia. The tide of the Turk has been driven eastward, and with each step we reclaim the dust of our forebears. Yet the struggle is not finished. The heathen still lingers, and the wounds of our people have yet to heal. There can be no peace until the threat is utterly extinguished."
+ byzantine_resurgence.2.f:0 ""Where the cross is raised, so too shall the Empire rise.""
+ byzantine_resurgence.2.a:0 "We will not falter — march!"
+ byzantine_resurgence.2.b:0 "Our forces must recover first."
+
+ byzantine_resurgence.3.t:0 "Rhomaion’s Revenge"
+ byzantine_resurgence.3.d:0 "Anatolia lies beneath our banner once more. The cities and fortresses of the Turks have fallen, and the Roman dominion has returned to lands it once lost. Yet the threat persists in the Levant, where the sword of Islam still glints in the sun. This is not merely a campaign — it is a reckoning. We march not only to secure our borders, but to avenge the centuries of humiliation and desecration our people have endured."
+ byzantine_resurgence.3.f:0 ""Let the world remember what it means to awaken the wrath of the Romans.""
+ byzantine_resurgence.3.a:0 "Press the advantage — into the Levant!"
+ byzantine_resurgence.3.b:0 "Not now. Let our wounds heal."
+ 
+ byzantine_strike.1.t:0 "An Opportunity in the West?"
+ byzantine_strike.1.d:0 "Ever since the betrayal of the Fourth Crusade, when Latin greed turned Christian blades against the Queen of Cities, the Orthodox world has not forgotten. Venice, the architect of that ancient crime, once again gorged itself on Greek and Serbian lands under the guise of alliance during the wars against the Turk. But now, with the Germans and Franks distracted in their northern quarrels, the balance tilts in our favor. The time has come to reclaim what is ours — not only from the infidel, but from the Latin usurper as well."
+ byzantine_strike.1.f:0 ""They took Constantinople once. They think we have forgotten. Let them be reminded in blood.""
+ byzantine_strike.1.a:0 "We shall cast out the Latin thieves."
+ byzantine_strike.1.b:0 "Let them have their stolen peace — for now."
+ 
+ byzantine_strike.2.t:0 "The Scales Are Balanced"
+ byzantine_strike.2.d:0 "The banners of Venice no longer fly over the lands of Hellas or the Orthodox South. The bells of our churches ring freely once more, and the Latin yoke has been cast into the sea. Centuries of humiliation — from the sack of 1204 to the greedy opportunism of recent decades — are at last avenged. Though our wounds run deep, the Empire has reclaimed a piece of its dignity, and the people speak once more of unity, faith, and vengeance fulfilled."
+ byzantine_strike.2.f:0 ""They carved up our flesh and called it peace. We return now with fire in hand, not for conquest, but for justice.""
+ byzantine_strike.2.a:0 "Let every bell toll: we are not finished yet."
+
+ byzantine_glory.1.t:0 "Triumph of Rhomaion"
+ byzantine_glory.1.d:0 "What once seemed impossible has come to pass — Manzikert is avenged, and the Turkic yoke has been broken. The imperial eagle soars once again over the heartlands of Anatolia. Yet conquest is but the beginning; to preserve this glory, we must quell dissent, consolidate our rule, and forge a new Roman order in the East."
+ byzantine_glory.1.f:0 ""For centuries, our ancestors wept over the fall. Today, they would weep with joy.""
+ byzantine_glory.1.a:0 "Expel the Turks — let them return to their steppes."
+ byzantine_glory.1.b:0 "Let them feel Roman steel one last time."
+ byzantine_glory.1.c:0 "The crusade is over — we shall rule with mercy."
+
+ byzantine_glory.2.t:0 "The Call of the Caucasus"
+ byzantine_glory.2.d:0 "With Anatolia restored to Rhoman hands, new voices rise — calling for unity with our ancient brethren in the Caucasus. Armenia and Georgia, long bastions of the Eastern faith and once integral to our imperial world, now languish under the rule of foreign pretenders and steppe-born tyrants. The time has come to bring them home."
+ byzantine_glory.2.f:0 ""Mountains do not divide nations when blood and faith unite them.""
+ byzantine_glory.2.a:0 "We march once more."
+ 
+ byzantine_unity_success.1.t:0 "The Dawn of a United Rhomaion"
+ byzantine_unity_success.1.d:0 "The tireless efforts to unite Greeks, Bulgars, Albanians, Romanians and Serbs have borne fruit. Across the lands, a shared Rhoman identity flourishes, blending ancient traditions and new bonds forged in the fires of struggle and reconciliation. The empire stands stronger, its people united not merely by faith, but by a renewed sense of common destiny and purpose."
+ byzantine_unity_success.1.f:0 "\"Once divided by history and hardship, today we stand as one people — Rhomaioi — heirs to an empire reborn.\""
+ byzantine_unity_success.1.a:0 "Celebrate our unity"
+
+
+ byzantine_culture.1.t:0 "Unifying the Greeks"
+ byzantine_culture.1.d:0 "The Greek lands have always been the heart of the Roman legacy. To secure our future, we must unify under the banner of Rhomaion and renew the glory of old."
+ byzantine_culture.1.f:0 "\"As a Greek who now proudly calls himself Rhomaioi, I embrace this new dawn where our ancient heritage is honored under a shared empire.\""
+ byzantine_culture.1.a:0 "We are all Rhomaioi"
+
+ byzantine_culture.2.t:0 "Uniting with the Bulgars"
+ byzantine_culture.2.d:0 "The Bulgars share with us a common faith and a common enemy. Through unity, we strengthen our cause and reclaim our rightful place."
+ byzantine_culture.2.f:0 "\"I am a Bulgar reborn as Rhomaioi — my loyalty lies with the empire that binds us all.\""
+
+ byzantine_culture.3.t:0 "Uniting with the Albanians"
+ byzantine_culture.3.d:0 "Though conquered and converted by foreign powers, the Albanians’ roots run deep in the Roman soil. We must remind them of their heritage and welcome them home."
+ byzantine_culture.3.f:0 "\"Long separated by force, today I proudly declare myself Rhomaioi, reunited with our true kin.\""
+
+ byzantine_culture.4.t:0 "Uniting with the Serbs"
+ byzantine_culture.4.d:0 "The Serbs have been both adversaries and allies, but now the time has come to forge a lasting brotherhood in the name of our shared legacy."
+ byzantine_culture.4.f:0 "\"My Serbian blood beats as one with the Rhoman heart — together, we are stronger.\""
+
+ byzantine_culture.6.t:0 "Uniting with the Georgians"
+ byzantine_culture.6.d:0 "Separated by conflict and conquest, the Georgians remain kin to our cause. Their reunion with Rhomaion will bring strength to our common front."
+ byzantine_culture.6.f:0 "\"As a Georgian son of Rhomaion, I pledge my sword and soul to the empire's renewal.\""
+
+ byzantine_culture.7.t:0 "Uniting with the Armenians"
+ byzantine_culture.7.d:0 "Once rivals, now we seek reconciliation with the Armenians. Together, we will rebuild the greater Rhoman world."
+ byzantine_culture.7.f:0 "\"From the mountains of Armenia to the heart of Rhomaion, I stand united as one people.\""
+
+ byzantine_culture.8.t:0 "The Rhomanization of the Turks"
+ byzantine_culture.8.d:0 "From centuries of enmity to a future of brotherhood, the Turks who choose our path shall be welcomed into the fold of Rhomaion."
+ byzantine_culture.8.f:0 "\"I once was an enemy, but now as Rhomaioi, I embrace a new path of unity and faith.\""
+ byzantine_culture.8.a:0 "From enemies to brothers"
+
+  
+ byzantine_flavor.1.t:0 "The Order of Saint Constantine"
+ byzantine_flavor.1.d:0 "The fall of Vienna to the Ottomans in 1684 shocked Christendom to its core. In response, a great coalition of European powers — Orthodox, Protestants and Catholic alike — took up arms to drive the Crescent from the Balkans. This new crusade, fueled by vengeance and piety, has raged for over a century. Now, the tide has turned. The Turk is driven back, clinging only to the walls of Constantinople — the Queen of Cities. In a cruel inversion of 1453, it is now *we* who stand at the gates."
+ byzantine_flavor.1.f:0 ""The blood of saints and emperors cries out from the earth. The Eastern Cross has not forgotten its throne.""
+ byzantine_flavor.1.a:0 "We will avenge 1453."
+
+ byzantine_failure.1.t:0 "Bulgarian Revolt"
+ byzantine_failure.1.d:0 "The fragile bonds of unity have shattered as the Bulgarians rise in revolt, rejecting Rhomaion’s claim and yearning for their own destiny once more."
+ byzantine_failure.1.f:0 ""Our people deserve to chart their own path, free from foreign chains,’ a Bulgarian leader declares.""
+ byzantine_failure.1.a:0 "A tragedy for the empire."
+ byzantine_failure.1.b:0 "Embrace the new Bulgarian state."
+
+ byzantine_failure.2.t:0 "Albanian Revolt"
+ byzantine_failure.2.d:0 "The Albanian lands have erupted in rebellion, spurning Rhomaion’s rule and reclaiming their heritage with fierce determination."
+ byzantine_failure.2.f:0 ""Our blood and traditions cannot be absorbed — we stand apart,’ a fiery Albanian voice proclaims.""
+
+ byzantine_failure.2.b:0 "Accept the new Albanian nation."
+
+ byzantine_failure.3.t:0 "Greek Revolt"
+ byzantine_failure.3.d:0 "The heartland of the Rhomaioi beats with rebellion as Greeks rise up, rejecting imposed unity to reclaim their own path."
+ byzantine_failure.3.f:0 ""We are the true heirs of Hellas, not subjects of a fractured empire,’ echoes through the streets.""
+ byzantine_failure.3.a:0 "Take control as the new Greek state."
+ 
+ byzantine_failure.4.t:0 "End of Unity, End of Rome"
+ byzantine_failure.4.d:0 "The grand dream of a united Rhomaion has crumbled. The empire fractures along old lines, and the glory of Rome fades into history."
+ byzantine_failure.4.f:0 ""
+ byzantine_failure.4.a:0 "A tragic end to an era."
+
+ byzantine_failure.5.t:0 "Serb Revolt"
+ byzantine_failure.5.d:0 "The Serbs have rejected Rhomaion’s embrace, rising in rebellion to restore their ancient sovereignty."
+ byzantine_failure.5.f:0 ""We are a proud people who will not be subsumed,’ proclaims a Serbian soldier.""
+
+ byzantine_failure.5.b:0 "Lead the new Serbian state."
+
+ byzantine_failure.6.t:0 "Romanian Revolt"
+ byzantine_failure.6.d:0 "Romania rejects the Rhomaion claim, choosing independence over unity in a defiant stand for self-determination."
+ byzantine_failure.6.f:0 ""Our destiny lies with our own people, not distant emperors,’ declares a Romanian leader.""
+
+ byzantine_failure.6.b:0 "Rule the new Romanian state."
+
+ 
+### Journals Entries ###
+Journals
+  
+ je_byzantine_resurgence:0 "Rhomaion's Resurgence"
+ je_byzantine_resurgence_reason:0 "Though we have risen from the ashes, the city of Constantine remains in Turkish hands. The crescent still casts its shadow over the Bosphoros. If we are to reclaim our destiny, we must prepare — for one final war to restore the Queen of Cities to her rightful heirs."
+ 
+ je_byzantine_reconquest:0 "Rhomaion's Reconquest"
+ je_byzantine_reconquest_reason:0 "We have reclaimed a foothold in Anatolia — the very heart of our ancient dominion. With the eagle firmly planted on Asiatic soil once more, we must press the advantage and drive the Turks back from whence they came."
+ 
+ je_byzantine_revenge:0 "Rhomaion's Revenge"
+ je_byzantine_revenge_reason:0 "The Turks cling desperately to the last shreds of Anatolia. Now is the time to repay Manzikert, to avenge centuries of occupation and humiliation. Let the fires of vengeance carry us to final victory — and purge them from the land of Rome forever."
+ 
+ je_byzantine_glory:0 "Triumph of Rhomaion"
+ je_byzantine_glory_reason:0 "With the Turks vanquished and all of Anatolia reclaimed, Rhomaion can finally proclaim its rightful return to greatness and prominence."
+
+ je_cultural_shift_byz_greek:0 "Rhomaic Culture"
+ je_cultural_shift_byz_greek_reason:0 "With the Elysians claiming the mantle of the Hellenic legacy, and Russian pretenders asserting the title 'Czar of the Romans,' we must clearly distinguish ourselves to unite our Orthodox brethren against false claimants and unfaithful alike."
+
+ je_byz_megali_idea:0 "Greco-Roman Heritage"
+ je_byz_megali_idea_reason:0 "Rome conquered Greece, but Rome’s heart was forever Hellenic. By reuniting the Greek homelands, we shall secure their loyalty and revive the true legacy."
+
+ je_cultural_shift_byz_bulgarian:0 "Assimilate the Bulgarians"
+ je_cultural_shift_byz_bulgarian_reason:0 "The Bulgarians have been both foes and allies of our Roman ancestors. Now, sharing a common hatred for the Turks, we must unite for a shared destiny."
+
+ je_cultural_shift_byz_albanian:0 "Assimilate the Albanians"
+ je_cultural_shift_byz_albanian_reason:0 "Once conquered and forcibly converted by the Turkic hordes, the Albanians must be reminded of their true heritage and brought into the fold."
+
+ je_cultural_shift_byz_serbian:0 "Assimilate the Serbs"
+ je_cultural_shift_byz_serbian_reason:0 "Like the Bulgarians, the Serbs have oscillated between friend and foe. Only through unity can we reclaim our shared legacy and strength."
+
+ je_cultural_shift_byz_romanian:0 "Assimilate the Romanians"
+ je_cultural_shift_byz_romanian_reason:0 "The Romanians, heirs to the ancient Dacian and Roman legacies, stand as a vital link in our quest to restore the Rhomaion unity. We must embrace them as brothers and sisters to reclaim our shared destiny."
+
+ je_cultural_shift_byz_georgian:0 "Assimilate the Georgians"
+ je_cultural_shift_byz_georgian_reason:0 "Separated by our Islamic foes for too long, the Georgians now stand under the same banner. Together, we must strive for a common future."
+
+ je_cultural_shift_byz_armenian:0 "Assimilate the Armenians"
+ je_cultural_shift_byz_armenian_reason:0 "Nestled in the mountains of Anatolia, the Armenians have been both allies and adversaries. It is time to reconcile our differences for the greater good."
+
+ je_cultural_shift_byz_turks:0 "Rhomanize the Turks"
+ je_cultural_shift_byz_turks_reason:0 "The Turks have long held sway over Anatolia, but the Rhoman legacy is stronger. Through patience and resolve, we shall bring them into the fold of our renewed empire."
+
+ je_venetian_punishment:0 "Avenge the Fourth Crusade"
+ je_venetian_punishment_reason:0 "The wounds inflicted by Venice during the Fourth Crusade still fester in our collective memory. It is time to reclaim what was stolen and restore justice to the Rhomaion people."

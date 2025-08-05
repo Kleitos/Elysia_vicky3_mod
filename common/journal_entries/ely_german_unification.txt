@@ -1,0 +1,376 @@
+﻿je_silesian_war = {
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		has_technology_researched = nationalism
+	}
+
+	on_complete = {
+		trigger_event = { id = ely_germany.1 }
+	}
+}
+
+je_conquer_hansa = {
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		has_technology_researched = nationalism
+ 		is_at_war = no
+		country_rank >= rank_value:minor_power
+		is_subject = no
+		owns_entire_state_region = STATE_SCHLESWIG_HOLSTEIN
+		owns_entire_state_region = STATE_HANNOVER
+		owns_entire_state_region = STATE_ELBE
+	}
+
+	on_complete = {
+		trigger_event = { id = prussia_flavor.3 }
+	}
+
+	fail = {
+		c:LUB = {
+			is_country_alive = no
+		}
+	}
+}
+
+je_pru_austrian_partition = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+ 		is_at_war = no
+		country_rank >= rank_value:minor_power
+		is_subject = no
+		owns_entire_state_region = STATE_SILESIA
+		owns_entire_state_region = STATE_BOHEMIA
+		owns_entire_state_region = STATE_MORAVIA
+	}
+
+	on_complete = {
+		trigger_event = { id = ely_germany.2 }
+	}
+}
+
+je_schleswig_holstein_question_ely = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		has_technology_researched = nationalism
+		trigger_if = {
+			limit = {
+				OR = {
+					c:HOL ?= this
+					c:SCH ?= this
+				}
+			}
+			is_subject = no
+		}
+		trigger_if = {
+			limit = {
+				NOT = { c:HOL ?= this }
+				NOT = { c:SCH ?= this }
+				exists = c:DEN
+			}
+			custom_tooltip = {
+				text = je_schleswig_holstein_question_state_ownership_desc
+				any_scope_state = { state_region = s:STATE_SCHLESWIG_HOLSTEIN }
+				s:STATE_SCHLESWIG_HOLSTEIN = {
+					NOT = {
+						any_scope_state = {
+							OR = {
+								NOT = {
+									owner = {
+										OR = {
+											country_has_primary_culture = cu:north_german
+											country_has_primary_culture = cu:south_german
+										}
+									}
+								}
+								owner = {
+									is_subject_of = c:DEN
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		trigger_if = {
+			limit = {
+				c:LUB ?= this
+			}
+			country_or_subject_owns_entire_state_region = STATE_SCHLESWIG_HOLSTEIN
+		}
+	}
+
+	fail = {
+		AND = {
+			c:HOL ?= {
+				is_country_alive = no
+			}
+			c:SCH ?= {
+				is_country_alive = no
+			}
+		}
+	}
+
+	on_complete = {
+		add_modifier = {
+			name = schleswig_holstein_question_solver
+			days = long_modifier_time
+		}
+	}
+
+	weight = 1000
+	should_be_pinned_by_default = yes
+}
+
+je_german_unification_idea_ely = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+ 		is_at_war = no
+		country_rank >= rank_value:minor_power
+		is_subject = no
+		owns_entire_state_region = STATE_SILESIA
+		owns_entire_state_region = STATE_BOHEMIA
+		owns_entire_state_region = STATE_MORAVIA
+		owns_entire_state_region = STATE_BAVARIA
+		owns_entire_state_region = STATE_POMERANIA
+		owns_entire_state_region = STATE_ANHALT
+		owns_entire_state_region = STATE_SAXONY
+		owns_entire_state_region = STATE_BRANDENBURG
+		owns_entire_state_region = STATE_MECKLENBURG
+		owns_entire_state_region = STATE_BADEN
+		owns_entire_state_region = STATE_FRANCONIA
+		owns_entire_state_region = STATE_WURTTEMBERG
+		owns_entire_state_region = STATE_HESSE
+		owns_entire_state_region = STATE_BRUNSWICK
+		owns_entire_state_region = STATE_SAXONY
+		owns_entire_state_region = STATE_HANNOVER
+		owns_entire_state_region = STATE_ELBE
+		owns_entire_state_region = STATE_WESTPHALIA
+		owns_entire_state_region = STATE_RUHR
+		owns_entire_state_region = STATE_STYRIA
+		owns_entire_state_region = STATE_TYROL
+		owns_entire_state_region = STATE_AUSTRIA
+		owns_entire_state_region = STATE_SOUTH_TYROL
+	}
+
+	on_complete = {
+		trigger_event = { id = german_unification.5 } # German National Identity
+		trigger_event = { id = german_nationalism.2 }
+	}
+
+	fail = {
+			c:BAV ?= {
+				owns_entire_state_region = STATE_BAVARIA
+				owns_entire_state_region = STATE_BOHEMIA
+				owns_entire_state_region = STATE_MORAVIA
+				owns_entire_state_region = STATE_POMERANIA
+				owns_entire_state_region = STATE_ANHALT
+				owns_entire_state_region = STATE_SAXONY
+				owns_entire_state_region = STATE_BRANDENBURG
+				owns_entire_state_region = STATE_MECKLENBURG
+				owns_entire_state_region = STATE_BADEN
+				owns_entire_state_region = STATE_FRANCONIA
+				owns_entire_state_region = STATE_WURTTEMBERG
+				owns_entire_state_region = STATE_HESSE
+				owns_entire_state_region = STATE_BRUNSWICK
+				owns_entire_state_region = STATE_SAXONY
+				owns_entire_state_region = STATE_HANNOVER
+				owns_entire_state_region = STATE_ELBE
+				owns_entire_state_region = STATE_WESTPHALIA
+				owns_entire_state_region = STATE_RUHR
+				owns_entire_state_region = STATE_STYRIA
+				owns_entire_state_region = STATE_TYROL
+				owns_entire_state_region = STATE_AUSTRIA
+				owns_entire_state_region = STATE_SOUTH_TYROL
+			}
+		custom_tooltip = {
+			text = lost_german_unification_war
+		}
+	}
+
+	on_fail = {
+		trigger_event = { id = prussia_flavor.1 popup = yes }
+	}
+
+	weight = 1000
+	should_be_pinned_by_default = yes
+}
+
+je_german_unification_bav = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+ 		is_at_war = no
+		country_rank >= rank_value:minor_power
+		is_subject = no
+		owns_entire_state_region = STATE_BOHEMIA
+		owns_entire_state_region = STATE_MORAVIA
+		owns_entire_state_region = STATE_BAVARIA
+		owns_entire_state_region = STATE_POMERANIA
+		owns_entire_state_region = STATE_ANHALT
+		owns_entire_state_region = STATE_SAXONY
+		owns_entire_state_region = STATE_BRANDENBURG
+		owns_entire_state_region = STATE_MECKLENBURG
+		owns_entire_state_region = STATE_BADEN
+		owns_entire_state_region = STATE_FRANCONIA
+		owns_entire_state_region = STATE_WURTTEMBERG
+		owns_entire_state_region = STATE_HESSE
+		owns_entire_state_region = STATE_BRUNSWICK
+		owns_entire_state_region = STATE_SAXONY
+		owns_entire_state_region = STATE_HANNOVER
+		owns_entire_state_region = STATE_ELBE
+		owns_entire_state_region = STATE_WESTPHALIA
+		owns_entire_state_region = STATE_RUHR
+		owns_entire_state_region = STATE_STYRIA
+		owns_entire_state_region = STATE_TYROL
+		owns_entire_state_region = STATE_AUSTRIA
+		owns_entire_state_region = STATE_SOUTH_TYROL
+	}
+
+	on_complete = {
+		trigger_event = { id = german_unification.5 } # German National Identity
+		trigger_event = { id = german_nationalism.2 }
+	}
+
+	weight = 1000
+	should_be_pinned_by_default = yes
+}
+
+je_schleswig_holstein_compromise = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		has_technology_researched = nationalism
+		AND = {
+			c:HOL ?= {
+				is_subject_of = c:DEN
+				is_country_alive = yes
+			}
+			c:SCH ?= {
+				is_subject_of = c:DEN
+				is_country_alive = yes
+			}
+			c:DEN = { relations:root >= relations_threshold:amicable }
+			GDP >= 15000000
+		}
+	}
+
+	fail = {
+		AND = {
+			c:HOL ?= {
+				OR = {
+					NOT = { is_subject_of = c:DEN }
+					is_country_alive = no
+				}
+			}
+			c:SCH ?= {
+				OR = {
+					NOT = { is_subject_of = c:DEN }
+					is_country_alive = no
+				}
+			}
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = bavaria_flavor.3 }
+	}
+
+	weight = 1000
+	should_be_pinned_by_default = yes
+}
+
+je_hansa_buy_out = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_elysian_content
+
+	complete = {
+		has_technology_researched = nationalism
+ 		is_at_war = no
+		country_rank >= rank_value:minor_power
+		is_subject = no
+		c:LUB = { relations:root >= relations_threshold:amicable }
+		OR = { 
+			GDP >= 10000000
+			c:LUB = {
+				in_default = yes
+				taking_loans = yes
+			}
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = bavaria_flavor.2 }
+	}
+
+	fail = {
+		c:LUB = {
+			is_country_alive = no
+		}
+	}
+}
+
+je_north_german_unification = {
+}
+
+je_south_german_unification = {
+}
+
+je_schleswig_holstein_question = {
+}
+
+je_german_unification = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	group = je_group_german_unification
+
+	complete = {
+		custom_tooltip = {
+			c:GER ?= this
+			text = je_german_unification_complete_trigger_desc
+		}
+	}
+
+	on_complete = {
+		show_as_tooltip = {
+			trigger_event = { id = german_unification.4 popup = yes } # German Unification
+		}
+	}
+
+	status_desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = je_german_status
+			}
+		}
+	}
+
+	invalid = {
+		OR = {
+			country_has_primary_culture = cu:hungarian
+			c:HRE ?= THIS
+		}
+	}
+
+	weight = 1000
+	should_be_pinned_by_default = yes
+}

@@ -1,0 +1,156 @@
+﻿HRE = {
+	color = rgb { 0.1 0.21 0.34 }
+	country_type = recognized
+	
+	tier = hegemony
+	
+	cultures = { north_german south_german alemannic frankish }
+	capital = STATE_NORTH_RHINE
+}
+SOM = {
+	color = { 142 204 206 }
+	
+	country_type = unrecognized
+
+	tier = kingdom
+	
+	cultures = { somali }
+	capital = STATE_SOMALILAND
+}
+LMV = {
+	color = hsv360{ 20  80  80 }
+	country_type = recognized
+	
+	tier = kingdom
+	
+	cultures = { north_italian }
+	capital = STATE_LOMBARDY
+}
+
+BON = {
+	color = { 10  144  170 }
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { bornean dayak }
+	capital = STATE_EAST_BORNEO
+}
+
+ANC = {
+	color = { 160  24  0 }
+	country_type = colonial
+	
+	tier = kingdom
+	
+	cultures = { afro_caribeno }
+	capital = STATE_CAPE_VERDE
+}
+
+CUB = {
+	color = { 188  113  61 }
+	
+	country_type = colonial
+	
+	tier = principality
+	
+	cultures = { portuguese }
+	capital = STATE_BOMBAY
+}
+
+ILY = {
+	color = { 84 173 160 }
+	
+	country_type = recognized
+
+	tier = kingdom
+	
+	cultures = { croat bosniak slovene }
+	capital = STATE_CROATIA
+}
+
+EAF = {
+	color = { 47 132 27 }
+	
+	country_type = unrecognized
+
+	tier = kingdom
+	
+	cultures = { sukuma swahili lacustrine_bantu unyamwezi luo maasai ruanda rundi baganda nilotic kikuyu }
+	capital = STATE_UGANDA
+}
+
+CAU = {
+	color = { 221 68 26 }
+	
+	country_type = recognized
+
+	tier = kingdom
+	
+	cultures = { armenian georgian azerbaijani }
+	capital = STATE_GREATER_CAUCASUS
+}
+
+MLY = {
+	color = { 104 14 55 }
+	
+	country_type = unrecognized
+
+	tier = kingdom
+	
+	cultures = { malay }
+	capital = STATE_MALAYA
+}
+
+KRL = {
+	color = { 89  158  139 }
+	country_type = recognized
+	
+	tier = principality
+	
+	cultures = { finnish }
+	religion = orthodox
+	capital = STATE_WEST_KARELIA
+}
+
+NOV = {
+	color = { 44  84  39 }
+	country_type = recognized
+	
+	tier = kingdom
+	
+	cultures = { russian }
+	capital = STATE_NOVGOROD
+}
+
+LVT = { #Levant
+	color = { 102  35  74 }
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { mashriqi }
+	capital = STATE_SYRIA
+}
+
+NGR = { #Nigeria
+	color = { 36  99  36 }
+	country_type = recognized
+	
+	tier = empire
+	
+	cultures = { akan bassa edo ewe fon ibo kru yoruba }
+	capital = STATE_GHANA
+}
+
+JER = {
+	color = { 255 216 89 }
+	
+	country_type = recognized
+
+	tier = principality
+	
+	cultures = { frankish mashriqi }
+	religion = catholic
+	capital = STATE_PALESTINE
+}

@@ -29,12 +29,6 @@
 			institution = institution_police
 			level = 1
 		}
-		
-		add_modifier = {
-			name = elysian_aligned
-			months = very_long_modifier_time
-		}
-
 		ig:ig_armed_forces = {
 			add_ruling_interest_group = yes
 		}
