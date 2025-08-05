@@ -194,13 +194,14 @@
  STATE_PARA:0 "Pará"
  
  STATE_BUENOS_AIRES:0 "Port Victoria"
- STATE_RIO_NEGRO:1 "Ashford"
- STATE_LA_PAMPA:1 "Queen's Reach"
  STATE_SANTA_FE:0 "New Norfolk"
  STATE_CORRIENTES:0 "Swiftwater" 
  STATE_URUGUAY:0 "Mount Edward"
  STATE_RIO_GRANDE_DO_SUL:0 "Grandcross"
  
+ 
+ STATE_RIO_NEGRO:1 "Kürüfmapu"
+ STATE_LA_PAMPA:1 "Anta Pampa"
  STATE_TUCUMAN:0 "Tucumán"
  STATE_CHACO:0 "Chaco"
  STATE_JUJUY:0 "Jujuy"

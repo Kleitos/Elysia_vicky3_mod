@@ -253,7 +253,7 @@ Events
  guano_act.1.f:0 "“All empires must dig deep — some into memory, others into the land.”\n– Head Alchemist Kusi Wiraqocha"
  guano_act.1.a:0 "This probably won't have any downside."
  
- ely_inca_flavour.1.t:0 "Heirs of Inti, Guardians of Tawantin Suyu"
- ely_inca_flavour.1.d:0 "High above the clouds of Anti Suyu, where the Apus whisper and the condor soars, the *Tawantin Suyu* endures. Forged in flame and famine, tested by pestilence and steel, the children of Inti repelled the invader and stood unbroken beside Elysia and Zipanghu.\n\nYet even as *Qusqu* thrives and the sun temple shines once more, stormwinds gather. The age of chasquis and quipus wanes. In their place rise coins, ledgers, and strange foreign ideas. The *Sapa Inka* rules still, but must now walk a path between the sacred and the new.\n\nThe world changes—but so does the *Tawantin Suyu*. Will the flame of Inti rise anew, or flicker in the shadow of the coming age?"
- ely_inca_flavour.1.f:0 "“We are not ghosts of stone—we are the breath of the mountain, the word in the wind, the blood of the sun. So long as *Qusqu* stands, the *Suyu* shall never fall.”"
- ely_inca_flavour.1.a:0 "*Tawantin Suyu* endures, as it always has."
+ inca_intro_event.1.t:0 "Heirs of Inti, Guardians of Tawantin Suyu"
+ inca_intro_event.1.d:0 "High above the clouds of Anti Suyu, where the Apus whisper and the condor soars, the *Tawantin Suyu* endures. Forged in flame and famine, tested by pestilence and steel, the children of Inti repelled the invader and stood unbroken beside Elysia and Zipanghu.\n\nYet even as *Qusqu* thrives and the sun temple shines once more, stormwinds gather. The age of chasquis and quipus wanes. In their place rise coins, ledgers, and strange foreign ideas. The *Sapa Inka* rules still, but must now walk a path between the sacred and the new.\n\nThe world changes—but so does the *Tawantin Suyu*. Will the flame of Inti rise anew, or flicker in the shadow of the coming age?"
+ inca_intro_event.1.f:0 "“We are not ghosts of stone—we are the breath of the mountain, the word in the wind, the blood of the sun. So long as *Qusqu* stands, the *Suyu* shall never fall.”"
+ inca_intro_event.1.a:0 "*Tawantin Suyu* endures, as it always has."

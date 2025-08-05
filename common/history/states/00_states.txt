@@ -2339,7 +2339,7 @@ STATES = {
 	}
 	s:STATE_RIO_NEGRO = {
 		create_state = {
-			country = c:PLN
+			country = c:TWT
 			owned_provinces = {
 				x2B18E0 xFDEBB0 x745CF8 x08B647 x3F05E8 x443E92 x571E1D x0D8100 xDC5BD4 xDC370A x11E04B x9EC2C7 xD81D58 xBCD6E4 x9D645E xEBA1B5 xC1D1A9 x03FD75 x4178C7 x537183 x8976A7 x230AE0 x3B06A4 xC1A1C8 x6C084A x9F0243 x8C91D6 x2B5897 xB00090 xFA00A9 xF5005C x30E94A xF8B9BC x935564 x77E75A x99E709 x78901C xCAD9EC x780AF9 x300090 xCF4A9B x80C791 xAE79BE
 			}
@@ -2353,8 +2353,8 @@ STATES = {
 			}
 		}
 
-		add_homeland = cu:platean
-		add_homeland = cu:afro_american
+		add_homeland = cu:quechua
+		add_homeland = cu:aimara
 		add_homeland = cu:patagonian
 		add_claim = c:PLN
 		add_claim = c:TWT
@@ -2368,6 +2368,7 @@ STATES = {
 		add_homeland = cu:platean
 		add_homeland = cu:afro_american
 		add_homeland = cu:patagonian
+		add_claim = c:TWT
 	}
 	s:STATE_SANTA_FE = {
 		create_state = {

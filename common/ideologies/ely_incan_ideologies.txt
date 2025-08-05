@@ -384,7 +384,7 @@ ideology_incan_rich_army = {
 	}
 	
 	lawgroup_migration = {
-		law_no_migration_controls = approve
+		law_no_migration_controls = disapprove
 		law_migration_controls = strongly_approve
 		law_closed_borders = strongly_disapprove
 	}

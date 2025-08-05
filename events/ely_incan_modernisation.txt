@@ -44,7 +44,7 @@ inca_infrastructure.1 = {
 				state_region = s:STATE_ECUADOR
 			}
 			add_modifier = {
-				name = incan_min
+				name = modifier_modern_pathway
 				months = -1
 			}
 		}

@@ -47,6 +47,7 @@ annex_client_states = {
 		}
 		any_subject_or_below = {
 			has_variable = ely_imperial_target
+			NOT = { has_variable = inc_imperial_target }
 		}
 	}
 

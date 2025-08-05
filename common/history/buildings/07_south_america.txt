@@ -1661,7 +1661,20 @@
 		}
 	}
 	s:STATE_RIO_NEGRO={
-		region_state:PLN={
+		region_state:TWT={
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					building={
+						type="building_trade_center"
+						country="c:TWT"
+						levels=1
+						region="STATE_RIO_NEGRO"
+					}
+				}
+				reserves=1
+			}
 		}
 		region_state:PAT={
 		}

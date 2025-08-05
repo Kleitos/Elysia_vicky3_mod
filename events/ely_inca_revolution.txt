@@ -1,5 +1,6 @@
 ﻿namespace = ely_incan_reform
 namespace = ely_incan_war
+namespace = inca_intro_event
 
 
 ely_incan_reform.1 = {
@@ -47,14 +48,14 @@ ely_incan_reform.1 = {
 			ig:ig_devout = {
 				remove_ideology = ideology_pious
 				remove_ideology = ideology_incan_administration
+				remove_ideology = ideology_incan_corve
+				remove_ideology = ideology_patriarchal
 				add_ideology = ideology_incan_rich_land
 				add_ideology = ideology_incan_rich_rights
 				add_ideology = ideology_incan_rich_army
 				add_ideology = ideology_incan_rich_economy
 				add_ideology = ideology_incan_rich_admin
 			}
-		}
-
 	}
 
 	option = {
@@ -69,7 +70,7 @@ ely_incan_reform.1 = {
 			}
 	}
 	
-}		incan_societal_reforms
+}
 
 ely_incan_war.1 = {
 	type = country_event
@@ -231,3 +232,42 @@ ely_incan_war.1 = {
 		}
 	}
 }		
+
+
+
+inca_intro_event.1 = {
+	type = country_event
+	placement = root
+	title = inca_intro_event.1.t
+	desc = inca_intro_event.1.d
+	flavor = inca_intro_event.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/southamerica_aristocrats.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/southamerica/aristocrats"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	duration = 4
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+	option = {
+		name = inca_intro_event.1.a 
+		default_option = yes
+		c:TWT = {
+			add_journal_entry = { type = je_anti_ruler }
+			add_journal_entry = { type = je_andean_pathway }
+			add_journal_entry = { type = je_reform_mines }
+			add_journal_entry = { type = je_andean_farming }
+			add_journal_entry = { type = je_andean_ranching }
+			add_journal_entry = { type = je_sulfur_lead }
+		}
+	}
+}

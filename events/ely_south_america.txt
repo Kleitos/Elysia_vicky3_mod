@@ -1,6 +1,5 @@
 ﻿namespace = ely_south_america_diplo
 namespace = ely_south_america_integration
-namespace = ely_inca_flavour
 
 ### Diplomatic Expansion ###
 
@@ -35,6 +34,9 @@ ely_south_america_diplo.1 = {
 				country = c:TWT
 				months = 40
 			}
+		}
+		c:MUI = {
+			set_variable = { name = inc_imperial_target }
 		}
 	}
 	option = {
@@ -117,6 +119,9 @@ ely_south_america_diplo.3 = {
 				country = c:TWT
 				months = 40
 			}
+		}
+		c:WYU = {
+			set_variable = { name = inc_imperial_target }
 		}
 	}
 	option = {
@@ -424,40 +429,3 @@ ely_south_america_integration.3 = {
 		}
 	}
 }	
-
-ely_inca_flavour.1 = {
-	type = country_event
-
-	title = ely_inca_flavour.1.t
-	desc = ely_inca_flavour.1.d
-	flavor = ely_inca_flavour.1.f
-
-	event_image = {
-		video = "gfx/event_pictures/southamerica_aristocrats.bk2"
-	}
-
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/southamerica/aristocrats"
-
-	icon = "gfx/interface/icons/event_icons/event_map.dds"
-
-	duration = 4
-
-	trigger = {
-	}
-
-	immediate = {
-	}
-	option = {
-		name = ely_inca_flavour.1.a 
-		default_option = yes
-		c:TWT = {
-			add_journal_entry = { type = je_anti_ruler }
-			add_journal_entry = { type = je_andean_pathway }
-			add_journal_entry = { type = je_reform_mines }
-			add_journal_entry = { type = je_andean_farming }
-			add_journal_entry = { type = je_andean_ranching }
-			add_journal_entry = { type = je_sulfur_lead }
-		}
-	}
-}

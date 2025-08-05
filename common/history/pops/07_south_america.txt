@@ -582,21 +582,21 @@ POPS = {
 		}
 	}
 	s:STATE_RIO_NEGRO = {
-		region_state:PLN = {
+		region_state:TWT = {
 			create_pop = {
-				culture = patagonian
+				culture = guarani
 				size = 6880
 			}
 			create_pop = {
-				culture = afro_american
+				culture = quechua
 				size = 9144
 			}
 			create_pop = {
-				culture = platean
+				culture = patagonian
 				size = 600
 			}
 			create_pop = {
-				culture = platean
+				culture = aimara
 				size = 20850
 			}
 		}

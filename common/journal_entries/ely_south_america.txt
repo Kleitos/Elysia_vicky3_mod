@@ -16,6 +16,12 @@
 	on_complete = {
 		trigger_event = { id = ely_south_america_diplo.1 }
 	}
+
+	fail = {
+		c:MUI ?= {
+			is_country_alive = no
+		}
+	}
 }
 
 je_muiscan_unification = {
@@ -57,6 +63,12 @@ je_wayuu_transfer = {
 
 	on_complete = {
 		trigger_event = { id = ely_south_america_diplo.3 }
+	}
+
+	fail = {
+		c:WYU ?= {
+			is_country_alive = no
+		}
 	}
 }
 

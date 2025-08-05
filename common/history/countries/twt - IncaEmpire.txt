@@ -33,7 +33,7 @@
 		
 		set_institution_investment_level = {
 			institution = institution_schools
-			level = 3
+			level = 1
 		}
 
 		ig:ig_landowners = {
@@ -63,24 +63,7 @@
 			add_ideology = ideology_incan_administration
 			add_ideology = ideology_incan_corve
 		}
-		
-		add_journal_entry = {
-			type = je_andean_pathway
-		}
-		add_journal_entry = {
-			type = je_reform_mines
-		}
-		add_journal_entry = {
-			type = je_andean_farming
-		}
-		add_journal_entry = {
-			type = je_andean_ranching
-		}
-		add_journal_entry = {
-			type = je_sulfur_lead
-		}
-		add_journal_entry = {
-			type = je_incan_revolution
-		}
+			
+		trigger_event = { id = inca_intro_event.1 popup = yes }
 	}
 }
