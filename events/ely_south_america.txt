@@ -221,7 +221,6 @@ ely_south_america_integration.1 = {
 					limit = { culture = cu:quechua }
 					change_pop_culture = { target = cu:incan_culture value = 1 }
 				}
-			}
 		}		
 		s:STATE_ZULIA = {
 			remove_homeland = cu:aimara
