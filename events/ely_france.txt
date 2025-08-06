@@ -1942,9 +1942,7 @@ ely_france_north.1 = {
 		default_option = yes
 		remove_modifier = modifier_brewing_insurrection 
 		trigger_event = { id = french_north_africa.1 }
-		c:FRA = {
-			add_journal_entry = { type = je_cultural_shift_frankish }
-		}
+		add_journal_entry = { type = je_cultural_shift_frankish }
 		add_modifier = {
 			name = national_anthem_modifier
 			days = normal_modifier_time

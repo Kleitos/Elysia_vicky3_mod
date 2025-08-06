@@ -20,7 +20,6 @@
 	on_complete = {
 		trigger_event = { id = frankish_culture.1 }
 	}
-frankish_shift
 }
 
 je_expand_franks_south = {

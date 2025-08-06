@@ -57,7 +57,7 @@ je_cultural_shift_ger = {
 	}
 
 	on_complete = {
-		trigger_event = { id = cultural_shift.1 }
+		trigger_event = { id = unification_culture.2 }
 	}
 
 }

@@ -36,6 +36,9 @@ frankish_culture.1 = {
 		add_primary_culture = cu:frankish
 		remove_primary_culture = cu:dutch
 		remove_primary_culture = cu:alemannic
+		remove_primary_culture = cu:french
+		remove_primary_culture = cu:wallonian
+		remove_primary_culture = cu:flemish
 		trigger_event = { id = frankish_empire.1 days = 1825 }
 		add_journal_entry = { type = je_land_reclamation }
 		hidden_effect = {
@@ -159,7 +162,7 @@ frankish_empire.1 = {
 			set_variable = { 
 				name = frankish_empire_reunite_ger_var
 			}
-			add_journal_entry = { type = je_frankogerman_wedding }		
+		add_journal_entry = { type = je_frankogerman_wedding }		
 		}
 		c:FRA = {		
 			change_relations = {
@@ -173,7 +176,7 @@ frankish_empire.1 = {
 			set_variable = { 
 				name = frankish_empire_reunite_fra_var
 			}
-			add_journal_entry = { type = je_frankogerman_wedding }		
+		add_journal_entry = { type = je_frankogerman_wedding }		
 		}
 	}	
 

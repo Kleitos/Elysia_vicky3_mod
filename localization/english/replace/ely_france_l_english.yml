@@ -180,9 +180,6 @@ events
  french_north_africa.3.a:0 "Time to reestablish a client state in the Holy Land"
  french_north_africa.3.b:0 "Crusades are a relic of the past, let us control it directly"
  
- je_cultural_shift_fra:0 "The Greater French Identity"
- je_cultural_shift_fra_reason:0 "The old divisions between North and South — between langue d'oïl and langue d'oc — have long fractured our nation. To truly move forward, we must unite all Frenchmen under a singular, modern identity."
-
  unification_culture.1.t:0 "The Birth of a New French Identity"
  unification_culture.1.d:0 "For centuries, the French language has been split — not just in dialect, but in spirit. The northern oïl and the southern oc represent two halves of a broken mirror. Now, through education, media, and cultural cohesion, we are forging a new French identity, embracing both traditions while looking forward to a modern, united future."
  unification_culture.1.f:0 "“France is no longer a tapestry of tongues, but a single voice — resolute, proud, and indivisible.”"
@@ -200,6 +197,7 @@ events
  je_frankogerman_wedding:0 "The Wedding of the Rhine"
  je_frankogerman_wedding_reason:0 "In the shadow of Charlemagne, the Franks have risen once more—one from Paris, the other from Munich. Rather than descend into rivalry, the monarchs of the Frankish and German realms have agreed to a symbolic union of blood and purpose. A royal wedding has been announced: a grand Alpine ceremony to tie the heirs of both crowns in matrimony. As industry and influence grow on either side of the Rhine, the question remains—who shall lead this reborn Empire of the Franks?"
 
+ je_frankogerman_wedding_status:0 "Influence over the Alpine wedding"
 
  union_of_frankogerman_progress_bar_name:0 "The Alpine Wedding"
  union_of_frankogerman_progress_bar_fra_desc:0 "France leads the effort to revive the unity of the Franks under its ancient crown."
