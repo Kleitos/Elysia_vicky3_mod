@@ -422,7 +422,7 @@ ely_italian_unification.6 = {
 			value = very_large_radicals
 		}
 		add_modifier = {
-			name = napolitan_sword
+			name = napolitan_legacy
 			months = -1
 		}
 	}

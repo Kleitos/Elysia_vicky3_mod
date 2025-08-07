@@ -51,7 +51,7 @@ italian_irredentia = {
 	country_authority_mult = 0.1
 	state_assimilation_mult = 2
 	state_conversion_mult = 2
-	country_prestige_mult = 50
+	country_prestige_add = 50
 }
 
 echoes_of_revolution = {
