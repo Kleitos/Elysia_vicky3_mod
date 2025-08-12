@@ -2,6 +2,17 @@
 	s:STATE_IVORY_COAST={
 		region_state:ASH={
 			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:ASH"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_professional_bureaucrats" "pm_religious_bureaucrats" "pm_horizontal_drawer_cabinets" }
+			}
+			create_building={
 				building="building_trade_center"
 				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
 				add_ownership={
@@ -29,6 +40,39 @@
 	}
 	s:STATE_WINDWARD_COAST={
 		region_state:ASH={
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:ASH"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_professional_bureaucrats" "pm_religious_bureaucrats" "pm_horizontal_drawer_cabinets" }
+			}
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:ASH"
+						levels=1
+					}
+				}
+				reserves=1
+			}
+			create_building={
+				building="building_port"
+				add_ownership={
+					country={
+						country="c:ASH"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_anchorage" }
+			}
 		}
 	}
 	s:STATE_SENEGAL={
@@ -206,6 +250,17 @@
 	s:STATE_LIBERIA={
 		region_state:ASH={
 			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:ASH"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_professional_bureaucrats" "pm_religious_bureaucrats" "pm_horizontal_drawer_cabinets" }
+			}
+			create_building={
 				building="building_millet_farm"
 				add_ownership={
 					building={
@@ -266,7 +321,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_organization" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
+				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
 			}
 			create_building={
 				building="building_textile_mills"
@@ -333,6 +388,17 @@
 			}
 		}
 		region_state:ASH={
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:ASH"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_professional_bureaucrats" "pm_religious_bureaucrats" "pm_horizontal_drawer_cabinets" }
+			}
 			create_building={
 				building="building_millet_farm"
 				add_ownership={
@@ -729,6 +795,17 @@
 	s:STATE_GHANA={
 		region_state:ASH={
 			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:ASH"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_professional_bureaucrats" "pm_religious_bureaucrats" "pm_horizontal_drawer_cabinets" }
+			}
+			create_building={
 				building="building_trade_center"
 				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
 				add_ownership={
@@ -778,6 +855,17 @@
 	}
 	s:STATE_TOGO={
 		region_state:ASH={
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:ASH"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_professional_bureaucrats" "pm_religious_bureaucrats" "pm_horizontal_drawer_cabinets" }
+			}
 			create_building={
 				building="building_trade_center"
 				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
@@ -878,6 +966,17 @@
 			}
 		}
 		region_state:ASH={
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:ASH"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_professional_bureaucrats" "pm_religious_bureaucrats" "pm_horizontal_drawer_cabinets" }
+			}
 			create_building={
 				building="building_millet_farm"
 				add_ownership={
@@ -1087,6 +1186,17 @@
 	s:STATE_OROMIA={
 		region_state:ETH={
 			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:ETH"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_professional_bureaucrats" "pm_religious_bureaucrats" "pm_horizontal_drawer_cabinets" }
+			}
+			create_building={
 				building="building_millet_farm"
 				add_ownership={
 					building={
@@ -1178,6 +1288,17 @@
 	s:STATE_AMHARA={
 		region_state:ETH={
 			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:ETH"
+						levels=5
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_professional_bureaucrats" "pm_religious_bureaucrats" "pm_horizontal_drawer_cabinets" }
+			}
+			create_building={
 				building="building_tobacco_plantation"
 				add_ownership={
 					building={
@@ -1242,6 +1363,17 @@
 	}
 	s:STATE_GONDER={
 		region_state:ETH={
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:ETH"
+						levels=7
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_professional_bureaucrats" "pm_religious_bureaucrats" "pm_horizontal_drawer_cabinets" }
+			}
 			create_building={
 				building="building_millet_farm"
 				add_ownership={
@@ -1316,6 +1448,17 @@
 	s:STATE_SOMALILAND={
 		region_state:ETH={
 			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:ETH"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_professional_bureaucrats" "pm_religious_bureaucrats" "pm_horizontal_drawer_cabinets" }
+			}
+			create_building={
 				building="building_millet_farm"
 				add_ownership={
 					building={
@@ -1380,6 +1523,17 @@
 	}
 	s:STATE_SOUTH_MADAGASCAR={
 		region_state:MAD={
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:MAD"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_organization" "pm_religious_bureaucrats" "pm_professional_bureaucrats" }
+			}
 			create_building={
 				building="building_millet_farm"
 				add_ownership={
@@ -1456,6 +1610,17 @@
 	}
 	s:STATE_NORTH_MADAGASCAR={
 		region_state:MAD={
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:MAD"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_organization" "pm_religious_bureaucrats" "pm_professional_bureaucrats" }
+			}
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
@@ -1692,6 +1857,17 @@
 		}
 		region_state:ZIM={
 			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:ZIM"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_religious_bureaucrats" "pm_professional_bureaucrats" }
+			}
+			create_building={
 				building="building_barracks"
 				add_ownership={
 					country={
@@ -1832,6 +2008,28 @@
 		region_state:BOB={
 		}
 		region_state:KON={
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:KON"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_organization" "pm_religious_bureaucrats" "pm_professional_bureaucrats" }
+			}
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					country={
+						country="c:KON"
+						levels=1
+					}
+				}
+				reserves=1
+			}
 		}
 	}
 	s:STATE_CONGO_ORIENTALE={
@@ -1854,6 +2052,17 @@
 	}
 	s:STATE_BAS_CONGO={
 		region_state:KON={
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:KON"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_organization" "pm_religious_bureaucrats" "pm_professional_bureaucrats" }
+			}
 			create_building={
 				building="building_trade_center"
 				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
@@ -1899,6 +2108,17 @@
 	}
 	s:STATE_NORTH_ANGOLA={
 		region_state:KON={
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:KON"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_organization" "pm_religious_bureaucrats" "pm_professional_bureaucrats" }
+			}
 			create_building={
 				building="building_trade_center"
 				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
@@ -1965,6 +2185,17 @@
 	s:STATE_SOUTH_ANGOLA={
 		region_state:KON={
 			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:KON"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_organization" "pm_religious_bureaucrats" "pm_professional_bureaucrats" }
+			}
+			create_building={
 				building="building_trade_center"
 				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
 				add_ownership={
@@ -2028,6 +2259,17 @@
 		}
 		region_state:KON={
 			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:KON"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_organization" "pm_religious_bureaucrats" "pm_professional_bureaucrats" }
+			}
+			create_building={
 				building="building_trade_center"
 				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
 				add_ownership={
@@ -2075,6 +2317,17 @@
 		}
 		region_state:ZIM={
 			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:ZIM"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_religious_bureaucrats" "pm_professional_bureaucrats" }
+			}
+			create_building={
 				building="building_barracks"
 				add_ownership={
 					country={
@@ -2102,6 +2355,17 @@
 	}
 	s:STATE_ZAMBEZI={
 		region_state:ZIM={
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:ZIM"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_religious_bureaucrats" "pm_professional_bureaucrats" }
+			}
 			create_building={
 				building="building_trade_center"
 				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
@@ -2180,6 +2444,17 @@
 	s:STATE_VRYSTAAT={
 		region_state:SAF={
 			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:SAF"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_organization" "pm_religious_bureaucrats" "pm_professional_bureaucrats" }
+			}
+			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
 					building={
@@ -2218,6 +2493,17 @@
 	}
 	s:STATE_TRANSVAAL={
 		region_state:SAF={
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:SAF"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_organization" "pm_religious_bureaucrats" "pm_professional_bureaucrats" }
+			}
 			create_building={
 				building="building_millet_farm"
 				add_ownership={
@@ -2270,6 +2556,17 @@
 	}
 	s:STATE_EASTERN_CAPE={
 		region_state:SAF={
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:SAF"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_organization" "pm_religious_bureaucrats" "pm_professional_bureaucrats" }
+			}
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
@@ -2335,6 +2632,17 @@
 	}
 	s:STATE_CAPE_COLONY={
 		region_state:SAF={
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:SAF"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_organization" "pm_religious_bureaucrats" "pm_professional_bureaucrats" }
+			}
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
@@ -2411,6 +2719,17 @@
 	}
 	s:STATE_NORTHERN_CAPE={
 		region_state:SAF={
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:SAF"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_religious_bureaucrats" "pm_professional_bureaucrats" }
+			}
 			create_building={
 				building="building_trade_center"
 				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
@@ -2499,6 +2818,17 @@
 			}
 		}
 		region_state:ZIM={
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:ZIM"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_religious_bureaucrats" "pm_professional_bureaucrats" }
+			}
 			create_building={
 				building="building_trade_center"
 				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }

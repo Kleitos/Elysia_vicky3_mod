@@ -6448,6 +6448,17 @@
 	s:STATE_ANHALT={
 		region_state:SAX={
 			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:SAX"
+						levels=2
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_professional_bureaucrats" "pm_religious_bureaucrats" "pm_horizontal_drawer_cabinets" }
+			}
+			create_building={
 				building="building_furniture_manufacturies"
 				add_ownership={
 					building={
@@ -7147,7 +7158,7 @@
 				add_ownership={
 					country={
 						country="c:BAV"
-						levels=1
+						levels=2
 					}
 				}
 				reserves=1
@@ -7331,6 +7342,17 @@
 	s:STATE_BRUNSWICK={
 		region_state:BAV={
 			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:BAV"
+						levels=2
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_professional_bureaucrats" "pm_religious_bureaucrats" "pm_horizontal_drawer_cabinets" }
+			}
+			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
 					building={
@@ -7376,7 +7398,7 @@
 				add_ownership={
 					country={
 						country="c:BAV"
-						levels=3
+						levels=5
 					}
 				}
 				reserves=1
@@ -7638,7 +7660,7 @@
 				add_ownership={
 					country={
 						country="c:SAX"
-						levels=1
+						levels=3
 					}
 				}
 				reserves=1
@@ -7765,6 +7787,17 @@
 	}
 	s:STATE_HESSE={
 		region_state:BAV={
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:BAV"
+						levels=2
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_professional_bureaucrats" "pm_religious_bureaucrats" "pm_horizontal_drawer_cabinets" }
+			}
 			create_building={
 				building="building_trade_center"
 				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
@@ -7934,6 +7967,17 @@
 	}
 	s:STATE_RUHR={
 		region_state:BAV={
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:BAV"
+						levels=2
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_professional_bureaucrats" "pm_religious_bureaucrats" "pm_horizontal_drawer_cabinets" }
+			}
 			create_building={
 				building="building_arms_industry"
 				add_ownership={
